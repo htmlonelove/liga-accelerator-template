@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Стартовый шаблон сборки Лиги А",
   "browserslist": [
-    "last 2 versions",
+    "last 3 versions",
     "IE 11",
     "Firefox ESR"
   ],
