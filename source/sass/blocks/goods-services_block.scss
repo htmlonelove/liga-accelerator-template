@@ -1,0 +1,101 @@
+.goods-services-block {
+  background: #041827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 0 140px;
+}
+
+.goods-services-block h3 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  color: #FFFFFF;
+  width: 1220px;
+  margin: 0 0 53px 0;
+  padding: 0;
+}
+
+.goods-services-block__list {
+  width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goods-services-block__item {
+  width: 350px;
+  min-height: 650px;
+}
+
+.goods-services-block__item:not(:nth-child(3n+3)) {
+  margin-right: 85px;
+}
+
+.goods-services-block__item a {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  display: block;
+  position: relative;
+
+  padding: 47px 40px;
+  
+}
+
+.goods-services-block__item a::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: #00B2FF;
+  border-radius: 3px 0px 0px 0px;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  right: 1px;
+
+}
+
+.goods-services-block__item a::after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 28px;
+  right: 27px;
+  border: 1px solid #FFFFFF;
+  transform: rotate(-45deg);
+  background-color: transparent;
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  border-top: transparent;
+  border-left: transparent;
+}
+
+
+.goods-services-block__item:nth-child(3n+1) a{
+  background: url(../../img/goods-service-block__item_img-1.png) no-repeat 0 0;
+  background-size:contain;
+}
+
+.goods-services-block__item:nth-child(3n+2) a{
+  background: url(../../img/goods-service-block__item_img-2.png) no-repeat 0 0;
+  background-size:contain;
+}
+
+.goods-services-block__item:nth-child(3n+3) a{
+  background: url(../../img/goods-service-block__item_img-3.png) no-repeat 0 0;
+  background-size:contain;
+}
