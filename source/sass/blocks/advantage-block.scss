@@ -1,12 +1,14 @@
 .advantage-block {
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
 }
 
 .advantage-block__list {
-  width: 1220px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+
+  width: 1220px;
   margin: 0 auto;
+
+  flex-wrap: wrap;
 }

@@ -24,6 +24,14 @@ const settings = {
     openCallback: false,
     closeCallback: false,
   },
+  'pop-up-callme-modal': {
+    openCallback: () => {
+      const openedModal = document.querySelector('.modal.is-active');
+      setTimeout(() => {
+        openedModal.querySelector('input[type=text]').focus();
+      }, 10);
+    },
+  },
 };
 
 const initModals = () => {

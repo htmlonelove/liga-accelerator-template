@@ -1,84 +1,84 @@
 .feedback-block {
-  background: #00b3ff url(../../img/Polygon.svg) no-repeat -.4% 93%;
   display: flex;
   flex-direction: row;
 
+  padding: 166px 0 248px;
+
+  background: #00b3ff url(../../img/Polygon.svg) no-repeat -.4% 93%;
 
   align-items: center;
   justify-content: center;
-  padding: 166px 0 248px;
 }
 
 .feedback-block img {
   width: 510px;
   height: 285px;
-
-  margin-right: 115px;
   margin-top: 18px;
+  margin-right: 115px;
   margin-left: -10px;
 }
 
 .feedback-block__wrapper {
   display: flex;
   flex-direction: column;
+
   flex-wrap: wrap;
 }
 
 .feedback-block__wrapper h3 {
   font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 400;
   font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 51px;
 
-  color: #FFFFFF;
-
+  margin: 0 0 11px 0;
   padding: 0;
 
-  margin: 0 0 11px 0;
+  color: #fff;
 }
 
 .feedback-block__wrapper p {
   font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 22px;
 
-  color: #FFFFFF;
   margin: 0;
-  padding: 0;
-
-  padding-left: 5px;
   margin-bottom: 35px;
+  padding: 0;
+  padding-left: 5px;
 
+  color: #fff;
 }
 
 .feedback-block__wrapper form {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 580px;
 
+  width: 580px;
   margin-left: 5px;
+
+  flex-wrap: wrap;
 }
 
 .feedback-block__wrapper input {
-  width: 275px;
-  height: 50px;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
   font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 22px;
 
-  color: #FFFFFF;
-  border: none;
-
-  padding: 10px 15px;
+  width: 275px;
+  height: 50px;
   margin-bottom: 20px;
+  padding: 10px 15px;
+
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background: rgba(4, 20, 39, .15);
 }
 
 .feedback-block__wrapper input:not(:nth-child(2n)) {
@@ -86,100 +86,107 @@
 }
 
 .feedback-block__wrapper textarea {
-  width: 580px;
-  height: 155px;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
   font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 22px;
 
-  color: #FFFFFF;
-  border: none;
-
-  padding: 23px 15px;
+  width: 580px;
+  height: 155px;
   margin-bottom: 35px;
+  padding: 23px 15px;
+
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background: rgba(4, 20, 39, .15);
 }
 
 .feedback-block__wrapper input::placeholder,
 .feedback-block__wrapper textarea::placeholder {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .feedback-block__wrapper button {
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19px;
+
   width: 265px;
   height: 45px;
-  background: #041427;
-  border-radius: 3px;
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
-  color: #FFFFFF;
-  border: none;
-
   margin-right: 76px;
   padding: 4px 0 0 0;
+
+  text-align: center;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background: #041427;
 }
 
-.feedback-block__wrapper input[type='checkbox']{
+.feedback-block__wrapper input[type='checkbox'] {
   display: none;
 }
 
 .feedback-block__wrapper label {
   font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 16px;
-
-  color: #FFFFFF;
-
-  opacity: 0.8;
 
   position: relative;
 
   width: 200px;
   margin-top: 15px;
+
   cursor: pointer;
+
+  opacity: .8;
+  color: #fff;
 }
 
 .feedback-block__wrapper label::before {
   position: absolute;
-  content: '';
   top: 7px;
   left: -26px;
+
   display: block;
+
   width: 15px;
   height: 15px;
-  border: 1px solid #FFFFFF;
+
+  content: '';
+
+  border: 1px solid #fff;
   border-radius: 2px;
 }
 
 .feedback-block__wrapper label::after {
   position: absolute;
-  content: '';
   top: 11px;
   left: -23px;
+
   display: block;
-  border: 1px solid #FFFFFF;
-  border-top: none;
-    border-right: none;
 
   width: 7px;
   height: 4px;
+
+  content: '';
   transform: rotate(-45deg);
+
   opacity: 0;
-  
+  border: 1px solid #fff;
+  border-top: none;
+  border-right: none;
 }
 
-.feedback-block__wrapper input[type='checkbox']:checked + label::after {
+.feedback-block__wrapper input[type='checkbox']:checked+label::after {
   opacity: 1;
 }

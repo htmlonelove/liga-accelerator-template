@@ -36,6 +36,7 @@ export class Modals {
   }
 
   _setSettings(settingKey = this._settingKey) {
+
     if (!this._settings[settingKey]) {
       return;
     }
