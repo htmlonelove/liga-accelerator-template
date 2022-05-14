@@ -7,6 +7,10 @@
   background: #041827;
 
   align-items: center;
+
+  @include vp-1220 {
+    padding: 56px 50px 45px;
+  }
 }
 
 .goods-services-block h3 {
@@ -21,6 +25,11 @@
   padding: 0;
 
   color: #fff;
+
+  @include vp-1220 {
+    width: 100%;
+    margin: 0 0 37px;
+  }
 }
 
 .goods-services-block__list {
@@ -35,15 +44,31 @@
   list-style: none;
 
   flex-wrap: wrap;
+
+  @include vp-1220 {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 .goods-services-block__item {
   width: 350px;
   min-height: 650px;
+
+  @include vp-1220 {
+    width: 100%;
+    margin-right: 0;
+    min-height: 250px;
+    margin-bottom: 30px;
+  }
 }
 
 .goods-services-block__item:not(:nth-child(3n+3)) {
   margin-right: 85px;
+
+  @include vp-1220 {
+    margin-right: 0;
+  }
 }
 
 .goods-services-block__item a {
@@ -62,6 +87,10 @@
   padding: 47px 40px;
 
   color: #fff;
+
+  @include vp-1220 {
+    padding: 37px 45px;
+  }
 }
 
 .goods-services-block__item a::before {
@@ -78,6 +107,10 @@
 
   border-radius: 3px 0 0 0;
   background: #00b2ff;
+
+  @include vp-1220 {
+    right: 0px;
+  }
 }
 
 .goods-services-block__item a::after {
@@ -98,20 +131,41 @@
   border-left: transparent;
   border-radius: 1px;
   background-color: transparent;
+
+  @include vp-1220 {
+    right: 26px;
+    bottom: 27px;
+  }
 }
 
 
 .goods-services-block__item:nth-child(3n+1) a {
   background: url(../../img/goods-service-block__item_img-1.png) no-repeat 0 0;
   background-size: contain;
+
+  @include vp-1220 {
+    background: url(../../img/goods-service-block__item_img-tablet-1.png) no-repeat 0 0;
+    background-size: cover;
+  }
 }
 
 .goods-services-block__item:nth-child(3n+2) a {
   background: url(../../img/goods-service-block__item_img-2.png) no-repeat 0 0;
   background-size: contain;
+
+  @include vp-1220 {
+    background: url(../../img/goods-service-block__item_img-tablet-2.png) no-repeat 0 0;
+    background-size: cover;
+  }
+
 }
 
 .goods-services-block__item:nth-child(3n+3) a {
   background: url(../../img/goods-service-block__item_img-3.png) no-repeat 0 0;
   background-size: contain;
+
+  @include vp-1220 {
+    background: url(../../img/goods-service-block__item_img-tablet-3.png) no-repeat 0 0;
+    background-size: cover;
+  }
 }

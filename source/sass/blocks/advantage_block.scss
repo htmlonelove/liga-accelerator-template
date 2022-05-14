@@ -3,6 +3,10 @@
 
   color: #000;
   background-color: #f8fdff;
+
+  @include vp-1220 {
+    padding: 80px 50px 0;
+  }
 }
 
 .advantage-block__list {
@@ -15,6 +19,10 @@
 
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include vp-1220 {
+    width: 100%;
+  }
 }
 
 .advantage-block__item {
@@ -32,6 +40,13 @@
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
   background-color: #f8fdff;
+
+  @include vp-1220 {
+    max-width: 48%;
+    min-width: 320px;
+    padding-bottom: 28px;
+    min-height: 360px;
+  }
 }
 
 
@@ -42,6 +57,10 @@
   margin-bottom: 21px;
 
   fill: #00b2ff;
+
+  @include vp-1220 {
+    margin-bottom: 15px;
+  }
 }
 
 
@@ -59,6 +78,10 @@
   padding: 0;
 
   align-items: center;
+
+  @include vp-1220 {
+    margin-bottom: 8px;
+  }
 }
 
 .advantage-block__item p {

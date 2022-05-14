@@ -3,12 +3,24 @@
   margin-top: -18px;
 
   background: #041827 url(../img/main_background.jpg) no-repeat 0 0;
+
+  @include vp-1220 {
+    min-height: auto;
+    margin-top: -15px;
+    background: #041827 url(../img/main_background-tablet.png) no-repeat 0 98%;
+    background-size: cover;
+  }
 }
 
 .main-block__wrapper {
   width: 970px;
   margin: 0 auto 0;
   padding: 202px 0 0;
+
+  @include vp-1220 {
+    width: 100%;
+    padding: 94px 0 204px 50px;
+  }
 }
 
 .main-block__wrapper h2 {
@@ -18,15 +30,19 @@
   font-style: normal;
   line-height: 94px;
 
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
   padding: 0;
 
   letter-spacing: .07em;
-  letter-spacing: 6.1px;
   text-transform: uppercase;
 
   color: #f2f5f7;
+
+  @include vp-1220 {
+    font-size: 64px;
+    line-height: 75px;
+    margin: 0;
+  }
 }
 
 .main-block__wrapper p {
@@ -41,6 +57,10 @@
   padding: 0;
 
   color: #f2f5f7;
+
+  @include vp-1220 {
+    margin: 0 0 57px;
+  }
 }
 
 .main-block__wrapper button {
@@ -61,4 +81,11 @@
   border: none;
   border-radius: 3px;
   background-color: #00b2ff;
+
+  @include vp-1220 {
+    margin: 0 0 0 45px;
+    padding: 0px 0 0 0;
+    width: 410px;
+    height: 55px;
+  }
 }

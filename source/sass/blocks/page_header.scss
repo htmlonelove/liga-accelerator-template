@@ -15,6 +15,19 @@
   padding: 30px 0;
 
   color: $color-alice-blue;
+
+  @include vp-1220 {
+    width: 100%;
+    justify-content: space-between;
+
+    padding: 20px 50px;
+  }
+}
+
+.page-header__logo {
+  @include vp-1220 {
+    margin-right: auto;
+  }
 }
 
 .page-header__email {
@@ -34,6 +47,17 @@
   color: $color-alice-blue;
 
   justify-content: space-between;
+
+  @include vp-1220 {
+    width: 50px;
+    margin: 10px 10px 0 0;
+  }
+}
+
+.page-header__email span{
+  @include vp-1220 {
+    display: none;
+  }
 }
 
 .page-header__phone {
@@ -52,6 +76,17 @@
   color: $color-alice-blue;
 
   justify-content: space-between;
+
+  @include vp-1220 {
+    width: 50px;
+    margin: 10px 0 0 0;
+  }
+}
+
+.page-header__phone span{
+  @include vp-1220 {
+    display: none;
+  }
 }
 
 .page-header_callme-btn {
@@ -73,4 +108,8 @@
   border: 1px solid $color-alice-blue;
   border-radius: 3px;
   background-color: $color-transparent;
+
+  @include vp-1220 {
+    display: none;
+  }
 }

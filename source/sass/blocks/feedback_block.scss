@@ -8,6 +8,11 @@
 
   align-items: center;
   justify-content: center;
+
+  @include vp-1220 {
+    padding: 46px 0 125px;
+    background-image: none;
+  }
 }
 
 .feedback-block img {
@@ -16,6 +21,10 @@
   margin-top: 18px;
   margin-right: 115px;
   margin-left: -10px;
+
+  @include vp-1220 {
+    display: none;
+  }
 }
 
 .feedback-block__wrapper {
@@ -23,6 +32,11 @@
   flex-direction: column;
 
   flex-wrap: wrap;
+
+  @include vp-1220 {
+    width: 100%;
+    padding: 0 50px;
+  }
 }
 
 .feedback-block__wrapper h3 {
@@ -36,6 +50,10 @@
   padding: 0;
 
   color: #fff;
+
+  @include vp-1220 {
+    margin: 0 0 6px;
+  }
 }
 
 .feedback-block__wrapper p {
@@ -51,6 +69,11 @@
   padding-left: 5px;
 
   color: #fff;
+
+  @include vp-1220 {
+    margin: 0 0 25px;
+    padding: 0;
+  }
 }
 
 .feedback-block__wrapper form {
@@ -61,6 +84,13 @@
   margin-left: 5px;
 
   flex-wrap: wrap;
+
+  @include vp-1220 {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+    padding: 0;
+  }
 }
 
 .feedback-block__wrapper input {
@@ -79,10 +109,19 @@
   border: none;
   border-radius: 3px;
   background: rgba(4, 20, 39, .15);
+
+  @include vp-1220 {
+    width: 48%;
+    min-width: 320px;
+  }
 }
 
 .feedback-block__wrapper input:not(:nth-child(2n)) {
   margin-right: 30px;
+
+  @include vp-1220 {
+    margin-right: 0;
+  }
 }
 
 .feedback-block__wrapper textarea {
@@ -101,6 +140,11 @@
   border: none;
   border-radius: 3px;
   background: rgba(4, 20, 39, .15);
+
+  @include vp-1220 {
+    width: 100%;
+    padding: 30px 15px;
+  }
 }
 
 .feedback-block__wrapper input::placeholder,
@@ -128,6 +172,12 @@
   border: none;
   border-radius: 3px;
   background: #041427;
+
+  @include vp-1220 {
+    margin-right: 0;
+    width: 40%;
+    min-width: 265px;
+  }
 }
 
 .feedback-block__wrapper input[type='checkbox'] {
@@ -150,6 +200,12 @@
 
   opacity: .8;
   color: #fff;
+
+  @include vp-1220 {
+    width: 44%;
+    max-width: 345px;
+    margin-top: 10px;
+  }
 }
 
 .feedback-block__wrapper label::before {
@@ -166,6 +222,11 @@
 
   border: 1px solid #fff;
   border-radius: 2px;
+
+  @include vp-1220 {
+    top: 7px;
+    left: -25px;
+  }
 }
 
 .feedback-block__wrapper label::after {
@@ -185,6 +246,11 @@
   border: 1px solid #fff;
   border-top: none;
   border-right: none;
+
+  @include vp-1220 {
+    top: 11px;
+    left: -22px;
+  }
 }
 
 .feedback-block__wrapper input[type='checkbox']:checked+label::after {

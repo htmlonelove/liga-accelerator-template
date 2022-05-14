@@ -3,16 +3,23 @@
   max-width: 1920px;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-  @include vp-1439 {
-    padding: 0 32px;
+  @include vp-1220 {
+
   }
 
   @include vp-1023 {
-    padding: 0 24px;
+
   }
 
   @include vp-767 {
-    padding: 0 16px;
+
   }
 }
+
+/* * {
+  outline: 1px solid #f00 !important;
+}*/
