@@ -1,9 +1,14 @@
 .page-header {
   position: sticky;
+  top: 0;
   z-index: 10;
 
   color: $color-alice-blue;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+
+  @include vp-1220 {
+    position: inherit;
+  }
 }
 
 .page-header__wrapper {
@@ -22,11 +27,28 @@
 
     padding: 20px 50px;
   }
+
+  @include vp-770 {
+    padding: 15px 26px 20px;
+  }
 }
 
 .page-header__logo {
   @include vp-1220 {
     margin-right: auto;
+  }
+
+  @include vp-770 {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+  }
+}
+
+.page-header__logo svg {
+  @include vp-770 {
+    width: auto;
+    height: 35px;
   }
 }
 
@@ -48,13 +70,22 @@
 
   justify-content: space-between;
 
+  :hover {
+    color: $color-deep-sky-blue;
+  }
+
   @include vp-1220 {
     width: 50px;
     margin: 10px 10px 0 0;
   }
+
+  @include vp-770 {
+    width: 40px;
+    margin: 5px 20px 0 0px;
+  }
 }
 
-.page-header__email span{
+.page-header__email span {
   @include vp-1220 {
     display: none;
   }
@@ -77,9 +108,18 @@
 
   justify-content: space-between;
 
+  :hover {
+    color: $color-deep-sky-blue;
+  }
+
   @include vp-1220 {
     width: 50px;
-    margin: 10px 0 0 0;
+    margin: 10px 2px 0 0;
+  }
+
+  @include vp-770 {
+    width: 40px;
+    margin: 5px 0 0;
   }
 }
 
@@ -103,13 +143,19 @@
   text-align: center;
   letter-spacing: .05em;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: $color-alice-blue;
   border: 1px solid $color-alice-blue;
-  border-radius: 3px;
   background-color: $color-transparent;
+  border-radius: 3px;
 
   @include vp-1220 {
     display: none;
   }
+}
+
+.page-header_callme-btn:hover {
+  color: $color-deep-sky-blue;
+  border: 1px solid $color-deep-sky-blue;
 }

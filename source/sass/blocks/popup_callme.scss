@@ -32,7 +32,7 @@
 
   cursor: pointer;
 
-  background-color: transparent;
+  background-color: $color-transparent;
 }
 
 .pop-up-callme .pop-up-callme__cancel::before {
@@ -47,7 +47,7 @@
   transform: rotate(45deg);
 
   border-radius: 5px;
-  background: #fff;
+  background: $color-default-white;
 }
 
 .pop-up-callme .pop-up-callme__cancel::after {
@@ -62,7 +62,7 @@
   transform: rotate(-45deg);
 
   border-radius: 5px;
-  background: #fff;
+  background: $color-default-white;
 }
 
 .pop-up-callme h2 {
@@ -75,7 +75,7 @@
   margin: 0 0 4px 0;
   /* or 42px */
 
-  color: #fff;
+  color: $color-default-white;
 }
 
 .pop-up-callme form {
@@ -92,7 +92,7 @@
 
   margin: 0 0 38px 0;
 
-  color: #fff;
+  color: $color-default-white;
 }
 
 
@@ -108,7 +108,7 @@
   margin-bottom: 20px;
   padding: 14px 15px;
 
-  color: #fff;
+  color: $color-default-white;
   border: none;
   border-radius: 3px;
   background: rgba(4, 20, 39, .15);
@@ -125,7 +125,7 @@
   margin-bottom: 25px;
   padding: 24px 15px;
 
-  color: #fff;
+  color: $color-default-white;
   border: none;
   border-radius: 3px;
   background: rgba(4, 20, 39, .15);
@@ -133,7 +133,7 @@
 
 .pop-up-callme input::placeholder,
 .pop-up-callme textarea::placeholder {
-  color: #fff;
+  color: $color-default-white;
 }
 
 .pop-up-callme button {
@@ -153,7 +153,7 @@
   letter-spacing: .05em;
   text-transform: uppercase;
 
-  color: #fff;
+  color: $color-default-white;
   border: none;
   border-radius: 3px;
   background: #041427;
@@ -177,7 +177,7 @@
   cursor: pointer;
 
   opacity: .8;
-  color: #fff;
+  color: $color-default-white;
 }
 
 .pop-up-callme label::before {
@@ -192,7 +192,7 @@
 
   content: '';
 
-  border: 1px solid #fff;
+  border: 1px solid $color-default-white;
   border-radius: 2px;
 }
 
@@ -212,7 +212,7 @@
   transform: rotate(-45deg);
 
   opacity: 0;
-  border: 1px solid #fff;
+  border: 1px solid $color-default-white;
   border-top: none;
   border-right: none;
 }

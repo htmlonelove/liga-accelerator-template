@@ -2,12 +2,12 @@
   min-height: 776px;
   margin-top: -18px;
 
-  background: #041827 url(../img/main_background.jpg) no-repeat 0 0;
+  background: $color-black-pearl url(../img/main_background.jpg) no-repeat 0 0;
 
   @include vp-1220 {
     min-height: auto;
     margin-top: -15px;
-    background: #041827 url(../img/main_background-tablet.png) no-repeat 0 98%;
+    background: $color-black-pearl url(../img/main_background-tablet.png) no-repeat 0 98%;
     background-size: cover;
   }
 }
@@ -20,6 +20,10 @@
   @include vp-1220 {
     width: 100%;
     padding: 94px 0 204px 50px;
+  }
+
+  @include vp-770 {
+    padding: 96px 0 189px 25px;
   }
 }
 
@@ -36,12 +40,31 @@
   letter-spacing: .07em;
   text-transform: uppercase;
 
-  color: #f2f5f7;
+  color: $color-alice-blue;
 
   @include vp-1220 {
     font-size: 64px;
     line-height: 75px;
     margin: 0;
+  }
+
+  @include vp-770 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 7px;
+  }
+}
+
+.main-block__wrapper .tablet-and-more-device {
+  @include vp-770 {
+    display: none;
+  }
+}
+
+.main-block__wrapper .mobile-device {
+  display: none;
+  @include vp-770 {
+    display: inherit;
   }
 }
 
@@ -52,14 +75,25 @@
   font-style: normal;
   line-height: 34px;
 
+  width: 650px;
   margin: 0;
   margin-bottom: 47px;
   padding: 0;
 
-  color: #f2f5f7;
+  color: $color-alice-blue;
 
   @include vp-1220 {
     margin: 0 0 57px;
+    width: auto;
+    max-width: 650px;
+  }
+
+  @include vp-770 {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 45px;
+
+    width: 100%;
   }
 }
 
@@ -77,10 +111,11 @@
   letter-spacing: .05em;
   text-transform: uppercase;
 
-  color: #f2f5f7;
+  color: $color-alice-blue;
   border: none;
   border-radius: 3px;
-  background-color: #00b2ff;
+  background-color: $color-deep-sky-blue;
+  cursor: pointer;
 
   @include vp-1220 {
     margin: 0 0 0 45px;
@@ -88,4 +123,17 @@
     width: 410px;
     height: 55px;
   }
+
+  @include vp-770 {
+    width: 270px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 auto;
+  }
+}
+
+.main-block__wrapper button:hover {
+  color: $color-deep-sky-blue;
+  background-color: $color-alice-blue;
 }

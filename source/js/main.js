@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {initScrolls} from './modules/scrollToModule/init-scrolls';
 import {initTextExpanders} from './modules/textExpander/init-textExpander';
 import {initMasks} from './modules/masks/init-masks';
+import {initAccordion} from './modules/accordion/init-accordion';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,10 +19,24 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    let isMobileView = false;
+
     initModals();
     initScrolls();
-    initTextExpanders();
+
     initMasks();
+    const breakpoint = window.matchMedia('(max-width:770px)');
+    const breakpointChecker = () => {
+      if (breakpoint.matches) {
+        initAccordion();
+        isMobileView = true;
+      } else {
+        return;
+      }
+    };
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+    initTextExpanders(isMobileView);
   });
 
 });

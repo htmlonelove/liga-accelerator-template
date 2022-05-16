@@ -3,10 +3,8 @@ import {TextExpander} from './textExpander';
 let expandTextElements;
 
 
-const initTextExpanders = () => {
-  expandTextElements = new TextExpander();
-
-  // Используйте в разработке экспортируемую переменную modals, window сделан для бэкэнда
+const initTextExpanders = (isMobileView) => {
+  expandTextElements = new TextExpander(isMobileView);
   window.expandTextElements = expandTextElements;
 };
 

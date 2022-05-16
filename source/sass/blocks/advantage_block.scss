@@ -2,10 +2,14 @@
   padding: 120px 0 0 0;
 
   color: #000;
-  background-color: #f8fdff;
+  background-color: $color-alice-blue;
 
   @include vp-1220 {
     padding: 80px 50px 0;
+  }
+
+  @include vp-770 {
+    padding: 50px 25px 0;
   }
 }
 
@@ -36,10 +40,10 @@
 
   list-style: none;
 
-  color: #041827;
+  color: $color-black-pearl;
   border: 1px solid #ebebeb;
-  border-left: 5px solid #00b2ff;
-  background-color: #f8fdff;
+  border-left: 5px solid $color-deep-sky-blue;
+  background-color: $color-alice-blue;
 
   @include vp-1220 {
     max-width: 48%;
@@ -47,20 +51,39 @@
     padding-bottom: 28px;
     min-height: 360px;
   }
+
+  @include vp-770 {
+    max-width: 100%;
+    min-width: 270px;
+    min-height: 340px;
+    padding: 30px 25px;
+  }
 }
 
-
+.advantage-block__item:hover {
+  color: #F2F5F6;
+  background: $color-deep-sky-blue;
+}
 
 .advantage-block__item svg {
   width: 35px;
   height: 35px;
   margin-bottom: 21px;
 
-  fill: #00b2ff;
+  fill: $color-deep-sky-blue;
 
   @include vp-1220 {
     margin-bottom: 15px;
   }
+
+  @include vp-770 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.advantage-block__item:hover svg {
+  fill: #F2F5F6;
 }
 
 
@@ -82,6 +105,11 @@
   @include vp-1220 {
     margin-bottom: 8px;
   }
+
+  @include vp-770 {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .advantage-block__item p {
@@ -93,5 +121,8 @@
 
   margin: 0;
 
-  color: #041827;
+  @include vp-770 {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
