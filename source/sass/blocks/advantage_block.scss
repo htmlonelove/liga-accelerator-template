@@ -1,7 +1,7 @@
 .advantage-block {
   padding: 120px 0 0 0;
 
-  color: #000;
+  color: #000000;
   background-color: $color-alice-blue;
 
   @include vp-1220 {
@@ -58,7 +58,7 @@
 }
 
 .advantage-block__item:hover {
-  color: #F2F5F6;
+  color: #f2f5f6;
   background: $color-deep-sky-blue;
 }
 
@@ -80,12 +80,12 @@
 }
 
 .advantage-block__item:hover svg {
-  fill: #F2F5F6;
+  fill: #f2f5f6;
 }
 
 
 .advantage-block__item h3 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -110,7 +110,7 @@
 }
 
 .advantage-block__item p {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;

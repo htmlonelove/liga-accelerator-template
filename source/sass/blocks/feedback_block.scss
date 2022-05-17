@@ -4,7 +4,7 @@
 
   padding: 166px 0 248px;
 
-  background: #00b3ff url("../img/Polygon.svg") no-repeat -.4% 93%;
+  background: $color-deep-sky-blue url("../img/Polygon.svg") no-repeat -0.4% 93%;
 
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@
 }
 
 .feedback-block__wrapper h3 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -71,7 +71,7 @@
 }
 
 .feedback-block__wrapper p {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -114,7 +114,7 @@
 }
 
 .feedback-block__wrapper input {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -128,7 +128,7 @@
   color: $color-default-white;
   border: none;
   border-radius: 3px;
-  background: rgba(4, 20, 39, .15);
+  background: rgba(4, 20, 39, 0.15);
 
   @include vp-1220 {
     width: 48%;
@@ -141,7 +141,7 @@
   }
 }
 
-.feedback-block__wrapper input:not(:nth-child(2n)) {
+.feedback-block__wrapper input:not(:nth-last-of-type(2n)) {
   margin-right: 30px;
 
   @include vp-1220 {
@@ -150,7 +150,7 @@
 }
 
 .feedback-block__wrapper textarea {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -164,7 +164,7 @@
   color: $color-default-white;
   border: none;
   border-radius: 3px;
-  background: rgba(4, 20, 39, .15);
+  background: rgba(4, 20, 39, 0.15);
 
   @include vp-1220 {
     width: 100%;
@@ -184,7 +184,7 @@
 }
 
 .feedback-block__wrapper button {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -192,11 +192,11 @@
 
   width: 265px;
   height: 45px;
-  margin-right: 76px;
+  margin-right: 50px;
   padding: 4px 0 0 0;
 
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   color: $color-default-white;
@@ -223,7 +223,7 @@
 }
 
 .feedback-block__wrapper label {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -231,59 +231,65 @@
 
   position: relative;
 
-  width: 200px;
+  width: 226px;
   margin-top: 15px;
+  padding: 0 0 0 26px;
+  box-sizing: border-box;
 
   cursor: pointer;
 
-  opacity: .8;
+  opacity: 0.8;
   color: $color-default-white;
 
   @include vp-1220 {
-    width: 44%;
-    max-width: 345px;
+    width: 48%;
+    max-width: 375px;
     margin-top: 10px;
   }
 
   @include vp-770 {
     width: 100%;
-    margin-top: 24px;
-    margin-left: 30px;
+    margin-top: 25px;
+    padding: 0 0 0 31px;
   }
 }
 
 .feedback-block__wrapper label::before {
   position: absolute;
   top: 7px;
-  left: -26px;
+  left: 0;
 
   display: block;
 
   width: 15px;
   height: 15px;
 
-  content: '';
+  content: "";
 
   border: 1px solid $color-default-white;
   border-radius: 2px;
 
   @include vp-1220 {
     top: 7px;
-    left: -25px;
+    left: 1px;
+  }
+
+  @include vp-770 {
+    left: 5px;
   }
 }
 
 .feedback-block__wrapper label::after {
   position: absolute;
   top: 11px;
-  left: -23px;
+  left: 3px;
 
   display: block;
 
   width: 7px;
   height: 4px;
 
-  content: '';
+  content: "";
   transform: rotate(-45deg);
 
   opacity: 0;
@@ -293,10 +299,14 @@
 
   @include vp-1220 {
     top: 11px;
-    left: -22px;
+    left: 4px;
+  }
+
+  @include vp-770 {
+    left: 9px;
   }
 }
 
-.feedback-block__wrapper input[type='checkbox']:checked+label::after {
+.feedback-block__wrapper input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }

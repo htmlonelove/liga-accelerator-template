@@ -43,7 +43,7 @@
 }
 
 .about-company-block__info h3 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -67,7 +67,7 @@
 }
 
 .about-company-block__info p {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -91,7 +91,7 @@
 }
 
 .about-company-block__info button {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
@@ -103,7 +103,7 @@
 
   cursor: pointer;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   color: $color-deep-sky-blue;
@@ -111,7 +111,7 @@
   border-radius: 3px;
   background-color: $color-transparent;
 
-  @include vp-1220{
+  @include vp-1220 {
     margin-top: -4px;
   }
 

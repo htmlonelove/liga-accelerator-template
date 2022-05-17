@@ -28,7 +28,7 @@
 }
 
 .main-block__wrapper h2 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   font-weight: 700;
   font-style: normal;
@@ -37,7 +37,7 @@
   margin: 0 0 30px 0;
   padding: 0;
 
-  letter-spacing: .07em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 
   color: $color-alice-blue;
@@ -63,13 +63,14 @@
 
 .main-block__wrapper .mobile-device {
   display: none;
+
   @include vp-770 {
     display: inherit;
   }
 }
 
 .main-block__wrapper p {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 22px;
   font-weight: 400;
   font-style: normal;
@@ -98,7 +99,7 @@
 }
 
 .main-block__wrapper button {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
@@ -108,18 +109,17 @@
 
   cursor: pointer;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   color: $color-alice-blue;
   border: none;
   border-radius: 3px;
   background-color: $color-deep-sky-blue;
-  cursor: pointer;
 
   @include vp-1220 {
     margin: 0 0 0 45px;
-    padding: 0px 0 0 0;
+    padding: 0 0 0 0;
     width: 410px;
     height: 55px;
   }

@@ -18,7 +18,7 @@
 }
 
 .goods-services-block h3 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   font-style: normal;
@@ -52,6 +52,7 @@
 
 .goods-services-block .mobile-device {
   display: none;
+
   @include vp-770 {
     display: inherit;
   }
@@ -63,7 +64,6 @@
 
   width: 1220px;
   margin: 0 auto;
-  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -97,7 +97,7 @@
 }
 
 .goods-services-block__item a {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -135,13 +135,13 @@
   width: 60px;
   height: 60px;
 
-  content: '';
+  content: "";
 
   border-radius: 3px 0 0 0;
   background: $color-deep-sky-blue;
 
   @include vp-1220 {
-    right: 0px;
+    right: 0;
   }
 
   @include vp-770 {
@@ -164,7 +164,7 @@
   width: 6px;
   height: 6px;
 
-  content: '';
+  content: "";
   transform: rotate(-45deg);
 
   border: 1px solid $color-alice-blue;
@@ -221,7 +221,6 @@
     background: url("../img/goods-service-block__item_img-mobile-2.png") no-repeat 0 0;
     background-size: cover;
   }
-
 }
 
 .goods-services-block__item:nth-child(3n+3) a {

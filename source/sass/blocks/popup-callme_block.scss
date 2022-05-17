@@ -33,7 +33,7 @@
   width: 1px;
   height: 26px;
 
-  content: '';
+  content: "";
   transform: rotate(45deg);
 
   border-radius: 5px;
@@ -48,7 +48,7 @@
   width: 1px;
   height: 26px;
 
-  content: '';
+  content: "";
   transform: rotate(-45deg);
 
   border-radius: 5px;
@@ -56,7 +56,7 @@
 }
 
 .pop-up-callme h2 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
   font-style: normal;
@@ -73,7 +73,7 @@
 }
 
 .pop-up-callme p {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -84,10 +84,8 @@
   color: $color-default-white;
 }
 
-
-
 .pop-up-callme input {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -100,11 +98,11 @@
   color: $color-default-white;
   border: none;
   border-radius: 3px;
-  background: rgba(4, 20, 39, .15);
+  background: rgba(4, 20, 39, 0.15);
 }
 
 .pop-up-callme textarea {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -117,7 +115,7 @@
   color: $color-default-white;
   border: none;
   border-radius: 3px;
-  background: rgba(4, 20, 39, .15);
+  background: rgba(4, 20, 39, 0.15);
 }
 
 .pop-up-callme input::placeholder,
@@ -126,7 +124,7 @@
 }
 
 .pop-up-callme button {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -139,7 +137,7 @@
 
   cursor: pointer;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   color: $color-default-white;
@@ -149,7 +147,7 @@
 }
 
 .pop-up-callme label {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -161,7 +159,7 @@
 
   cursor: pointer;
 
-  opacity: .8;
+  opacity: 0.8;
   color: $color-default-white;
 }
 
@@ -175,7 +173,7 @@
   width: 15px;
   height: 15px;
 
-  content: '';
+  content: "";
 
   border: 1px solid $color-default-white;
   border-radius: 2px;
@@ -191,9 +189,7 @@
   width: 7px;
   height: 4px;
 
-  content: '';
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
+  content: "";
   transform: rotate(-45deg);
 
   opacity: 0;
@@ -202,6 +198,6 @@
   border-right: none;
 }
 
-.pop-up-callme input[type='checkbox']:checked+label::after {
+.pop-up-callme input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }

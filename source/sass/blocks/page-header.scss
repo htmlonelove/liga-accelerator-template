@@ -53,7 +53,7 @@
 }
 
 .page-header__email {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -81,7 +81,7 @@
 
   @include vp-770 {
     width: 40px;
-    margin: 5px 20px 0 0px;
+    margin: 5px 20px 0 0;
   }
 }
 
@@ -92,7 +92,7 @@
 }
 
 .page-header__phone {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -123,14 +123,14 @@
   }
 }
 
-.page-header__phone span{
+.page-header__phone span {
   @include vp-1220 {
     display: none;
   }
 }
 
 .page-header__callme-btn {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
@@ -141,7 +141,7 @@
   padding: 0 17px;
 
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   cursor: pointer;
 

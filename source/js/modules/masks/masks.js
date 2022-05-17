@@ -62,7 +62,7 @@ export class Masks {
       } else {
         newValue += mask[i];
       }
-      if (regexpValue[j] == undefined) {
+      if (typeof regexpValue[j] === 'undefined') {
         break;
       }
     }

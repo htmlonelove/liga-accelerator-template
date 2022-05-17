@@ -7,3 +7,22 @@
   height: 1px;
   margin: -1px;
 }
+
+.feedback-block__wrapper .visually-hidden {
+  position: absolute;
+
+  clip: rect(0 0 0 0);
+
+  width: 0;
+  height: 0;
+  margin: -1px;
+  display: inline;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.feedback-block__wrapper .visually-hidden::before,
+.feedback-block__wrapper .visually-hidden::after {
+  display: none;
+}
