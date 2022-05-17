@@ -1,0 +1,207 @@
+.pop-up-callme {
+  position: relative;
+
+  width: 500px;
+  height: 610px;
+  margin: 145px auto;
+  padding: 37px 40px;
+
+  border-radius: 3px;
+  background: $color-deep-sky-blue;
+}
+
+.pop-up-callme .pop-up-callme__cancel {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  background-color: $color-transparent;
+}
+
+.pop-up-callme .pop-up-callme__cancel::before {
+  position: absolute;
+  top: 8px;
+  left: 19px;
+
+  width: 1px;
+  height: 26px;
+
+  content: '';
+  transform: rotate(45deg);
+
+  border-radius: 5px;
+  background: $color-default-white;
+}
+
+.pop-up-callme .pop-up-callme__cancel::after {
+  position: absolute;
+  top: 8px;
+  left: 19px;
+
+  width: 1px;
+  height: 26px;
+
+  content: '';
+  transform: rotate(-45deg);
+
+  border-radius: 5px;
+  background: $color-default-white;
+}
+
+.pop-up-callme h2 {
+  font-family: 'Roboto Condensed';
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 42px;
+
+  margin: 0 0 4px 0;
+
+  color: $color-default-white;
+}
+
+.pop-up-callme form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-up-callme p {
+  font-family: 'PT Mono';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+
+  margin: 0 0 38px 0;
+
+  color: $color-default-white;
+}
+
+
+
+.pop-up-callme input {
+  font-family: 'PT Mono';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 14px 15px;
+
+  color: $color-default-white;
+  border: none;
+  border-radius: 3px;
+  background: rgba(4, 20, 39, .15);
+}
+
+.pop-up-callme textarea {
+  font-family: 'PT Mono';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+
+  height: 155px;
+  margin-bottom: 25px;
+  padding: 24px 15px;
+
+  color: $color-default-white;
+  border: none;
+  border-radius: 3px;
+  background: rgba(4, 20, 39, .15);
+}
+
+.pop-up-callme input::placeholder,
+.pop-up-callme textarea::placeholder {
+  color: $color-default-white;
+}
+
+.pop-up-callme button {
+  font-family: 'Roboto Condensed';
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 19px;
+
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-top: 6px;
+
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+
+  color: $color-default-white;
+  border: none;
+  border-radius: 3px;
+  background: $color-black-pearl;
+}
+
+.pop-up-callme label {
+  font-family: 'PT Mono';
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+
+  position: relative;
+
+  padding-left: 34px;
+
+  cursor: pointer;
+
+  opacity: .8;
+  color: $color-default-white;
+}
+
+.pop-up-callme label::before {
+  position: absolute;
+  top: 0;
+  left: 9px;
+
+  display: block;
+
+  width: 15px;
+  height: 15px;
+
+  content: '';
+
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.pop-up-callme label::after {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+
+  display: block;
+
+  width: 7px;
+  height: 4px;
+
+  content: '';
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+  opacity: 0;
+  border: 1px solid $color-default-white;
+  border-top: none;
+  border-right: none;
+}
+
+.pop-up-callme input[type='checkbox']:checked+label::after {
+  opacity: 1;
+}

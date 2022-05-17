@@ -42,10 +42,6 @@
   flex-direction: column;
 }
 
-.about-company-block__info p.is-hidden {
-  display: none;
-}
-
 .about-company-block__info h3 {
   font-family: 'Roboto Condensed';
   font-size: 36px;
@@ -91,12 +87,6 @@
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 18px;
-  }
-}
-
-.is-hidden--mobile {
-  @include vp-770 {
-    display: none;
   }
 }
 

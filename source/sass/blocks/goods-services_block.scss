@@ -194,47 +194,47 @@
 
 
 .goods-services-block__item:nth-child(3n+1) a {
-  background: url(../../img/goods-service-block__item_img-1.png) no-repeat 0 0;
+  background: url("../img/goods-service-block__item_img-1.png") no-repeat 0 0;
   background-size: contain;
 
   @include vp-1220 {
-    background: url(../../img/goods-service-block__item_img-tablet-1.png) no-repeat 0 0;
+    background: url("../img/goods-service-block__item_img-tablet-1.png") no-repeat 0 0;
     background-size: cover;
   }
 
   @include vp-770 {
-    background: url(../../img/goods-service-block__item_img-mobile-1.png) no-repeat 0 0;
+    background: url("../img/goods-service-block__item_img-mobile-1.png") no-repeat 0 0;
     background-size: cover;
   }
 }
 
 .goods-services-block__item:nth-child(3n+2) a {
-  background: url(../../img/goods-service-block__item_img-2.png) no-repeat 0 0;
+  background: url("../img/goods-service-block__item_img-2.png") no-repeat 0 0;
   background-size: contain;
 
   @include vp-1220 {
-    background: url(../../img/goods-service-block__item_img-tablet-2.png) no-repeat 0 0;
+    background: url("../img/goods-service-block__item_img-tablet-2.png") no-repeat 0 0;
     background-size: cover;
   }
 
   @include vp-770 {
-    background: url(../../img/goods-service-block__item_img-mobile-2.png) no-repeat 0 0;
+    background: url("../img/goods-service-block__item_img-mobile-2.png") no-repeat 0 0;
     background-size: cover;
   }
 
 }
 
 .goods-services-block__item:nth-child(3n+3) a {
-  background: url(../../img/goods-service-block__item_img-3.png) no-repeat 0 0;
+  background: url("../img/goods-service-block__item_img-3.png") no-repeat 0 0;
   background-size: contain;
 
   @include vp-1220 {
-    background: url(../../img/goods-service-block__item_img-tablet-3.png) no-repeat 0 0;
+    background: url("../img/goods-service-block__item_img-tablet-3.png") no-repeat 0 0;
     background-size: cover;
   }
 
   @include vp-770 {
-    background: url(../../img/goods-service-block__item_img-mobile-3.png) no-repeat 0 0;
+    background: url("../img/goods-service-block__item_img-mobile-3.png") no-repeat 0 0;
     background-size: cover;
   }
 }

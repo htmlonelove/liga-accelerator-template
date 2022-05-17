@@ -4,7 +4,7 @@
 
   padding: 166px 0 248px;
 
-  background: #00b3ff url(../../img/Polygon.svg) no-repeat -.4% 93%;
+  background: #00b3ff url("../img/Polygon.svg") no-repeat -.4% 93%;
 
   align-items: center;
   justify-content: center;
@@ -220,10 +220,6 @@
 .feedback-block__wrapper button:hover {
   color: #041427;
   background: $color-default-white;
-}
-
-.feedback-block__wrapper input[type='checkbox'] {
-  display: none;
 }
 
 .feedback-block__wrapper label {

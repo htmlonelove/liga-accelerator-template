@@ -20,14 +20,17 @@
 
 @import "blocks/btn";
 @import "blocks/modal";
-@import "blocks/page_header";
+@import "blocks/page-header";
 @import "blocks/main_block";
 @import "blocks/advantage_block";
 @import "blocks/about-company_block";
 @import "blocks/goods-services_block";
 @import "blocks/feedback_block";
-@import "blocks/page_footer";
-@import "blocks/popup_callme";
+@import "blocks/page-footer";
+@import "blocks/popup_block;";
+@import "blocks/popup-callme_block";
+@import "blocks/is-hidden;";
+@import "blocks/visually-hidden;";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

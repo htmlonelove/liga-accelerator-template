@@ -1,0 +1,38 @@
+.is-hidden--mobile {
+  @include vp-770 {
+    display: none;
+  }
+}
+
+.about-company-block__info p.is-hidden {
+  display: none;
+}
+
+.page-footer__wrapper h3.is-hidden::after {
+  @include vp-770 {
+    position: absolute;
+    top: 20px;
+    right: 33px;
+
+    display: block;
+
+    width: 1px;
+    height: 15px;
+
+    content: '';
+
+    background-color: $color-default-white;
+  }
+}
+
+.page-footer-link-list--first.is-hidden {
+  display:none;
+}
+
+.page-footer-link-list--second.is-hidden {
+  display:none;
+}
+
+.page-footer__contacts p.is-hidden {
+  display:none;
+}

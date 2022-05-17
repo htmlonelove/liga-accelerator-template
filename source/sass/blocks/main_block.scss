@@ -2,12 +2,12 @@
   min-height: 776px;
   margin-top: -18px;
 
-  background: $color-black-pearl url(../img/main_background.jpg) no-repeat 0 0;
+  background: $color-black-pearl url("../img/main_background.jpg") no-repeat 0 0;
 
   @include vp-1220 {
     min-height: auto;
     margin-top: -15px;
-    background: $color-black-pearl url(../img/main_background-tablet.png) no-repeat 0 98%;
+    background: $color-black-pearl url("../img/main_background-tablet.png") no-repeat 0 98%;
     background-size: cover;
   }
 }
