@@ -111,13 +111,15 @@
             <p>Мы проконсультируем Вас бесплатно</p>
             <form method="post">
               <input type="text" placeholder="Имя" name="user-name-feedback" id="user-name-feedback" required>
-              <label for="user-name-feedback" class="visually-hidden"></label>
+              <label for="user-name-feedback" class="visually-hidden">Ваше имя</label>
               <input type="tel" placeholder="Телефон" name="user-phone-feedback" id="user-phone-feedback" required data-phone-mask="+7(___)___-__-__" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}">
-              <label for="user-phone-feedback" class="visually-hidden"></label>
+              <label for="user-phone-feedback" class="visually-hidden">Ваш номер телефона</label>
               <textarea placeholder="Ваш вопрос"></textarea>
               <button type="submit">Задать вопрос</button>
-              <input type="checkbox" id="checkbox_feedback" class="visually-hidden" required checked>
-              <label for="checkbox_feedback">Я согласен на обработку  персональных данных</label>
+              <div class="feedback-block__agreement-wrapper">
+                <input type="checkbox" id="checkbox_feedback" class="visually-hidden" required checked>
+                <label for="checkbox_feedback">Я согласен на обработку  персональных данных</label>
+              </div>
             </form>
           </div>
         </section>
@@ -152,9 +154,9 @@
                 </a>
               </li>
             </ul>
-            <div class="footer-links">
-              <h3 data-expand-menu-button="footer-links" class="footer-links-heading">Разделы сайта</h3>
-              <ul class="page-footer-link-list page-footer-link-list--first" data-hide-footer-element="footer-links">
+            <div class="page-footer__links">
+              <h3 data-expand-menu-button="footer-links" class="page-footer__heading">Разделы сайта</h3>
+              <ul class="page-footer__link-list page-footer__link-list--first" data-hide-footer-element="footer-links">
                 <li>
                   <a href="#">О Компаниии</a>
                 </li>
@@ -168,7 +170,7 @@
                   <a href="#">Монтаж печатных плат</a>
                 </li>
               </ul>
-              <ul class="page-footer-link-list page-footer-link-list--second" data-hide-footer-element="footer-links">
+              <ul class="page-footer__link-list page-footer__link-list--second" data-hide-footer-element="footer-links">
                 <li>
                   <a href="#">Комплектующие</a>
                 </li>
@@ -193,15 +195,15 @@
 
     <!-- Модалки -->
     <section class="popup modal" data-modal="pop-up-callme-modal">
-      <div class="pop-up-callme">
-        <button class="pop-up-callme__cancel" data-close-modal></button>
+      <div class="popup-callme">
+        <button class="popup-callme__cancel" data-close-modal></button>
         <h2>Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем<br>вас бесплатно в удобное время</p>
         <form>
           <input type="text" placeholder="Имя" tabindex="0" autofocus name="user-name-popup" id="user-name-popup">
-          <label for="user-name-popup" class="visually-hidden"></label>
+          <label for="user-name-popup" class="visually-hidden">Ваше имя</label>
           <input type="tel" placeholder="Телефон" data-phone-mask="+7(___)___-__-__" name="user-phone-popup" id="user-phone-popup">
-          <label for="user-phone-popup" class="visually-hidden"></label>
+          <label for="user-phone-popup" class="visually-hidden">Ваш номер телефона</label>
           <textarea placeholder="Ваш вопрос"></textarea>
           <button type="submit">Отправить</button>
           <input type="checkbox" id="checkbox_callme" class="visually-hidden"  checked>

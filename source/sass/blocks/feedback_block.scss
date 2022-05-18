@@ -4,7 +4,7 @@
 
   padding: 166px 0 248px;
 
-  background: $color-deep-sky-blue url("../img/Polygon.svg") no-repeat -0.4% 93%;
+  background: $color-deep-sky-blue url("../img/polygon.svg") no-repeat -0.4% 93%;
 
   align-items: center;
   justify-content: center;
@@ -113,7 +113,8 @@
   }
 }
 
-.feedback-block__wrapper input {
+.feedback-block__wrapper input[type=text],
+.feedback-block__wrapper input[type=tel] {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
@@ -141,7 +142,7 @@
   }
 }
 
-.feedback-block__wrapper input:not(:nth-last-of-type(2n)) {
+.feedback-block__wrapper input:not(:nth-last-of-type(2n+1)) {
   margin-right: 30px;
 
   @include vp-1220 {
@@ -206,7 +207,7 @@
   cursor: pointer;
 
   @include vp-1220 {
-    margin-right: 0;
+    margin-right: 84px;
     width: 39%;
     min-width: 265px;
   }
@@ -214,6 +215,7 @@
   @include vp-770 {
     width: 100%;
     min-width: auto;
+    margin: 0;
   }
 }
 
@@ -222,7 +224,15 @@
   background: $color-default-white;
 }
 
-.feedback-block__wrapper label {
+.feedback-block__agreement-wrapper {
+  display: flex;
+
+  @include vp-1220 {
+    flex: auto;
+  }
+}
+
+.feedback-block__agreement-wrapper label {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 14px;
   font-weight: 400;
@@ -242,19 +252,19 @@
   color: $color-default-white;
 
   @include vp-1220 {
-    width: 48%;
-    max-width: 375px;
+    width: 100%;
+    max-width: 235px;
     margin-top: 10px;
   }
 
   @include vp-770 {
-    width: 100%;
+
     margin-top: 25px;
     padding: 0 0 0 31px;
   }
 }
 
-.feedback-block__wrapper label::before {
+.feedback-block__agreement-wrapper label::before {
   position: absolute;
   top: 7px;
   left: 0;
@@ -279,7 +289,7 @@
   }
 }
 
-.feedback-block__wrapper label::after {
+.feedback-block__agreement-wrapper label::after {
   position: absolute;
   top: 11px;
   left: 3px;
@@ -307,6 +317,6 @@
   }
 }
 
-.feedback-block__wrapper input[type="checkbox"]:checked + label::after {
+.feedback-block__agreement-wrapper input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }

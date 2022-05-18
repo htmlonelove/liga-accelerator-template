@@ -1,4 +1,4 @@
-.pop-up-callme {
+.popup-callme {
   position: relative;
 
   width: 500px;
@@ -10,7 +10,7 @@
   background: $color-deep-sky-blue;
 }
 
-.pop-up-callme .pop-up-callme__cancel {
+.popup-callme__cancel {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -19,13 +19,14 @@
   height: 40px;
   margin: 0;
   padding: 0;
+  border: none;
 
   cursor: pointer;
 
   background-color: $color-transparent;
 }
 
-.pop-up-callme .pop-up-callme__cancel::before {
+.popup-callme__cancel::before {
   position: absolute;
   top: 8px;
   left: 19px;
@@ -40,7 +41,7 @@
   background: $color-default-white;
 }
 
-.pop-up-callme .pop-up-callme__cancel::after {
+.popup-callme__cancel::after {
   position: absolute;
   top: 8px;
   left: 19px;
@@ -55,7 +56,7 @@
   background: $color-default-white;
 }
 
-.pop-up-callme h2 {
+.popup-callme h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -67,12 +68,12 @@
   color: $color-default-white;
 }
 
-.pop-up-callme form {
+.popup-callme form {
   display: flex;
   flex-direction: column;
 }
 
-.pop-up-callme p {
+.popup-callme p {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
@@ -84,7 +85,7 @@
   color: $color-default-white;
 }
 
-.pop-up-callme input {
+.popup-callme input {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
@@ -101,7 +102,7 @@
   background: rgba(4, 20, 39, 0.15);
 }
 
-.pop-up-callme textarea {
+.popup-callme textarea {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   font-weight: 400;
@@ -118,12 +119,12 @@
   background: rgba(4, 20, 39, 0.15);
 }
 
-.pop-up-callme input::placeholder,
-.pop-up-callme textarea::placeholder {
+.popup-callme input::placeholder,
+.popup-callme textarea::placeholder {
   color: $color-default-white;
 }
 
-.pop-up-callme button {
+.popup-callme button[type=submit] {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -146,7 +147,7 @@
   background: $color-black-pearl;
 }
 
-.pop-up-callme label {
+.popup-callme label {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 14px;
   font-weight: 400;
@@ -163,7 +164,7 @@
   color: $color-default-white;
 }
 
-.pop-up-callme label::before {
+.popup-callme label::before {
   position: absolute;
   top: 0;
   left: 9px;
@@ -179,7 +180,7 @@
   border-radius: 2px;
 }
 
-.pop-up-callme label::after {
+.popup-callme label::after {
   position: absolute;
   top: 4px;
   left: 12px;
@@ -198,6 +199,6 @@
   border-right: none;
 }
 
-.pop-up-callme input[type="checkbox"]:checked + label::after {
+.popup-callme input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
