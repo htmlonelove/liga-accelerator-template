@@ -3,8 +3,8 @@ import {Accordion} from './accordion';
 let footerShowHideElements;
 
 
-const initAccordion = () => {
-  footerShowHideElements = new Accordion();
+const initAccordion = (needToUseAccordion) => {
+  footerShowHideElements = new Accordion(needToUseAccordion);
   window.footerShowHideElements = footerShowHideElements;
 };
 

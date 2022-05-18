@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
         initAccordion();
         isMobileView = true;
       } else {
-        return;
+        initAccordion(false);
       }
     };
     breakpoint.addListener(breakpointChecker);

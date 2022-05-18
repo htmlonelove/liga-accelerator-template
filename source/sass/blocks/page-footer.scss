@@ -4,7 +4,7 @@
   background: $color-black-pearl;
 
   @include vp-1220 {
-    padding: 36px 50px 0;
+    padding: 36px 50px 55px;
   }
 
   @include vp-770 {
@@ -64,7 +64,7 @@
   }
 
   @include vp-770 {
-    padding: 13px 0 23px 4px;
+    padding: 20px 0 29px 6px;
     margin: 0 auto;
     justify-content: space-between;
     width: 144px;
@@ -98,14 +98,8 @@
 }
 
 .page-footer__links {
-  grid-column: 2 / 4;
+  grid-column: 2 / 3;
   grid-row: 1 / 2;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 500px;
-  padding: 20px 0 0;
 
   @include vp-1220 {
     grid-column: 1 / 2;
@@ -116,10 +110,22 @@
 
   @include vp-770 {
     width: 100%;
+    border-top: 1px solid $color-default-white;
+    border-bottom: 1px solid $color-default-white;
   }
 }
 
-.page-footer__heading {
+.page-footer__links details {
+  width: 500px;
+  padding: 20px 0 0;
+
+  @include vp-770 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.page-footer__links h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -142,12 +148,12 @@
 
   @include vp-770 {
     padding: 21px 25px;
-    border-top: 1px solid $color-default-white;
     position: relative;
+    margin: 0;
   }
 }
 
-.page-footer__heading::before {
+.page-footer__links h3::before {
   @include vp-770 {
     position: absolute;
     top: 27px;
@@ -164,13 +170,38 @@
   }
 }
 
-.page-footer__heading::after {
-  display: none;
+.page-footer__links h3::after {
+  @include vp-770 {
+    display: none;
+  }
+}
+
+.page-footer__links.is-hidden h3::after {
+  @include vp-770 {
+    position: absolute;
+    top: 20px;
+    right: 33px;
+
+    display: block;
+
+    width: 1px;
+    height: 15px;
+
+    content: "";
+
+    background-color: $color-default-white;
+  }
 }
 
 .page-footer__link-list {
   margin: 0;
   padding: 0;
+  width: 50%;
+  float: right;
+
+  @include vp-1220 {
+    float: none;
+  }
 
   @include vp-770 {
     margin: 0 0 0 25px;
@@ -178,7 +209,12 @@
 }
 
 .page-footer__link-list--first {
-  margin: 0 48px 0 0;
+  margin: 0;
+  float: left;
+
+  @include vp-1220 {
+    float: none;
+  }
 }
 
 .page-footer__link-list li {
@@ -278,3 +314,58 @@
     margin: 0 0 17px 25px;
   }
 }
+
+.page-footer__contacts h3 {
+  position: relative;
+}
+
+.page-footer__contacts h3::before {
+  @include vp-770 {
+    position: absolute;
+    top: 27px;
+    right: 26px;
+
+    display: block;
+
+    width: 15px;
+    height: 1px;
+
+    content: "";
+
+    background-color: $color-default-white;
+  }
+}
+
+.page-footer__contacts h3::after {
+  @include vp-770 {
+    display: none;
+  }
+}
+
+.page-footer__contacts.is-hidden h3::after {
+  @include vp-770 {
+    position: absolute;
+    top: 20px;
+    right: 33px;
+
+    display: block;
+
+    width: 1px;
+    height: 15px;
+
+    content: "";
+
+    background-color: $color-default-white;
+  }
+}
+
+.page-footer__links details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.page-footer__contacts details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
