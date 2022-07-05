@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
-import sass from 'gulp-sass';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browserSync from 'browser-sync';
@@ -15,6 +16,7 @@ import webpackConfig from './webpack.config.cjs';
 import gcmq from 'gulp-group-css-media-queries';
 
 const server = browserSync.create();
+const sass = gulpSass(dartSass);
 
 const css = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
