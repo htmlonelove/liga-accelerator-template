@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
-const sourcemap = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -16,9 +15,8 @@ const webpackConfig = require('./webpack.config.js');
 const gcmq = require('gulp-group-css-media-queries');
 
 const css = () => {
-  return gulp.src('source/sass/style.scss')
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
       .pipe(plumber())
-      .pipe(sourcemap.init())
       .pipe(sass())
       .pipe(postcss([autoprefixer({
         grid: true,
@@ -27,8 +25,7 @@ const css = () => {
       .pipe(gulp.dest('build/css'))
       .pipe(csso())
       .pipe(rename('style.min.css'))
-      .pipe(sourcemap.write('.'))
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('build/css', { sourcemaps: "." }))
       .pipe(server.stream());
 };
 
