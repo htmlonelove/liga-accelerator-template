@@ -1,18 +1,20 @@
-const gulp = require('gulp');
-const plumber = require('gulp-plumber');
-const sass = require('gulp-sass');
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const server = require('browser-sync').create();
-const csso = require('gulp-csso');
-const rename = require('gulp-rename');
-const imagemin = require('gulp-imagemin');
-const webp = require('gulp-webp');
-const svgstore = require('gulp-svgstore');
-const del = require('del');
-const webpackStream = require('webpack-stream');
-const webpackConfig = require('./webpack.config.js');
-const gcmq = require('gulp-group-css-media-queries');
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import sass from 'gulp-sass';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import browserSync from 'browser-sync';
+import csso from 'gulp-csso';
+import rename from 'gulp-rename';
+import imagemin from 'gulp-imagemin';
+import webp from 'gulp-webp';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
+import webpackStream from 'webpack-stream';
+import webpackConfig from './webpack.config.cjs';
+import gcmq from 'gulp-group-css-media-queries';
+
+const server = browserSync.create();
 
 const css = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
@@ -139,7 +141,5 @@ const optimizeImages = () => {
       .pipe(gulp.dest('build/img'));
 };
 
-exports.imagemin = optimizeImages;
-exports.webp = createWebp;
-exports.start = start;
-exports.build = build;
+export { optimizeImages as imagemin, createWebp as webp, build, start };
+

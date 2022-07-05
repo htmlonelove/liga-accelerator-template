@@ -1,6 +1,7 @@
 {
   "name": "Liga-A-start-template",
   "version": "2.0.0",
+  "type": "module",
   "description": "Стартовый шаблон сборки Лиги А",
   "browserslist": [
     "last 3 versions",
