@@ -18,60 +18,54 @@ import gcmq from 'gulp-group-css-media-queries';
 const server = browserSync.create();
 const sass = gulpSass(dartSass);
 
-const css = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
-      .pipe(plumber())
-      .pipe(sass())
-      .pipe(postcss([autoprefixer({
-        grid: true,
-      })]))
-      .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
-      .pipe(gulp.dest('build/css'))
-      .pipe(csso())
-      .pipe(rename('style.min.css'))
-      .pipe(gulp.dest('build/css', { sourcemaps: "." }))
-      .pipe(server.stream());
-};
+const css = () =>
+  gulp.src('source/sass/style.scss', {sourcemaps: true})
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer({
+      grid: true,
+    })]))
+    .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
+    .pipe(gulp.dest('build/css'))
+    .pipe(csso())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', {sourcemaps: "."}))
+    .pipe(server.stream());
 
-const js = () => {
-  return gulp.src(['source/js/main.js'])
-      .pipe(webpackStream(webpackConfig))
-      .pipe(gulp.dest('build/js'))
-};
+const js = () =>
+  gulp.src(['source/js/main.js'])
+    .pipe(webpackStream(webpackConfig))
+    .pipe(gulp.dest('build/js'));
 
-const svgo = () => {
-  return gulp.src('source/img/**/*.{svg}')
-      .pipe(imagemin([
-        imagemin.svgo({
-            plugins: [
-              {removeViewBox: false},
-              {removeRasterImages: true},
-              {removeUselessStrokeAndFill: false},
-            ]
-          }),
-      ]))
-      .pipe(gulp.dest('source/img'));
-};
+const svgo = () =>
+  gulp.src('source/img/**/*.{svg}')
+    .pipe(imagemin([
+      imagemin.svgo({
+          plugins: [
+            {removeViewBox: false},
+            {removeRasterImages: true},
+            {removeUselessStrokeAndFill: false},
+          ]
+        }),
+    ]))
+    .pipe(gulp.dest('source/img'));
 
-const sprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
-      .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite_auto.svg'))
-      .pipe(gulp.dest('build/img'));
-};
+const sprite = () =>
+  gulp.src('source/img/sprite/*.svg')
+    .pipe(svgstore({inlineSvg: true}))
+    .pipe(rename('sprite_auto.svg'))
+    .pipe(gulp.dest('build/img'));
 
-const copySvg = () => {
-  return gulp.src('source/img/**/*.svg', {base: 'source'})
-      .pipe(gulp.dest('build'));
-};
+const copySvg = () =>
+  gulp.src('source/img/**/*.svg', {base: 'source'})
+    .pipe(gulp.dest('build'));
 
-const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
-      .pipe(gulp.dest('build'));
-};
+const copyImages = () =>
+  gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
+    .pipe(gulp.dest('build'));
 
-const copy = () => {
-  return gulp.src([
+const copy = () =>
+  gulp.src([
     'source/**.html',
     'source/fonts/**',
     'source/img/**',
@@ -79,12 +73,9 @@ const copy = () => {
   ], {
     base: 'source',
   })
-      .pipe(gulp.dest('build'));
-};
+    .pipe(gulp.dest('build'));
 
-const clean = () => {
-  return del('build');
-};
+const clean = () => del('build');
 
 const syncServer = () => {
   server.init({
@@ -134,14 +125,13 @@ const createWebp = () => {
     .pipe(gulp.dest(`source/img/${root}`));
 };
 
-const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
-      .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.mozjpeg({quality: 75, progressive: true}),
-      ]))
-      .pipe(gulp.dest('build/img'));
-};
+const optimizeImages = () =>
+  gulp.src('build/img/**/*.{png,jpg}')
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+    ]))
+    .pipe(gulp.dest('build/img'));
 
 export { optimizeImages as imagemin, createWebp as webp, build, start };
 
