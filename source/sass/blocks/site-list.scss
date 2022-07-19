@@ -1,0 +1,22 @@
+.site-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.site-list__item {
+  margin-right: 30px;
+}
+
+.site-list__item:last-child {
+  margin-right: 0;
+}
+
+.site-list__item-link {
+  color: $light-text-color;
+  text-decoration: none;
+  padding: 48px 3px;
+  font-size: 16px;
+  font-weight: 500;
+}

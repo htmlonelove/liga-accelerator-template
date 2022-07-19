@@ -1,0 +1,15 @@
+.nav {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 73px;
+}
+
+.nav__toggle {
+  display: none;
+}

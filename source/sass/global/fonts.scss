@@ -1,21 +1,35 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2"),
-//     url("../fonts/rouble.woff") format("woff");
-// }
-
 @font-face {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  src: url("../fonts/montserratregular.woff2") format("woff2"),
+    url("../fonts/montserratregular.woff") format("woff");
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2"),
-    url("../fonts/.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserratmedium.woff2") format("woff2"),
+    url("../fonts/montserratmedium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserratsemibold.woff2") format("woff2"),
+    url("../fonts/montserratsemibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserratbold.woff2") format("woff2"),
+    url("../fonts/montserratbold.woff") format("woff");
+  font-display: swap;
 }

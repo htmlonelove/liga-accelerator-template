@@ -1,0 +1,48 @@
+.intro {
+  background: $dark-background-color;
+  color: $light-text-color;
+  background-image: url("../img/intro/back-intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+  min-height: 500px;
+  margin-bottom: 120px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/back-intro-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/intro/back-intro-tablet.jpg");
+    min-height: 638px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/back-intro-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro/back-intro-desktop.jpg");
+    min-height: 650px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/back-intro-desktop@2x.jpg");
+    }
+  }
+}
+
+.intro__wrapper {
+  padding: 283px 0 0 198px;
+}
+
+.intro__slogan {
+  margin: 0 0 30px;
+  font-size: 54px;
+  line-height: 66px;
+}
+
+.intro__description {
+  margin: 0;
+  font-size: 20px;
+  line-height: 25px;
+}
