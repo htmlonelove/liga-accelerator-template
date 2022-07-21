@@ -1,0 +1,36 @@
+.button {
+  // display: inline-flex;
+  // margin: 10px 0;
+  // padding: 10px 20px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
+  color: $color-tangaroa;
+
+  background-color: $color-alice-blue;
+  border: none;
+  cursor: pointer;
+
+  // transition: opacity $trans-default;
+
+  // &--red {
+  //   background-color: $color-torch-red;
+  // }
+
+  // &:disabled {
+  //   opacity: 0.5;
+
+  //   pointer-events: none;
+  // }
+
+  // @media (hover: hover), screen and (min-width: 0\0) {
+  //   &:hover,
+  //   &:focus {
+  //     opacity: 0.8;
+  //   }
+  // }
+}
