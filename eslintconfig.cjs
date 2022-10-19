@@ -6,12 +6,15 @@ module.exports = {
     'no-cond-assign': 'error', // eslint:recommended
     'no-irregular-whitespace': 'error', // eslint:recommended
     'no-unexpected-multiline': 'error', // eslint:recommended
-    'valid-jsdoc': ['error', {
-      requireParamDescription: false,
-      requireReturnDescription: false,
-      requireReturn: false,
-      prefer: {returns: 'return'},
-    }],
+    'valid-jsdoc': [
+      'error',
+      {
+        requireParamDescription: false,
+        requireReturnDescription: false,
+        requireReturn: false,
+        prefer: {returns: 'return'},
+      },
+    ],
 
     'no-console': 'error',
     'no-constant-condition': 'error',
@@ -52,8 +55,8 @@ module.exports = {
     'no-throw-literal': 'error', // eslint:recommended
     'no-with': 'error',
     'consistent-return': 'error',
-    'curly': ['error', 'all'],
-    'eqeqeq': 'error',
+    curly: ['error', 'all'],
+    eqeqeq: 'error',
     'no-alert': 'error',
     'no-eval': 'error',
     'no-fallthrough': 'error',
@@ -73,7 +76,7 @@ module.exports = {
     'no-script-url': 'error',
     'no-sequences': 'error',
     'no-unused-expressions': 'error',
-    'radix': 'error',
+    radix: 'error',
 
     // Variables
     // http://eslint.org/docs/rules/#variables
@@ -95,19 +98,23 @@ module.exports = {
     // Stylistic Issues
     // http://eslint.org/docs/rules/#stylistic-issues
     // ----------------------------------------------
-    'indent': ['error', 2, {
-      SwitchCase: 1,
-      // continuation indent
-      VariableDeclarator: 1, // indent is multiplier * indent = 1 * 2
-      MemberExpression: 2, // indent is multiplier * indent = 2 * 2
-      FunctionDeclaration: {parameters: 2},
-      FunctionExpression: {parameters: 2},
-      CallExpression: {arguments: 2},
-    }],
+    indent: [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        // continuation indent
+        VariableDeclarator: 1, // indent is multiplier * indent = 1 * 2
+        MemberExpression: 2, // indent is multiplier * indent = 2 * 2
+        FunctionDeclaration: {parameters: 2},
+        FunctionExpression: {parameters: 2},
+        CallExpression: {arguments: 2},
+      },
+    ],
     'block-spacing': ['error', 'always'],
     'array-bracket-spacing': ['error', 'never'],
     'brace-style': 'error',
-    'camelcase': 'error',
+    camelcase: 'error',
     'comma-spacing': 'error',
     'comma-style': 'error',
     'computed-property-spacing': 'error',
@@ -123,15 +130,18 @@ module.exports = {
     'no-new-object': 'error',
     'no-trailing-spaces': 'error',
     'object-curly-spacing': 'error',
-    'one-var': ['error', {
-      var: 'never',
-      let: 'never',
-      const: 'never',
-    }],
+    'one-var': [
+      'error',
+      {
+        var: 'never',
+        let: 'never',
+        const: 'never',
+      },
+    ],
     'padded-blocks': ['off', 'never'],
     'quote-props': ['error', 'consistent'],
     'semi-spacing': 'error',
-    'semi': 'error',
+    semi: 'error',
     'space-in-parens': ['error', 'never'],
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', {named: 'never', anonymous: 'always'}],
@@ -141,7 +151,7 @@ module.exports = {
     'no-nested-ternary': 'error',
     'space-infix-ops': 'error',
     'space-unary-ops': ['error', {words: true, nonwords: false}],
-    'yoda': ['error', 'never'],
+    yoda: ['error', 'never'],
 
     'arrow-parens': ['error', 'always'],
 
@@ -157,15 +167,18 @@ module.exports = {
     'prefer-spread': 'error',
     'rest-spread-spacing': 'error',
     'yield-star-spacing': ['error', 'after'],
-    'object-shorthand': ['error', 'always', {'avoidQuotes': true}],
+    'object-shorthand': ['error', 'always', {avoidQuotes: true}],
 
-    'comma-dangle': ['error', {
-      'arrays': 'never',
-      'objects': 'always-multiline',
-      'imports': 'never',
-      'exports': 'never',
-      'functions': 'never',
-    }],
-    'quotes': ['error', 'single'],
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'never',
+        objects: 'always-multiline',
+        imports: 'never',
+        exports: 'never',
+        functions: 'never',
+      },
+    ],
+    quotes: ['error', 'single'],
   },
 };
