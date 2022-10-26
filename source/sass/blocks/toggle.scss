@@ -1,0 +1,61 @@
+.toggle {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: $color-transparent;
+  }
+}
+
+@include vp-767 {
+  .is-opened .toggle::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background: #c4c4c4;
+    top: 11px;
+    right: 4px;
+  }
+
+  .is-closed .toggle {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      background: #c4c4c4;
+      top: 11px;
+      right: 4px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      background: #c4c4c4;
+      top: 11px;
+      right: 4px;
+      transform: rotate(90deg);
+    }
+  }
+
+  .is-nojs .toggle {
+    display: none;
+  }
+
+  .toggle:focus {
+    color: $color-default-white;
+    outline: 1px solid $color-deep-sky-blue;
+    border-radius: 2px;
+  }
+}

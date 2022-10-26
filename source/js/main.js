@@ -1,5 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import './modules/accordion.js';
+import { changeButtonText } from './modules/text.js';
+import { removeNojsClass, hideAdditionalText } from './modules/accordion.js'
+import { validatePhoneInput } from './modules/form-validation.js';
 
 // ---------------------------------
 
@@ -11,12 +15,20 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+
+  changeButtonText();
+  removeNojsClass();
+  hideAdditionalText();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    removeNojsClass();
+    hideAdditionalText();
+
   });
 });
 

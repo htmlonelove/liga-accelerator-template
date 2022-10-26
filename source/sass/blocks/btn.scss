@@ -2,6 +2,15 @@
   display: inline-flex;
   padding: 10px 20px;
 
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
   color: $color-default-white;
 
   background-color: $color-neon-blue;
@@ -22,5 +31,68 @@
 
   @include hover-focus {
     opacity: 0.8;
+    outline: 1px solid $color-alice-blue;
+  }
+
+  &--header {
+    padding: 10px 15px;
+    border: 1px solid $color-alice-blue;
+    border-radius: 3px;
+    color: $color-alice-blue;
+    background-color: $color-transparent;
+    min-height: 40px;
+    min-width: 160px;
+    max-width: 250px;
+
+    @include hover-focus {
+      border-color: $color-deep-sky-blue;
+      outline: none;
+    }
+  }
+
+  &--big {
+    width: 410px;
+    min-height: 55px;
+    padding: 15px 25px;
+    background-color: $color-deep-sky-blue;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @include vp-767 {
+      padding: 12px 38px;
+      width: 270px;
+      min-height: 40px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &--about {
+    padding: 14px 13px 8px;
+    min-width: 180px;
+    max-width: 250px;
+    min-height: 45px;
+    background-color: $color-transparent;
+    color: $color-deep-sky-blue;
+    justify-content: center;
+    border: 1px solid $color-deep-sky-blue;
+    border-radius: 3px;
+
+    @include vp-767 {
+      width: 160px;
+      min-height: 35px;
+      padding: 10px;
+    }
+
+    @include hover-focus {
+      background-color: $color-deep-sky-blue;
+      outline: none;
+      color: $color-default-white;
+    }
   }
 }

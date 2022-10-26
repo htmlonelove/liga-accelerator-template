@@ -59,15 +59,30 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: $color-deep-sky-blue;
+    color: $color-default-white;
+    font-family: $ff-mono;
+    font-size: 16px;
+    line-height: 22px;
 
     @include vp-767 {
-      width: 100%;
       padding: 20px;
     }
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  &__description {
+    margin: 0 0 40px;
   }
 
   &__close-btn {
@@ -79,10 +94,15 @@
     width: 40px;
     height: 40px;
     padding: 0;
+    fill: $color-default-white;
 
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    @include hover-focus {
+      outline: 1px solid $color-default-white;
+    }
   }
 
   &--responsive {

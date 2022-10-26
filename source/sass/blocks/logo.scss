@@ -1,0 +1,25 @@
+.logo {
+  width: 215px;
+  height: 55px;
+
+  &--modified {
+    @include vp-767 {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.logo__icon--mob {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.logo__icon--modified {
+  @include vp-767 {
+    display: none;
+  }
+}

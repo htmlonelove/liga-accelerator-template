@@ -1,0 +1,231 @@
+.form {
+  max-width: 580px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px 30px;
+  align-items: end;
+
+  @include vp-1023 {
+    max-width: none;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+.form label {
+  width: 100%;
+  min-width: 180px;
+
+  @include vp-1023 {
+    min-width: 320px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+  }
+}
+
+.form input,
+.form textarea {
+  padding: 15px;
+  font-family: $ff-mono;
+  font-size: 16px;
+  line-height: 22px;
+  background: rgba(4, 20, 39, 0.15);
+  border: none;
+  width: 100%;
+  color: $color-default-white;
+
+  @include hover-focus {
+    outline: 1px solid $color-default-white;
+  }
+
+  &:focus {
+    outline: 1px solid $color-default-white;
+  }
+}
+
+.form label[data-tel-label] {
+  position: relative;
+}
+
+.form input[type="tel"] + span {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  color: $color-torch-red;
+  font-family: $ff-mono;
+  font-size: 14px;
+  line-height: 16px;
+
+  @include vp-1023 {
+    bottom: -15px;
+  }
+}
+
+.form textarea {
+  min-height: 155px;
+  padding: 24px 16px;
+
+  @include vp-1023 {
+    padding: 28px 16px;
+  }
+
+  @include vp-767 {
+    padding: 24px 16px;
+    min-height: 180px;
+  }
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: $color-default-white;
+}
+
+.form label:nth-of-type(3) {
+  grid-area: 2 / 1 / 3 /-1;
+
+  @include vp-767 {
+    grid-area: 3 / 1 / 4 /-1;
+  }
+}
+
+.form button {
+  margin-top: 8px;
+  padding: 10px 25px;
+  max-width: 265px;
+  height: 45px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  background-color: $color-black-perl;
+  border-radius: 3px;
+  border: none;
+  box-sizing: border-box;
+
+  @include hover-focus {
+    outline: 1px solid $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    margin-top: 6px;
+  }
+
+  &:focus {
+    outline: 1px solid $color-default-white;
+  }
+}
+
+.form label input[type="checkbox"] {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.form label input[type="checkbox"] + span {
+  position: relative;
+}
+
+.form label input[type="checkbox"] + span::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: $color-transparent;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+
+  @include vp-1023 {
+    top: -8px;
+    left: 0;
+  }
+
+  @include vp-767 {
+    top: -2px;
+    left: 5px;
+  }
+}
+
+.form label input[type="checkbox"]:focus + span::after {
+  content: "";
+  border: 1px solid $color-default-black;
+}
+
+.form label input[type="checkbox"]:checked + span::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  width: 9px;
+  height: 6px;
+  background-image: url("../img/svg/ckeck-mark.svg");
+
+  @include vp-1023 {
+    top: -4px;
+    left: 1px;
+  }
+
+  @include vp-767 {
+    top: 3px;
+    left: 8px;
+  }
+}
+
+.form label input[type="checkbox"] ~ span:nth-of-type(2) {
+  display: inline-block;
+  padding-left: 35px;
+  font-family: $ff-mono;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+
+  @include vp-1023 {
+    padding-left: 24px;
+    max-width: 355px;
+  }
+
+  @include vp-767 {
+    margin-top: 6px;
+    padding-left: 30px;
+    max-width: none;
+  }
+}
+
+// Попап
+
+.form--popap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form--popap button {
+  max-width: none;
+}

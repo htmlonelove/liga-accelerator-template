@@ -11,7 +11,7 @@ let modals;
 
 // closeCallback() {
 //   openModalInCloseCallback('modal-5');
-// },
+// };
 
 const settings = {
   'default': {

@@ -1,0 +1,138 @@
+.features__wrapper {
+  padding: 120px 40px 100px;
+  display: flex;
+
+  @include vp-1023 {
+    padding: 80px 50px 60px;
+  }
+
+  @include vp-767 {
+    padding: 50px 25px 30px;
+    min-width: 320px;
+  }
+}
+
+.features__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @include vp-1023 {
+    gap: 27px 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-rows: repeat(4, auto);
+    gap: 30px;
+  }
+}
+
+.features__item {
+  position: relative;
+  padding: 40px 45px 35px 45px;
+  max-width: 595px;
+  min-height: 300px;
+  color: $color-black-perl;
+  border: 1px solid #ebebeb;
+  background-color: $color-default-white;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    width: 5px;
+    background-color: $color-deep-sky-blue;
+    z-index: 10;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-alice-blue;
+    background-color: $color-deep-sky-blue;
+    outline: none;
+  }
+
+  &:hover .features__title,
+  &:focus .features__title {
+    color: $color-alice-blue;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: $color-alice-blue;
+  }
+
+  @include vp-1023 {
+    min-height: 360px;
+    padding: 38px 30px 30px 45px;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    min-height: 325px;
+    max-height: 340px;
+    min-width: 270px;
+    padding: 30px 30px 75px;
+  }
+}
+
+.features__icon-wrapper {
+  height: 35px;
+  margin-bottom: 20px;
+
+  @include vp-1023 {
+    margin-bottom: 16px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
+    width: 30px;
+  }
+}
+
+.features__icon-wrapper svg {
+  fill: $color-deep-sky-blue;
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $ff-roboto;
+  font-size: 24px;
+  line-height: 34px;
+  color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+}
+
+.features__description {
+  margin: 0;
+  font-family: $ff-mono;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

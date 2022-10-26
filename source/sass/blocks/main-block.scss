@@ -1,0 +1,124 @@
+.main-block {
+  position: relative;
+  width: 100%;
+  min-height: 880px;
+  object-fit: cover;
+  background-color: #041827;
+  color: $color-alice-blue;
+  background-image: url("../img/main-block.jpeg");
+  background-size: 1920px 880px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-block@2x.jpeg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 880px;
+    min-width: 320px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  @include vp-1023 {
+    min-height: 640px;
+    background-position: 20%;
+    background-size: 1396px 640px;
+
+    &::after {
+      min-height: 640px;
+    }
+  }
+
+  @include vp-767 {
+    min-height: 560px;
+    background-size: 1220px 560px;
+    background-position: 25%;
+    min-width: 320px;
+
+    &::after {
+      min-height: 560px;
+    }
+  }
+}
+
+.main-block__wrapper {
+  max-width: 1050px;
+  padding: 305px 40px 280px 40px;
+
+  @include vp-1023 {
+    width: 100%;
+    min-width: 670px;
+    padding: 180px 50px 205px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    padding: 150px 25px 180px;
+    width: 100%;
+  }
+}
+
+.main-block__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+}
+
+.main-block__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 44px;
+  font-family: $ff-mono;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  max-width: 70%;
+
+  @include vp-1023 {
+    margin-bottom: 57px;
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 44px;
+  }
+}
+
+.main-block__button {
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}

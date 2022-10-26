@@ -1,0 +1,148 @@
+.products {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px;
+  width: 100%;
+  max-width: 1220px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+.products__item {
+  position: relative;
+  padding: 50px 40px;
+  min-height: 650px;
+  background-color: $color-black-perl;
+  background-image: url("../img/main-block.jpeg");
+  background-size: 1500px 650px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: 1;
+  cursor: pointer;
+
+  &--first {
+    background-position: 15% 0;
+  }
+
+  &--second {
+    background-position: 47% 0;
+  }
+
+  &--third {
+    background-position: 78% 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-block@2x.jpeg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: rgba(4, 24, 39, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $color-deep-sky-blue;
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  @include focus {
+    outline: 1px solid $color-alice-blue;
+  }
+
+  @include vp-1023 {
+    padding: 38px 45px;
+    width: 100%;
+    min-height: 250px;
+    background-size: 1300px 660px;
+
+    &--first {
+      background-position: 12% 100%;
+    }
+
+    &--second {
+      background-position: 80% 60%;
+    }
+
+    &--third {
+      background-position: 12% 70%;
+    }
+
+    &::after {
+      min-height: 250px;
+      max-width: none;
+    }
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    padding: 24px 30px;
+
+    &--first {
+      background-position: 30% 55%;
+    }
+
+    &--second {
+      background-position: 30% 100%;
+    }
+
+    &--third {
+      background-position: 75% 73%;
+    }
+
+    &::before {
+      min-width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.products__link {
+  color: $color-default-white;
+
+  @include hover-focus {
+    opacity: 0.8;
+    outline: none;
+  }
+}
+
+.products__title {
+  font-weight: 400;
+  margin: 0;
+  font-family: $ff-roboto;
+  font-size: 20px;
+  line-height: 30px;
+  width: 180px;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 30px;
+    width: 130px;
+  }
+}
+
+.products__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

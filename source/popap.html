@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Форма обртной связи на производство и монтаж, поставка комплектующих, блоков и модулей">
+    <title>Smart Device</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/roboto-condensed.woff2"  type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/PTMono-Regular.woff2"  type="font/woff2" as="font" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="modal is-active" data-modal="feedback">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="modal__content">
+            <h2 class="modal__title">Закажите звонок</h2>
+            <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+            <form class="modal__form form form--popap" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="modal-name">
+                <input type="text" placeholder="Имя" name="name" id="modal-name" minlength="1" required autofocus data-name-input>
+              </label>
+              <label for="modal-phone" data-tel-label>
+                <input type="tel" placeholder="Телефон" name="phone" id="modal-phone" maxlength="20" required data-tel-input>
+              </label>
+              <label for="modal-question" data-textarea>
+                <textarea placeholder="Ваш вопрос" name="question" id="modal-question"></textarea>
+              </label>
+              <button type="submit" data-form-button>Отправить</button>
+              <label for="modal-personal-data">
+                <input type="checkbox" name="personal-data" id="modal-personal-data" required checked>
+                <span></span>
+                <span>Я согласен на обработку  персональных данных</span>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

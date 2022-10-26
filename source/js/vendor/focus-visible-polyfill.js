@@ -5,7 +5,7 @@
  * @param {(Document|ShadowRoot)} scope
  * @see https://github.com/WICG/focus-visible
  */
- function applyFocusVisiblePolyfill(scope) {
+  function applyFocusVisiblePolyfill(scope) {
   var hadKeyboardEvent = true;
   var hadFocusVisibleRecently = false;
   var hadFocusVisibleRecentlyTimeout = null;
