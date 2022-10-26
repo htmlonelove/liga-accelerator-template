@@ -6,7 +6,7 @@
 
 @mixin hover {
   @media (hover: hover) {
-    &:hover:not(.focus-visible) {
+    &:hover {
       @content;
     }
   }
@@ -73,6 +73,39 @@
     @content;
   }
 }
+
+
+// Fonts
+
+@mixin roboto($weight, $size, $height, $color) {
+  font-family: 'Roboto Condensed', 'Tahoma', sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $size;
+  color: $color;
+}
+
+
+@mixin ptmono($weight, $size, $height, $color) {
+  font-family: "PT Mono", "Courier", monospace;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+
+//input
+
+@mixin input {
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+}
+
 
 // Mobile first
 

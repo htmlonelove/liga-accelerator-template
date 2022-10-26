@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
+  font-family: "PT Mono", "Courier", monospace;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -35,7 +35,6 @@ body {
 }
 
 a {
-  color: $color-default-black;
   text-decoration: none;
 }
 
@@ -126,4 +125,10 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

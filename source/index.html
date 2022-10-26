@@ -11,25 +11,25 @@
 </head>
 
 <body>
-  <div class="body">
+  <div class="container">
     <header>
       <div class="header">
         <ul class="header__list reset-list">
-          <li class="header__item logo">
+          <li class="header__item">
             <div class="logo">
               <a class="logo__link" href="index.html">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="../img/logo/logo-full.svg" <img class="logo__svg"
-                    src="../img/logo/logo-mobile.svg" width="32" height="36" alt="SmartDevice.">
+                  <source media="(max-width: 767px)" srcset="../img/logo/logo-mobile.png">
+                  <img class="logo__png" src="../img/logo/logo-full.png" width="215" height="55" alt="SmartDevice.">
                 </picture>
               </a>
             </div>
           </li>
           <li class="header__item">
             <div class="email">
-              <a class="email___link" href="#">
-                <svg width="15" height="15" class="email__svg">
-                  <use xlink:href="../img/sprite.svg#email"></use>
+              <a class="email___link focus-visible" href="#">
+                <svg width="20" height="20" class="email__svg">
+                  <use xlink:href="../img/sprite_auto.svg#email"></use>
                 </svg>
                 <span class="email__text">
                   info@sd.ru
@@ -39,144 +39,178 @@
           </li>
           <li class="header__item">
             <div class="call">
-              <svg width="20" height="20" class="phone__svg">
-                <use xlink:href="img/sprite.svg#phone-call"></use>
-              </svg>
-              <span class="tel">
-                <a class="tel__link" aria-label="контактный телефон" href=”tel:+74950005252”>+7 (495) 000 52 52</a>
-              </span>
-              <button class="order-call" type="button">
+              <a class="tel__link focus-visible" aria-label="контактный телефон" href=”tel:+74950005252”>
+                <svg width="20" height="20" class="phone__svg">
+                  <use xlink:href="../img/sprite_auto.svg#phone-call"></use>
+                </svg>
+                <span class="tel">
+                  +7 (495) 000 52 52
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="header__item">
+            <div class="call-button">
+              <button class="order-call focus-visible" type="button">
                 <span class="order-call__text">Заказать звонок</span>
               </button>
             </div>
           </li>
         </ul>
       </div>
-  </div>
-  </header>
-  <main>
-    <div class="main">
-      <h1 class="visually-hidden">Smart device Печатные платы</h1>
-      <div class="promo-block">
-        <section class="promo-block__section">
-          <h2>Печатные платы</h2>
-          <h3>производство и монтаж, поставка комплектующих, блоков и модулей</h3>
-          <button class="promo-block__button" type="button">
-          </button>
-        </section>
-      </div>
-      <div class="advantages">
-        <section class="advantages__section">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3>Оперативные сроки </h3>
-              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
-                доставлять заказы плат и комплектующих в самые короткие сроки</p>
-            </li>
-            <li class="advantages__item">
-              <h3>Крупные поставщики</h3>
-              <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <h3>Полная конфиденциальность</h3>
-              <p>По желанию клиента мы обеспечиваем полную конфиденциальность.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <h3>Персонализация стоимости</h3>
-              <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
-                устраивает.
-              </p>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="about-company">
-        <section class="about-company__section">
-          <h2>О компании</h2>
-          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
-            1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
 
-            Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-            платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
-            РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
-            светотехники России.</p>
-          <button class="open-button">Подробнее</button>
-          <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
-            продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20
-            городов присутствия.
-            Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
-            Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
-          <button class="close-button">Подробнее</button>
-        </section>
+    </header>
+    <main>
+      <div class="main">
+        <h1 class="visually-hidden">Smart device Печатные платы</h1>
+        <div class="promo-block">
+          <section class="promo-block__section">
+            <h2>Печатные платы</h2>
+            <h3>производство и монтаж, поставка комплектующих, блоков и модулей</h3>
+            <button class="promo-block__button focus-visible" type="button">
+              <span class="promo-block__button--desk">
+                Получить бесплатную консультацию
+              </span>
+              <span class="promo-block__button--mob">
+                бесплатная консультация
+              </span>
+            </button>
+          </section>
+        </div>
+        <div class="advantages">
+          <section class="advantages__section">
+            <ul class="advantages__list reset-list">
+              <li class="advantages__item">
+                <svg width="35" height="35" class="advantages__svg">
+                  <use xlink:href="../img/sprite_auto.svg#stopwatch"></use>
+                </svg>
+                <h3>Оперативные сроки </h3>
+                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
+                  доставлять заказы плат и комплектующих в самые короткие сроки</p>
+              </li>
+              <li class="advantages__item">
+                <svg width="35" height="35" class="advantages__svg">
+                  <use xlink:href="../img/sprite_auto.svg#hired"></use>
+                </svg>
+                <h3>Крупные поставщики</h3>
+                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                  Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <svg width="35" height="35" class="advantages__svg">
+                  <use xlink:href="../img/sprite_auto.svg#detective"></use>
+                </svg>
+                <h3>Полная конфиденциальность</h3>
+                <p>По желанию клиента мы обеспечиваем полную конфиденциальность.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <svg width="35" height="35" class="advantages__svg">
+                  <use xlink:href="../img/sprite_auto.svg#tag"></use>
+                </svg>
+                <h3>Персонализация стоимости</h3>
+                <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+                  устраивает.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="about-company">
+          <section class="about-company__section">
+            <h2>О компании</h2>
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
+              1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.<br><br>
+              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+              (РЖД),
+              РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+              светотехники России.</p>
+            <div class="about-company__extra-text hidden">
+              <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70%
+                из которых
+                продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и
+                20
+                городов присутствия.
+                Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+                Использование инновационных технологий помогает экономить деньги и время наших клиентов.</p>
+            </div>
+            <button class="about-company-button button__no-js">
+              <span class="button-more">Подробнее</span>
+              <span class="button-hide hidden">Свернуть</span>
+            </button>
+          </section>
+        </div>
+        <div class="catalog">
+          <section class="catalog__section">
+            <h2 class="catalog__title">Smart Device предлагает следующие товары и услуги</h2>
+            <ul class="product__list reset-list">
+              <li class="product__item product__item-1">
+                <a class="product__link" aria-label="Переход на страницу товара" href="#">
+                  <span class="product__description">Производство<br>печатных плат</span>
+                  <button class="product__button">
+                    <svg width="5" height="10" class="arrow__svg">
+                      <use xlink:href="../img/sprite_auto.svg#arrow"></use>
+                    </svg></button>
+                </a>
+              </li>
+              <li class="product__item product__item-2">
+                <a class="product__link" aria-label="Переход на страницу товара" href="#">
+                  <span class="product__description">Монтаж печатных<br>плат</span>
+                  <button class="product__button">
+                    <svg width="5" height="10" class="arrow__svg">
+                      <use xlink:href="../img/sprite_auto.svg#arrow"></use>
+                    </svg></button>
+                </a>
+              </li>
+              <li class="product__item product__item-3">
+                <a class="product__link" aria-label="Переход на страницу товара" href="#">
+                  <span class="product__description">Комплектующие<br>для светотехники</span>
+                  <button class="product__button">
+                    <svg width="5" height="10" class="arrow__svg">
+                      <use xlink:href="../img/sprite_auto.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="feedback">
+          <section class="feedback__section">
+            <div class="feedback__wrapper">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <div class="feedback-form">
+                <form class="feedback-form__body" action="https://echo.htmlacademy.ru" method="post">
+                  <fieldset class="feedback-form__fieldset">
+                    <label class="name">
+                      <input class="name__input" type="text" placeholder="Имя" required>
+                    </label>
+                    <label class="phone">
+                      <input class="phone__input" type="text" placeholder="Телефон" required>
+                    </label>
+
+                    <label class="question">
+                      <textarea class="question__text" placeholder="Ваш вопрос"></textarea>
+                    </label>
+                  </fieldset>
+                  <fieldset class="agreement">
+                    <button class="button-send">Задать вопрос</button>
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="checkbox" name="agree" value="yes" required>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Я согласен на обработку персональных данных</span>
+                    </label>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-      <div class="catalog">
-        <section class="catalog__section">
-          <h2 class="visually-hidden">Каталог продукции</h2>
-          <ul class="product__list">
-            <li class="product__item">
-              <a class="product__link" aria-label="Переход на страницу товара" href="#">
-                <span class="product__description">Производство печатных плат</span>
-                <button class="product__button">
-                  <svg width="8" height="4" class="phone__svg">
-                    <use xlink:href="img/sprite.svg#phone-call"></use>
-                  </svg></button>
-              </a>
-            </li>
-            <li class="product__item">
-              <a class="product__link" aria-label="Переход на страницу товара" href="#">
-                <span class="product__description">Монтаж печатных плат</span>
-                <button class="product__button">
-                  <svg width="8" height="4" class="phone__svg">
-                    <use xlink:href="img/sprite.svg#phone-call"></use>
-                  </svg></button>
-              </a>
-            </li>
-            <li class="product__item">
-              <a class="product__link" aria-label="Переход на страницу товара" href="#">
-                <span class="product__description">Комплектующие для светотехники</span>
-                <button class="product__button">
-                  <svg width="8" height="4" class="phone__svg">
-                    <use xlink:href="img/sprite.svg#phone-call"></use>
-                  </svg></button>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="feedback">
-        <section class="feedback__section">
-          <h2>Остались вопросы? Задайте их нам!</h2>
-          <p>Мы проконсультируем Вас бесплатно</p>
-          <div class="feedback-form">
-            <form class="feedback-form__body" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="feedback-form__fieldset">
-                <label class="name">
-                  <input class="name__input" type="text" placeholder="Имя" required>
-                </label>
-                <label class="phone">
-                  <input class="phone__input" type="text" placeholder="Телефон" required>
-                </label>
-                <label class="question">
-                  <input class="question__input" type="text" placeholder="Ваш вопрос">
-                </label>
-              </fieldset>
-              <button class="button-send">Задать вопрос</button>
-              <fieldset class="agreement">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="agree" value="yes">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Я согласен на обработку персональных данных</span>
-                </label>
-              </fieldset>
-            </form>
-          </div>
-        </section>
-      </div>
-    </div>
-    <!-- <section class="intro">
+      <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
@@ -185,17 +219,18 @@
             <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
           </div>
         </section> -->
+  </div>
   </main>
-  <footer>
-    <div class="footer">
+  <footer class="footer">
+    <div class="footer__container">
       <div class="social">
         <section class="social__section">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <div class="logo">
+          <div class="logo__footer">
             <a class="logo__link" href="index.html">
               <picture>
-                <source media="(min-width: 768px)" srcset="../img/logo/logo-full.svg" <img class="logo__svg"
-                  src="../img/logo/logo-mobile.svg" width="32" height="36" alt="SmartDevice.">
+                <img class="logo__png--footer" src="../img/logo/logo-full.png" width="215" height="55"
+                  alt="SmartDevice.">
               </picture>
             </a>
           </div>
@@ -203,22 +238,22 @@
             <ul class="social__list reset-list">
               <li class="social__item">
                 <a aria-label="Переход на страницу ok" class="social-link social-link-ok" href="#">
-                  <svg width="20" height="20" class="social-link__svg">
-                    <use xlink:href="img/sprite.svg#ok"></use>
+                  <svg width="40" height="40" class="social-link__svg">
+                    <use xlink:href="../img/sprite_auto.svg#ok"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a aria-label="Переход на страницу VK" class="social-link social-link-vk" href="#">
-                  <svg width="20" height="20" class="social-link__svg">
-                    <use xlink:href="img/sprite.svg#vk"></use>
+                  <svg width="40" height="40" class="social-link__svg">
+                    <use xlink:href="../img/sprite_auto.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a aria-label="Переход на страницу pinterest" class="social-link social-link-pinterest" href="#">
-                  <svg width="22" height="22" class="social-link__svg">
-                    <use xlink:href="img/sprite.svg#pinterest"></use>
+                  <svg width="40" height="40" class="social-link__svg">
+                    <use xlink:href="../img/sprite_auto.svg#pinterest"></use>
                   </svg>
                 </a>
               </li>
@@ -226,65 +261,91 @@
           </div>
         </section>
       </div>
-
-      <div class="navigation">
-        <section class="navigation__section">
-          <h2>Разделы сайта</h2>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" aria-label="О Компании" href="#">
-                О Компании
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" aria-label="Продукты" href="#">
-                Продукты
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" aria-label="Производство печатных плат" href="#">
-                Производство печатных плат
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" aria-label="Монтаж печатных плат" href="#">
-                Монтаж печатных плат
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" aria-label="Комплектующие" href="#">
-                Комплектующие
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" aria-label="Доставка" href="#">
-                Доставка
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" aria-label="Контакты" href="#">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <div class="contacts">
-        <section class="contacts__section">
-          <h2 class="contacts__title">Наш офис</h2>
-          <address class="contacts-address">
-            г. Мытищи, Олимпийский проспект, д.10
-          </address>
-          <span class="tel">
-            <a class="contacts-tel" aria-label="контактный телефон" href=”tel:+74955894050”>+7 (495) 589-40-50</a>
-          </span>
-          <span class="tel">
-            <a class="contacts-tel" aria-label="контактный телефон" href=”tel:+79253895829”>+7 (925) 389-58-29</a>
-          </span>
-          <span class="tel">
-            <a class="contacts-tel" aria-label="контактный телефон" href=”tel:+79253647813”>+7 (925) 364-78-13</a>
-          </span>
-        </section>
+      <div class="group">
+        <div class="navigation">
+          <section class="navigation__section">
+            <div class="navigation__header">
+              <h2>Разделы сайта</h2>
+              <button class="plus-button show"></button>
+              <button class="minus-button hide"></button>
+            </div>
+            <ul class="navigation__list reset-list no-js">
+              <div class="navigation__first">
+                <li class="navigation__item">
+                  <a class="navigation__link" aria-label="О Компании" href="#">
+                    О Компании
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" aria-label="Продукты" href="#">
+                    Продукты
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" aria-label="Производство печатных плат" href="#">
+                    Производство печатных плат
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" aria-label="Монтаж печатных плат" href="#">
+                    Монтаж печатных плат
+                  </a>
+                </li>
+              </div>
+              <div class="navigation__second">
+                <li class="navigation__item">
+                  <a class="navigation__link" aria-label="Комплектующие" href="#">
+                    Комплектующие
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" aria-label="Доставка" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" aria-label="Контакты" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </section>
+        </div>
+        <div class="contacts">
+          <section class="contacts__section">
+            <div class="contacts__header">
+              <h2>Наш офис</h2>
+              <button class="plus-button show"></button>
+              <button class="minus-button hide"></button>
+            </div>
+            <div class="contacts__group no-js">
+              <address class="contacts-address">
+                г. Мытищи, Олимпийский проспект, д.10
+              </address>
+              <ul class="tel-list reset-list">
+                <li class="tel-item">
+                  <span class="telephone">
+                    <a class="contacts-tel" aria-label="контактный телефон" href=”tel:+74955894050”>+7 (495)
+                      589-40-50</a>
+                  </span>
+                </li>
+                <li class="tel-item">
+                  <span class="telephone">
+                    <a class="contacts-tel" aria-label="контактный телефон" href=”tel:+79253895829”>+7 (925)
+                      389-58-29</a>
+                  </span>
+                </li>
+                <li class="tel-item">
+                  <span class="telephone">
+                    <a class="contacts-tel" aria-label="контактный телефон" href=”tel:+79253647813”>+7 (925)
+                      364-78-13</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </footer>

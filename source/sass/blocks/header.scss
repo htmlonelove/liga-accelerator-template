@@ -1,0 +1,173 @@
+header {
+  position: relative;
+}
+
+.header {
+width: 100%;
+background: $black-to-down;
+height: 120px;
+display: flex;
+justify-content: center;
+z-index: 20;
+position: absolute;
+top: 0;
+
+@include vp-767 {
+  height: 70px;
+}
+}
+
+.header__list {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -58px;
+    width: 1154px;
+    margin-top: -9px;
+
+    @include vp-1279 {
+      margin-left: 0;
+      padding: 0 20px;
+    }
+
+    @include vp-1023 {
+      margin-left: 30px;
+      margin-right: 80px;
+      margin-top: -21px;
+    }
+
+    @include vp-767 {
+      margin: 0 26px;
+    padding: 0;
+    width: inherit;
+    }
+}
+
+.logo {
+
+  @include vp-767 {
+    width: 35px;
+  }
+}
+
+.email {
+  position: inherit;
+  padding-left: 10px;
+
+  @include vp-1023 {
+    position: absolute;
+    right: 141px;
+    top: 30px;
+  }
+
+  @include vp-767 {
+    right: 105px;
+    top: 19px;
+  }
+}
+
+.email___link {
+display: flex;
+align-items: center;
+color: $color-alice-blue;
+
+@include hover {
+  color: $color-deep-sky-blue;
+}
+
+@include focus {
+  color: $color-deep-sky-blue;
+}
+
+@include active {
+  color: $color-light-sky-blue;
+}
+}
+
+.email__text {
+  padding-left: 10px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.call {
+  position: inherit;
+  padding-right: 26px;
+
+  @include vp-1023 {
+    position: absolute;
+    right: 55px;
+    top: 31px;
+  }
+
+  @include vp-767 {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.tel {
+  padding-left: 8px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.tel__link {
+display: flex;
+align-items: center;
+color: $color-alice-blue;
+
+@include hover {
+  color: $color-deep-sky-blue;
+}
+
+@include focus {
+  color: $color-deep-sky-blue;
+}
+
+@include active {
+  color: $color-light-sky-blue;
+}
+}
+
+.call-button {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.order-call {
+  border: 1px solid #F2F5F7;
+  border-radius: 3px;
+  background-color: $color-transparent;
+  color: $color-alice-blue;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  @include hover {
+    color: $color-deep-sky-blue;
+  }
+
+  @include focus {
+    color: $color-deep-sky-blue;
+  }
+
+  @include active {
+    background-color: $color-light-sky-blue;
+  }
+}
+
+.order-call__text {
+font-family: 'Roboto Condensed', 'Tahoma', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+}

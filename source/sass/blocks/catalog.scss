@@ -1,0 +1,147 @@
+.catalog {
+  width: 100%;
+    display: flex;
+    background-color: $color-black-pearl;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 140px;
+
+    @include vp-1023 {
+      padding: 50px;
+    }
+}
+
+.catalog__section h2 {
+  @include roboto(400, 36px, 51px, $color-default-white);
+  margin: 0;
+  padding-bottom: 64px;
+}
+.product__list {
+  display: grid;
+  align-self: center;
+  grid-template-columns: 350px 350px 350px;
+  gap: 80px;
+
+  @include vp-1279 {
+  grid-template-columns: 300px 300px 300px;
+  gap: 30px;
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    max-width: 670px;
+    margin: 0 auto;
+  }
+}
+.product__item {
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    opacity: 0.8;
+  }
+}
+.product__link {
+height: 100%;
+display: inherit;
+position: relative;
+padding-top: 50px;
+padding-left: 40px;
+
+@include vp-1023 {
+  padding-top: 40px;
+padding-left: 30px;
+}
+}
+
+.product__description {
+  @include roboto(400, 20px, 30px, $color-default-white);
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.product__item-1 {
+  background-image: url("../img/background/background-desktop-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  width: 100%;
+  height: 650px;
+
+  @include retina {
+    background-image: url("../img/background/background-desktop-1@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/background/background-tab-1.jpg");
+    width: 100%;
+  height: 250px;
+  }
+}
+
+.product__item-2 {
+  background-image: url("../img/background/background-desktop-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  width: 100%;
+  height: 650px;
+
+  @include retina {
+    background-image: url("../img/background/background-desktop-2@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/background/background-tab-2.jpg");
+    width: 100%;
+  height: 250px;
+
+  @include retina {
+    background-image: url("../img/background/background-tab-2@2x.jpg");
+  }
+  }
+}
+
+.product__item-3 {
+  background-image: url("../img/background/background-desktop-3.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  width: 100%;
+  height: 650px;
+
+  @include retina {
+    background-image: url("../img/background/background-desktop-3@2x.jpg");
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/background/background-tab-3.jpg");
+    width: 100%;
+  height: 250px;
+  @include retina {
+    background-image: url("../img/background/background-tab-3@2x.jpg");
+  }
+  }
+}
+
+
+.product__button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: $color-deep-sky-blue;
+  bottom: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    @include focus {
+      opacity: 0.7;
+    }
+
+    @include active {
+      color: $color-light-sky-blue;
+    }
+}
