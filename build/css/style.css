@@ -1156,7 +1156,7 @@ button,
   object-fit: cover;
   background-color: #041827;
   color: #f2f5f7;
-  background-image: url("../img/main-block.jpeg");
+  background-image: url("../img/main-block.webp");
   background-size: 1920px 880px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1372,7 +1372,7 @@ button,
   padding: 50px 40px;
   min-height: 650px;
   background-color: #041827;
-  background-image: url("../img/main-block.jpeg");
+  background-image: url("../img/main-block.webp");
   background-size: 1500px 650px;
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -1577,26 +1577,31 @@ button,
 .form input::-webkit-input-placeholder,
 .form textarea::-webkit-input-placeholder {
   color: #ffffff;
+  opacity: 0.6;
 }
 
 .form input::-moz-placeholder,
 .form textarea::-moz-placeholder {
   color: #ffffff;
+  opacity: 0.6;
 }
 
 .form input:-ms-input-placeholder,
 .form textarea:-ms-input-placeholder {
   color: #ffffff;
+  opacity: 0.6;
 }
 
 .form input::-ms-input-placeholder,
 .form textarea::-ms-input-placeholder {
   color: #ffffff;
+  opacity: 0.6;
 }
 
 .form input::placeholder,
 .form textarea::placeholder {
   color: #ffffff;
+  opacity: 0.6;
 }
 
 .form label:nth-of-type(3) {
@@ -1609,7 +1614,7 @@ button,
   margin-top: 8px;
   padding: 10px 25px;
   max-width: 265px;
-  height: 45px;
+  min-height: 45px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -2032,14 +2037,18 @@ button,
 
   .btn--big {
     padding: 12px 38px;
-    width: 270px;
+    min-width: 270px;
+    width: 100%;
     min-height: 40px;
     font-size: 14px;
     line-height: 16px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .btn--about {
-    width: 160px;
+    min-width: 160px;
     min-height: 35px;
     padding: 10px;
   }
@@ -2491,10 +2500,10 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main-block {
-    background-image: url("../img/main-block@2x.jpeg");
+    background-image: url("../img/main-block@2x.webp");
   }
 
   .products__item {
-    background-image: url("../img/main-block@2x.jpeg");
+    background-image: url("../img/main-block@2x.webp");
   }
 }

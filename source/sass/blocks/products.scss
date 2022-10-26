@@ -18,7 +18,7 @@
   padding: 50px 40px;
   min-height: 650px;
   background-color: $color-black-perl;
-  background-image: url("../img/main-block.jpeg");
+  background-image: url("../img/main-block.webp");
   background-size: 1500px 650px;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -38,7 +38,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-block@2x.jpeg");
+    background-image: url("../img/main-block@2x.webp");
   }
 
   &::after {

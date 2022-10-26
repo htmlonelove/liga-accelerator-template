@@ -65,10 +65,12 @@
 
     @include vp-767 {
       padding: 12px 38px;
-      width: 270px;
+      min-width: 270px;
+      width: 100%;
       min-height: 40px;
       font-size: 14px;
       line-height: 16px;
+      justify-content: center;
     }
   }
 
@@ -84,7 +86,7 @@
     border-radius: 3px;
 
     @include vp-767 {
-      width: 160px;
+      min-width: 160px;
       min-height: 35px;
       padding: 10px;
     }

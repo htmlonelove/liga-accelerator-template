@@ -5,14 +5,14 @@
   object-fit: cover;
   background-color: #041827;
   color: $color-alice-blue;
-  background-image: url("../img/main-block.jpeg");
+  background-image: url("../img/main-block.webp");
   background-size: 1920px 880px;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-block@2x.jpeg");
+    background-image: url("../img/main-block@2x.webp");
   }
 
   &::after {

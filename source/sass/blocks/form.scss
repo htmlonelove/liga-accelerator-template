@@ -84,6 +84,7 @@
 .form input::placeholder,
 .form textarea::placeholder {
   color: $color-default-white;
+  opacity: 0.6;
 }
 
 .form label:nth-of-type(3) {
@@ -98,7 +99,7 @@
   margin-top: 8px;
   padding: 10px 25px;
   max-width: 265px;
-  height: 45px;
+  min-height: 45px;
   font-family: $ff-roboto;
   font-weight: 700;
   font-size: 16px;
