@@ -201,6 +201,7 @@
 
 .form label input[type="checkbox"] ~ span:nth-of-type(2) {
   display: inline-block;
+  vertical-align: bottom;
   padding-left: 35px;
   font-family: $ff-mono;
   font-size: 14px;
@@ -210,6 +211,7 @@
   @include vp-1023 {
     padding-left: 24px;
     max-width: 355px;
+    margin-bottom: 5px;
   }
 
   @include vp-767 {

@@ -592,14 +592,6 @@ button,
   flex-grow: 1;
 }
 
-.rouble {
-  font-family: "Rouble", "Arial", sans-serif;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -772,6 +764,35 @@ button,
   display: none;
 }
 
+.modal--responsive .modal__content {
+  width: 100%;
+}
+
+.modal--fit-content .modal__content {
+  width: auto;
+}
+
+.modal--no-scale {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.modal--preload {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.modal.is-active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .modal__wrapper {
   position: relative;
   display: -webkit-box;
@@ -805,7 +826,7 @@ button,
   padding: 40px;
   background-color: #00b2ff;
   color: #ffffff;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-size: 16px;
   line-height: 22px;
 }
@@ -838,35 +859,6 @@ button,
 
 .modal__close-btn.focus-visible:focus {
   outline: 1px solid #ffffff;
-}
-
-.modal--responsive .modal__content {
-  width: 100%;
-}
-
-.modal--fit-content .modal__content {
-  width: auto;
-}
-
-.modal--no-scale {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
-.modal.is-active {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .header {
@@ -943,7 +935,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -1033,7 +1025,7 @@ button,
 
 .footer-nav__item {
   width: 220px;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1041,7 +1033,7 @@ button,
 }
 
 .footer-nav__link {
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1126,7 +1118,7 @@ button,
 
 .contacts__address,
 .contacts__phone {
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1199,7 +1191,7 @@ button,
   padding: 0;
   margin: 0;
   margin-bottom: 44px;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
@@ -1264,16 +1256,16 @@ button,
   fill: #f2f5f7;
 }
 
-.features__icon-wrapper {
+.features__item div {
   height: 35px;
   margin-bottom: 20px;
 }
 
-.features__icon-wrapper svg {
+.features__item div svg {
   fill: #00b2ff;
 }
 
-.features__title {
+.features__item h3 {
   margin: 0;
   margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1282,9 +1274,9 @@ button,
   color: #00b2ff;
 }
 
-.features__description {
+.features__item p {
   margin: 0;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-size: 16px;
   line-height: 22px;
 }
@@ -1302,7 +1294,7 @@ button,
   margin-right: 100px;
 }
 
-.about__title {
+.about__content-wrapper h2 {
   margin: 0 0 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -1314,9 +1306,9 @@ button,
   margin-bottom: 40px;
 }
 
-.about__description {
+.about__description-container p {
   margin: 0 0 16px;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   line-height: 22px;
 }
 
@@ -1509,7 +1501,7 @@ button,
 
 .feedback__description {
   margin: 0 0 34px;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-size: 16px;
   line-height: 22px;
 }
@@ -1536,7 +1528,7 @@ button,
 .form input,
 .form textarea {
   padding: 15px;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-size: 16px;
   line-height: 22px;
   background: rgba(4, 20, 39, 0.15);
@@ -1564,7 +1556,7 @@ button,
   top: 52px;
   left: 0;
   color: #ff1553;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1689,8 +1681,9 @@ button,
 
 .form label input[type=checkbox] ~ span:nth-of-type(2) {
   display: inline-block;
+  vertical-align: bottom;
   padding-left: 35px;
-  font-family: "PT Mono", monospaced;
+  font-family: "PT Mono", "Monaco", monospaced;
   font-size: 14px;
   line-height: 16px;
   opacity: 0.8;
@@ -1897,11 +1890,11 @@ button,
     padding: 38px 30px 30px 45px;
   }
 
-  .features__icon-wrapper {
+  .features__item div {
     margin-bottom: 16px;
   }
 
-  .features__title {
+  .features__item h3 {
     margin-bottom: 5px;
   }
 
@@ -1913,7 +1906,7 @@ button,
     margin-right: 30px;
   }
 
-  .about__title {
+  .about__content-wrapper h2 {
     margin-bottom: 10px;
   }
 
@@ -1921,7 +1914,7 @@ button,
     margin-bottom: 18px;
   }
 
-  .about__description {
+  .about__description-container p {
     margin-bottom: 18px;
   }
 
@@ -2019,6 +2012,7 @@ button,
   .form label input[type=checkbox] ~ span:nth-of-type(2) {
     padding-left: 24px;
     max-width: 355px;
+    margin-bottom: 5px;
   }
 }
 
@@ -2053,16 +2047,16 @@ button,
     padding: 10px;
   }
 
+  .modal--fit-content .modal__content {
+    width: 100%;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
 
   .modal__content {
     padding: 20px;
-  }
-
-  .modal--fit-content .modal__content {
-    width: 100%;
   }
 
   .header__wrapper {
@@ -2305,23 +2299,23 @@ button,
     padding: 30px 30px 75px;
   }
 
-  .features__icon-wrapper {
+  .features__item div {
     margin-bottom: 10px;
     width: 30px;
   }
 
-  .features__icon-wrapper svg {
+  .features__item div svg {
     width: 30px;
     height: 30px;
   }
 
-  .features__title {
+  .features__item h3 {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 12px;
   }
 
-  .features__description {
+  .features__item p {
     font-size: 14px;
     line-height: 19px;
   }
@@ -2335,7 +2329,7 @@ button,
     display: none;
   }
 
-  .about__title {
+  .about__content-wrapper h2 {
     font-size: 28px;
     line-height: 39px;
     margin-bottom: 14px;
@@ -2350,7 +2344,7 @@ button,
     max-height: none;
   }
 
-  .about__description {
+  .about__description-container p {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 24px;

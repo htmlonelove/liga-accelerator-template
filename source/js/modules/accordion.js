@@ -11,61 +11,82 @@ const aboutDescriptionContainer = document.querySelector('[data-about-descriptio
 
 // Аккордеон в футере
 
-const removeNojsClass = () => {
-  footerNav.classList.remove('is-nojs');
-  footerContacts.classList.remove('is-nojs');
+const removeNojsClass = (element) => {
+  if (element) {
+    element.classList.remove('is-nojs');
+  }
 };
 
-const onClickOpenInfo = ( mainElement, sideElement ) => {
+const onClickOpenInfo = (mainElement, sideElement) => {
   return () => {
-    mainElement.classList.toggle('is-closed');
-    mainElement.classList.toggle('is-opened');
-    sideElement.classList.remove('is-opened');
-    sideElement.classList.add('is-closed');
-  }
+    if (mainElement && sideElement) {
+      mainElement.classList.toggle('is-closed');
+      mainElement.classList.toggle('is-opened');
+      sideElement.classList.remove('is-opened');
+      sideElement.classList.add('is-closed');
+    } else {
+      mainElement.classList.toggle('is-closed');
+      mainElement.classList.toggle('is-opened');
+    }
+  };
+};
+
+if (footerToggle) {
+  footerToggle.addEventListener('click', onClickOpenInfo(footerNav, footerContacts));
 }
 
-footerToggle.addEventListener('click', onClickOpenInfo(footerNav, footerContacts));
-footerNavTitle.addEventListener('click', onClickOpenInfo(footerNav, footerContacts));
-footerContactsToggle.addEventListener('click', onClickOpenInfo(footerContacts, footerNav));
-footerContactsTitle.addEventListener('click', onClickOpenInfo(footerContacts, footerNav));
+if (footerNavTitle) {
+  footerNavTitle.addEventListener('click', onClickOpenInfo(footerNav, footerContacts));
+}
+
+if (footerContactsToggle) {
+  footerContactsToggle.addEventListener('click', onClickOpenInfo(footerContacts, footerNav));
+}
+
+if (footerContactsTitle) {
+  footerContactsTitle.addEventListener('click', onClickOpenInfo(footerContacts, footerNav));
+}
 
 
 // Аккордеон в блоке 'О компании'
 
 const hideAdditionalText = () => {
-  for (let i = 2; i < aboutDescription.length ; i++) {
-    aboutDescription[i].classList.add('hidden');
-    aboutButton.classList.remove('is-nojs');
-    aboutDescriptionContainer.classList.remove('is-nojs');
-  }
-}
-
-aboutButton.addEventListener('click', () => {
-  aboutButton.classList.toggle('is-opened');
-  aboutButton.classList.toggle('is-closed');
-  const windowInnerWidth = window.innerWidth;
-
-  if (aboutButton.classList.contains('is-opened')) {
-    aboutDescriptionContainer.style.maxHeight = "none";
-    for (let i = 2; i < aboutDescription.length ; i++) {
-      aboutDescription[i].classList.remove('hidden');
+  if (aboutDescription.length > 2 && aboutButton) {
+    for (let i = 2; i < aboutDescription.length; i++) {
+      aboutDescription[i].classList.add('hidden');
+      aboutButton.classList.remove('is-nojs');
+      aboutDescriptionContainer.classList.remove('is-nojs');
     }
-    aboutButton.textContent="Свернуть";
-  } else if (aboutButton.classList.contains('is-closed')) {
-      if ( windowInnerWidth <= 767 ) {
-        aboutDescriptionContainer.style.maxHeight = "200px";
-        aboutButton.textContent="Подробнее";
-        for (let i = 2; i < aboutDescription.length ; i++) {
+  }
+};
+
+if (aboutButton && aboutDescription.length > 2) {
+  aboutButton.addEventListener('click', () => {
+    aboutButton.classList.toggle('is-opened');
+    aboutButton.classList.toggle('is-closed');
+    const windowInnerWidth = window.innerWidth;
+
+    if (aboutButton.classList.contains('is-opened')) {
+      aboutDescriptionContainer.style.maxHeight = 'none';
+      for (let i = 2; i < aboutDescription.length; i++) {
+        aboutDescription[i].classList.remove('hidden');
+      }
+      aboutButton.textContent = 'Свернуть';
+    } else if (aboutButton.classList.contains('is-closed')) {
+      if (windowInnerWidth <= 767) {
+        aboutDescriptionContainer.style.maxHeight = '200px';
+        aboutButton.textContent = 'Подробнее';
+        for (let i = 2; i < aboutDescription.length; i++) {
           aboutDescription[i].classList.add('hidden');
         }
       } else {
-        aboutButton.textContent="Подробнее";
-        for (let i = 2; i < aboutDescription.length ; i++) {
+        aboutButton.textContent = 'Подробнее';
+        for (let i = 2; i < aboutDescription.length; i++) {
           aboutDescription[i].classList.add('hidden');
         }
       }
     }
-});
+  });
+}
 
-export { hideAdditionalText, removeNojsClass }
+export {hideAdditionalText, removeNojsClass, footerNav, footerContacts};

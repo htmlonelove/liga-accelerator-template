@@ -26,7 +26,7 @@
   }
 }
 
-.about__title {
+.about__content-wrapper h2 {
   margin: 0 0 15px;
   font-family: $ff-roboto;
   font-weight: 400;
@@ -54,13 +54,14 @@
   @include vp-767 {
     max-height: 200px;
     overflow: hidden;
+
     &.is-nojs {
       max-height: none;
     }
   }
 }
 
-.about__description {
+.about__description-container p {
   margin: 0 0 16px;
   font-family: $ff-mono;
   line-height: 22px;

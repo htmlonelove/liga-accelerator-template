@@ -29,82 +29,6 @@
     display: none;
   }
 
-  &__wrapper {
-    position: relative;
-
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100%;
-    padding: 60px 40px;
-
-    @include vp-767 {
-      padding: 60px 16px;
-    }
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    cursor: pointer;
-  }
-
-  &__content {
-    position: relative;
-
-    width: 500px;
-    padding: 40px;
-
-    background-color: $color-deep-sky-blue;
-    color: $color-default-white;
-    font-family: $ff-mono;
-    font-size: 16px;
-    line-height: 22px;
-
-    @include vp-767 {
-      padding: 20px;
-    }
-  }
-
-  &__title {
-    margin: 0 0 15px;
-    font-family: $ff-roboto;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 42px;
-  }
-
-  &__description {
-    margin: 0 0 40px;
-  }
-
-  &__close-btn {
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    z-index: 1;
-
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    fill: $color-default-white;
-
-    background: $color-transparent;
-    border: none;
-    cursor: pointer;
-
-    @include hover-focus {
-      outline: 1px solid $color-default-white;
-    }
-  }
-
   &--responsive {
     .modal__content {
       width: 100%;
@@ -135,5 +59,81 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+}
+
+.modal__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 60px 40px;
+
+  @include vp-767 {
+    padding: 60px 16px;
+  }
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.modal__content {
+  position: relative;
+
+  width: 500px;
+  padding: 40px;
+
+  background-color: $color-deep-sky-blue;
+  color: $color-default-white;
+  font-family: $ff-mono;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include vp-767 {
+    padding: 20px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 15px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal__description {
+  margin: 0 0 40px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  z-index: 1;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  fill: $color-default-white;
+
+  background: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  @include hover-focus {
+    outline: 1px solid $color-default-white;
   }
 }

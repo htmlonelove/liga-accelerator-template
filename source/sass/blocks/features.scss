@@ -83,7 +83,7 @@
   }
 }
 
-.features__icon-wrapper {
+.features__item div {
   height: 35px;
   margin-bottom: 20px;
 
@@ -97,7 +97,7 @@
   }
 }
 
-.features__icon-wrapper svg {
+.features__item div svg {
   fill: $color-deep-sky-blue;
 
   @include vp-767 {
@@ -106,7 +106,7 @@
   }
 }
 
-.features__title {
+.features__item h3 {
   margin: 0;
   margin-bottom: 15px;
   font-family: $ff-roboto;
@@ -125,7 +125,7 @@
   }
 }
 
-.features__description {
+.features__item p {
   margin: 0;
   font-family: $ff-mono;
   font-size: 16px;
