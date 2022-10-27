@@ -441,6 +441,8 @@ body {
 }
 
 a {
+
+  color: #000000;
   text-decoration: none;
 }
 
@@ -550,11 +552,14 @@ button,
   appearance: none;
 }
 
+
 .reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
+=======
 
 .wrapper {
   position: relative;
@@ -632,6 +637,8 @@ button,
 .container {
   width: 100%;
   margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 40px;
 }
 
 .btn {
@@ -772,6 +779,7 @@ button,
   opacity: 1;
   pointer-events: auto;
 }
+
 
 header {
   position: relative;
@@ -2390,12 +2398,85 @@ header {
   .promo-block {
     background-image: url("../img/background-mob@2x.jpg");
   }
+=======
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
+
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
+
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
+
+@media (max-width: 1439px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .modal__wrapper {
+    padding: 60px 16px;
+  }
+
+  .modal__content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .modal--fit-content .modal__content {
+    width: 100%;
+  }
+
 }
 
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
   }
+
 
   .email___link:hover {
     color: #00B2FF;
@@ -2450,4 +2531,5 @@ header {
   .product__item-3 {
     background-image: url("../img/background/background-desktop-3@2x.jpg");
   }
+
 }
