@@ -112,6 +112,7 @@
   border-radius: 3px;
   border: none;
   box-sizing: border-box;
+  grid-area: 3 / 1 / 4 /2;
 
   @include hover-focus {
     outline: 1px solid $color-default-white;
@@ -124,6 +125,7 @@
   @include vp-767 {
     max-width: none;
     margin-top: 6px;
+    grid-area: 4 / 1 / 5 / -1;
   }
 
   &:focus {
@@ -202,7 +204,7 @@
 .form label input[type="checkbox"] ~ span:nth-of-type(2) {
   display: inline-block;
   vertical-align: bottom;
-  padding-left: 35px;
+  padding-left: 33px;
   font-family: $ff-mono;
   font-size: 14px;
   line-height: 16px;
@@ -224,11 +226,15 @@
 // Попап
 
 .form--popap {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  grid-template-columns: 1fr;
+  gap: 15px;
 }
 
 .form--popap button {
   max-width: none;
+  grid-area: 4 / 1 / 5 / -1;
+}
+
+.form--popap label:nth-of-type(3) {
+  grid-area: 3 / 1 / 4 /-1;
 }

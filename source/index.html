@@ -181,13 +181,14 @@
                   <textarea placeholder="Ваш вопрос" name="question" id="question"></textarea>
                 </label>
 
-                <button type="submit" data-form-button>Задать вопрос</button>
-
                 <label for="personal-data">
                   <input type="checkbox" name="personal-data" id="personal-data" required checked>
                   <span></span>
                   <span>Я согласен на обработку  персональных данных</span>
                 </label>
+
+                <button type="submit" data-form-button>Задать вопрос</button>
+
               </form>
             </div>
           </div>
@@ -233,10 +234,10 @@
             </ul>
           </section>
 
-          <section class="footer__footer-nav footer-nav">
-            <h2 class="footer-nav__title" data-footer-title>Разделы сайта</h2>
+          <section class="footer__footer-nav footer-nav" data-footer-nav-area>
+            <h2 class="footer-nav__title">Разделы сайта</h2>
             <nav class="footer-nav__nav is-closed is-nojs" data-footer-navigation>
-              <button class="footer-nav__toggle toggle" type="button" data-footer-toggle>
+              <button class="footer-nav__toggle toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
               <ul class="footer-nav__list">
@@ -244,31 +245,31 @@
                   <a class="footer-nav__link" href="#">О Компании</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Комплектующие</a>
-                </li>
-                <li class="footer-nav__item">
                   <a class="footer-nav__link" href="#">Продукты</a>
-                </li>
-                <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Доставка</a>
                 </li>
                 <li class="footer-nav__item">
                   <a class="footer-nav__link" href="#">Производство печатных плат</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Контакты</a>
+                  <a class="footer-nav__link" href="#">Монтаж печатных плат</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a class="footer-nav__link" href="#">Монтаж печатных плат</a>
+                  <a class="footer-nav__link" href="#">Комплектующие</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">Доставка</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">Контакты</a>
                 </li>
               </ul>
             </nav>
           </section>
 
-          <section class="footer__contacts contacts">
-            <h2 class="contacts__title" data-footer-contacts-title>Наш офис</h2>
+          <section class="footer__contacts contacts" data-footer-contacts-area>
+            <h2 class="contacts__title">Наш офис</h2>
             <div class="contacts__wrapper is-closed is-nojs" data-footer-contacts>
-              <button class="contacts__toggle toggle" type="button" data-footer-contacts-toggle>
+              <button class="contacts__toggle toggle" type="button">
                 <span class="visually-hidden">Посмотреть адрес и номера телефонов</span>
               </button>
               <ul class="contacts__list">
@@ -303,9 +304,9 @@
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <h2 class="modal__title">Закажите звонок</h2>
-          <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <p class="modal__description">Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
+            <svg width="22" height="22">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
@@ -319,12 +320,12 @@
             <label for="modal-question" data-textarea>
               <textarea placeholder="Ваш вопрос" name="question" id="modal-question"></textarea>
             </label>
-            <button type="submit" data-form-button>Отправить</button>
             <label for="modal-personal-data">
               <input type="checkbox" name="personal-data" id="modal-personal-data" required checked>
               <span></span>
               <span>Я согласен на обработку  персональных данных</span>
             </label>
+            <button type="submit" data-form-button>Отправить</button>
           </form>
         </div>
       </div>

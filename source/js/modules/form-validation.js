@@ -50,7 +50,7 @@ function onPhoneChange(evt) {
 
   if (phoneInput.value.length < 18) {
     formButton.setAttribute('disabled', 'disabled');
-    phoneInvalidMassage.textContent = 'Введите номер телефона полностью';
+    phoneInvalidMassage.textContent = 'Введите номер полностью';
     phoneLabel.append(phoneInvalidMassage);
   } else if (phoneInvalidMassage) {
     formButton.removeAttribute('disabled');

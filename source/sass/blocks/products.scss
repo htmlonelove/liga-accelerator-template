@@ -119,11 +119,6 @@
 
 .products__link {
   color: $color-default-white;
-
-  @include hover-focus {
-    opacity: 0.8;
-    outline: none;
-  }
 }
 
 .products__title {
@@ -133,6 +128,16 @@
   font-size: 20px;
   line-height: 30px;
   width: 180px;
+
+  &:hover {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+    border: none;
+  }
 
   @include vp-767 {
     font-size: 18px;

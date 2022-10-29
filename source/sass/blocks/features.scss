@@ -59,8 +59,8 @@
     outline: none;
   }
 
-  &:hover .features__title,
-  &:focus .features__title {
+  &:hover h3,
+  &:focus h3 {
     color: $color-alice-blue;
   }
 

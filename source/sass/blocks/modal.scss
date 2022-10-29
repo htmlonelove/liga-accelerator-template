@@ -93,7 +93,9 @@
   position: relative;
 
   width: 500px;
-  padding: 40px;
+  min-height: 610px;
+  padding: 37px 50px 40px 30px;
+  box-sizing: border-box;
 
   background-color: $color-deep-sky-blue;
   color: $color-default-white;
@@ -107,7 +109,7 @@
 }
 
 .modal__title {
-  margin: 0 0 15px;
+  margin: 0 0 3px;
   font-family: $ff-roboto;
   font-weight: 400;
   font-size: 30px;
@@ -116,12 +118,14 @@
 
 .modal__description {
   margin: 0 0 40px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 15px;
+  right: 23px;
   z-index: 1;
 
   width: 40px;

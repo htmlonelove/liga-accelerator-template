@@ -1,6 +1,9 @@
 .social {
+  max-width: 215px;
+
   @include vp-1023 {
     display: flex;
+    max-width: none;
   }
 
   @include vp-767 {
@@ -24,6 +27,7 @@
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 0 0 10px;
   padding: 0;
   list-style: none;

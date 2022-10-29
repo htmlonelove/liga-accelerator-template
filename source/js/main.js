@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import './modules/text.js';
 import {changeButtonText, changeTitleText} from './modules/text.js';
 import {removeNojsClass, hideAdditionalText, footerNav, footerContacts} from './modules/accordion.js';
 import './modules/form-validation.js';
@@ -15,10 +16,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
 
-  changeButtonText();
   removeNojsClass(footerNav);
   removeNojsClass(footerContacts);
   hideAdditionalText();
+  changeButtonText();
+  changeTitleText();
 
   // ---------------------------------
 

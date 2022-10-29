@@ -2,11 +2,11 @@
   position: relative;
   width: 100%;
   min-height: 880px;
-  object-fit: cover;
+
   background-color: #041827;
   color: $color-alice-blue;
   background-image: url("../img/main-block.webp");
-  background-size: 1920px 880px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;

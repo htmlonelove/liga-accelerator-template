@@ -1,9 +1,7 @@
 const footerNav = document.querySelector('[data-footer-navigation]');
 const footerContacts = document.querySelector('[data-footer-contacts]');
-const footerToggle = document.querySelector('[data-footer-toggle]');
-const footerContactsToggle = document.querySelector('[data-footer-contacts-toggle]');
-const footerContactsTitle = document.querySelector('[data-footer-contacts-title]');
-const footerNavTitle = document.querySelector('[data-footer-title]');
+const footerContactsArea = document.querySelector('[data-footer-contacts-area]');
+const footerNavArea = document.querySelector('[data-footer-nav-area]');
 const aboutButton = document.querySelector('[data-about-button]');
 const aboutDescription = document.querySelectorAll('[data-about-description]');
 const aboutDescriptionContainer = document.querySelector('[data-about-description-container]');
@@ -31,22 +29,13 @@ const onClickOpenInfo = (mainElement, sideElement) => {
   };
 };
 
-if (footerToggle) {
-  footerToggle.addEventListener('click', onClickOpenInfo(footerNav, footerContacts));
+if (footerNavArea) {
+  footerNavArea.addEventListener('click', onClickOpenInfo(footerNav, footerContacts));
 }
 
-if (footerNavTitle) {
-  footerNavTitle.addEventListener('click', onClickOpenInfo(footerNav, footerContacts));
+if (footerContactsArea) {
+  footerContactsArea.addEventListener('click', onClickOpenInfo(footerContacts, footerNav));
 }
-
-if (footerContactsToggle) {
-  footerContactsToggle.addEventListener('click', onClickOpenInfo(footerContacts, footerNav));
-}
-
-if (footerContactsTitle) {
-  footerContactsTitle.addEventListener('click', onClickOpenInfo(footerContacts, footerNav));
-}
-
 
 // Аккордеон в блоке 'О компании'
 
