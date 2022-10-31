@@ -1117,9 +1117,6 @@ button,
   width: 40px;
   height: 40px;
   padding: 5px;
-}
-
-.social__item:not(:last-child) {
   margin-right: 15px;
 }
 
@@ -1405,7 +1402,6 @@ button,
 
 .products__item {
   position: relative;
-  padding: 50px 40px;
   min-height: 650px;
   background-color: #041827;
   background-image: url("../img/main-block.webp");
@@ -1454,12 +1450,25 @@ button,
   min-width: 60px;
 }
 
-.products__item.focus-visible:focus {
-  outline: 1px solid #f2f5f7;
-}
-
 .products__link {
   color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 50px 40px;
+}
+
+.products__link:hover {
+  opacity: 0.8;
+  outline: none;
+}
+
+.products__link:focus-visible {
+  outline: 1px solid #ffffff;
+  border: none;
 }
 
 .products__title {
@@ -1469,16 +1478,6 @@ button,
   font-size: 20px;
   line-height: 30px;
   width: 180px;
-}
-
-.products__title:hover {
-  opacity: 0.8;
-  outline: none;
-}
-
-.products__title:focus-visible {
-  outline: 1px solid #ffffff;
-  border: none;
 }
 
 .products__button {
@@ -1920,6 +1919,10 @@ button,
     padding: 5px 0 0;
   }
 
+  .social__item:last-child {
+    margin: 0;
+  }
+
   .main-block {
     min-height: 640px;
     background-position: 20%;
@@ -2009,7 +2012,6 @@ button,
   }
 
   .products__item {
-    padding: 38px 45px;
     width: 100%;
     min-height: 250px;
     background-size: 1300px 660px;
@@ -2030,6 +2032,10 @@ button,
   .products__item::after {
     min-height: 250px;
     max-width: none;
+  }
+
+  .products__link {
+    padding: 38px 45px;
   }
 
   .feedback::after {
@@ -2175,7 +2181,7 @@ button,
   }
 
   .footer__social {
-    padding: 35px 0 25px;
+    padding: 35px 10px 25px;
   }
 
   .footer__footer-nav {
@@ -2225,6 +2231,9 @@ button,
   .social__list {
     margin: 0 0 0 4px;
     padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .contacts__title {
@@ -2437,7 +2446,6 @@ button,
 
   .products__item {
     min-width: 270px;
-    padding: 24px 30px;
   }
 
   .products__item--first {
@@ -2455,6 +2463,10 @@ button,
   .products__item::before {
     min-width: 40px;
     height: 40px;
+  }
+
+  .products__link {
+    padding: 24px 30px;
   }
 
   .products__title {

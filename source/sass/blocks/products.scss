@@ -15,7 +15,6 @@
 
 .products__item {
   position: relative;
-  padding: 50px 40px;
   min-height: 650px;
   background-color: $color-black-perl;
   background-image: url("../img/main-block.webp");
@@ -66,12 +65,7 @@
     min-width: 60px;
   }
 
-  @include focus {
-    outline: 1px solid $color-alice-blue;
-  }
-
   @include vp-1023 {
-    padding: 38px 45px;
     width: 100%;
     min-height: 250px;
     background-size: 1300px 660px;
@@ -96,7 +90,6 @@
 
   @include vp-767 {
     min-width: 270px;
-    padding: 24px 30px;
 
     &--first {
       background-position: 30% 55%;
@@ -119,15 +112,13 @@
 
 .products__link {
   color: $color-default-white;
-}
-
-.products__title {
-  font-weight: 400;
-  margin: 0;
-  font-family: $ff-roboto;
-  font-size: 20px;
-  line-height: 30px;
-  width: 180px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 50px 40px;
 
   &:hover {
     opacity: 0.8;
@@ -138,6 +129,23 @@
     outline: 1px solid $color-default-white;
     border: none;
   }
+
+  @include vp-1023 {
+    padding: 38px 45px;
+  }
+
+  @include vp-767 {
+    padding: 24px 30px;
+  }
+}
+
+.products__title {
+  font-weight: 400;
+  margin: 0;
+  font-family: $ff-roboto;
+  font-size: 20px;
+  line-height: 30px;
+  width: 180px;
 
   @include vp-767 {
     font-size: 18px;
