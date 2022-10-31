@@ -1463,7 +1463,7 @@ button,
 
 .products__link:hover {
   opacity: 0.8;
-  outline: none;
+  outline: 1px solid #ffffff;
 }
 
 .products__link:focus-visible {

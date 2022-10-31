@@ -122,7 +122,7 @@
 
   &:hover {
     opacity: 0.8;
-    outline: none;
+    outline: 1px solid $color-default-white;
   }
 
   &:focus-visible {
