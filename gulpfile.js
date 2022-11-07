@@ -1,13 +1,13 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
-import compileStyles from './gulp/compileStyles.mjs';
+import styles from './gulp/compileStyles.mjs';
 import { copy, copyImages, copySvg } from './gulp/copyAssets.mjs';
 import js from './gulp/compileScripts.mjs';
-import { svgo, sprite, createWebp, optimizeImages } from './gulp/optimizeImages.mjs';
+import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
 
 const server = browserSync.create();
-const streamStyles = () => compileStyles().pipe(server.stream());
+const streamStyles = () => styles().pipe(server.stream());
 
 const clean = () => del('build');
 
@@ -39,7 +39,8 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, compileStyles, sprite, js);
-const start = gulp.series(build, syncServer);
+const build = gulp.series(clean, copy, sprite, gulp.parallel(styles, js, optimizePng, optimizeJpg, optimizeSvg));
+const dev = gulp.series(clean, copy, sprite, gulp.parallel(styles, js, optimizePng, optimizeJpg, optimizeSvg), syncServer);
+const start = gulp.series(clean, copy, sprite, gulp.parallel(styles, js), syncServer);
 
-export { optimizeImages as imagemin, createWebp as webp, build, start };
+export { createWebp as webp, build, start, dev};
