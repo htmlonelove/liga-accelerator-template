@@ -1,0 +1,64 @@
+.main-block__wrapper {
+  background-image: url("/img/main-image-mobile.png");
+  background-repeat: no-repeat;
+  height: 490px;
+}
+
+
+@media (min-width: $vp-768) {
+  .main-block__wrapper {
+    background-image: url("/img/main-image-table.png");
+    height: 540px;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .main-block__wrapper {
+    background-image: url("/img/main-image-desktop.png");
+    height: 760px;
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .main-block__wrapper {
+      background-image: url("/img/main-image-desktop@2x.png");
+      background-size: 1980px auto;
+    }
+  }
+
+  .main-block__title {
+    padding: 0;
+    margin: 0;
+    color: $color-alice-blue;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+
+  .main-block__description {
+    font-family: $ff-ptmono;
+    color: $color-alice-blue;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-block__link {
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: $color-deep-sky-blue;
+    border-radius: 3px;
+    padding: 15px 25px;
+  }
+}

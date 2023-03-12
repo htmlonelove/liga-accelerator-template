@@ -445,6 +445,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 img,
 video {
   display: block;
@@ -1289,10 +1293,49 @@ button,
   color: #15ab07;
 }
 
-.header__wrapper {
+.header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__image-desktop {
+  display: none;
+}
+
+.navigation__link {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #f3f6f7;
+}
+
+.navigation {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-block__wrapper {
+  background-image: url("/img/main-image-mobile.png");
+  background-repeat: no-repeat;
+  height: 490px;
 }
 
 /* @mixin hover-focus {
@@ -1335,6 +1378,72 @@ button,
     }
   }
 */
+
+@media (min-width: 768px) {
+  .header__image-desktop {
+    display: block;
+  }
+
+  .header__image-mobile {
+    display: none;
+  }
+
+  .main-block__wrapper {
+    background-image: url("/img/main-image-table.png");
+    height: 540px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-block__wrapper {
+    background-image: url("/img/main-image-desktop.png");
+    height: 760px;
+    background-size: cover;
+  }
+
+  .main-block__title {
+    padding: 0;
+    margin: 0;
+    color: #f3f6f7;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+
+  .main-block__description {
+    font-family: "PT Mono", monospace;
+    color: #f3f6f7;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-block__link {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: #00b3ff;
+    border-radius: 3px;
+    padding: 15px 25px;
+  }
+}
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .main-block__wrapper {
+    background-image: url("/img/main-image-desktop@2x.png");
+    background-size: 1980px auto;
+  }
+}
 
 @media (max-width: 1439px) {
   .container {
