@@ -1,0 +1,61 @@
+.promo {
+  position: relative;
+  padding: 185px 0 340px 0;
+}
+
+.promo__wrapper {
+  padding: 0 0 0 475px;
+}
+
+.promo__title {
+  max-width: 40vw;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  margin: 0 0 33px 0;
+  z-index: 2;
+}
+
+.promo__text {
+  font-family: "PT_Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #f2f5f7;
+  margin: 0 0 47px 0;
+  max-width: 35vw;
+}
+
+.promo__button {
+  display: block;
+  max-width: 21.4vw;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+}
+
+.promo__shadow {
+  width: 100vw;
+  display: block;
+  position: absolute;
+  top: -120px;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.promo__picture {
+  display: block;
+  background-size: cover;
+  margin: 0;
+}

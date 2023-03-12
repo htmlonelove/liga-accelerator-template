@@ -7,17 +7,19 @@
     <meta name="description" content="Описание проекта">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-mono_regular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <div class="container">
+        <div class="container header">
           <a class="logo" href="#">
             <img class="logo__pic" src="img/svg/logo.svg" alt="Логотип компании Smart Device">
           </a>
           <div class="contacts">
             <dl class="contacts__list">
-              <div class="contacts__item">
+              <div class="contacts__item contacts__item--email">
                 <dt class="contacts__parameter">
                   <p class="visually-hidden">Email:</p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
@@ -29,7 +31,7 @@
                   <a class="contacts__mail" href="mailto:info@sd.ru">info@sd.ru</a>
                 </dd>
               </div>
-              <div class="contacts__item">
+              <div class="contacts__item contacts__item--tel">
                 <dt class="contacts__parameter">
                   <p class="visually-hidden">Телефон:</p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">
@@ -43,20 +45,24 @@
               </div>
             </dl>
           </div>
-          <a class="button button__phone">Заказать звонок</a>
+          <a class="button header__button">Заказать звонок</a>
         </div>
       </header>
       <main>
         <h1 class="visually-hidden">Интернет-магазин умных технологий Smart Device</h1>
         <section class="promo">
-          <h2 class="promo__title">Печатные платы</h2>
-          <picture class="promo__picture">
-            <!--<source media="(min-width:320px)" srcset="img/main/promo/background-image_mobile@1x.jpg 1x, img/main/promo/background-image_mobile@2x.jpg 2x">
-            <source media="(min-width:768px)" srcset="img/main/promo/background-image_tablet@1x.jpg 1x, img/main/promo/background-image_tablet@2x.jpg 2x">-->
-            <img src="img/main/promo/background-image_desktop@1x.jpg" srcset="img/main/promo/background-image_desktop@2x.jpg 2x" alt="Изображение печатной платы">
-          </picture>
-          <p class="promo__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="button promo__button" href="#">Получить бесплатную консультацию</a>
+          <div class="container promo__wrapper">
+            <h2 class="promo__title">Печатные платы</h2>
+            <p class="promo__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+            <a class="button promo__button" href="#">Получить бесплатную консультацию</a>
+          </div>
+          <div class="promo__shadow">
+            <picture class="promo__picture">
+              <!--<source media="(min-width:320px)" srcset="img/main/promo/background-image_mobile@1x.jpg 1x, img/main/promo/background-image_mobile@2x.jpg 2x">
+              <source media="(min-width:768px)" srcset="img/main/promo/background-image_tablet@1x.jpg 1x, img/main/promo/background-image_tablet@2x.jpg 2x">-->
+              <img src="img/main/promo/background-image_desktop@1x.jpg" srcset="img/main/promo/background-image_desktop@2x.jpg 2x" width="1920" height="880" alt="Изображение печатной платы">
+            </picture>
+          </div>
         </section>
         <section class="advantages">
           <div class="advantages__wrapper">
@@ -119,7 +125,7 @@
               Среди наших клиентов крупнейшие Производители светотехники России.
             </p>
           </div>
-          <a class="button button__more" href="#">Подробнее</a>
+          <a class="button about-company__button" href="#">Подробнее</a>
         </section>
         <section class="goods">
           <div class="goods__wrapper">
@@ -187,7 +193,7 @@
                   <input type="checkbox" class="form__input">
                   <span class="form__text">Я согласен на обработку  персональных данных</span>
                 </label>
-                <button class="button button__form">Задать вопрос</button>
+                <button class="button form__button">Задать вопрос</button>
               </div>
             </form>
           </div>
@@ -222,7 +228,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__main-container menu">
+          <div class="container__footer-menu menu">
             <h2 class="menu__title">Разделы сайта</h2>
             <ul class="menu__list">
               <li class="menu__item">
@@ -248,7 +254,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__main-container contacts">
+          <div class="container__footer-menu contacts">
             <h2 class="contacts__title">Наш офис</h2>
             <dl class="contacts__list">
               <div class="contacts__item">

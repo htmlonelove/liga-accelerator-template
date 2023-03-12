@@ -11,9 +11,17 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
+  font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../fonts/rouble.woff") format("woff"),
-    url("../fonts/rouble.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff"),
+    url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT_Mono";
+  font-display: swap;
+  src: url("../fonts/pt-mono_regular.woff") format("woff"),
+    url("../fonts/pt-mono_regular.woff2") format("woff2");
 }

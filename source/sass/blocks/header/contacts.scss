@@ -1,0 +1,27 @@
+.contacts__list {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(auto, 2vw));
+  grid-template-columns: repeat(2, minmax(auto, auto));
+  margin: 0 0 0 7px;
+  gap: 0 22.5%;
+  padding: 40px 0 0 0;
+}
+
+.contacts__item {
+  display: flex;
+  gap: 0 15px;
+}
+
+.contacts__parameter {
+  margin: 6px 0 0 0;
+}
+
+.contacts__meaning {
+  margin: 0;
+}
+
+.contacts__mail,
+.contacts__phone {
+  font-family: "PT_Mono", "Arial", sans-serif;
+  color: #f2f5f7;
+}

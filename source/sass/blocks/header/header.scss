@@ -1,0 +1,24 @@
+.header {
+  display: grid;
+  grid-template-columns: 11.2vw 25vw 11.2vw;
+  grid-template-rows: repeat(auto-fit, minmax(auto, 120px));
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  /*background: linear-gradient(#041827 103px, transparent 161px);*/
+  gap: 10% 12.5%;
+}
+
+.header__button {
+  height: min-content;
+  width: 6.7vw;
+  margin-top: 36px;
+  padding: 10px 15px;
+  box-sizing: content-box;
+  font-size: 12.3px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+}
