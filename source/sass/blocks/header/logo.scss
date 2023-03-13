@@ -1,11 +1,20 @@
 .logo {
   display: block;
-  width: 11.2vw;
   padding: 30px 0 0 0;
   box-sizing: border-box;
+
+  @include vp-1023 {
+    padding: 20px 0 0 0;
+    box-sizing: border-box;
+  }
 }
 
 .logo__pic {
   display: block;
   margin: 0 0 0 0;
+
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+  }
 }

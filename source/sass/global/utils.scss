@@ -1,6 +1,8 @@
 .wrapper {
   position: relative;
-
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

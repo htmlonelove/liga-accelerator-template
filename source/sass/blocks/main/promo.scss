@@ -1,4 +1,5 @@
 .promo {
+  max-width: 100%;
   position: relative;
   padding: 185px 0 340px 0;
 }
@@ -45,7 +46,7 @@
 }
 
 .promo__shadow {
-  width: 100vw;
+  width: 100%;
   display: block;
   position: absolute;
   top: -120px;
@@ -55,7 +56,10 @@
 }
 
 .promo__picture {
+  max-width: 100%;
   display: block;
-  background-size: cover;
+  background-repeat: repeat;
+  background-color: #041827;
+  background-size: contain;
   margin: 0;
 }

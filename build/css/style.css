@@ -545,6 +545,9 @@ button,
 
 .wrapper {
   position: relative;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,41 +627,42 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 350px;
-}
-
-.wrapper {
-  font-family: "RobotoCondensed", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  padding: 0 410px 0 350px;
 }
 
 .header {
+  max-width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 11.2vw 25vw 11.2vw;
-  grid-template-columns: 11.2vw 25vw 11.2vw;
+  -ms-grid-columns: 215px 29vw 12vw;
+  grid-template-columns: 215px 29vw 12vw;
   grid-template-rows: repeat(auto-fit, minmax(auto, 120px));
+  justify-items: center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  /*background: linear-gradient(#041827 103px, transparent 161px);*/
-  gap: 10% 12.5%;
+  gap: 0 4vw;
+}
+
+.header > .header__button {
+  -ms-grid-column-align: end;
+  justify-self: end;
 }
 
 .header__button {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: 6.7vw;
-  margin-top: 36px;
+  width: auto;
+  margin: 36px 0 0 0;
   padding: 10px 15px;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  font-size: 12.3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   text-align: center;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
   border: 1px solid #f2f5f7;
@@ -667,7 +671,6 @@ button,
 
 .logo {
   display: block;
-  width: 11.2vw;
   padding: 30px 0 0 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -682,22 +685,26 @@ button,
   display: -ms-grid;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(auto, 2vw));
-  -ms-grid-columns: (minmax(auto, auto))[2];
-  grid-template-columns: repeat(2, minmax(auto, auto));
-  margin: 0 0 0 7px;
-  gap: 0 22.5%;
-  padding: 40px 0 0 0;
+  -ms-grid-columns: 8vw 15vw;
+  grid-template-columns: 8vw 15vw;
+  margin: 0 0 0 135px;
+  padding: 40px 0 0;
+  gap: 0 5vw;
 }
 
 .contacts__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 3px 0 0 0;
+  margin: 0;
 }
 
 .contacts__parameter {
-  margin: 6px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3px 16px 0 0;
 }
 
 .contacts__meaning {
@@ -707,10 +714,16 @@ button,
 .contacts__mail,
 .contacts__phone {
   font-family: "PT_Mono", "Arial", sans-serif;
+  margin: 0 0 0 5px;
   color: #f2f5f7;
 }
 
+.contacts__meaning--hidden {
+  display: block;
+}
+
 .promo {
+  max-width: 100%;
   position: relative;
   padding: 185px 0 340px 0;
 }
@@ -758,7 +771,7 @@ button,
 }
 
 .promo__shadow {
-  width: 100vw;
+  width: 100%;
   display: block;
   position: absolute;
   top: -120px;
@@ -770,8 +783,11 @@ button,
 }
 
 .promo__picture {
+  max-width: 100%;
   display: block;
-  background-size: cover;
+  background-repeat: repeat;
+  background-color: #041827;
+  background-size: contain;
   margin: 0;
 }
 
@@ -1472,19 +1488,145 @@ button,
 
 @media (max-width: 1439px) {
   .container {
-    padding: 0 32px;
+    padding: 0 262px 0 307px;
+  }
+
+  .header {
+    -ms-grid-columns: 215px 29.5vw 12vw;
+    grid-template-columns: 215px 29.5vw 12vw;
+    gap: 10% 3%;
+  }
+
+  .header__button {
+    width: auto;
+    font-size: 13px;
+    padding: 10px 13px;
+    margin-right: 0;
+  }
+
+  .contacts__list {
+    -ms-grid-columns: 11vw 17vw;
+    grid-template-columns: 11vw 17vw;
+    gap: 0 1vw;
+    margin: 0;
+  }
+
+  .contacts__mail,
+  .contacts__phone {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .container {
+    padding: 0 233px 0 273px;
+  }
+
+  .header {
+    gap: 0 0;
+    -ms-grid-columns: 215px 28.5vw 12vw;
+    grid-template-columns: 215px 28.5vw 12vw;
+  }
+
+  .header__button {
+    width: auto;
+    font-size: 11px;
+    margin: 36px 0 0 0;
+    padding: 10px 10px;
+  }
+
+  .contacts__list {
+    -ms-grid-columns: 10vw 17vw;
+    grid-template-columns: 10vw 17vw;
+  }
+
+  .contacts__parameter {
+    margin-right: 3px;
+  }
+
+  .contacts__mail,
+  .contacts__phone {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 70px 0 50px;
+  }
+
+  .header {
+    -ms-grid-columns: 215px 14vw;
+    grid-template-columns: 215px 14vw;
+    grid-template-rows: repeat(auto-fit, minmax(auto, 100px));
+    gap: 0 42vw;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .logo {
+    padding: 20px 0 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .contacts__list {
+    grid-template-rows: repeat(auto-fit, minmax(auto, 5vw));
+    -ms-grid-columns: (minmax(0, 5vw))[2];
+    grid-template-columns: repeat(2, minmax(0, 5vw));
+    gap: 0;
+    padding: 16px 0 0 0;
+    margin: 0;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
+  .contacts__item--email {
+    margin: 0 0 0 -4px;
+  }
+
+  .contacts__item--tel {
+    margin: 0 0 0 16px;
+  }
+
+  .contacts__parameter {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .contacts__meaning--hidden {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 35px 0 26px;
+  }
+
+  .header {
+    -ms-grid-columns: 37px 35vw;
+    grid-template-columns: 37px 35vw;
+    grid-template-rows: repeat(auto-fit, minmax(auto, 70px));
+    gap: 0 34vw;
+  }
+
+  .logo__pic {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contacts__list {
+    -ms-grid-columns: (minmax(0, 12vw))[2];
+    grid-template-columns: repeat(2, minmax(0, 12vw));
+    grid-template-rows: repeat(auto-fit, minmax(auto, 12vw));
+    padding: 15px 0 0 0;
+  }
+
+  .contacts__item {
+    padding: 0;
   }
 
   .modal__wrapper {

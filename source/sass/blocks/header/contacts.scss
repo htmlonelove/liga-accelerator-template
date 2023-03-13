@@ -1,19 +1,71 @@
 .contacts__list {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(auto, 2vw));
-  grid-template-columns: repeat(2, minmax(auto, auto));
-  margin: 0 0 0 7px;
-  gap: 0 22.5%;
-  padding: 40px 0 0 0;
+  grid-template-columns: 8vw 15vw;
+  margin: 0 0 0 135px;
+  padding: 40px 0 0;
+  gap: 0 5vw;
+
+  @include vp-1439 {
+    grid-template-columns: 11vw 17vw;
+    gap: 0 1vw;
+    margin: 0;
+  }
+
+  @include vp-1279 {
+    grid-template-columns: 10vw 17vw;
+  }
+
+  @include vp-1023 {
+    grid-template-rows: repeat(auto-fit, minmax(auto, 5vw));
+    grid-template-columns: repeat(2, minmax(0, 5vw));
+    gap: 0;
+    padding: 16px 0 0 0;
+    margin: 0;
+    justify-self: center;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(2, minmax(0, 12vw));
+    grid-template-rows: repeat(auto-fit, minmax(auto, 12vw));
+    padding: 15px 0 0 0;
+  }
 }
 
 .contacts__item {
-  display: flex;
-  gap: 0 15px;
+  display: inline-flex;
+  padding: 3px 0 0 0;
+  margin: 0;
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.contacts__item--email {
+  @include vp-1023 {
+    margin: 0 0 0 -4px;
+  }
+}
+
+.contacts__item--tel {
+  @include vp-1023 {
+    margin: 0 0 0 16px;
+  }
 }
 
 .contacts__parameter {
-  margin: 6px 0 0 0;
+  display: flex;
+  margin: 3px 16px 0 0;
+
+  @include vp-1279 {
+    margin-right: 3px;
+  }
+
+  @include vp-1023 {
+    padding: 10px;
+    margin: 0;
+  }
 }
 
 .contacts__meaning {
@@ -23,5 +75,22 @@
 .contacts__mail,
 .contacts__phone {
   font-family: "PT_Mono", "Arial", sans-serif;
+  margin: 0 0 0 5px;
   color: #f2f5f7;
+
+  @include vp-1439 {
+    font-size: 15px;
+  }
+
+  @include vp-1279 {
+    font-size: 13px;
+  }
+}
+
+.contacts__meaning--hidden {
+  display: block;
+
+  @include vp-1023 {
+    display: none;
+  }
 }
