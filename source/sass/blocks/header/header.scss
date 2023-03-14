@@ -1,15 +1,15 @@
 .header {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 215px 29vw 12vw;
+  grid-template-columns: 215px 29vw 10.2vw;
   grid-template-rows: repeat(auto-fit, minmax(auto, 120px));
   justify-items: center;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  gap: 0 4vw;
+  gap: 0 5vw;
 
-  @include vp-1439 {
-    grid-template-columns: 215px 29.5vw 12vw;
-    gap: 10% 3%;
+  @include vp-1919 {
+    grid-template-columns: 215px 26vw 11.2vw;
+    gap: 0 3vw;
   }
 
   @include vp-1279 {
@@ -20,13 +20,13 @@
   @include vp-1023 {
     grid-template-columns: 215px 14vw;
     grid-template-rows: repeat(auto-fit, minmax(auto, 100px));
-    gap: 0 42vw;
+    gap: 0 43vw;
   }
 
   @include vp-767 {
     grid-template-columns: 37px 35vw;
     grid-template-rows: repeat(auto-fit, minmax(auto, 70px));
-    gap: 0 34vw;
+    gap: 0 36vw;
   }
 }
 

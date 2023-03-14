@@ -1,0 +1,282 @@
+.advantages {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  @include vp-1023 {
+    padding-top: 40px;
+  }
+}
+
+.advantages__wrapper {
+  width: 1222px;
+  margin: 0 auto;
+  /*padding: 0 349px 0 350px;*/
+
+  @include vp-1439 {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  @include vp-1023 {
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 595px 595px;
+  grid-template-rows: repeat(2, 303px);
+  gap: 30px 32px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1439 {
+    grid-template-columns: 483px 483px;
+    grid-template-rows: repeat(2, 303px);
+  }
+
+  @include vp-1023 {
+    grid-template-columns: 320px 320px;
+    grid-template-rows: repeat(2, 360px);
+    gap: 30px 30px;
+  }
+
+  @include vp-767 {
+    grid-template-rows: repeat(2, 340px) repeat(2, 325px);
+    grid-template-columns: 270px;
+  }
+}
+
+.advantages__item {
+  display: grid;
+  grid-template-rows: 35px 60px auto;
+  padding: 40px;
+  gap: 18px;
+  border-top: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 5px solid #00b2ff;
+  box-sizing: border-box;
+
+  @include vp-1439 {
+    gap: 10px;
+  }
+
+  @include vp-1279 {
+    gap: 0;
+  }
+
+  @include vp-1023 {
+    align-items: center;
+  }
+
+  @include vp-767 {
+    gap: 0;
+    padding: 25px;
+  }
+}
+
+.advantages__item:hover,
+.advantages__item:hover .advantages__icon,
+.advantages__item:hover .advantages__title {
+  background-color: #00b2ff;
+  fill: #f2f5f7;
+  color: #f2f5f7;
+}
+
+.advantages__item--current {
+  background-color: #00b2ff;
+  color: #f2f5f7;
+}
+
+.advantages__title {
+  order: 2;
+  color: #00b2ff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 1px 0 0 0;
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+}
+
+.advantages__title--current {
+  color: #f2f5f7;
+}
+
+.advantages__icon {
+  fill: #00b2ff;
+  order: 1;
+}
+
+.advantages__icon--hidden-tablet {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.advantages__icon--hidden-mobile {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.advantages__icon--current {
+  fill: #f2f5f7;
+}
+
+.advantages__subtitle {
+  order: 3;
+  font-family: "PT_Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  margin: 0;
+
+  @include vp-1023 {
+    font-size: 16px;
+    line-height: 135%;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.advantages__item:first-child .advantages__title {
+  margin-top: 4px;
+
+  @include vp-1279 {
+    margin-top: 13px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
+}
+
+.advantages__item:first-child .advantages__subtitle {
+  margin-top: -26px;
+
+  @include vp-1023 {
+    margin-top: -17px;
+  }
+
+  @include vp-1279 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: -53px;
+  }
+}
+
+.advantages__item:nth-child(2) .advantages__title {
+  margin-top: 7px;
+
+  @include vp-1279 {
+    margin-top: 13px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
+}
+
+.advantages__item:nth-child(2) .advantages__subtitle {
+  margin-top: -26px;
+
+  @include vp-1023 {
+    margin-top: -3px;
+  }
+
+  @include vp-1279 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: -36px;
+  }
+}
+
+.advantages__item:nth-child(3) .advantages__title {
+  margin-top: 2px;
+
+  @include vp-1023 {
+    margin-top: 35px;
+  }
+
+  @include vp-1279 {
+    margin-top: 13px;
+  }
+
+  @include vp-767 {
+    margin-top: 34px;
+  }
+}
+
+.advantages__item:nth-child(3) .advantages__subtitle {
+  margin-top: -28px;
+
+  @include vp-1023 {
+    margin-top: -66px;
+  }
+
+  @include vp-1279 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: -63px;
+  }
+}
+
+.advantages__item:nth-child(4) .advantages__title {
+  margin-top: 2px;
+
+  @include vp-1023 {
+    margin-top: 28px;
+  }
+
+  @include vp-1279 {
+    margin-top: 13px;
+  }
+
+  @include vp-767 {
+    margin-top: 37px;
+  }
+}
+
+.advantages__item:nth-child(4) .advantages__subtitle {
+  margin-top: -29px;
+
+  @include vp-1023 {
+    margin-top: -13px;
+  }
+
+  @include vp-1279 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: -7px;
+    width: 199px;
+  }
+}

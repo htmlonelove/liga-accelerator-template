@@ -1,25 +1,33 @@
+.contacts {
+  max-width: 513px;
+}
+
 .contacts__list {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(auto, 2vw));
-  grid-template-columns: 8vw 15vw;
-  margin: 0 0 0 135px;
+  justify-items: end;
+  grid-template-columns: 10vw 15vw;
   padding: 40px 0 0;
-  gap: 0 5vw;
+  gap: 0 2vw;
 
-  @include vp-1439 {
-    grid-template-columns: 11vw 17vw;
-    gap: 0 1vw;
-    margin: 0;
+  @include vp-1919 {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(auto, 2vw));
+    justify-items: end;
+    grid-template-columns: 8vw 17vw;
+    padding: 40px 0 0;
+    gap: 0 0;
   }
 
   @include vp-1279 {
-    grid-template-columns: 10vw 17vw;
+    grid-template-columns: 11vw 17.5vw;
+    gap: 0 0;
   }
 
   @include vp-1023 {
     grid-template-rows: repeat(auto-fit, minmax(auto, 5vw));
     grid-template-columns: repeat(2, minmax(0, 5vw));
-    gap: 0;
+    gap: 0 21px;
     padding: 16px 0 0 0;
     margin: 0;
     justify-self: center;
@@ -27,7 +35,7 @@
 
   @include vp-767 {
     grid-template-columns: repeat(2, minmax(0, 12vw));
-    grid-template-rows: repeat(auto-fit, minmax(auto, 12vw));
+    grid-template-rows: repeat(auto-fit, minmax(auto, 13vw));
     padding: 15px 0 0 0;
   }
 }
@@ -69,7 +77,7 @@
 }
 
 .contacts__meaning {
-  margin: 0;
+  margin: -2px 0 0 9px;
 }
 
 .contacts__mail,
