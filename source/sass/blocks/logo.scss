@@ -1,0 +1,25 @@
+.logo {
+  flex-shrink: 0;
+}
+
+.logo__icon {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+
+  &--footer {
+    @include vp-767 {
+      display: block;
+    }
+  }
+}
