@@ -1,0 +1,156 @@
+.goods {
+  width: 100%;
+  padding: 64px 0 140px 0;
+  background-color: #041827;
+  z-index: -2;
+
+  @include vp-1023 {
+    padding: 54px 0 79px 0;
+  }
+
+  @include vp-767 {
+    padding: 54px 0 87px 0;
+  }
+}
+
+.goods__wrapper {
+  width: 1220px;
+  margin: 0 auto;
+
+  @include vp-1279 {
+    width: 1000px;
+  }
+
+  @include vp-1023 {
+    width: 674px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+}
+
+.goods__title {
+  margin: 0 0 53px 0;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @include vp-1023 {
+    margin: 0 0 35px 0;
+  }
+
+  @include vp-767 {
+    margin: -7px 0 28px 0;
+  }
+}
+
+.goods__list {
+  display: flex;
+  gap: 0 85px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1279 {
+    gap: 0 50px;
+  }
+
+  @include vp-1023 {
+    flex-direction: column;
+    gap: 30px 0;
+  }
+}
+
+.goods__item {
+  display: grid;
+  grid-template-rows: repeat(2, 109px);
+  grid-template-columns: 350px;
+  gap: 432px 0;
+
+  @include vp-1279 {
+    grid-template-columns: 300px;
+    gap: 340px 0;
+  }
+
+  @include vp-1023 {
+    grid-template-rows: repeat(2, 60px);
+    grid-template-columns: 672px;
+    gap: 130px 0;
+  }
+
+  @include vp-767 {
+    grid-template-rows: repeat(2, 60px);
+    grid-template-columns: 270px;
+  }
+}
+
+.goods__item-subtitle {
+  width: 210px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  padding: 48px 0 0 40px;
+
+  @include vp-1023 {
+    width: 194px;
+    padding: 40px 0 0 46px;
+  }
+
+  @include vp-767 {
+    width: 166px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 27px 0 0 31px;
+  }
+}
+
+.goods__item-picture {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  z-index: 1;
+}
+
+.goods__link {
+  grid-column: 1;
+  grid-row: 2;
+  z-index: 1;
+  padding: 16px 27px 18px 30px;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  justify-self: end;
+  align-self: end;
+
+  @include vp-1023 {
+    padding: 16px 23px 16px 31px;
+  }
+
+  @include vp-767 {
+    padding: 7px 16px 8px 17px;
+  }
+}
+
+.goods__title--hidden-mobile {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.goods__title--hidden-tablet {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    width: 190px;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}

@@ -1,13 +1,15 @@
 .about-company {
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 0 98px 0;
 
   @include vp-1023 {
     padding: 40px 0;
+    margin: 0 0 40px 0;
   }
 
   @include vp-767 {
     padding: 5px 0 25px 0;
+    margin: 0 0 55px 0;
   }
 }
 
