@@ -1,10 +1,14 @@
 .advantages {
   width: 100%;
   margin: 0 auto;
-  padding-top: 60px;
+  padding: 60px 0;
 
   @include vp-1023 {
-    padding-top: 40px;
+    padding: 40px 0;
+  }
+
+  @include vp-767 {
+    padding: 40px 0;
   }
 }
 
@@ -13,7 +17,7 @@
   margin: 0 auto;
   /*padding: 0 349px 0 350px;*/
 
-  @include vp-1439 {
+  @include vp-1279 {
     width: 1000px;
     margin: 0 auto;
   }

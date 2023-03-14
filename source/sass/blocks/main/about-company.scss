@@ -1,0 +1,175 @@
+.about-company {
+  width: 100%;
+  padding: 60px 0;
+
+  @include vp-1023 {
+    padding: 40px 0;
+  }
+
+  @include vp-767 {
+    padding: 5px 0 25px 0;
+  }
+}
+
+.about-company__wrapper {
+  width: 1220px;
+  display: grid;
+  grid-template-columns: 150px 970px;
+  grid-template-rows: 45px auto auto auto auto;
+  justify-items: start;
+  align-items: center;
+  gap: 0 100px;
+  margin: 0 auto;
+
+  @include vp-1279 {
+    width: 1000px;
+    grid-template-columns: 150px 800px;
+    gap: 0 50px;
+  }
+
+  @include vp-1023 {
+    width: 674px;
+    grid-template-columns: 150px 495px;
+    gap: 15px 27px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+    align-items: center;
+    grid-template-columns: 270px;
+    gap: 0 15px;
+  }
+}
+
+.about-company__title {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+
+  @include vp-1023 {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  @include vp-767 {
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}
+
+.about-company__picture {
+  grid-column: 1;
+  grid-row: 1/-1;
+
+  @include vp-1023 {
+    grid-row: 1/4;
+  }
+}
+
+.about-company__picture--hidden-mobile {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about-company__text {
+  grid-column: 2;
+  grid-row: 2;
+  margin: -8px 0 0 0;
+  font-family: "PT_Mono", "Arial", sans-serif;
+  color: #041827;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include vp-1023 {
+    padding-bottom: 25px;
+    margin: -49px 0 0 0;
+  }
+
+  @include vp-767 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 14px;
+    line-height: 134.4%;
+    margin: 9px 0 0 0;
+    padding: 0;
+  }
+}
+
+.about-company__text--two {
+  grid-column: 2;
+  grid-row: 3;
+  margin: -36px 0 0 0;
+
+  @include vp-1023 {
+    margin: -176px 0 0 0;
+    padding-bottom: 1px;
+  }
+
+  @include vp-767 {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 0 0 31px 0;
+    margin: 21px 0 0 0;
+  }
+}
+
+.about-company__text--three {
+  display: inline;
+  grid-column: 2;
+  grid-row: 4;
+  margin: -56px 0 0 0;
+
+  @include vp-1279 {
+    margin: -32px 0 0;
+  }
+
+  @include vp-1023 {
+    margin: -144px 0 0 0;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.about-company__button {
+  width: 180px;
+  grid-column: 2;
+  grid-row: 5;
+  padding: 14px 8px;
+  border: 1px solid #00b2ff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: -8px 0 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+
+  @include vp-1023 {
+    margin: -16px 0 0 0;
+  }
+
+  @include vp-767 {
+    width: 160px;
+    padding: 8px 15px;
+    grid-column: 1;
+    grid-row: 4;
+  }
+}
