@@ -1,0 +1,134 @@
+.advantages__container {
+  margin-bottom: 120px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  padding: 40px 45px 35px 40px;
+  border: 1px solid $color-whisper;
+  border-left: 5px solid $color-deep-sky-blue;
+
+  @include hover {
+    color: $color-alice-blue;
+    background-color: $color-deep-sky-blue;
+    border-color: $color-deep-sky-blue;
+
+    &:hover .advantages__icon {
+      fill: $color-alice-blue;
+    }
+
+    &:hover h3 {
+      color: $color-alice-blue;
+    }
+
+    &:hover p {
+      color: $color-alice-blue;
+    }
+  }
+
+  @include vp-1023 {
+    min-height: 360px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+  }
+
+  @include vp-767 {
+    min-height: 340px;
+    padding-top: 30px;
+    padding-left: 25px;
+  }
+
+  &--long-title {
+    @include vp-767 {
+      min-height: 325px;
+    }
+  }
+}
+
+.advantages__icon {
+  display: block;
+  margin-bottom: 20px;
+  fill: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 14px;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.advantages__item h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+  }
+}
+
+.advantages__item p {
+  margin: 0;
+  font-family: $ff-mono;
+  font-size: 16px;
+  line-height: 135%;
+  color: $color-black-pearl;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.advantages__item--long-title .advantages__icon {
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 17px;
+  }
+}
+
+.advantages__item--long-title h3 {
+  @include vp-1023 {
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 14px;
+  }
+}

@@ -1,0 +1,141 @@
+.intro {
+  position: relative;
+}
+
+.intro__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: $color-black-pearl;
+
+  @include vp-1023 {
+    object-position: -123px 0;
+  }
+
+  @include vp-767 {
+    object-position: -229px 0;
+  }
+}
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+  padding-top: 305px;
+  padding-left: 145px;
+  padding-bottom: 280px;
+
+  @include vp-1023 {
+    margin-top: -100px;
+    margin-bottom: 80px;
+    padding-top: 180px;
+    padding-bottom: 205px;
+  }
+
+  @include vp-767 {
+    margin-top: -70px;
+    margin-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 190px;
+  }
+}
+
+.intro__container h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.intro__container p {
+  max-width: 685px;
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-family: $ff-mono;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-alice-blue;
+  text-transform: lowercase;
+
+  @include vp-1023 {
+    margin-bottom: 57px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 45px;
+    font-size: 14px;
+  }
+}
+
+.intro__link {
+  display: block;
+  max-width: 410px;
+  padding: 15px 25px 19px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  background-color: $color-deep-sky-blue;
+  border-radius: 3px;
+  user-select: none;
+  transition: background-color $trans-default;
+
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
+  @include vp-767 {
+    max-width: 270px;
+    margin-left: 0;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  @include hover {
+    background-color: $color-blue-lagoon;
+  }
+}
+
+.intro__text-link {
+  &--desktop {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+}
