@@ -1,42 +1,38 @@
 .contacts {
-  max-width: 513px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .contacts__list {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(auto, 2vw));
-  justify-items: end;
-  grid-template-columns: 10vw 15vw;
+  margin: 0 0 0 158px;
   padding: 40px 0 0;
-  gap: 0 2vw;
 
-  @include vp-1919 {
+  /*@include vp-1919 {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(auto, 2vw));
     justify-items: end;
     grid-template-columns: 8vw 17vw;
     padding: 40px 0 0;
     gap: 0 0;
-  }
+  }*/
 
   @include vp-1279 {
-    grid-template-columns: 11vw 17.5vw;
-    gap: 0 0;
+    display: flex;
+    margin: 0 0 0 30px;
   }
 
   @include vp-1023 {
     grid-template-rows: repeat(auto-fit, minmax(auto, 5vw));
     grid-template-columns: repeat(2, minmax(0, 5vw));
-    gap: 0 21px;
     padding: 16px 0 0 0;
-    margin: 0;
+    margin: 0 2px 0 0;
     justify-self: center;
   }
 
   @include vp-767 {
     grid-template-columns: repeat(2, minmax(0, 12vw));
     grid-template-rows: repeat(auto-fit, minmax(auto, 13vw));
-    padding: 15px 0 0 0;
+    padding: 15px 0 0 16px;
   }
 }
 
@@ -51,6 +47,12 @@
 }
 
 .contacts__item--email {
+  margin: 0 102px 0 0;
+
+  @include vp-1279 {
+    margin: 0 12px 0 0;
+  }
+
   @include vp-1023 {
     margin: 0 0 0 -4px;
   }
@@ -59,6 +61,10 @@
 .contacts__item--tel {
   @include vp-1023 {
     margin: 0 0 0 16px;
+  }
+
+  @include vp-767 {
+    margin: 0 7px 0 18px;
   }
 }
 

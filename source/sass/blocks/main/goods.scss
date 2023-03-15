@@ -18,15 +18,18 @@
   margin: 0 auto;
 
   @include vp-1279 {
-    width: 1000px;
+    width: 100%;
+    padding: 0 140px;
   }
 
   @include vp-1023 {
-    width: 674px;
+    width: 100%;
+    padding: 0 50px;
   }
 
   @include vp-767 {
-    width: 270px;
+    width: 100%;
+    padding: 0 25px;
   }
 }
 
@@ -70,19 +73,19 @@
   gap: 432px 0;
 
   @include vp-1279 {
-    grid-template-columns: 300px;
+    grid-template-columns: auto;
     gap: 340px 0;
   }
 
   @include vp-1023 {
     grid-template-rows: repeat(2, 60px);
-    grid-template-columns: 672px;
+    grid-template-columns: auto;
     gap: 130px 0;
   }
 
   @include vp-767 {
     grid-template-rows: repeat(2, 60px);
-    grid-template-columns: 270px;
+    grid-template-columns: auto;
   }
 }
 
@@ -117,6 +120,13 @@
   z-index: 1;
 }
 
+.goods__picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .goods__link {
   grid-column: 1;
   grid-row: 2;
@@ -149,7 +159,7 @@
 
   @include vp-767 {
     display: block;
-    width: 190px;
+    padding-right: 9px;
     font-size: 28px;
     line-height: 140.62%;
   }

@@ -1,5 +1,6 @@
 .about-company {
   width: 100%;
+  margin: 0 auto;
   padding: 60px 0 98px 0;
 
   @include vp-1023 {
@@ -8,15 +9,16 @@
   }
 
   @include vp-767 {
-    padding: 5px 0 25px 0;
-    margin: 0 0 55px 0;
+    padding: 22px 0 81px 0;
+    margin: 0;
+    /*margin: 0 0 55px 0;*/
   }
 }
 
 .about-company__wrapper {
   width: 1220px;
   display: grid;
-  grid-template-columns: 150px 970px;
+  grid-template-columns: auto auto;
   grid-template-rows: 45px auto auto auto auto;
   justify-items: start;
   align-items: center;
@@ -24,21 +26,25 @@
   margin: 0 auto;
 
   @include vp-1279 {
-    width: 1000px;
-    grid-template-columns: 150px 800px;
-    gap: 0 50px;
+    width: 100%;
+    padding: 0 140px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 39px auto auto auto auto;
+    gap: 35px 50px;
   }
 
   @include vp-1023 {
-    width: 674px;
-    grid-template-columns: 150px 495px;
-    gap: 15px 27px;
+    width: 100%;
+    padding: 0 50px;
+    grid-template-columns: auto auto;
+    gap: 25px 25px;
   }
 
   @include vp-767 {
-    width: 270px;
+    width: 100%;
+    padding: 0 25px;
     align-items: center;
-    grid-template-columns: 270px;
+    grid-template-columns: auto;
     gap: 0 15px;
   }
 }
@@ -104,7 +110,7 @@
     grid-row: 2;
     font-size: 14px;
     line-height: 134.4%;
-    margin: 9px 0 0 0;
+    margin: 12px 0 0 0;
     padding: 0;
   }
 }
@@ -115,14 +121,14 @@
   margin: -36px 0 0 0;
 
   @include vp-1023 {
-    margin: -176px 0 0 0;
+    margin: -182px 0 0 0;
     padding-bottom: 1px;
   }
 
   @include vp-767 {
     grid-column: 1;
     grid-row: 3;
-    padding: 0 0 31px 0;
+    padding: 0 0 13px 0;
     margin: 21px 0 0 0;
   }
 }
@@ -138,7 +144,7 @@
   }
 
   @include vp-1023 {
-    margin: -144px 0 0 0;
+    margin: -165px 0 0 0;
     padding: 0;
   }
 
@@ -165,11 +171,12 @@
   color: #00b2ff;
 
   @include vp-1023 {
-    margin: -16px 0 0 0;
+    margin: -37px 0 0 0;
   }
 
   @include vp-767 {
     width: 160px;
+    margin-top: 1px;
     padding: 8px 15px;
     grid-column: 1;
     grid-row: 4;

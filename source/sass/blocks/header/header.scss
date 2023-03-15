@@ -1,43 +1,44 @@
 .header {
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: 215px 29vw 10.2vw;
-  grid-template-rows: repeat(auto-fit, minmax(auto, 120px));
-  justify-items: center;
-  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  gap: 0 5vw;
+  width: 100%;
+}
 
-  @include vp-1919 {
-    grid-template-columns: 215px 26vw 11.2vw;
-    gap: 0 3vw;
-  }
+.header__wrapper {
+  width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 216px auto auto;
+  grid-template-rows: repeat(auto-fit, minmax(auto, 120px));
 
   @include vp-1279 {
-    gap: 0 0;
-    grid-template-columns: 215px 28.5vw 12vw;
+    width: 100%;
+    padding: 0 140px;
+    margin: 0 auto;
   }
 
   @include vp-1023 {
-    grid-template-columns: 215px 14vw;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    grid-template-columns: 216px auto;
     grid-template-rows: repeat(auto-fit, minmax(auto, 100px));
-    gap: 0 43vw;
+    justify-content: space-between;
   }
 
   @include vp-767 {
-    grid-template-columns: 37px 35vw;
+    width: 100%;
+    /*padding: 0 25px;
+    box-sizing: border-box;*/
+    margin: 0 auto;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(auto-fit, minmax(auto, 70px));
-    gap: 0 36vw;
   }
 }
 
-.header > .header__button {
-  justify-self: end;
-}
-
 .header__button {
+  justify-self: center;
   height: min-content;
   width: auto;
-  margin: 36px 0 0 0;
+  margin: 36px 13px 0 0;
   padding: 10px 15px;
   box-sizing: border-box;
   font-size: 14px;

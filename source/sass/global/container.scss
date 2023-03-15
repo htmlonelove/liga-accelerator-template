@@ -2,25 +2,26 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 410px 0 350px;
-
-  @include vp-1919 {
-    padding: 0 262px 0 350px;
-  }
+  padding: 0 127px;
+  /*padding: 0 410px 0 350px;*/
 
   @include vp-1439 {
-    padding: 0 262px 0 307px;
+    padding: 0 35px;
   }
 
   @include vp-1279 {
-    padding: 0 233px 0 230px;
+    padding: 0 30px;
   }
 
   @include vp-1023 {
-    padding: 0 70px 0 50px;
+    padding: 0 50px;
   }
 
   @include vp-767 {
-    padding: 0 35px 0 26px;
+    width: 100%;
+    max-width: 766px;
+    /*padding: 0;*/
+    padding: 0 25px;
+    box-sizing: border-box;
   }
 }

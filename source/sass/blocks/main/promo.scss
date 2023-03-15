@@ -1,38 +1,32 @@
 .promo {
-  max-width: 100%;
+  width: 100%;
   position: relative;
   padding: 185px 0 340px 0;
 
-  @include vp-1439 {
-    padding: 113px 0 289px;
-  }
+  /*@include vp-1439 {
+    padding: 185px 0 340px;
+  }*/
 
-  @include vp-1279 {
-    padding: 26px 0 200px 0;
-  }
+  /*@include vp-1279 {
+    padding: 26px 0 100px 0;
+  }*/
 
   @include vp-1023 {
-    padding: 84px 0 246px 0;
+    padding: 79px 0 246px;
   }
 
   @include vp-767 {
-    padding: 124px 0 157px;
+    padding: 85px 0 212px 0;
   }
 }
 
 .promo__wrapper {
-  padding: 0 0 0 475px;
-
-  @include vp-1919 {
-    padding: 0 0 0 438px;
-  }
-
-  @include vp-1439 {
-    padding: 0 0 0 350px;
-  }
+  width: 1220px;
+  margin: 0 auto;
 
   @include vp-1279 {
-    padding: 0 0 0 273px;
+    width: 100%;
+    padding: 0 140px;
   }
 }
 
@@ -48,14 +42,12 @@
   z-index: 2;
 
   @include vp-1023 {
-    max-width: 75vw;
     font-size: 64px;
     line-height: 75px;
     margin: 0;
   }
 
   @include vp-767 {
-    max-width: 270px;
     font-size: 36px;
     line-height: 42px;
     margin: 0 0 8px 0;
@@ -73,7 +65,6 @@
   max-width: 610px;
 
   @include vp-1023 {
-    max-width: 608px;
     font-weight: 400;
     font-size: 22px;
     line-height: 155%;
@@ -83,14 +74,13 @@
 
   @include vp-767 {
     font-family: "PT_Mono", "Arial", sans-serif;
-    width: 271px;
     font-size: 14px;
     margin: 0 0 46px 0;
   }
 }
 
 .promo__button {
-  display: block;
+  display: inline-block;
   max-width: 410px;
   padding: 15px 25px;
   box-sizing: border-box;
@@ -115,7 +105,6 @@
 
   @include vp-767 {
     display: none;
-    width: 270px;
     font-size: 14px;
     margin: 0;
     padding: 10px 30px;
@@ -126,31 +115,32 @@
   display: none;
 
   @include vp-767 {
-    display: block;
+    display: inline-block;
   }
 }
 
-.promo__shadow picture {
-  max-width: 100%;
+.promo__shadow {
+  width: 100%;
   display: block;
   position: absolute;
   top: -100px;
   left: 0;
   z-index: -1;
-
-  @include vp-1023 {
-    height: 540px;
-  }
 }
 
 .promo__picture {
-  /*min-width: 770px;*/
   display: block;
+  width: 100%;
+  height: 860px;
+  object-fit: cover;
   background-color: #041827;
-  background-size: 100px 100px;
   margin: 0;
 
   @include vp-1023 {
-    height: 540px;
+    height: 640px;
+  }
+
+  @include vp-767 {
+    height: 595px;
   }
 }

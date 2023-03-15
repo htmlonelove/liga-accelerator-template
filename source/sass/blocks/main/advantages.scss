@@ -4,11 +4,15 @@
   padding: 60px 0;
 
   @include vp-1023 {
-    padding: 40px 0;
+    padding: 44px 0;
   }
 
   @include vp-767 {
-    padding: 40px 0;
+    padding: 66px 0;
+  }
+
+  @include vp-374 {
+    padding: 25px 0;
   }
 }
 
@@ -18,17 +22,21 @@
   /*padding: 0 349px 0 350px;*/
 
   @include vp-1279 {
-    width: 1000px;
+    width: 100%;
+    padding: 0 140px;
     margin: 0 auto;
   }
 
   @include vp-1023 {
-    width: 670px;
+    width: 100%;
+    padding: 0 50px;
     margin: 0 auto;
   }
 
   @include vp-767 {
-    width: 270px;
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
     margin: 0 auto;
   }
 }
@@ -43,20 +51,20 @@
   padding: 0;
   list-style-type: none;
 
-  @include vp-1439 {
-    grid-template-columns: 483px 483px;
-    grid-template-rows: repeat(2, 303px);
+  @include vp-1279 {
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(303px, auto));
   }
 
   @include vp-1023 {
-    grid-template-columns: 320px 320px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     grid-template-rows: repeat(2, 360px);
     gap: 30px 30px;
   }
 
   @include vp-767 {
     grid-template-rows: repeat(2, 340px) repeat(2, 325px);
-    grid-template-columns: 270px;
+    grid-template-columns: 100%;
   }
 }
 
