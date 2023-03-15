@@ -1,0 +1,45 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 200px;
+  padding-left: 10px;
+
+  @include vp-1023 {
+    justify-content: flex-end;
+    margin-right: -5px;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+
+  @include vp-767 {
+    justify-content: center;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-bottom: 0;
+  }
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  min-width: 40px;
+  min-height: 40px;
+  color: $color-alice-blue-second;
+  cursor: pointer;
+  transition: color $trans-default;
+
+  @include hover {
+    color: $color-deep-sky-blue;
+  }
+}
+
+.social__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: currentColor;
+}
