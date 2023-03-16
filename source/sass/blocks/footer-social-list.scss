@@ -1,0 +1,28 @@
+.footer-social-list {
+  width: 60%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  min-width: 140px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 40px 0 0 20px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 10px;
+  }
+}
+
+.footer-social-list_item:not(:last-child) {
+  margin-right: 20px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 25px;
+  }
+}

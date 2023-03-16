@@ -1,0 +1,56 @@
+.main-form-checkbox__input {
+  width: 5px;
+  height: 5px;
+  margin: 0 25px 0 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 45px 0 0;
+  }
+}
+
+.main-form-checkbox__description {
+  color: hsla(0, 0%, 100%, 0.8);
+  line-height: 16px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 10px
+  }
+}
+
+.main-form-checkbox__mark {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: #00b2ff;
+  box-sizing: border-box;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-40%);
+
+  @media (max-width: $tablet-width) {}
+
+  @media (max-width: $mobile-width) {
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.main-form-checkbox {
+  position: relative;
+  text-align: left;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+}
+
+.main-form-checkbox__input:checked+.main-form-checkbox__mark {
+  background-image: url("../../img/svg/checkbox-mark.svg");
+  background-size: 12px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

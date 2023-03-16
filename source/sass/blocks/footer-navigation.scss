@@ -1,0 +1,117 @@
+.footer-navigation {
+  width: 470px;
+  margin-right: 20px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    width: 220px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 23px 26px;
+    border-bottom: solid 1px #f8fdffb2;
+    width: 100%;
+    margin: 0;
+    min-height: 60px;
+  }
+}
+
+.footer-navigation__header {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 10px 0 20px 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+}
+
+.footer-navigation__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 150px;
+
+  @media (max-width: $tablet-width) {
+    width: 220px;
+    height: auto;
+  }
+}
+
+.footer-navigation__navigation {
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.footer-navigation__navigation--closed {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.footer-navigation__button--open {
+  top: 10px;
+  right: 10px;
+  border: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.footer-navigation__button--open::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  width: 20px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.footer-navigation__button--open::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 1px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+.footer-navigation__button--close {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.footer-navigation__button--close::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 20px;
+  height: 1px;
+  background-color: #ffffff;
+}

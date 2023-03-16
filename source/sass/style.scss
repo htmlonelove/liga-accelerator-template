@@ -14,6 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/global";
 
 // Blocks
 // ---------------------------------
@@ -23,6 +24,34 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/main-header";
+@import "blocks/contacts";
+@import "blocks/introduce";
+@import "blocks/introduce-name";
+@import "blocks/main-offer";
+@import "blocks/advantages-list";
+@import "blocks/advantages";
+@import "blocks/advantages-item";
+@import "blocks/about-company";
+@import "blocks/products";
+@import "blocks/products-item";
+@import "blocks/feedback-form";
+@import "blocks/main-form";
+@import "blocks/main-form-checkbox";
+@import "blocks/footer-container";
+@import "blocks/footer-social-list";
+@import "blocks/footer-navigation-list";
+@import "blocks/navigation-item";
+@import "blocks/footer-navigation";
+@import "blocks/footer-contacts";
+@import "blocks/contacts-list";
+@import "blocks/footer-social";
+@import "blocks/company-description";
+@import "blocks/phones-list";
+@import "blocks/modal-container";
+@import "blocks/modal-page";
+@import "blocks/modal-page-checkbox";
+@import "blocks/contacts-container";
 
 // ---------------------------------
 

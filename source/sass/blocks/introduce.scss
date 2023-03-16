@@ -1,0 +1,15 @@
+.introduce {
+  display: flex;
+  align-items: center;
+}
+
+.introduce__logo {
+  width: 55px;
+  height: 55px;
+}
+
+.introduce__name {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

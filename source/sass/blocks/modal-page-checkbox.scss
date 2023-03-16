@@ -1,0 +1,36 @@
+.modal-page-checkbox {
+  display: flex;
+  justify-content: flex-start;
+  height: 35px;
+  width: 100%
+}
+
+.modal-page-checkbox__input {
+  background-color: #333333;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.modal-page-checkbox__mark {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: #00b2ff;
+  box-sizing: border-box;
+  left: 6px;
+  bottom: 12px;
+}
+
+.modal-page-checkbox__input:checked+.modal-page-checkbox__mark {
+  background-image: url("../../img/svg/checkbox-mark.svg");
+  background-size: 12px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-page-checkbox__description {
+  color: #ffffff;
+  line-height: 16px;
+}

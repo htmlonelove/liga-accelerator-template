@@ -1,0 +1,145 @@
+.main-offer {
+  color: #f2f5f6;
+  background-image: url(../../img/main-pictures/main-picture-desktop.jpg);
+  background-color: #000000;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  min-height: 880px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/main-pictures/main-picture-desktop-2x.jpg);
+    background-size: 1920px auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+    min-height: 540px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 490px;
+  }
+}
+
+.main-offer__wrapper {
+  text-align: left;
+  margin-right: 220px;
+  padding: 90px 0 70px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    padding: 0 50px;
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 30px 20px 20px 25px;
+  }
+}
+
+.main-offer__header {
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 30px 0;
+  letter-spacing: 6px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4.5px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 2.5px;
+    margin-bottom: 8px;
+  }
+}
+
+.main-offer__description {
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0 0 55px 0;
+
+  @media (min-width: $desktop-width) {
+    max-width: 685px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 45px;
+  }
+}
+
+.main-offer__button {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f2f5f6;
+  background-color: #00b2ff;
+  font-family: "Roboto Condensed";
+  width: 410px;
+  min-height: 55px;
+  padding: 15px 25px;
+  margin: 0;
+  border: 0;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 45px;
+    padding: 15px 25px;
+    letter-spacing: 0.8px;
+    width: 410px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 270px;
+    min-height: 40px;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 16px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+}
+
+.main-offer__button--second {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.main-offer__button--first {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

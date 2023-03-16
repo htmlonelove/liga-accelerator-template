@@ -1,0 +1,133 @@
+.advantages-item {
+  border-left: 5px solid #00B2FF;
+  box-sizing: border-box;
+}
+
+.advantages-item__header {
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+}
+
+.advantages-item--first {
+  background-image: url(../../img/svg/advantages1.svg);
+  background-repeat: no-repeat;
+  background-position: 40px 45px;
+  fill: #00B2FF;
+  color: #00B2FF;
+
+  @media (max-width: $mobile-width) {
+    background-position: 30px 30px;
+    background-size: 30px 30px;
+  }
+}
+
+.advantages-item--first:hover {
+  background-image: url(../../img/svg/advantages1-hover.svg);
+
+  @media (max-width: $mobile-width) {
+    background-size: 30px 30px;
+  }
+}
+
+.advantages-item--second {
+  background-image: url(../../img/svg/advantages2.svg);
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+
+  @media (max-width: $mobile-width) {
+    background-size: 30px 30px;
+    background-position: 30px 30px;
+  }
+}
+
+.advantages-item--second:hover {
+  background-image: url(../../img/svg/advantages2-hover.svg);
+
+  @media (max-width: $mobile-width) {
+    background-size: 30px 30px;
+  }
+}
+
+.advantages-item--third {
+  background-image: url(../../img/svg/advantages3.svg);
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+
+  @media (max-width: $mobile-width) {
+    background-size: 30px 30px;
+    background-position: 30px 30px;
+    min-height: 325px;
+  }
+}
+
+.advantages-item--third:hover {
+  background-image: url(../../img/svg/advantages3-hover.svg);
+
+  @media (max-width: $mobile-width) {
+    background-size: 30px 30px;
+  }
+}
+
+.advantages-item--fourth {
+  background-image: url(../../img/svg/advantages4.svg);
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+
+  @media (max-width: $mobile-width) {
+    background-size: 30px 30px;
+    background-position: 30px 15px;
+    min-height: 325px;
+  }
+}
+
+.advantages-item--fourth:hover {
+  background-image: url(../../img/svg/advantages4-hover.svg);
+
+  @media (max-width: $mobile-width) {
+    background-size: 30px 30px;
+  }
+}
+
+.advantages-item:hover {
+  background-color: #00B2FF;
+  color: #F2F5F6;
+}
+
+.advantages-item:hover .advantages-item__header {
+  color: #F2F5F6;
+}
+
+.advantages-item__description {
+  color: #041827;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    line-height: 21.6px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 19px;
+    width: 90%;
+  }
+}
+
+.advantages-item:hover .advantages-item__description {
+  color: #f2f5f6;
+}

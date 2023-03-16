@@ -1,0 +1,25 @@
+.contacts-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacts-list__item {
+  padding: 0 0 0 30px;
+  margin: 0 10px 5px 0;
+  height: 21px;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+    padding: 0;
+  }
+}

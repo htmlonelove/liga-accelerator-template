@@ -1,0 +1,15 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: rgba(3, 16, 27, 0.7);
+  z-index: 7;
+  margin: 0;
+}
+
+.modal-container--closed {
+  display: none;
+}

@@ -1,0 +1,94 @@
+.products {
+  margin: 0;
+  background-color: #041827;
+  color: #ffffff;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  min-height: 960px;
+  padding-top: 70px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 50px;
+    min-height: 1050px;
+  }
+}
+
+.products__wrapper {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: border-box;
+  width: 65%;
+  height: auto;
+  margin-left: 35px;
+
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0 32px 0 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    padding: 0 15px 0 25px;
+  }
+}
+
+.products__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: flex-start;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
+  }
+}
+
+.products__header {
+  margin: 0 0 50px 0;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 38px;
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+.products__header--second {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.products__header--first {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

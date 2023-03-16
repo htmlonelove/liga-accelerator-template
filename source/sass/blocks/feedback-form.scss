@@ -1,0 +1,37 @@
+.feedback-form {
+  background-color: #00b2ff;
+  min-height: 840px;
+  display: flex;
+  align-items: start;
+  padding-top: 150px;
+  justify-content: space-around;
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(-41deg, #00b2ff 66%, rgb(19, 107, 144) 34%);
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 45px;
+    min-height: 580px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 750px;
+  }
+}
+
+.feedback-form__fieldset {
+  border: 0;
+}
+
+.feedback-form__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 0 0 10px;
+  }
+}

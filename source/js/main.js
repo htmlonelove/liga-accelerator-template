@@ -1,6 +1,18 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { Form } from './modules/form-validate/form';
+
+
+import { openCloseFooterSections } from './modules/open-close-footer-sections.js';
+import { aboutCompanyOpenClose } from './modules/about-company-open-close.js';
+import { openCloseModal } from './modules/open-close-modal.js';
+import { useJQuery } from './modules/use-jquery.js';
+
+openCloseFooterSections();
+aboutCompanyOpenClose();
+openCloseModal();
+useJQuery();
+
 
 // ---------------------------------
 

@@ -1,0 +1,15 @@
+.company-description__paragraph {
+  @media (max-width: $tablet-width) {
+    margin: 13px 0 24px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.company-description__paragraph--hidable {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

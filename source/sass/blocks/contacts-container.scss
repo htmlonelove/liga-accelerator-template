@@ -1,0 +1,6 @@
+.contacts-container--closed {
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

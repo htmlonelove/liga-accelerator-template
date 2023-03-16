@@ -1,0 +1,23 @@
+.advantages {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f8Fdff;
+}
+
+.advantages__wrapper {
+  padding: 120px 0 30px;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    padding: 80px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 48px;
+  }
+}
