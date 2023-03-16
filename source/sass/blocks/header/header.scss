@@ -26,8 +26,8 @@
 
   @include vp-767 {
     width: 100%;
-    /*padding: 0 25px;
-    box-sizing: border-box;*/
+    padding: 0 25px;
+    box-sizing: border-box;
     margin: 0 auto;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(auto-fit, minmax(auto, 70px));

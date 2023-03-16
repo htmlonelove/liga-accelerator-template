@@ -20,8 +20,9 @@
   @include vp-767 {
     width: 100%;
     max-width: 766px;
+    padding: 0;
     /*padding: 0;*/
-    padding: 0 25px;
-    box-sizing: border-box;
+    /*padding: 0 25px;
+    box-sizing: border-box;*/
   }
 }

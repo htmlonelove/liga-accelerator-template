@@ -1,0 +1,32 @@
+.accordion {
+  margin: 0 auto 50px auto;
+}
+
+.accordion .accordion {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accordion__element:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__element {
+  margin-bottom: 34px;
+  padding: 10px;
+}
+
+.accordion__element.is-active > .accordion__button {
+  opacity: 0.5;
+}
+
+.accordion__button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.accordion__wrapper {
+  padding: 10px;
+}

@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/pt-mono_regular.woff2" as="font" crossorigin="anonymous">
 </head>
-<body>
+<body class="page">
 <div class="wrapper">
   <header class="page__header">
     <div class="container header">
@@ -243,7 +243,7 @@
             <label class="form__label form__label--checkbox">
               <input type="checkbox" class="visually-hidden form__input-checkbox">
               <span class="form__style"></span>
-              <p class="form__text">Я согласен на обработку  персональных данных</p>
+              <span class="form__text">Я согласен на обработку  персональных данных</span>
             </label>
             <div class="form__container-button">
               <button type="submit" class="button form__button">Задать вопрос</button>
@@ -256,39 +256,45 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container">
-      <div class="logo social">
-        <a class="logo" href="#">
-          <img class="logo__pic" src="img/svg/logo.svg" alt="Логотип компании Smart Device">
+  <footer class="page__footer">
+    <div class="container social">
+      <div class="social__logo-footer social__wrapper">
+        <a class="social__logo-footer-link" href="#">
+          <img class="social__logo-pic-footer" src="img/svg/logo.svg" alt="Логотип компании Smart Device">
         </a>
         <ul class="social__list">
           <li class="social__item">
             <p class="visually-hidden">Однокласники</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
-              <path fill="#F8FDFF" d="M15.17 12.64a2.03 2.03 0 0 0 .02-4.05 2.03 2.03 0 0 0-.02 4.05Z"/>
-              <path fill="#F8FDFF"
-                    d="M15 0a15 15 0 1 0 0 30 15 15 0 0 0 0-30Zm.21 5.68a4.93 4.93 0 1 1-.04 9.86 4.93 4.93 0 0 1 .04-9.86Zm5.51 11.57-.02.1a1.4 1.4 0 0 1-.64 1.01 9.66 9.66 0 0 1-2.79 1.18c-.08.02-.08.02-.02.09l1.18 1.18 1.5 1.5c.7.7.51 1.88-.39 2.31-.15.09-.32.1-.49.15h-.28c-.02 0-.04 0-.04-.02a1.58 1.58 0 0 1-.88-.45l-2.6-2.6c-.06-.06-.06-.06-.12 0l-2.62 2.62c-.15.15-.3.26-.49.34-.13.07-.28.09-.4.11h-.28l-.11-.02c-.58-.1-.97-.43-1.14-.99a1.37 1.37 0 0 1 .37-1.45l1.07-1.07 1.58-1.59c.07-.06.07-.06-.02-.09l-.08-.02a9.26 9.26 0 0 1-2.68-1.13c-.5-.32-.73-.8-.67-1.37a1.44 1.44 0 0 1 2.21-1.08 6.1 6.1 0 0 0 5.25.62c.52-.17.97-.4 1.44-.66a1.45 1.45 0 0 1 2.16 1.12v.21Z"/>
-            </svg>
+            <a href="#" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                <path fill="#F8FDFF" d="M15.17 12.64a2.03 2.03 0 0 0 .02-4.05 2.03 2.03 0 0 0-.02 4.05Z"/>
+                <path fill="#F8FDFF"
+                      d="M15 0a15 15 0 1 0 0 30 15 15 0 0 0 0-30Zm.21 5.68a4.93 4.93 0 1 1-.04 9.86 4.93 4.93 0 0 1 .04-9.86Zm5.51 11.57-.02.1a1.4 1.4 0 0 1-.64 1.01 9.66 9.66 0 0 1-2.79 1.18c-.08.02-.08.02-.02.09l1.18 1.18 1.5 1.5c.7.7.51 1.88-.39 2.31-.15.09-.32.1-.49.15h-.28c-.02 0-.04 0-.04-.02a1.58 1.58 0 0 1-.88-.45l-2.6-2.6c-.06-.06-.06-.06-.12 0l-2.62 2.62c-.15.15-.3.26-.49.34-.13.07-.28.09-.4.11h-.28l-.11-.02c-.58-.1-.97-.43-1.14-.99a1.37 1.37 0 0 1 .37-1.45l1.07-1.07 1.58-1.59c.07-.06.07-.06-.02-.09l-.08-.02a9.26 9.26 0 0 1-2.68-1.13c-.5-.32-.73-.8-.67-1.37a1.44 1.44 0 0 1 2.21-1.08 6.1 6.1 0 0 0 5.25.62c.52-.17.97-.4 1.44-.66a1.45 1.45 0 0 1 2.16 1.12v.21Z"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <p class="visually-hidden">ВКонтакте</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
-              <path fill="#F8FDFF"
-                    d="M21.62 17.45c-1.24-1.18-1.33-1.18-.27-2.54 1.33-1.73 3.09-3.91 1.5-3.91h-2.9c-.54 0-.63.36-.8.82-.7 1.73-2.12 4-2.65 3.63-.53-.36-.27-1.72-.27-3.9a.72.72 0 0 0-.17-.73c-.18-.18-.44-.37-.7-.37-.45-.09-.89-.18-1.33-.18-1.68 0-2.82.73-2.2.82 1.14.18 1.05 2.73.79 3.82-.44 1.9-2.2-1.46-3-3.18a.87.87 0 0 0-.88-.73h-2.3c-.35 0-.62.1-.62.36 0 .46 2.2 4.91 4.24 7.19 2.03 2.18 4.06 2 5.47 2 .18 0 .35-.1.44-.19a.7.7 0 0 0 .18-.45c0-1.46.53-2.18 1.5-1.18 1.06 1.09 1.32 1.82 2.64 1.82h2.39c.61 0 .79-.19.79-.46.09-.64-.97-1.82-1.85-2.64ZM15.35 0C23.55.18 30.1 7 30 15.27A14.9 14.9 0 0 1 14.9 30 14.98 14.98 0 0 1 0 15 15.19 15.19 0 0 1 15.35 0Z"/>
-            </svg>
+            <a href="#" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                <path fill="#F8FDFF"
+                      d="M21.62 17.45c-1.24-1.18-1.33-1.18-.27-2.54 1.33-1.73 3.09-3.91 1.5-3.91h-2.9c-.54 0-.63.36-.8.82-.7 1.73-2.12 4-2.65 3.63-.53-.36-.27-1.72-.27-3.9a.72.72 0 0 0-.17-.73c-.18-.18-.44-.37-.7-.37-.45-.09-.89-.18-1.33-.18-1.68 0-2.82.73-2.2.82 1.14.18 1.05 2.73.79 3.82-.44 1.9-2.2-1.46-3-3.18a.87.87 0 0 0-.88-.73h-2.3c-.35 0-.62.1-.62.36 0 .46 2.2 4.91 4.24 7.19 2.03 2.18 4.06 2 5.47 2 .18 0 .35-.1.44-.19a.7.7 0 0 0 .18-.45c0-1.46.53-2.18 1.5-1.18 1.06 1.09 1.32 1.82 2.64 1.82h2.39c.61 0 .79-.19.79-.46.09-.64-.97-1.82-1.85-2.64ZM15.35 0C23.55.18 30.1 7 30 15.27A14.9 14.9 0 0 1 14.9 30 14.98 14.98 0 0 1 0 15 15.19 15.19 0 0 1 15.35 0Z"/>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <p class="visually-hidden">Pinterest</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
-              <path fill="#F8FDFF" d="M15 0a15 15 0 1 1 0 30 15 15 0 0 1 0-30Z"/>
-              <path fill="#041827"
-                    d="M15 5a10 10 0 1 0 .01 20.01A10 10 0 0 0 15 5Zm0 .87a9.12 9.12 0 1 1-2.65 17.87c.37-.63.85-1.52 1.04-2.26l.59-2.22c.3.58 1.2 1.07 2.14 1.07 2.82 0 4.85-2.6 4.85-5.81 0-3.1-2.52-5.4-5.76-5.4-4.04 0-6.18 2.7-6.18 5.66 0 1.37.73 3.07 1.9 3.62.18.08.27.04.31-.13l.26-1.06a.28.28 0 0 0-.06-.27 3.64 3.64 0 0 1-.7-2.13 4.05 4.05 0 0 1 4.22-4.06c2.3 0 3.9 1.57 3.9 3.8 0 2.54-1.27 4.29-2.93 4.29-.92 0-1.6-.76-1.39-1.7.27-1.1.78-2.3.78-3.1 0-.72-.39-1.32-1.19-1.32-.93 0-1.69.97-1.69 2.27 0 .83.28 1.39.28 1.39l-1.1 4.64a8.32 8.32 0 0 0-.05 2.44A9.12 9.12 0 0 1 15 5.87Z"/>
-            </svg>
+            <a href="#" class="social__link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none">
+                <path fill="#F8FDFF" d="M15 0a15 15 0 1 1 0 30 15 15 0 0 1 0-30Z"/>
+                <path fill="#041827"
+                      d="M15 5a10 10 0 1 0 .01 20.01A10 10 0 0 0 15 5Zm0 .87a9.12 9.12 0 1 1-2.65 17.87c.37-.63.85-1.52 1.04-2.26l.59-2.22c.3.58 1.2 1.07 2.14 1.07 2.82 0 4.85-2.6 4.85-5.81 0-3.1-2.52-5.4-5.76-5.4-4.04 0-6.18 2.7-6.18 5.66 0 1.37.73 3.07 1.9 3.62.18.08.27.04.31-.13l.26-1.06a.28.28 0 0 0-.06-.27 3.64 3.64 0 0 1-.7-2.13 4.05 4.05 0 0 1 4.22-4.06c2.3 0 3.9 1.57 3.9 3.8 0 2.54-1.27 4.29-2.93 4.29-.92 0-1.6-.76-1.39-1.7.27-1.1.78-2.3.78-3.1 0-.72-.39-1.32-1.19-1.32-.93 0-1.69.97-1.69 2.27 0 .83.28 1.39.28 1.39l-1.1 4.64a8.32 8.32 0 0 0-.05 2.44A9.12 9.12 0 0 1 15 5.87Z"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
-      <div class="container__footer-menu menu">
+      <div class="container__footer-menu menu menu--mobile-hidden">
         <h2 class="menu__title">Разделы сайта</h2>
         <ul class="menu__list">
           <li class="menu__item">
@@ -314,14 +320,14 @@
           </li>
         </ul>
       </div>
-      <div class="container__footer-menu contact">
+      <div class="container__footer-menu contact contact--mobile-hidden">
         <h2 class="contact__title">Наш офис</h2>
         <dl class="contact__list">
           <div class="contact__item">
             <dt class="contact__parameter">
               <p class="visually-hidden">Адресс:</p>
             </dt>
-            <dd class="contacts__meaning">
+            <dd class="contact__meaning">
               г. Мытищи, Олимпийский проспект, д.10
             </dd>
           </div>
@@ -338,7 +344,7 @@
               <p class="visually-hidden">Телефон:</p>
             </dt>
             <dd class="contact__meaning">
-              <a class="contacts__tel" href="tel:79253895829">+7 (925) 389-58-29</a>
+              <a class="contact__tel" href="tel:79253895829">+7 (925) 389-58-29</a>
             </dd>
           </div>
           <div class="contact__item">
@@ -350,6 +356,68 @@
             </dd>
           </div>
         </dl>
+      </div>
+      <div data-accordion="parent" class="social__contact-tablet-hidden">
+        <div data-accordion="element" class="social__contact-wrapper">
+          <h2 class="social__contact-title">Разделы сайта</h2>
+          <button data-accordion="button" class="social__contact-button">
+            <!--Чтобы изменить на иконку открытия надо убрать класс social__contact-icon--open-hidden-->
+            <svg class="social__contact-icon social__contact-icon--open" xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+              <path fill-rule="evenodd" d="M7.97 7.03V0h-.94v7.03H0v.94h7.03V15h.94V7.97H15v-.94H7.97Z" clip-rule="evenodd"/>
+            </svg>
+            <!--Чтобы изменить на иконку закрытия надо добавить класс social__contact-icon--close-hidden-->
+            <svg class="social__contact-icon social__contact-icon--close social__contact-icon--close-hidden" xmlns="http://www.w3.org/2000/svg" width="15" height="1">
+              <path d="M0 0h15v1H0V0Z"/>
+            </svg>
+          </button>
+
+          <div data-accordion="content" class="social__contact-content">
+            <ul class="social__contact-list">
+              <li class="social__contact-item">
+                <a class="social__contact-link" href="#">О Компании</a>
+              </li>
+              <li class="social__contact-item">
+                <a class="social__contact-link" href="#">Продукты</a>
+              </li>
+              <li class="social__contact-item">
+                <a class="social__contact-link" href="#">Производство печатных плат</a>
+              </li>
+              <li class="social__contact-item">
+                <a class="social__contact-link" href="#">Монтаж печатных плат</a>
+              </li>
+              <li class="social__contact-item">
+                <a class="social__contact-link" href="#">Комплектующие</a>
+              </li>
+              <li class="social__contact-item">
+                <a class="social__contact-link" href="#">Доставка</a>
+              </li>
+              <li class="social__contact-item">
+                <a class="social__contact-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div data-accordion="element" class="social__contact-wrapper is-active">
+          <h2 class="social__contact-title">Наш офис</h2>
+          <button data-accordion="button" class="social__contact-button">
+            <!--Чтобы изменить на иконку открытия надо убрать класс contact__icon--open-hidden-->
+            <svg class="social__contact-icon social__contact-icon--open social__contact-icon--open-hidden" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none">
+              <path fill="#F8FDFF" fill-rule="evenodd" d="M7.97 7.03V0h-.94v7.03H0v.94h7.03V15h.94V7.97H15v-.94H7.97Z" clip-rule="evenodd"/>
+            </svg>
+            <!--Чтобы изменить на иконку закрытия надо добавить класс contact__icon--close-hidden-->
+            <svg class="social__contact-icon social__contact-icon--close" xmlns="http://www.w3.org/2000/svg" width="15" height="1">
+              <path d="M0 0h15v1H0V0Z"/>
+            </svg>
+          </button>
+
+          <div data-accordion="content" class="social__contact-content">
+            <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            <p>+7 (495) 589-40-50</p>
+            <p>+7 (925) 389-58-29</p>
+            <p>+7 (925) 364-78-13</p>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

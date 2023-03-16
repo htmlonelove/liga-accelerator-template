@@ -18,7 +18,7 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/header/page";
+@import "blocks/page";
 @import "blocks/header/header";
 @import "blocks/header/logo";
 @import "blocks/header/contacts";
@@ -27,11 +27,16 @@
 @import "blocks/main/about-company";
 @import "blocks/main/goods";
 @import "blocks/main/form";
+@import "blocks/footer/social";
+@import "blocks/footer/menu";
+@import "blocks/footer/contact";
 @import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/data-accordion";
+@import "blocks/accordion";
 
 // ---------------------------------
 

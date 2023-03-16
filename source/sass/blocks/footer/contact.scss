@@ -1,0 +1,71 @@
+.contact {
+  padding: 58px 0 0 0;
+  margin: 0 0 0 95px;
+
+  @include vp-1279 {
+    margin: 0;
+  }
+
+  @include vp-1023 {
+    padding: 0;
+    margin: 0 7px 0 1px;
+  }
+}
+
+.contact__title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+
+  @include vp-767 {
+    margin: 0;
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "PT_Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #b3b9be;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact__item {
+  margin: 0;
+}
+
+.contact__meaning {
+  margin: 0;
+}
+
+.contact__tel {
+  font-family: "PT_Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #b3b9be;
+}
+
+.contact__item:first-child .contact__meaning {
+  width: 313px;
+}
+
+.contact--mobile-hidden {
+  display: block;
+
+  @include vp-767 {
+    display: none;
+  }
+}

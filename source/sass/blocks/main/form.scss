@@ -6,6 +6,10 @@
   @include vp-1023 {
     background: #00b3ff;
   }
+
+  @include vp-767 {
+    padding: 12px 0 4px 0;
+  }
 }
 
 .form__wrapper {
