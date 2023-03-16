@@ -29,7 +29,7 @@
     width: 100%;
     padding: 0 140px;
     grid-template-columns: auto auto;
-    grid-template-rows: 39px auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     gap: 35px 50px;
   }
 
@@ -61,6 +61,7 @@
   @include vp-1023 {
     font-size: 36px;
     line-height: 51px;
+    margin: -48px 0 0 0;
   }
 
   @include vp-767 {
@@ -69,6 +70,7 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 140.62%;
+    margin: 0;
   }
 }
 
@@ -102,7 +104,7 @@
 
   @include vp-1023 {
     padding-bottom: 25px;
-    margin: -49px 0 0 0;
+    margin: -100px 0 0 0;
   }
 
   @include vp-767 {
@@ -121,7 +123,7 @@
   margin: -36px 0 0 0;
 
   @include vp-1023 {
-    margin: -182px 0 0 0;
+    margin: -188px 0 0 0;
     padding-bottom: 1px;
   }
 
@@ -144,7 +146,7 @@
   }
 
   @include vp-1023 {
-    margin: -165px 0 0 0;
+    margin: -171px 0 0 0;
     padding: 0;
   }
 
@@ -154,7 +156,7 @@
 }
 
 .about-company__button {
-  width: 180px;
+  min-width: 180px;
   grid-column: 2;
   grid-row: 5;
   padding: 14px 8px;
@@ -175,7 +177,7 @@
   }
 
   @include vp-767 {
-    width: 160px;
+    min-width: 160px;
     margin-top: 1px;
     padding: 8px 15px;
     grid-column: 1;

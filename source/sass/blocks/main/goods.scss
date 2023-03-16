@@ -50,8 +50,11 @@
 }
 
 .goods__list {
-  display: flex;
-  gap: 0 85px;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(auto-fit, minmax(auto, auto));
+  gap: 85px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -61,14 +64,16 @@
   }
 
   @include vp-1023 {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(auto-fit, minmax(auto, auto));
     gap: 30px 0;
   }
 }
 
 .goods__item {
   display: grid;
-  grid-template-rows: repeat(2, 109px);
+  grid-template-rows: repeat(2, auto);
   grid-template-columns: 350px;
   gap: 432px 0;
 
@@ -78,14 +83,15 @@
   }
 
   @include vp-1023 {
-    grid-template-rows: repeat(2, 60px);
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: auto;
-    gap: 130px 0;
+    gap: 90px 0;
   }
 
   @include vp-767 {
     grid-template-rows: repeat(2, 60px);
     grid-template-columns: auto;
+    gap: 130px;
   }
 }
 

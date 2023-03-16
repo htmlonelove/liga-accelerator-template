@@ -1,6 +1,5 @@
 .contact {
   padding: 58px 0 0 0;
-  margin: 0 0 0 95px;
 
   @include vp-1279 {
     margin: 0;
@@ -8,7 +7,7 @@
 
   @include vp-1023 {
     padding: 0;
-    margin: 0 7px 0 1px;
+    margin: 0 7px 0 122px;
   }
 }
 
@@ -30,6 +29,7 @@
 
 .contact__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 10px;
   font-family: "PT_Mono", "Arial", sans-serif;

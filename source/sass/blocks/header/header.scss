@@ -7,7 +7,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 216px auto auto;
-  grid-template-rows: repeat(auto-fit, minmax(auto, 120px));
+  grid-template-rows: repeat(auto-fit, minmax(120px, auto));
 
   @include vp-1279 {
     width: 100%;
@@ -38,7 +38,7 @@
   justify-self: center;
   height: min-content;
   width: auto;
-  margin: 36px 13px 0 0;
+  margin: 36px -13px 0 0;
   padding: 10px 15px;
   box-sizing: border-box;
   font-size: 14px;
