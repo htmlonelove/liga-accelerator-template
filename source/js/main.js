@@ -1,4 +1,5 @@
 import {initAccordions} from './init-accordion.js';
+import {initPhoneMask} from './phone-mask.js';
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initAccordions();
+    initPhoneMask();
     const form = new Form();
     window.form = form;
     form.init();

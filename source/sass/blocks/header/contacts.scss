@@ -18,7 +18,7 @@
     grid-template-rows: repeat(auto-fit, minmax(auto, 5vw));
     grid-template-columns: repeat(2, minmax(0, 5vw));
     padding: 16px 0 0 0;
-    margin: 0 2px 0 0;
+    margin: 0 38px 0 0;
     justify-self: center;
   }
 
@@ -66,6 +66,12 @@
   display: flex;
   margin: 3px 16px 0 0;
 
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 1px 1px 5px #f2f5f7;
+  }
+
   @include vp-1279 {
     margin-right: 3px;
   }
@@ -74,6 +80,16 @@
     padding: 10px;
     margin: 0;
   }
+}
+
+.contacts__parameter:hover .contacts__icon,
+.contacts__parameter:focus .contacts__icon,
+.contacts__parameter:active .contacts__icon {
+  fill: #f2f5f7;
+}
+
+.contacts__icon {
+  fill: #00b2ff;
 }
 
 .contacts__meaning {

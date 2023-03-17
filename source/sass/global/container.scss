@@ -3,7 +3,6 @@
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 127px;
-  /*padding: 0 410px 0 350px;*/
 
   @include vp-1439 {
     padding: 0 35px;
@@ -21,8 +20,5 @@
     width: 100%;
     max-width: 766px;
     padding: 0;
-    /*padding: 0;*/
-    /*padding: 0 25px;
-    box-sizing: border-box;*/
   }
 }

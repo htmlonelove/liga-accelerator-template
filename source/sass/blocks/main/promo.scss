@@ -78,7 +78,7 @@
 
 .promo__button {
   display: inline-block;
-  max-width: 410px;
+  min-width: 410px;
   padding: 15px 25px;
   box-sizing: border-box;
   font-weight: 700;
@@ -90,6 +90,12 @@
   color: #f2f5f7;
   background: #00b2ff;
   border-radius: 3px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 8px 3px #f2f5f7;
+  }
 
   @include vp-1279 {
     max-width: 410px;
@@ -135,7 +141,6 @@
   display: block;
   width: 100%;
   height: 100%;
-  /*height: 860px;*/
   object-fit: cover;
   background-color: #041827;
   margin: 0;

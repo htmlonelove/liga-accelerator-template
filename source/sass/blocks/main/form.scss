@@ -39,7 +39,7 @@
 
   @include vp-767 {
     width: 100%;
-    padding: 35px 25px 94px 25px;
+    padding: 35px 25px 85px 25px;
     box-sizing: border-box;
   }
 }
@@ -142,13 +142,14 @@
   color: #ffffff;
   background-color: #019bdf;
   border-radius: 3px;
-  border: none;
+  border: 2px solid #019bdf;
 
   &:hover {
     border: 2px solid rgba(#000000, 0.5);
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     border: 2px solid rgba(#000000, 0.8);
   }
 
@@ -166,14 +167,11 @@
 
   @include vp-1023 {
     width: 100%;
-    /*width: 319px;*/
   }
 
   @include vp-767 {
     width: 100%;
     min-width: 0;
-    /*width: auto;*/
-    /*width: 269px;*/
   }
 }
 
@@ -188,7 +186,7 @@
   line-height: 22px;
   color: #ffffff;
   background-color: #019bdf;
-  border: none;
+  border: 2px solid #019bdf;
   border-radius: 3px;
   grid-column: 1/-1;
   grid-row: 2;
@@ -197,7 +195,8 @@
     border: 2px solid rgba(#000000, 0.5);
   }
 
-  &:focus {
+  &:focus,
+  &:active {
     border: 2px solid rgba(#000000, 0.8);
   }
 
@@ -215,13 +214,11 @@
 
   @include vp-1023 {
     width: 100%;
-    /*width: 670px;*/
     padding: 32px 15px 15px 15px;
   }
 
   @include vp-767 {
     width: 100%;
-    /*width: 269px;*/
     padding-top: 22px;
     height: 179px;
   }
@@ -252,7 +249,7 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 2px;
   box-sizing: border-box;
   margin: 0 0 0 -20px;
@@ -323,6 +320,12 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 6px 2px #ffffff;
+  }
 
   @include vp-767 {
     width: 100%;

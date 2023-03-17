@@ -50,7 +50,6 @@
 }
 
 .goods__list {
-  /*display: flex;*/
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(auto-fit, minmax(auto, auto));
@@ -76,6 +75,12 @@
   grid-template-rows: repeat(2, auto);
   grid-template-columns: 350px;
   gap: 432px 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 0 20px 5px #000000;
+  }
 
   @include vp-1279 {
     grid-template-columns: auto;
@@ -142,6 +147,12 @@
   border-radius: 3px;
   justify-self: end;
   align-self: end;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 0 5px 1px #00b2ff;
+  }
 
   @include vp-1023 {
     padding: 16px 23px 16px 31px;

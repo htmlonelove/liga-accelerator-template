@@ -49,6 +49,12 @@
   font-size: 16px;
   line-height: 135%;
   color: #b3b9be;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-shadow: 1px 1px 5px #f2f5f7;
+  }
 }
 
 .menu__item:nth-child(2) {

@@ -48,8 +48,15 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
+  background-color: transparent;
   border: 1px solid #f2f5f7;
   border-radius: 3px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 0 5px 0 #f2f5f7;
+  }
 
   @include vp-1439 {
     width: auto;
