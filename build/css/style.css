@@ -628,7 +628,6 @@ button,
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 127px;
-  /*padding: 0 410px 0 350px;*/
 }
 
 .page__header {
@@ -842,7 +841,6 @@ button,
   display: block;
   width: 100%;
   height: 100%;
-  /*height: 860px;*/
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #041827;
@@ -858,7 +856,6 @@ button,
 .advantages__wrapper {
   width: 1222px;
   margin: 0 auto;
-  /*padding: 0 349px 0 350px;*/
 }
 
 .advantages__list {
@@ -1104,7 +1101,6 @@ button,
 }
 
 .goods__list {
-  /*display: flex;*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[3];
@@ -1495,15 +1491,9 @@ button,
   grid-template-columns: 215px repeat(2, auto);
   grid-template-rows: repeat(auto-fit, minmax(auto, auto));
   gap: 0 90px;
-  /*display: flex;*/
   padding: 0 0 100px 0;
-  /*justify-content: space-between;*/
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.social__wrapper {
-  /*margin: 0 7.5vw 0 2vw;*/
 }
 
 .social__list {
@@ -1518,12 +1508,6 @@ button,
 
 .social__link {
   padding: 5px;
-  /*&:hover,
-  &:focus,
-  &:active {
-    border-radius: 50%;
-    box-shadow: 0 0 5px 1px #f2f5f7;
-  }*/
 }
 
 .social__icon {
@@ -3377,9 +3361,6 @@ button,
     width: 100%;
     max-width: 766px;
     padding: 0;
-    /*padding: 0;*/
-    /*padding: 0 25px;
-    box-sizing: border-box;*/
   }
 
   .header__wrapper {
@@ -3529,7 +3510,6 @@ button,
   .about-company {
     padding: 22px 0 81px 0;
     margin: 0;
-    /*margin: 0 0 55px 0;*/
   }
 
   .about-company__wrapper {
