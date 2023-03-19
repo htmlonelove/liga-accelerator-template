@@ -1,0 +1,124 @@
+.contacts {
+  margin-bottom: 35px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-top: 20px;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  padding-left: 25px;
+}
+
+.contacts__item {
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: $ff-ptmono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffffb3;
+}
+
+.contacts__link {
+  font-family: $ff-ptmono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffffb3;
+}
+
+.contacts__button {
+  position: absolute;
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  top: 0;
+  right: 26px;
+}
+
+.contacts .contacts__button {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background: linear-gradient(#c4c4c4, #c4c4c4), linear-gradient(#c4c4c4, #c4c4c4);
+    background-position: center;
+    background-size: 50% 2px, 2px 50%;
+    background-repeat: no-repeat;
+    top: 6px;
+    right: 0;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+.is-active .contacts__button {
+  &::before {
+    transform: scaleY(0) rotate(180deg);
+  }
+}
+
+@media (min-width: $vp-768) {
+  .contacts__button {
+    display: none;
+  }
+
+  .contacts__list {
+    display: block;
+  }
+
+  .contacts__title {
+    padding: 0;
+  }
+
+  .contacts__item {
+    padding: 0;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .contacts {
+    margin-bottom: 0;
+  }
+
+  .contacts__title {
+    margin: 0;
+  }
+
+
+  .contacts__link {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      color: $color-deep-sky-blue;
+    }
+  }
+}

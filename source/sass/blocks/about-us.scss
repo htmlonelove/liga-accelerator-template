@@ -1,0 +1,140 @@
+.about-us {
+  position: relative;
+}
+
+.about-us__wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
+.about-us__title {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: $color-black-pearl;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.about-us__text {
+  max-height: 170px;
+  overflow: hidden;
+  will-change: max-height;
+  transition: max-height $trans-default;
+
+  & br {
+    display: none;
+  }
+
+  @include vp-1023 {
+    max-height: 277px;
+  }
+
+  @include vp-767 {
+    max-height: 270px;
+    font-size: 14px;
+    line-height: 19px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+.about-us__text.is-shown {
+  max-height: 1000px;
+  transition: max-height $trans-spoiler;
+}
+
+.about-us p {
+  font-family: $ff-ptmono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: $color-black-pearl;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.about-us__btn {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-deep-sky-blue;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 10px 40px 12px;
+  align-self: flex-start;
+  justify-self: start;
+}
+
+.about-us__image {
+  display: none;
+}
+
+@media (min-width: $vp-768) {
+  .about-us__image {
+    display: block;
+    grid-row: 1/3;
+  }
+
+  .about-us__wrapper {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 29px;
+  }
+
+  .about-us__title {
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-us p:nth-child(even) {
+    margin-bottom: 17px;
+  }
+
+  .about-us__btn {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .about-us__wrapper {
+    display: grid;
+    grid-template-columns: 20.49% 79.51%;
+    justify-content: center;
+    column-gap: 100px;
+    padding-bottom: 120px;
+  }
+
+  .about-us__btn {
+    &:hover,
+    &:focus {
+      opacity: 0.2;
+    }
+
+    &:active {
+      color: $color-alice-blue;
+      border: 1px solid $color-black-pearl;
+      background-color: $color-deep-sky-blue;
+    }
+  }
+}

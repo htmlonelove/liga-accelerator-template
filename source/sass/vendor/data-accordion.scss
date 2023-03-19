@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  [data-accordion="element"].is-active > [data-accordion="content"] {
+    max-height: 100%;
+    will-change: max-height;
+  }
+
+  [data-accordion="parent"].no-transition [data-accordion="content"] {
+    transition: none;
+  }
+
+  [data-accordion="content"] {
+    max-height: 0;
+    will-change: max-height;
+    transition: max-height 0.2s ease-out;
+    overflow: hidden;
+  }
+}

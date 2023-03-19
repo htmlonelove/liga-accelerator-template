@@ -1,52 +1,107 @@
-.main-block__wrapper {
-  background-image: url("/img/main-image-mobile.png");
-  background-repeat: no-repeat;
-  height: 490px;
+.main-block {
+  position: relative;
 }
 
+.main-block__text {
+  position: absolute;
+  max-width: 270px;
+  max-height: 400px;
+  top: 130px;
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+}
+
+.main-block__title {
+  padding: 0;
+  margin: 0;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  margin-bottom: 20px;
+}
+
+.main-block__description {
+  font-family: $ff-ptmono;
+  color: $color-alice-blue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.main-block__link--full {
+  display: none;
+}
+
+.main-block__link {
+  font-family: $ff-ptmono;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  background-color: $color-deep-sky-blue;
+  border-radius: 3px;
+}
+
+.main-block__image {
+  object-fit: cover;
+}
+
+.main-block__link--short {
+  align-self: flex-start;
+}
 
 @media (min-width: $vp-768) {
-  .main-block__wrapper {
-    background-image: url("/img/main-image-table.png");
-    height: 540px;
+  .main-block__link--full {
+    display: block;
+    align-self: self-start;
+    margin-left: 40px;
+  }
+
+  .main-block__link--short {
+    display: none;
+  }
+
+  .main-block__text {
+    max-width: 685px;
+    left: 5%;
+  }
+
+  .main-block__description {
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .main-block__title {
+    font-size: 64px;
+    line-height: 75px;
   }
 }
 
 @media (min-width: $vp-1024) {
-  .main-block__wrapper {
-    background-image: url("/img/main-image-desktop.png");
-    height: 760px;
-    background-size: cover;
-  }
-
-  @media (min-resolution: $retina-dppx) {
-    .main-block__wrapper {
-      background-image: url("/img/main-image-desktop@2x.png");
-      background-size: 1980px auto;
-    }
-  }
-
   .main-block__title {
-    padding: 0;
-    margin: 0;
-    color: $color-alice-blue;
-    font-family: $ff-roboto;
-    font-style: normal;
-    font-weight: 700;
     font-size: 80px;
     line-height: 94px;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
+    margin-bottom: 40px;
   }
 
   .main-block__description {
-    font-family: $ff-ptmono;
-    color: $color-alice-blue;
-    font-weight: 400;
     font-size: 22px;
-    line-height: 34px;
-    margin: 0;
-    padding: 0;
+    max-width: 605px;
+    margin-bottom: 40px;
   }
 
   .main-block__link {
@@ -60,5 +115,19 @@
     background: $color-deep-sky-blue;
     border-radius: 3px;
     padding: 15px 25px;
+    align-self: flex-start;
+  }
+
+  .main-block__image {
+    height: 880px;
+  }
+
+  .main-block__text {
+    max-width: 880px;
+    left: 20%;
+  }
+
+  .main-block__link--full {
+    margin-left: 0;
   }
 }

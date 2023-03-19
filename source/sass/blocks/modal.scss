@@ -31,7 +31,6 @@
 
   &__wrapper {
     position: relative;
-
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -59,10 +58,11 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: $color-deep-sky-blue;
+    border-radius: 3px;
 
     @include vp-767 {
       width: 100%;
@@ -72,17 +72,33 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 17px;
+    right: 17px;
     z-index: 1;
-
     width: 40px;
     height: 40px;
     padding: 0;
-
     background: $color-transparent;
     border: none;
     cursor: pointer;
+    border-radius: 3px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 47%;
+      left: 14%;
+      display: block;
+      width: 28px;
+      height: 1px;
+      background-color: $color-default-white;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
   }
 
   &--responsive {
@@ -116,4 +132,123 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__title {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.modal__descriprion {
+  font-family: $ff-ptmono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+[data-validate-type="text"],
+[data-validate-type="phone"] {
+  padding-bottom: 20px;
+}
+
+
+[data-validate-type="checkbox"] {
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+
+.modal__input {
+  background-color: #04142726;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  width: 420px;
+  padding: 15px;
+}
+
+.modal__control.is-invalid {
+  span {
+    color: $color-torch-red;
+  }
+}
+
+.modal__input::placeholder {
+  font-family: $ff-ptmono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.modal__input--question {
+  min-height: 155px;
+  margin-bottom: 20px;
+}
+
+.modal__submit-button {
+  background: $color-black-pearl;
+  border-radius: 3px;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  border: none;
+  outline: none;
+  padding: 15px 60px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.modal__input-text {
+  font-family: $ff-ptmono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+  padding-left: 35px;
+}
+
+.modal__input-icon::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+  left: 40px;
+  bottom: 45px;
+}
+
+.modal__input--checkbox[type="checkbox"]:checked + .modal__input-icon::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 5px;
+  background-image: url("/img/mark.svg");
+  left: 44px;
+  bottom: 50px;
 }

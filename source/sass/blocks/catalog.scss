@@ -1,0 +1,160 @@
+.catalog {
+  background-color: $color-black-pearl;
+  padding-top: 50px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 30px;
+  padding-bottom: 85px;
+}
+
+.catalog__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: $color-deep-sky-blue;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid $color-default-white;
+    border-right: 1px solid $color-default-white;
+    transform: rotate(45deg);
+    right: 18px;
+    bottom: 17px;
+  }
+}
+
+
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.catalog__title--short {
+  font-size: 28px;
+  line-height: 39px;
+  margin-bottom: 40px;
+}
+
+.catalog__title--full {
+  display: none;
+}
+
+.catalog__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: $ff-roboto;
+  color: $color-default-white;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 147px;
+}
+
+.catalog__image {
+  object-fit: cover;
+}
+
+@media (min-width: $vp-768) {
+  .catalog {
+    padding-bottom: 75px;
+  }
+
+  .catalog__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .catalog__title--short {
+    display: none;
+  }
+
+  .catalog__title--full {
+    display: block;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 50px;
+  }
+
+  .catalog__link {
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+
+    &::after {
+      width: 9px;
+      height: 9px;
+      right: 25px;
+      bottom: 25px;
+    }
+  }
+
+  .catalog__list {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: $vp-1024) {
+  .catalog {
+    padding-bottom: 0;
+  }
+
+  .catalog__image {
+    height: 650px;
+    width: 320px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(3, 320px);
+    column-gap: 85px;
+    justify-content: center;
+  }
+
+  .catalog__title--full {
+    align-self: flex-start;
+  }
+
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1220px;
+    padding-bottom: 140px;
+  }
+
+  .catalog__text {
+    font-size: 20px;
+    width: 190px;
+  }
+
+  .catalog__card-content {
+    &:hover,
+    &:focus {
+      box-shadow: 0 6px 10px #00b3ff;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+}
