@@ -35,3 +35,244 @@
     padding: 0 0 0 10px;
   }
 }
+
+.feedback-form form {
+  width: 65%;
+
+  @media (max-width: $tablet-width) {
+    width: 90%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url(../../img/form-image.png);
+    background-size: 42% auto;
+    background-repeat: no-repeat;
+    background-position: 1% 57%;
+    padding-left: 34.5%;
+  }
+}
+
+.feedback-form fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+  row-gap: 5px;
+  column-gap: 25px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 580px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    max-width: 670px;
+    grid-template-rows: 2fr 1fr 2fr 6fr 2fr;
+    row-gap: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.feedback-form h2 {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  font-family: "Roboto Condensed";
+  grid-row: 1/2;
+  grid-column: 1/3;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+}
+
+.feedback-form p {
+  margin: 0 0 35px 0;
+  color: #ffffff;
+  grid-row: 2/3;
+  grid-column: 1/3;
+  margin: 0;
+  font-size: 16px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.feedback-form button {
+  grid-row: 5/6;
+  grid-column: 1/2;
+  background-color: #041427;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 11px;
+  min-height: 45px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 265px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 25px;
+  }
+}
+
+.feedback-form label {
+  grid-row: 5/6;
+  grid-column: 2/3;
+  padding-top: 10px;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  margin-top: auto;
+  position: relative;
+  text-align: left;
+  padding-left: 0;
+  display: flex;
+  justify-content: start;
+  height: 100%;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+}
+
+.feedback-form input {
+  background-color: #04142726;
+  border-radius: 3px;
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.feedback-form textarea {
+  background-color: #04142726;
+  border-radius: 3px;
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.feedback-form input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.feedback-form input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.feedback-form input:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.feedback-form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.feedback-form textarea::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.feedback-form textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.feedback-form label input {
+  width: 5px;
+  height: 5px;
+  margin: 0 25px 0 0;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 45px 0 0;
+  }
+}
+
+.feedback-form label p {
+  color: hsla(0, 0%, 100%, 0.8);
+  line-height: 16px;
+  margin-bottom: 0;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 10px
+  }
+}
+
+.feedback-form textarea {
+  grid-row: 4/5;
+  grid-column: 1/3;
+  display: flex;
+  padding: 30px 20px 40px 15px;
+  box-sizing: border-box;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: 180px;
+    padding-top: 25px;
+  }
+}
+
+.feedback-form span {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: #00b2ff;
+  box-sizing: border-box;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-40%);
+
+  @media (max-width: $mobile-width) {
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.feedback-form label input:checked+.main-form-checkbox__mark {
+  background-image: url("../../img/svg/checkbox-mark.svg");
+  background-size: 12px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
