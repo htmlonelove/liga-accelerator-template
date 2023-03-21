@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .social__link {
@@ -40,6 +40,7 @@
   .social__list {
     margin-right: 4px;
     justify-content: end;
+    width: 200px;
   }
 }
 
@@ -50,7 +51,8 @@
 
   .social__list {
     justify-content: flex-start;
-    margin-left: 5px;
+    margin-right: 0;
+    margin-left: 31px;
   }
 
   .social__link-icon {

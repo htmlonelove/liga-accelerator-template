@@ -1,16 +1,6 @@
 .header {
-  background-color: $color-black-pearl;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   width: 100%;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 15px;
-    background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-    z-index: 1;
-    top: 65px;
-  }
 }
 
 .header__wrapper {
@@ -46,11 +36,6 @@
     padding-top: 20px;
     padding-bottom: 25px;
   }
-
-  .header::after {
-    height: 20px;
-    top: 85px;
-  }
 }
 
 @media (min-width: $vp-1024) {
@@ -63,11 +48,6 @@
   .header__link {
     padding-top: 29px;
     padding-bottom: 35px;
-  }
-
-  .header::after {
-    height: 30px;
-    top: 90px;
   }
 
   .header__image-desktop {

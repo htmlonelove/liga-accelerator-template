@@ -9,7 +9,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 22px;
   font-family: $ff-roboto;
   font-style: normal;
   font-weight: 400;
@@ -17,7 +17,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   color: $color-default-white;
-  padding-left: 25px;
+  padding-left: 22px;
   text-transform: uppercase;
 
   &::before,
@@ -77,6 +77,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
+    margin-top: 2px;
 
     &::before,
     &::after {
@@ -107,9 +108,16 @@
     margin-bottom: 0;
   }
 
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   .contacts__title {
     margin: 0;
     margin-bottom: 20px;
+    padding-top: 4px;
   }
 
 

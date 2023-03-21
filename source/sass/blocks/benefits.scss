@@ -10,7 +10,7 @@
   border: 1px solid #ebebeb;
   border-left: 5px solid $color-deep-sky-blue;
   margin-bottom: 30px;
-  padding: 30px 25px 35px 30px;
+  padding: 30px 25px 35px 24px;
   min-height: 340px;
 
   &:last-child {
@@ -23,6 +23,7 @@
 
   &--long {
     min-height: 325px;
+    padding-right: 35px;
   }
 }
 
@@ -35,6 +36,11 @@
   margin: 9px 0 9px;
   color: $color-deep-sky-blue;
 }
+
+.benefits__item--long .benefits__title {
+  margin-bottom: 15px;
+}
+
 
 .benefits__description {
   font-family: $ff-ptmono;
