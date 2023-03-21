@@ -1,0 +1,150 @@
+.info {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: -120px;
+
+  @include vp-1023 {
+    margin-top: -100px;
+  }
+}
+
+.info__main-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info__content {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  padding: 185px 0 280px;
+  flex-wrap: wrap;
+
+  @include vp-1023 {
+    padding: 80px 0 205px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  @include vp-767 {
+    padding: 95px 0 190px;
+    margin-top: 70px;
+    min-width: 270px;
+  }
+}
+
+.info__title {
+  font-family: $roboto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  margin: 0;
+  margin-left: custom-width(135, 1840);
+  margin-right: custom-width(380, 1840);
+  min-width: 720px;
+
+  @include vp-1023 {
+    font-size: 64px;
+    line-height: 75px;
+    margin: 0;
+    margin-left: 0;
+    min-width: 670px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 42px;
+    min-width: 270px;
+    margin-left: custom-width(9, 288);
+    margin-right: custom-width(9, 288);
+  }
+}
+
+.info__text {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 155%;
+  color: #f2f5f7;
+  font-family: $pt-mono;
+  min-width: 685px;
+  margin: 30px 0 50px;
+  margin-left: custom-width(135, 1840);
+  margin-right: custom-width(415, 1840);
+  max-width: 685px;
+
+  @include vp-1023 {
+    margin: 0 0 50px 0;
+    margin-left: custom-width(15, 720);
+    min-width: 670px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    min-width: 270px;
+    margin-left: custom-width(9, 288);
+    margin-right: custom-width(9, 288);
+    margin-top: 8px;
+    margin-bottom: 45px;
+  }
+}
+
+.info__button {
+  cursor: pointer;
+  background: #00b2ff;
+  border-radius: 3px;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  font-weight: 400;
+  font-family: $roboto;
+  align-self: flex-start;
+  min-width: 410px;
+  margin-left: custom-width(135, 1840);
+  margin-right: custom-width(690, 1840);
+
+  &::after {
+    content: "Получить бесплатную консультацию";
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @include vp-1023 {
+    margin-top: 7px;
+    margin-left: custom-width(46, 720);
+    margin-right: custom-width(215, 720);
+    padding: 17px 25px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 30px;
+    margin: 0;
+    margin-left: custom-width(9, 288);
+    margin-right: custom-width(9, 288);
+
+    &::after {
+      content: "Бесплатная консультация";
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

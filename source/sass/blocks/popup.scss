@@ -1,0 +1,141 @@
+.popup {
+  width: 100vw;
+  background-color: rgba(3, 16, 27, 0.7);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 4;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.popup__container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 37px;
+  background: #00b3ff;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 146px;
+  transform: translateX(-8px);
+}
+
+.popup__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  margin: 0;
+}
+
+.popup__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  font-family: "PT Mono", "Arial", sans-serif;
+  margin: 2px 0 36px;
+  max-width: 380px;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.popup__form input {
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+}
+
+.popup__form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__form textarea {
+  padding: 22px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+  resize: none;
+}
+
+.popup__form textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__button {
+  background: #041427;
+  border-radius: 3px;
+  padding: 15px 60px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  font-family: $roboto;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.popup__agreed-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  font-family: "PT Mono", "Arial", sans-serif;
+  align-self: center;
+  position: relative;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.popup__close {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.popup input[type="checkbox"] {
+  display: none;
+}
+
+.popup__checkbox-icon {
+  position: absolute;
+  top: 0;
+  left: -23px;
+
+  &--hide {
+    display: none;
+  }
+}

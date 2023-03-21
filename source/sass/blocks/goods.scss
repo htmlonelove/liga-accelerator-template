@@ -1,0 +1,151 @@
+.goods {
+  width: 100%;
+  margin: 0;
+  background: #041827;
+}
+
+.goods__wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-top: 63px;
+
+  @include vp-1023 {
+    max-width: custom-width(670, 720);
+    padding-top: 55px;
+    min-width: 670px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    padding-top: 45px;
+  }
+}
+
+.goods__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: custom-width(85, 1220);
+  list-style: none;
+  padding: 0;
+  padding-bottom: 140px;
+  margin: 0;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+    min-width: 670px;
+    gap: 30px;
+    padding-bottom: 74px;
+  }
+
+  @include vp-767 {
+    min-width: 270px;
+    padding-bottom: 87px;
+  }
+}
+
+.goods__title {
+  grid-column: 1/4;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 55px;
+  letter-spacing: -2px;
+  font-family: $roboto;
+
+  &--mobile {
+    display: none;
+  }
+
+  @include vp-1023 {
+    grid-column: 1/2;
+    width: 100%;
+    margin-bottom: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 30px;
+
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+      padding-right: 60px;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+.goods__item {
+  position: relative;
+  min-height: 650px;
+  padding: custom-width(48, 350) custom-width(80, 350) 0 custom-width(40, 350);
+  z-index: 2;
+
+  @include vp-1023 {
+    min-height: 250px;
+    padding: custom-width(37, 670) custom-width(395, 670) 0 custom-width(45, 670);
+  }
+
+  @include vp-767 {
+    padding: custom-width(30, 270) custom-width(90, 270) custom-width(150, 270) custom-width(30, 270);
+    max-height: 250px;
+  }
+}
+
+.goods__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.goods__back {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.goods__text {
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 135px;
+    display: block;
+  }
+}
+
+.goods__button {
+  border: none;
+  background-color: transparent;
+}
+
+.goods__button-icon {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background: #00b2ff;
+  border-radius: 3px 0 0 0;
+  position: absolute;
+  border: none;
+  bottom: 0;
+  right: 0;
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+  }
+}

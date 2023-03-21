@@ -4,16 +4,66 @@
 //   font-family: "Rouble";
 
 //   font-display: swap;
-//   src:
+//   source:
 //     url("../fonts/rouble.woff2") format("woff2");
 // }
 
 @font-face {
+  font-family: "PT Mono";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
   font-display: swap;
-  src:
-    url("../fonts/.woff2") format("woff2");
+  src: local("PT Mono"),
+    url("/fonts/ptmono.woff2") format("woff2"),
+    url("/fonts/ptmono.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("PT Mono"),
+    url("/fonts/ptmonobold.woff2") format("woff2"),
+    url("/fonts/ptmonobold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto Condensed"),
+    url("/fonts/robotocondensed.woff2") format("woff2"),
+    url("/fonts/robotocondensed.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto Condensed"),
+    url("/fonts/robotocondensedbold.woff2") format("woff2"),
+    url("/fonts/robotocondensedbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"),
+    url("/fonts/roboto.woff2") format("woff2"),
+    url("/fonts/roboto.woof") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Roboto"),
+    url("/fonts/robotobold.woff2") format("woff2"),
+    url("/fonts/robotobold.woff") format("woff");
 }

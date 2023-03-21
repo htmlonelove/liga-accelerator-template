@@ -69,3 +69,14 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.checkbox {
+  appearance: none;
+  display: none;
+}
+
+.checkbox-icon {
+  &--hide {
+    display: none;
+  }
+}

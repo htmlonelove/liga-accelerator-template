@@ -1,6 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {popupOn} from './functions/popup';
+import {onCompanyInfo} from './functions/company-info';
+import {onAccardeon} from './functions/accardeon';
+import {onTelMask} from './functions/tel-mask';
+import {addEventCheckbox} from './functions/checkbox';
 
 // ---------------------------------
 
@@ -18,6 +23,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    popupOn();
+    onCompanyInfo();
+    onAccardeon();
+    onTelMask();
+    addEventCheckbox();
     const form = new Form();
     window.form = form;
     form.init();

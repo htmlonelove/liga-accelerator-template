@@ -1,0 +1,3 @@
+@function custom-width($width, $general-width) {
+  @return percentage(calc($width / $general-width));
+}

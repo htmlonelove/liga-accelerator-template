@@ -14,6 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/function";
 
 // Blocks
 // ---------------------------------
@@ -23,6 +24,15 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header";
+@import "blocks/info";
+@import "blocks/main";
+@import "blocks/feature";
+@import "blocks/company";
+@import "blocks/goods";
+@import "blocks/feedback";
+@import "blocks/footer";
+@import "blocks/popup";
 
 // ---------------------------------
 
