@@ -34,7 +34,10 @@
 .footer-social__logo {
   width: 215px;
 
-  @media (max-width: $mobile-width) {}
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .footer-social__image {

@@ -1,11 +1,18 @@
 .navigation-item {
-  width: 220px;
+  width: 230px;
   margin-right: 30px;
   padding: 0;
+
 }
 
 .navigation-item__link {
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
 }

@@ -26,3 +26,11 @@
     margin-right: 25px;
   }
 }
+
+.footer-social-list_item {
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

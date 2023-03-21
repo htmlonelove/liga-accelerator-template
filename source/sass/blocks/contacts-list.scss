@@ -18,6 +18,11 @@
   box-sizing: border-box;
   position: relative;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     margin-right: 20px;
     padding: 0;

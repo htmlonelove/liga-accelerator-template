@@ -33,12 +33,12 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding: 0 32px 0 15px;
+    padding: 0 30px 0 15px;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0;
-    padding: 0 15px 0 25px;
+    padding: 0 25px;
   }
 }
 

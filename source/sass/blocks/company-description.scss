@@ -1,10 +1,19 @@
 .company-description__paragraph {
+  font-family: "PT Mono";
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+
   @media (max-width: $tablet-width) {
     margin: 13px 0 24px;
+    line-height: 21px;
+    letter-spacing: 0;
   }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 

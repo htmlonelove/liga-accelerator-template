@@ -2,6 +2,12 @@
   width: 470px;
   margin-right: 20px;
   position: relative;
+  font-family: "PT Mono";
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   @media (max-width: $tablet-width) {
     width: 220px;

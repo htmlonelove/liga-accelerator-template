@@ -6,6 +6,13 @@
 .introduce__logo {
   width: 55px;
   height: 55px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    border: 0;
+  }
 }
 
 .introduce__name {

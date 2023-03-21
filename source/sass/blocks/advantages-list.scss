@@ -48,3 +48,14 @@
     min-width: 270px;
   }
 }
+
+.advantages-list .advantages-item--fourth {
+
+  @media (max-width: $mobile-width) {
+    background-position: 30px 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 87px;
+  }
+}

@@ -1,5 +1,7 @@
 .phones-list__item {
 
+  letter-spacing: 2px;
+
   @media (max-width: $mobile-width) {
     margin-bottom: 5px;
   }

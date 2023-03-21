@@ -82,10 +82,15 @@
   }
 }
 
+.advantages-item--fourth .advantages-item__header {
+  margin-bottom: 5px;
+}
+
 .advantages-item--fourth {
   background-image: url(../../img/svg/advantages4.svg);
   background-repeat: no-repeat;
   background-position: 45px 40px;
+
 
   @media (max-width: $mobile-width) {
     background-size: 30px 30px;
@@ -116,6 +121,7 @@
   font-size: 16px;
   line-height: 22px;
   margin: 0;
+  font-family: "PT Mono";
 
   @media (max-width: $tablet-width) {
     line-height: 21.6px;

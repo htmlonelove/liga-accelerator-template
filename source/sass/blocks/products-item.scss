@@ -8,6 +8,11 @@
   margin: 0 0 30px 0;
   box-sizing: border-box;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     width: 100%;
     height: 250px;
@@ -16,8 +21,14 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 5px 20px;
+    padding: 5px 30px;
   }
+}
+
+.products-item__link {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .products-item:not(:last-child) {
@@ -42,94 +53,94 @@
 }
 
 .products-item--first {
-  background-image: url(../../img/goods/desktop/goods-desktop-first.jpg);
+  background-image: url(../../img/goods/desktop/goods-desktop-first.webp);
   background-repeat: no-repeat;
   background-color: #041827;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/goods/desktop/goods-desktop-first-2x.jpg);
+    background-image: url(../../img/goods/desktop/goods-desktop-first-2x.webp);
     background-size: 350px auto;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/goods/tablet/goods-tablet-first.jpg);
+    background-image: url(../../img/goods/tablet/goods-tablet-first.webp);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/desktop/goods-tablet-first-2x.jpg);
+      background-image: url(../../img/goods/desktop/goods-tablet-first-2x.webp);
       background-size: 350px auto;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url(../../img/goods/mobile/goods-mobile-first.jpg);
+    background-image: url(../../img/goods/mobile/goods-mobile-first.webp);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/mobile/goods-mobile-first-2x.jpg);
+      background-image: url(../../img/goods/mobile/goods-mobile-first-2x.webp);
       background-size: 350px auto;
     }
   }
 }
 
 .products-item--second {
-  background-image: url(../../img/goods/desktop/goods-desktop-second.jpg);
+  background-image: url(../../img/goods/desktop/goods-desktop-second.webp);
   background-repeat: no-repeat;
   background-color: #041827;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/goods/desktop/goods-desktop-second-2x.jpg);
+    background-image: url(../../img/goods/desktop/goods-desktop-second-2x.webp);
     background-size: 350px auto;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/goods/tablet/goods-tablet-second.jpg);
+    background-image: url(../../img/goods/tablet/goods-tablet-second.webp);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/desktop/goods-tablet-second-2x.jpg);
+      background-image: url(../../img/goods/desktop/goods-tablet-second-2x.webp);
       background-size: 350px auto;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url(../../img/goods/mobile/goods-mobile-second.jpg);
+    background-image: url(../../img/goods/mobile/goods-mobile-second.webp);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/mobile/goods-mobile-second-2x.jpg);
+      background-image: url(../../img/goods/mobile/goods-mobile-second-2x.webp);
       background-size: 350px auto;
     }
   }
 }
 
 .products-item--third {
-  background-image: url(../../img/goods/desktop/goods-desktop-third.jpg);
+  background-image: url(../../img/goods/desktop/goods-desktop-third.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #041827;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/goods/desktop/goods-desktop-third-2x.jpg);
+    background-image: url(../../img/goods/desktop/goods-desktop-third-2x.webp);
     background-size: 350px auto;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/goods/tablet/goods-tablet-third.jpg);
+    background-image: url(../../img/goods/tablet/goods-tablet-third.webp);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/desktop/goods-tablet-third-2x.jpg);
+      background-image: url(../../img/goods/desktop/goods-tablet-third-2x.webp);
       background-size: 350px auto;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url(../../img/goods/mobile/goods-mobile-third.jpg);
+    background-image: url(../../img/goods/mobile/goods-mobile-third.webp);
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/mobile/goods-mobile-third-2x.jpg);
+      background-image: url(../../img/goods/mobile/goods-mobile-third-2x.webp);
       background-size: 350px auto;
     }
   }

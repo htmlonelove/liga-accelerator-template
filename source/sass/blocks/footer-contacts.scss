@@ -5,6 +5,11 @@
   font-size: 16px;
   position: relative;
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     padding-left: 25px;
   }
@@ -38,6 +43,7 @@
 .footer-contacts__address {
   line-height: 22px;
   margin: 0 0 7px 0;
+  font-family: "PT Mono";
 
   @media (max-width: $mobile-width) {
     line-height: 19px;

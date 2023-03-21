@@ -99,3 +99,12 @@
     padding: 5px;
   }
 }
+
+.about-company__button {
+
+  &:hover,
+  &:focus {
+    background-color: #00b2ff;
+    color: #f2f5f6;
+  }
+}

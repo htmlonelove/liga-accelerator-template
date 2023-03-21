@@ -92,6 +92,12 @@
   border-radius: 3px;
   margin-top: 3px;
 
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #041427;
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
   }
