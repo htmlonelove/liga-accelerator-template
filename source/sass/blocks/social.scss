@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: 5px;
 }
 
 .social__link {
@@ -25,13 +26,31 @@
   }
 }
 
+.footer__social.social.container {
+  padding-right: 0;
+  align-self: start;
+}
+
+@media (min-width: $vp-768) {
+  .social.container {
+    align-self: start;
+    padding-right: 0;
+  }
+
+  .social__list {
+    margin-right: 4px;
+    justify-content: end;
+  }
+}
+
 @media (min-width: $vp-1024) {
-  .footer__social.social.container {
+  .social.container {
     padding: 0;
   }
 
   .social__list {
     justify-content: flex-start;
+    margin-left: 5px;
   }
 
   .social__link-icon {

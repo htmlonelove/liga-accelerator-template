@@ -2,11 +2,8 @@
   margin: 0;
   display: flex;
   padding: 0;
-  margin-right: 20px;
-}
-
-.navigation__btn {
-  display: none;
+  margin-right: 10px;
+  padding-bottom: 17px;
 }
 
 .navigation__text {
@@ -32,7 +29,7 @@
 
 @media (min-width: $vp-768) {
   .navigation {
-    margin-right: 100px;
+    margin-right: 20px;
   }
 }
 
@@ -47,7 +44,8 @@
 @media (min-width: $vp-1024) {
   .navigation {
     min-width: 480px;
-    margin-right: 0;
+    margin-left: 34px;
+    margin-top: 5px;
   }
 
   .navigation__link {
@@ -64,7 +62,7 @@
   }
 
   .navigation__item {
-    padding-right: 120px;
+    padding-right: 122px;
 
     &:last-child {
       padding-right: 0;
@@ -74,20 +72,5 @@
   .navigation__text {
     display: block;
     padding-left: 15px;
-  }
-
-  .navigation__btn {
-    display: block;
-    border: 1px solid #f2f5f7;
-    border-radius: 3px;
-    background-color: transparent;
-    font-family: $ff-roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding: 10px 15px;
   }
 }

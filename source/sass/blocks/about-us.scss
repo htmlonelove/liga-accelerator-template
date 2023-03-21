@@ -18,7 +18,7 @@
   line-height: 39px;
   color: $color-black-pearl;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .about-us__text {
@@ -32,7 +32,7 @@
   }
 
   @include vp-1023 {
-    max-height: 277px;
+    max-height: 320px;
   }
 
   @include vp-767 {
@@ -89,12 +89,15 @@
   .about-us__image {
     display: block;
     grid-row: 1/3;
+    margin-right: 3px;
+    margin-top: 5px;
   }
 
   .about-us__wrapper {
     display: grid;
     grid-template-columns: 150px 1fr;
-    column-gap: 29px;
+    column-gap: 27px;
+    margin-top: 73px;
   }
 
   .about-us__title {
@@ -112,20 +115,24 @@
   }
 
   .about-us__btn {
-    margin-top: 15px;
+    margin-top: 18px;
+    padding: 15px 48px 13px;
   }
 }
 
 @media (min-width: $vp-1024) {
   .about-us__wrapper {
     display: grid;
-    grid-template-columns: 20.49% 79.51%;
+    grid-template-columns: 12% 79.51%;
     justify-content: center;
     column-gap: 100px;
     padding-bottom: 120px;
+    margin-top: 118px;
   }
 
   .about-us__btn {
+    margin-top: 35px;
+
     &:hover,
     &:focus {
       opacity: 0.2;
@@ -136,5 +143,13 @@
       border: 1px solid $color-black-pearl;
       background-color: $color-deep-sky-blue;
     }
+  }
+
+  .about-us__title {
+    margin-bottom: 17px;
+  }
+
+  .about-us__text {
+    max-height: 210px;
   }
 }

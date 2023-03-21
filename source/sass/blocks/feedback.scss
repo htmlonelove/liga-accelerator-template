@@ -1,12 +1,17 @@
 .feedback {
   background-color: $color-deep-sky-blue;
-  padding-top: 50px;
   position: relative;
+  z-index: 0;
 }
 
 .feedback__wrapper.container {
+  padding-top: 48px;
   padding-left: 25px;
   padding-bottom: 80px;
+}
+
+.feedback__image {
+  display: none;
 }
 
 .feedback__title {
@@ -17,7 +22,7 @@
   font-size: 30px;
   line-height: 42px;
   color: $color-default-white;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .feedback__descrition {
@@ -27,7 +32,7 @@
   font-size: 14px;
   line-height: 19px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   color: $color-default-white;
   padding-right: 35px;
 }
@@ -38,7 +43,7 @@
 }
 
 .feedback__form-control {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
 
 .feedback__form-input {
@@ -46,7 +51,7 @@
   border: none;
   outline: none;
   border-radius: 3px;
-  width: 280px;
+  width: 270px;
   padding: 15px;
 }
 
@@ -59,9 +64,10 @@
   color: $color-default-white;
 }
 
-.feedback__form--feild {
-  height: 180px;
+.feedback__form-input--feild {
+  min-height: 180px;
   margin-bottom: 30px;
+  padding-top: 20px;
 }
 
 .feedback__form-btn {
@@ -75,13 +81,14 @@
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
-  width: 100%;
-  padding: 15px 25px 15px 55px;
+  width: 270px;
+  padding: 14px 25px 10px 72px;
+  text-align: center;
 }
 
 .feedback__form-agreement {
   display: flex;
-  padding-left: 30px;
+  padding-left: 31px;
   margin-top: 25px;
   position: relative;
 }
@@ -103,8 +110,8 @@
   height: 14px;
   border: 1px solid $color-default-white;
   border-radius: 2px;
-  left: 0;
-  top: 5px;
+  left: 5px;
+  top: 8px;
 }
 
 .feedback__form-input--checkbox[type="checkbox"]:checked + .feedback__form__checkbox-input-icon::before {
@@ -113,21 +120,28 @@
   width: 7px;
   height: 5px;
   background-image: url("/img/mark.svg");
-  top: 9px;
-  left: 4px;
+  top: 12px;
+  left: 7px;
 }
 
 @media (min-width: $vp-768) {
   .feedback__form {
     display: grid;
-    grid-template-columns: repeat(2, 280px);
+    grid-template-columns: repeat(2, 320px);
     grid-template-rows: auto auto;
     grid-template-areas:
+      "title title"
+      "descrition descrition"
       "name phone"
       "feild feild"
       "btn agreement";
     column-gap: 30px;
     justify-content: center;
+  }
+
+  .feedback__wrapper.container {
+    padding-left: 50px;
+    padding-top: 46px;
   }
 
   .feedback__form-control--name {
@@ -138,21 +152,31 @@
     grid-area: phone;
   }
 
-  .feedback__form--feild {
-    grid-area: feild;
-    min-height: 180px;
-    width: 100%;
-  }
-
   .feedback__form-btn {
     grid-area: btn;
     align-self: center;
+    padding: 15px 40px 12px 70px;
+  }
+
+  .feedback__title {
+    grid-area: title;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 6px;
+  }
+
+  .feedback__descrition {
+    grid-area: descrition;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
   }
 
   .feedback__form-agreement {
     grid-area: agreement;
     align-self: center;
     margin-top: 0;
+    padding-left: 27px;
   }
 
   .feedback__text-container {
@@ -160,47 +184,75 @@
     flex-direction: column;
     padding-left: 62px;
   }
+
+  .feedback__form-input {
+    width: 320px;
+  }
+
+  .feedback__form-input--feild {
+    grid-area: feild;
+    min-height: 157px;
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 33px;
+  }
+
+  .feedback__form__checkbox-input-text {
+    margin-top: 5px;
+  }
+
+  .feedback__form__checkbox-input-icon::after {
+    left: 1px;
+    top: 13px;
+  }
+
+  .feedback__form__checkbox-input-icon::before {
+    top: 17px;
+    left: 3px;
+  }
 }
 
 @media (min-width: $vp-1024) {
   .feedback {
-    padding-top: 170px;
-    padding-bottom: 210px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 55%;
-      height: 900px;
-      background-image: url("/img/polygon.png");
-      top: -75px;
-      background-size: 100% 100%;
-      left: 0;
-    }
+    padding-bottom: 40px;
 
     &::before {
       content: "";
       position: absolute;
-      background-image: url("/img/sprite/paper-airplane.svg");
-      width: 510px;
-      height: 285px;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      left: 400px;
-      top: 250px;
-      z-index: 1;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-color: #04182780;
+      clip-path: polygon(50.7% 0, 0 100%, 0 0);
     }
   }
 
-  .feedback__text-container {
-    padding-left: 675px;
+  .feedback__wrapper.container {
+    padding-top: 170px;
+    padding-bottom: 210px;
+    display: grid;
+    grid-template-columns: auto 1fr;
   }
 
-  .feedback__form {
-    padding-left: 690px;
+  .feedback__image {
+    display: block;
+    margin-top: 78px;
+    margin-right: 115px;
+    padding-right: 12px;
+  }
+
+  .feedback__title {
+    padding-left: 74px;
+  }
+
+  .feedback__descrition {
+    padding-left: 76px;
+    margin-bottom: 35px;
   }
 
   .feedback__form-input {
+    width: 275px;
+
     &:hover,
     &:focus {
       opacity: 0.5;
@@ -208,6 +260,42 @@
 
     &:active {
       background-color: $color-black-pearl;
+    }
+  }
+
+  .feedback__form-control {
+    margin-left: 30px;
+  }
+
+  .feedback__form-control--name {
+    margin-left: 77px;
+  }
+
+  .feedback__form-input--feild {
+    width: 580px;
+    margin-left: 79px;
+  }
+
+  .feedback__form-btn {
+    margin-left: 79px;
+  }
+
+  .feedback__form-agreement {
+    margin-left: 43px;
+  }
+
+  .feedback__form__checkbox-input-text {
+    margin-top: 15px;
+  }
+
+  .feedback__form__checkbox-input-icon {
+    &::after {
+      top: 24px;
+    }
+
+    &::before {
+      top: 27px;
+      left: 2px;
     }
   }
 }

@@ -1,8 +1,6 @@
 .header {
   background-color: $color-black-pearl;
-  position: fixed;
-  z-index: 5;
-  top: 0;
+  width: 100%;
 
   &::after {
     position: absolute;
@@ -31,6 +29,10 @@
   padding-bottom: 20px;
 }
 
+.header__btn {
+  display: none;
+}
+
 @media (min-width: $vp-768) {
   .header__image-desktop {
     display: block;
@@ -53,11 +55,13 @@
 
 @media (min-width: $vp-1024) {
   .header {
-    position: static;
+    position: fixed;
+    z-index: 5;
+    top: 0;
   }
 
   .header__link {
-    padding-top: 25px;
+    padding-top: 29px;
     padding-bottom: 35px;
   }
 
@@ -72,5 +76,22 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  .header__btn {
+    display: block;
+    border: 1px solid #f2f5f7;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-right: 61px;
+    margin-bottom: 7px;
   }
 }

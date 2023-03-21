@@ -29,13 +29,13 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$ff-rouble:                         "Rouble", "Arial";
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-placeholder:                    "Placeholder", "Arial";
 
-$ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
+$ff-roboto:                         "Roboto Condensed", "Arial";
 
-$ff-ptmono:                          "PT Mono", monospace;
+$ff-ptmono:                          "PT Mono";
 
 // Animation
 // ---------------------------------
