@@ -632,7 +632,7 @@ button,
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .header {
@@ -1589,9 +1589,21 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
   padding: 40px;
+  color: #ffffff;
   background-color: #00b3ff;
+}
+
+.modal__content p {
+  font-family: "PT Mono", "Courier New", monospace;
+  line-height: 22px;
+}
+
+.modal__content h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .modal__close-btn {
@@ -2148,7 +2160,7 @@ button,
     max-width: 270px;
     margin-left: 0;
     margin-top: 45px;
-    padding: 12px 30px;
+    padding: 9px 30px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;

@@ -59,15 +59,27 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
 
+    color: $color-default-white;
     background-color: $color-deep-sky-blue-form;
 
     @include vp-767 {
       width: 100%;
       padding: 20px;
     }
+  }
+
+  &__content p {
+    font-family: $ff-mono;
+    line-height: 22px;
+  }
+
+  &__content h2 {
+    font-family: $ff-roboto;
+    font-size: 30px;
+    font-weight: 400;
   }
 
   &__close-btn {
