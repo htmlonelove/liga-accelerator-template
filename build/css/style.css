@@ -1737,7 +1737,7 @@ button,
     display: flex;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    gap: 20px;
+    gap: 18px;
     padding-bottom: 0;
   }
 
@@ -1976,7 +1976,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 25px;
+    padding: 0 30px;
   }
 
   .header {
@@ -2268,7 +2268,6 @@ button,
   }
 
   .services__link {
-    max-width: 600px;
     padding: 25px 30px;
   }
 
