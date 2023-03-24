@@ -8,15 +8,15 @@ const changeIcon = () => {
         .querySelector('[data-input="checkbox"]');
     if (checkboxInput.checked) {
       if (item.dataset.checked === 'true') {
-        item.classList.remove('checkbox-icon--hide');
+        item.dataset['hide'] = 'false';
       } else {
-        item.classList.add('checkbox-icon--hide');
+        item.dataset['hide'] = 'true';
       }
     } else {
       if (item.dataset.checked === 'true') {
-        item.classList.add('checkbox-icon--hide');
+        item.dataset['hide'] = 'true';
       } else {
-        item.classList.remove('checkbox-icon--hide');
+        item.dataset['hide'] = 'false';
       }
     }
   });

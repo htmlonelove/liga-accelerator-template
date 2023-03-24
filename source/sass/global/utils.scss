@@ -75,8 +75,6 @@
   display: none;
 }
 
-.checkbox-icon {
-  &--hide {
-    display: none;
-  }
+[data-hide="true"] {
+  display: none;
 }

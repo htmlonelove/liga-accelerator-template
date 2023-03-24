@@ -6,6 +6,7 @@ import {onCompanyInfo} from './functions/company-info';
 import {onAccardeon} from './functions/accardeon';
 import {onTelMask} from './functions/tel-mask';
 import {addEventCheckbox} from './functions/checkbox';
+import {validForms} from './functions/validate';
 
 // ---------------------------------
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     onAccardeon();
     onTelMask();
     addEventCheckbox();
+    validForms();
     const form = new Form();
     window.form = form;
     form.init();

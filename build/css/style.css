@@ -662,7 +662,7 @@ button,
   display: none;
 }
 
-.checkbox-icon--hide {
+[data-hide=true] {
   display: none;
 }
 
@@ -1803,11 +1803,6 @@ button,
   line-height: 30px;
 }
 
-.goods__button {
-  border: none;
-  background-color: transparent;
-}
-
 .goods__button-icon {
   cursor: pointer;
   width: 60px;
@@ -2036,7 +2031,8 @@ button,
 }
 
 .feedback input[type=checkbox] {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
 .feedback__checkbox-icon {
@@ -2047,6 +2043,21 @@ button,
 
 .feedback__checkbox-icon--hide {
   display: none;
+}
+
+.feedback__checkbox--error {
+  position: relative;
+}
+
+.feedback__checkbox--error::before {
+  content: "Нажмите что вы согласны с нашими правилами, изучить их мы вам не дадим.";
+  display: block;
+  color: red;
+  font-size: 10px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  position: absolute;
+  top: -22px;
+  line-height: 10px;
 }
 
 .footer {
