@@ -23,6 +23,7 @@
   position: relative;
   margin-top: 146px;
   transform: translateX(-8px);
+  gap: 20px;
 }
 
 .popup__title {
@@ -50,43 +51,6 @@
   gap: 19px;
 }
 
-.popup__form input {
-  padding: 15px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-}
-
-.popup__form input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form textarea {
-  padding: 22px 15px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-  resize: none;
-}
-
-.popup__form textarea::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
 .popup__button {
   background: #041427;
   border-radius: 3px;
@@ -112,7 +76,7 @@
   font-family: "PT Mono", "Arial", sans-serif;
   align-self: center;
   position: relative;
-  margin-left: 5px;
+  margin-left: 35px;
   cursor: pointer;
 }
 
@@ -137,5 +101,70 @@
 
   &--hide {
     display: none;
+  }
+}
+
+.popup__custom-input {
+  width: 100%;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+
+  & input {
+    width: 100%;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 3px;
+    border: none;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+
+  & textarea {
+    width: 100%;
+    padding: 22px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    background: transparent;
+    border-radius: 3px;
+    border: none;
+    resize: none;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+}
+
+.popup__custom-toggle {
+  width: 100%;
+  padding: 0;
+
+
+  &:last-of-type {
+    padding: 0;
+  }
+
+  & label {
+    padding-left: 0;
   }
 }

@@ -4,14 +4,12 @@ import {Form} from './modules/form-validate/form';
 import {popupOn} from './functions/popup';
 import {onCompanyInfo} from './functions/company-info';
 import {onAccardeon} from './functions/accardeon';
-import {onTelMask} from './functions/tel-mask';
 import {addEventCheckbox} from './functions/checkbox';
-import {validForms} from './functions/validate';
+const forms = document.querySelectorAll('[data-form-validate]');
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
   // Utils
   // ---------------------------------
 
@@ -27,12 +25,17 @@ window.addEventListener('DOMContentLoaded', () => {
     popupOn();
     onCompanyInfo();
     onAccardeon();
-    onTelMask();
     addEventCheckbox();
-    validForms();
     const form = new Form();
     window.form = form;
     form.init();
+    forms.forEach((item) => {
+      form.initPhoneInput(item.querySelector('[data-validate-type="phone"]'));
+      form.validateForm(item);
+      form.validateFormElement(item.querySelector('[data-validate-type="phone"]'), true);
+      form.validateFormElement(item.querySelector('[data-validate-type="text"]'), true);
+      form.validateFormElement(item.querySelector('[data-validate-type="checkbox"]'), true);
+    });
   });
 });
 

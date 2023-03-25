@@ -134,18 +134,35 @@
   color: #ffffff;
 }
 
-.feedback textarea {
+.feedback__custom-input:has(textarea) {
   grid-column: 1/3;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
+  margin-bottom: 13px;
+  padding: 0;
+
+  @include vp-1023 {
+    margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    grid-column: 1/2;
+    margin-bottom: 23px;
+  }
+}
+
+.feedback textarea {
+  border-radius: 3px;
+  border: none;
+  background: transparent;
   padding: 25px 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   font-family: $pt-mono;
   color: #ffffff;
-  margin-bottom: 13px;
+  width: 100%;
 
   @include vp-1023 {
     padding-bottom: 15px;
@@ -205,8 +222,7 @@
   align-self: center;
   cursor: pointer;
   position: relative;
-  margin-left: 34px;
-  margin-top: 14px;
+  padding: 0;
 
   @include vp-1023 {
     margin-left: 26px;
@@ -217,6 +233,7 @@
     margin-left: 32px;
     margin-top: 18px;
   }
+
 }
 
 .feedback input[type="checkbox"] {
@@ -245,5 +262,26 @@
     position: absolute;
     top: -22px;
     line-height: 10px;
+  }
+}
+
+.feedback__custom-input {
+  width: 100%;
+
+  & input {
+    width: 100%;
+  }
+}
+
+.feedback__custom-toggle {
+  width: 100%;
+
+  &:last-of-type {
+    padding: 0;
+    padding-left: 27px;
+  }
+
+  & label {
+    padding: 0;
   }
 }

@@ -84,7 +84,7 @@ const onPhoneInputBlur = ({target}) => {
 };
 
 export const initPhoneInput = (parent) => {
-  const input = parent.querySelector('input');
+  const input = parent.querySelector('[data-validate-type="phone"]');
   parent.dataset.phoneLength = phoneLength;
   input.addEventListener('focus', onPhoneInputFocus);
 };

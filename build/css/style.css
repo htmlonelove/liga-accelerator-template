@@ -1941,20 +1941,28 @@ button,
   color: #ffffff;
 }
 
-.feedback textarea {
+.feedback__custom-input:has(textarea) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
+  margin-bottom: 13px;
+  padding: 0;
+}
+
+.feedback textarea {
+  border-radius: 3px;
+  border: none;
+  background: transparent;
   padding: 25px 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
-  margin-bottom: 13px;
+  width: 100%;
 }
 
 .feedback textarea::-webkit-input-placeholder {
@@ -2026,8 +2034,7 @@ button,
   align-self: center;
   cursor: pointer;
   position: relative;
-  margin-left: 34px;
-  margin-top: 14px;
+  padding: 0;
 }
 
 .feedback input[type=checkbox] {
@@ -2058,6 +2065,27 @@ button,
   position: absolute;
   top: -22px;
   line-height: 10px;
+}
+
+.feedback__custom-input {
+  width: 100%;
+}
+
+.feedback__custom-input input {
+  width: 100%;
+}
+
+.feedback__custom-toggle {
+  width: 100%;
+}
+
+.feedback__custom-toggle:last-of-type {
+  padding: 0;
+  padding-left: 27px;
+}
+
+.feedback__custom-toggle label {
+  padding: 0;
 }
 
 .footer {
@@ -2288,6 +2316,7 @@ button,
   -webkit-transform: translateX(-8px);
   -ms-transform: translateX(-8px);
   transform: translateX(-8px);
+  gap: 20px;
 }
 
 .popup__title {
@@ -2320,99 +2349,6 @@ button,
   gap: 19px;
 }
 
-.popup__form input {
-  padding: 15px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-}
-
-.popup__form input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form textarea {
-  padding: 22px 15px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  border: none;
-  resize: none;
-}
-
-.popup__form textarea::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form textarea::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form textarea:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form textarea::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
-.popup__form textarea::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-}
-
 .popup__button {
   background: #041427;
   border-radius: 3px;
@@ -2440,7 +2376,7 @@ button,
   -ms-grid-row-align: center;
   align-self: center;
   position: relative;
-  margin-left: 5px;
+  margin-left: 35px;
   cursor: pointer;
 }
 
@@ -2466,6 +2402,126 @@ button,
 
 .popup__checkbox-icon--hide {
   display: none;
+}
+
+.popup__custom-input {
+  width: 100%;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  border: none;
+}
+
+.popup__custom-input input {
+  width: 100%;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 3px;
+  border: none;
+}
+
+.popup__custom-input input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input textarea {
+  width: 100%;
+  padding: 22px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 3px;
+  border: none;
+  resize: none;
+}
+
+.popup__custom-input textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input textarea::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-input textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.popup__custom-toggle {
+  width: 100%;
+  padding: 0;
+}
+
+.popup__custom-toggle:last-of-type {
+  padding: 0;
+}
+
+.popup__custom-toggle label {
+  padding-left: 0;
 }
 
 /* @mixin hover-focus {
@@ -2687,6 +2743,10 @@ button,
 
   .feedback input {
     margin-bottom: 10px;
+  }
+
+  .feedback__custom-input:has(textarea) {
+    margin-bottom: 25px;
   }
 
   .feedback textarea {
@@ -3007,6 +3067,13 @@ button,
 
   .feedback input {
     margin-bottom: 13px;
+  }
+
+  .feedback__custom-input:has(textarea) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin-bottom: 23px;
   }
 
   .feedback textarea {
