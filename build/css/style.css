@@ -458,9 +458,24 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-  box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  font: inherit;
+  color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
+input:autofill {
+  font: inherit;
+  color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+}
+
+input:-webkit-autofill {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-text-fill-color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+  -webkit-transition: background-color 5000s ease-in-out;
+  transition: background-color 5000s ease-in-out;
 }
 
 input,
