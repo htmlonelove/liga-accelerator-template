@@ -155,6 +155,7 @@
   left: -189px;
   max-width: 1494px;
   background-color: $color-black-pearl;
+  object-fit: cover;
 
   @include vp-1023 {
     top: -549px;

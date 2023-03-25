@@ -1232,6 +1232,8 @@ button,
   left: -189px;
   max-width: 1494px;
   background-color: #041827;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .services__item:nth-child(2n) .services__image {
@@ -1395,6 +1397,10 @@ button,
   align-items: flex-end;
   gap: 50px;
   width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .form button {
@@ -1507,6 +1513,9 @@ button,
 
 .form--modal .form__checkbox {
   margin-left: 9px;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .form .error {
@@ -1706,19 +1715,6 @@ button,
 */
 
 @media (max-width: 1279px) {
-  .header__list {
-    -ms-grid-columns: (minmax(160px, auto))[2];
-    grid-template-columns: repeat(2, minmax(160px, auto));
-  }
-
-  .footer__menu {
-    gap: 15px;
-  }
-
-  .footer__list {
-    width: 180px;
-  }
-
   .footer__list--address {
     width: 320px;
   }
@@ -1817,10 +1813,6 @@ button,
     flex-direction: column;
     gap: 0;
     margin-bottom: -8px;
-  }
-
-  .footer__list {
-    width: 100%;
   }
 
   .footer__item:last-child {
@@ -2176,7 +2168,7 @@ button,
     max-width: 270px;
     margin-left: 0;
     margin-top: 45px;
-    padding: 9px 30px;
+    padding: 9px 25px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -2370,6 +2362,15 @@ button,
 
   .form button {
     width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .form__checkbox {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
 
   .form__checkbox label {

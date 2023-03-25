@@ -63,10 +63,6 @@
   padding-top: 7px;
   gap: 30px;
 
-  @include vp-1279 {
-    gap: 15px;
-  }
-
   @include vp-1023 {
     justify-content: space-between;
     gap: 130px;
@@ -118,13 +114,13 @@
   padding: 0;
   list-style-type: none;
 
-  @include vp-1279 {
-    width: 180px;
-  }
+  //@include vp-1279 {
+  //  width: 180px;
+  //}
 
-  @include vp-1023 {
-    width: 100%;
-  }
+  //@include vp-1023 {
+  //  width: 100%;
+  //}
 
   @include vp-767 {
     padding: 0 25px;

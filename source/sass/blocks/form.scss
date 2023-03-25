@@ -82,6 +82,7 @@
   align-items: flex-end;
   gap: 50px;
   width: 100%;
+  flex-direction: row-reverse;
 
   @include vp-1023 {
     align-items: center;
@@ -120,6 +121,13 @@
 
   @include vp-767 {
     width: 100%;
+    order: 1;
+  }
+}
+
+.form__checkbox {
+  @include vp-767 {
+    order: 2;
   }
 }
 
@@ -206,6 +214,7 @@
 
   & .form__checkbox {
     margin-left: 9px;
+    order: 1;
   }
 }
 

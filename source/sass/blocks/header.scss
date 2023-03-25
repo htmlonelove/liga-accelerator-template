@@ -62,10 +62,6 @@
   flex-wrap: wrap;
   list-style-type: none;
 
-  @include vp-1279 {
-    grid-template-columns: repeat(2, minmax(160px, auto));
-  }
-
   @include vp-1023 {
     display: flex;
     align-self: flex-start;
