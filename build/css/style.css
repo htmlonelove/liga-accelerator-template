@@ -2676,25 +2676,28 @@ button,
     padding: 80px 0 205px;
     margin: 0 auto;
     margin-top: 100px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .info__title {
     font-size: 64px;
     line-height: 75px;
     margin: 0;
-    margin-left: 0;
+    margin-left: 3.4722222222%;
     min-width: 670px;
   }
 
   .info__text {
     margin: 0 0 50px 0;
-    margin-left: 2.0833333333%;
+    margin-left: 3.4722222222%;
     min-width: 670px;
   }
 
   .info__button {
     margin-top: 7px;
-    margin-left: 6.3888888889%;
+    margin-left: 9.7222222222%;
     margin-right: 29.8611111111%;
     padding: 17px 25px;
   }
