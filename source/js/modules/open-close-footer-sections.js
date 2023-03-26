@@ -14,16 +14,12 @@ export const openCloseFooterSections = () => {
     address.classList.add('contacts-container--closed');
     closeAddressButton.classList.add('visually-hidden');
     openAddressButton.classList.remove('visually-hidden');
-  });
-
-  closeNavigationButton.addEventListener('click', function () {
-    navigation.classList.add('footer-navigation__navigation--closed');
-    closeNavigationButton.classList.add('visually-hidden');
-    openNavigationButton.classList.remove('visually-hidden');
+    address.classList.remove('contacts-container--opened');
   });
 
   openAddressButton.addEventListener('click', function () {
     address.classList.remove('contacts-container--closed');
+    address.classList.add('contacts-container--opened');
     closeAddressButton.classList.remove('visually-hidden');
     openAddressButton.classList.add('visually-hidden');
     navigation.classList.add('footer-navigation__navigation--closed');
@@ -35,5 +31,12 @@ export const openCloseFooterSections = () => {
     address.classList.add('contacts-container--closed');
     closeAddressButton.classList.add('visually-hidden');
     openAddressButton.classList.remove('visually-hidden');
+    address.classList.remove('contacts-container--opened');
+  });
+
+  closeNavigationButton.addEventListener('click', function () {
+    navigation.classList.add('footer-navigation__navigation--closed');
+    closeNavigationButton.classList.add('visually-hidden');
+    openNavigationButton.classList.remove('visually-hidden');
   });
 };

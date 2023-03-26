@@ -41,7 +41,7 @@
 }
 
 .feedback-form form {
-  width: 65%;
+  width: 67%;
 
   @media (max-width: $tablet-width) {
     width: 90%;
@@ -51,16 +51,16 @@
     background-image: url(../../img/form-image.png);
     background-size: 42% auto;
     background-repeat: no-repeat;
-    background-position: 1% 57%;
-    padding-left: 34.5%;
+    background-position: 3% 57%;
+    padding-left: 35.5%;
   }
 }
 
 .feedback-form fieldset {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-  row-gap: 5px;
+  grid-template-rows: 0.8fr 0.6fr 1fr 3fr 1fr;
+  row-gap: 15px;
   column-gap: 25px;
   border: 0;
   padding: 0;
@@ -71,8 +71,8 @@
   @media (max-width: $tablet-width) {
     margin: 0;
     max-width: 670px;
-    grid-template-rows: 2fr 1fr 2fr 6fr 2fr;
-    row-gap: 10px;
+    grid-template-rows: 1.5fr 1.2fr 2fr 5fr 1.6fr;
+    row-gap: 5px;
   }
 
   @media (max-width: $mobile-width) {
@@ -108,7 +108,6 @@
   font-size: 16px;
   font-family: "PT Mono";
 
-
   @media (max-width: $mobile-width) {
     margin-bottom: 35px;
     font-size: 14px;
@@ -127,8 +126,8 @@
   line-height: 19px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 11px;
-  min-height: 45px;
+  height: 45px;
+  width: 265px;
   border: 0;
 
   &:hover,
@@ -140,16 +139,16 @@
   @media (max-width: $tablet-width) {
     max-width: 265px;
     letter-spacing: 1px;
-    margin-top: 12px;
+    margin-top: 10px;
+    padding-top: 10px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
     height: 45px;
+    padding: 0 5px;
   }
 }
-
-
 
 .feedback-form label {
   grid-row: 5/6;
@@ -174,6 +173,7 @@
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
+    margin-top: 10px;
   }
 }
 
@@ -181,10 +181,14 @@
   background-color: #04142726;
   border-radius: 3px;
   border: 0;
-  padding: 15px;
+  padding: 0 15px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  height: 50px;
   width: 100%;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 20px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
@@ -202,9 +206,13 @@
   grid-row: 4/5;
   grid-column: 1/3;
   display: flex;
-  padding: 30px 20px 40px 15px;
+  padding: 25px 20px 40px 15px;
   box-sizing: border-box;
-  min-height: 155px;
+  height: 155px;
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 20px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
@@ -217,31 +225,37 @@
 .feedback-form input::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 16px;
+  font-family: 'PT Mono';
 }
 
 .feedback-form input::-moz-placeholder {
   color: #ffffff;
   font-size: 16px;
+  font-family: 'PT Mono';
 }
 
 .feedback-form input:-ms-input-placeholder {
   color: #ffffff;
   font-size: 16px;
+  font-family: 'PT Mono';
 }
 
 .feedback-form textarea::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 16px;
+  font-family: 'PT Mono';
 }
 
 .feedback-form textarea::-moz-placeholder {
   color: #ffffff;
   font-size: 16px;
+  font-family: 'PT Mono';
 }
 
 .feedback-form textarea:-ms-input-placeholder {
   color: #ffffff;
   font-size: 16px;
+  font-family: 'PT Mono';
 }
 
 .feedback-form label input {
@@ -249,6 +263,10 @@
   height: 0;
   margin: 0 10px 0 0;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 5px;
+  }
 
   @media (max-width: $mobile-width) {
     margin: 0 30px 0 0;
@@ -261,6 +279,10 @@
   margin-bottom: 0;
   margin-top: 10px;
   font-size: 14px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 12px;
+  }
 }
 
 .feedback-form span {
@@ -275,11 +297,17 @@
   top: 60%;
   transform: translateY(-50%);
 
+  @media (max-width: $tablet-width) {
+    left: -20px;
+    top: 55%;
+  }
+
   @media (max-width: $mobile-width) {
     left: 0;
     width: 14px;
     height: 13px;
     left: 5px;
+    border: 1px solid #ffffff;
   }
 }
 

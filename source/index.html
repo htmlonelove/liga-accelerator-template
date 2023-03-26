@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <meta name="description" content="Магазин Smart Device, печатные платы">
+  <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+
 </head>
 
 <body class="page-body">
@@ -22,7 +22,8 @@
         <a class="introduce__logo sd-logo" href="index.html">
           <picture>
             <source srcset="img/svg/main-logo.svg" media="(max-width: 767px)" width="35" height="35">
-            <img class="sd-logo__image" src="img/svg/main-logo.svg" width="55" height="55" alt="Логотип Smart Device.">
+            <img class="sd-logo__image" loading="lazy" src="img/svg/main-logo.svg" width="55" height="55"
+              alt="Логотип Smart Device.">
           </picture>
         </a>
         <div class="introduce__name introduce-name">
@@ -192,7 +193,7 @@
         <div class="footer-social__wrapper">
           <h2 class="visually-hidden">Логотип и соцсети</h2>
           <a class="footer-social__logo" href="index.html">
-            <img class="footer-social__image" src="img/svg/logo-text.svg" width="215" height="55"
+            <img class="footer-social__image" loading="lazy" src="img/svg/logo-text.svg" width="215" height="55"
               alt="Логотип Smart Device.">
           </a>
           <ul class="footer-social__list footer-social-list">
@@ -226,7 +227,7 @@
           </ul>
         </div>
       </section>
-      <section class="footer-container__navigation footer-navigation">
+      <section class="footer-container__navigation footer-container__navigation--closed footer-navigation">
         <h2 class="footer-navigation__header">Разделы сайта</h2>
         <nav class="footer-navigation__navigation footer-navigation__navigation--closed">
           <ul class="footer-navigation__list footer-navigation-list">
@@ -259,7 +260,7 @@
           title="Закрыть навигацию.">
         </button>
       </section>
-      <section class="footer-container__contacts footer-contacts">
+      <section class="footer-container__contacts footer-contacts footer-contacts--closed">
         <h2 class="footer-contacts__header">Наш офис</h2>
         <div class="contacts-container contacts-container--closed">
           <p class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</p>
@@ -270,7 +271,8 @@
           </ul>
         </div>
         <button class="footer-contacts__button footer-contacts__button--open" title="Открыть контакты."></button>
-        <button class="footer-contacts__button footer-contacts__button--close" title="Закрыть контакты."></button>
+        <button class="footer-contacts__button footer-contacts__button--close visually-hidden"
+          title="Закрыть контакты."></button>
       </section>
     </div>
   </footer>
@@ -308,7 +310,6 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
     type="text/javascript"></script>
-  <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

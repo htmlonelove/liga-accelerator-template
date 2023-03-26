@@ -1,8 +1,8 @@
 .products-item {
-  width: 28.2%;
+  width: 28.5%;
   max-width: 350px;
   height: 650px;
-  padding: 25px 45px;
+  padding: 0;
   box-sizing: border-box;
   position: relative;
   margin: 0 0 30px 0;
@@ -14,14 +14,14 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    width: 98%;
     height: 250px;
     max-width: 750px;
     padding-top: 15px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 5px 30px;
+    padding: 5px 0;
   }
 }
 
@@ -32,7 +32,7 @@
 }
 
 .products-item:not(:last-child) {
-  margin-right: 7%;
+  margin-right: 7.1%;
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
@@ -46,9 +46,17 @@
   line-height: 30px;
   font-weight: 400;
   width: 65%;
+  margin-left: 45px;
 
   @media (max-width: $tablet-width) {
     width: 150px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 133px;
   }
 }
 

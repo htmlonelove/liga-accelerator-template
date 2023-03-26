@@ -27,7 +27,7 @@
   height: 20px;
   position: absolute;
   content: "";
-  left: 0;
+  left: -5px;
   bottom: 0;
   padding: 0;
   margin: 0;
@@ -35,6 +35,11 @@
   @media (max-width: $tablet-width) {
     left: -5px;
     bottom: 6px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -10px;
+    bottom: 8px;
   }
 }
 
@@ -53,13 +58,18 @@
   height: 20px;
   position: absolute;
   content: "";
-  left: -10px;
-  bottom: 2px;
+  left: -5px;
+  bottom: 0;
   padding: 0;
   margin: 0;
 
   @media (max-width: $tablet-width) {
     left: -14px;
     bottom: 6px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -20px;
+    bottom: 8px;
   }
 }

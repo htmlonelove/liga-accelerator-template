@@ -1,5 +1,5 @@
-import {ScrollLock} from '../../utils/scroll-lock';
-import {FocusLock} from '../../utils/focus-lock';
+import { ScrollLock } from '../../utils/scroll-lock';
+import { FocusLock } from '../../utils/focus-lock';
 
 export class Modals {
   constructor(settings = {}) {
@@ -205,3 +205,4 @@ export class Modals {
     this._enableScrolling = true;
   }
 }
+

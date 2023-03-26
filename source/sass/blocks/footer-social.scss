@@ -10,7 +10,7 @@
   @media (max-width: $mobile-width) {
     min-height: 170px;
     border-bottom: solid 1px #f8fdffb2;
-    padding: 25px 34px 20px;
+    padding: 30px 34px 20px;
     margin-bottom: 0;
   }
 }
@@ -37,6 +37,10 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
   }
 }
 

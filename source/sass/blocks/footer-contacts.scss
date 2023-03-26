@@ -78,21 +78,21 @@
 .footer-contacts__button--open::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 30px;
-  width: 20px;
+  left: 16px;
+  top: 18px;
+  width: 16px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #c4c4c4;
 }
 
 .footer-contacts__button--open::after {
   content: "";
   position: absolute;
-  top: 5px;
-  right: 10px;
+  left: 24px;
+  top: 10px;
   width: 1px;
-  height: 20px;
-  background-color: #ffffff;
+  height: 17px;
+  background-color: #c4c4c4;
 }
 
 .footer-contacts__button--close {
@@ -113,9 +113,9 @@
 .footer-contacts__button--close::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 30px;
-  width: 20px;
+  top: 19px;
+  right: 15px;
+  width: 16px;
   height: 1px;
   background-color: #ffffff;
 }

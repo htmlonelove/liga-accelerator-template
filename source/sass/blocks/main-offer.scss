@@ -45,7 +45,7 @@
 .main-offer__wrapper {
   text-align: left;
   margin-right: 220px;
-  padding: 90px 0 70px 0;
+  padding: 100px 0 70px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -91,7 +91,8 @@
 .main-offer__description {
   font-size: 22px;
   line-height: 34px;
-  margin: 0 0 55px 0;
+  margin: 0 0 50px 0;
+  font-family: 'PT Mono';
 
   @media (min-width: $desktop-width) {
     max-width: 685px;
