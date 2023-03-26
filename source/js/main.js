@@ -5,7 +5,6 @@ import {popupOn} from './functions/popup';
 import {onCompanyInfo} from './functions/company-info';
 import {onAccardeon} from './functions/accardeon';
 import {addEventCheckbox} from './functions/checkbox';
-const forms = document.querySelectorAll('[data-form-validate]');
 
 // ---------------------------------
 
@@ -29,12 +28,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     form.init();
     window.form = form;
-    forms.forEach((item) => {
-      form.initPhoneInput(item.querySelector('[data-validate-type="phone"]'));
-      form.validateFormElement(item.querySelector('[data-validate-type="phone"]'), true);
-      form.validateFormElement(item.querySelector('[data-validate-type="text"]'), true);
-      form.validateFormElement(item.querySelector('[data-validate-type="checkbox"]'), true);
-    });
   });
 });
 

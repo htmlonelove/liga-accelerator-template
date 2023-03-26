@@ -1,4 +1,4 @@
-const button = document.querySelector('[data-button="company"]');
+const button = document.querySelectorAll('[data-button="company"]');
 const text = [...document.querySelectorAll('[data-text="company"]')];
 
 const openCompanyInfo = () => {
@@ -26,7 +26,9 @@ const openCompanyInfo = () => {
 };
 
 const onCompanyInfo = () => {
-  button.addEventListener('click', openCompanyInfo);
+  button.forEach((item) => {
+    item.addEventListener('click', openCompanyInfo);
+  });
 };
 
 export {onCompanyInfo};

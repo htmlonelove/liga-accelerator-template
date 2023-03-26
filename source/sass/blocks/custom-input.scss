@@ -97,9 +97,9 @@
 
   .input-message {
     position: absolute;
-    right: 30px;
+    left: 0;
     bottom: -22px;
-    font-size: 16px;
+    font-size: 14px;
 
     @include vp-1023 {
       left: 0;
