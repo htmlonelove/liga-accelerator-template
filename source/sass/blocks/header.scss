@@ -113,10 +113,10 @@
   display: flex;
   color: #f2f5f7;
   font-family: $pt-mono;
-  min-width: 20px;
 
   @include vp-1023 {
     padding: 10px;
+    min-width: 20px;
   }
 }
 

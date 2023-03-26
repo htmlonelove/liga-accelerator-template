@@ -249,18 +249,16 @@
             <div class="feedback__custom-input custom-input" data-validate-type="text" data-limitation="name"
               data-message-base="Поле обязательно к заполнению"
               data-message-extra="Проверьте корректность заполнения поля" data-required="">
-              <input name="name" type="text" placeholder="Имя" aria-lable="Поле для ввода имени.">
+              <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени.">
             </div>
             <div class="feedback__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
               data-message-base="Поле обязательно к заполнению"
               data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
-              data-required data-phone-length="18">
-              <input data-input="tel" name="tel" type="tel" placeholder="Телефон"
-                aria-lable="Поле для ввода телефона.">
+              data-required data-phone-length="18" >
+              <input data-input="tel" name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
             </div>
             <div class="feedback__custom-input custom-input" data-validate-type="text">
-              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
-                aria-lable="Поля для ввода вопроса."></textarea>
+              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" aria-label="Поле для ввода вопроса."></textarea>
             </div>
             <button type="submit" class="feedback__button">Задать вопрос</button>
             <div class="feedback__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
@@ -285,41 +283,40 @@
     <section data-id="popup" class="main__popup popup popup--hide">
       <div class="popup__container" data-form-validate>
         <form action="https://echo.htmlacademy.ru/" method="post" class="popup__form">
-        <h2 class="popup__title">Закажите звонок</h2>
-        <p class="popup__text">
-          Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-        </p>
-        <div class="popup__custom-input custom-input" data-validate-type="text" data-limitation="name"
-          data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
-          data-required="">
-          <input name="name" type="text" placeholder="Имя" aria-lable="Поле для ввода имени.">
-        </div>
-        <div class="popup__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
-          data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
-          data-message-success="Поле заполнено верно" data-required data-phone-length="18">
-          <input name="tel" type="tel" placeholder="Телефон"
-            aria-lable="Поле для ввода телефона.">
-        </div>
-        <div class="popup__custom-input custom-input" data-validate-type="text">
-          <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
-            aria-lable="Поля для ввода вопроса."></textarea>
-        </div>
-        <button type="submit" class="popup__button">Отправить</button>
-        <div class="popup__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
-          data-message-base="Поле обязательно к заполнению">
-          <label data-label="checkbox" class="popup__agreed-text popup__checkbox">
-            <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox">
-            <svg data-icon="checkbox" data-checked="true" data-hide="true" class="popup__checkbox-icon" width="15"
-              height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#checked"></use>
-            </svg>
-            <svg data-icon="checkbox" data-checked="false" data-hide="false" class="popup__checkbox-icon" width="15"
-              height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#not-checked"></use>
-            </svg>
-            Я согласен на обработку персональных данных
-          </label>
-        </div>
+          <h2 class="popup__title">Закажите звонок</h2>
+          <p class="popup__text">
+            Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+          </p>
+          <div class="popup__custom-input custom-input" data-validate-type="text" data-limitation="name"
+            data-message-base="Поле обязательно к заполнению"
+            data-message-extra="Проверьте корректность заполнения поля" data-required="">
+            <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени.">
+          </div>
+          <div class="popup__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
+            data-message-base="Поле обязательно к заполнению"
+            data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+            data-required data-phone-length="18">
+            <input name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
+          </div>
+          <div class="popup__custom-input custom-input" data-validate-type="text">
+            <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" aria-label="Поле для ввода вопроса."></textarea>
+          </div>
+          <button type="submit" class="popup__button">Отправить</button>
+          <div class="popup__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
+            data-message-base="Поле обязательно к заполнению">
+            <label data-label="checkbox" class="popup__agreed-text popup__checkbox">
+              <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox">
+              <svg data-icon="checkbox" data-checked="true" data-hide="true" class="popup__checkbox-icon" width="15"
+                height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#checked"></use>
+              </svg>
+              <svg data-icon="checkbox" data-checked="false" data-hide="false" class="popup__checkbox-icon" width="15"
+                height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#not-checked"></use>
+              </svg>
+              Я согласен на обработку персональных данных
+            </label>
+          </div>
         </form>
         <button data-button="popup" type="button" class="popup__close">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

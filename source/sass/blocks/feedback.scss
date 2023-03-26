@@ -66,7 +66,6 @@
     min-width: 270px;
     width: custom-width(270, 288);
     grid-template-columns: 1fr;
-    gap: 7px;
     gap: 0;
   }
 }
@@ -244,7 +243,6 @@
     margin-left: 32px;
     margin-top: 18px;
   }
-
 }
 
 .feedback input[type="checkbox"] {
@@ -264,10 +262,11 @@
 
 .feedback__checkbox--error {
   position: relative;
+
   &::before {
-    content: 'Нажмите что вы согласны с нашими правилами, изучить их мы вам не дадим.';
+    content: "Нажмите что вы согласны с нашими правилами, изучить их мы вам не дадим.";
     display: block;
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 10px;
     font-family: $pt-mono;
     position: absolute;
