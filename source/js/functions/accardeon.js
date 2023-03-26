@@ -1,4 +1,3 @@
-const buttons = [...document.querySelectorAll('[data-button="accardeon"]')];
 const accardeonLists = [...document.querySelectorAll('[data-section="accardeon"]')];
 
 const changeHeight = (evt) => {
@@ -26,9 +25,9 @@ const changeHeight = (evt) => {
 };
 
 const onAccardeon = () => {
-  buttons.map((item) => {
+  accardeonLists.forEach((item) => {
     item.addEventListener('click', (evt) => changeHeight(evt));
   });
 };
 
-export { onAccardeon };
+export {onAccardeon};

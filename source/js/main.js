@@ -27,11 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
     onAccardeon();
     addEventCheckbox();
     const form = new Form();
-    window.form = form;
     form.init();
+    window.form = form;
     forms.forEach((item) => {
       form.initPhoneInput(item.querySelector('[data-validate-type="phone"]'));
-      form.validateForm(item);
       form.validateFormElement(item.querySelector('[data-validate-type="phone"]'), true);
       form.validateFormElement(item.querySelector('[data-validate-type="text"]'), true);
       form.validateFormElement(item.querySelector('[data-validate-type="checkbox"]'), true);

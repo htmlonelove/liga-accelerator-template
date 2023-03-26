@@ -30,13 +30,14 @@
   width: 215px;
   display: grid;
   grid-template-columns: 55px 145px;
-  gap: 5px 15px;
+  gap: 0 19px;
   align-items: flex-end;
   text-decoration: none;
   color: #f2f5f7;
 
   @include vp-1023 {
     margin-right: custom-width(335, 720);
+    gap: 0 17px;
   }
 
   @include vp-767 {
@@ -89,6 +90,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: -5px;
 
   @include vp-1023 {
     margin-right: custom-width(20, 720);
@@ -99,6 +101,8 @@
 
   @include vp-767 {
     align-self: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -109,6 +113,7 @@
   display: flex;
   color: #f2f5f7;
   font-family: $pt-mono;
+  min-width: 20px;
 
   @include vp-1023 {
     padding: 10px;
@@ -117,6 +122,7 @@
 
 .header__email-icon {
   margin-right: 15px;
+  margin-left: 3px;
 
   @include vp-1023 {
     margin: 0;
@@ -143,11 +149,13 @@
   @include vp-1023 {
     padding: 10px;
     margin-right: 0;
+    min-width: 20px;
   }
 }
 
 .header__tel-icon {
   margin-right: 15px;
+  margin-left: 5px;
 
   @include vp-1023 {
     margin: 0;
@@ -181,6 +189,7 @@
   margin: 0;
   margin-right: custom-width(60, 1840);
   margin-bottom: 5px;
+  margin-left: 5px;
 
   @include vp-1023 {
     display: none;

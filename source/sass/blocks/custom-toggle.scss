@@ -17,7 +17,7 @@
     padding: 14px 0 58px 36px;
 
     @media screen and (max-width: 767px) {
-      padding: 14px 0 58px 0;
+      padding: 0;
     }
   }
 
@@ -124,8 +124,18 @@
 
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    right: 30px;
+    bottom: -20px;
+    font-size: 16px;
+
+    @include vp-1023 {
+     left: 0;
+    }
+
+    @include vp-767 {
+      bottom: -23px;
+      font-size: 12px;
+    }
 
     &.is-invalid {
       color: #ff0000;

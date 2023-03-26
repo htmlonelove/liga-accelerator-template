@@ -41,7 +41,7 @@
   width: 215px;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 5px 15px;
+  gap: 0 19px;
   text-decoration: none;
   color: #f2f5f7;
   align-items: flex-end;
@@ -53,6 +53,7 @@
   @include vp-767 {
     margin: 0;
     align-self: center;
+    gap: 0 12px;
   }
 }
 
@@ -82,7 +83,7 @@
   max-width: 215px;
   display: flex;
   flex-direction: column;
-  margin-right: custom-width(160, 1840);
+  margin-right: custom-width(165, 1840);
 
   @include vp-1023 {
     max-width: 100%;
@@ -91,7 +92,7 @@
     margin: 0;
     align-items: flex-start;
     width: custom-width(675, 720);
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
 
   @include vp-767 {
@@ -105,15 +106,17 @@
   list-style: none;
   padding: 0;
   gap: 15px;
-  margin: 30px 0 0 10px;
+  margin: 29px 0 0 14px;
 
   @include vp-1023 {
     margin: 0;
+    margin-top: 8px;
   }
 
   @include vp-767 {
     align-self: center;
     margin-top: 15px;
+    margin-left: 3px;
   }
 }
 
@@ -156,11 +159,11 @@
     width: 100%;
     margin: 0;
     padding: 25px;
+    padding-top: 20px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     max-height: 60px;
     overflow: hidden;
-    transition: all 400ms ease;
   }
 }
 
@@ -204,16 +207,17 @@
   @include vp-1023 {
     width: custom-width(320, 720);
     margin: 0;
-    padding: 25px;
   }
 
   @include vp-767 {
     width: 100%;
     margin: 0;
+    padding: 25px;
+    padding-top: 22px;
+    padding-bottom: 12px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     max-height: 60px;
     overflow: hidden;
-    transition: 0.5s;
   }
 }
 
@@ -229,7 +233,7 @@
 
   @include vp-1023 {
     margin: 0;
-    margin-top: 25px;
+    margin-top: 15px;
   }
 }
 
@@ -245,6 +249,11 @@
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
   font-style: normal;
+
+  @include vp-767 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 .footer__address-tel {
@@ -256,6 +265,10 @@
   color: rgba(255, 255, 255, 0.7);
   height: 100%;
   display: inline-block;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
 }
 
 .footer__accardeon {
@@ -274,5 +287,6 @@
   @include vp-767 {
     display: block;
     cursor: pointer;
+    padding: 0;
   }
 }

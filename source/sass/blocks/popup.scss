@@ -16,6 +16,7 @@
   margin: 0 auto;
   padding: 40px;
   padding-top: 37px;
+  padding-bottom: 44px;
   background: #00b3ff;
   border-radius: 3px;
   display: flex;
@@ -41,20 +42,19 @@
   line-height: 22px;
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
-  margin: 2px 0 36px;
+  margin: 2px 0 38px;
   max-width: 380px;
 }
 
 .popup__form {
   display: flex;
   flex-direction: column;
-  gap: 19px;
 }
 
 .popup__button {
   background: #041427;
   border-radius: 3px;
-  padding: 15px 60px;
+  padding: 15px 60px 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -65,6 +65,7 @@
   font-family: $roboto;
   margin-top: 5px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .popup__agreed-text {
@@ -97,7 +98,7 @@
 .popup__checkbox-icon {
   position: absolute;
   top: 0;
-  left: -23px;
+  left: -26px;
 
   &--hide {
     display: none;
@@ -114,6 +115,7 @@
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
   border: none;
+  margin-bottom: 20px;
 
   & input {
     width: 100%;
@@ -125,6 +127,8 @@
     background: transparent;
     border-radius: 3px;
     border: none;
+    box-sizing: border-box;
+    max-height: 50px;
 
     &::placeholder {
       font-weight: 400;
@@ -145,6 +149,7 @@
     border-radius: 3px;
     border: none;
     resize: none;
+    box-sizing: border-box;
 
     &::placeholder {
       font-weight: 400;
@@ -152,6 +157,11 @@
       line-height: 22px;
       color: #ffffff;
     }
+  }
+
+  & .input-message {
+    top: 48px;
+    left: 0;
   }
 }
 
@@ -166,5 +176,10 @@
 
   & label {
     padding-left: 0;
+  }
+
+  & .input-message {
+    top: 20px;
+    left: 10px;
   }
 }

@@ -241,36 +241,32 @@
     <section id="feedback" class="main__feedback feedback">
       <div class="feedback__back"></div>
       <div class="feedback__container container">
-        <div class="feedback__form-wrapper">
+        <div class="feedback__form-wrapper" data-form-validate>
           <img src="./img/objects/paper-plane.png" alt="" class="feedback__image" width="510" height="285">
-          <form action="https://echo.htmlacademy.ru/" method="post" class="feedback__form" data-form-validate>
+          <form action="https://echo.htmlacademy.ru/" method="post" class="feedback__form">
             <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
             <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
             <div class="feedback__custom-input custom-input" data-validate-type="text" data-limitation="name"
               data-message-base="Поле обязательно к заполнению"
               data-message-extra="Проверьте корректность заполнения поля" data-required="">
-              <input name="name" type="text" class="feedback__name" placeholder="Имя" aria-lable="Поле для ввода имени."
-                minlength="1" maxlength="18" required>
+              <input name="name" type="text" placeholder="Имя" aria-lable="Поле для ввода имени.">
             </div>
             <div class="feedback__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
               data-message-base="Поле обязательно к заполнению"
               data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
               data-required data-phone-length="18">
-              <input data-input="tel" name="tel" type="tel" class="feedback__tel" placeholder="Телефон"
-                aria-lable="Поле для ввода телефона." data-required data-phone-lenght="20"
-                data-message-base="Поле обязательно к заполнению" data-validate-type="phone" required>
+              <input data-input="tel" name="tel" type="tel" placeholder="Телефон"
+                aria-lable="Поле для ввода телефона.">
             </div>
             <div class="feedback__custom-input custom-input" data-validate-type="text">
-              <textarea class="feedback__question" name="question" cols="30" rows="5" placeholder="Ваш вопрос"
+              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
                 aria-lable="Поля для ввода вопроса."></textarea>
             </div>
-            <button data-button="question" class="feedback__button">Задать вопрос</button>
+            <button type="submit" class="feedback__button">Задать вопрос</button>
             <div class="feedback__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
               data-message-base="Поле обязательно к заполнению">
               <label data-label="checkbox" class="feedback__agreed-text feedback__checkbox">
-                <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox"
-                  class="feedback__agreed" data-message-base="Поле обязательно к заполнению"
-                  data-validate-type="checkbox" required>
+                <input data-input="checkbox" name="agreed" value="agreed" type="checkbox">
                 <svg data-icon="checkbox" data-checked="true" data-hide="true" class="feedback__checkbox-icon"
                   width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#checked"></use>
@@ -287,8 +283,8 @@
       </div>
     </section>
     <section data-id="popup" class="main__popup popup popup--hide">
-      <div class="popup__container">
-        <form action="https://echo.htmlacademy.ru/" method="post" class="popup__form" data-form-validate>
+      <div class="popup__container" data-form-validate>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="popup__form">
         <h2 class="popup__title">Закажите звонок</h2>
         <p class="popup__text">
           Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
@@ -296,27 +292,23 @@
         <div class="popup__custom-input custom-input" data-validate-type="text" data-limitation="name"
           data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
           data-required="">
-          <input name="name" type="text" class="popup__name" placeholder="Имя" aria-lable="Поле для ввода имени."
-            minlength="1" maxlength="18" required>
+          <input name="name" type="text" placeholder="Имя" aria-lable="Поле для ввода имени.">
         </div>
         <div class="popup__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
           data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля"
           data-message-success="Поле заполнено верно" data-required data-phone-length="18">
-          <input data-input="tel" name="tel" type="tel" class="popup__tel" placeholder="Телефон"
-            aria-lable="Поле для ввода телефона." data-required data-phone-lenght="20"
-            data-message-base="Поле обязательно к заполнению" data-validate-type="phone" required>
+          <input name="tel" type="tel" placeholder="Телефон"
+            aria-lable="Поле для ввода телефона.">
         </div>
         <div class="popup__custom-input custom-input" data-validate-type="text">
-          <textarea class="popup__question" name="question" cols="30" rows="5" placeholder="Ваш вопрос"
+          <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
             aria-lable="Поля для ввода вопроса."></textarea>
         </div>
-        <button data-button="question" class="popup__button">Задать вопрос</button>
+        <button type="submit" class="popup__button">Отправить</button>
         <div class="popup__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
           data-message-base="Поле обязательно к заполнению">
           <label data-label="checkbox" class="popup__agreed-text popup__checkbox">
-            <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox"
-              class="popup__agreed" data-message-base="Поле обязательно к заполнению" data-validate-type="checkbox"
-              required>
+            <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox">
             <svg data-icon="checkbox" data-checked="true" data-hide="true" class="popup__checkbox-icon" width="15"
               height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#checked"></use>

@@ -4,8 +4,7 @@
 
 .company__about-us {
   display: flex;
-  gap: custom-width(100, 1840);
-  justify-content: center;
+  gap: custom-width(156, 1840);
   max-width: 1220px;
   padding-bottom: 100px;
   margin: 0 auto;
@@ -27,6 +26,10 @@
   grid-column: 1/2;
   align-self: flex-start;
 
+  @include vp-1023 {
+    margin-left: 22px;
+  }
+
   @include vp-767 {
     display: none;
   }
@@ -44,6 +47,7 @@
 
   @include vp-767 {
     width: custom-width(270, 288);
+    margin-left: 10px;
   }
 }
 
@@ -70,6 +74,7 @@
   color: #041827;
   font-family: $pt-mono;
   margin-bottom: 44px;
+  letter-spacing: -0.03px;
 
   @include vp-1023 {
     min-width: 495px;
@@ -125,6 +130,7 @@
   @include vp-767 {
     margin-top: 12px;
     width: 160px;
-    height: 35px;
+    min-height: 35px;
+    margin-bottom: 20px;
   }
 }

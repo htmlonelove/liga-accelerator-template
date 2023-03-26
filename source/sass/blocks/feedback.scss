@@ -31,6 +31,8 @@
   @include vp-767 {
     padding-top: 47px;
     padding-bottom: 88px;
+    width: custom-width(270, 288);
+    margin: 0 auto;
   }
 }
 
@@ -51,6 +53,7 @@
   margin-left: custom-width(115, 1840);
   max-width: 580px;
   width: custom-width(580, 1840);
+  flex-grow: 1;
 
   @include vp-1023 {
     min-width: 670px;
@@ -64,6 +67,7 @@
     width: custom-width(270, 288);
     grid-template-columns: 1fr;
     gap: 7px;
+    gap: 0;
   }
 }
 
@@ -96,13 +100,13 @@
   line-height: 22px;
   color: #ffffff;
   font-family: $pt-mono;
-  margin-bottom: 17px;
 
   @include vp-767 {
     grid-column: 1/2;
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 27px;
+    margin-top: 8px;
   }
 }
 
@@ -116,6 +120,8 @@
   line-height: 22px;
   font-family: $pt-mono;
   color: #ffffff;
+  box-sizing: border-box;
+  max-height: 50px;
 
   @include vp-1023 {
     margin-bottom: 10px;
@@ -143,12 +149,13 @@
   padding: 0;
 
   @include vp-1023 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   @include vp-767 {
     grid-column: 1/2;
     margin-bottom: 23px;
+    margin-top: 5px;
   }
 }
 
@@ -156,25 +163,24 @@
   border-radius: 3px;
   border: none;
   background: transparent;
-  padding: 25px 15px;
+  padding: 25px 15px 21px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   font-family: $pt-mono;
   color: #ffffff;
   width: 100%;
+  box-sizing: border-box;
 
   @include vp-1023 {
     padding-bottom: 15px;
     padding-top: 30px;
-    margin-bottom: 25px;
   }
 
   @include vp-767 {
     grid-column: 1/2;
     padding-top: 23px;
     padding-bottom: 47px;
-    margin-bottom: 23px;
   }
 }
 
@@ -200,15 +206,22 @@
   font-family: $roboto;
   border: none;
   cursor: pointer;
-  margin-right: 11px;
+  margin-right: 9px;
+  margin-top: 4px;
 
   @include vp-1023 {
     width: custom-width(265, 320);
+    max-height: 47px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    margin-top: 4px;
   }
 
   @include vp-767 {
     width: 100%;
     margin-right: 0;
+    margin-top: 6px;
+    padding-bottom: 13px;
   }
 }
 
@@ -221,12 +234,10 @@
   font-family: $pt-mono;
   align-self: center;
   cursor: pointer;
-  position: relative;
   padding: 0;
 
   @include vp-1023 {
-    margin-left: 26px;
-    margin-top: 7px;
+    margin: 0;
   }
 
   @include vp-767 {
@@ -243,7 +254,7 @@
 
 .feedback__checkbox-icon {
   position: absolute;
-  top: 25%;
+  top: 22%;
   left: -26px;
 
   &--hide {
@@ -275,6 +286,17 @@
 
 .feedback__custom-toggle {
   width: 100%;
+  margin-top: 19px;
+  margin-left: 10px;
+
+  @include vp-1023 {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 
   &:last-of-type {
     padding: 0;
@@ -283,5 +305,10 @@
 
   & label {
     padding: 0;
+
+    @include vp-767 {
+      margin-left: 30px;
+      margin-top: 10px;
+    }
   }
 }

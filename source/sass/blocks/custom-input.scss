@@ -4,10 +4,10 @@
 
   display: flex;
   width: 530px;
-  padding: 14px 0 28px;
+  padding: 14px 0 0;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
+    padding: 4px 0 0;
     width: 100%;
   }
 
@@ -97,8 +97,20 @@
 
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    right: 30px;
+    bottom: -22px;
+    font-size: 16px;
+
+    @include vp-1023 {
+      left: 0;
+      bottom: -10px;
+     }
+
+     @include vp-767 {
+      font-size: 12px;
+      bottom: -5px;
+     }
+
 
     &.is-invalid {
       color: #ff0000;
