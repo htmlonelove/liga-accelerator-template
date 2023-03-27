@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("/fonts/PTMono-Regular.woff2") format("woff2");
+  src: url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("/fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("/fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../../fonts/PTMono-Regular.woff2") format("woff2");
 }
 
 *,
@@ -1475,7 +1475,7 @@ html {
 
 .main-offer {
   color: #f2f5f6;
-  background-image: url(../../img/main-pictures/main-picture-desktop.webp);
+  background-image: url("../img/main-pictures/main-picture-desktop.webp");
   background-color: #000000;
   background-repeat: no-repeat;
   text-align: center;
@@ -1720,7 +1720,7 @@ html {
 }
 
 .about-company__wrapper {
-  background-image: url(../../img/about-company-image.png);
+  background-image: url("../img/about-company-image.png");
   background-repeat: no-repeat;
   background-position: -20px 0;
   width: 100%;
@@ -1872,19 +1872,19 @@ html {
 }
 
 .products-item--first {
-  background-image: url(../../img/goods/desktop/goods-desktop-first.webp);
+  background-image: url("../img/goods/desktop/goods-desktop-first.webp");
   background-repeat: no-repeat;
   background-color: #041827;
 }
 
 .products-item--second {
-  background-image: url(../../img/goods/desktop/goods-desktop-second.webp);
+  background-image: url("../img/goods/desktop/goods-desktop-second.webp");
   background-repeat: no-repeat;
   background-color: #041827;
 }
 
 .products-item--third {
-  background-image: url(../../img/goods/desktop/goods-desktop-third.webp);
+  background-image: url("../img/goods/desktop/goods-desktop-third.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #041827;
@@ -2143,7 +2143,7 @@ html {
 }
 
 .feedback-form label input:checked + .main-form-checkbox__mark {
-  background-image: url("../../img/svg/checkbox-mark.svg");
+  background-image: url("../img/svg/checkbox-mark.svg");
   background-size: 12px 9px;
   background-repeat: no-repeat;
   background-position: center;
@@ -2884,7 +2884,7 @@ html {
   .main-offer {
     margin-right: 20px;
     min-height: 540px;
-    background-image: url(../../img/main-pictures/main-picture-tablet.webp);
+    background-image: url("../img/main-pictures/main-picture-tablet.webp");
   }
 
   .main-offer__wrapper {
@@ -3014,17 +3014,17 @@ html {
   }
 
   .products-item--first {
-    background-image: url(../../img/goods/tablet/goods-tablet-first.webp);
+    background-image: url("../img/goods/tablet/goods-tablet-first.webp");
     background-size: cover;
   }
 
   .products-item--second {
-    background-image: url(../../img/goods/tablet/goods-tablet-second.webp);
+    background-image: url("../img/goods/tablet/goods-tablet-second.webp");
     background-size: cover;
   }
 
   .products-item--third {
-    background-image: url(../../img/goods/tablet/goods-tablet-third.webp);
+    background-image: url("../img/goods/tablet/goods-tablet-third.webp");
     background-size: cover;
   }
 
@@ -3157,23 +3157,23 @@ html {
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .main-offer {
-    background-image: url(../../img/main-pictures/main-picture-tablet-2x.webp);
+    background-image: url("../img/main-pictures/main-picture-tablet-2x.webp");
     background-size: 770px auto;
     min-height: 490px;
   }
 
   .products-item--first {
-    background-image: url(../../img/goods/desktop/goods-tablet-first-2x.webp);
+    background-image: url("../img/goods/desktop/goods-tablet-first-2x.webp");
     background-size: 350px auto;
   }
 
   .products-item--second {
-    background-image: url(../../img/goods/desktop/goods-tablet-second-2x.webp);
+    background-image: url("../img/goods/desktop/goods-tablet-second-2x.webp");
     background-size: 350px auto;
   }
 
   .products-item--third {
-    background-image: url(../../img/goods/desktop/goods-tablet-third-2x.webp);
+    background-image: url("../img/goods/desktop/goods-tablet-third-2x.webp");
     background-size: 350px auto;
   }
 }
@@ -3242,7 +3242,7 @@ html {
 
   .main-offer {
     min-height: 490px;
-    background-image: url(../../img/main-pictures/main-picture-mobile.webp);
+    background-image: url("../img/main-pictures/main-picture-mobile.webp");
   }
 
   .main-offer__wrapper {
@@ -3419,17 +3419,17 @@ html {
   }
 
   .products-item--first {
-    background-image: url(../../img/goods/mobile/goods-mobile-first.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-first.webp");
     background-size: cover;
   }
 
   .products-item--second {
-    background-image: url(../../img/goods/mobile/goods-mobile-second.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-second.webp");
     background-size: cover;
   }
 
   .products-item--third {
-    background-image: url(../../img/goods/mobile/goods-mobile-third.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-third.webp");
     background-size: cover;
   }
 
@@ -3660,17 +3660,17 @@ html {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .products-item--first {
-    background-image: url(../../img/goods/mobile/goods-mobile-first-2x.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-first-2x.webp");
     background-size: 350px auto;
   }
 
   .products-item--second {
-    background-image: url(../../img/goods/mobile/goods-mobile-second-2x.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-second-2x.webp");
     background-size: 350px auto;
   }
 
   .products-item--third {
-    background-image: url(../../img/goods/mobile/goods-mobile-third-2x.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-third-2x.webp");
     background-size: 350px auto;
   }
 }
@@ -3691,27 +3691,27 @@ html {
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main-offer {
-    background-image: url(../../img/main-pictures/main-picture-desktop-2x.webp);
+    background-image: url("../img/main-pictures/main-picture-desktop-2x.webp");
     background-size: 1920px auto;
   }
 
   .main-offer {
-    background-image: url(../../img/main-pictures/main-picture-mobile-2x.webp);
+    background-image: url("../img/main-pictures/main-picture-mobile-2x.webp");
     background-size: 320px auto;
   }
 
   .products-item--first {
-    background-image: url(../../img/goods/desktop/goods-desktop-first-2x.webp);
+    background-image: url("../img/goods/desktop/goods-desktop-first-2x.webp");
     background-size: 350px auto;
   }
 
   .products-item--second {
-    background-image: url(../../img/goods/desktop/goods-desktop-second-2x.webp);
+    background-image: url("../img/goods/desktop/goods-desktop-second-2x.webp");
     background-size: 350px auto;
   }
 
   .products-item--third {
-    background-image: url(../../img/goods/desktop/goods-desktop-third-2x.webp);
+    background-image: url("../img/goods/desktop/goods-desktop-third-2x.webp");
     background-size: 350px auto;
   }
 }

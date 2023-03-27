@@ -61,94 +61,94 @@
 }
 
 .products-item--first {
-  background-image: url(../../img/goods/desktop/goods-desktop-first.webp);
+  background-image: url("../img/goods/desktop/goods-desktop-first.webp");
   background-repeat: no-repeat;
   background-color: #041827;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/goods/desktop/goods-desktop-first-2x.webp);
+    background-image: url("../img/goods/desktop/goods-desktop-first-2x.webp");
     background-size: 350px auto;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/goods/tablet/goods-tablet-first.webp);
+    background-image: url("../img/goods/tablet/goods-tablet-first.webp");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/desktop/goods-tablet-first-2x.webp);
+      background-image: url("../img/goods/desktop/goods-tablet-first-2x.webp");
       background-size: 350px auto;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url(../../img/goods/mobile/goods-mobile-first.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-first.webp");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/mobile/goods-mobile-first-2x.webp);
+      background-image: url("../img/goods/mobile/goods-mobile-first-2x.webp");
       background-size: 350px auto;
     }
   }
 }
 
 .products-item--second {
-  background-image: url(../../img/goods/desktop/goods-desktop-second.webp);
+  background-image: url("../img/goods/desktop/goods-desktop-second.webp");
   background-repeat: no-repeat;
   background-color: #041827;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/goods/desktop/goods-desktop-second-2x.webp);
+    background-image: url("../img/goods/desktop/goods-desktop-second-2x.webp");
     background-size: 350px auto;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/goods/tablet/goods-tablet-second.webp);
+    background-image: url("../img/goods/tablet/goods-tablet-second.webp");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/desktop/goods-tablet-second-2x.webp);
+      background-image: url("../img/goods/desktop/goods-tablet-second-2x.webp");
       background-size: 350px auto;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url(../../img/goods/mobile/goods-mobile-second.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-second.webp");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/mobile/goods-mobile-second-2x.webp);
+      background-image: url("../img/goods/mobile/goods-mobile-second-2x.webp");
       background-size: 350px auto;
     }
   }
 }
 
 .products-item--third {
-  background-image: url(../../img/goods/desktop/goods-desktop-third.webp);
+  background-image: url("../img/goods/desktop/goods-desktop-third.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #041827;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../../img/goods/desktop/goods-desktop-third-2x.webp);
+    background-image: url("../img/goods/desktop/goods-desktop-third-2x.webp");
     background-size: 350px auto;
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url(../../img/goods/tablet/goods-tablet-third.webp);
+    background-image: url("../img/goods/tablet/goods-tablet-third.webp");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/desktop/goods-tablet-third-2x.webp);
+      background-image: url("../img/goods/desktop/goods-tablet-third-2x.webp");
       background-size: 350px auto;
     }
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url(../../img/goods/mobile/goods-mobile-third.webp);
+    background-image: url("../img/goods/mobile/goods-mobile-third.webp");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/goods/mobile/goods-mobile-third-2x.webp);
+      background-image: url("../img/goods/mobile/goods-mobile-third-2x.webp");
       background-size: 350px auto;
     }
   }
