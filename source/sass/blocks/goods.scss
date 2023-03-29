@@ -96,7 +96,14 @@
 
   @include vp-767 {
     padding: custom-width(30, 270) custom-width(90, 270) custom-width(150, 270) custom-width(30, 270);
-    max-height: 250px;
+    min-height: 250px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translate(-5px, -5px);
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px #010a11;
   }
 }
 
@@ -125,7 +132,6 @@
   @include vp-767 {
     font-size: 18px;
     line-height: 28px;
-    max-width: 135px;
     display: block;
   }
 }

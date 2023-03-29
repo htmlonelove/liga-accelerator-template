@@ -133,4 +133,10 @@
     min-height: 35px;
     margin-bottom: 20px;
   }
+
+  &:hover,
+  &:focus {
+    color: #FFFFFF;
+    background-color: #00b2ff;
+  }
 }

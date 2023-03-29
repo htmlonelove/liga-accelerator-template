@@ -464,6 +464,16 @@ html {
 body {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 
@@ -1358,7 +1368,8 @@ button,
 
 .header__logo {
   margin: 0;
-  margin-right: 8.6956521739%;
+  margin-right: 8.4239130435%;
+  margin-left: 10px;
   width: 215px;
   display: -ms-grid;
   display: grid;
@@ -1436,6 +1447,11 @@ button,
   line-height: 18px;
 }
 
+.header__email-text:hover,
+.header__email-text:focus {
+  text-decoration: underline;
+}
+
 .header__tel {
   text-decoration: none;
   min-width: 225px;
@@ -1457,13 +1473,18 @@ button,
   line-height: 18px;
 }
 
+.header__tel-text:hover,
+.header__tel-text:focus {
+  text-decoration: underline;
+}
+
 .header__button {
   font-family: "Roboto Condensed", "Roboto", sans-serif;
   cursor: pointer;
   width: 160px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  height: 40px;
+  min-height: 40px;
   background-color: transparent;
   font-weight: 700;
   font-size: 14px;
@@ -1479,6 +1500,11 @@ button,
   margin-left: 5px;
 }
 
+.header__button:hover,
+.header__button:focus {
+  background-color: #00B2FF;
+}
+
 .info {
   margin: 0 auto;
   position: relative;
@@ -1487,6 +1513,8 @@ button,
   display: flex;
   width: 100%;
   margin-top: -120px;
+  background-color: #00b2ff;
+  z-index: 1;
 }
 
 .info__main-bg {
@@ -1567,6 +1595,11 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+}
+
+.info__button:hover,
+.info__button:focus {
+  background-color: #041827;
 }
 
 .main {
@@ -1737,6 +1770,12 @@ button,
   padding: 0;
 }
 
+.company__button:hover,
+.company__button:focus {
+  color: #FFFFFF;
+  background-color: #00b2ff;
+}
+
 .goods {
   width: 100%;
   margin: 0;
@@ -1785,6 +1824,18 @@ button,
   min-height: 650px;
   padding: 13.7142857143% 22.8571428571% 0 11.4285714286%;
   z-index: 2;
+}
+
+.goods__item:hover,
+.goods__item:focus {
+  -webkit-transform: translate(-5px, -5px);
+  -ms-transform: translate(-5px, -5px);
+  transform: translate(-5px, -5px);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 5px 5px 5px #010a11;
+  box-shadow: 5px 5px 5px #010a11;
 }
 
 .goods__link {
@@ -1858,6 +1909,7 @@ button,
   width: 27.7173913043%;
   max-width: 510px;
   z-index: 2;
+  margin-top: 10px;
 }
 
 .feedback__form {
@@ -1866,7 +1918,7 @@ button,
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 18px 5.1724137931%;
-  margin-left: 6.25%;
+  margin-left: 6.5217391304%;
   max-width: 580px;
   width: 31.5217391304%;
   -webkit-box-flex: 1;
@@ -1897,6 +1949,11 @@ button,
   line-height: 22px;
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
+  margin-bottom: 18px;
+}
+
+.feedback__custom-input:has(input) {
+  padding: 0;
 }
 
 .feedback input {
@@ -2038,6 +2095,12 @@ button,
   margin-top: 4px;
 }
 
+.feedback button:hover,
+.feedback button:focus {
+  color: #041427;
+  background-color: #ffffff;
+}
+
 .feedback__agreed-text {
   font-weight: 400;
   font-size: 14px;
@@ -2050,6 +2113,11 @@ button,
   align-self: center;
   cursor: pointer;
   padding: 0;
+}
+
+.feedback__agreed-text:hover,
+.feedback__agreed-text:focus {
+  text-decoration: underline;
 }
 
 .feedback input[type=checkbox] {
@@ -2138,6 +2206,7 @@ button,
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  margin-left: 5px;
 }
 
 .footer__logo-icon {
@@ -2193,6 +2262,14 @@ button,
 .footer__social-item {
   width: 40px;
   height: 40px;
+}
+
+.footer__social-item:hover,
+.footer__social-item:focus {
+  margin-top: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer__social-link {
@@ -2253,6 +2330,11 @@ button,
   display: inline-block;
 }
 
+.footer__section-link:hover,
+.footer__section-link:focus {
+  text-decoration: underline;
+}
+
 .footer__address-list {
   list-style: none;
   padding: 0;
@@ -2293,6 +2375,11 @@ button,
   color: rgba(255, 255, 255, 0.7);
   height: 100%;
   display: inline-block;
+}
+
+.footer__address-tel:hover,
+.footer__address-tel:focus {
+  text-decoration: underline;
 }
 
 .footer__accardeon-button {
@@ -2627,6 +2714,7 @@ button,
   .header__logo {
     margin-right: 46.5277777778%;
     gap: 0 17px;
+    margin-left: 0;
   }
 
   .header__contacts {
@@ -2795,12 +2883,16 @@ button,
     margin: 0;
   }
 
+  .feedback__text {
+    margin-bottom: 18px;
+  }
+
   .feedback input {
     margin-bottom: 10px;
   }
 
   .feedback__custom-input:has(textarea) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .feedback textarea {
@@ -2810,10 +2902,10 @@ button,
 
   .feedback button {
     width: 82.8125%;
-    max-height: 47px;
-    padding-top: 13px;
+    min-height: 44px;
+    padding-top: 11px;
     padding-bottom: 5px;
-    margin-top: 4px;
+    margin-top: 9px;
   }
 
   .feedback__agreed-text {
@@ -2884,7 +2976,7 @@ button,
 
   .footer__address-list {
     margin: 0;
-    margin-top: 15px;
+    margin-top: 22px;
   }
 }
 
@@ -2924,13 +3016,14 @@ button,
   .header__logo {
     width: 35px;
     height: 35px;
-    margin-right: 41.610738255%;
+    overflow: hidden;
+    margin-right: 42.9530201342%;
     -ms-grid-columns: 55px;
     grid-template-columns: 55px;
   }
 
   .header__logo-icon {
-    width: 35px;
+    width: 137px;
     height: 35px;
   }
 
@@ -3097,13 +3190,12 @@ button,
 
   .goods__item {
     padding: 11.1111111111% 33.3333333333% 55.5555555556% 11.1111111111%;
-    max-height: 250px;
+    min-height: 250px;
   }
 
   .goods__text {
     font-size: 18px;
     line-height: 28px;
-    max-width: 135px;
     display: block;
   }
 
@@ -3141,12 +3233,12 @@ button,
     grid-column: 1/2;
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
     margin-top: 8px;
   }
 
   .feedback input {
-    margin-bottom: 13px;
+    margin-bottom: 20px;
   }
 
   .feedback__custom-input:has(textarea) {
@@ -3154,7 +3246,7 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     margin-bottom: 23px;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .feedback textarea {

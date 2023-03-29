@@ -21,12 +21,10 @@
     <div class="header__container container">
       <nav class="header__nav">
         <a href="index.html" class="header__logo">
-          <svg class="header__logo-icon" width="55" height="55" viewBox="0 0 55 55" fill="none"
+          <svg class="header__logo-icon" width="215" height="55" viewBox="0 0 215 55" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo"></use>
+            <use xlink:href="img/sprite.svg#logo-full"></use>
           </svg>
-          <span class="header__logo-name">Smart Device</span>
-          <span class="header__logo-text">умные технологии</span>
         </a>
         <div class="header__contacts">
           <a class="header__email" href="mailto:info@sd.ru">
@@ -132,7 +130,12 @@
     <section class="main__company company">
       <div class="company__container container">
         <div class="company__about-us">
-          <img class="company__year" src="./img/objects/2022.png" width="150" height="320" alt="Год основания - 2022.">
+          <picture>
+            <source type="image/webp" srcset="./img/objects/2022.webp">
+            <img class="company__year" src="./img/objects/2022.png" width="150" height="320"
+              alt="Год основания - 2022.">
+          </picture>
+
           <div class="company__info">
             <h2 class="company__title">О компании</h2>
             <div class="company__text">
@@ -254,11 +257,12 @@
             <div class="feedback__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
               data-message-base="Поле обязательно к заполнению"
               data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
-              data-required data-phone-length="18" >
+              data-required data-phone-length="18">
               <input data-input="tel" name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
             </div>
             <div class="feedback__custom-input custom-input" data-validate-type="text">
-              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" aria-label="Поле для ввода вопроса."></textarea>
+              <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
+                aria-label="Поле для ввода вопроса."></textarea>
             </div>
             <button type="submit" class="feedback__button">Задать вопрос</button>
             <div class="feedback__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
@@ -290,7 +294,7 @@
           <div class="popup__custom-input custom-input" data-validate-type="text" data-limitation="name"
             data-message-base="Поле обязательно к заполнению"
             data-message-extra="Проверьте корректность заполнения поля" data-required="">
-            <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени.">
+            <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени." autofocus>
           </div>
           <div class="popup__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
             data-message-base="Поле обязательно к заполнению"
@@ -299,7 +303,8 @@
             <input name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
           </div>
           <div class="popup__custom-input custom-input" data-validate-type="text">
-            <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос" aria-label="Поле для ввода вопроса."></textarea>
+            <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
+              aria-label="Поле для ввода вопроса."></textarea>
           </div>
           <button type="submit" class="popup__button">Отправить</button>
           <div class="popup__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
@@ -333,12 +338,10 @@
       <div class="footer__wrapper">
         <div class="footer__link-wrapper">
           <a href="index.html" class="footer__logo">
-            <svg class="footer__logo-icon" width="55" height="55" viewBox="0 0 55 55" fill="none"
+            <svg class="footer__logo-icon" width="215" height="55" viewBox="0 0 215 55" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/sprite.svg#logo"></use>
+              <use xlink:href="img/sprite.svg#logo-full"></use>
             </svg>
-            <span class="footer__logo-name">Smart Device</span>
-            <span class="footer__logo-text">умные технологии</span>
           </a>
           <ul class="footer__social">
             <li class="footer__social-item">
@@ -367,7 +370,7 @@
         <div data-section="accardeon" data-open="false" class="footer__section-wrapper">
           <div class="footer__accardeon">
             <h2 class="footer__title">Разделы сайта</h2>
-            <button class="footer__accardeon-button">
+            <button type="button" aria-label="Открыть список сраниц нашего сайта." class="footer__accardeon-button">
               <svg data-button="accardeon" class="footer__accardeon-icon" width="15" height="15" viewBox="0 0 15 15"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use data-icon="button" xlink:href="img/sprite.svg#plus"></use>
@@ -401,7 +404,8 @@
         <div data-section="accardeon" data-open="false" class="footer__address-wrapper">
           <div class="footer__accardeon">
             <h2 class="footer__title">Наш офис</h2>
-            <button class="footer__accardeon-button">
+            <button type="button" aria-label="Открыть список c нашим адресом и телефонами."
+              class="footer__accardeon-button">
               <svg data-button="accardeon" class="footer__accardeon-icon" width="15" height="15" viewBox="0 0 15 15"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use data-icon="button" xlink:href="img/sprite.svg#plus"></use>
@@ -428,8 +432,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js" defer></script>
 </body>
 
 </html>

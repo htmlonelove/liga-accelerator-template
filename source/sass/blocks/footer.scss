@@ -45,6 +45,7 @@
   text-decoration: none;
   color: #f2f5f7;
   align-items: flex-end;
+  margin-left: 5px;
 
   @include vp-1023 {
     margin-right: custom-width(310, 670);
@@ -123,6 +124,12 @@
 .footer__social-item {
   width: 40px;
   height: 40px;
+
+  &:hover,
+  &:focus {
+    margin-top: 5px;
+    transition: 00.5s;
+  }
 }
 
 .footer__social-link {
@@ -201,6 +208,11 @@
   color: rgba(255, 255, 255, 0.7);
   height: 100%;
   display: inline-block;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .footer__address-wrapper {
@@ -233,7 +245,7 @@
 
   @include vp-1023 {
     margin: 0;
-    margin-top: 15px;
+    margin-top: 22px;
   }
 }
 
@@ -268,6 +280,11 @@
 
   @include vp-767 {
     font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }
 

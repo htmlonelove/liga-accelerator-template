@@ -40,6 +40,7 @@
   width: custom-width(510, 1840);
   max-width: 510px;
   z-index: 2;
+  margin-top: 10px;
 
   @include vp-1023 {
     display: none;
@@ -50,7 +51,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px custom-width(30, 580);
-  margin-left: custom-width(115, 1840);
+  margin-left: custom-width(120, 1840);
   max-width: 580px;
   width: custom-width(580, 1840);
   flex-grow: 1;
@@ -99,14 +100,23 @@
   line-height: 22px;
   color: #ffffff;
   font-family: $pt-mono;
+  margin-bottom: 18px;
+
+  @include vp-1023 {
+    margin-bottom: 18px;
+  }
 
   @include vp-767 {
     grid-column: 1/2;
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
     margin-top: 8px;
   }
+}
+
+.feedback__custom-input:has(input) {
+  padding: 0;
 }
 
 .feedback input {
@@ -127,7 +137,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 13px;
+    margin-bottom: 20px;
   }
 }
 
@@ -148,13 +158,13 @@
   padding: 0;
 
   @include vp-1023 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @include vp-767 {
     grid-column: 1/2;
     margin-bottom: 23px;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 }
 
@@ -210,10 +220,10 @@
 
   @include vp-1023 {
     width: custom-width(265, 320);
-    max-height: 47px;
-    padding-top: 13px;
+    min-height: 44px;
+    padding-top: 11px;
     padding-bottom: 5px;
-    margin-top: 4px;
+    margin-top: 9px;
   }
 
   @include vp-767 {
@@ -221,6 +231,12 @@
     margin-right: 0;
     margin-top: 6px;
     padding-bottom: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #041427;
+    background-color: #ffffff;
   }
 }
 
@@ -242,6 +258,11 @@
   @include vp-767 {
     margin-left: 32px;
     margin-top: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }
 
