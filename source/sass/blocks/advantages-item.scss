@@ -25,7 +25,7 @@
 }
 
 .advantages-item--first {
-  background-image: url(../../img/svg/advantages1.svg);
+  background-image: url("../img/svg/advantages1.svg");
   background-repeat: no-repeat;
   background-position: 40px 45px;
   fill: #00B2FF;
@@ -38,7 +38,7 @@
 }
 
 .advantages-item--first:hover {
-  background-image: url(../../img/svg/advantages1-hover.svg);
+  background-image: url("../img/svg/advantages1-hover.svg");
 
   @media (max-width: $mobile-width) {
     background-size: 30px 30px;
@@ -46,7 +46,7 @@
 }
 
 .advantages-item--second {
-  background-image: url(../../img/svg/advantages2.svg);
+  background-image: url("../img/svg/advantages2.svg");
   background-repeat: no-repeat;
   background-position: 45px 40px;
 
@@ -57,7 +57,7 @@
 }
 
 .advantages-item--second:hover {
-  background-image: url(../../img/svg/advantages2-hover.svg);
+  background-image: url("../img/svg/advantages2-hover.svg");
 
   @media (max-width: $mobile-width) {
     background-size: 30px 30px;
@@ -65,7 +65,7 @@
 }
 
 .advantages-item--third {
-  background-image: url(../../img/svg/advantages3.svg);
+  background-image: url("../img/svg/advantages3.svg");
   background-repeat: no-repeat;
   background-position: 45px 40px;
 
@@ -77,7 +77,7 @@
 }
 
 .advantages-item--third:hover {
-  background-image: url(../../img/svg/advantages3-hover.svg);
+  background-image: url("../img/svg/advantages3-hover.svg");
 
   @media (max-width: $mobile-width) {
     background-size: 30px 30px;
@@ -93,7 +93,7 @@
 }
 
 .advantages-item--fourth {
-  background-image: url(../../img/svg/advantages4.svg);
+  background-image: url("../img/svg/advantages4.svg");
   background-repeat: no-repeat;
   background-position: 45px 40px;
 
@@ -106,7 +106,7 @@
 }
 
 .advantages-item--fourth:hover {
-  background-image: url(../../img/svg/advantages4-hover.svg);
+  background-image: url("../img/svg/advantages4-hover.svg");
 
   @media (max-width: $mobile-width) {
     background-size: 30px 30px;

@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/PTMono-Regular.woff2") format("woff2");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2");
 }
 
 *,
@@ -642,7 +642,7 @@ button,
   font-weight: 400;
   color: #041827;
   min-height: 100%;
-  width: auto;
+  min-width: 100%;
 }
 
 html {
@@ -1306,9 +1306,8 @@ html {
 .main-header {
   background-color: #041827;
   color: #f2f5f6;
-  width: 100%;
+  min-width: 100%;
   min-height: 100px;
-  width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-box-shadow: 0 20px 10px #041827;
@@ -1399,7 +1398,7 @@ html {
 }
 
 .contacts__email::before {
-  background: url("../../img/svg/email.svg") no-repeat;
+  background: url("../img/svg/email.svg") no-repeat;
   width: 22px;
   height: 20px;
   position: absolute;
@@ -1416,7 +1415,7 @@ html {
 }
 
 .contacts__phone::after {
-  background: url("../../img/svg/phone.svg") no-repeat;
+  background: url("../img/svg/phone.svg") no-repeat;
   width: 22px;
   height: 20px;
   position: absolute;
@@ -1635,7 +1634,7 @@ html {
 }
 
 .advantages-item--first {
-  background-image: url(../../img/svg/advantages1.svg);
+  background-image: url("../img/svg/advantages1.svg");
   background-repeat: no-repeat;
   background-position: 40px 45px;
   fill: #00B2FF;
@@ -1643,27 +1642,27 @@ html {
 }
 
 .advantages-item--first:hover {
-  background-image: url(../../img/svg/advantages1-hover.svg);
+  background-image: url("../img/svg/advantages1-hover.svg");
 }
 
 .advantages-item--second {
-  background-image: url(../../img/svg/advantages2.svg);
+  background-image: url("../img/svg/advantages2.svg");
   background-repeat: no-repeat;
   background-position: 45px 40px;
 }
 
 .advantages-item--second:hover {
-  background-image: url(../../img/svg/advantages2-hover.svg);
+  background-image: url("../img/svg/advantages2-hover.svg");
 }
 
 .advantages-item--third {
-  background-image: url(../../img/svg/advantages3.svg);
+  background-image: url("../img/svg/advantages3.svg");
   background-repeat: no-repeat;
   background-position: 45px 40px;
 }
 
 .advantages-item--third:hover {
-  background-image: url(../../img/svg/advantages3-hover.svg);
+  background-image: url("../img/svg/advantages3-hover.svg");
 }
 
 .advantages-item--third .advantages-item__header {
@@ -1675,13 +1674,13 @@ html {
 }
 
 .advantages-item--fourth {
-  background-image: url(../../img/svg/advantages4.svg);
+  background-image: url("../img/svg/advantages4.svg");
   background-repeat: no-repeat;
   background-position: 45px 40px;
 }
 
 .advantages-item--fourth:hover {
-  background-image: url(../../img/svg/advantages4-hover.svg);
+  background-image: url("../img/svg/advantages4-hover.svg");
 }
 
 .advantages-item:hover {
@@ -1891,7 +1890,7 @@ html {
 }
 
 .products-item::before {
-  background: url(../../img/svg/arrow-goods.svg) no-repeat;
+  background: url("../img/svg/arrow-goods.svg") no-repeat;
   width: 60px;
   height: 60px;
   position: absolute;
@@ -2802,7 +2801,7 @@ html {
   }
 
   .feedback-form form {
-    background-image: url(../../img/form-image.png);
+    background-image: url("../img/form-image.png");
     background-size: 42% auto;
     background-repeat: no-repeat;
     background-position: 3% 57%;
@@ -2882,7 +2881,6 @@ html {
   }
 
   .main-offer {
-    margin-right: 20px;
     min-height: 540px;
     background-image: url("../img/main-pictures/main-picture-tablet.webp");
   }
@@ -3697,7 +3695,7 @@ html {
 
   .main-offer {
     background-image: url("../img/main-pictures/main-picture-mobile-2x.webp");
-    background-size: 320px auto;
+    width: auto;
   }
 
   .products-item--first {

@@ -19,7 +19,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 20px;
     min-height: 540px;
     background-image: url("../img/main-pictures/main-picture-tablet.webp");
 
@@ -38,7 +37,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main-pictures/main-picture-mobile-2x.webp");
-    background-size: 320px auto;
+    width: auto;
   }
 }
 
