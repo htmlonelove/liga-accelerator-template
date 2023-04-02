@@ -1,7 +1,9 @@
 .company-description__paragraph {
-  font-family: "PT Mono";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  margin-top: 14px;
+  margin-bottom: 18px;
 
   @media (max-width: $tablet-width) {
     margin: 13px 0 24px;

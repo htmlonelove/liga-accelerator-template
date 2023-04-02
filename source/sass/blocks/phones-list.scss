@@ -1,8 +1,17 @@
 .phones-list__item {
 
-  letter-spacing: 2px;
+  letter-spacing: 5%;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 5px;
+  }
+}
+
+.phones-list__link {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
   }
 }

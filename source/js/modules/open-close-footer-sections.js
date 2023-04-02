@@ -7,6 +7,7 @@ export const openCloseFooterSections = () => {
   let closeAddressButton = document.querySelector('.footer-contacts__button--close');
   let address = document.querySelector('.contacts-container');
 
+
   openNavigationButton.addEventListener('click', function () {
     navigation.classList.remove('footer-navigation__navigation--closed');
     closeNavigationButton.classList.remove('visually-hidden');

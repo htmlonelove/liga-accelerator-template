@@ -14,28 +14,23 @@
 
 </head>
 
-<body class="page-body">
+<body>
   <header class="main-header">
     <div class="main-header__wrapper">
       <section class="main-header__introduce introduce">
         <h2 class="visually-hidden">Логотип и слоган компании.</h2>
         <a class="introduce__logo sd-logo" href="index.html">
-          <picture>
-            <source srcset="img/svg/main-logo.svg" media="(max-width: 767px)" width="35" height="35">
-            <img class="sd-logo__image" loading="lazy" src="img/svg/main-logo.svg" width="55" height="55"
-              alt="Логотип Smart Device.">
-          </picture>
+          <img class="sd-logo__image sd-logo__image--texted" loading="lazy" src="img/svg/logo-text.svg" width="215"
+            height="55" alt="Логотип Smart Device.">
+          <img class="sd-logo__image sd-logo__image--no-texted" loading="lazy" src="img/svg/logo-no-text.svg" width="35"
+            height="35" alt="Логотип Smart Device.">
         </a>
-        <div class="introduce__name introduce-name">
-          <h3 class="introduce-name__header">Smart Device</h3>
-          <p class="introduce-name__description">умные технологии</p>
-        </div>
       </section>
       <section class="main-header__contacts contacts">
         <h2 class="visually-hidden">Контактные данные компании.</h2>
         <ul class="contacts-list">
           <li class="contacts-list__item">
-            <a class="contacts__email" href="#" title="Email.">
+            <a class="contacts__email" href="mailto:info@sd.ru" title="Email.">
               <span class="visually-hidden">Email.</span>
               <p class="contacts__text">
                 info@sd.ru
@@ -43,7 +38,7 @@
             </a>
           </li>
           <li class="contacts-list__item">
-            <a class="contacts__phone" href="#" title="Телефон.">
+            <a class="contacts__phone" href="tel:+74950005252" title="Телефон.">
               <p class="contacts__text">
                 +7 (495) 000 52 52
               </p>
@@ -51,7 +46,7 @@
           </li>
         </ul>
       </section>
-      <button class="main-header__button">Заказать звонок</button>
+      <button class="main-header__button noselect">Заказать звонок</button>
     </div>
   </header>
   <main class="main-container">
@@ -60,10 +55,12 @@
       <section class="main-container__main-offer main-offer">
         <div class="main-offer__wrapper">
           <h2 class="main-offer__header">Печатные платы</h2>
-          <p class="main-offer__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#form-section" class="main-offer__button main-offer__button--first"> Получить бесплатную
+          <p class="main-offer__description">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей
+          </p>
+          <a href="#form-section" class="main-offer__button main-offer__button--first noselect"> Получить бесплатную
             консультацию</a>
-          <a href="#form-section" class="main-offer__button main-offer__button--second">Бесплатная консультация</a>
+          <a href="#form-section" class="main-offer__button main-offer__button--second noselect">Бесплатная
+            консультация</a>
         </div>
       </section>
       <section class="main-container__advantages advantages">
@@ -75,25 +72,25 @@
               <p class="advantages-item__description">Усовершенствованная логистическая
                 система позволяет нам
                 просчитывать стоимость, производить и
-                доставлять заказы плат и комплектующих в самые короткие сроки</p>
+                доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
             </li>
             <li class="advantages-list__item advantages-item advantages-item--second">
               <h3 class="advantages-item__header">Крупные поставщики</h3>
               <p class="advantages-item__description">Нашими поставщиками являются такие крупные мировые компании
-                как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими
+                как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими
                 компаниями обеспечивает хорошее
                 качество нашей продукции.</p>
             </li>
             <li class="advantages-list__item advantages-item advantages-item--third">
               <h3 class="advantages-item__header">Полная конфиденциальность</h3>
-              <p class="advantages-item__description">По желанию клиента мы обеспечиваем полную
+              <p class="advantages-item__description">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную
                 конфиденциальность.
               </p>
             </li>
             <li class="advantages-list__item advantages-item advantages-item--fourth">
               <h3 class="advantages-item__header">Персонализация стоимости</h3>
-              <p class="advantages-item__description">Мы подбираем определенную фабрику, поставщиков, вид
-                доставки, чтобы установить ту цену, которая Вас устраивает.
+              <p class="advantages-item__description">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид
+                доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.
               </p>
             </li>
           </ul>
@@ -103,43 +100,50 @@
         <div class="about-company__wrapper">
           <h2 class="about-company__header">О компании</h2>
           <div class="about-company__description company-description">
-            <p class="company-description__paragraph company-description__paragraph--first">Мы поставляем электронные
+            <p class="company-description__paragraph company-description__paragraph--first">Мы&nbsp;поставляем
+              электронные
               комплектующие, производим печатные платы и
-              предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+              предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы
+              до&nbsp;10&nbsp;дней.
             </p>
-            <p class="company-description__paragraph company-description__paragraph--second">Наши поставщики - мировые
+            <p class="company-description__paragraph company-description__paragraph--second">Наши
+              поставщики&nbsp;&mdash; мировые
               производители электронных компонентов:
               OSRAM, CREE, HOLGLITRONIC, REFOND. <span
                 class="company-description__paragraph company-description__paragraph--hidable">Печатные
-                платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
+                платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог
+                (РЖД),
                 РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
                 светотехники России.</span>
             </p>
             <p class="company-description__paragraph company-description__paragraph--third visually-hidden">Smart
               Device
-              - это команда
-              профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
-              продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и
+              &mdash;&nbsp;это команда
+              профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых
+              продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов
+              по&nbsp;всей стране и
               20
               городов присутствия.
             </p>
             <p class="company-description__paragraph company-description__paragraph--fourth visually-hidden">
-              Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
-              Использование инновационных технологий помогает экономить деньги и время наших клиентов
+              Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой
+              внутри компании.
+              Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов.
             </p>
           </div>
-          <button class="about-company__button about-company__button-open">
+          <button class="about-company__button about-company__button-open noselect">
             Подробнее
           </button>
-          <button class="about-company__button about-company__button-close visually-hidden">
+          <button class="about-company__button about-company__button-close visually-hidden noselect">
             Свернуть
           </button>
         </div>
       </section>
       <section class="main-container__products products">
         <div class="products__wrapper">
-          <h2 class="products__header products__header--first">Smart Device предлагает следующие товары и услуги</h2>
-          <h2 class="products__header products__header--second">Товары и услуги Smart Device</h2>
+          <h2 class="products__header products__header--first">Smart Device предлагает следующие товары и&nbsp;услуги
+          </h2>
+          <h2 class="products__header products__header--second">Товары и&nbsp;услуги Smart Device</h2>
           <ul class="products__list products-list">
             <li class="products-list__item products-item products-item--first">
               <a class="products-item__link" href="#">
@@ -166,19 +170,19 @@
               <legend class="visually-hidden">
                 Форма для вопросов
               </legend>
-              <h2 class="main-form__header">Остались вопросы? Задайте их нам!</h2>
-              <p class="main-form__description">Мы проконсультируем Вас бесплатно</p>
+              <h2 class="main-form__header">Остались вопросы? Задайте их&nbsp;нам!</h2>
+              <p class="main-form__description">Мы&nbsp;проконсультируем Вас бесплатно</p>
               <input class="main-form__input main-form__input--name" id="user-name" type="text" placeholder="Имя"
-                required>
-              <input class="main-form__input main-form__input--phone" id="user-phone" type="text" placeholder="Телефон"
-                required>
-              <textarea class="main-form__input main-form__input--message" id="user-message"
-                placeholder="Ваш вопрос"></textarea>
-              <button class="main-form__button">Задать вопрос</button>
+                required name="user-name">
+              <input class="main-form__input main-form__input--phone" id="userphone" type="text" placeholder="Телефон"
+                required name="userphone" minlength="9">
+              <textarea class="main-form__input main-form__input--message" id="user-message" placeholder="Ваш вопрос"
+                name="user-question"></textarea>
+              <button class="main-form__button noselect">Задать вопрос</button>
               <label class="main-form__checkbox main-form-checkbox">
                 <input class="main-form-checkbox__input" type="checkbox" name="i-agree" required>
                 <span class="main-form-checkbox__mark"></span>
-                <p class="main-form-checkbox__description">Я согласен на обработку персональных данных</p>
+                <p class="main-form-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
               </label>
             </fieldset>
           </form>
@@ -227,8 +231,14 @@
           </ul>
         </div>
       </section>
-      <section class="footer-container__navigation footer-container__navigation--closed footer-navigation">
-        <h2 class="footer-navigation__header">Разделы сайта</h2>
+      <section
+        class="footer-container__navigation footer-container__navigation--closed footer-navigation footer-navigation--closed">
+        <h2 class="footer-navigation__header">Разделы сайта
+          <button class="footer-navigation__button footer-navigation__button--open noselect" title="Открыть навигацию.">
+          </button>
+          <button class="footer-navigation__button footer-navigation__button--close visually-hidden noselect"
+            title="Закрыть навигацию."></button>
+        </h2>
         <nav class="footer-navigation__navigation footer-navigation__navigation--closed">
           <ul class="footer-navigation__list footer-navigation-list">
             <li class="footer-navigation-list__item navigation-item">
@@ -254,25 +264,32 @@
             </li>
           </ul>
         </nav>
-        <button class="footer-navigation__button footer-navigation__button--open" title="Открыть навигацию.">
-        </button>
-        <button class="footer-navigation__button footer-navigation__button--close visually-hidden"
-          title="Закрыть навигацию.">
-        </button>
       </section>
       <section class="footer-container__contacts footer-contacts footer-contacts--closed">
-        <h2 class="footer-contacts__header">Наш офис</h2>
+        <h2 class="footer-contacts__header">Наш офис
+          <button class="footer-contacts__button footer-contacts__button--open noselect"
+            title="Открыть контакты."></button>
+          <button class="footer-contacts__button footer-contacts__button--close visually-hidden noselect"
+            title="Закрыть контакты."></button>
+        </h2>
         <div class="contacts-container contacts-container--closed">
           <p class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</p>
           <ul class="footer-contacts__phones-list phones-list">
-            <li class="phones-list__item">+7 (495) 589-40-50</li>
-            <li class="phones-list__item">+7 (925) 389-58-29</li>
-            <li class="phones-list__item">+7 (925) 364-78-13</li>
+            <li class="phones-list__item">
+              <a class="phones-list__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li class="phones-list__item">
+              <a class="phones-list__link" href="tel:+79253895829">
+                +7 (925) 389-58-29
+              </a>
+            </li>
+            <li class="phones-list__item">
+              <a class="phones-list__link" href="tel:+79253647813">
+                +7 (925) 364-78-13
+              </a>
+            </li>
           </ul>
         </div>
-        <button class="footer-contacts__button footer-contacts__button--open" title="Открыть контакты."></button>
-        <button class="footer-contacts__button footer-contacts__button--close visually-hidden"
-          title="Закрыть контакты."></button>
       </section>
     </div>
   </footer>
@@ -286,23 +303,24 @@
               Форма для вопросов
             </legend>
             <h2 class="modal-page__header">Закажите звонок</h2>
-            <p class="modal-page__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+            <p class="modal-page__description">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное
+              время
             </p>
             <input class="modal-page__input modal-page__input--name" id="name" type="text" placeholder="Имя" autofocus
-              required>
+              required name="mame">
             <input class="modal-page__input modal-page__input--phone" id="phone" type="text" placeholder="Телефон"
-              required>
-            <textarea class="modal-page__input modal-page__input--message" id="message"
-              placeholder="Ваш вопрос"></textarea>
-            <button class="modal-page__button">Отправить</button>
+              required name="phone" minlength="10">
+            <textarea class="modal-page__input modal-page__input--message" id="message" placeholder="Ваш вопрос"
+              type="text" name="question"></textarea>
+            <button class="modal-page__button noselect">Отправить</button>
             <label class="modal-page__checkbox modal-page-checkbox">
               <input class="modal-page-checkbox__input" type="checkbox" name="i-agree" required>
               <span class="modal-page-checkbox__mark"></span>
-              <p class="modal-page-checkbox__description">Я согласен на обработку персональных данных</p>
+              <p class="modal-page-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
             </label>
           </fieldset>
         </form>
-        <button class="modal-page__close-button"></button>
+        <button class="modal-page__close-button noselect"></button>
       </section>
     </div>
   </div>

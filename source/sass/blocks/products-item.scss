@@ -17,7 +17,7 @@
     width: 98%;
     height: 250px;
     max-width: 750px;
-    padding-top: 15px;
+    box-sizing: border-box;
   }
 
   @media (max-width: $mobile-width) {
@@ -29,6 +29,15 @@
   width: 100%;
   height: 100%;
   display: block;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 20px;
+    ;
+  }
 }
 
 .products-item:not(:last-child) {
@@ -41,33 +50,39 @@
 
 .products-item__description {
   color: #ffffff;
-  font-family: "Roboto Condensed";
+  font-family: "PT Mono", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
   width: 65%;
-  margin-left: 45px;
+  margin-left: 43px;
+  margin-top: 45px;
 
   @media (max-width: $tablet-width) {
     width: 150px;
+    margin-top: 0;
   }
 
   @media (max-width: $mobile-width) {
     margin-left: 25px;
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 0;
     width: 133px;
   }
 }
 
 .products-item--first {
-  background-image: url("../img/goods/desktop/goods-desktop-first.webp");
-  background-repeat: no-repeat;
-  background-color: #041827;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/goods/desktop/goods-desktop-first-2x.webp");
-    background-size: 350px auto;
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/goods/desktop/goods-desktop-first.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041827;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/desktop/goods-desktop-first-2x.webp");
+      background-size: 350px auto;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -75,8 +90,8 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/goods/desktop/goods-tablet-first-2x.webp");
-      background-size: 350px auto;
+      background-image: url("../img/goods/tablet/goods-tablet-first-2x.webp");
+      background-size: cover;
     }
   }
 
@@ -86,19 +101,23 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/goods/mobile/goods-mobile-first-2x.webp");
-      background-size: 350px auto;
+      background-size: cover;
     }
   }
 }
 
 .products-item--second {
-  background-image: url("../img/goods/desktop/goods-desktop-second.webp");
-  background-repeat: no-repeat;
-  background-color: #041827;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/goods/desktop/goods-desktop-second-2x.webp");
-    background-size: 350px auto;
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/goods/desktop/goods-desktop-second.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041827;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/desktop/goods-desktop-second-2x.webp");
+      background-size: 350px auto;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -106,8 +125,8 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/goods/desktop/goods-tablet-second-2x.webp");
-      background-size: 350px auto;
+      background-image: url("../../img/goods/tablet/goods-tablet-second-2x.webp");
+      background-size: cover;
     }
   }
 
@@ -117,20 +136,23 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/goods/mobile/goods-mobile-second-2x.webp");
-      background-size: 350px auto;
+      background-size: cover;
     }
   }
 }
 
 .products-item--third {
-  background-image: url("../img/goods/desktop/goods-desktop-third.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #041827;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/goods/desktop/goods-desktop-third-2x.webp");
-    background-size: 350px auto;
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/goods/desktop/goods-desktop-third.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #041827;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/goods/desktop/goods-desktop-third-2x.webp");
+      background-size: 350px auto;
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -138,8 +160,8 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/goods/desktop/goods-tablet-third-2x.webp");
-      background-size: 350px auto;
+      background-image: url("../../img/goods/tablet/goods-tablet-third-2x.webp");
+      background-size: cover;
     }
   }
 
@@ -149,10 +171,11 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/goods/mobile/goods-mobile-third-2x.webp");
-      background-size: 350px auto;
+      background-size: cover;
     }
   }
 }
+
 
 .products-item::before {
   background: url("../img/svg/arrow-goods.svg") no-repeat;

@@ -1,20 +1,14 @@
 .footer-navigation {
   width: 470px;
   margin-right: 20px;
-  position: relative;
-  font-family: "PT Mono";
-
-  &:hover,
-  &:focus {
-    opacity: 0.5;
-  }
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
     width: 220px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 23px 26px;
+    padding: 0 26px;
     border-bottom: solid 1px #f8fdffb2;
     width: 100%;
     margin: 0;
@@ -27,10 +21,12 @@
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
-  margin: 10px 0 20px 0;
+  position: relative;
+  margin-bottom: 14px;
 
   @media (max-width: $mobile-width) {
     margin: 0;
+    padding: 23px 0;
   }
 }
 
@@ -64,13 +60,13 @@
 }
 
 .footer-navigation__button--open {
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
   border: 0;
   position: absolute;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
 
   @media (min-width: $mobile-width) {
@@ -81,8 +77,8 @@
 .footer-navigation__button--open::before {
   content: "";
   position: absolute;
-  left: 16px;
-  top: 18px;
+  top: 30px;
+  right: 3px;
   width: 16px;
   height: 1px;
   background-color: #c4c4c4;
@@ -91,8 +87,8 @@
 .footer-navigation__button--open::after {
   content: "";
   position: absolute;
-  left: 24px;
-  top: 10px;
+  top: 22px;
+  right: 10px;
   width: 1px;
   height: 17px;
   background-color: #c4c4c4;
@@ -102,18 +98,18 @@
   background-color: transparent;
   border: 0;
   position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 50px;
-  height: 50px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 }
 
 .footer-navigation__button--close::before {
   content: "";
   position: absolute;
-  top: 19px;
-  right: 15px;
+  top: 30px;
+  right: 3px;
   width: 16px;
   height: 1px;
   background-color: #ffffff;

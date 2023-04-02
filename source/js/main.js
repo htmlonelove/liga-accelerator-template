@@ -7,11 +7,14 @@ import { openCloseFooterSections } from './modules/open-close-footer-sections.js
 import { aboutCompanyOpenClose } from './modules/about-company-open-close.js';
 import { openCloseModal } from './modules/open-close-modal.js';
 import { useJQuery } from './modules/use-jquery.js';
+import { modalFocus } from './modules/form-elements.js';
+
 
 openCloseFooterSections();
 aboutCompanyOpenClose();
 openCloseModal();
 useJQuery();
+modalFocus();
 
 
 // ---------------------------------

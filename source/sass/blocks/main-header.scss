@@ -5,6 +5,9 @@
   min-height: 100px;
   box-sizing: border-box;
   box-shadow: 0 20px 10px #041827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (min-width: $desktop-width) {
     position: fixed;
@@ -30,19 +33,21 @@
   display: flex;
   text-align: left;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-  padding: 30px 20% 25px 18.7%;
   box-sizing: border-box;
   position: absolute;
   box-shadow: 0 20px 10px #041827;
+  max-width: 1200px;
+  padding: 10px 30px 0 10px;
+  margin: 0 auto;
+
+  width: 100%;
 
   @media (max-width: $tablet-width) {
     padding: 20px 50px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 20px 25px 10px;
+    padding: 0 25px 10px;
   }
 }
 
@@ -53,7 +58,7 @@
   width: 215px;
   height: 55px;
   padding: 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
 
   @media (max-width: $mobile-width) {
     margin-top: 5px;
@@ -68,7 +73,7 @@
   width: 40%;
   display: flex;
   flex-direction: row;
-  font-family: 'PT Mono';
+
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
@@ -92,10 +97,11 @@
   border-radius: 3px;
   margin-top: 3px;
   text-transform: uppercase;
-  font-family: 'Roboto Condensed';
+  letter-spacing: 5%;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  cursor: pointer;
 
   &:hover,
   &:focus {

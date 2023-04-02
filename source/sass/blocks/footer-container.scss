@@ -1,14 +1,27 @@
 .footer-container {
   background-color: #041827;
   color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+  }
 }
 
 .footer-container__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 48px 18.5%;
+  padding: 48px 10px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 1242px;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
@@ -26,9 +39,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   color: #f2f5f6;
-  font-family: "Roboto Condensed";
-  margin-right: 15%;
-  width: 215px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin-right: 12%;
+
 
   @media (max-width: $tablet-width) {
     width: 100%;

@@ -1,0 +1,14 @@
+.sd-logo__image--no-texted {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.sd-logo__image--texted {
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

@@ -4,6 +4,7 @@
 
 .footer-navigation-list__item {
   margin: 0 0 10px 0;
+  font-family: inherit;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 9px;

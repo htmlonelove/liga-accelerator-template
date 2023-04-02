@@ -5,10 +5,10 @@
   padding: 0;
   margin: 0 0 0 10px;
   list-style-type: none;
-  width: 65%;
-  column-gap: 30px;
+  width: 100%;
+  column-gap: 35px;
   row-gap: 30px;
-  margin-left: 30px;
+  margin-left: 20px;
 
   @media (max-width: $tablet-width) {
     width: 87%;
