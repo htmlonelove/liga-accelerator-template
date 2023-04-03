@@ -2995,8 +2995,8 @@ body {
   .advantages-list {
     width: 87%;
     margin-left: 0;
-    -ms-grid-rows: (360px)[2];
-    grid-template-rows: repeat(2, 360px);
+    -ms-grid-rows: (1fr)[2];
+    grid-template-rows: repeat(2, 1fr);
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;

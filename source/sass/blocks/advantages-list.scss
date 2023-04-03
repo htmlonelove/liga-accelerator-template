@@ -13,7 +13,7 @@
   @media (max-width: $tablet-width) {
     width: 87%;
     margin-left: 0;
-    grid-template-rows: repeat(2, 360px);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 30px;
   }
 
