@@ -2190,6 +2190,10 @@ body {
   margin-right: 20px;
 }
 
+.footer-social-list_item {
+  border-radius: 50%;
+}
+
 .footer-social-list_item:hover,
 .footer-social-list_item:focus {
   opacity: 0.5;
@@ -2735,6 +2739,14 @@ body {
 
 .no-overflow {
   overflow: hidden;
+}
+
+.footer-social-item__link {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 0;
 }
 
 /* @mixin hover-focus {
