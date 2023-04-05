@@ -1715,16 +1715,25 @@ button,
 */
 
 @media (max-width: 1279px) {
+  .container {
+    padding: 0 50px;
+  }
+
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
   .footer__list--address {
     width: 320px;
   }
 }
 
 @media (max-width: 1023px) {
-  .container {
-    padding: 0 50px;
-  }
-
   .header {
     position: static;
     min-height: 100px;
@@ -1772,15 +1781,6 @@ button,
 
   .header__button {
     display: none;
-  }
-
-  .footer__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 65px;
   }
 
   .footer__wrapper {

@@ -7,7 +7,7 @@
   padding-top: 50px;
   padding-bottom: 55px;
 
-  @include vp-1023 {
+  @include vp-1279 {
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 65px;
@@ -113,14 +113,6 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-
-  //@include vp-1279 {
-  //  width: 180px;
-  //}
-
-  //@include vp-1023 {
-  //  width: 100%;
-  //}
 
   @include vp-767 {
     padding: 0 25px;
