@@ -41,6 +41,11 @@
     color: $color-default-white;
   }
 
+  @include hover {
+    box-shadow: 0 0 0 1px $color-default-white;
+    background: $color-default-black;
+  }
+
   @include vp-767 {
     padding-top: 13px;
   }
@@ -63,6 +68,11 @@
 
   &::placeholder {
     color: $color-default-white;
+  }
+
+  @include hover {
+    box-shadow: 0 0 0 1px $color-default-white;
+    background: $color-default-black;
   }
 
   @include vp-1023 {
@@ -169,6 +179,13 @@
       border-color: $color-black-pearl;
     }
   }
+
+  @include hover {
+    & + .form__control-mark {
+      box-shadow: 0 0 0 1px $color-default-white;
+      background: $color-default-black;
+    }
+  }
 }
 
 .form__control-mark {
@@ -206,7 +223,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 0;
+  margin: 39px 0 0 0;
 
   & textarea {
     margin-bottom: 5px;

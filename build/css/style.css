@@ -648,7 +648,7 @@ button,
   width: 100%;
   max-width: 1260px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
 .header {
@@ -878,6 +878,22 @@ button,
 
 .footer__link.focus-visible:focus {
   color: #00b2ff;
+}
+
+.footer__address {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .social {
@@ -1504,7 +1520,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 20px;
-  margin: 0;
+  margin: 39px 0 0 0;
 }
 
 .form--modal textarea {
@@ -1623,18 +1639,22 @@ button,
 .modal__content p {
   font-family: "PT Mono", "Courier New", monospace;
   line-height: 22px;
+  margin: 0;
+  padding-top: 6px;
+  width: 400px;
 }
 
 .modal__content h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 30px;
   font-weight: 400;
+  margin: 0;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 8px;
+  right: 14px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1984,7 +2004,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 30px;
+    padding: 0 25px;
   }
 
   .header {
@@ -2077,6 +2097,11 @@ button,
 
   .footer__link--phone {
     line-height: 179%;
+  }
+
+  .footer__address {
+    font-size: 14px;
+    width: 100%;
   }
 
   .social {
@@ -2449,8 +2474,26 @@ button,
     background-size: 6px 12px;
   }
 
+  .form input:hover:not(.focus-visible) {
+    -webkit-box-shadow: 0 0 0 1px #ffffff;
+    box-shadow: 0 0 0 1px #ffffff;
+    background: #000000;
+  }
+
+  .form textarea:hover:not(.focus-visible) {
+    -webkit-box-shadow: 0 0 0 1px #ffffff;
+    box-shadow: 0 0 0 1px #ffffff;
+    background: #000000;
+  }
+
   .form button:hover:not(.focus-visible) {
     background-color: #005b82;
+  }
+
+  .form__checkbox input:hover:not(.focus-visible) + .form__control-mark {
+    -webkit-box-shadow: 0 0 0 1px #ffffff;
+    box-shadow: 0 0 0 1px #ffffff;
+    background: #000000;
   }
 
   .btn:hover:not(.focus-visible) {
