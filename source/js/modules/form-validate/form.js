@@ -60,7 +60,7 @@ export class Form {
 
   _onFormSubmit(event, callback = null) {
     if (this.validateForm(event.target) && callback) {
-      this._callbacks[callback].successCallback(event);
+      // this._callbacks[callback].successCallback(event);
       if (this._callbacks[callback].reset) {
         setTimeout(() => {
           this.reset(event.target);
@@ -91,7 +91,7 @@ export class Form {
     form.noValidate = true;
 
     form.addEventListener('submit', (event) => {
-      event.preventDefault();
+      // event.preventDefault();
       this._onFormSubmit(event, callback);
     });
 
