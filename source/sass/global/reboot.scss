@@ -77,6 +77,15 @@ textarea {
   &:invalid {
     box-shadow: none;
   }
+
+  &:hover,
+  &:focus {
+    outline: 2px solid #084965;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #084965;
+  }
 }
 
 select {
