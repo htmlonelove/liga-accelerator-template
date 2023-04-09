@@ -21,7 +21,7 @@ const onPhoneInputInput = (e) => {
   });
 };
 
-const onPhoneInputFocus = ({target}) => {
+const onPhoneInputFocus = ({ target }) => {
   if (!target.value) {
     target.value = baseCountryCode;
   }
@@ -62,7 +62,7 @@ const onPhoneInputKeydown = (e) => {
   }
 };
 
-const onPhoneInputBlur = ({target}) => {
+const onPhoneInputBlur = ({ target }) => {
   if (target.value === baseCountryCode) {
     const parent = target.closest('[data-validate-type="phone"]');
     target.value = '';

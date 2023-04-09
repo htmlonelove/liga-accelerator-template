@@ -14,7 +14,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    width: 98%;
+    width: 96%;
     height: 250px;
     max-width: 750px;
     box-sizing: border-box;
@@ -29,18 +29,9 @@
   width: 100%;
   height: 100%;
   display: block;
-
-  @media (max-width: $tablet-width) {
-    padding-top: 35px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-top: 20px;
-    ;
-  }
 }
 
-.products-item:not(:last-child) {
+.products-item:not(:nth-child(3n)) {
   margin-right: 7.1%;
 
   @media (max-width: $tablet-width) {
@@ -55,19 +46,21 @@
   line-height: 30px;
   font-weight: 400;
   width: 65%;
-  margin-left: 43px;
-  margin-top: 45px;
+  padding-left: 43px;
+  padding-top: 48px;
+  margin-top: 0;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    width: 150px;
-    margin-top: 0;
+    width: 193px;
+    padding-top: 37px;
   }
 
   @media (max-width: $mobile-width) {
-    margin-left: 25px;
+    padding-left: 30px;
     font-size: 18px;
-    margin-top: 0;
-    width: 133px;
+    padding-top: 20px;
+    width: 163px;
   }
 }
 
@@ -125,7 +118,7 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/goods/tablet/goods-tablet-second-2x.webp");
+      background-image: url("../img/goods/tablet/goods-tablet-second-2x.webp");
       background-size: cover;
     }
   }
@@ -160,7 +153,7 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/goods/tablet/goods-tablet-third-2x.webp");
+      background-image: url("../img/goods/tablet/goods-tablet-third-2x.webp");
       background-size: cover;
     }
   }

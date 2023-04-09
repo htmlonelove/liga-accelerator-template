@@ -141,16 +141,16 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   background-color: #00b2ff;
   box-sizing: border-box;
-  left: 6px;
+  left: -4px;
   bottom: 12px;
 }
 
 .modal-page-content label input:checked+.modal-page-checkbox__mark {
-  background-image: url("../../img/svg/checkbox-mark.svg");
+  background-image: url("../img/svg/checkbox-mark.svg");
   background-size: 12px 9px;
   background-repeat: no-repeat;
   background-position: center;
@@ -161,4 +161,12 @@
   line-height: 16px;
   margin-bottom: 0;
   margin-left: 20px;
+}
+
+.modal-page-content label input:focus~.modal-page-checkbox__mark {
+  background-color: #333333;
+}
+
+.modal-page-content label input:hover~.modal-page-checkbox__mark {
+  background-color: #333333;
 }

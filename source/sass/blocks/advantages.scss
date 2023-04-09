@@ -16,6 +16,10 @@
   box-sizing: border-box;
   max-width: 1222px;
 
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+
 
   @media (max-width: $tablet-width) {
     padding: 80px 0 0;

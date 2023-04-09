@@ -7,7 +7,7 @@
   justify-content: space-around;
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(-41deg, #00b2ff 66%, rgb(19, 107, 144) 34%);
+    background: linear-gradient(-41deg, #00b2ff 66.6%, rgb(19, 107, 144) 33.4%);
   }
 
   @media (max-width: $tablet-width) {
@@ -26,10 +26,10 @@
 
 .feedback-form__wrapper {
   width: 100%;
-  max-width: 1222px;
+  max-width: 1220px;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 10px;
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
@@ -52,7 +52,7 @@
     background-image: url("../img/form-image.png");
     background-size: 42% auto;
     background-repeat: no-repeat;
-    background-position: -1% 57%;
+    background-position: -1% 52%;
     display: flex;
     justify-content: end;
   }
@@ -93,11 +93,18 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $desktop-width) {
+    margin-top: -5px;
+    margin-left: -2px;
+  }
+
+
+
   @media (max-width: $mobile-width) {
     width: 100%;
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
@@ -109,6 +116,10 @@
   margin: 0;
   font-size: 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 3px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 35px;
@@ -151,14 +162,15 @@
     width: 100%;
     height: 45px;
     padding: 0 5px;
+    margin-bottom: 10px;
   }
 }
 
 .feedback-form label {
   grid-row: 5/6;
   grid-column: 2/3;
-
-  margin-left: 25px;
+  margin-top: -2px;
+  margin-left: 20px;
 
   box-sizing: border-box;
   flex-direction: row;
@@ -174,13 +186,15 @@
   @media (max-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 5px;
-
+    margin-top: 10px;
+    margin-left: 15px;
   }
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
     margin-top: 10px;
     justify-content: start;
+    padding-left: 10px;
   }
 }
 
@@ -199,7 +213,7 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
-    min-height: 50px;
+    height: 50px;
     padding-left: 13px;
   }
 }
@@ -217,7 +231,7 @@
   padding: 25px 20px 40px 15px;
   box-sizing: border-box;
   height: 155px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     padding: 30px 20px;
@@ -270,17 +284,19 @@
 }
 
 .feedback-form label input {
-  width: 0;
-  height: 0;
-  margin: 0 10px 0 0;
+  width: 1px;
+  height: 1px;
+  margin: 0 15px 0 0;
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
-    margin-right: 5px;
+    margin-right: 15px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 30px 0 0;
+    margin: 0 20px 0 0;
+    width: 1px;
+    height: 1px;
   }
 }
 
@@ -292,25 +308,25 @@
   font-size: 14px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 12px;
+    margin-top: 0;
   }
 }
 
-.feedback-form span {
+.feedback-form label span {
   position: absolute;
   width: 15px;
   height: 15px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   background-color: #00b2ff;
   box-sizing: border-box;
-  left: -10px;
-  top: 60%;
+  left: -8px;
+  top: 50%;
   transform: translateY(-50%);
 
   @media (max-width: $tablet-width) {
-    left: -20px;
-    top: 55%;
+    left: -10px;
+    top: 45%;
   }
 
   @media (max-width: $mobile-width) {
@@ -332,4 +348,12 @@
 .feedback-form label:hover,
 .feedback-form label:focus {
   opacity: 0.7;
+}
+
+.feedback-form label input:focus+.main-form-checkbox__mark {
+  background-color: #333333;
+}
+
+.feedback-form label input:hover+.main-form-checkbox__mark {
+  background-color: #333333;
 }

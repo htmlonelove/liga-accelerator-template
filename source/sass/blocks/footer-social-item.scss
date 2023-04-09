@@ -1,7 +1,10 @@
 .footer-social-item__link {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
+
+  width: 40px;
+  height: 40px;
   display: block;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

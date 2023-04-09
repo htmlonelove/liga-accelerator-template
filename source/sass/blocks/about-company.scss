@@ -1,6 +1,6 @@
 .about-company {
   margin: 0;
-  padding: 90px 16% 30px 19.7%;
+  padding: 90px 0 30px 0;
   box-sizing: border-box;
   min-height: 510px;
   background-color: #f8Fdff;
@@ -9,11 +9,11 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    padding: 75px 30px 75px 50px;
+    padding: 68px 30px 75px 50px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 47px 25px;
+    padding: 47px 17px 47px 18px;
     min-height: 435px;
     justify-content: center;
   }
@@ -22,12 +22,16 @@
 .about-company__wrapper {
   background-image: url("../img/about-company-image.png");
   background-repeat: no-repeat;
-  background-position: -20px 0;
+  background-position: -1px 0;
   width: 100%;
   max-width: 1220px;
 
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+  }
+
   @media (max-width: $tablet-width) {
-    background-position: 0 0;
+    background-position: -3px 5px;
   }
 
   @media (max-width: $mobile-width) {
@@ -67,7 +71,7 @@
     margin: 0 0 0 175px;
     max-width: 495px;
     line-height: 21px;
-    margin-bottom: 20px;
+    margin-bottom: -3px;
   }
 
   @media (max-width: $mobile-width) {
@@ -78,8 +82,8 @@
 }
 
 .about-company__button {
-  min-width: 180px;
-  height: 45px;
+
+  min-height: 45px;
   border: solid 1px #00b2ff;
   background-color: inherit;
   color: #00b2ff;
@@ -95,15 +99,22 @@
   cursor: pointer;
   letter-spacing: 1px;
 
+  @media (min-width: $desktop-width) {
+    min-width: 180px;
+  }
+
   @media (max-width: $tablet-width) {
     margin-left: 175px;
+    width: 180px;
   }
 
   @media (max-width: $mobile-width) {
     margin-left: 0;
-    width: 160px;
-    height: 35px;
-    padding: 5px;
+    max-width: 160px;
+    min-height: 35px;
+    padding: 6px;
+    margin-top: -1px;
+    box-sizing: border-box;
   }
 }
 

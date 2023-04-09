@@ -1,15 +1,12 @@
-/* eslint-disable no-lone-blocks */
-
-
 import { isEscapeKey } from './utils.js';
+
 let modal = document.querySelector('.modal-container');
 let modalFieldPhone = document.querySelector('.modal-page__input--phone');
 let modalFieldMessage = document.querySelector('.modal-page__input--message');
 let modalFieldName = document.querySelector('.modal-page__input--name');
-let pageBody = document.querySelector('.page-body');
+let pageBody = document.querySelector('body');
 
 export const openCloseModal = () => {
-
   let modalCloseButton = document.querySelector('.modal-page__close-button');
   let modalOpenButton = document.querySelector('.main-header__button');
   let modalContainer = document.querySelector('.modal-page');
@@ -70,4 +67,3 @@ export const openCloseModal = () => {
     }
   });
 };
-

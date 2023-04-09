@@ -33,13 +33,13 @@
   margin: 0;
 
   @media (max-width: $tablet-width) {
-    left: -18px;
-    bottom: 6px;
+    left: 0;
+    bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
-    left: -10px;
-    bottom: -1px;
+    left: 0;
+    bottom: 0;
   }
 }
 
@@ -64,12 +64,12 @@
   margin: 0;
 
   @media (max-width: $tablet-width) {
-    left: -30px;
-    bottom: 6px;
+    left: 0;
+    bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
-    left: -20px;
+    left: 0;
     bottom: 0;
   }
 }

@@ -1,6 +1,6 @@
-import {Validator} from './validator';
-import {callbacks} from './callback';
-import {initPhoneInput} from './init-phone-input';
+import { Validator } from './validator';
+import { callbacks } from './callback';
+import { initPhoneInput } from './init-phone-input';
 
 export class Form {
   constructor() {

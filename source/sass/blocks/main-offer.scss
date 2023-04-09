@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   text-align: center;
   min-height: 880px;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   display: flex;
   box-sizing: border-box;
@@ -47,18 +47,21 @@
   @media (max-width: $mobile-width) {
     background-image: url("../img/main-pictures/main-picture-mobile.webp");
     background-size: cover;
+    background-position: center;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-pictures/main-picture-mobile-2x.webp");
       background-size: cover;
+      background-position: center;
     }
   }
 }
 
 .main-offer__wrapper {
   text-align: left;
-  margin-right: 220px;
-  padding: 95px 0 70px 0;
+  margin-right: 258px;
+  padding: 305px 0 70px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -67,12 +70,12 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
-    padding: 0 50px;
+    padding: 80px 50px 30px;
     margin-bottom: 120px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 30px 20px 20px 25px;
+    padding: 80px 20px 20px 25px;
   }
 }
 

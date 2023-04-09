@@ -2,6 +2,10 @@
 
   letter-spacing: 5%;
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 5px;
   }
@@ -9,6 +13,7 @@
 
 .phones-list__link {
   color: inherit;
+  line-height: 25px;
 
   &:hover,
   &:focus {

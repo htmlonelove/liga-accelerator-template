@@ -9,6 +9,10 @@
   flex-direction: row;
   width: 100%;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    justify-content: right;
+  }
 }
 
 .contacts-list__item {
@@ -24,7 +28,10 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 20px;
+    margin-right: 40px;
     padding: 0;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
   }
 }

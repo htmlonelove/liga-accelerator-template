@@ -16,6 +16,7 @@
 
 <body>
   <header class="main-header">
+
     <div class="main-header__wrapper">
       <section class="main-header__introduce introduce">
         <h2 class="visually-hidden">Логотип и слоган компании.</h2>
@@ -48,6 +49,7 @@
       </section>
       <button class="main-header__button noselect">Заказать звонок</button>
     </div>
+
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Магазин электронных комплектующих Smart Device.</h1>
@@ -80,7 +82,6 @@
                 как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими
                 компаниями обеспечивает хорошее
                 качество нашей продукции.</p>
-
             </li>
             <li class="advantages-list__item advantages-item advantages-item--third">
               <h3 class="advantages-item__header">Полная конфиденциальность</h3>
@@ -161,30 +162,40 @@
                 <h3 class="products-item__description">Комплектующие<br>для светотехники</h3>
               </a>
             </li>
+
           </ul>
         </div>
       </section>
       <section class="main-container__form feedback-form" id="form-section">
-        <div class="feedback-form__wrapper">
-          <form class="feedback-form__form main-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-form__wrapper" data-form-validate data-callback="base">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="main-form__form">
               <legend class="visually-hidden">
                 Форма для вопросов
               </legend>
               <h2 class="main-form__header">Остались вопросы? Задайте их&nbsp;нам!</h2>
               <p class="main-form__description">Мы&nbsp;проконсультируем Вас бесплатно</p>
-              <input class="main-form__input main-form__input--name" id="user-name" type="text" placeholder="Имя"
-                required name="user-name">
-              <input class="main-form__input main-form__input--phone" id="userphone" type="text" placeholder="Телефон"
-                required name="userphone" minlength="9">
-              <textarea class="main-form__input main-form__input--message" id="user-message" placeholder="Ваш вопрос"
-                name="user-question"></textarea>
+              <div class="input-container" data-validate-type="text" data-limitation="name"
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                <input id="user-name" type="text" placeholder="Имя" name="user-name" required>
+              </div>
+              <div class="input-container" data-validate-type="phone" data-on-input-validate="data-on-input-validate"
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+                data-required="data-required">
+                <input id="userphone" placeholder="Телефон" required name="userphone" type="tel">
+              </div>
+              <textarea id="user-message" placeholder="Ваш вопрос" name="user-question"></textarea>
               <button class="main-form__button noselect">Задать вопрос</button>
-              <label class="main-form__checkbox main-form-checkbox">
-                <input class="main-form-checkbox__input" type="checkbox" name="i-agree" required>
-                <span class="main-form-checkbox__mark"></span>
-                <p class="main-form-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
-              </label>
+              <div class="input-container" data-validate-type="checkbox"
+                data-message-base="Поле обязательно к заполнению">
+                <label class="main-form__checkbox main-form-checkbox">
+                  <input type="checkbox" name="i-agree" required>
+                  <span class="main-form-checkbox__mark"></span>
+                  <p class="main-form-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
+                </label>
+              </div>
             </fieldset>
           </form>
         </div>
@@ -242,25 +253,26 @@
         </h2>
         <nav class="footer-navigation__navigation footer-navigation__navigation--closed">
           <ul class="footer-navigation__list footer-navigation-list">
-            <li class="footer-navigation-list__item navigation-item">
-              <a class="navigation-item__link" href="#">О компании</a>
+            <li class="footer-navigation-list__item navigation-item navigation-item--0">
+              <a class="navigation-item__link" href="#">О компании
+              </a>
             </li>
-            <li class="footer-navigation-list__item navigation-item">
+            <li class="footer-navigation-list__item navigation-item navigation-item--1">
               <a class="navigation-item__link" href="#">Продукты</a>
             </li>
-            <li class="footer-navigation-list__item navigation-item">
+            <li class="footer-navigation-list__item navigation-item navigation-item--2">
               <a class="navigation-item__link" href="#">Производство печатных плат</a>
             </li>
-            <li class="footer-navigation-list__item navigation-item">
+            <li class="footer-navigation-list__item navigation-item navigation-item--3">
               <a class="navigation-item__link" href="#">Монтаж печатных плат</a>
             </li>
-            <li class="footer-navigation-list__item navigation-item">
+            <li class="footer-navigation-list__item navigation-item navigation-item--4">
               <a class="navigation-item__link" href="#">Комплектующие</a>
             </li>
-            <li class="footer-navigation-list__item navigation-item">
+            <li class="footer-navigation-list__item navigation-item navigation-item--5">
               <a class="navigation-item__link" href="#">Доставка</a>
             </li>
-            <li class="footer-navigation-list__item navigation-item">
+            <li class="footer-navigation-list__item navigation-item navigation-item--6">
               <a class="navigation-item__link" href="#">Контакты</a>
             </li>
 
@@ -285,6 +297,11 @@
                 +7 (925) 389-58-29
               </a>
             </li>
+            <li class="phones-list__item">
+              <a class="phones-list__link" href="tel:+79253895829">
+                +7 (925) 364-78-13
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -293,7 +310,7 @@
 
   <div class="modal-container modal-container--closed">
     <div class="modal-page" id="modal-page">
-      <section class="modal-page__content modal-page-content">
+      <section class="modal-page__content modal-page-content" data-form-validate data-callback="base">
         <form class="modal-page__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="modal-page__fieldset">
             <legend class="visually-hidden">
@@ -303,29 +320,40 @@
             <p class="modal-page__description">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное
               время
             </p>
-            <input class="modal-page__input modal-page__input--name" id="name" type="text" placeholder="Имя" autofocus
-              required name="mame">
-            <input class="modal-page__input modal-page__input--phone" id="phone" type="text" placeholder="Телефон"
-              required name="phone" minlength="10">
+            <div class="modal-input-container" data-validate-type="text" data-limitation="name"
+              data-message-base="Поле обязательно к заполнению"
+              data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+              <input class="modal-page__input modal-page__input--name" id="name" type="text" placeholder="Имя" autofocus
+                required name="mame" tabindex="1">
+            </div>
+            <div class="input-container modal-input-container" data-validate-type="phone"
+              data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+              data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+              data-required="data-required">
+              <input class="modal-page__input modal-page__input--phone" id="phone" type="text" placeholder="Телефон"
+                required name="phone" minlength="10" tabindex="2">
+            </div>
             <textarea class="modal-page__input modal-page__input--message" id="message" placeholder="Ваш вопрос"
-              type="text" name="question"></textarea>
-            <button class="modal-page__button noselect">Отправить</button>
-            <label class="modal-page__checkbox modal-page-checkbox">
-              <input class="modal-page-checkbox__input" type="checkbox" name="i-agree" required>
-              <span class="modal-page-checkbox__mark"></span>
-              <p class="modal-page-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
-            </label>
+              type="text" name="question" tabindex="3"></textarea>
+            <button class="modal-page__button noselect" tabindex="4">Отправить</button>
+            <div class="input-container modal-input-checkbox-container" data-validate-type="checkbox"
+              data-message-base="Поле обязательно к заполнению">
+              <label class="modal-page__checkbox modal-page-checkbox">
+                <input class="modal-page-checkbox__input" type="checkbox" name="i-agree" required tabindex="5">
+                <span class="modal-page-checkbox__mark"></span>
+                <p class="modal-page-checkbox__description">Я&nbsp;согласен на&nbsp;обработку персональных данных</p>
+              </label>
+            </div>
           </fieldset>
         </form>
-        <button class="modal-page__close-button noselect"></button>
+        <button class="modal-page__close-button noselect" tabindex="6"></button>
       </section>
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
-    type="text/javascript"></script>
+  <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+
 </body>
 
 </html>
