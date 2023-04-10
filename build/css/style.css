@@ -1147,7 +1147,7 @@ button,
   margin-top: -120px;
   background-color: #00b2ff;
   z-index: 1;
-  background-image: url("/img/backs/main-back.jpg");
+  background-image: url("../img/backs/main-back.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2493,7 +2493,7 @@ button,
 
   .info {
     margin-top: -100px;
-    background-image: url("/img/backs/main-back-tablet.jpg");
+    background-image: url("../img/backs/main-back-tablet.jpg");
   }
 
   .info__content {
