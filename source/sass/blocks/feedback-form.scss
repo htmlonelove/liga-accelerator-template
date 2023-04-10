@@ -33,7 +33,7 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet-width) {
-    padding: 0 0 0 10px;
+    padding: 0 10px;
   }
 
   @media (max-width: $mobile-width) {
@@ -45,6 +45,10 @@
   width: 100%;
 
   @media (max-width: $tablet-width) {
+    width: 670px;
+  }
+
+  @media (max-width: $mobile-width) {
     width: 90%;
   }
 

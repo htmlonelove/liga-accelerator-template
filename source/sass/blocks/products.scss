@@ -39,11 +39,14 @@
     width: 100%;
     padding: 0 40px 0 10px;
     margin-left: 28px;
+
+    align-items: center;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0;
     padding: 0 20px 0 20px;
+    align-items: start;
   }
 }
 

@@ -23,6 +23,9 @@
   font-weight: 400;
   position: relative;
   margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "PT Mono", "Arial", sans-serif;
+  letter-spacing: 1px;
 
   @media (max-width: $mobile-width) {
     margin: 0;
