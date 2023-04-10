@@ -51,26 +51,13 @@
       Smart Device - Поставщик электронных комплектующих.
     </h1>
     <section class="main__info info">
-      <picture>
-        <source type="image/webp" media="(max-width: 767px)"
-          srcset="./img/backs/main-back-mobile.webp 1x, ./img/backs/main-back-mobile@2x.webp 2x">
-        <source type="image/webp" media="(max-width: 1023px)"
-          srcset="./img/backs/main-back-tablet.webp 1x, ./img/backs/main-back-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="./img/backs/main-back.webp 1x, ./img/backs/main-back@2x.webp 2x">
-        <source media="(max-width: 767px)"
-          srcset="./img/backs/main-back-mobile.jpg 1x, ./img/backs/main-back-mobile@2x.jpg 2x">
-        <source media="(max-width: 1023px)"
-          srcset="./img/backs/main-back-tablet.jpg 1x, ./img/backs/main-back-tablet@2x.jpg 2x">
-        <img class="info__main-bg" src="./img/backs/main-back.jpg" srcset="./img/backs/main-back@2x.jpg 2x" width="1920"
-          height="880" alt="">
-      </picture>
       <div class="info__container container">
         <div class="info__content">
           <h2 class="info__title">Печатные платы</h2>
           <span class="info__text">
             производство и монтаж, поставка комплектующих, блоков и модулей
           </span>
-          <a href="#feedback" class="info__button">
+          <a href="#feedback" data-button="info" class="info__button">
           </a>
         </div>
       </div>
@@ -160,7 +147,7 @@
                 Использование инновационных технологий помогает экономить деньги и время наших клиентов
               </p>
             </div>
-            <button data-button="company" class="company__button">Подробнее</button>
+            <button data-button="company" data-open="false" class="company__button">Подробнее</button>
           </div>
         </div>
       </div>
@@ -197,7 +184,7 @@
               <a href="#" class="goods__link">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/backs/back-2-mobile.webp 1x, ./img/backs/back-2@2x.webp 2x">
+                    srcset="./img/backs/back-2-mobile.webp 1x, ./img/backs/back-2-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)"
                     srcset="./img/backs/back-2-tablet.webp 1x, ./img/backs/back-2-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/backs/back-2.webp 1x, ./img/backs/back-2@2x.webp 2x">
@@ -244,27 +231,26 @@
     <section id="feedback" class="main__feedback feedback">
       <div class="feedback__back"></div>
       <div class="feedback__container container">
-        <div class="feedback__form-wrapper" data-form-validate>
+        <div class="feedback__form-wrapper" data-form-validate data-callback="base" data-parent-validate="base" data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
           <img src="./img/objects/paper-plane.png" alt="" class="feedback__image" width="510" height="285" loading="lazy">
-          <form action="https://echo.htmlacademy.ru/" method="post" class="feedback__form">
+          <form action="https://echo.htmlacademy.ru/" method="post" class="feedback__form" autocomplete="off">
             <h2 class="feedback__title">Остались вопросы? Задайте их нам!</h2>
             <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
-            <div class="feedback__custom-input custom-input" data-validate-type="text" data-limitation="name"
+            <div class="feedback__custom-input custom-input feedback__custom-input--input" data-validate-type="text" data-limitation="name"
               data-message-base="Поле обязательно к заполнению"
               data-message-extra="Проверьте корректность заполнения поля" data-required="">
               <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени.">
             </div>
-            <div class="feedback__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
+            <div class="feedback__custom-input custom-input feedback__custom-input--input" data-validate-type="phone" data-on-input-validate=""
               data-message-base="Поле обязательно к заполнению"
               data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
               data-required data-phone-length="18">
               <input data-input="tel" name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
             </div>
-            <div class="feedback__custom-input custom-input" data-validate-type="text">
+            <div class="feedback__custom-input custom-input feedback__custom-input--textarea" data-validate-type="text">
               <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
                 aria-label="Поле для ввода вопроса."></textarea>
             </div>
-            <button type="submit" class="feedback__button">Задать вопрос</button>
             <div class="feedback__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
               data-message-base="Поле обязательно к заполнению">
               <label data-label="checkbox" class="feedback__agreed-text feedback__checkbox">
@@ -280,59 +266,60 @@
                 Я согласен на обработку персональных данных
               </label>
             </div>
+            <button type="submit" class="feedback__button">Задать вопрос</button>
           </form>
         </div>
       </div>
     </section>
-    <section data-id="popup" class="main__popup popup popup--hide">
-      <div class="popup__container" data-form-validate>
-        <form action="https://echo.htmlacademy.ru/" method="post" class="popup__form">
-          <h2 class="popup__title">Закажите звонок</h2>
-          <p class="popup__text">
-            Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-          </p>
-          <div class="popup__custom-input custom-input" data-validate-type="text" data-limitation="name"
-            data-message-base="Поле обязательно к заполнению"
-            data-message-extra="Проверьте корректность заполнения поля" data-required="">
-            <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени." autofocus>
-          </div>
-          <div class="popup__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
-            data-message-base="Поле обязательно к заполнению"
-            data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
-            data-required data-phone-length="18">
-            <input name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
-          </div>
-          <div class="popup__custom-input custom-input" data-validate-type="text">
-            <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
-              aria-label="Поле для ввода вопроса."></textarea>
-          </div>
-          <button type="submit" class="popup__button">Отправить</button>
-          <div class="popup__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
-            data-message-base="Поле обязательно к заполнению">
-            <label data-label="checkbox" class="popup__agreed-text popup__checkbox">
-              <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox">
-              <svg data-icon="checkbox" data-checked="true" data-hide="true" class="popup__checkbox-icon" width="15"
-                height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#checked"></use>
-              </svg>
-              <svg data-icon="checkbox" data-checked="false" data-hide="false" class="popup__checkbox-icon" width="15"
-                height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#not-checked"></use>
-              </svg>
-              Я согласен на обработку персональных данных
-            </label>
-          </div>
-        </form>
-        <button data-button="popup" type="button" class="popup__close">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M0.177086 1.03109C-0.0587882 0.795211 -0.0587881 0.412781 0.177087 0.176905C0.412961 -0.0589705 0.79539 -0.0589706 1.03126 0.176905L10.0001 9.14577L18.9689 0.17691C19.2048 -0.0589653 19.5872 -0.0589653 19.8231 0.176911C20.059 0.412786 20.059 0.795217 19.8231 1.03109L10.8543 9.99996L19.8232 18.9689C20.0591 19.2048 20.0591 19.5872 19.8232 19.8231C19.5873 20.059 19.2049 20.059 18.969 19.8231L10.0001 10.8541L1.03118 19.8231C0.795303 20.059 0.412874 20.059 0.176999 19.8231C-0.0588753 19.5872 -0.0588755 19.2048 0.176999 18.9689L9.14592 9.99996L0.177086 1.03109Z"
-              fill="white" />
-          </svg>
-        </button>
-      </div>
-    </section>
   </main>
+  <section data-id="popup" class="main__popup popup popup--hide">
+    <div class="popup__container" data-form-validate>
+      <form action="https://echo.htmlacademy.ru/" method="post" class="popup__form" autocomplete="off">
+        <h2 class="popup__title">Закажите звонок</h2>
+        <p class="popup__text">
+          Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+        </p>
+        <div class="popup__custom-input custom-input" data-validate-type="text" data-limitation="name"
+          data-message-base="Поле обязательно к заполнению"
+          data-message-extra="Проверьте корректность заполнения поля" data-required="">
+          <input name="name" type="text" placeholder="Имя" aria-label="Поле для ввода имени." autofocus>
+        </div>
+        <div class="popup__custom-input custom-input" data-validate-type="phone" data-on-input-validate=""
+          data-message-base="Поле обязательно к заполнению"
+          data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+          data-required data-phone-length="18">
+          <input name="tel" type="tel" placeholder="Телефон" aria-label="Поле для ввода телефона.">
+        </div>
+        <div class="popup__custom-input custom-input" data-validate-type="text">
+          <textarea name="question" cols="30" rows="5" placeholder="Ваш вопрос"
+            aria-label="Поле для ввода вопроса."></textarea>
+        </div>
+        <div class="popup__custom-toggle custom-toggle custom-toggle--checkbox" data-validate-type="checkbox"
+          data-message-base="Поле обязательно к заполнению">
+          <label data-label="checkbox" class="popup__agreed-text popup__checkbox">
+            <input data-input="checkbox" name="agreed" data-required value="agreed" type="checkbox">
+            <svg data-icon="checkbox" data-checked="true" data-hide="true" class="popup__checkbox-icon" width="15"
+              height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#checked"></use>
+            </svg>
+            <svg data-icon="checkbox" data-checked="false" data-hide="false" class="popup__checkbox-icon" width="15"
+              height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#not-checked"></use>
+            </svg>
+            Я согласен на обработку персональных данных
+          </label>
+        </div>
+        <button type="submit" class="popup__button">Отправить</button>
+      </form>
+      <button data-button="popup" type="button" class="popup__close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.177086 1.03109C-0.0587882 0.795211 -0.0587881 0.412781 0.177087 0.176905C0.412961 -0.0589705 0.79539 -0.0589706 1.03126 0.176905L10.0001 9.14577L18.9689 0.17691C19.2048 -0.0589653 19.5872 -0.0589653 19.8231 0.176911C20.059 0.412786 20.059 0.795217 19.8231 1.03109L10.8543 9.99996L19.8232 18.9689C20.0591 19.2048 20.0591 19.5872 19.8232 19.8231C19.5873 20.059 19.2049 20.059 18.969 19.8231L10.0001 10.8541L1.03118 19.8231C0.795303 20.059 0.412874 20.059 0.176999 19.8231C-0.0588753 19.5872 -0.0588755 19.2048 0.176999 18.9689L9.14592 9.99996L0.177086 1.03109Z"
+            fill="white" />
+        </svg>
+      </button>
+    </div>
+  </section>
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__wrapper">
@@ -387,7 +374,7 @@
             <li class="footer__section-item">
               <a href="#" class="footer__section-link">Производство печатных плат</a>
             </li>
-            <li class="footer__section-item">
+            <li class="footer__section-item" data-break>
               <a href="#" class="footer__section-link">Монтаж печатных плат</a>
             </li>
             <li class="footer__section-item">

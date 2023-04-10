@@ -86,12 +86,12 @@
 .goods__item {
   position: relative;
   min-height: 650px;
-  padding: custom-width(48, 350) custom-width(80, 350) 0 custom-width(40, 350);
+  padding: custom-width(48, 350) custom-width(80, 350) 40px custom-width(40, 350);
   z-index: 2;
 
   @include vp-1023 {
     min-height: 250px;
-    padding: custom-width(37, 670) custom-width(395, 670) 0 custom-width(45, 670);
+    padding: custom-width(37, 670) custom-width(395, 670) 10px custom-width(45, 670);
   }
 
   @include vp-767 {
@@ -105,11 +105,24 @@
     transition: 0.5s;
     box-shadow: 5px 5px 5px #010a11;
   }
+
+  &:has(.goods__link:focus) {
+    transform: translate(-5px, -5px);
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px #010a11;
+    outline: 3px solid #010a11;
+  }
 }
 
 .goods__link {
   text-decoration: none;
   color: #ffffff;
+  width: 100%;
+  height: 100%;
+
+  &:focus-within {
+    outline: none;
+  }
 }
 
 .goods__back {

@@ -48,13 +48,18 @@
   margin-left: 5px;
 
   @include vp-1023 {
-    margin-right: custom-width(310, 670);
+    margin-right: custom-width(300, 670);
   }
 
   @include vp-767 {
     margin: 0;
     align-self: center;
     gap: 0 12px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: .5s;
   }
 }
 
@@ -89,7 +94,7 @@
   @include vp-1023 {
     max-width: 100%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
     align-items: flex-start;
     width: custom-width(675, 720);
@@ -104,6 +109,7 @@
 
 .footer__social {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   gap: 15px;
@@ -177,16 +183,19 @@
 .footer__section-list {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  gap: 10px 30px;
+  column-count: 2;
   margin: 24px 0 0 0;
-  max-height: 130px;
   width: 470px;
+  & [data-break] {
+    break-after:always;
+    color: red;
+  }
 
   @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 10px 30px;
     flex-wrap: nowrap;
     max-height: 100%;
     max-width: 100%;
@@ -196,7 +205,14 @@
 .footer__section-item {
   max-width: 220px;
   line-height: 20px;
-  display: inline-block;
+  display: block;
+  margin-bottom: 10px;
+
+  @include vp-1023 {
+    max-width: none;
+    display: inline-block;
+    margin-bottom: 0;
+  }
 }
 
 .footer__section-link {

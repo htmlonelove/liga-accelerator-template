@@ -5,6 +5,7 @@ import {popupOn} from './functions/popup';
 import {onCompanyInfo} from './functions/company-info';
 import {onAccardeon} from './functions/accardeon';
 import {addEventCheckbox} from './functions/checkbox';
+import {changeOnResize, changeText} from './functions/button-text';
 
 // ---------------------------------
 
@@ -21,10 +22,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    changeText();
     popupOn();
     onCompanyInfo();
     onAccardeon();
     addEventCheckbox();
+    changeOnResize();
     const form = new Form();
     form.init();
     window.form = form;

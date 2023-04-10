@@ -6,13 +6,16 @@
 
   @include vp-1439 {
     padding: 0 32px;
+    max-width: 100%;
   }
 
   @include vp-1023 {
     padding: 0 24px;
+    max-width: 100%;
   }
 
   @include vp-767 {
     padding: 0 16px;
+    max-width: 100%;
   }
 }

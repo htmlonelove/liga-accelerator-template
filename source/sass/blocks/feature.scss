@@ -53,11 +53,13 @@
     &:nth-of-type(3n),
     &:nth-of-type(4n) {
       min-height: 325px;
+      padding-right: 45px;
     }
 
     &:nth-of-type(3n) h3,
     &:nth-of-type(4n) h3 {
       margin-bottom: 15px;
+
     }
   }
 }
@@ -104,7 +106,6 @@
   @include vp-767 {
     line-height: 19px;
     font-size: 14px;
-    max-width: 205px;
   }
 }
 

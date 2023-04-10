@@ -8,6 +8,7 @@
 
   @include vp-1023 {
     padding: 20px 0 25px;
+    position: static;
   }
 
   @include vp-767 {
@@ -22,6 +23,12 @@
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
+
+
+
+  @include vp-1023 {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
@@ -36,18 +43,26 @@
   text-decoration: none;
   color: #f2f5f7;
 
+  &:hover {
+    transform: scale(1.1);
+    transition: .5s;
+  }
+
   @include vp-1023 {
-    margin-right: custom-width(335, 720);
+    margin-right: custom-width(0, 720);
     gap: 0 17px;
-    margin-left: 0;
+    margin-left: custom-width(25, 720);
   }
 
   @include vp-767 {
     width: 35px;
+    min-width: 35px;
     height: 35px;
     overflow: hidden;
-    margin-right: custom-width(128, 298);
+    margin-right: 0;
+    margin-left: custom-width(9, 288);
     grid-template-columns: 55px;
+    box-sizing: border-box;
   }
 }
 
@@ -87,25 +102,29 @@
 }
 
 .header__contacts {
-  width: 460px;
-  margin-right: custom-width(165, 1840);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
+  width: 480px;
+  margin-right: custom-width(145, 1840);
+  grid-template-columns:  repeat(auto-fill, 225px);
+  display: grid;
+  gap: 30px;
   margin-top: -5px;
 
   @include vp-1023 {
-    margin-right: custom-width(20, 720);
-    width: 100px;
-    margin-bottom: 15px;
-    gap: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: custom-width(46, 720);
+    margin-bottom: 13px;
+    gap: 20px;
+    justify-self: end;
+    align-self: center;
+    justify-content: flex-end;
   }
 
   @include vp-767 {
     align-self: flex-start;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: custom-width(18, 288);
   }
 }
 
@@ -119,7 +138,9 @@
 
   @include vp-1023 {
     padding: 10px;
-    min-width: 20px;
+    min-width:fit-content;
+    width: 20px;
+    align-self: flex-end;
   }
 }
 
@@ -129,6 +150,7 @@
 
   @include vp-1023 {
     margin: 0;
+    width: 20px;
   }
 }
 
@@ -158,12 +180,13 @@
     padding: 10px;
     margin-right: 0;
     min-width: 20px;
+    align-self: flex-end;
   }
 }
 
 .header__tel-icon {
   margin-right: 15px;
-  margin-left: 5px;
+  margin-left: 0;
 
   @include vp-1023 {
     margin: 0;
@@ -203,6 +226,7 @@
   margin-right: custom-width(60, 1840);
   margin-bottom: 5px;
   margin-left: 5px;
+  justify-self: flex-end;
 
   @include vp-1023 {
     display: none;

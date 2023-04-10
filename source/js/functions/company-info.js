@@ -1,4 +1,5 @@
-const button = document.querySelectorAll('[data-button="company"]');
+/* eslint-disable quotes */
+const button = document.querySelector('[data-button="company"]');
 const text = [...document.querySelectorAll('[data-text="company"]')];
 
 const openCompanyInfo = () => {
@@ -16,19 +17,24 @@ const openCompanyInfo = () => {
         item.classList.add('company__text-item--hide-mobile');
       }
     }
-
-    if (button.textContent === 'Подробнее') {
-      button.innerText = 'Свернуть';
-    } else {
-      button.innerText = 'Подробнее';
-    }
   });
 };
 
+const changeButtonText = () => {
+  if (button.dataset.open === "false") {
+    button.innerText = 'Свернуть';
+    button.dataset.open = 'true';
+    button.blur();
+  } else {
+    button.innerText = 'Подробнее';
+    button.dataset.open = 'false';
+    button.blur();
+  }
+};
+
 const onCompanyInfo = () => {
-  button.forEach((item) => {
-    item.addEventListener('click', openCompanyInfo);
-  });
+  button.addEventListener('click', openCompanyInfo);
+  button.addEventListener('click', changeButtonText);
 };
 
 export {onCompanyInfo};
