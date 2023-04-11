@@ -1632,6 +1632,7 @@ button,
   position: relative;
   width: 500px;
   padding: 40px;
+  border-radius: 3px;
   color: #ffffff;
   background-color: #00b3ff;
 }
@@ -1640,7 +1641,7 @@ button,
   font-family: "PT Mono", "Courier New", monospace;
   line-height: 22px;
   margin: 0;
-  padding-top: 6px;
+  padding-top: 12px;
   width: 400px;
 }
 
@@ -1649,11 +1650,12 @@ button,
   font-size: 30px;
   font-weight: 400;
   margin: 0;
+  padding-top: 16px;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 8px;
+  top: 30px;
   right: 14px;
   z-index: 1;
   width: 40px;
@@ -1739,6 +1741,15 @@ button,
     padding: 0 50px;
   }
 
+  .header__container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-right: 70px;
+    padding-bottom: 25px;
+  }
+
   .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1751,21 +1762,29 @@ button,
   .footer__list--address {
     width: 320px;
   }
+
+  .intro__container {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding-top: 180px;
+    padding-bottom: 205px;
+  }
+
+  .services__container {
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
+
+  .feedback__container {
+    padding-top: 45px;
+    padding-bottom: 125px;
+  }
 }
 
 @media (max-width: 1023px) {
   .header {
     position: static;
     min-height: 100px;
-  }
-
-  .header__container {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-right: 70px;
-    padding-bottom: 25px;
   }
 
   .header__logo {
@@ -1922,11 +1941,6 @@ button,
     margin-top: 0;
   }
 
-  .services__container {
-    padding-top: 55px;
-    padding-bottom: 75px;
-  }
-
   .services__container h2 {
     margin-bottom: 38px;
   }
@@ -1965,11 +1979,6 @@ button,
 
   .feedback::before {
     display: none;
-  }
-
-  .feedback__container {
-    padding-top: 45px;
-    padding-bottom: 125px;
   }
 
   .feedback__image {

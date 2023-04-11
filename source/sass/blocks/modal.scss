@@ -61,7 +61,7 @@
 
     width: 500px;
     padding: 40px;
-
+    border-radius: 3px;
     color: $color-default-white;
     background-color: $color-deep-sky-blue-form;
 
@@ -75,7 +75,7 @@
     font-family: $ff-mono;
     line-height: 22px;
     margin: 0;
-    padding-top: 6px;
+    padding-top: 12px;
     width: 400px;
   }
 
@@ -84,11 +84,12 @@
     font-size: 30px;
     font-weight: 400;
     margin: 0;
+    padding-top: 16px;
   }
 
   &__close-btn {
     position: absolute;
-    top: 8px;
+    top: 30px;
     right: 14px;
     z-index: 1;
 

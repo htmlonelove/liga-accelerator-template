@@ -37,6 +37,13 @@
     padding-bottom: 205px;
   }
 
+  @include vp-1279 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding-top: 180px;
+    padding-bottom: 205px;
+  }
+
   @include vp-767 {
     margin-top: -70px;
     margin-bottom: 50px;

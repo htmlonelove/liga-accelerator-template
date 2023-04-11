@@ -4,6 +4,17 @@ import {Form} from './modules/form-validate/form';
 
 // ---------------------------------
 
+const btnPopap = document.querySelector('.header__button');
+const inputName = document.querySelector('#name-modal');
+
+btnPopap.addEventListener('click', openModal);
+
+function openModal() {
+  setTimeout(() => {
+    inputName.focus();
+  }, 500);
+}
+
 // Аккордеон в футере
 
 const acc = document.querySelectorAll('.accordion__title');
