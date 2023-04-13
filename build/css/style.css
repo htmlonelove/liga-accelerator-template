@@ -2916,6 +2916,7 @@ button,
     width: 160px;
     min-height: 35px;
     margin-bottom: 20px;
+    padding: 9px;
   }
 
   .goods__wrapper {
@@ -2978,20 +2979,27 @@ button,
 
   .feedback__title {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
     font-size: 30px;
     line-height: 42px;
   }
 
   .feedback__text {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 32px;
     margin-top: 8px;
+  }
+
+  .feedback__custom-input--input {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    padding: 0;
   }
 
   .feedback input {
@@ -3000,16 +3008,13 @@ button,
 
   .feedback__custom-input--textarea {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
     margin-bottom: 23px;
     margin-top: 2px;
   }
 
   .feedback textarea {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
     padding-top: 23px;
     padding-bottom: 47px;
   }
@@ -3019,6 +3024,12 @@ button,
     margin-right: 0;
     margin-top: 6px;
     padding-bottom: 13px;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
 
   .feedback__agreed-text {
@@ -3129,7 +3140,7 @@ button,
 @media screen and (max-width: 767px) {
   .custom-input,
   .custom-textarea {
-    padding: 4px 0 0;
+    padding: 0;
     width: 100%;
   }
 
