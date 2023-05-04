@@ -18,6 +18,7 @@ const swiper = () => {
       ? define(factory)
       : ((global = typeof globalThis !== 'undefined' ? globalThis : global || self), (global.Swiper = factory()));
   })(this, function () {
+
     'use strict';
 
     /**
@@ -10168,6 +10169,8 @@ const swiper = () => {
       EffectCards,
     ];
     Swiper.use(modules);
+
+    global.Swiper = Swiper;
 
     return Swiper;
   });
