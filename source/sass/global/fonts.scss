@@ -1,8 +1,35 @@
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
+  font-weight: 800;
+  font-family: "Alumni";
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/AlumniSans-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Alumni";
+
+  font-display: swap;
+  src: url("../fonts/AlumniSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Alumni";
+
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Alumni";
+
+  font-display: swap;
+  src: url("../fonts/Roboto-Light.woff2") format("woff2");
 }
