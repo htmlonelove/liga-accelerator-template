@@ -1,0 +1,127 @@
+.video {
+  position: relative;
+  width: 364px;
+  height: 228px;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+  }
+}
+
+.video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  position: absolute;
+  z-index: 10;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+
+  @include vp-1023 {
+    width: 52px;
+    height: 52px;
+  }
+
+  @include vp-767 {
+    width: 50px;
+    height: 50px;
+    left: 42.5%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    display: block;
+    width: 12px;
+    height: 17px;
+    border: 8px solid transparent;
+    border-left: 15px solid $color-default-white;
+
+    @include vp-1023 {
+      left: 42%;
+      width: 4px;
+      height: 4px;
+      border: 7px solid transparent;
+      border-left: 12px solid #fff;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -21%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/play.svg");
+    background-position: center;
+    background-size: contain;
+
+    @include vp-1023 {
+      width: 73px;
+      height: 73px;
+    }
+
+    @include vp-767 {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px $color-default-black;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.video img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-top: 0;
+}
+
+.video__preview {
+  height: 100%;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    height: 228px;
+    background: rgba(20, 54, 122, 0.5);
+
+    @include vp-1023 {
+      height: 167px;
+    }
+  }
+}

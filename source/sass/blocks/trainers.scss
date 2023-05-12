@@ -1,0 +1,160 @@
+.trainers {
+  padding: 109px 0 300px;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    padding-top: 69px;
+  }
+}
+
+.trainers>.container {
+  @include vp-767 {
+    padding: 0;
+    padding-bottom: 200px;
+  }
+}
+
+.trainers__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 85px;
+
+  @include vp-1023 {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.trainers__description {
+  max-width: 355px;
+  width: 100%;
+  margin-left: 70px;
+
+  @include vp-1023 {
+    max-width: 510px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+  }
+}
+
+.trainers__description h3 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: $color-dark-blue;
+  margin-bottom: 7px;
+  margin-top: 32px;
+
+  @include vp-1023 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: -5px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+}
+
+.trainers__description h4 {
+  font-family: $ff-alumni;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 39px;
+  letter-spacing: 0.009em;
+  color: $color-dark-blue;
+
+  @include vp-1023 {
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 25px;
+  }
+}
+
+.trainers__description p {
+  font-family: $ff-alumni;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-dark-blue;
+  margin-bottom: 14px;
+  margin-top: 0;
+
+  @include vp-1023 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    width: 85%;
+  }
+}
+
+.trainers__description p:last-of-type {
+  margin-top: -6px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.trainers__view {
+  position: absolute;
+  bottom: -115px;
+  left: 447px;
+
+  @include vp-1023 {
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @include vp-767 {
+    top: 111.5%;
+  }
+
+}
+
+.trainers__wrapper img {
+  margin-top: 11px;
+  width: 660px;
+  height: 401px;
+
+  background-color: #d5d5e0;
+
+  @include vp-1023 {
+    width: 678px;
+    height: 100%;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
+
+}
