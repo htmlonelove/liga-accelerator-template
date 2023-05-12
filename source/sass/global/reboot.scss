@@ -19,6 +19,7 @@ html {
   line-height: 24px;
   font-family: $ff-placeholder;
   color: $color-default-black;
+  background-color: $color-default-white;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,6 +84,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;

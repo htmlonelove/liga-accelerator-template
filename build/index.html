@@ -22,7 +22,6 @@
   <link rel="preload" href="./fonts/Roboto-Light.woff" as="font">
   <link rel="preload" href="./fonts/Roboto-Light.woff2" as="font">
 
-
   <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -72,15 +71,88 @@
     </header>
 
     <main>
-      <section class="intro">
+      <section class="trainers">
         <div class="container">
+
+          <div class="trainers__wrapper">
+
+            <div class="trainers__description">
+              <h3>Тренажерный зал</h3>
+              <h4>Просторный зал площадью 900 кв/м</h4>
+              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+                Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
+                есть
+                несколько оборудованных залов для различных видов групповых занятий. </p>
+            </div>
+
+            <picture>
+
+              <source media="(max-width: 767px)" type="image/webp"
+                srcset="./img/mobile-trainers1x.webp 1x, ./img/.img/mobile-trainers2x.webp 2x">
+              <source media="(max-width: 767px)" type="image/jpg"
+                srcset="./img/mobile-trainers1x.jpg 1x, ./img/.img/mobile-trainers2x.jpg 2x">
+
+              <source media="(max-width: 1023px)" type="image/webp"
+                srcset="./img/tablet-trainers1x.webp 1x, ./img/.img/tablet-trainers2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/jpg"
+                srcset="./img/tablet-trainers1x.jpg 1x, ./img/.img/tablet-trainers2x.jpg 2x">
+
+              <source type="image/webp"
+                srcset="./img/desctop-trainers1x.webp 1x, ./img/.img/desctop-trainers2x.webp 2x">
+              <source type="image/jpg" srcset="./img/desctop-trainers1x.jpg 1x, ./img/.img/desctop-trainers2x.jpg 2x">
+
+              <img src="./img/desctop-trainers1x.jpg" alt="trainers." width="660" height="401">
+
+            </picture>
+
+            <div class="trainers__view">
+
+              <div class="video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw" target="_blank">
+                  <div class="video__preview">
+
+                    <picture>
+
+                      <source media="(max-width: 767px)" type="image/webp"
+                        srcset="./img/mobile-poster1x.webp 1x, ./img/mobile-poster2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/jpg"
+                        srcset="./img/mobile-poster1x.jpg 1x, ./img/mobile-poster2x.jpg 2x">
+
+                      <source media="(max-width: 1023px)" type="image/webp"
+                        srcset="./img/tablet-poster1x.webp 1x, ./img/tablet-poster2x.webp 2x">
+                      <source media="(max-width: 1023px)" type="image/jpg"
+                        srcset="./img/tablet-poster1x.jpg 1x, ./img/tablet-poster2x.jpg 2x">
+
+                      <source type="image/webp" srcset="./img/desctop-poster1x.webp 1x, ./img/desctop-poster2x.webp 2x">
+                      <source type="image/jpg" srcset="./img/desctop-poster1x.jpg 1x, ./img/desctop-poster2x.jpg 2x">
+
+                      <img class="video__media" src="./img/poster.jpg" alt="video poster." width="364" height="228"
+                        alt="preview.">
+
+                    </picture>
+
+                  </div>
+                </a>
+
+                <button class="video__button" type="button" aria-label="запустить видео"></button>
+                <div class="video__container" data-video-container
+                  data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container"></div>
     </footer>
+
   </div>
 
 
