@@ -572,14 +572,13 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 20px;
+  display: block;
+  padding: 17px;
+  border: 4px solid #ffffff;
   color: #ffffff;
-  background-color: #2c39f2;
-  border: none;
+  background: none;
   cursor: pointer;
+  text-align: center;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -1245,6 +1244,319 @@ button,
 }
 .custom-select .input-message.is-valid {
   color: #15ab07;
+}
+
+.header {
+  padding: 16px 0 31px;
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+}
+@media (max-width: 1023px) {
+  .header {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.header nav {
+  max-width: 1160px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .header nav {
+    padding: 0 21px;
+  }
+}
+@media (max-width: 767px) {
+  .header nav {
+    padding: 0;
+  }
+}
+
+.header nav a {
+  margin-top: 14px;
+  font-family: "alumni";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  -webkit-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .header nav a {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .header nav a {
+    margin-top: -2px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.header nav a:hover {
+  opacity: 0.8;
+}
+
+.header nav a[href^="tel:"] {
+  font-family: "alumni";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 2px;
+  -webkit-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+}
+@media (max-width: 1023px) {
+  .header nav a[href^="tel:"] {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .header nav a[href^="tel:"] {
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.header nav a[href^="tel:"]:hover {
+  opacity: 0.8;
+}
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -22px;
+}
+@media (max-width: 1023px) {
+  .article {
+    margin-top: 0;
+    padding: 0 21px;
+  }
+}
+@media (max-width: 767px) {
+  .article {
+    padding: 0;
+  }
+}
+
+.articele__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-right: 64px;
+}
+@media (max-width: 1023px) {
+  .articele__wrapper {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .articele__wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.article__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-left: -108px;
+}
+@media (max-width: 1279px) {
+  .article__content {
+    margin-left: 0;
+  }
+}
+
+.article__content span {
+  display: block;
+  max-width: 120px;
+  width: 100%;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  text-align: right;
+  margin-bottom: 84px;
+}
+@media (max-width: 1023px) {
+  .article__content span {
+    margin-bottom: 56px;
+    margin-left: -6px;
+    line-height: 149%;
+  }
+}
+@media (max-width: 767px) {
+  .article__content span {
+    margin-right: -35px;
+    margin-bottom: 53px;
+  }
+}
+
+.article__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  max-width: 250px;
+  margin-left: 14px;
+}
+@media (max-width: 1023px) {
+  .article__titles {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .article__titles {
+    margin-left: 25px;
+  }
+}
+
+.article__titles h1 {
+  font-family: "alumni";
+  font-weight: 600;
+  font-size: 93px;
+  line-height: 110px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 49px;
+  text-transform: uppercase;
+}
+@media (max-width: 1023px) {
+  .article__titles h1 {
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: inherit;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 767px) {
+  .article__titles h1 {
+    margin-bottom: 23px;
+  }
+}
+
+.article__titles p {
+  font-family: "alumni";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 111px;
+  margin-bottom: 14px;
+  margin-right: 51px;
+}
+@media (max-width: 1023px) {
+  .article__titles p {
+    margin-top: 53px;
+    margin-right: 4px;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .article__titles p {
+    font-size: 28px;
+    line-height: 34px;
+    margin-right: 0;
+    margin-bottom: 13px;
+  }
+}
+
+.article button {
+  min-width: 234px;
+  padding: 19px;
+  font-family: "roboto";
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (max-width: 1023px) {
+  .article button {
+    min-width: 185px;
+  }
+}
+@media (max-width: 767px) {
+  .article button {
+    line-height: 17px;
+    width: 294px;
+    margin-right: -3px;
+    margin-bottom: 58px;
+  }
+}
+
+.article img {
+  margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .article img {
+    width: 384px;
+    height: auto;
+    margin-top: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .article img {
+    display: none;
+  }
 }
 
 /* @mixin hover-focus {

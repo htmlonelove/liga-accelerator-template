@@ -1,0 +1,74 @@
+.header nav {
+  max-width: 1160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    padding: 0 21px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.header nav a {
+  margin-top: 14px;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  color: $color-default-white;
+  transition: opacity, 0.5s;
+  cursor: pointer;
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 8px;
+  }
+
+  @include vp-767 {
+    margin-top: -2px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.header nav a[href^="tel:"] {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  margin-top: 2px;
+  transition: opacity, 0.5s;
+
+  @include vp-1023 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+  }
+
+  @include vp-767 {
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

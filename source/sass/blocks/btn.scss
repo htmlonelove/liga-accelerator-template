@@ -1,13 +1,11 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
-
+  display: block;
+  padding: 17px;
+  border: 4px solid $color-default-white;
   color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
+  background: none;
   cursor: pointer;
-
+  text-align: center;
   transition: opacity $trans-default;
 
   &--red {

@@ -29,9 +29,48 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container"></div>
+
+    <header class="header">
+      <div class="container">
+
+        <nav>
+          <a href="index.html">SUPERGYM</a>
+          <a href="tel:+88005555555">8-800-555-55-55</a>
+        </nav>
+
+        <article class="article">
+
+          <div class="articele__wrapper">
+            <div class="article__content">
+              <span>Тренажёрный зал
+                Групповые занятия
+                Кардио-зона </span>
+              <div class="article__titles">
+                <p>омск</p>
+                <h1>Фитнес центр</h1>
+              </div>
+            </div>
+            <button class="btn" type="button">Купить абонемент</button>
+          </div>
+
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp"
+              srcset="./img/article-tablet1x.webp 1x, ./img/article-tablet2x.webp 2x">
+            <source media="(max-width: 1023px)" type="image/jpg"
+              srcset="./img/article-tablet1x.png 1x, ./img/article-tablet2x.png 2x">
+
+            <source type="image/webp" srcset="./img/article-desctop1x.webp 1x, ./img/article-desctop2x.webp 2x">
+            <source type="image/png" srcset="./img/article-desctop1x.png 1x, ./img/article-desctop2x.png 2x">
+
+            <img src="./img/article-desctop1x.jpg" alt="sportsman." width="500" height="556">
+          </picture>
+
+        </article>
+
+
+      </div>
     </header>
+
     <main>
       <section class="intro">
         <div class="container">

@@ -1,0 +1,169 @@
+.article {
+  display: flex;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -22px;
+
+  @include vp-1023 {
+    margin-top: 0;
+    padding: 0 21px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.articele__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 64px;
+
+  @include vp-1023 {
+    margin-right: 30px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.article__content {
+  display: flex;
+  align-items: end;
+  margin-left: -108px;
+
+  @include vp-1279 {
+    margin-left: 0;
+  }
+}
+
+.article__content span {
+  display: block;
+  max-width: 120px;
+  width: 100%;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-default-white;
+  text-align: right;
+  margin-bottom: 84px;
+
+  @include vp-1023 {
+    margin-bottom: 56px;
+    margin-left: -6px;
+    line-height: 149%;
+  }
+
+  @include vp-767 {
+    margin-right: -35px;
+    margin-bottom: 53px;
+  }
+}
+
+.article__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  max-width: 250px;
+  margin-left: 14px;
+
+  @include vp-1023 {
+    margin-left: 20px;
+  }
+
+  @include vp-767 {
+    margin-left: 25px;
+  }
+}
+
+.article__titles h1 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 93px;
+  line-height: 110px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  margin-top: 0;
+  margin-bottom: 49px;
+  text-transform: uppercase;
+
+  @include vp-1023 {
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: inherit;
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+  }
+}
+
+.article__titles p {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  margin-top: 111px;
+  margin-bottom: 14px;
+  margin-right: 51px;
+
+  @include vp-1023 {
+    margin-top: 53px;
+    margin-right: 4px;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-right: 0;
+    margin-bottom: 13px;
+  }
+}
+
+.article button {
+  min-width: 234px;
+  padding: 19px;
+  font-family: $ff-roboto;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    min-width: 185px;
+  }
+
+  @include vp-767 {
+    line-height: 17px;
+    width: 294px;
+    margin-right: -3px;
+    margin-bottom: 58px;
+  }
+}
+
+.article img {
+  margin-bottom: 20px;
+
+  @include vp-1023 {
+    width: 384px;
+    height: auto;
+    margin-top: 4px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
