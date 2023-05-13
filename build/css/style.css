@@ -1363,9 +1363,13 @@ button,
   margin: 0 auto;
   margin-top: -22px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .article {
     margin-top: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .article {
     padding: 0 21px;
   }
 }
