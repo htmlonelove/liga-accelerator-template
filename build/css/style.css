@@ -331,14 +331,14 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Alumni";
+  font-family: "roboto";
   font-display: swap;
   src: url("../fonts/Roboto-Bold.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: "Alumni";
+  font-family: "roboto";
   font-display: swap;
   src: url("../fonts/Roboto-Light.woff2") format("woff2");
 }
@@ -1389,7 +1389,7 @@ button,
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   margin-right: 64px;
 }
 @media (max-width: 1023px) {
@@ -1410,7 +1410,7 @@ button,
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   margin-left: -108px;
 }
 @media (max-width: 1279px) {
@@ -1455,7 +1455,7 @@ button,
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   max-width: 250px;
   margin-left: 14px;
 }
@@ -1529,7 +1529,7 @@ button,
   min-width: 234px;
   padding: 19px;
   font-family: "roboto";
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1575,6 +1575,12 @@ button,
 @media (max-width: 1023px) {
   .trainers {
     padding-top: 69px;
+    padding-bottom: 183px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers {
+    padding-bottom: 77px;
   }
 }
 
@@ -1655,7 +1661,7 @@ button,
 }
 
 .trainers__description h4 {
-  font-family: "alumni";
+  font-family: "roboto";
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -1680,7 +1686,7 @@ button,
 }
 
 .trainers__description p {
-  font-family: "alumni";
+  font-family: "roboto";
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
@@ -1727,6 +1733,7 @@ button,
 @media (max-width: 767px) {
   .trainers__view {
     top: 111.5%;
+    bottom: -120px;
   }
 }
 
@@ -1901,9 +1908,19 @@ button,
   margin-bottom: 40px;
   overflow: hidden;
 }
+@media (max-width: 1023px) {
+  .abonements {
+    padding-top: 101px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #F8F9FC), color-stop(95%, #fff), color-stop(10%, #fff));
+    background: -o-linear-gradient(top, #F8F9FC 95%, #fff 95%, #fff 10%);
+    background: linear-gradient(to bottom, #F8F9FC 95%, #fff 95%, #fff 10%);
+  }
+}
 @media (max-width: 767px) {
   .abonements {
-    padding-top: 94px;
+    padding: 64px 0 160px;
+    background: none;
+    background-color: rgba(235, 236, 241, 0.8509803922);
   }
 }
 
@@ -1915,7 +1932,7 @@ button,
 }
 @media (max-width: 1023px) {
   .abonements__wrapper {
-    max-width: 500px;
+    max-width: 442px;
   }
 }
 .abonements__wrapper::after {
@@ -1930,10 +1947,26 @@ button,
   right: -250px;
   bottom: -192px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .abonements__wrapper::after {
+    background-image: url("../img/desctop-blins2x.png");
+  }
+}
 @media (max-width: 1023px) {
   .abonements__wrapper::after {
     background-image: url("../img/tablet-blins1x.png");
     right: -230px;
+    bottom: -175px;
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .abonements__wrapper::after {
+    background-image: url("../img/tablet-blins2x.png");
+  }
+}
+@media (max-width: 767px) {
+  .abonements__wrapper::after {
+    display: none;
   }
 }
 .abonements__wrapper::before {
@@ -1947,6 +1980,11 @@ button,
   bottom: 40px;
   z-index: 10;
 }
+@media (max-width: 767px) {
+  .abonements__wrapper::before {
+    display: none;
+  }
+}
 
 .abonements h2 {
   margin-top: 0;
@@ -1958,6 +1996,20 @@ button,
   text-align: center;
   letter-spacing: 0.03em;
   color: #102654;
+}
+@media (max-width: 1023px) {
+  .abonements h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-right: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .abonements h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 22px;
+  }
 }
 
 .abonements__pic {
@@ -2051,6 +2103,16 @@ button,
         flex-wrap: wrap;
   }
 }
+@media (max-width: 1023px) {
+  .tabs__controls {
+    margin-bottom: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .tabs__controls {
+    margin-bottom: 34px;
+  }
+}
 
 .tabs__control {
   padding: 0;
@@ -2069,6 +2131,12 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 767px) {
+  .tabs__control {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 .tabs__control.is-active {
   opacity: 1;
@@ -2113,6 +2181,11 @@ button,
             align-items: center;
   }
 }
+@media (max-width: 767px) {
+  .tabs__element {
+    gap: 35px;
+  }
+}
 
 .tabs__card {
   background: #ffffff;
@@ -2128,6 +2201,12 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 767px) {
+  .tabs__card {
+    padding-top: 43px;
+    padding-bottom: 48px;
+  }
 }
 
 .tabs__price {
@@ -2153,6 +2232,13 @@ button,
   opacity: 0.48;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .tabs__price span {
+    font-size: 80px;
+    line-height: 150%;
+    margin-bottom: 26px;
+  }
+}
 
 .tabs__price p {
   position: relative;
@@ -2168,15 +2254,29 @@ button,
       -ms-transform: translate(-50%);
           transform: translate(-50%);
 }
+@media (max-width: 767px) {
+  .tabs__price p {
+    font-size: 48px;
+    line-height: 150%;
+  }
+}
 .tabs__price p:after {
   content: "";
   width: 30px;
   height: 42px;
   display: block;
   background-image: url("../img/rub.svg");
+  background-repeat: no-repeat;
   position: absolute;
   top: 28%;
   right: -37%;
+}
+@media (max-width: 767px) {
+  .tabs__price p:after {
+    width: 24px;
+    height: 33px;
+    background-image: url("../img/rubm.svg");
+  }
 }
 
 .tabs__card h3 {
@@ -2188,6 +2288,12 @@ button,
   color: #102654;
   margin-bottom: 10px;
   margin-top: 0;
+}
+@media (max-width: 767px) {
+  .tabs__card h3 {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
 }
 
 .tabs__card h4 {

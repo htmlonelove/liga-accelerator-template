@@ -4,8 +4,15 @@
   margin-bottom: 40px;
   overflow: hidden;
 
+  @include vp-1023 {
+    padding-top: 101px;
+    background: linear-gradient(to bottom, #F8F9FC 95%, #fff 95%, #fff 10%);
+  }
+
   @include vp-767 {
-    padding-top: 94px;
+    padding: 64px 0 160px;
+    background: none;
+    background-color: #ebecf1d9;
   }
 }
 
@@ -15,7 +22,7 @@
   margin: 0 auto;
 
   @include vp-1023 {
-    max-width: 500px;
+    max-width: 442px;
   }
 
   position: relative;
@@ -32,9 +39,22 @@
     right: -250px;
     bottom: -192px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desctop-blins2x.png");
+    }
+
     @include vp-1023 {
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/tablet-blins2x.png");
+      }
+
       background-image: url("../img/tablet-blins1x.png");
       right: -230px;
+      bottom: -175px;
+    }
+
+    @include vp-767 {
+      display: none;
     }
   }
 
@@ -48,6 +68,10 @@
     right: 0;
     bottom: 40px;
     z-index: 10;
+
+    @include vp-767 {
+      display: none;
+    }
   }
 }
 
@@ -61,6 +85,18 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $color-dark-blue;
+
+  @include vp-1023 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-right: 14px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 22px;
+  }
 }
 
 .abonements__pic {

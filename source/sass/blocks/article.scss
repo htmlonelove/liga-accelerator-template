@@ -21,7 +21,7 @@
 .articele__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   margin-right: 64px;
 
   @include vp-1023 {
@@ -36,7 +36,7 @@
 
 .article__content {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   margin-left: -108px;
 
   @include vp-1279 {
@@ -71,7 +71,7 @@
 .article__titles {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   max-width: 250px;
   margin-left: 14px;
 
@@ -139,7 +139,7 @@
   min-width: 234px;
   padding: 19px;
   font-family: $ff-roboto;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.05em;
   text-transform: uppercase;

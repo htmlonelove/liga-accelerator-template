@@ -6,6 +6,11 @@
 
   @include vp-1023 {
     padding-top: 69px;
+    padding-bottom: 183px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 77px;
   }
 }
 
@@ -74,7 +79,7 @@
 }
 
 .trainers__description h4 {
-  font-family: $ff-alumni;
+  font-family: $ff-roboto;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -97,7 +102,7 @@
 }
 
 .trainers__description p {
-  font-family: $ff-alumni;
+  font-family: $ff-roboto;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
@@ -137,6 +142,7 @@
 
   @include vp-767 {
     top: 111.5%;
+    bottom: -120px;
   }
 
 }
