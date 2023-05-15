@@ -219,7 +219,6 @@
   width: 100%;
   padding: 8px;
   background: $color-default-white;
-  transition: background, 0.8s;
 
   @include vp-1023 {
     max-width: 500px;

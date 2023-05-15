@@ -365,6 +365,7 @@ html {
   font-family: "Placeholder", "Arial", sans-serif;
   color: #000000;
   background-color: #ffffff;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1525,7 +1526,7 @@ button,
   }
 }
 
-.article button {
+.article a {
   min-width: 234px;
   padding: 19px;
   font-family: "roboto";
@@ -1536,12 +1537,12 @@ button,
   color: #ffffff;
 }
 @media (max-width: 1023px) {
-  .article button {
+  .article a {
     min-width: 185px;
   }
 }
 @media (max-width: 767px) {
-  .article button {
+  .article a {
     line-height: 17px;
     width: 294px;
     margin-right: -3px;
@@ -2328,9 +2329,6 @@ button,
   width: 100%;
   padding: 8px;
   background: #ffffff;
-  -webkit-transition: background, 0.8s;
-  -o-transition: background, 0.8s;
-  transition: background, 0.8s;
 }
 @media (max-width: 1023px) {
   .tabs__wrapper {
