@@ -1,16 +1,17 @@
 .abonements {
   background: linear-gradient(to bottom, #F8F9FC 91.5%, #fff 91.5%, #fff 10%);
-  padding: 120px 60px 160px;
+  padding: 120px 60px 161px;
   margin-bottom: 40px;
   overflow: hidden;
 
   @include vp-1023 {
     padding-top: 101px;
+    margin-bottom: 2px;
     background: linear-gradient(to bottom, #F8F9FC 95%, #fff 95%, #fff 10%);
   }
 
   @include vp-767 {
-    padding: 64px 0 160px;
+    padding: 64px 0 30px;
     background: none;
     background-color: #ebecf1d9;
   }
