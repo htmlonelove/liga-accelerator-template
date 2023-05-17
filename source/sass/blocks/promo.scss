@@ -5,9 +5,14 @@
   width: 100%;
   max-width: 1160px;
   background-color: #ED0233;
-  margin-bottom: 100px;
+  margin-bottom: 106px;
+
+  @include vp-1023 {
+    margin-bottom: 101px;
+  }
 
   @include vp-767 {
+    margin-bottom: 10px;
     flex-direction: column;
   }
 }
@@ -20,7 +25,7 @@
   }
 
   @include vp-767 {
-    padding: 67px 15px;
+    padding: 67px 15px 54px;
   }
 
 }
