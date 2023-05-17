@@ -4,6 +4,7 @@ import { Form } from './modules/form-validate/form';
 import './modules/video';
 import './modules/index';
 import { initTabs } from './modules/init-tabs';
+import { initTrainersSlider } from './modules/init-swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initTabs();
+    initTrainersSlider();
   });
 
 });
