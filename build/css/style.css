@@ -3029,6 +3029,7 @@ button,
      object-fit: cover;
   width: 100%;
   height: 100%;
+  background-color: rgba(16, 38, 84, 0.89);
 }
 
 /* @mixin hover-focus {
