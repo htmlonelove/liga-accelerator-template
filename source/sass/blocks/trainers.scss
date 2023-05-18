@@ -130,6 +130,7 @@
 }
 
 .trainers__view {
+  height: auto;
   position: absolute;
   bottom: -115px;
   left: 447px;
@@ -141,6 +142,7 @@
   }
 
   @include vp-767 {
+    width: 100%;
     top: 111.5%;
     bottom: -120px;
   }

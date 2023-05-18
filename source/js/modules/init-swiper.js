@@ -12,18 +12,16 @@ const initTrainersSlider = () => {
     const mySwiper = new Swiper('.swiper__slider', {
       direction: 'horizontal',
       loop: true,
-      slidesPerView: 'auto',
-      // spaceBetween: 30,
-      // initialSlide: 2,
-      // centeredSlides: true,
-      autoResize: false,
-      centeredSlides: false,
-      // loopedSlides: 0,
-      // maxBackfaceHiddenSlides: 0,
-      // keyboard: {
-      //   enabled: true,
-      //   onlyInViewport: true,
-      // },
+      IOSEdgeSwipeDetection: true,
+      onTouchStart() {
+        return false;
+      },
+      scrollbar: {
+        container: '.swiper-scrollbar',
+        hide: false,
+        draggable: true,
+        snapOnRelease: true,
+      },
       breakpoints: {
         1280: {
           slidesPerView: 4,
@@ -37,7 +35,7 @@ const initTrainersSlider = () => {
           spaceBetween: 30,
           centeredSlides: false,
         },
-        580: {
+        768: {
           slidesPerView: 2,
           slidesPerGroup: 2,
           spaceBetween: 30,

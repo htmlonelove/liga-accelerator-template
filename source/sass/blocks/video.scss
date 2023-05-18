@@ -10,8 +10,28 @@
   }
 
   @include vp-767 {
-    width: 320px;
+    max-width: 767px;
+    width: 100%;
+    height: 228px;
   }
+
+  @include vp-374 {
+    height: 167px;
+  }
+}
+
+.video__container {
+
+@include vp-767 {
+  max-width: 767px;
+  width: 100%;
+  height:100%;
+}
+}
+
+.video__container iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .video img {
@@ -117,11 +137,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    height: 228px;
     background: rgba(20, 54, 122, 0.5);
 
-    @include vp-1023 {
-      height: 167px;
-    }
   }
 }
