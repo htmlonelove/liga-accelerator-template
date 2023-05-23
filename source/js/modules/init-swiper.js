@@ -23,16 +23,10 @@ const initTrainersSlider = () => {
         snapOnRelease: true,
       },
       breakpoints: {
-        1280: {
+        1024: {
           slidesPerView: 4,
           slidesPerGroup: 4,
-          centeredSlides: false,
           spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          slidesPerGroup: 3,
-          spaceBetween: 30,
           centeredSlides: false,
         },
         768: {
@@ -48,35 +42,6 @@ const initTrainersSlider = () => {
           centeredSlides: false,
         },
       },
-
-      // breakpoints: {
-      // when window width is >= 320px
-      //   320: {
-      //     slidesPerView: 1,
-      //     slidesPerGroup: 1,
-      //     centeredSlides: false,
-      //   },
-      // }
-      //   // when window width is >= 768px
-      //   768: {
-      //     slidesPerView: 2,
-      //     slidesPerGroup: 2,
-      //     spaceBetween: 30,
-      //     centeredSlides: false,
-      //   },
-      //   // when window width is >= 1200px
-      //   // 1200: {
-      //   //   slidesPerView: 3,
-      //   //   slidesPerGroup: 3,
-      //   //   centeredSlides: false,
-      //   // },
-      //   // // when window width is >= 1200px
-      //   1280: {
-      //     slidesPerView: 4,
-      //     slidesPerGroup: 4,
-      //     centeredSlides: false,
-      //   },
-      // },
 
       navigation: {
         nextEl: '.swiper-button-next',

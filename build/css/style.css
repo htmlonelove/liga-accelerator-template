@@ -386,7 +386,6 @@ img,
 video {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 textarea {
@@ -2439,7 +2438,7 @@ button,
 }
 
 .promo__wrapper {
-  padding: 85px 10px 30px 76px;
+  padding: 85px 10px 30px 15px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2791,6 +2790,8 @@ button,
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 @media (max-width: 767px) {
   .swiper-container {
@@ -2808,10 +2809,19 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding-left: 0;
+  max-width: 1160px;
+  width: calc(100% - 236px);
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .swiper-wrapper {
-    gap: 0;
+    max-width: 100%;
+    width: calc(100% - 120px);
+  }
+}
+@media (max-width: 767px) {
+  .swiper-wrapper {
+    max-width: 100%;
+    width: calc(100% - 50px);
   }
 }
 
@@ -2819,20 +2829,17 @@ button,
   overflow: hidden;
   width: 100%;
   max-width: 1160px;
-}
-@media (max-width: 1279px) {
-  .swiper__slider {
-    max-width: 840px;
-  }
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 @media (max-width: 1023px) {
   .swiper__slider {
-    max-width: 566px;
+    padding: 0 12px;
   }
 }
 @media (max-width: 767px) {
   .swiper__slider {
-    max-width: 700px;
+    padding: 0;
   }
 }
 
@@ -2850,25 +2857,25 @@ button,
   -o-transition: opacity, 0.8s;
   transition: opacity, 0.8s;
   cursor: pointer;
+  overflow-y: auto;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
 }
 
 .swiper-slide {
-  max-width: 268px;
-  max-height: 294px;
-  width: 100%;
+  width: calc((100% - 90px) / 4);
   height: 100%;
   position: relative;
   list-style: none;
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .swiper-slide {
-    margin-right: 30px;
+    width: calc((100% - 100px) / 2);
   }
 }
 @media (max-width: 767px) {
   .swiper-slide {
-    max-width: 750px;
-    max-height: 600px;
+    width: 100%;
   }
 }
 .swiper-slide:hover > .slide-desc {
@@ -2907,6 +2914,12 @@ button,
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
+}
+@media (max-width: 1023px) {
+  .slide-img h4 {
+    bottom: 2%;
+    left: 51%;
+  }
 }
 @media (max-width: 767px) {
   .slide-img h4 {
@@ -2993,6 +3006,18 @@ button,
   background: none;
   padding: 10px;
 }
+@media (max-width: 1023px) {
+  .slider-btn {
+    margin-bottom: 10px;
+    padding: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-btn {
+    padding: 10px;
+    margin-bottom: 0;
+  }
+}
 
 .slider-btn span {
   display: block;
@@ -3009,12 +3034,12 @@ button,
 }
 
 .slide-img {
-  width: 260px;
-  height: 294px;
+  width: inherit;
 }
 @media (max-width: 1023px) {
   .slide-img {
-    width: 268px;
+    width: inherit;
+    height: auto;
   }
 }
 @media (max-width: 767px) {
@@ -3027,9 +3052,20 @@ button,
 .slide-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   background-color: rgba(16, 38, 84, 0.89);
+}
+@media (max-width: 1023px) {
+  .slide-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .slide-img img {
+    width: 100%;
+  }
 }
 
 /* @mixin hover-focus {

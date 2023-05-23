@@ -5,6 +5,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
+  touch-action: pan-y;
 
   @include vp-767 {
     padding: 0 10px;
@@ -18,9 +19,17 @@
 .swiper-wrapper {
   display: flex;
   padding-left: 0;
+  max-width: 1160px;
+  width: calc(100% - 236px);
 
-  @include vp-1279 {
-    gap: 0;
+  @include vp-1023 {
+    max-width: 100%;
+    width: calc(100% - 120px);
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    width: calc(100% - 50px);
   }
 
 }
@@ -29,17 +38,14 @@
   overflow: hidden;
   width: 100%;
   max-width: 1160px;
-
-  @include vp-1279 {
-    max-width: 840px;
-  }
+  touch-action: pan-y;
 
   @include vp-1023 {
-    max-width: 566px;
+    padding: 0 12px;
   }
 
   @include vp-767 {
-    max-width: 700px;
+    padding: 0;
   }
 
 }
@@ -56,23 +62,23 @@
   left: 0;
   transition: opacity, 0.8s;
   cursor: pointer;
+  overflow-y: auto;
+  touch-action: pan-y;
 }
 
+
 .swiper-slide {
-  max-width: 268px;
-  max-height: 294px;
-  width: 100%;
+  width: calc((100% - 90px) / 4);
   height: 100%;
   position: relative;
   list-style: none;
 
-  @include vp-1279 {
-    margin-right: 30px;
+  @include vp-1023 {
+    width: calc((100% - 100px) / 2);
   }
 
   @include vp-767 {
-    max-width: 750px;
-    max-height: 600px;
+    width: 100%;
   }
 
   &:hover>.slide-desc {
@@ -112,6 +118,11 @@
   display: block;
   left: 50%;
   transform: translate(-50%);
+
+  @include vp-1023 {
+    bottom: 2%;
+    left: 51%;
+  }
 
   @include vp-767 {
     bottom: 5%;
@@ -189,6 +200,16 @@
   border: none;
   background: none;
   padding: 10px;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+    padding: 12px;
+  }
+
+  @include vp-767 {
+    padding: 10px;
+    margin-bottom: 0;
+  }
 }
 
 .slider-btn span {
@@ -205,11 +226,11 @@
 }
 
 .slide-img {
-  width: 260px;
-  height: 294px;
+  width: inherit;
 
   @include vp-1023 {
-    width: 268px;
+    width: inherit;
+    height: auto;
   }
 
   @include vp-767 {
@@ -221,7 +242,16 @@
 
 .slide-img img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   background-color: rgba(16, 38, 84, 0.89);
+
+  @include vp-1023 {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
