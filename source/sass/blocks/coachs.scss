@@ -1,5 +1,13 @@
 .coachs {
-  margin-bottom: 100px;
+  margin-bottom: 124px;
+
+  @include vp-1023 {
+    margin-bottom: 83px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 55px;
+  }
 }
 
 .coachs__container {
