@@ -1,9 +1,15 @@
 .advantages {
   background-color: #f8f9fc;
   padding: 43px;
+  padding-bottom: 125px;
+
+  @include vp-1023 {
+    padding-bottom: 92px;
+  }
 
   @include vp-767 {
     padding: 40px 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -278,7 +284,7 @@
   }
 
   @include vp-767 {
-   margin-top: -6px;
+    margin-top: -6px;
   }
 
 }

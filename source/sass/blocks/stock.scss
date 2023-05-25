@@ -1,0 +1,242 @@
+.stock {
+  margin-bottom: 100px;
+  padding-top: 46px;
+}
+
+.stock h3 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-dark-blue;
+  text-align: center;
+  margin-bottom: 34px;
+
+  @include vp-1023 {
+    font-weight: 600;
+    font-size: 42px;
+    margin-top: 37px;
+    margin-left: -8px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 17px;
+    margin-left: -6px;
+    margin-bottom: 42px;
+  }
+}
+
+.stock__wrapper {
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.stock__abonement {
+  display: flex;
+  margin-right: 40px;
+  max-width: 560px;
+  width: 100%;
+
+  @include vp-1023 {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.stock__desc {
+  padding: 41px 45px;
+  background-color: #ED0233;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  width: 100%;
+
+  @include vp-1023 {
+    max-width: 50%;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    align-items: center;
+  }
+}
+
+.stock__desc span {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  margin-top: 0;
+  color: $color-default-white;
+  margin-bottom: 3px;
+}
+
+.stock__desc h4 {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 100%;
+  color: $color-default-white;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.stock__desc p {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: $color-default-white;
+  flex: 1 0 auto;
+
+  @include vp-767 {
+    max-width: 195px;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 29px;
+  }
+}
+
+.stock__desc a {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  flex: 0 0 auto;
+  margin-bottom: 5px;
+  border-bottom: 1px solid $color-default-white;
+  display: block;
+  width: min-content;
+}
+
+.stock__abonement img {
+
+  @include vp-1023 {
+    min-width: 399px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @include vp-767 {
+    min-width: min-content;
+    max-width: 100%;
+  }
+}
+
+.stock__cards li:not(:nth-of-type(1)) {
+  margin-top: 40px;
+
+  @include vp-1023 {
+    margin-top: 0;
+  }
+}
+
+.stock__cards {
+  padding-left: 0;
+  margin-top: 0;
+  width: 100%;
+
+  @include vp-1023 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.stock__cards li {
+  background: linear-gradient(#d10a42, #00359f);
+  padding: 7px;
+  list-style: none;
+  width: 100%;
+}
+
+.stock__cards li div {
+  background-color: $color-default-white;
+  padding: 25px 25px 19px 28px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-767 {
+    align-items: center;
+    padding: 35px 25px 29px 25px;
+  }
+}
+
+.stock__cards h5 {
+  margin-top: 0;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  color: #1C3374;
+  margin-bottom: 10px;
+}
+
+.stock__cards p {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1C3374;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include vp-767 {
+    text-align: center;
+    max-width: 160px;
+    margin-bottom: 10px;
+  }
+}
+
+.stock__cards a {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1C3374;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid #1C3374;
+  display: block;
+  width: min-content;
+
+  @include vp-767 {
+    margin-top: 18px;
+  }
+}
