@@ -16,7 +16,7 @@
   touch-action: pan-y;
 }
 
-.swiper-wrapper {
+.coach-wrapper {
   display: flex;
   padding-left: 0;
   max-width: 1160px;
@@ -67,7 +67,7 @@
 }
 
 
-.swiper-slide {
+.slider-slide {
   width: calc((100% - 90px) / 4);
   height: 100%;
   position: relative;

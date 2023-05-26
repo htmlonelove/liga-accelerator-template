@@ -2814,7 +2814,7 @@ button,
       touch-action: pan-y;
 }
 
-.swiper-wrapper {
+.coach-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2823,13 +2823,13 @@ button,
   width: calc(100% - 236px);
 }
 @media (max-width: 1023px) {
-  .swiper-wrapper {
+  .coach-wrapper {
     max-width: 100%;
     width: calc(100% - 120px);
   }
 }
 @media (max-width: 767px) {
-  .swiper-wrapper {
+  .coach-wrapper {
     max-width: 100%;
     width: calc(100% - 50px);
   }
@@ -2872,31 +2872,31 @@ button,
       touch-action: pan-y;
 }
 
-.swiper-slide {
+.slider-slide {
   width: calc((100% - 90px) / 4);
   height: 100%;
   position: relative;
   list-style: none;
 }
 @media (max-width: 1023px) {
-  .swiper-slide {
+  .slider-slide {
     width: calc((100% - 100px) / 2);
   }
 }
 @media (max-width: 767px) {
-  .swiper-slide {
+  .slider-slide {
     width: 100%;
   }
 }
-.swiper-slide:hover > .slide-desc {
+.slider-slide:hover > .slide-desc {
   opacity: 1;
   height: 100%;
 }
-.swiper-slide:focus-within > .slide-desc {
+.slider-slide:focus-within > .slide-desc {
   opacity: 1;
   height: 100%;
 }
-.swiper-slide:hover > .slide-img > h4 {
+.slider-slide:hover > .slide-img > h4 {
   display: none;
 }
 
@@ -3509,6 +3509,16 @@ button,
   margin-bottom: 100px;
   padding-top: 46px;
 }
+@media (max-width: 1023px) {
+  .stock {
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .stock {
+    margin-bottom: 50px;
+  }
+}
 
 .stock h3 {
   font-family: "alumni";
@@ -3740,11 +3750,16 @@ button,
   padding: 7px;
   list-style: none;
   width: 100%;
+  height: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .stock__cards li div {
+  min-height: 197px;
   background-color: #ffffff;
-  padding: 25px 25px 19px 28px;
+  padding: 25px 25px 55px 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3752,6 +3767,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 @media (max-width: 767px) {
   .stock__cards li div {
@@ -3779,7 +3795,7 @@ button,
   line-height: 140%;
   color: #1C3374;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .stock__cards p {
@@ -3799,17 +3815,201 @@ button,
   color: #1C3374;
   margin-top: 30px;
   margin-bottom: 10px;
-  position: relative;
   border-bottom: 1px solid #1C3374;
   display: block;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  position: absolute;
+  left: 28px;
+  bottom: 18px;
 }
 @media (max-width: 767px) {
   .stock__cards a {
-    margin-top: 18px;
+    left: 50%;
+    bottom: 11%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
+}
+
+@media (max-width: 767px) {
+  .review {
+    padding: 0 8px;
+  }
+}
+
+.review h3 {
+  font-family: "alumni";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  color: #102654;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-left: 9px;
+  margin-bottom: 22px;
+}
+@media (max-width: 1023px) {
+  .review h3 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .review h3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.review__swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 685px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .review__swiper {
+    max-width: 692px;
+  }
+}
+
+.review__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+.review__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  max-width: 560px;
+}
+@media (max-width: 1023px) {
+  .review__slider {
+    max-width: 566px;
+  }
+}
+
+.review__slide {
+  max-width: 560px;
+  background-color: #1c3374;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 54px 62px 38px;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .review__slide {
+    padding: 54px 62px 38px 65px;
+  }
+}
+@media (max-width: 767px) {
+  .review__slide {
+    position: relative;
+    padding: 45px 30px 33px;
+  }
+}
+
+.review-slide__img img {
+  margin-top: 10px;
+  max-width: 80px;
+  max-height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  margin-right: 28px;
+}
+@media (max-width: 767px) {
+  .review-slide__img img {
+    position: absolute;
+    top: 39px;
+    right: 52%;
+    margin: 0;
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.review__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 767px) {
+  .review__desc {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.review__desc h5 {
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .review__desc h5 {
+    max-width: 70px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+}
+
+.review__desc p {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  color: #ffffff;
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .review__desc p {
+    text-align: center;
+    line-height: 141%;
+    margin-bottom: 0;
+  }
+}
+
+.review-slider-next {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.review-slider-prev {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 /* @mixin hover-focus {

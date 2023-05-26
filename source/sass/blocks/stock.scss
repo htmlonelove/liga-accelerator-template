@@ -1,6 +1,15 @@
 .stock {
   margin-bottom: 100px;
   padding-top: 46px;
+
+  @include vp-1023 {
+    margin-bottom: 75px;
+  }
+
+
+  @include vp-767 {
+    margin-bottom: 50px;
+  }
 }
 
 .stock h3 {
@@ -181,13 +190,17 @@
   padding: 7px;
   list-style: none;
   width: 100%;
+  height: 100%;
+  height: min-content;
 }
 
 .stock__cards li div {
+  min-height: 197px;
   background-color: $color-default-white;
-  padding: 25px 25px 19px 28px;
+  padding: 25px 25px 55px 28px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @include vp-767 {
     align-items: center;
@@ -212,7 +225,7 @@
   line-height: 140%;
   color: #1C3374;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 
   @include vp-767 {
     text-align: center;
@@ -231,12 +244,15 @@
   color: #1C3374;
   margin-top: 30px;
   margin-bottom: 10px;
-  position: relative;
   border-bottom: 1px solid #1C3374;
   display: block;
-  width: min-content;
+  position: absolute;
+  left: 28px;
+  bottom: 18px;
 
   @include vp-767 {
-    margin-top: 18px;
+    left: 50%;
+    bottom: 11%;
+    transform: translate(-50%, -50%);
   }
 }

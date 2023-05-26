@@ -1,0 +1,144 @@
+.review {
+  @include vp-767 {
+    padding: 0 8px;
+  }
+}
+
+.review h3 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  color: $color-dark-blue;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-left: 9px;
+  margin-bottom: 22px;
+
+  @include vp-1023 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.review__swiper {
+  display: flex;
+  align-items: center;
+  max-width: 685px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    max-width: 692px;
+  }
+}
+
+.review__wrapper {
+  display: flex;
+  padding-left: 0;
+}
+
+.review__slider {
+  display: flex;
+  overflow: hidden;
+  max-width: 560px;
+
+  @include vp-1023 {
+    max-width: 566px;
+  }
+
+}
+
+.review__slide {
+  max-width: 560px;
+  background-color: #1c3374;
+  display: flex;
+  align-items: flex-start;
+  padding: 54px 62px 38px;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    padding: 54px 62px 38px 65px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    padding: 45px 30px 33px;
+  }
+}
+
+.review-slide__img img {
+  margin-top: 10px;
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-right: 28px;
+
+  @include vp-767 {
+    position: absolute;
+    top: 39px;
+    right: 52%;
+    margin: 0;
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.review__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include vp-767 {
+    align-items: flex-end;
+  }
+}
+
+.review__desc h5 {
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: $color-default-white;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @include vp-767 {
+    max-width: 70px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.review__desc p {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  color: $color-default-white;
+  margin-top: 0;
+
+  @include vp-767 {
+    text-align: center;
+    line-height: 141%;
+    margin-bottom: 0;
+  }
+}
+
+.review-slider-next {
+  transform: rotate(45deg);
+}
+
+.review-slider-prev {
+  transform: rotate(-135deg);
+}

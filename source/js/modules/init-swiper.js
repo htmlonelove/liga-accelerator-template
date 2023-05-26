@@ -52,4 +52,37 @@ const initTrainersSlider = () => {
 
 };
 
-export {initTrainersSlider};
+const initreviewSlider = document.querySelector('.review__swiper');
+
+const initReviewSlider = () => {
+
+  if (initreviewSlider) {
+
+    // eslint-disable-next-line no-unused-vars
+    const mySwiper = new Swiper('.review__slider', {
+      direction: 'horizontal',
+      loop: false,
+      IOSEdgeSwipeDetection: true,
+      onTouchStart() {
+        return false;
+      },
+      scrollbar: {
+        container: '.swiper-scrollbar',
+        hide: false,
+        draggable: true,
+        snapOnRelease: true,
+      },
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      centeredSlides: false,
+
+      navigation: {
+        nextEl: '.review-slider-next',
+        prevEl: '.review-slider-prev',
+      },
+    });
+  }
+
+};
+
+export {initTrainersSlider, initReviewSlider};
