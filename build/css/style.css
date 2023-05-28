@@ -3831,9 +3831,18 @@ button,
   }
 }
 
+.review {
+  margin-bottom: 104px;
+}
+@media (max-width: 1023px) {
+  .review {
+    margin-bottom: 85px;
+  }
+}
 @media (max-width: 767px) {
   .review {
     padding: 0 8px;
+    margin-bottom: 54px;
   }
 }
 
@@ -4010,6 +4019,416 @@ button,
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
           transform: rotate(-135deg);
+}
+
+.relations {
+  background: -webkit-gradient(linear, left top, right top, from(#102654), color-stop(50%, #102654), color-stop(50%, #ffffff));
+  background: -o-linear-gradient(left, #102654 0%, #102654 50%, #ffffff 50%);
+  background: linear-gradient(to right, #102654 0%, #102654 50%, #ffffff 50%);
+  border-top: 1px solid #74819c;
+}
+@media (max-width: 1023px) {
+  .relations {
+    background: none;
+  }
+}
+
+.relations__wrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1023px) {
+  .relations__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.reservation__form {
+  background-color: #102654;
+  width: 100%;
+  padding: 45px;
+}
+@media (max-width: 1023px) {
+  .reservation__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 122px;
+    padding-top: 51px;
+    padding-bottom: 68px;
+  }
+}
+@media (max-width: 767px) {
+  .reservation__form {
+    padding: 15px;
+    padding-bottom: 70px;
+  }
+}
+
+.reservation__form h3 {
+  margin-left: 57px;
+  margin-top: 10px;
+  margin-bottom: 23px;
+  font-family: "alumni";
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+@media (max-width: 1279px) {
+  .reservation__form h3 {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1023px) {
+  .reservation__form h3 {
+    -moz-text-align-last: left;
+         text-align-last: left;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 767px) {
+  .reservation__form h3 {
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 48px;
+    letter-spacing: 0.015em;
+    margin-bottom: 31px;
+  }
+}
+
+form {
+  margin-left: 57px;
+  max-width: 410px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto 30px auto;
+      grid-template-areas: "name phone" "button button";
+  gap: 30px;
+}
+@media (max-width: 1279px) {
+  form {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1023px) {
+  form {
+    max-width: 475px;
+    width: 100%;
+    -webkit-column-gap: 56px;
+       -moz-column-gap: 56px;
+            column-gap: 56px;
+  }
+}
+@media (max-width: 767px) {
+  form {
+    max-width: 100%;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+form label {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  outline: none;
+}
+@media (max-width: 767px) {
+  form input {
+    margin-bottom: 14px;
+  }
+}
+
+form input:focus-visible {
+  border: 2px solid #fff;
+}
+
+.form-user-name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  grid-area: name;
+  position: relative;
+}
+.form-user-name::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .form-user-name::after {
+    bottom: 0;
+  }
+}
+
+.form-user-phone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  grid-area: phone;
+  position: relative;
+}
+.form-user-phone::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .form-user-phone::after {
+    bottom: 0;
+  }
+}
+
+form button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  margin-top: 5px;
+  grid-area: button;
+  padding: 16px;
+  border: 3px solid #ffffff;
+  background: none;
+  color: #ffffff;
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.contacts {
+  width: 110%;
+  padding: 35px 56px 44px 125px;
+}
+@media (max-width: 1279px) {
+  .contacts {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .contacts {
+    padding: 20px 135px;
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .contacts {
+    padding-left: 80px;
+    padding-top: 42px;
+    padding-right: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding: 15px;
+  }
+}
+
+.contacts h3 {
+  font-family: "alumni";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 37px;
+  margin-left: 50px;
+}
+@media (max-width: 1023px) {
+  .contacts h3 {
+    margin-left: 52px;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts h3 {
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 48px;
+    margin-bottom: 35px;
+  }
+}
+
+.contacts ul {
+  margin-left: 54px;
+  padding-left: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+  row-gap: 15px;
+  position: relative;
+}
+.contacts ul::after {
+  content: "";
+  display: block;
+  height: 80%;
+  width: 1px;
+  background-color: #74819C;
+  position: absolute;
+  left: 46%;
+  top: 10%;
+}
+@media (max-width: 1023px) {
+  .contacts ul::after {
+    left: 48%;
+  }
+}
+@media (max-width: 767px) {
+  .contacts ul::after {
+    display: none;
+  }
+}
+@media (max-width: 1279px) {
+  .contacts ul {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .contacts ul {
+    -webkit-column-gap: 70px;
+       -moz-column-gap: 70px;
+            column-gap: 70px;
+    row-gap: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+.contacts ul li {
+  list-style: none;
+}
+
+.contacts ul li:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.contacts ul li:nth-child(4) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.contacts ul p {
+  margin-top: 0;
+  font-family: "roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #102654;
+  margin-bottom: 4px;
+}
+@media (max-width: 1023px) {
+  .contacts ul p {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 6px;
+  }
+}
+
+.contacts ul a {
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+}
+@media (max-width: 1023px) {
+  .contacts ul a {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
 }
 
 /* @mixin hover-focus {

@@ -1,0 +1,173 @@
+.reservation__form {
+  background-color: #102654;
+  width: 100%;
+  padding: 45px;
+
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 122px;
+    padding-top: 51px;
+    padding-bottom: 68px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+    padding-bottom: 70px;
+  }
+}
+
+.reservation__form h3 {
+  margin-left: 57px;
+  margin-top: 10px;
+  margin-bottom: 23px;
+  font-family: $ff-alumni;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @include vp-1279 {
+    margin-left: 10px;
+  }
+
+  @include vp-1023 {
+    text-align-last: left;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 48px;
+    letter-spacing: 0.015em;
+    margin-bottom: 31px;
+  }
+}
+
+form {
+  margin-left: 57px;
+  max-width: 410px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "name phone"
+    "button button";
+  gap: 30px;
+
+  @include vp-1279 {
+    margin-left: 10px;
+  }
+
+  @include vp-1023 {
+    max-width: 475px;
+    width: 100%;
+    column-gap: 56px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+form label {
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  cursor: pointer;
+
+}
+
+form input {
+  width: 100%;
+  background: none;
+  border: none;
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  outline: none;
+
+  @include vp-767 {
+    margin-bottom: 14px;
+  }
+}
+
+form input:focus-visible {
+  border: 2px solid #fff;
+}
+
+.form-user-name {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  grid-area: name;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-default-white;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+
+    @include vp-767 {
+      bottom: 0;
+    }
+  }
+}
+
+.form-user-phone {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  grid-area: phone;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-default-white;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+
+    @include vp-767 {
+      bottom: 0;
+    }
+  }
+}
+
+form button {
+  margin-top: 5px;
+  grid-area: button;
+  padding: 16px;
+  border: 3px solid $color-default-white;
+  background: none;
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

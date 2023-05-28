@@ -1,0 +1,19 @@
+.relations {
+  background: linear-gradient(to right,  #102654 0%,#102654 50%,#ffffff 50%);
+  border-top: 1px solid #74819c;
+
+  @include vp-1023 {
+    background: none;
+  }
+}
+
+.relations__wrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+
+  @include vp-1023 {
+    flex-direction: column;
+  }
+}

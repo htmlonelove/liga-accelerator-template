@@ -1,0 +1,138 @@
+.contacts {
+  width: 110%;
+  padding: 35px 56px 44px 125px;
+
+  @include vp-1279 {
+    padding-left: 20px;
+  }
+
+  @include vp-1023 {
+    padding: 20px 135px;
+    width: 100%;
+  }
+
+  @include vp-1023 {
+    padding-left: 80px;
+    padding-top: 42px;
+    padding-right: 80px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+  }
+}
+
+.contacts h3 {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-dark-blue;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 37px;
+  margin-left: 50px;
+
+  @include vp-1023 {
+    margin-left: 52px;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 32px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 48px;
+    margin-bottom: 35px;
+  }
+}
+
+.contacts ul {
+  margin-left: 54px;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  row-gap: 15px;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 80%;
+    width: 1px;
+    background-color: #74819C;
+    position: absolute;
+    left: 46%;
+    top: 10%;
+
+    @include vp-1023 {
+      left: 48%;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  @include vp-1279 {
+    column-gap: 50px;
+  }
+
+  @include vp-1023 {
+    column-gap: 70px;
+    row-gap: 18px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
+.contacts ul li {
+  list-style: none;
+}
+
+.contacts ul li:nth-child(2) {
+  order: 2;
+}
+
+.contacts ul li:nth-child(4) {
+  order: 2;
+}
+
+.contacts ul p {
+  margin-top: 0;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-dark-blue;
+  margin-bottom: 4px;
+
+  @include vp-1023 {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 6px;
+  }
+}
+
+.contacts ul a {
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-dark-blue;
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+}

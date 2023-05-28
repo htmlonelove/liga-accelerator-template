@@ -841,6 +841,70 @@
         </div>
       </section>
 
+      <section class="relations">
+
+        <div class="relations__wrapper">
+
+          <div class="reservation__form" id="reservation__form" data-form-validate data-callback="base">
+            <h3>Бесплатное занятие</h3>
+
+            <form id="form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
+
+              <div class="form-user-name is-valid is-invalid" data-validate-type="text" data-limitation="name"
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-required>
+
+                <label for="user-name">Имя</label>
+                <input type="text" id="user-name" required>
+
+              </div>
+
+              <div class="form-user-phone" data-validate-type="phone" data-on-input-validate
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+                data-required>
+
+                <label for="user-phone">Телефон</label>
+                <input type="tel" name="phone" id="user-phone" required aria-label="tel input">
+
+              </div>
+
+              <button type="submit">Отправить</button>
+
+            </form>
+
+          </div>
+
+          <div class="contacts">
+
+            <h3>Контакты</h3>
+            <ul>
+              <li>
+                <p>Адрес:</p>
+                <a href="https://goo.gl/maps/Wj1TrJddbE4sKHHb6" target="_blank">г. Омск, ул. 60 лет Октября, 7</a>
+              </li>
+
+              <li>
+                <p>Телефон:</p>
+                <a href="tel:+88005555555">8-800-555-55-55</a>
+              </li>
+
+              <li>
+                <p>График работы:</p>
+                <a href="#">Пн-Вс: с 8:00 до 22:00</a>
+              </li>
+              
+              <li>
+                <p>Email:</p>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </section>
+
     </main>
 
     <footer>
