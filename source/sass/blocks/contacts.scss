@@ -9,9 +9,7 @@
   @include vp-1023 {
     padding: 20px 135px;
     width: 100%;
-  }
-
-  @include vp-1023 {
+    margin-bottom: 26px;
     padding-left: 80px;
     padding-top: 42px;
     padding-right: 80px;
@@ -19,6 +17,7 @@
 
   @include vp-767 {
     padding: 15px;
+    margin-bottom: 33px;
   }
 }
 
@@ -99,11 +98,15 @@
 }
 
 .contacts ul li:nth-child(2) {
-  order: 2;
+  @include vp-767 {
+    order: 2;
+  }
 }
 
 .contacts ul li:nth-child(4) {
-  order: 2;
+  @include vp-767 {
+    order: 2;
+  }
 }
 
 .contacts ul p {

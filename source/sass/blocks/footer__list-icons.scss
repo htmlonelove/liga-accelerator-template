@@ -1,0 +1,17 @@
+.footer__list-icons {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 26px;
+
+
+  @include vp-767 {
+    margin-left: -11px;
+  }
+}
+
+.footer__list-icons li {
+  list-style: none;
+  margin-left: 11px;
+}
