@@ -18,7 +18,7 @@
   }
 }
 
-.articele__wrapper {
+.article__wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -45,6 +45,7 @@
 }
 
 .article__content span {
+  word-break: break-word;
   display: block;
   max-width: 120px;
   width: 100%;
@@ -63,7 +64,7 @@
   }
 
   @include vp-767 {
-    margin-right: -35px;
+    margin-right: -38px;
     margin-bottom: 53px;
   }
 }
@@ -85,6 +86,7 @@
 }
 
 .article__titles h1 {
+  word-break: break-word;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 93px;

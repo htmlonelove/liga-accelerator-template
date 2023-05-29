@@ -1,4 +1,4 @@
-.reservation__form {
+.relations__form {
   background-color: #102654;
   width: 100%;
   padding: 45px;
@@ -18,7 +18,7 @@
   }
 }
 
-.reservation__form h3 {
+.relations__form h3 {
   margin-left: 57px;
   margin-top: 10px;
   margin-bottom: 23px;
@@ -37,7 +37,7 @@
     text-align-last: left;
     font-size: 42px;
     line-height: 50px;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.03em;
     margin-bottom: 37px;
   }
 
@@ -46,8 +46,8 @@
     font-size: 32px;
     line-height: 38px;
     margin-top: 48px;
-    letter-spacing: 0.015em;
-    margin-bottom: 31px;
+    letter-spacing: 0.01em;
+    margin-bottom: 38px;
   }
 }
 
@@ -76,7 +76,6 @@ form {
     display: flex;
     flex-direction: column;
   }
-
 }
 
 form label {
@@ -87,7 +86,6 @@ form label {
   line-height: 16px;
   color: $color-default-white;
   cursor: pointer;
-
 }
 
 form input {
@@ -104,11 +102,10 @@ form input {
 }
 
 form input:focus-visible {
-  box-shadow: 0 0 0 2px #fff;
+  box-shadow: 0 0 0 1px #ffffff;
 }
 
 .form-user-name {
-  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -116,7 +113,7 @@ form input:focus-visible {
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 2px;
@@ -141,7 +138,6 @@ form input:focus-visible {
 }
 
 .form-user-phone {
-  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -149,7 +145,7 @@ form input:focus-visible {
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 2px;
@@ -157,7 +153,6 @@ form input:focus-visible {
     position: absolute;
     bottom: -6px;
     left: 0;
-
   }
 
   @include vp-767 {
@@ -167,7 +162,7 @@ form input:focus-visible {
 
 form button {
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 3px;
   grid-area: button;
   padding: 16px;
   border: 3px solid $color-default-white;
@@ -183,5 +178,9 @@ form button {
 
   &:hover {
     opacity: 0.6;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
   }
 }

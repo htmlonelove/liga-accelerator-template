@@ -4,7 +4,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1160px;
-  background-color: #ED0233;
+  background-color: #ed0233;
   margin-bottom: 106px;
 
   @include vp-1023 {
@@ -27,7 +27,6 @@
   @include vp-767 {
     padding: 67px 15px 54px;
   }
-
 }
 
 .promo img {
@@ -108,11 +107,6 @@
     line-height: 150%;
     margin-bottom: 0;
   }
-
-}
-
-.promo__date-sub p {
-  font-size: 14px;
 }
 
 .promo__wrapp-date span {
@@ -138,9 +132,25 @@
 .promo__date-sub {
   display: flex;
   justify-content: flex-start;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-white;
+
+    @include vp-1023 {
+      top: 0;
+    }
+  }
 }
 
 .promo__date-sub p {
+  font-size: 14px;
   max-width: 40px;
 
   @include vp-1023 {
@@ -181,26 +191,6 @@
 
   @include vp-1023 {
     margin-bottom: 0;
-
-  }
-}
-
-.promo__date-sub {
-
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: -4px;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: $color-default-white;
-
-    @include vp-1023 {
-      top: 0;
-    }
   }
 }
 
@@ -211,7 +201,7 @@
     position: absolute;
     top: -4px;
     left: 0;
-    content: '';
+    content: "";
     width: 90%;
     height: 1px;
     background-color: $color-default-white;
@@ -227,7 +217,8 @@
 }
 
 .promo__wrapper h4 {
-  letter-spacing: 0.015em;
+  word-wrap: break-word;
+  letter-spacing: 0.01em;
   margin-right: auto;
   margin-top: 6px;
   margin-bottom: 44px;
@@ -250,7 +241,7 @@
     margin-top: -10px;
     margin-left: -10px;
     margin-bottom: 29px;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.01em;
   }
 }
 

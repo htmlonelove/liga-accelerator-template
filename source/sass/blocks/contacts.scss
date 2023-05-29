@@ -17,7 +17,7 @@
 
   @include vp-767 {
     padding: 15px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 }
 
@@ -30,7 +30,7 @@
   color: $color-dark-blue;
   text-align: left;
   margin-top: 20px;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
   margin-left: 50px;
 
   @include vp-1023 {
@@ -59,11 +59,11 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     height: 80%;
     width: 1px;
-    background-color: #74819C;
+    background-color: #74819c;
     position: absolute;
     left: 46%;
     top: 10%;
@@ -116,7 +116,7 @@
   font-size: 16px;
   line-height: 150%;
   color: $color-dark-blue;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 
   @include vp-1023 {
     font-size: 20px;
@@ -133,9 +133,14 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-dark-blue;
+  transition: opacity, 08s;
 
   @include vp-1023 {
     font-size: 18px;
     line-height: 152.34%;
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 }

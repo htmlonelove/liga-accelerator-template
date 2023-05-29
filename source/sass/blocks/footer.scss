@@ -7,6 +7,7 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 40px 103px;
@@ -18,11 +19,12 @@
   @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
-    padding: 46px 15px 26px;
+    padding: 46px 15px 18px;
   }
 }
 
 .footer a {
+  transition: opacity, 0.5s;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 26px;
@@ -30,7 +32,7 @@
   letter-spacing: 0.02em;
   color: $color-default-white;
   margin-top: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 
   @include vp-1023 {
     font-size: 24px;
@@ -43,10 +45,6 @@
     font-size: 20px;
     line-height: 24px;
   }
-}
-
-.footer a {
-  transition: opacity, 0.5s;
 
   &:hover {
     opacity: 0.8;

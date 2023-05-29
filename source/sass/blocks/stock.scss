@@ -8,7 +8,7 @@
 
 
   @include vp-767 {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 }
 
@@ -77,7 +77,7 @@
 
 .stock__desc {
   padding: 41px 45px;
-  background-color: #ED0233;
+  background-color: #ed0233;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -105,6 +105,7 @@
 }
 
 .stock__desc h4 {
+  word-wrap: break-word;
   font-family: $ff-roboto;
   font-weight: 700;
   font-size: 70px;
@@ -112,7 +113,6 @@
   color: $color-default-white;
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
 .stock__desc p {
@@ -147,6 +147,7 @@
 }
 
 .stock__abonement img {
+  background-color: #4a7ee5;
 
   @include vp-1023 {
     min-width: 399px;
@@ -190,7 +191,6 @@
   padding: 7px;
   list-style: none;
   width: 100%;
-  height: 100%;
   height: min-content;
 }
 
@@ -214,7 +214,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 100%;
-  color: #1C3374;
+  color: #1c3374;
   margin-bottom: 10px;
 }
 
@@ -223,7 +223,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #1C3374;
+  color: #1c3374;
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -241,18 +241,23 @@
   line-height: 14px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1C3374;
+  color: #1c3374;
   margin-top: 30px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #1C3374;
+  border-bottom: 1px solid #1c3374;
   display: block;
   position: absolute;
   left: 28px;
   bottom: 18px;
+  transition: opacity, 0.8s;
 
   @include vp-767 {
     left: 50%;
     bottom: 11%;
     transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 }

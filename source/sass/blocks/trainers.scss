@@ -14,7 +14,7 @@
   }
 }
 
-.trainers>.container {
+.trainers > .container {
   @include vp-767 {
     padding: 0;
     padding-bottom: 200px;
@@ -52,6 +52,7 @@
 }
 
 .trainers__description h3 {
+  word-break: break-all;
   font-family: $ff-alumni;
   font-weight: 600;
   font-size: 48px;
@@ -79,13 +80,14 @@
 }
 
 .trainers__description h4 {
+  word-break: break-all;
   font-family: $ff-roboto;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   margin-top: 0;
   margin-bottom: 39px;
-  letter-spacing: 0.009em;
+  letter-spacing: 0.01em;
   color: $color-dark-blue;
 
   @include vp-1023 {
@@ -146,7 +148,6 @@
     top: 111.5%;
     bottom: -120px;
   }
-
 }
 
 .trainers__wrapper img {
@@ -164,5 +165,4 @@
   @include vp-767 {
     margin-top: 0;
   }
-
 }

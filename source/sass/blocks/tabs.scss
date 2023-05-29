@@ -2,10 +2,6 @@
   margin: 0 auto;
 }
 
-.tabs__content {
-  width: 100%;
-}
-
 .tabs__controls {
   max-width: 338px;
   width: 100%;
@@ -16,7 +12,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     z-index: 1;
     display: block;
     width: 100%;
@@ -67,11 +63,11 @@
   }
 
   &.is-active::after {
-    content: '';
+    content: "";
     display: block;
     height: 2px;
     width: 100%;
-    background-color: #D10A42;
+    background-color: #d10a42;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -79,6 +75,7 @@
 }
 
 .tabs__content {
+  width: 100%;
   margin-bottom: 40px;
   transition: height 0.3s;
 }
@@ -126,7 +123,7 @@
   font-weight: 700;
   font-size: 100px;
   line-height: 150%;
-  color: #E8E8E8;
+  color: #e8e8e8;
   opacity: 0.48;
   margin-bottom: 30px;
 
@@ -138,12 +135,11 @@
 }
 
 .tabs__price p {
-  position: relative;
   font-family: $ff-roboto;
   font-weight: 700;
   font-size: 60px;
   line-height: 150%;
-  color: #103AAE;
+  color: #103aae;
   position: absolute;
   top: -6px;
   left: 39%;
@@ -154,8 +150,8 @@
     line-height: 150%;
   }
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     width: 30px;
     height: 42px;
     display: block;
@@ -170,7 +166,6 @@
       height: 33px;
       background-image: url("../img/rubm.svg");
     }
-
   }
 }
 
@@ -196,7 +191,7 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: #495A7D;
+  color: #495a7d;
   margin-top: 0;
   margin-bottom: 11px;
 }
@@ -229,22 +224,21 @@
     background: linear-gradient(rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
   }
 
-  &:hover>.tabs__card a {
+  &:hover > .tabs__card a {
     color: $color-default-white;
     box-shadow: none;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 
   &:focus-within {
     background: linear-gradient(rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
   }
 
-  &:focus-within>.tabs__card a {
+  &:focus-within > .tabs__card a {
     color: $color-default-white;
     box-shadow: none;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   }
-
 }
 
 .tabs--unset .tabs__content {

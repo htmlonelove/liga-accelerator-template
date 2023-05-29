@@ -1,5 +1,5 @@
 .abonements {
-  background: linear-gradient(to bottom, #F8F9FC 91.5%, #fff 91.5%, #fff 10%);
+  background: linear-gradient(to bottom, #f8f9fc 91.5%, #ffffff 91.5%, #ffffff 10%);
   padding: 120px 60px 161px;
   margin-bottom: 40px;
   overflow: hidden;
@@ -7,13 +7,13 @@
   @include vp-1023 {
     padding-top: 101px;
     margin-bottom: 2px;
-    background: linear-gradient(to bottom, #F8F9FC 95%, #fff 95%, #fff 10%);
+    background: linear-gradient(to bottom, #f8f9fc 95%, #ffffff 95%, #ffffff 10%);
   }
 
   @include vp-767 {
     padding: 64px 0 30px;
     background: none;
-    background-color: #ebecf1d9;
+    background-color: rgba(235, 236, 241, 0.85);
   }
 }
 
@@ -29,7 +29,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: " ";
     width: 400px;
     height: 415px;
     background-image: url("../img/desctop-blins1x.png");

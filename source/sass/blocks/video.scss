@@ -21,23 +21,16 @@
 }
 
 .video__container {
-
-@include vp-767 {
-  max-width: 767px;
-  width: 100%;
-  height:100%;
-}
+  @include vp-767 {
+    max-width: 767px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .video__container iframe {
   width: 100%;
   height: 100%;
-}
-
-.video img {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .video button {
@@ -46,15 +39,13 @@
   outline: none;
   position: absolute;
   z-index: 10;
-  top: 35%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
-  transform: scale(1);
-  transition-property: transform;
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   transition-duration: 1s;
 
   @include vp-1023 {
@@ -65,11 +56,10 @@
   @include vp-767 {
     width: 50px;
     height: 50px;
-    left: 42.5%;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 35%;
     left: 45%;
@@ -84,12 +74,12 @@
       width: 4px;
       height: 4px;
       border: 7px solid transparent;
-      border-left: 12px solid #fff;
+      border-left: 12px solid #ffffff;
     }
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20%;
     left: -21%;
@@ -114,13 +104,11 @@
   &:focus-visible {
     box-shadow: 0 0 0 2px $color-default-black;
   }
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 .video img {
+  top: 0;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -132,12 +120,11 @@
   height: 100%;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     background: rgba(20, 54, 122, 0.5);
-
   }
 }
