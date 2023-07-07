@@ -3,12 +3,19 @@
   padding: 10px 20px;
 
   color: $color-default-white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
 
   background-color: $color-neon-blue;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
+
+
+
 
   &--red {
     background-color: $color-torch-red;

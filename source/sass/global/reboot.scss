@@ -15,9 +15,9 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  line-height: 16px;
+  font-family: "Roboto Condensed";
+  color: $color-default-blue;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: $color-default-black;
+  color: $color-default-blue;
   text-decoration: none;
 }
 
