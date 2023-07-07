@@ -367,7 +367,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 16px;
   font-family: "Roboto Condensed";
   color: #000000;
   -webkit-font-smoothing: antialiased;
@@ -558,7 +558,22 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 40px;
+}
+@media (max-width: 1439px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 16px;
+  }
 }
 
 .btn {
@@ -567,6 +582,10 @@ button,
   display: inline-flex;
   padding: 10px 20px;
   color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
   background-color: #2c39f2;
   border: none;
   cursor: pointer;

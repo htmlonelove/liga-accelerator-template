@@ -17,7 +17,7 @@ html {
   font-size: $fz-default;
   line-height: 16px;
   font-family: "Roboto Condensed";
-  color: $color-default-blue;
+  color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  color: $color-default-blue;
+  color: $color-default-black;
   text-decoration: none;
 }
 
