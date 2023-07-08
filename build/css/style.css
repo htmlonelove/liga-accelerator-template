@@ -317,21 +317,21 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: "";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-300.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-500.woff2") format("woff2");
 }
@@ -1238,7 +1238,43 @@ button,
   color: #15ab07;
 }
 
-/* @mixin hover-focus {
+.header {
+  min-height: 80px;
+  background-color: #003d85;
+  background-image: url("/img/back.jpg");
+  background-size: cover;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.header__phone {
+  color: #ffffff;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: right;
+  width: 154px;
+  height: 32px;
+  letter-spacing: 0.7px;
+  display: block;
+  position: relative;
+  left: 14px;
+}
+
+.header__logo {
+  margin: 0;
+  padding: 10px 0 0 70px;
+} /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
