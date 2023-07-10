@@ -1,0 +1,20 @@
+.footer {
+  background-color: #030a1a;
+  min-height: 108px;
+}
+
+.footer__wrapper {
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+  padding: 0 20px 0 40px;
+}
+
+.footer__logo {
+  display: block;
+  position: relative;
+  top: 53px;
+  left: 30px;
+  width: 88px;
+  height: 32px;
+}

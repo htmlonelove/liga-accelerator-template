@@ -28,7 +28,7 @@
             <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
           </picture>
         </a>
-        <a class="header__phone" href="tel:+7(800)555-55-55" class="tell">
+        <a class="header__phone" href="tel:+7(800)555-55-55">
           8-800-555-55-55
         </a>
       </div>
@@ -240,45 +240,48 @@
           </div>
         </section>
 
+        <div class="wrapper">
+          <div class="order">
+            <form class="order-form" action="#" method="post">
+              <fieldset class="order-form__fieldset fieldset">
+                <h2 class="fieldset__title">Бесплатное занятие</h2>
+                <ul class="fieldset__list">
+                  <li class="fieldset__item">
+                    <label class="fieldset__label" for="autor-name">Имя</label>
+                    <input class="fieldset__input" type="text" name="name" id="autor-name" value="Имя">
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label" for="autor-phone">Телефон</label>
+                    <input class="fieldset__input" type="text" name="surname" id="autor-phone" value="Телефон">
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <dl>
+              <dt>Адрес:</dt>
+              <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+              <dt>График работы:</dt>
+              <dd>Пн-Вс: с 8:00 до 22:00</dd>
+            </dl>
+            <dl>
+              <dt>Телефон:</dt>
+              <dd><a href="tel:+7(800)555-55-55" class="tell">
+                  8-800-555-55-55
+                </a></dd>
+              <dt>Email:</dt>
+              <dd> <a href="mailto:omsk@supergym.ru" class="email">omsk@supergym.ru</a></dd>
+            </dl>
+          </div>
+        </div>
       </div>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <div class="order">
-          <form class="order-form" action="#" method="post">
-            <fieldset class="order-form__fieldset fieldset">
-              <h2 class="fieldset__title">Бесплатное занятие</h2>
-              <ul class="fieldset__list">
-                <li class="fieldset__item">
-                  <label class="fieldset__label" for="autor-name">Имя</label>
-                  <input class="fieldset__input" type="text" name="name" id="autor-name" value="Имя">
-                </li>
-                <li class="fieldset__item">
-                  <label class="fieldset__label" for="autor-phone">Телефон</label>
-                  <input class="fieldset__input" type="text" name="surname" id="autor-phone" value="Телефон">
-                </li>
-              </ul>
-            </fieldset>
-          </form>
-        </div>
-        <div class="footer__contacts contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <dl>
-            <dt>Адрес:</dt>
-            <dd>г. Омск, ул. 60 лет Октября, 7</dd>
-            <dt>График работы:</dt>
-            <dd>Пн-Вс: с 8:00 до 22:00</dd>
-          </dl>
-          <dl>
-            <dt>Телефон:</dt>
-            <dd><a href="tel:+7(800)555-55-55" class="tell">
-                8-800-555-55-55
-              </a></dd>
-            <dt>Email:</dt>
-            <dd> <a href="mailto:omsk@supergym.ru" class="email">omsk@supergym.ru</a></dd>
-          </dl>
-        </div>
         <div class="footer__wrapper">
           <a class="footer__logo">
             <picture>
@@ -309,16 +312,25 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Вконтакте</span>
                 </a>
               </li>
-                    <li class="social__item">
+              <li class="social__item">
                 <a class="social__link social__link--ok" href="#">
+                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Одноклассниках</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--reddit" href="#">
+                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                    <use xlink:href="img/sprite.svg#reddit"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Реддит</span>
                 </a>
               </li>

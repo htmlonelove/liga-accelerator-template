@@ -1,0 +1,29 @@
+.social {
+  display: block;
+  position: relative;
+  top: 25px;
+  left: 32px;
+}
+
+.social__list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.social__link {
+  fill: #ffffff;
+  width: 12px;
+  height: 6.94px;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  background-color: #dadada;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
