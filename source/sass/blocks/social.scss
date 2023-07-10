@@ -3,6 +3,13 @@
   position: relative;
   top: 25px;
   left: 32px;
+
+  @include vp-767 {
+    padding: 0;
+    margin: 0;
+    left: -20px;
+    top: 30px;
+  }
 }
 
 .social__list {

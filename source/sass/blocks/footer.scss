@@ -8,6 +8,13 @@
   gap: 70px;
   justify-content: space-between;
   padding: 0 20px 0 40px;
+
+  @include vp-767 {
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
 }
 
 .footer__logo {
@@ -17,4 +24,11 @@
   left: 30px;
   width: 88px;
   height: 32px;
+
+  @include vp-767 {
+    width: 82px;
+    height: 18px;
+    top: 50px;
+    left: 14px;
+  }
 }

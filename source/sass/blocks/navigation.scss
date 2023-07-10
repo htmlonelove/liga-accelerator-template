@@ -3,12 +3,21 @@
   position: relative;
   top: 33px;
   left: 36px;
+
+  @include vp-767 {
+    top: 35px;
+    left: 3px;
+  }
 }
 
 .navigation__list {
   list-style: none;
   display: flex;
   gap: 41px;
+
+  @include vp-767 {
+    gap: 30px;
+  }
 }
 
 .navigation__link {
