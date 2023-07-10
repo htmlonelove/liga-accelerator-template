@@ -10,6 +10,11 @@
     left: -20px;
     top: 30px;
   }
+
+  @include vp-374 {
+    top: 23px;
+    left: -42px;
+  }
 }
 
 .social__list {

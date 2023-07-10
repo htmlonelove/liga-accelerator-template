@@ -1,6 +1,10 @@
 .footer {
   background-color: #030a1a;
   min-height: 108px;
+
+  @include vp-374 {
+    min-height: 260px;
+  }
 }
 
 .footer__wrapper {
@@ -14,6 +18,20 @@
     padding: 0;
     margin: 0;
     gap: 10px;
+  }
+
+  @include vp-374 {
+    flex-direction: column;
+  }
+}
+
+.footer__wrapper--nav {
+  @include vp-374 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 90px;
+    flex-wrap: wrap;
   }
 }
 
@@ -30,5 +48,12 @@
     height: 18px;
     top: 50px;
     left: 14px;
+  }
+
+  @include vp-374 {
+    width: 68px;
+    height: 15px;
+    top: 6px;
+    left: -2px;
   }
 }

@@ -1322,6 +1322,11 @@ button,
   background-color: #030a1a;
   min-height: 108px;
 }
+@media (max-width: 374px) {
+  .footer {
+    min-height: 260px;
+  }
+}
 
 .footer__wrapper {
   display: -webkit-box;
@@ -1342,6 +1347,30 @@ button,
     gap: 10px;
   }
 }
+@media (max-width: 374px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 374px) {
+  .footer__wrapper--nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    max-width: 90px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .footer__logo {
   display: block;
@@ -1359,6 +1388,14 @@ button,
     left: 14px;
   }
 }
+@media (max-width: 374px) {
+  .footer__logo {
+    width: 68px;
+    height: 15px;
+    top: 6px;
+    left: -2px;
+  }
+}
 
 .social {
   display: block;
@@ -1372,6 +1409,12 @@ button,
     margin: 0;
     left: -20px;
     top: 30px;
+  }
+}
+@media (max-width: 374px) {
+  .social {
+    top: 23px;
+    left: -42px;
   }
 }
 
@@ -1416,8 +1459,22 @@ button,
 }
 @media (max-width: 767px) {
   .navigation {
-    top: 35px;
-    left: 3px;
+    top: 48px;
+    left: -40px;
+  }
+}
+@media (max-width: 374px) {
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    max-width: 90px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    top: 32px;
+    left: -42px;
   }
 }
 
@@ -1433,6 +1490,18 @@ button,
     gap: 30px;
   }
 }
+@media (max-width: 374px) {
+  .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 120px;
+    gap: 23px;
+  }
+}
 
 .navigation__link {
   color: #ffffff;
@@ -1443,6 +1512,15 @@ button,
   font-weight: 400;
   line-height: 16px;
   text-align: left;
+}
+@media (max-width: 374px) {
+  .navigation__item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    min-width: 135px;
+  }
 }
 
 /* @mixin hover-focus {

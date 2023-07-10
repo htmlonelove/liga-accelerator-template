@@ -5,8 +5,17 @@
   left: 36px;
 
   @include vp-767 {
-    top: 35px;
-    left: 3px;
+    top: 48px;
+    left: -40px;
+  }
+
+  @include vp-374 {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 90px;
+    flex-wrap: wrap;
+    top: 32px;
+    left: -42px;
   }
 }
 
@@ -17,6 +26,13 @@
 
   @include vp-767 {
     gap: 30px;
+  }
+
+  @include vp-374 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 120px;
+    gap: 23px;
   }
 }
 
@@ -29,4 +45,12 @@
   font-weight: 400;
   line-height: 16px;
   text-align: left;
+
+  @include vp-374 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    min-width: 135px;
+  }
 }
