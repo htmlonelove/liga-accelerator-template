@@ -38,16 +38,15 @@
 .footer__logo {
   display: block;
   position: relative;
-  top: 53px;
-  left: 30px;
+  left: -108px;
   width: 88px;
   height: 32px;
 
   @include vp-767 {
     width: 82px;
     height: 18px;
-    top: 50px;
-    left: 14px;
+    top: -2px;
+    left: 28px;
   }
 
   @include vp-374 {

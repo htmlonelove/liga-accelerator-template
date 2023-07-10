@@ -2,12 +2,12 @@
   display: block;
   position: relative;
   top: 25px;
-  left: 32px;
+  left: -30px;
 
   @include vp-767 {
     padding: 0;
     margin: 0;
-    left: -20px;
+    left: -40px;
     top: 30px;
   }
 

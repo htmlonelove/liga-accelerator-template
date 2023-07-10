@@ -1375,8 +1375,7 @@ button,
 .footer__logo {
   display: block;
   position: relative;
-  top: 53px;
-  left: 30px;
+  left: -108px;
   width: 88px;
   height: 32px;
 }
@@ -1384,8 +1383,8 @@ button,
   .footer__logo {
     width: 82px;
     height: 18px;
-    top: 50px;
-    left: 14px;
+    top: -2px;
+    left: 28px;
   }
 }
 @media (max-width: 374px) {
@@ -1401,13 +1400,13 @@ button,
   display: block;
   position: relative;
   top: 25px;
-  left: 32px;
+  left: -30px;
 }
 @media (max-width: 767px) {
   .social {
     padding: 0;
     margin: 0;
-    left: -20px;
+    left: -40px;
     top: 30px;
   }
 }
@@ -1454,12 +1453,11 @@ button,
 .navigation {
   display: block;
   position: relative;
-  top: 33px;
+  top: 35px;
   left: 36px;
 }
 @media (max-width: 767px) {
   .navigation {
-    top: 48px;
     left: -40px;
   }
 }
@@ -1483,7 +1481,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 41px;
+  gap: 40px;
 }
 @media (max-width: 767px) {
   .navigation__list {
@@ -1520,6 +1518,15 @@ button,
     line-height: 19px;
     text-align: left;
     min-width: 135px;
+  }
+}
+
+.navigation__item:nth-child(1) {
+  padding-right: 130px;
+}
+@media (max-width: 767px) {
+  .navigation__item:nth-child(1) {
+    padding-right: 60px;
   }
 }
 

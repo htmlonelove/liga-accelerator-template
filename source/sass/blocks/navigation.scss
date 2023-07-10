@@ -1,11 +1,10 @@
 .navigation {
   display: block;
   position: relative;
-  top: 33px;
+  top: 35px;
   left: 36px;
 
   @include vp-767 {
-    top: 48px;
     left: -40px;
   }
 
@@ -22,7 +21,7 @@
 .navigation__list {
   list-style: none;
   display: flex;
-  gap: 41px;
+  gap: 40px;
 
   @include vp-767 {
     gap: 30px;
@@ -52,5 +51,13 @@
     line-height: 19px;
     text-align: left;
     min-width: 135px;
+  }
+}
+
+.navigation__item:nth-child(1) {
+  padding-right: 130px;
+
+  @include vp-767 {
+    padding-right: 60px;
   }
 }
