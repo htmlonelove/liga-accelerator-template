@@ -1602,11 +1602,11 @@ button,
   margin: 0;
   padding: 0;
   top: 294px;
-  left: 203px;
+  left: 200px;
 }
 @media (max-width: 767px) {
   .hero__title {
-    font-size: 82px;
+    font-size: 72px;
     line-height: 86px;
     width: 235px;
     font-weight: 700;
@@ -1618,7 +1618,6 @@ button,
 @media (max-width: 374px) {
   .hero__title {
     width: 213px;
-    font-size: 72px;
     text-align: right;
     left: 95px;
     top: 234px;
@@ -1631,7 +1630,7 @@ button,
   font-size: 38px;
   font-weight: 600;
   line-height: 58px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
   display: block;
@@ -1644,6 +1643,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero__sity {
+    letter-spacing: 0.05em;
     font-size: 30px;
     line-height: 41px;
     left: 306px;
