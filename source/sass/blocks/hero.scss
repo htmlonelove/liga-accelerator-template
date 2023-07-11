@@ -1,0 +1,80 @@
+.hero {
+  background-image: url("/img/back.jpg");
+  background-size: cover;
+  display: block;
+  position: relative;
+  top: -140px;
+  min-height: 718px;
+}
+
+.hero__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 92px;
+  font-weight: 600;
+  line-height: 110px;
+  letter-spacing: 5px;
+  text-align: right;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 298px;
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 294px;
+  left: 203px;
+}
+
+.hero__photo {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 112px;
+  right: 220px;
+}
+
+.hero__sity {
+  color: #ffffff;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+  width: 133px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  left: 366px;
+  top: 5px;
+}
+
+.hero__list {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  color: #ffffff;
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 113px;
+  top: 138px;
+  left: 120px;
+}
+
+.hero__btn {
+  display: block;
+  width: 235px;
+  height: 62px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: $color-default-white solid 4px;
+  position: relative;
+  top: 222px;
+  left: 265px;
+}

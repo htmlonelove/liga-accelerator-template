@@ -3,6 +3,7 @@
   background-color: #003d85;
   background-image: url("/img/back.jpg");
   background-size: cover;
+  z-index: 2;
 
   @include vp-767 {
     min-height: 60px;
