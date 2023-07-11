@@ -31,7 +31,7 @@
   font-family: "Roboto Condensed";
 
   font-display: swap;
-  src: url("/fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -40,5 +40,24 @@
   font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("/fonts/AlumniSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/AlumniSans-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: bold;
+  font-weight: 600;
+  font-family: "Alumni Sans";
+
+  font-display: swap;
+  src: url("../fonts/AlumniSans-600.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-style: medium;
+  font-weight: 500;
+  font-family: "Alumni Sans";
+
+  font-display: swap;
+  src: url("../fonts/AlumniSans-500.woff2") format("woff2");
 }

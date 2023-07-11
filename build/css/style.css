@@ -340,14 +340,28 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("/fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 @font-face {
   font-style: bold;
   font-weight: 700;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("/fonts/AlumniSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/AlumniSans-700.woff2") format("woff2");
+}
+@font-face {
+  font-style: bold;
+  font-weight: 600;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/AlumniSans-600.woff2") format("woff2");
+}
+@font-face {
+  font-style: medium;
+  font-weight: 500;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/AlumniSans-500.woff2") format("woff2");
 }
 *,
 *::before,
@@ -1240,8 +1254,7 @@ button,
 
 .header {
   min-height: 80px;
-  background-color: #003d85;
-  background-image: url("/img/back.jpg");
+  background-color: transparent;
   background-size: cover;
   z-index: 2;
 }
@@ -1539,6 +1552,30 @@ button,
   top: -140px;
   min-height: 718px;
 }
+@media (max-width: 767px) {
+  .hero {
+    min-height: 634px;
+  }
+}
+
+.hero__photo {
+  position: absolute;
+  z-index: 3;
+  top: 112px;
+  right: 220px;
+  width: 500px;
+  height: 556px;
+  background-image: url("/img/hero/hero-man.jpg");
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .hero__photo {
+    width: 324px;
+    height: 390px;
+    top: 160px;
+    right: 45px;
+  }
+}
 
 .hero__title {
   font-family: "Alumni Sans", sans-serif;
@@ -1557,13 +1594,17 @@ button,
   top: 294px;
   left: 203px;
 }
-
-.hero__photo {
-  display: block;
-  position: absolute;
-  z-index: 3;
-  top: 112px;
-  right: 220px;
+@media (max-width: 767px) {
+  .hero__title {
+    font-size: 82px;
+    line-height: 86px;
+    width: 235px;
+    letter-spacing: 0;
+    font-weight: 700;
+    top: 258px;
+    left: 135px;
+    text-transform: none;
+  }
 }
 
 .hero__sity {
@@ -1583,6 +1624,15 @@ button,
   left: 366px;
   top: 5px;
 }
+@media (max-width: 767px) {
+  .hero__sity {
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    left: 306px;
+    top: 40px;
+  }
+}
 
 .hero__list {
   list-style: none;
@@ -1599,17 +1649,36 @@ button,
   top: 138px;
   left: 120px;
 }
+@media (max-width: 767px) {
+  .hero__list {
+    left: 45px;
+    top: 133px;
+  }
+}
 
 .hero__btn {
   display: block;
   width: 235px;
   height: 62px;
-  letter-spacing: 1px;
   background-color: transparent;
   border: #ffffff solid 4px;
   position: relative;
   top: 222px;
   left: 265px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .hero__btn {
+    width: 185px;
+    height: 57px;
+    top: 192px;
+    left: 185px;
+  }
 }
 
 /* @mixin hover-focus {
