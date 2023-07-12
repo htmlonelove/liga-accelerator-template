@@ -1256,6 +1256,9 @@ button,
   min-height: 80px;
   background-color: transparent;
   z-index: 2;
+  display: block;
+  position: absolute;
+  min-width: 100%;
 }
 @media (max-width: 767px) {
   .header {
@@ -1546,7 +1549,6 @@ button,
 .hero {
   display: block;
   position: relative;
-  top: -140px;
   min-height: 718px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
@@ -1730,11 +1732,33 @@ button,
   left: 130px;
   gap: 85px;
 }
+@media (max-width: 767px) {
+  .gim {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 0;
+    top: -40px;
+  }
+}
 
 .gim__wrapper {
   width: 355px;
   min-height: 314px;
   display: block;
+}
+@media (max-width: 767px) {
+  .gim__wrapper {
+    width: 502px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 374px) {
+  .gim__wrapper {
+    width: 258px;
+  }
 }
 
 .gim__title {
@@ -1747,6 +1771,21 @@ button,
   margin: 0;
   padding: 40px 0 0;
 }
+@media (max-width: 767px) {
+  .gim__title {
+    font-size: 42px;
+    line-height: 50.4px;
+    text-align: center;
+    padding: 0 120px 0 105px;
+  }
+}
+@media (max-width: 374px) {
+  .gim__title {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left;
+  }
+}
 
 .gim__description {
   font-size: 18px;
@@ -1756,15 +1795,41 @@ button,
   margin: 0;
   padding: 5px 0 35px;
 }
+@media (max-width: 767px) {
+  .gim__description {
+    text-align: center;
+    padding: 0 0 35px;
+  }
+}
 
 .gim__detail {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
+  font-weight: 300;
   line-height: 24px;
   text-align: left;
   margin: 0;
   padding: 5px 0 2px;
   letter-spacing: -0.01em;
+}
+@media (max-width: 767px) {
+  .gim__detail {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 374px) {
+  .gim__detail {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .gim__photo {
+    width: 678px;
+    height: 345px;
+  }
 }
 
 .gim__video {
@@ -1777,6 +1842,12 @@ button,
   background: -webkit-gradient(linear, left top, right top, from(rgba(20, 54, 122, 0.5)), to(rgba(20, 54, 122, 0.5))), url("/img/gim/video.jpg");
   background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg");
   background-size: contain;
+}
+@media (max-width: 767px) {
+  .gim__video {
+    width: 266px;
+    height: 167px;
+  }
 }
 
 .gim__play {
