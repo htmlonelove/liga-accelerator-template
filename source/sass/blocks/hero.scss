@@ -1,10 +1,10 @@
 .hero {
-  background-image: url("/img/back.jpg");
-  background-size: cover;
   display: block;
   position: relative;
   top: -140px;
   min-height: 718px;
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
 
   @include vp-767 {
     min-height: 634px;
@@ -52,7 +52,8 @@
   margin: 0;
   padding: 0;
   top: 294px;
-  left: 200px;
+  left: 202px;
+  text-shadow: 0 0 2px #ffffff;
 
 
   @include vp-767 {

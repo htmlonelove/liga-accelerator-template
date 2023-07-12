@@ -9,12 +9,15 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/favicon.ico" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="/fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="/fonts/AlumniSans-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/AlumniSans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/AlumniSans-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/RobotoCondensed-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/RobotoCondensed-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <title>liga-accelerator-template</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -49,21 +52,27 @@
           <button class="hero__btn btn">Купить абонемент</button>
         </div>
       </section>
+
       <div class="container">
+
         <section class="gim">
           <div class="gim__wrapper">
             <h2 class="gim__title">Тренажерный зал</h2>
             <p class="gim__description">Просторный зал площадью 900 кв/м</p>
             <p class="gim__detail">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела
-              и
-              здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p class="gim__detail">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также
+              в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
           </div>
           <div class="gim__media">
             <div class="gim__photo">
               <img src="./img/gim/main.jpg" alt="Фото тернажерного зала." width="660" height="401">
             </div>
+             <div class="gim__play">
+              <img src="./img/gim/play.png" alt="Запустить видео." width="100" height="100">
+            </div>
             <div class="gim__video">
-              <img src="./img/gim/video.jpg" alt="Видео из тернажерного зала." width="364" height="228">
+              <span class="visually-hidden">Блок с видео из зала</span>
             </div>
           </div>
         </section>

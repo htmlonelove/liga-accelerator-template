@@ -1,7 +1,6 @@
 .header {
   min-height: 80px;
   background-color: transparent;
-  background-size: cover;
   z-index: 2;
 
   @include vp-767 {
@@ -50,7 +49,7 @@
 
 .header__logo {
   margin: 0;
-  padding: 12px 0 0 70px;
+  padding: 9px 0 0 69px;
   display: block;
   position: relative;
 
