@@ -1549,35 +1549,34 @@ button,
 .hero {
   display: block;
   position: relative;
-  min-height: 718px;
+  min-height: 658px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 @media (max-width: 767px) {
   .hero {
-    min-height: 634px;
+    min-height: 554px;
   }
 }
 @media (max-width: 374px) {
   .hero {
-    min-height: 570px;
+    min-height: 491px;
   }
 }
 
 .hero__photo {
   position: absolute;
-  z-index: 3;
-  top: 112px;
-  right: 220px;
+  top: 50px;
+  right: 218px;
   width: 500px;
   height: 556px;
-  background-image: url("/img/hero/hero-man.jpg");
+  background: url("/img/hero/hero-man.jpg") no-repeat center;
   background-size: cover;
 }
 @media (max-width: 767px) {
   .hero__photo {
     width: 324px;
     height: 390px;
-    top: 160px;
+    top: 80px;
     right: 45px;
   }
 }
@@ -1601,9 +1600,9 @@ button,
   position: relative;
   margin: 0;
   padding: 0;
-  top: 294px;
-  left: 202px;
-  text-shadow: 0 0 2px #ffffff;
+  top: 235px;
+  left: 198px;
+  text-shadow: 2px 0 2px #ffffff;
 }
 @media (max-width: 767px) {
   .hero__title {
@@ -1611,7 +1610,7 @@ button,
     line-height: 86px;
     width: 235px;
     font-weight: 700;
-    top: 258px;
+    top: 180px;
     left: 135px;
     text-transform: none;
   }
@@ -1621,7 +1620,7 @@ button,
     width: 213px;
     text-align: right;
     left: 95px;
-    top: 234px;
+    top: 155px;
   }
 }
 
@@ -1640,7 +1639,8 @@ button,
   margin: 0;
   padding: 0;
   left: 366px;
-  top: 5px;
+  top: -55px;
+  text-shadow: 2px 0 2px #ffffff;
 }
 @media (max-width: 767px) {
   .hero__sity {
@@ -1648,13 +1648,13 @@ button,
     font-size: 30px;
     line-height: 41px;
     left: 306px;
-    top: 40px;
+    top: -40px;
   }
 }
 @media (max-width: 374px) {
   .hero__sity {
     width: 51px;
-    top: 15px;
+    top: -63px;
     left: 254px;
     font-size: 26px;
     line-height: 34px;
@@ -1674,18 +1674,18 @@ button,
   margin: 0;
   padding: 0;
   width: 113px;
-  top: 138px;
-  left: 120px;
+  top: 78px;
+  left: 122px;
 }
 @media (max-width: 767px) {
   .hero__list {
     left: 45px;
-    top: 133px;
+    top: 55px;
   }
 }
 @media (max-width: 374px) {
   .hero__list {
-    top: 105px;
+    top: 25px;
     left: 15px;
   }
 }
@@ -1697,7 +1697,7 @@ button,
   background-color: transparent;
   border: #ffffff solid 4px;
   position: relative;
-  top: 222px;
+  top: 162px;
   left: 265px;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
@@ -1709,14 +1709,14 @@ button,
 @media (max-width: 767px) {
   .hero__btn {
     width: 185px;
-    top: 192px;
+    top: 112px;
     left: 185px;
   }
 }
 @media (max-width: 374px) {
   .hero__btn {
     width: 290px;
-    top: 160px;
+    top: 80px;
     left: 15px;
   }
 }
@@ -1727,10 +1727,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: relative;
-  top: -20px;
-  left: 130px;
-  gap: 85px;
+  gap: 55px;
 }
 @media (max-width: 767px) {
   .gim {
@@ -1739,25 +1739,31 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     left: 0;
-    top: -40px;
   }
 }
 
 .gim__wrapper {
   width: 355px;
   min-height: 314px;
+  padding: 50px 0;
   display: block;
+  position: relative;
+  top: 68px;
+  left: 96px;
 }
 @media (max-width: 767px) {
   .gim__wrapper {
     width: 502px;
-    position: relative;
-    margin: 0 auto;
+    top: 50px;
+    left: 117px;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 374px) {
   .gim__wrapper {
-    width: 258px;
+    width: 300px;
+    top: 15px;
+    left: -20px;
   }
 }
 
@@ -1777,6 +1783,7 @@ button,
     line-height: 50.4px;
     text-align: center;
     padding: 0 120px 0 105px;
+    min-width: 261px;
   }
 }
 @media (max-width: 374px) {
@@ -1784,6 +1791,7 @@ button,
     font-size: 32px;
     line-height: 38px;
     text-align: left;
+    padding: 0 0 5px 20px;
   }
 }
 
@@ -1793,12 +1801,18 @@ button,
   line-height: 27px;
   text-align: left;
   margin: 0;
-  padding: 5px 0 35px;
+  padding: 7px 0 35px;
 }
 @media (max-width: 767px) {
   .gim__description {
     text-align: center;
-    padding: 0 0 35px;
+    padding: 0 0 20px;
+  }
+}
+@media (max-width: 374px) {
+  .gim__description {
+    width: 300px;
+    padding: 0 0 10px 20px;
   }
 }
 
@@ -1808,8 +1822,6 @@ button,
   font-weight: 300;
   line-height: 24px;
   text-align: left;
-  margin: 0;
-  padding: 5px 0 2px;
   letter-spacing: -0.01em;
 }
 @media (max-width: 767px) {
@@ -1822,42 +1834,116 @@ button,
 @media (max-width: 374px) {
   .gim__detail {
     text-align: left;
+    padding: 0 60px 0 20px;
   }
 }
 
 @media (max-width: 767px) {
+  .gim__detail:last-of-type {
+    display: none;
+  }
+}
+
+.gim__media {
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  height: 430px;
+}
+@media (max-width: 374px) {
+  .gim__media {
+    height: 550px;
+    padding: 10px;
+  }
+}
+
+.gim__photo {
+  width: 660px;
+  height: 401px;
+  margin: 0;
+  display: block;
+  position: relative;
+  top: 110px;
+  left: 52px;
+  background: url("/img/gim/main.jpg") no-repeat 85%;
+  background-size: cover;
+}
+@media (max-width: 767px) {
   .gim__photo {
     width: 678px;
     height: 345px;
+    top: -52px;
+    left: 30px;
+  }
+}
+@media (max-width: 374px) {
+  .gim__photo {
+    width: 320px;
+    height: 313px;
+    top: -45px;
+    left: -26px;
   }
 }
 
 .gim__video {
+  margin: 0;
   display: block;
   position: relative;
-  top: -213px;
-  left: -62px;
+  top: -103px;
+  left: -12px;
   width: 364px;
   height: 228px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 54, 122, 0.5)), to(rgba(20, 54, 122, 0.5))), url("/img/gim/video.jpg");
-  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg");
-  background-size: contain;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 54, 122, 0.5)), to(rgba(20, 54, 122, 0.5))), url("/img/gim/video.jpg") no-repeat 85%;
+  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg") no-repeat 85%;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .gim__video {
     width: 266px;
     height: 167px;
+    top: -235px;
+    left: 236px;
+  }
+}
+@media (max-width: 374px) {
+  .gim__video {
+    width: 320px;
+    height: 167px;
+    top: -77px;
+    left: -26px;
   }
 }
 
-.gim__play {
+.gim__play::after {
+  content: url("/img/gim/play.png");
+  /*background: url("/img/gim/play.png") no-repeat center;
+  background-size: cover;*/
+  width: 100px;
+  height: 100px;
   display: block;
   position: relative;
   z-index: 5;
-  top: -50px;
-  left: 70px;
-  width: 100px;
-  height: 100px;
+  top: 60px;
+  left: 120px;
+}
+@media (max-width: 767px) {
+  .gim__play::after {
+    content: url("/img/gim/play-mobile.png");
+    display: block;
+    z-index: 5;
+    top: -90px;
+    left: 330px;
+  }
+}
+@media (max-width: 374px) {
+  .gim__play::after {
+    display: block;
+    z-index: 5;
+    top: 42px;
+    left: 100px;
+    width: 73px;
+    height: 73px;
+  }
 }
 
 /* @mixin hover-focus {
