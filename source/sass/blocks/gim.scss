@@ -110,7 +110,7 @@
   display: block;
   margin: 0;
   padding: 10px 0;
-  height: 430px;
+  height: 650px;
 
   @include vp-374 {
     height: 550px;
@@ -172,8 +172,6 @@
 
 .gim__play::after {
   content: url("/img/gim/play.png");
-  /*background: url("/img/gim/play.png") no-repeat center;
-  background-size: cover;*/
   width: 100px;
   height: 100px;
   display: block;

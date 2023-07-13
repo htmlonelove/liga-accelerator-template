@@ -54,7 +54,6 @@
       </section>
 
       <div class="container">
-
         <section class="gim">
           <div class="gim__wrapper">
             <h2 class="gim__title">Тренажерный зал</h2>
@@ -68,7 +67,7 @@
             <div class="gim__photo">
               <span class="visually-hidden">Фото тренажерного зала.</span>
             </div>
-             <div class="gim__play">
+            <div class="gim__play">
               <span class="visually-hidden">Кнопка запуска видео.</span>
             </div>
             <div class="gim__video">
@@ -76,36 +75,40 @@
             </div>
           </div>
         </section>
+      </div>
 
-        <section class="memberships">
-          <h2 class="memberships__title">Абонементы</h2>
-          <ul class="memberships__list">
-            <li class="item">1 месяц</li>
-            <li class="item">6 месяцев</li>
-            <li class="item">12 месяцев</li>
-          </ul>
+      <section class="memberships">
+        <h2 class="memberships__title">Абонементы</h2>
+        <ul class="memberships__list">
+          <li class="memberships__item">1 месяц</li>
+          <li class="memberships__item">6 месяцев</li>
+          <li class="memberships__item">12 месяцев</li>
+        </ul>
+        <div class="container">
           <div class="memberships__catalog">
             <div class="memberships__catalog card">
               <h3 class="card__title">С тренером</h3>
-              <p class="card__period">12 занятий</p>
-              <p class="card__price">5000</p>
-              <button class="card__button">Купить абонемент</button>
+              <p class="card__period" data-value="5000">12 занятий</p>
+              <p class="card__price" data-value="&#8381;">5000</p>
+              <button class="card__button btn btn--blue">Купить абонемент</button>
             </div>
-            <div class="memberships__catalog card">
+            <div class="memberships__catalog card card--active">
               <h3 class="card__title">Дневной</h3>
-              <p class="card__period">с 8:00 до 17:00 </p>
-              <p class="card__price">1700</p>
-              <button class="card__button">Купить абонемент</button>
+              <p class="card__period" data-value="1700">с 8:00 до 17:00 </p>
+              <p class="card__price" data-value="&#8381;">1700</p>
+              <button class="card__button btn btn--active">Купить абонемент</button>
             </div>
             <div class="memberships__catalog card">
               <h3 class="card__title">Полный день</h3>
-              <p class="card__period">с 8:00 до 22:00 </p>
-              <p class="card__price">2700</p>
-              <button class="card__button">Купить абонемент</button>
+              <p class="card__period" data-value="2700">с 8:00 до 22:00 </p>
+              <p class="card__price" data-value="&#8381;">2700</p>
+              <button class="card__button btn btn--blue">Купить абонемент</button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <div class="container">
         <section class="news">
           <h2 class="news__title">Super games</h2>
           <p class="news__description">Ежегодные соревнования по CrossFit</p>
@@ -117,7 +120,6 @@
           </div>
           <button class="news__buttn">Заполнить заявку</button>
         </section>
-
         <section class="trainers">
           <h2 class="trainers__title">Тренеры</h2>
           <div class="trainers__list">
@@ -145,40 +147,42 @@
             </div>
           </div>
         </section>
+      </div>
 
-        <section class="advantages">
-          <dl class="advantages__list">
-            <dt>900</dt>
-            <dd>кв/м</dd>
-            <dt>Площадь</dt>
-            <dd>Занимайтесь без очередей и толпучки</dd>
-          </dl>
-          <dl class="advantages__list">
-            <dt>350</dt>
-            <dd>мест</dd>
-            <dt>Комфорт</dt>
-            <dd>Просторные раздевалки,
-              душевые, фен, Wi-Fi, кулеры</dd>
-          </dl>
-          <dl class="advantages__list">
-            <dt>70</dt>
-            <dd>машин</dd>
-            <dt>Собственная парковка</dt>
-            <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
-          </dl>
-          <dl class="advantages__list">
-            <dt>5+</dt>
-            <dd>лет</dd>
-            <dt>Тренерский опыт</dt>
-            <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
-          </dl>
-          <dl class="advantages__list">
-            <dt>100</dt>
-            <dd>Тренажеров</dd>
-            <dd>Современные тренажеры на все группы мышц</dd>
-          </dl>
-        </section>
+      <section class="advantages">
+        <dl class="advantages__list">
+          <dt>900</dt>
+          <dd>кв/м</dd>
+          <dt>Площадь</dt>
+          <dd>Занимайтесь без очередей и толпучки</dd>
+        </dl>
+        <dl class="advantages__list">
+          <dt>350</dt>
+          <dd>мест</dd>
+          <dt>Комфорт</dt>
+          <dd>Просторные раздевалки,
+            душевые, фен, Wi-Fi, кулеры</dd>
+        </dl>
+        <dl class="advantages__list">
+          <dt>70</dt>
+          <dd>машин</dd>
+          <dt>Собственная парковка</dt>
+          <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
+        </dl>
+        <dl class="advantages__list">
+          <dt>5+</dt>
+          <dd>лет</dd>
+          <dt>Тренерский опыт</dt>
+          <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
+        </dl>
+        <dl class="advantages__list">
+          <dt>100</dt>
+          <dd>Тренажеров</dd>
+          <dd>Современные тренажеры на все группы мышц</dd>
+        </dl>
+      </section>
 
+      <div class="container">
         <section class="stocks">
           <h2 class="stocks__title">Акции</h2>
           <div class="stocks__list">
@@ -211,29 +215,31 @@
 
           </div>
         </section>
+      </div>
 
-        <section class="faq">
-          <div class="faq__sort">
-            <div class="faq__list">Центр</div>
-            <div class="faq__list">Абонемент</div>
-            <dl>
-              <dt class="faq__item">Занятия с тренером входят в абонемент?</dt>
-              <dd class="faq__description">При посещении тренажерного зала вам необходимо оплачить занятия с тренером
-                отдельно. В зале всегда
-                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
-                или технике выполнения упражнения.</dd>
-              <dt class="faq__item">Можно ли заморозить абонемент?</dt>
-              <dd class="faq__description">Здесь должен быть ответ на вопрос.</dd>
-              <dt class="faq__item">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</dt>
-              <dd class="faq__description">Здесь должен быть ответ на вопрос.</dd>
-              <dt class="faq__item">Что такое семейный доступ и доступ для друзей?</dt>
-              <dd class="faq__description">Здесь должен быть ответ на вопрос.</dd>
-            </dl>
-            <div class="faq__list">Услуги</div>
-            <div class="faq__list">Правила</div>
-          </div>
-        </section>
+      <section class="faq">
+        <div class="faq__sort">
+          <div class="faq__list">Центр</div>
+          <div class="faq__list">Абонемент</div>
+          <dl>
+            <dt class="faq__item">Занятия с тренером входят в абонемент?</dt>
+            <dd class="faq__description">При посещении тренажерного зала вам необходимо оплачить занятия с тренером
+              отдельно. В зале всегда
+              присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+              или технике выполнения упражнения.</dd>
+            <dt class="faq__item">Можно ли заморозить абонемент?</dt>
+            <dd class="faq__description">Здесь должен быть ответ на вопрос.</dd>
+            <dt class="faq__item">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</dt>
+            <dd class="faq__description">Здесь должен быть ответ на вопрос.</dd>
+            <dt class="faq__item">Что такое семейный доступ и доступ для друзей?</dt>
+            <dd class="faq__description">Здесь должен быть ответ на вопрос.</dd>
+          </dl>
+          <div class="faq__list">Услуги</div>
+          <div class="faq__list">Правила</div>
+        </div>
+      </section>
 
+      <div class="container">
         <section class="reviews">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list">
@@ -249,109 +255,110 @@
             </div>
           </div>
         </section>
+      </div>
 
-        <div class="wrapper">
-          <div class="order">
-            <form class="order-form" action="#" method="post">
-              <fieldset class="order-form__fieldset fieldset">
-                <h2 class="fieldset__title">Бесплатное занятие</h2>
-                <ul class="fieldset__list">
-                  <li class="fieldset__item">
-                    <label class="fieldset__label" for="autor-name">Имя</label>
-                    <input class="fieldset__input" type="text" name="name" id="autor-name" value="Имя">
-                  </li>
-                  <li class="fieldset__item">
-                    <label class="fieldset__label" for="autor-phone">Телефон</label>
-                    <input class="fieldset__input" type="text" name="surname" id="autor-phone" value="Телефон">
-                  </li>
-                </ul>
-              </fieldset>
-            </form>
-          </div>
+      <div class="wrapper">
+        <div class="order">
+          <form class="order-form" action="#" method="post">
+            <fieldset class="order-form__fieldset fieldset">
+              <h2 class="fieldset__title">Бесплатное занятие</h2>
+              <ul class="fieldset__list">
+                <li class="fieldset__item">
+                  <label class="fieldset__label" for="autor-name">Имя</label>
+                  <input class="fieldset__input" type="text" name="name" id="autor-name" value="Имя">
+                </li>
+                <li class="fieldset__item">
+                  <label class="fieldset__label" for="autor-phone">Телефон</label>
+                  <input class="fieldset__input" type="text" name="surname" id="autor-phone" value="Телефон">
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
 
-          <div class="contacts">
-            <h2 class="contacts__title">Контакты</h2>
-            <dl>
-              <dt>Адрес:</dt>
-              <dd>г. Омск, ул. 60 лет Октября, 7</dd>
-              <dt>График работы:</dt>
-              <dd>Пн-Вс: с 8:00 до 22:00</dd>
-            </dl>
-            <dl>
-              <dt>Телефон:</dt>
-              <dd><a href="tel:+7(800)555-55-55" class="tell">
-                  8-800-555-55-55
-                </a></dd>
-              <dt>Email:</dt>
-              <dd> <a href="mailto:omsk@supergym.ru" class="email">omsk@supergym.ru</a></dd>
-            </dl>
-          </div>
+        <div class="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <dl>
+            <dt>Адрес:</dt>
+            <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+            <dt>График работы:</dt>
+            <dd>Пн-Вс: с 8:00 до 22:00</dd>
+          </dl>
+          <dl>
+            <dt>Телефон:</dt>
+            <dd><a href="tel:+7(800)555-55-55" class="tell">
+                8-800-555-55-55
+              </a></dd>
+            <dt>Email:</dt>
+            <dd> <a href="mailto:omsk@supergym.ru" class="email">omsk@supergym.ru</a></dd>
+          </dl>
         </div>
       </div>
-    </main>
+  </div>
+  </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__wrapper">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
 
-          <nav class="footer__navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="footer__logo">
-                  <picture>
-                    <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
-                  </picture>
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Услуги</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Абонементы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Акции</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Тренеры</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Расписание</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__social social">
-            <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                    <use xlink:href="img/sprite.svg#vk"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--ok" href="#">
-                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                    <use xlink:href="img/sprite.svg#ok"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Одноклассниках</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--reddit" href="#">
-                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                    <use xlink:href="img/sprite.svg#reddit"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Реддит</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <nav class="footer__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="footer__logo">
+                <picture>
+                  <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
+                </picture>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Абонементы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Акции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Тренеры</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social social">
+          <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#">
+                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--reddit" href="#">
+                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Реддит</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   </div>
 
   <!-- Модалки -->

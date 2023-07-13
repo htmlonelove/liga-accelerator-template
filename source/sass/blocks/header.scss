@@ -1,6 +1,6 @@
 .header {
   min-height: 80px;
-  background-color: transparent;
+  background-color: $color-transparent;
   z-index: 2;
   display: block;
   position: absolute;
@@ -19,7 +19,7 @@
 }
 
 .header__phone {
-  color: #ffffff;
+  color: $color-default-white;
   font-family: "Alumni Sans", sans-serif;
   font-size: 26px;
   font-weight: 600;

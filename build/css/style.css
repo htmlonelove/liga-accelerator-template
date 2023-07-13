@@ -594,13 +594,15 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin: 0 20px 10px;
   padding: 10px 20px;
+  min-height: 64px;
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
-  background-color: #2c39f2;
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
@@ -608,6 +610,28 @@ button,
 }
 .btn--red {
   background-color: #ff1553;
+}
+.btn--blue {
+  border: #102654 solid 2px;
+  color: #102654;
+  padding: 24px 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 206px;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+.btn--active {
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  padding: 24px 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 206px;
+  letter-spacing: 0.05em;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -1254,7 +1278,7 @@ button,
 
 .header {
   min-height: 80px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   z-index: 2;
   display: block;
   position: absolute;
@@ -1694,7 +1718,7 @@ button,
   display: block;
   width: 235px;
   height: 62px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   border: #ffffff solid 4px;
   position: relative;
   top: 162px;
@@ -1848,7 +1872,7 @@ button,
   display: block;
   margin: 0;
   padding: 10px 0;
-  height: 430px;
+  height: 650px;
 }
 @media (max-width: 374px) {
   .gim__media {
@@ -1916,8 +1940,6 @@ button,
 
 .gim__play::after {
   content: url("/img/gim/play.png");
-  /*background: url("/img/gim/play.png") no-repeat center;
-  background-size: cover;*/
   width: 100px;
   height: 100px;
   display: block;
@@ -1944,6 +1966,167 @@ button,
     width: 73px;
     height: 73px;
   }
+}
+
+.memberships {
+  background-color: #f8f9fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.memberships__catalog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f8f9fc;
+  gap: 40px;
+  margin: 0;
+  padding: 30px 70px;
+}
+
+.memberships__title {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  width: 230px;
+  margin: 0 auto;
+  padding: 125px 43px 0;
+}
+
+.memberships__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 27px;
+  width: 341px;
+  margin: 0 auto;
+  padding: 19px 41px;
+}
+
+.memberships__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+  min-width: 96px;
+}
+
+.memberships__item:nth-child(1) {
+  min-width: 86px;
+}
+
+.memberships__item:nth-child(2) {
+  min-width: 106px;
+}
+
+.card {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 360px;
+  padding: 50px;
+  border: 7px solid rgba(255, 255, 255, 0);
+  gap: 2px;
+  height: 448px;
+}
+
+.card--active {
+  border: 7px solid;
+  -o-border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 30;
+     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 30;
+}
+
+.card__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.card__period {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  height: 69px;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.card__period::after {
+  content: attr(data-value);
+  margin: 0;
+  color: #e8e8e8;
+  width: 203px;
+  height: 69px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+  letter-spacing: 0;
+  text-align: left;
+  display: block;
+  position: relative;
+  left: 20px;
+}
+
+.card__price {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #103aae;
+  margin: 0 40px;
+  padding: 20px 0 35px;
+  width: 122px;
+  z-index: 5;
+}
+
+.card__price::after {
+  content: attr(data-value);
+  color: #102654;
+  position: relative;
+  left: 11px;
+  top: -1px;
+}
+
+.card:last-of-type::after {
+  content: url("/img/memberships/membership-equipment.png");
+  width: 321px;
+  height: 384px;
+  position: relative;
+  z-index: 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: -165px;
+  left: 115px;
 }
 
 /* @mixin hover-focus {

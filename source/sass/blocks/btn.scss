@@ -1,6 +1,8 @@
 .btn {
   display: inline-flex;
+  margin: 0 20px 10px;
   padding: 10px 20px;
+  min-height: 64px;
 
   color: $color-default-white;
   font-size: 12px;
@@ -8,7 +10,7 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  background-color: $color-neon-blue;
+  background-color: $color-default-white;
   border: none;
   cursor: pointer;
 
@@ -16,6 +18,26 @@
 
   &--red {
     background-color: $color-torch-red;
+  }
+
+  &--blue {
+    border: $color-default-black solid 2px;
+    color: $color-default-black;
+    padding: 24px 0;
+    text-align: center;
+    justify-content: center;
+    min-width: 206px;
+    letter-spacing: 0.05em;
+    z-index: 1;
+  }
+
+  &--active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    padding: 24px 0;
+    text-align: center;
+    justify-content: center;
+    min-width: 206px;
+    letter-spacing: 0.05em;
   }
 
   &:disabled {
