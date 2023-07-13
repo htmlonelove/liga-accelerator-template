@@ -7,8 +7,9 @@
   text-align: center;
 
   @include vp-767 {
-    margin-bottom: 6px;
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
   }
 }
 
@@ -33,6 +34,10 @@
     font-weight: 700;
     line-height: 150px;
     text-align: left;
+
+    @include vp-767 {
+      right: 120px;
+    }
   }
 
   @include vp-767 {
@@ -67,12 +72,15 @@
   }
 
   @include vp-767 {
-    margin-bottom: 41px;
+    margin-bottom: 31px;
     padding-right: 32px;
+    top: -1px;
+    left: -2px;
 
     &::after {
       width: 26px;
       height: 33px;
+      top: 0;
     }
   }
 }
@@ -102,4 +110,9 @@
   top: 2px;
   height: 450px;
   padding: 55px;
+
+  @include vp-767 {
+    min-height: 448px;
+    min-width: 445px;
+  }
 }

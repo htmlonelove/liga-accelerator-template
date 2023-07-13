@@ -1302,6 +1302,11 @@ button,
   margin: 0;
   padding: 30px 105px 0 30px;
 }
+@media (max-width: 767px) {
+  .header__wrapper {
+    padding: 30px;
+  }
+}
 
 .header__phone {
   color: #ffffff;
@@ -1322,7 +1327,7 @@ button,
     font-weight: 700;
     line-height: 28.8px;
     letter-spacing: 0.5px;
-    left: -28px;
+    left: -15px;
     top: 5px;
   }
 }
@@ -1337,6 +1342,8 @@ button,
 }
 
 .header__logo {
+  width: 110px;
+  height: 32px;
   margin: 0;
   padding: 9px 0 0 71px;
   display: block;
@@ -1344,9 +1351,11 @@ button,
 }
 @media (max-width: 767px) {
   .header__logo {
-    width: 110px;
-    height: 32px;
-    padding-left: 30px;
+    width: 82px;
+    height: 17px;
+    padding: 0;
+    top: 11px;
+    left: 15px;
   }
 }
 @media (max-width: 374px) {
@@ -1736,7 +1745,7 @@ button,
   .hero__btn {
     width: 185px;
     top: 112px;
-    left: 185px;
+    left: 165px;
   }
 }
 @media (max-width: 374px) {
@@ -1876,9 +1885,14 @@ button,
   padding: 10px 0;
   height: 650px;
 }
+@media (max-width: 767px) {
+  .gim__media {
+    height: 380px;
+  }
+}
 @media (max-width: 374px) {
   .gim__media {
-    height: 550px;
+    height: 650px;
     padding: 10px;
   }
 }
@@ -1927,7 +1941,7 @@ button,
   .gim__video {
     width: 266px;
     height: 167px;
-    top: -235px;
+    top: -210px;
     left: 236px;
   }
 }
@@ -1955,37 +1969,11 @@ button,
   .gim__play {
     width: 73px;
     height: 73px;
+    top: -92px;
+    left: 332px;
   }
 }
 
-/*
-.gim__play::after {
-  content: url("/img/gim/play.png");
-  width: 100px;
-  height: 100px;
-  display: block;
-  position: relative;
-  z-index: 5;
-  top: 60px;
-  left: 120px;
-
-  @include vp-767 {
-    content: url("/img/gim/play-mobile.png");
-    display: block;
-    z-index: 5;
-    top: -90px;
-    left: 330px;
-  }
-
-  @include vp-374 {
-    display: block;
-    z-index: 5;
-    top: 42px;
-    left: 100px;
-    width: 73px;
-    height: 73px;
-  }
-}*/
 .memberships {
   background-color: #f8f9fc;
   display: -webkit-box;
@@ -2005,6 +1993,16 @@ button,
   right: 0;
   bottom: -98px;
   background-position: right;
+}
+@media (max-width: 767px) {
+  .memberships::after {
+    background: url("/img/memberships/membership-equipment-tablet.png") no-repeat;
+    width: 289px;
+    height: 345px;
+    bottom: -58px;
+    right: 5px;
+    rotate: 359deg;
+  }
 }
 
 .memberships__wrapper {
@@ -2028,6 +2026,13 @@ button,
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 0.03em;
+}
+@media (max-width: 767px) {
+  .memberships__title {
+    font-size: 42px;
+    line-height: 50px;
+    padding: 35px 10px 0 0;
+  }
 }
 
 .memberships__controls {
@@ -2059,10 +2064,11 @@ button,
 }
 @media (max-width: 767px) {
   .memberships__controls {
-    margin-bottom: 48px;
+    gap: 35px;
+    padding-top: 5px;
   }
   .memberships__controls::after {
-    bottom: -14px;
+    bottom: 25px;
   }
 }
 
@@ -2083,7 +2089,10 @@ button,
 @media (max-width: 767px) {
   .memberships__control {
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
   }
 }
 
@@ -2094,7 +2103,7 @@ button,
   position: absolute;
   content: "";
   bottom: 15px;
-  width: 67px;
+  width: calc(100% + 8px);
   height: 2px;
   background-color: #d10a42;
 }
@@ -2102,7 +2111,7 @@ button,
   .memberships__control.is-active::after {
     left: -2px;
     width: calc(100% + 8px);
-    bottom: -14px;
+    bottom: 21px;
   }
 }
 
@@ -2117,6 +2126,11 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 767px) {
+  .memberships__content {
+    margin: 0 145px;
+  }
 }
 
 .memberships__element {
@@ -2137,7 +2151,7 @@ button,
 }
 @media (max-width: 767px) {
   .memberships__element.is-active {
-    gap: 34px;
+    gap: 41px;
   }
 }
 
@@ -2165,6 +2179,13 @@ button,
     border-image-slice: 1;
   }
 }
+@media (max-width: 767px) {
+  .memberships__catalog {
+    min-width: 442px;
+    padding-top: 65px;
+    min-height: 448px;
+  }
+}
 
 .card__title {
   margin: 0 0 12px;
@@ -2176,8 +2197,9 @@ button,
 }
 @media (max-width: 767px) {
   .card__title {
-    margin-bottom: 6px;
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
   }
 }
 
@@ -2202,6 +2224,11 @@ button,
   font-weight: 700;
   line-height: 150px;
   text-align: left;
+}
+@media (max-width: 767px) {
+  .card__period::after {
+    right: 120px;
+  }
 }
 @media (max-width: 767px) {
   .card__period {
@@ -2235,12 +2262,15 @@ button,
 }
 @media (max-width: 767px) {
   .card__price {
-    margin-bottom: 41px;
+    margin-bottom: 31px;
     padding-right: 32px;
+    top: -1px;
+    left: -2px;
   }
   .card__price::after {
     width: 26px;
     height: 33px;
+    top: 0;
   }
 }
 
@@ -2277,6 +2307,12 @@ button,
   top: 2px;
   height: 450px;
   padding: 55px;
+}
+@media (max-width: 767px) {
+  .card--active {
+    min-height: 448px;
+    min-width: 445px;
+  }
 }
 
 /* @mixin hover-focus {

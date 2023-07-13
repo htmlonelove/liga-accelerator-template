@@ -16,6 +16,10 @@
   justify-content: space-between;
   margin: 0;
   padding: 30px 105px 0 30px;
+
+  @include vp-767 {
+    padding: 30px;
+}
 }
 
 .header__phone {
@@ -36,7 +40,7 @@
     font-weight: 700;
     line-height: 28.8px;
     letter-spacing: 0.5px;
-    left: -28px;
+    left: -15px;
     top: 5px;
   }
 
@@ -50,15 +54,19 @@
 }
 
 .header__logo {
+  width: 110px;
+  height: 32px;
   margin: 0;
   padding: 9px 0 0 71px;
   display: block;
   position: relative;
 
   @include vp-767 {
-    width: 110px;
-    height: 32px;
-    padding-left: 30px;
+    width: 82px;
+    height: 17px;
+    padding: 0;
+    top: 11px;
+    left: 15px;
   }
 
   @include vp-374 {

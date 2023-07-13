@@ -15,6 +15,15 @@
   right: 0;
   bottom: -98px;
   background-position: right;
+
+  @include vp-767 {
+    background: url("/img/memberships/membership-equipment-tablet.png") no-repeat;
+    width: 289px;
+    height: 345px;
+    bottom: -58px;
+    right: 5px;
+    rotate: 359deg;
+  }
 }
 
 .memberships__wrapper {
@@ -37,6 +46,12 @@
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 0.03em;
+
+  @include vp-767 {
+    font-size: 42px;
+    line-height: 50px;
+    padding: 35px 10px 0 0;
+  }
 }
 
 .memberships__controls {
@@ -61,10 +76,11 @@
   }
 
   @include vp-767 {
-    margin-bottom: 48px;
+    gap: 35px;
+    padding-top: 5px;
 
     &::after {
-      bottom: -14px;
+      bottom: 25px;
     }
   }
 }
@@ -85,7 +101,10 @@
 
   @include vp-767 {
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
   }
 }
 
@@ -96,7 +115,7 @@
     position: absolute;
     content: "";
     bottom: 15px;
-    width: 67px;
+    width: calc(100% + 8px);
     height: 2px;
     background-color: #d10a42;
   }
@@ -105,7 +124,7 @@
     &::after {
       left: -2px;
       width: calc(100% + 8px);
-      bottom: -14px;
+      bottom: 21px;
     }
   }
 }
@@ -114,6 +133,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-767 {
+    margin: 0 145px;
+  }
 }
 
 .memberships__element {
@@ -127,7 +150,7 @@
   gap: 40px;
 
   @include vp-767 {
-    gap: 34px;
+    gap: 41px;
   }
 }
 
@@ -145,5 +168,11 @@
     padding: 57px 70px;
     border: 7px solid;
     border-image-slice: 1;
+  }
+
+  @include vp-767 {
+    min-width: 442px;
+    padding-top: 65px;
+    min-height: 448px;
   }
 }

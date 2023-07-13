@@ -112,8 +112,12 @@
   padding: 10px 0;
   height: 650px;
 
+  @include vp-767 {
+    height: 380px;
+  }
+
   @include vp-374 {
-    height: 550px;
+    height: 650px;
     padding: 10px;
   }
 }
@@ -158,7 +162,7 @@
   @include vp-767 {
     width: 266px;
     height: 167px;
-    top: -235px;
+    top: -210px;
     left: 236px;
   }
 
@@ -184,34 +188,7 @@
   @include vp-767 {
     width: 73px;
     height: 73px;
+    top: -92px;
+    left: 332px;
   }
 }
-
-/*
-.gim__play::after {
-  content: url("/img/gim/play.png");
-  width: 100px;
-  height: 100px;
-  display: block;
-  position: relative;
-  z-index: 5;
-  top: 60px;
-  left: 120px;
-
-  @include vp-767 {
-    content: url("/img/gim/play-mobile.png");
-    display: block;
-    z-index: 5;
-    top: -90px;
-    left: 330px;
-  }
-
-  @include vp-374 {
-    display: block;
-    z-index: 5;
-    top: 42px;
-    left: 100px;
-    width: 73px;
-    height: 73px;
-  }
-}*/
