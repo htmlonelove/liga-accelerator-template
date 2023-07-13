@@ -1,55 +1,45 @@
-.card {
-  background-color: $color-default-white;
-  display: flex;
-  flex-direction: column;
-  min-width: 360px;
-  padding: 50px;
-  border: 7px solid $color-transparent;
-  gap: 2px;
-  height: 448px;
-}
-
-.card--active {
-  border: 7px solid;
-  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 30;
-}
-
 .card__title {
+  margin: 0 0 12px;
   font-size: 26px;
   font-weight: 700;
   line-height: 29px;
   letter-spacing: 0;
   text-align: center;
-  margin: 0;
-  padding: 5px 0;
+
+  @include vp-767 {
+    margin-bottom: 6px;
+    font-size: 22px;
+  }
 }
 
 .card__period {
+  margin: 0 0 80px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-  height: 69px;
-  margin: 0;
-  padding: 5px 0;
+
+  &::after {
+    content: attr(data-value);
+    position: absolute;
+    margin: 0;
+    top: 140px;
+    right: 80px;
+    color: #e8e8e8;
+    width: 203px;
+    height: 69px;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    text-align: left;
+  }
+
+  @include vp-767 {
+    margin-bottom: 66px;
+  }
 }
 
-.card__period::after {
-  content: attr(data-value);
-  margin: 0;
-  color: #e8e8e8;
-  width: 203px;
-  height: 69px;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 150px;
-  letter-spacing: 0;
-  text-align: left;
-  display: block;
-  position: relative;
-  left: 20px;
-}
 
 .card__price {
   font-size: 60px;
@@ -58,27 +48,58 @@
   letter-spacing: 0;
   text-align: center;
   color: #103aae;
-  margin: 0 40px;
-  padding: 20px 0 35px;
-  width: 122px;
-  z-index: 5;
+  margin: 0 0 20px;
+  padding-right: 44px;
+  position: relative;
+  z-index: 1;
+  top: -14px;
+
+  &::after {
+    content: attr(data-value);
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: -5px;
+    width: 38px;
+    height: 46px;
+    color: $color-default-black;
+    font-family: "Rouble", sans-serif;
+  }
+
+  @include vp-767 {
+    margin-bottom: 41px;
+    padding-right: 32px;
+
+    &::after {
+      width: 26px;
+      height: 33px;
+    }
+  }
 }
 
-.card__price::after {
-  content: attr(data-value);
-  color: #102654;
-  position: relative;
-  left: 11px;
-  top: -1px;
+.card__btn {
+  padding: 24px 42px;
+  text-transform: uppercase;
+
+  @include hover-focus {
+    padding: 26px 44px;
+    color: $color-default-white;
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border: none;
+    outline: none;
+  }
+
+  &--active {
+    border: none;
+    color: $color-default-white;
+  }
 }
 
-.card:last-of-type::after {
-  content: url("/img/memberships/membership-equipment.png");
-  width: 321px;
-  height: 384px;
+.card--active {
+  border: 7px solid;
+  border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
-  z-index: 0;
-  transform: rotate(0deg);
-  top: -165px;
-  left: 115px;
+  top: 2px;
+  height: 450px;
+  padding: 55px;
 }

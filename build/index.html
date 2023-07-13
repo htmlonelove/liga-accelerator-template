@@ -9,7 +9,6 @@
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/favicon.ico" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
-  <link rel="manifest" href="manifest.json">
   <link rel="preload" href="/fonts/AlumniSans-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/AlumniSans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/AlumniSans-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -25,7 +24,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="header-container container">
+      <div class="header__wrapper">
         <a class="header__logo">
           <picture>
             <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
@@ -49,7 +48,7 @@
             <li class="hero__item">Групповые занятия</li>
             <li class="hero__item">Кардио-зона</li>
           </ul>
-          <button class="hero__btn btn">Купить абонемент</button>
+          <a class="hero__btn btn" href="#buy">Купить абонемент</a>
         </div>
       </section>
 
@@ -67,9 +66,9 @@
             <div class="gim__photo">
               <span class="visually-hidden">Фото тренажерного зала.</span>
             </div>
-            <div class="gim__play">
-              <span class="visually-hidden">Кнопка запуска видео.</span>
-            </div>
+              <a class="gim__play" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                <div class="visually-hidden">Кнпка запуска видео.</div>
+              </a>
             <div class="gim__video">
               <span class="visually-hidden">Блок с видео из зала</span>
             </div>
@@ -78,31 +77,78 @@
       </div>
 
       <section class="memberships">
-        <h2 class="memberships__title">Абонементы</h2>
-        <ul class="memberships__list">
-          <li class="memberships__item">1 месяц</li>
-          <li class="memberships__item">6 месяцев</li>
-          <li class="memberships__item">12 месяцев</li>
-        </ul>
-        <div class="container">
-          <div class="memberships__catalog">
-            <div class="memberships__catalog card">
-              <h3 class="card__title">С тренером</h3>
-              <p class="card__period" data-value="5000">12 занятий</p>
-              <p class="card__price" data-value="&#8381;">5000</p>
-              <button class="card__button btn btn--blue">Купить абонемент</button>
+        <div class="memberships__wrapper">
+          <h2 class="memberships__title" id="buy">Абонементы</h2>
+          <div class="memberships__tabs" data-tabs="parent" data-delay="100" data-height="max">
+            <div class="memberships__controls" data-tabs="controls">
+              <button class="memberships__control btn is-active" type="button" data-tabs="control" data-index="0">1
+                месяц</button>
+              <button class="memberships__control btn" type="button" data-tabs="control" data-index="1">6
+                месяцев</button>
+              <button class="memberships__control btn" type="button" data-tabs="control" data-index="2">12
+                месяцев</button>
             </div>
-            <div class="memberships__catalog card card--active">
-              <h3 class="card__title">Дневной</h3>
-              <p class="card__period" data-value="1700">с 8:00 до 17:00 </p>
-              <p class="card__price" data-value="&#8381;">1700</p>
-              <button class="card__button btn btn--active">Купить абонемент</button>
-            </div>
-            <div class="memberships__catalog card">
-              <h3 class="card__title">Полный день</h3>
-              <p class="card__period" data-value="2700">с 8:00 до 22:00 </p>
-              <p class="card__price" data-value="&#8381;">2700</p>
-              <button class="card__button btn btn--blue">Купить абонемент</button>
+            <div class="memberships__content" data-tabs="content">
+              <div class="memberships__element is-active" data-tabs="element">
+                <div class="memberships__catalog card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__period" data-value="5000">12 занятий</p>
+                  <p class="card__price" data-value="&#8381;">5000</p>
+                  <a class="card__btn btn btn--blue" href="#">Купить абонемент</a>
+                </div>
+                <div class="memberships__catalog card card--active">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__period" data-value="1700">с 8:00 до 17:00 </p>
+                  <p class="card__price" data-value="&#8381;">1700</p>
+                  <a class="card__btn btn btn--active">Купить абонемент</a>
+                </div>
+                <div class="memberships__catalog card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__period" data-value="2700">с 8:00 до 22:00 </p>
+                  <p class="card__price" data-value="&#8381;">2700</p>
+                  <a class="card__btn btn btn--blue">Купить абонемент</a>
+                </div>
+              </div>
+              <div class="memberships__element" data-tabs="element">
+                <div class="memberships__catalog card card--active">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__period" data-value="5000">12 занятий</p>
+                  <p class="card__price" data-value="&#8381;">5000</p>
+                  <a class="card__btn btn btn--active" href="#">Купить абонемент</a>
+                </div>
+                <div class="memberships__catalog card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__period" data-value="5700">с 8:00 до 17:00 </p>
+                  <p class="card__price" data-value="&#8381;">5700</p>
+                  <a class="card__btn btn btn--blue">Купить абонемент</a>
+                </div>
+                <div class="memberships__catalog card">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__period" data-value="8200">с 8:00 до 22:00 </p>
+                  <p class="card__price" data-value="&#8381;">8200</p>
+                  <a class="card__btn btn btn--blue">Купить абонемент</a>
+                </div>
+              </div>
+              <div class="memberships__element" data-tabs="element">
+                <div class="memberships__catalog card">
+                  <h3 class="card__title">С тренером</h3>
+                  <p class="card__period" data-value="5000">12 занятий</p>
+                  <p class="card__price" data-value="&#8381;">5000</p>
+                  <a class="card__btn btn btn--blue" href="#">Купить абонемент</a>
+                </div>
+                <div class="memberships__catalog card">
+                  <h3 class="card__title">Дневной</h3>
+                  <p class="card__period" data-value="9700">с 8:00 до 17:00 </p>
+                  <p class="card__price" data-value="&#8381;">9700</p>
+                  <a class="card__btn btn btn--blue">Купить абонемент</a>
+                </div>
+                <div class="memberships__catalog card card--active">
+                  <h3 class="card__title">Полный день</h3>
+                  <p class="card__period" data-value="9900">с 8:00 до 22:00 </p>
+                  <p class="card__price" data-value="&#8381;">9900</p>
+                  <a class="card__btn btn btn--active">Купить абонемент</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -294,71 +340,70 @@
           </dl>
         </div>
       </div>
-  </div>
-  </main>
+    </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
 
-        <nav class="footer__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="footer__logo">
-                <picture>
-                  <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
-                </picture>
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Услуги</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Абонементы</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Акции</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Тренеры</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Расписание</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__social social">
-          <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                  <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--ok" href="#">
-                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                  <use xlink:href="img/sprite.svg#ok"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Одноклассниках</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--reddit" href="#">
-                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                  <use xlink:href="img/sprite.svg#reddit"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Реддит</span>
-              </a>
-            </li>
-          </ul>
+          <nav class="footer__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="footer__logo">
+                  <picture>
+                    <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
+                  </picture>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Услуги</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Абонементы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Акции</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Тренеры</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Расписание</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__social social">
+            <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--ok" href="#">
+                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                    <use xlink:href="img/sprite.svg#ok"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Одноклассниках</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--reddit" href="#">
+                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                    <use xlink:href="img/sprite.svg#reddit"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Реддит</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </div>
 
   <!-- Модалки -->
@@ -390,8 +435,8 @@
     </div>
   </div>
 
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/vendor.min.js" type="module"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>

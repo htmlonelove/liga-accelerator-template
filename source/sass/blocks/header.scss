@@ -11,11 +11,11 @@
   }
 }
 
-.header-container {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding-top: 30px;
+  padding: 30px 105px 0 30px;
 }
 
 .header__phone {
@@ -30,7 +30,6 @@
   letter-spacing: 0.7px;
   display: block;
   position: relative;
-  left: 14px;
 
   @include vp-767 {
     font-size: 24px;
@@ -52,7 +51,7 @@
 
 .header__logo {
   margin: 0;
-  padding: 9px 0 0 69px;
+  padding: 9px 0 0 71px;
   display: block;
   position: relative;
 

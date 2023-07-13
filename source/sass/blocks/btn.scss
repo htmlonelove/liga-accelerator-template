@@ -4,7 +4,7 @@
   padding: 10px 20px;
   min-height: 64px;
 
-  color: $color-default-white;
+  color: $color-default-black;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
@@ -38,6 +38,8 @@
     justify-content: center;
     min-width: 206px;
     letter-spacing: 0.05em;
+    border: none;
+    color: $color-default-white;
   }
 
   &:disabled {
