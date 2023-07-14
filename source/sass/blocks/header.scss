@@ -1,0 +1,28 @@
+.header__wrap {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo, .header__phone {
+  display: block;
+}
+
+.header__phone {
+  color: $color-default-white;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31.2px;
+
+  @include vp-1365 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
