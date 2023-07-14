@@ -9,6 +9,7 @@
   color: $color-default-white;
   cursor: pointer;
   transition: opacity $trans-default;
+  align-items: center;
 
   &:disabled {
     opacity: 0.5;
