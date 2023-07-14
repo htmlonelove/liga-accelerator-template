@@ -57,9 +57,10 @@
   width: 110px;
   height: 32px;
   margin: 0;
-  padding: 9px 0 0 71px;
   display: block;
   position: relative;
+  top: 11px;
+  left: 71px;
 
   @include vp-767 {
     width: 82px;

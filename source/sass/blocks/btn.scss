@@ -5,10 +5,13 @@
   min-height: 64px;
 
   color: $color-default-black;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: $color-default-white;
   border: none;
@@ -24,10 +27,8 @@
     border: $color-default-black solid 2px;
     color: $color-default-black;
     padding: 24px 0;
-    text-align: center;
     justify-content: center;
     min-width: 206px;
-    letter-spacing: 0.05em;
     z-index: 1;
 
     @include vp-374 {
@@ -36,13 +37,16 @@
     }
   }
 
+  &--transparent {
+    background-color: transparent;
+    color: $color-default-white;
+  }
+
   &--active {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     padding: 24px 0;
-    text-align: center;
     justify-content: center;
     min-width: 206px;
-    letter-spacing: 0.05em;
     border: none;
     color: $color-default-white;
   }

@@ -36,9 +36,9 @@
 }
 
 .hero__title {
-  font-family: "Alumni Sans", sans-serif;
+  @include title;
+
   font-size: 92px;
-  font-weight: 600;
   line-height: 110px;
   letter-spacing: 0.05em;
   text-align: right;
@@ -137,18 +137,12 @@
 .hero__btn {
   display: block;
   width: 235px;
-  background-color: $color-transparent;
   border: $color-default-white solid 4px;
   position: relative;
   top: 162px;
   left: 245px;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14px;
   letter-spacing: 0.05em;
   text-align: center;
-  color: $color-default-white;
   padding: 20px;
 
   @include vp-767 {

@@ -6,6 +6,7 @@
 
   @include vp-374 {
     margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -20,13 +21,13 @@
   bottom: -98px;
   background-position: right;
 
+
   @include vp-767 {
     background: url("/img/memberships/membership-equipment-tablet.png") no-repeat;
-    width: 289px;
-    height: 345px;
-    bottom: -58px;
+    bottom: -118px;
     right: 5px;
     rotate: 359deg;
+    background-size: cover;
   }
 
   @include vp-374 {
@@ -36,7 +37,7 @@
 
 .memberships__wrapper {
   margin: 0 auto;
-  padding: 120px 103px 120px;
+  padding: 120px 53px 120px;
   z-index: 1;
   width: 100%;
   max-width: 1366px;
@@ -46,29 +47,24 @@
   }
 
   @include vp-374 {
-    padding: 24px 5px;
+    padding: 24px 5px 74px;
   }
 }
 
 .memberships__title {
+  @include title;
+
   margin: 0 0 22px;
-  text-align: center;
-  font-family: "Alumni Sans", sans-serif;
   font-size: 54px;
-  font-weight: 600;
   line-height: 65px;
   letter-spacing: 0.03em;
 
   @include vp-767 {
-    font-size: 42px;
-    line-height: 50px;
-    padding: 35px 10px 0 0;
+    padding: 35px 12px 0 0;
   }
 
   @include vp-374 {
     margin-top: 0;
-    font-size: 32px;
-    line-height: 38px;
   }
 }
 
@@ -96,9 +92,10 @@
   @include vp-767 {
     gap: 35px;
     padding-top: 5px;
+    top: -10px;
 
     &::after {
-      bottom: 19px;
+      bottom: 30px;
     }
   }
 
@@ -161,7 +158,7 @@
     &::after {
       left: -2px;
       width: calc(100% + 8px);
-      bottom: 21px;
+      bottom: 26px;
     }
   }
 
@@ -180,7 +177,7 @@
   align-items: center;
 
   @include vp-767 {
-    margin: 0 145px;
+    margin: 0 148px;
   }
 
   @include vp-374 {

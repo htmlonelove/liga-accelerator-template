@@ -36,9 +36,8 @@
 }
 
 .gim__title {
-  font-family: "Alumni Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 600;
+  @include title;
+
   line-height: 58px;
   letter-spacing: 0.03em;
   text-align: left;
@@ -46,16 +45,12 @@
   padding: 40px 0 0;
 
   @include vp-767 {
-    font-size: 42px;
-    line-height: 50.4px;
-    text-align: center;
     padding: 0 120px 0 105px;
     min-width: 261px;
+    text-align: center;
   }
 
   @include vp-374 {
-    font-size: 32px;
-    line-height: 38px;
     text-align: left;
     padding: 0 0 5px 20px;
   }
