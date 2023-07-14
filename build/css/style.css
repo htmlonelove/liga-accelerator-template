@@ -623,6 +623,12 @@ button,
   letter-spacing: 0.05em;
   z-index: 1;
 }
+@media (max-width: 374px) {
+  .btn--blue {
+    min-width: 208px;
+    margin: 0 20px 0 17px;
+  }
+}
 .btn--active {
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   padding: 24px 0;
@@ -1336,7 +1342,7 @@ button,
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
-    left: 2px;
+    left: 15px;
     top: -15px;
   }
 }
@@ -1364,7 +1370,7 @@ button,
     height: 24px;
     padding: 0;
     top: -10px;
-    left: -1px;
+    left: -15px;
   }
 }
 
@@ -1752,7 +1758,7 @@ button,
   .hero__btn {
     width: 290px;
     top: 80px;
-    left: 15px;
+    left: -7px;
   }
 }
 
@@ -1892,7 +1898,7 @@ button,
 }
 @media (max-width: 374px) {
   .gim__media {
-    height: 650px;
+    height: 550px;
     padding: 10px;
   }
 }
@@ -1920,7 +1926,7 @@ button,
   .gim__photo {
     width: 320px;
     height: 313px;
-    top: -45px;
+    top: -55px;
     left: -26px;
   }
 }
@@ -1949,7 +1955,7 @@ button,
   .gim__video {
     width: 320px;
     height: 167px;
-    top: -77px;
+    top: -90px;
     left: -26px;
   }
 }
@@ -1973,6 +1979,14 @@ button,
     left: 332px;
   }
 }
+@media (max-width: 374px) {
+  .gim__play {
+    width: 73px;
+    height: 73px;
+    top: 32px;
+    left: 100px;
+  }
+}
 
 .memberships {
   background-color: #f8f9fc;
@@ -1981,6 +1995,11 @@ button,
   display: flex;
   position: relative;
   margin-top: 105px;
+}
+@media (max-width: 374px) {
+  .memberships {
+    margin-top: 0;
+  }
 }
 
 .memberships::after {
@@ -2004,6 +2023,11 @@ button,
     rotate: 359deg;
   }
 }
+@media (max-width: 374px) {
+  .memberships::after {
+    display: none;
+  }
+}
 
 .memberships__wrapper {
   margin: 0 auto;
@@ -2015,6 +2039,11 @@ button,
 @media (max-width: 767px) {
   .memberships__wrapper {
     padding: 66px 15px 70px;
+  }
+}
+@media (max-width: 374px) {
+  .memberships__wrapper {
+    padding: 24px 5px;
   }
 }
 
@@ -2032,6 +2061,13 @@ button,
     font-size: 42px;
     line-height: 50px;
     padding: 35px 10px 0 0;
+  }
+}
+@media (max-width: 374px) {
+  .memberships__title {
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -2068,7 +2104,18 @@ button,
     padding-top: 5px;
   }
   .memberships__controls::after {
-    bottom: 25px;
+    bottom: 19px;
+  }
+}
+@media (max-width: 374px) {
+  .memberships__controls {
+    width: 310px;
+    gap: 25px;
+    top: -10px;
+  }
+  .memberships__controls::after {
+    bottom: 21px;
+    width: 270px;
   }
 }
 
@@ -2095,6 +2142,15 @@ button,
     text-align: left;
   }
 }
+@media (max-width: 374px) {
+  .memberships__control {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    min-height: 55px;
+  }
+}
 
 .memberships__control.is-active {
   color: #102654;
@@ -2114,6 +2170,13 @@ button,
     bottom: 21px;
   }
 }
+@media (max-width: 374px) {
+  .memberships__control.is-active::after {
+    left: -2px;
+    width: calc(100% + 8px);
+    bottom: 17px;
+  }
+}
 
 .memberships__content {
   display: -webkit-box;
@@ -2130,6 +2193,11 @@ button,
 @media (max-width: 767px) {
   .memberships__content {
     margin: 0 145px;
+  }
+}
+@media (max-width: 374px) {
+  .memberships__content {
+    margin: 0 15px;
   }
 }
 
@@ -2154,6 +2222,11 @@ button,
     gap: 41px;
   }
 }
+@media (max-width: 374px) {
+  .memberships__element.is-active {
+    gap: 33px;
+  }
+}
 
 .memberships__catalog {
   position: relative;
@@ -2168,7 +2241,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 360px;
+  min-width: 360px;
   background-color: #ffffff;
   z-index: 2;
 }
@@ -2186,6 +2259,13 @@ button,
     min-height: 448px;
   }
 }
+@media (max-width: 374px) {
+  .memberships__catalog {
+    min-width: 290px;
+    min-height: 384px;
+    padding: 51px 24px 0;
+  }
+}
 
 .card__title {
   margin: 0 0 12px;
@@ -2200,6 +2280,13 @@ button,
     font-size: 26px;
     font-weight: 700;
     line-height: 29px;
+  }
+}
+@media (max-width: 374px) {
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 0 9px;
   }
 }
 
@@ -2230,9 +2317,18 @@ button,
     right: 120px;
   }
 }
+@media (max-width: 374px) {
+  .card__period::after {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 120px;
+    right: 26px;
+    top: 118px;
+  }
+}
 @media (max-width: 767px) {
   .card__period {
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -2270,7 +2366,16 @@ button,
   .card__price::after {
     width: 26px;
     height: 33px;
-    top: 0;
+    top: 2px;
+  }
+}
+@media (max-width: 374px) {
+  .card__price {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    top: -14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -2305,13 +2410,20 @@ button,
      border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
   top: 2px;
-  height: 450px;
+  min-height: 450px;
   padding: 55px;
 }
 @media (max-width: 767px) {
   .card--active {
     min-height: 448px;
     min-width: 445px;
+  }
+}
+@media (max-width: 374px) {
+  .card--active {
+    min-width: 246px;
+    min-height: 384px;
+    padding: 45px 15px 0;
   }
 }
 

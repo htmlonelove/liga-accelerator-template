@@ -117,7 +117,7 @@
   }
 
   @include vp-374 {
-    height: 650px;
+    height: 550px;
     padding: 10px;
   }
 }
@@ -143,7 +143,7 @@
   @include vp-374 {
     width: 320px;
     height: 313px;
-    top: -45px;
+    top: -55px;
     left: -26px;
   }
 }
@@ -169,7 +169,7 @@
   @include vp-374 {
     width: 320px;
     height: 167px;
-    top: -77px;
+    top: -90px;
     left: -26px;
   }
 }
@@ -190,5 +190,12 @@
     height: 73px;
     top: -92px;
     left: 332px;
+  }
+
+  @include vp-374 {
+    width: 73px;
+    height: 73px;
+    top: 32px;
+    left: 100px;
   }
 }

@@ -3,6 +3,10 @@
   display: flex;
   position: relative;
   margin-top: 105px;
+
+  @include vp-374 {
+    margin-top: 0;
+  }
 }
 
 .memberships::after {
@@ -24,6 +28,10 @@
     right: 5px;
     rotate: 359deg;
   }
+
+  @include vp-374 {
+    display: none;
+  }
 }
 
 .memberships__wrapper {
@@ -35,6 +43,10 @@
 
   @include vp-767 {
     padding: 66px 15px 70px;
+  }
+
+  @include vp-374 {
+    padding: 24px 5px;
   }
 }
 
@@ -51,6 +63,12 @@
     font-size: 42px;
     line-height: 50px;
     padding: 35px 10px 0 0;
+  }
+
+  @include vp-374 {
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -80,7 +98,18 @@
     padding-top: 5px;
 
     &::after {
-      bottom: 25px;
+      bottom: 19px;
+    }
+  }
+
+  @include vp-374 {
+    width: 310px;
+    gap: 25px;
+    top: -10px;
+
+    &::after {
+      bottom: 21px;
+      width: 270px;
     }
   }
 }
@@ -106,6 +135,14 @@
     line-height: 27px;
     text-align: left;
   }
+
+  @include vp-374 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    min-height: 55px;
+  }
 }
 
 .memberships__control.is-active {
@@ -127,6 +164,14 @@
       bottom: 21px;
     }
   }
+
+  @include vp-374 {
+    &::after {
+      left: -2px;
+      width: calc(100% + 8px);
+      bottom: 17px;
+    }
+  }
 }
 
 .memberships__content {
@@ -136,6 +181,10 @@
 
   @include vp-767 {
     margin: 0 145px;
+  }
+
+  @include vp-374 {
+    margin: 0 15px;
   }
 }
 
@@ -152,6 +201,10 @@
   @include vp-767 {
     gap: 41px;
   }
+
+  @include vp-374 {
+    gap: 33px;
+  }
 }
 
 .memberships__catalog {
@@ -160,7 +213,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 360px;
+  min-width: 360px;
   background-color: $color-default-white;
   z-index: 2;
 
@@ -174,5 +227,11 @@
     min-width: 442px;
     padding-top: 65px;
     min-height: 448px;
+  }
+
+  @include vp-374 {
+    min-width: 290px;
+    min-height: 384px;
+    padding: 51px 24px 0;
   }
 }

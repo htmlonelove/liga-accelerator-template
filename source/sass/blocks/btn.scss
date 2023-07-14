@@ -29,6 +29,11 @@
     min-width: 206px;
     letter-spacing: 0.05em;
     z-index: 1;
+
+    @include vp-374 {
+      min-width: 208px;
+      margin: 0 20px 0 17px;
+    }
   }
 
   &--active {

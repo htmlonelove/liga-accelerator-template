@@ -11,6 +11,12 @@
     font-weight: 700;
     line-height: 29px;
   }
+
+  @include vp-374 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0 0 9px;
+  }
 }
 
 .card__period {
@@ -38,10 +44,18 @@
     @include vp-767 {
       right: 120px;
     }
+
+    @include vp-374 {
+      font-size: 80px;
+      font-weight: 700;
+      line-height: 120px;
+      right: 26px;
+      top: 118px;
+    }
   }
 
   @include vp-767 {
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 
@@ -80,8 +94,16 @@
     &::after {
       width: 26px;
       height: 33px;
-      top: 0;
+      top: 2px;
     }
+  }
+
+  @include vp-374 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    top: -14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -108,11 +130,17 @@
   border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
   top: 2px;
-  height: 450px;
+  min-height: 450px;
   padding: 55px;
 
   @include vp-767 {
     min-height: 448px;
     min-width: 445px;
+  }
+
+  @include vp-374 {
+    min-width: 246px;
+    min-height: 384px;
+    padding: 45px 15px 0;
   }
 }
