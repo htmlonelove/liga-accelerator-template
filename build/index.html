@@ -147,6 +147,7 @@
       </section>
 
       <section class="news">
+        <div class="container">
         <div class="news__wrapper">
           <h2 class="visually-hidden">Новости и мероприятия</h2>
           <div class="news__about">
@@ -172,13 +173,14 @@
         <div class="news__media">
           <span class="visually-hidden">Фото новости.</span>
         </div>
+        </div>
       </section>
 
       <section class="trainers" id="trainers">
         <div class="trainers__wrapper">
           <h2 class="trainers__title">Тренеры</h2>
-          <div class="trainers__swiper swiper-slide">
 
+          <div class="trainers__swiper swiper">
             <div class="trainers__swiper-wrapper swiper-wrapper">
 
               <div class="trainers__card">
@@ -286,7 +288,7 @@
                 <p>Мария Кетова</p>
                 <div class="trainers__info">
                   <p>Мария Кетова</p>
-                  <p class="trainers__direction">Personal Trainer</p>
+                  <p class="trainer__direction">Personal Trainer</p>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 5 Trainer</li>
                     <li class="trainers__item">Диетолог, нутрициолог, персональный тренер</li>
@@ -411,9 +413,9 @@
 
             </div>
           </div>
-          <div class="trainers__swiper-button trainers__swiper-button--prev">
+          <div class="trainers__swiper-button trainers__button--back">
           </div>
-          <div class="trainers__swiper-button trainers__swiper-button--next">
+          <div class="trainers__swiper-button trainers__button--along">
           </div>
         </div>
       </section>
@@ -658,7 +660,6 @@
     </div>
   </div>
 
-  <script src="js/vendor/swiper.js"></script>
   <script src="js/vendor.min.js" type="module"></script>
   <script src="js/main.min.js" type="module"></script>
 </body>

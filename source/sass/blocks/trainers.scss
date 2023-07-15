@@ -82,56 +82,6 @@
   z-index: 2;
   cursor: pointer;
 
-  &--prev {
-    left: 27px;
-    transform: translate(0, -50%);
-    background-image: url("../img/sprite/arrow-back.svg");
-    fill: #afafaf;
-
-    &:hover,
-    &:focus {
-      left: 29px;
-      background-image: url("../img/sprite/arrow-back.svg");
-      background-size: 56px 56px;
-      outline: none;
-    }
-  }
-
-  &--next {
-    right: 27px;
-    transform: translate(0, -50%);
-    background-image: url("../img/sprite/arrow-along.svg");
-    fill: #afafaf;
-
-    &:hover,
-    &:focus {
-      right: 29px;
-      background-image: url("../img/sprite/arrow-along.svg");
-      background-size: 56px 56px;
-      outline: none;
-    }
-  }
-
-  @media (min-width: $vp-1200) and (max-width: 1360px) {
-    &--prev {
-      left: 1%;
-
-      &:hover,
-      &:focus {
-        left: 1.2%;
-      }
-    }
-
-    &--next {
-      right: 1%;
-
-      &:hover,
-      &:focus {
-        right: 1.2%;
-      }
-    }
-  }
-
   @include vp-1199 {
     top: 48%;
   }
@@ -148,6 +98,38 @@
 
     &--next {
       right: 10px;
+    }
+  }
+}
+
+.trainers__button {
+  &--back {
+    left: 27px;
+    transform: translate(0, -50%);
+    background-image: url("../img/sprite/arrow-back.svg");
+    fill: #afafaf;
+
+    &:hover,
+    &:focus {
+      left: 29px;
+      background-image: url("../img/sprite/arrow-back.svg");
+      background-size: 56px 56px;
+      outline: none;
+    }
+  }
+
+  &--along {
+    right: 27px;
+    transform: translate(0, -50%);
+    background-image: url("../img/sprite/arrow-along.svg");
+    fill: #afafaf;
+
+    &:hover,
+    &:focus {
+      right: 29px;
+      background-image: url("../img/sprite/arrow-along.svg");
+      background-size: 56px 56px;
+      outline: none;
     }
   }
 }
@@ -183,7 +165,6 @@
   height: 100%;
   color: $color-default-white;
   background-color: rgba(16, 38, 84, 0.89);
-  overflow: scroll;
   font-size: 14px;
   line-height: 22px;
 
