@@ -67,12 +67,10 @@
 }
 
 .news__description {
+  @include h4;
+
   color: $color-default-white;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
   letter-spacing: 0;
-  text-align: left;
   margin: 0 20px 45px;
 
   @include vp-767 {
@@ -144,11 +142,10 @@
 }
 
 .news__label {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  letter-spacing: 0;
+  @include h4;
+
   text-align: left;
+  letter-spacing: 0;
   color: $color-default-white;
   display: block;
   position: relative;

@@ -40,14 +40,14 @@
 }
 
 .navigation__item {
-  font-size: 14px;
-  font-weight: 400;
+  @include input;
+
   line-height: 16px;
   text-align: left;
 
   @include vp-374 {
-    font-size: 16px;
-    font-weight: 400;
+    @include h5;
+
     line-height: 19px;
     text-align: left;
     min-width: 135px;

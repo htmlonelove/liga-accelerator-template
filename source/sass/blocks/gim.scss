@@ -57,9 +57,8 @@
 }
 
 .gim__description {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
+  @include h4;
+
   text-align: left;
   margin: 0;
   padding: 7px 0 35px;
@@ -76,10 +75,9 @@
 }
 
 .gim__detail {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
+  @include h5;
+
   font-weight: 300;
-  line-height: 24px;
   text-align: left;
   letter-spacing: -0.01em;
 
