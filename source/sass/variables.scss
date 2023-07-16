@@ -15,7 +15,9 @@ $color-torch-red:                   #ff1553;
 
 // Gradient
 
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$main-gradient-desktop:                     conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$main-gradient-tablet:                      conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$main-gradient-mobile:                      conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
 // Typography
 // ---------------------------------
@@ -47,6 +49,7 @@ $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
+$vp-1200:                           1200px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;

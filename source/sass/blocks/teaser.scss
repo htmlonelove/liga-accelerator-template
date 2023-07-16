@@ -1,0 +1,137 @@
+.teaser {
+  display: grid;
+  grid-template-rows: 1fr min-content min-content;
+  grid-template-columns: 133px 246px 1fr;
+  grid-template-areas: "features label image" "features heading image" "features btn image";
+  gap: 13px 16px;
+  min-height: 658px;
+  padding-top: 51px;
+  padding-bottom: 51px;
+
+  @include vp-1199 {
+    grid-template-columns: 113px 187px 1fr;
+    gap: 12px 24px;
+    min-height: auto;
+    padding-top: 19px;
+    padding-bottom: 82px;
+  }
+
+  @include vp-767 {
+    grid-template-areas: ". label" "features heading" "btn btn";
+    grid-template-columns: 113px 1fr;
+    column-gap: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.teaser__label,
+.teaser__heading {
+  font-weight: 600;
+  font-family: "Alumni Sans";
+}
+
+.teaser__label {
+  grid-area: label;
+  align-self: end;
+  margin: 0 0 0 64px;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: lowercase;
+
+  @include vp-1199 {
+    margin: 0 4px -5px 0;
+    font-size: 34px;
+    line-height: 40.8px;
+    text-align: right;
+    letter-spacing: 1.02px;
+  }
+
+  @include vp-767 {
+    margin: -6px 3px 2px 0;
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.teaser__heading {
+  grid-area: heading;
+  margin: 0 0 39px;
+  font-size: 92px;
+  line-height: 110px;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 4px;
+  text-align: right;
+  text-transform: uppercase;
+  overflow-wrap: normal;
+
+  @include vp-1199 {
+    margin-bottom: 27px;
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: none;
+    text-align: right;
+    letter-spacing: 3.6px;
+  }
+
+  @include vp-767 {
+    margin-left: -15px;
+  }
+}
+
+.teaser__features {
+  grid-area: features;
+  align-self: center;
+  margin: 0;
+  padding: 117px 0 0;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+  line-height: 21px;
+  list-style: none;
+  font-size: 14px;
+  text-align: right;
+
+  @include vp-1199 {
+    padding-top: 44px;
+  }
+
+  @include vp-767 {
+    align-self: start;
+    padding: 78px 0 30px;
+  }
+}
+
+.teaser__btn {
+  grid-area: btn;
+  margin: 0 0 45px 16px;
+  outline: 2px solid;
+
+  @include vp-1199 {
+    margin-bottom: 25px;
+    margin-left: 4px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.teaser__image {
+  grid-area: image;
+  margin: 0 0 0 49px;
+
+  @include vp-1199 {
+    margin-left: 6px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

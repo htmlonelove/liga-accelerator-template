@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 41px;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1199 {
+    column-gap: 30px;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.nav__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

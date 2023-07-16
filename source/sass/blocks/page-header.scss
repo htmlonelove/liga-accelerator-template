@@ -1,0 +1,88 @@
+.page-header {
+  padding: 30px 0 0;
+  color: $color-default-white;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+  @include vp-1199 {
+    padding-top: 34px;
+
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  }
+
+  @include vp-767 {
+    padding-top: 16px;
+    padding-bottom: 81px;
+
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  }
+}
+
+.page-header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767 {
+    margin-bottom: 73px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.page-header__logo {
+  margin-top: 10px;
+
+  @include vp-1199 {
+    width: 82px;
+    margin-top: 7px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    margin-top: 5px;
+  }
+}
+
+.page-header__link {
+  position: relative;
+  display: inline-block;
+  font-family: "Alumni Sans";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 20px;
+  letter-spacing: 0.75px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.34px;
+  }
+}
+
+.page-header__teaser {
+  margin-top: -63px;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
+}
