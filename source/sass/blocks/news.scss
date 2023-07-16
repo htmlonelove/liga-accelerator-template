@@ -1,6 +1,6 @@
 .news {
   display: flex;
-  margin: 117px 73px 40px;
+  margin: 117px 73px 100px 103px;
 
   @include vp-767 {
     margin: 130px 30px 40px;
@@ -97,7 +97,7 @@
     position: absolute;
     content: "";
     left: 34%;
-    top: 37.2%;
+    top: 38.44%;
     width: 65px;
     height: 1px;
     background-color: $color-default-white;

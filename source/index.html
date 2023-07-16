@@ -147,7 +147,6 @@
       </section>
 
       <section class="news">
-        <div class="container">
         <div class="news__wrapper">
           <h2 class="visually-hidden">Новости и мероприятия</h2>
           <div class="news__about">
@@ -173,7 +172,6 @@
         <div class="news__media">
           <span class="visually-hidden">Фото новости.</span>
         </div>
-        </div>
       </section>
 
       <section class="trainers" id="trainers">
@@ -183,7 +181,7 @@
           <div class="trainers__swiper swiper">
             <div class="trainers__swiper-wrapper swiper-wrapper">
 
-              <div class="trainers__card">
+              <div class="trainers__card swiper-slide">
                 <picture>
                   <source media="(max-width: 767px)" type="image/webp"
                     srcset="./img/trainers/anna.webp 1x, ./img/trainers/anna@2x.webp 2x" width="226" height="274">
@@ -227,9 +225,9 @@
                   <img src="./img/trainers/alex.jpg" srcset="./img/trainers/alex.jpg 1x, ./img/trainers/alex@2x.jpg 2x"
                     alt="Фото тренера Алексей Лавров." width="260" height="294" loading="lazy">
                 </picture>
-                <p>Алексей Лавров</p>
+                <p class="trainers__name">Алексей Лавров</p>
                 <div class="trainers__info">
-                  <p>Алексей Лавров</p>
+                  <p class="trainers__name">Алексей Лавров</p>
                   <div class="trainer__direction">Dance</div>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 2 Trainer</li>
@@ -256,9 +254,9 @@
                     srcset="./img/trainers/sasha.jpg 1x, ./img/trainers/sasha@2x.jpg 2x"
                     alt="Фото тренера Александр Пашков." width="260" height="294" loading="lazy">
                 </picture>
-                <p>Александр Пашков</p>
+                <p class="trainers__name">Александр Пашков</p>
                 <div class="trainers__info">
-                  <p>Александр Пашков</p>
+                  <p class="trainers__name">Александр Пашков</p>
                   <div class="trainer__direction">CrossFit</div>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 3 Trainer</li>
@@ -285,10 +283,10 @@
                     srcset="./img/trainers/maria.jpg 1x, ./img/trainers/maria@2x.jpg 2x"
                     alt="Фото тренера Мария Кетова." width="260" height="294" loading="lazy">
                 </picture>
-                <p>Мария Кетова</p>
+                <p class="trainers__name">Мария Кетова</p>
                 <div class="trainers__info">
-                  <p>Мария Кетова</p>
-                  <p class="trainer__direction">Personal Trainer</p>
+                  <p class="trainers__name">Мария Кетова</p>
+                  <div class="trainer__direction">Personal Trainer</div>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 5 Trainer</li>
                     <li class="trainers__item">Диетолог, нутрициолог, персональный тренер</li>
@@ -313,9 +311,9 @@
                   <img src="./img/trainers/anna.jpg" srcset="./img/trainers/anna.jpg 1x, ./imgtrainers/anna@2x.jpg 2x"
                     alt="Фото тренера Анна Павлова." width="260" height="294" loading="lazy">
                 </picture>
-                <p>Анна Павлова</p>
+                <p class="trainers__name">Анна Павлова</p>
                 <div class="trainers__info">
-                  <p>Анна Павлова</p>
+                  <p class="trainers__name">Анна Павлова</p>
                   <div class="trainer__direction">Yoga</div>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 2 Trainer</li>
@@ -341,9 +339,9 @@
                   <img src="./img/trainers/alex.jpg" srcset="./img/trainers/alex.jpg 1x, ./img/trainers/alex@2x.jpg 2x"
                     alt="Фото тренера Алексей Лавров." width="260" height="294" loading="lazy">
                 </picture>
-                <p>Алексей Лавров</p>
+                <p class="trainers__name">Алексей Лавров</p>
                 <div class="trainers__info">
-                  <p>Алексей Лавров</p>
+                  <p class="trainers__name">Алексей Лавров</p>
                   <div class="trainer__direction">Dance</div>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 2 Trainer</li>
@@ -370,9 +368,9 @@
                     srcset="./img/trainers/sasha.jpg 1x, ./img/trainers/sasha@2x.jpg 2x"
                     alt="Фото тренера Александр Пашков." width="260" height="294" loading="lazy">
                 </picture>
-                <p>Александр Пашков</p>
+                <p class="trainers__name">Александр Пашков</p>
                 <div class="trainers__info">
-                  <p>Александр Пашков</p>
+                  <p class="trainers__name">Александр Пашков</p>
                   <div class="trainer__direction">CrossFit</div>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 3 Trainer</li>
@@ -399,10 +397,10 @@
                     srcset="./img/trainers/maria.jpg 1x, ./img/trainers/maria@2x.jpg 2x"
                     alt="Фото тренера Мария Кетова." width="260" height="294" loading="lazy">
                 </picture>
-                <p>Мария Кетова</p>
+                <p class="trainers__name">Мария Кетова</p>
                 <div class="trainers__info">
-                  <p>Мария Кетова</p>
-                  <p class="trainers__direction">Personal Trainer</p>
+                  <p class="trainers__name">Мария Кетова</p>
+                  <div class="trainer__direction">Personal Trainer</div>
                   <ul class="trainers__description">
                     <li class="trainers__item">Certified Level 5 Trainer</li>
                     <li class="trainers__item">Диетолог, нутрициолог, персональный тренер</li>
@@ -421,36 +419,63 @@
       </section>
 
       <section class="advantages">
-        <dl class="advantages__list">
-          <dt>900</dt>
-          <dd>кв/м</dd>
-          <dt>Площадь</dt>
-          <dd>Занимайтесь без очередей и толпучки</dd>
-        </dl>
-        <dl class="advantages__list">
-          <dt>350</dt>
-          <dd>мест</dd>
-          <dt>Комфорт</dt>
-          <dd>Просторные раздевалки,
-            душевые, фен, Wi-Fi, кулеры</dd>
-        </dl>
-        <dl class="advantages__list">
-          <dt>70</dt>
-          <dd>машин</dd>
-          <dt>Собственная парковка</dt>
-          <dd>Вы всегда найдете место для своей машины на нашей парковке</dd>
-        </dl>
-        <dl class="advantages__list">
-          <dt>5+</dt>
-          <dd>лет</dd>
-          <dt>Тренерский опыт</dt>
-          <dd>Добивайтесь своих целей быстрее с профессиональным тренером</dd>
-        </dl>
-        <dl class="advantages__list">
-          <dt>100</dt>
-          <dd>Тренажеров</dd>
-          <dd>Современные тренажеры на все группы мышц</dd>
-        </dl>
+        <div class="container">
+          <h2 class="advantages__title">Наши преимущества
+          </h2>
+          <div class="advantages__wrapper">
+            <div class="advantages__wrapper--side">
+              <div class="advantages__list">
+                <div class="advantages__list--wrapper">
+                  <span class="advantages__item advantages__item--gradient">900</span>
+                  <span class="advantages__item--description">кв/м</span>
+                </div>
+                <div class="advantages__item--text">
+                  <h3>Площадь</h3>
+                  <p>Занимайтесь без очередей<br> и толпучки</p>
+                </div>
+              </div>
+              <div class="advantages__list">
+                <div class="advantages__list--wrapper">
+                  <span class="advantages__item advantages__item--gradient">350</span>
+                  <span class="advantages__item--description">мест</span>
+                </div>
+                <div class="advantages__item--text">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки,<br>душевые, фен, Wi-Fi, кулеры</p>
+                </div>
+              </div>
+            </div>
+            <div class="advantages__wrapper--center">
+              <div class="advantages__list advantages__list--center">
+                <span class="advantages__item advantages__item--color">100</span>
+                <h3 class="advantages__description--center">Тренажеров</h3>
+                <p class="advantages__text">Современные тренажеры<br>на все группы мышц</p>
+              </div>
+            </div>
+            <div class="advantages__wrapper--side">
+              <div class="advantages__list">
+                <div class="advantages__list--wrapper">
+                  <span class="advantages__item advantages__item--gradient">70</span>
+                  <span class="advantages__item--description">машин</span>
+                </div>
+                <div class="advantages__item--text">
+                  <h3>Собственная парковка</h3>
+                  <p>Вы всегда найдете место для<br>своей машины на нашей парковке</p>
+                </div>
+              </div>
+              <div class="advantages__list">
+                <div class="advantages__list--wrapper">
+                  <span class="advantages__item advantages__item--gradient">5+</span>
+                  <span class="advantages__item--description">лет</span>
+                </div>
+                <div class="advantages__item--text">
+                  <h3>Тренерский опыт</h3>
+                  <p>Добивайтесь своих целей быстрее<br>с профессиональным тренером</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <div class="container">
