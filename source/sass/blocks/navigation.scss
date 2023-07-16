@@ -4,11 +4,11 @@
   top: 35px;
   left: 36px;
 
-  @include vp-767 {
+  @include vp-1199 {
     left: -40px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     flex-direction: column;
     gap: 20px;
     max-width: 90px;
@@ -23,11 +23,11 @@
   display: flex;
   gap: 40px;
 
-  @include vp-767 {
+  @include vp-1199 {
     gap: 30px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 120px;
@@ -45,7 +45,7 @@
   line-height: 16px;
   text-align: left;
 
-  @include vp-374 {
+  @include vp-767 {
     @include h5;
 
     line-height: 19px;

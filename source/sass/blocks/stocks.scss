@@ -1,0 +1,78 @@
+.stocks__title {
+  @include h2;
+  text-align: center;
+}
+
+.stocks__wrapper {
+  padding: 0 50px;
+}
+
+.stocks__list {
+  display: flex;
+}
+
+.stocks__item--main {
+  display: flex;
+}
+
+.stocks__item--other {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stocks__card {
+  border: solid 7px;
+  border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+}
+
+.stocks__about {
+  &--main {
+    background-color: #ed0233;
+    color: $color-default-white;
+  }
+}
+
+.stocks__name {
+  @include h3;
+
+  line-height: 150px;
+  text-align: left;
+  margin: 0;
+
+  &--main {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+}
+
+.stocks__description {
+  @include h5;
+
+  line-height: 22px;
+  text-align: left;
+  margin: 0;
+
+  &--main {
+    @include h4;
+
+    line-height: 25px;
+    letter-spacing: 0;
+  }
+}
+
+.stocks__bigname {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 109px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.stocks__link {
+  color: $color-default-white;
+  text-decoration: underline;
+}

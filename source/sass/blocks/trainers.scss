@@ -87,27 +87,6 @@
   z-index: 2;
   cursor: pointer;
 
-  @include vp-1199 {
-    top: 48%;
-  }
-
-  @include vp-767 {
-    top: 51%;
-    width: 20px;
-    height: 20px;
-    background-size: 10px 19px;
-
-    &--prev {
-      left: 10px;
-    }
-
-    &--next {
-      right: 10px;
-    }
-  }
-}
-
-.trainers__button {
   &--back {
     left: 27px;
     transform: translate(0, -50%);
@@ -135,6 +114,25 @@
       background-image: url("../img/sprite/arrow-along.svg");
       background-size: 56px 56px;
       outline: none;
+    }
+  }
+
+  @include vp-1199 {
+    top: 48%;
+  }
+
+  @include vp-767 {
+    top: 51%;
+    width: 20px;
+    height: 20px;
+    background-size: 10px 19px;
+
+    &--back {
+      left: 10px;
+    }
+
+    &--along {
+      right: 10px;
     }
   }
 }
@@ -209,7 +207,7 @@
   line-height: 18px;
 }
 
-.trainer__direction {
+.info__direction {
   margin: 0 0 34px;
   display: block;
   font-size: 16px;

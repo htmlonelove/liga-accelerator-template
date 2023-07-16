@@ -5,11 +5,11 @@
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
 
-  @include vp-767 {
+  @include vp-1199 {
     min-height: 554px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     min-height: 491px;
   }
 }
@@ -23,14 +23,14 @@
   background: url("/img/hero/hero-man.jpg") no-repeat center;
   background-size: cover;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 324px;
     height: 390px;
     top: 80px;
     right: 45px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     display: none;
   }
 }
@@ -54,7 +54,7 @@
   text-shadow: 2px 0 2px $color-default-white;
 
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 72px;
     line-height: 86px;
     width: 235px;
@@ -64,7 +64,7 @@
     text-transform: none;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 213px;
     text-align: right;
     left: 95px;
@@ -90,7 +90,7 @@
   top: -55px;
   text-shadow: 2px 0 2px $color-default-white;
 
-  @include vp-767 {
+  @include vp-1199 {
     letter-spacing: 0.05em;
     font-size: 30px;
     line-height: 41px;
@@ -98,7 +98,7 @@
     top: -40px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 51px;
     top: -63px;
     left: 254px;
@@ -122,12 +122,12 @@
   top: 78px;
   left: 122px;
 
-  @include vp-767 {
+  @include vp-1199 {
     left: 45px;
     top: 55px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     top: 25px;
     left: 15px;
   }
@@ -144,13 +144,13 @@
   text-align: center;
   padding: 20px;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 185px;
     top: 112px;
     left: 165px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 290px;
     top: 80px;
     left: -7px;

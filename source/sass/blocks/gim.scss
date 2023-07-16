@@ -6,7 +6,7 @@
   position: relative;
   gap: 55px;
 
-  @include vp-767 {
+  @include vp-1199 {
     flex-direction: column;
     left: 0;
   }
@@ -21,14 +21,14 @@
   top: 68px;
   left: 75px;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 502px;
     top: 50px;
     left: 117px;
     padding-bottom: 0;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 300px;
     top: 15px;
     left: -20px;
@@ -44,13 +44,13 @@
   margin: 0;
   padding: 40px 0 0;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding: 0 120px 0 105px;
     min-width: 261px;
     text-align: center;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     text-align: left;
     padding: 0 0 5px 20px;
   }
@@ -63,12 +63,12 @@
   margin: 0;
   padding: 7px 0 35px;
 
-  @include vp-767 {
+  @include vp-1199 {
     text-align: center;
     padding: 0 0 20px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 300px;
     padding: 0 0 10px 20px;
   }
@@ -81,20 +81,20 @@
   text-align: left;
   letter-spacing: -0.01em;
 
-  @include vp-767 {
+  @include vp-1199 {
     text-align: center;
     font-size: 14px;
     letter-spacing: 0;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     text-align: left;
     padding: 0 60px 0 20px;
   }
 }
 
 .gim__detail:last-of-type {
-  @include vp-767 {
+  @include vp-1199 {
     display: none;
   }
 }
@@ -105,11 +105,11 @@
   padding: 10px 0;
   height: 650px;
 
-  @include vp-767 {
+  @include vp-1199 {
     height: 380px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     height: 550px;
     padding: 10px;
   }
@@ -126,14 +126,14 @@
   background: url("/img/gim/main.jpg") no-repeat 85%;
   background-size: cover;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 678px;
     height: 345px;
     top: -52px;
     left: 30px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 320px;
     height: 313px;
     top: -55px;
@@ -152,14 +152,14 @@
   background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg") no-repeat 85%;
   background-size: cover;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 266px;
     height: 167px;
     top: -210px;
     left: 236px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 320px;
     height: 167px;
     top: -90px;
@@ -178,14 +178,14 @@
   top: 62px;
   left: 55px;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 73px;
     height: 73px;
     top: -92px;
     left: 332px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 73px;
     height: 73px;
     top: 32px;

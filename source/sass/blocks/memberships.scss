@@ -4,7 +4,7 @@
   position: relative;
   margin-top: 105px;
 
-  @include vp-374 {
+  @include vp-767 {
     margin-top: 0;
     margin-bottom: 50px;
   }
@@ -22,7 +22,7 @@
   background-position: right;
 
 
-  @include vp-767 {
+  @include vp-1199 {
     background: url("/img/memberships/membership-equipment-tablet.png") no-repeat;
     bottom: -118px;
     right: 5px;
@@ -30,7 +30,7 @@
     background-size: cover;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     display: none;
   }
 }
@@ -42,11 +42,11 @@
   width: 100%;
   max-width: 1366px;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding: 66px 15px 70px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     padding: 24px 5px 74px;
   }
 }
@@ -57,11 +57,11 @@
 
   margin: 0 0 22px;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding: 35px 12px 0 0;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     margin-top: 0;
   }
 }
@@ -87,7 +87,7 @@
     transform: translate(-50%, 0);
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     gap: 35px;
     padding-top: 5px;
     top: -10px;
@@ -97,7 +97,7 @@
     }
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 310px;
     gap: 25px;
     top: -10px;
@@ -123,12 +123,12 @@
   text-transform: none;
   padding: 5px 10px;
 
-  @include vp-767 {
+  @include vp-1199 {
     @include h4;
     padding: 0;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     @include h5;
 
     text-align: left;
@@ -148,7 +148,7 @@
     background-color: #d10a42;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     &::after {
       left: -2px;
       width: calc(100% + 8px);
@@ -156,7 +156,7 @@
     }
   }
 
-  @include vp-374 {
+  @include vp-767 {
     &::after {
       left: -2px;
       width: calc(100% + 8px);
@@ -170,11 +170,11 @@
   flex-direction: column;
   align-items: center;
 
-  @include vp-767 {
+  @include vp-1199 {
     margin: 0 148px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     margin: 0 15px;
   }
 }
@@ -189,11 +189,11 @@
   flex-wrap: wrap;
   gap: 40px;
 
-  @include vp-767 {
+  @include vp-1199 {
     gap: 41px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     gap: 33px;
   }
 }
@@ -214,13 +214,13 @@
     border-image-slice: 1;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     min-width: 442px;
     padding-top: 65px;
     min-height: 448px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     min-width: 290px;
     min-height: 384px;
     padding: 51px 24px 0;

@@ -22,7 +22,7 @@ const swiper = new Swiper('.trainers__swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.trainers__button--along',
-    prevEl: '.trainers__button--back',
+    nextEl: '.trainers__swiper-button--along',
+    prevEl: '.trainers__swiper-button--back',
   },
 });

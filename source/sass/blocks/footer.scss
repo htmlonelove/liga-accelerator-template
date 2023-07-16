@@ -2,7 +2,7 @@
   background-color: #030a1a;
   min-height: 108px;
 
-  @include vp-374 {
+  @include vp-767 {
     min-height: 260px;
   }
 }
@@ -13,20 +13,20 @@
   justify-content: space-between;
   padding: 0 20px 0 40px;
 
-  @include vp-767 {
+  @include vp-1199 {
     justify-content: space-around;
     padding: 0;
     margin: 0;
     gap: 10px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     flex-direction: column;
   }
 }
 
 .footer__wrapper--nav {
-  @include vp-374 {
+  @include vp-767 {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -42,14 +42,14 @@
   width: 88px;
   height: 32px;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 82px;
     height: 18px;
     top: -2px;
     left: 28px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     width: 68px;
     height: 15px;
     top: 6px;

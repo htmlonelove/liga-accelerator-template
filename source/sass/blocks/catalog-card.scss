@@ -26,11 +26,11 @@
     line-height: 150px;
     text-align: left;
 
-    @include vp-767 {
+    @include vp-1199 {
       right: 120px;
     }
 
-    @include vp-374 {
+    @include vp-767 {
       font-size: 80px;
       font-weight: 700;
       line-height: 120px;
@@ -39,7 +39,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     margin-bottom: 68px;
   }
 }
@@ -69,7 +69,7 @@
     font-family: "Rouble", sans-serif;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     margin-bottom: 31px;
     padding-right: 32px;
     top: -1px;
@@ -82,7 +82,7 @@
     }
   }
 
-  @include vp-374 {
+  @include vp-767 {
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
@@ -117,12 +117,12 @@
   min-height: 450px;
   padding: 55px;
 
-  @include vp-767 {
+  @include vp-1199 {
     min-height: 448px;
     min-width: 445px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     min-width: 246px;
     min-height: 384px;
     padding: 45px 15px 0;
