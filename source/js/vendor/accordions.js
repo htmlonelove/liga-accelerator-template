@@ -47,7 +47,7 @@ export class Accordions {
     elements.forEach((element) => {
       const currentParent = element.closest('[data-accordion="parent"]');
       if (currentParent === parent) {
-        // this.closeAccordion(element);
+        //this.closeAccordion(element);
       }
     });
   }

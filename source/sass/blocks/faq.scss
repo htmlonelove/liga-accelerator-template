@@ -1,0 +1,128 @@
+.faq {
+  background-color: #f8f9fc;
+}
+
+.faq__title {
+  @include h2;
+  margin: 0 0 40px;
+
+  @include vp-1199 {
+    margin-bottom: 44px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+  }
+}
+
+.faq__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 120px 104px 127px;
+
+  @include vp-1199 {
+    padding: 104px 45px 100px;
+  }
+
+  @include vp-767 {
+    padding: 74px 15px 71px;
+  }
+}
+
+.faq__tabs {
+  display: flex;
+  column-gap: 18px;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
+
+.faq__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include vp-1199 {
+    margin-bottom: 38px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @include vp-767 {
+    margin: 0 auto 29px;
+    gap: 8px;
+  }
+}
+
+.faq__control {
+  @include h4;
+
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 17px 0;
+  min-height: 54px;
+  width: 260px;
+  color: $color-default-black;
+  background-color: transparent;
+  text-transform: none;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  cursor: pointer;
+  align-items: center;
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $color-default-black;
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+  }
+
+  @include vp-1199 {
+    width: 162px;
+  }
+
+  @include vp-767 {
+    padding: 12px 0;
+    width: 141px;
+    font-size: 16px;
+  }
+}
+
+.faq__control.is-active {
+  padding: 18px 0;
+  color: $color-default-white;
+  background: linear-gradient(to right, #ed0233, #003eb7);
+  border: none;
+
+  @include vp-767 {
+    padding: 11px 0;
+  }
+}
+
+.faq__content {
+  width: 860px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    width: 678px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.faq__element {
+  display: none;
+}
+
+.faq__element.is-active {
+  display: block;
+}

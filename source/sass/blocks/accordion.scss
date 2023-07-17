@@ -1,0 +1,118 @@
+.accordion__element {
+  position: relative;
+  line-height: 120%;
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  }
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.accordion__button {
+  @include h3;
+
+  font-size: 24px;
+  text-align: left;
+  text-transform: none;
+  position: relative;
+  padding: 28px 40px 22px 0;
+  width: 100%;
+  color: $color-default-black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 54%;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background: url("../img/sprite/open.svg") no-repeat;
+    background-size: cover;
+    transition: background 0.3s;
+    transform: translate(0, -50%);
+  }
+
+  @include hover-focus {
+    &::after {
+      background: url("../img/sprite/acc-open-hover.svg") no-repeat;
+    }
+  }
+
+  &:disabled {
+    background: url("../img/sprite/open-disabled.svg") no-repeat;
+    pointer-events: none;
+  }
+
+  @include vp-1199 {
+    padding-right: 80px;
+
+    &--custom {
+      padding-top: 27px;
+      padding-bottom: 28px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 21px 50px 22px 0;
+    font-size: 18px;
+    line-height: 21px;
+
+    &::after {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.accordion__element.is-active .accordion__button {
+  &::after {
+    background: url("../img/sprite/close.svg") no-repeat;
+  }
+
+  @include vp-767 {
+    &::after {
+      width: 32px;
+      height: 32px;
+      background-size: cover;
+    }
+  }
+}
+
+.accordion__content {
+  font-weight: 300;
+  margin: -32px 0 30px;
+  padding-right: 176px;
+  font-size: 18px;
+  line-height: 140%;
+
+  @include vp-1199 {
+    padding-right: 160px;
+  }
+
+  @include vp-767 {
+    margin: -24px 0 21px;
+    padding-right: 0;
+  }
+}
+
+.accordion__text {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: left;
+
+  margin: 15px 0 0 20px;
+
+  @include vp-767 {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
