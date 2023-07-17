@@ -7,6 +7,10 @@
 
 .stocks__wrapper {
   padding: 0 103px;
+
+  @include vp-767 {
+    padding: 0 20px;
+  }
 }
 
 .stocks__list {
@@ -14,7 +18,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 
+  @include vp-1199 {
+    grid-template-columns: 324px 324px;
+  }
+
   @include vp-767 {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -22,6 +31,11 @@
 .stocks__item--main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .stocks__item--other {
@@ -29,7 +43,7 @@
   flex-direction: column;
   gap: 40px;
 
-  @include vp-767 {
+  @include vp-1199 {
     flex-direction: row;
   }
 }
