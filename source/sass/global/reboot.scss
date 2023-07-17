@@ -13,11 +13,11 @@ body {
 
 html {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: $fz-default;
   line-height: 24px;
   font-family: $ff-placeholder;
-  color: $color-default-black;
+  color: $color-primary;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -126,4 +126,14 @@ button,
 [type="reset"],
 [type="submit"] {
   appearance: none;
+}
+
+h1, h2, h3{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
 }

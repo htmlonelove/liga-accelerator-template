@@ -1,0 +1,60 @@
+.intro {
+  margin: 0 auto;
+  width: 1366px;
+  padding: 35px 240px 51px 250px;
+}
+
+.intro__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 64px;
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+
+}
+
+.intro__title {
+  font-family: $ff-Alumnisans;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 114px;
+  letter-spacing: 1.8px;
+  color: $color-default-white;
+  padding-bottom: 46px;
+}
+
+.intro__subtitle {
+  order: -1;
+  font-family: Alumni Sans;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  color: $color-default-white;
+  text-align: right;
+  padding-top: 110px;
+  padding-bottom: 12px;
+  padding-right: 50px;
+}
+
+.intro__description{
+  position: absolute;
+  top: 305px;
+  left: -128px;
+  font-family: $ff-placeholder;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-default-white;
+  letter-spacing: -0.7px;
+}
+
+.intro__link-buy{
+  padding: 20px 56px;
+  letter-spacing: 0.9px;
+}

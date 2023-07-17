@@ -1,0 +1,61 @@
+.gym{
+  margin: 0 auto;
+  width: 1366px;
+  padding: 120px 103px 235px 163px;
+}
+
+.gym__wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gym__text{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-right: 85px;
+}
+
+.gym__title{
+  font-family: $ff-Alumnisans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  color: $color-primary;
+  padding-bottom: 8px;
+}
+
+.gym__subtitle{
+  font-family: $ff-placeholder;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-primary;
+  padding-bottom: 40px;
+  letter-spacing: 0.7px;
+}
+
+.gym__description{
+  font-family: $ff-placeholder;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $color-primary;
+
+  &--supergym{
+    padding-bottom: 8px;
+  }
+}
+
+.gym__video{
+  position: absolute;
+  right: 360px;
+  bottom: -116px;
+}
+
+gym__video-button{
+  position: absolute;
+  left: 50px;
+}
