@@ -11,7 +11,7 @@
 }
 
 .advantages__wrapper {
-  padding: 0 20px;
+  padding: 0 140px 99px;
   display: grid;
   grid-template-columns: 326px 240px 350px;
   gap: 60px 58px;
@@ -142,6 +142,20 @@
 }
 
 .advantages__item--small > p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-top: 0;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.advantages__item--text > p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
   font-weight: 300;
