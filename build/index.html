@@ -573,7 +573,7 @@
                   </div>
 
                   <div class="accordion__element" data-accordion="element">
-                    <button class="accordion__button btn accordion__btn--custom" type="button"
+                    <button class="accordion__button btn" type="button"
                       data-accordion="button">Есть кулеры в центре? Предоставляются полотенца?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
@@ -692,7 +692,7 @@
                   </div>
 
                   <div class="accordion__element" data-accordion="element">
-                    <button class="accordion__button btn accordion__btn--custom" type="button"
+                    <button class="accordion__button btn" type="button"
                       data-accordion="button">Есть ли в центре детская комната?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
@@ -746,7 +746,7 @@
                   </div>
 
                   <div class="accordion__element" data-accordion="element">
-                    <button class="accordion__button btn accordion__btn--custom" type="button"
+                    <button class="accordion__button btn" type="button"
                       data-accordion="button">Какие
                       правила пользования парковкой?</button>
                     <div class="accordion__content" data-accordion="content">
@@ -933,47 +933,49 @@
 
       <section class="form-contact">
         <div class="form-contact__wrapper">
-          <div class="form-contact order" data-form-validate data-callback="base">
-            <div class="order__wrapper">
-              <form class="order__form form" action="https://echo.htmlacademy.ru/." method="get">
-                <fieldset class="order__form--fieldset fieldset">
-                  <h2 class="fieldset__title">Бесплатное занятие</h2>
+          <div class="form-contact form" data-form-validate data-callback="base">
+              <h2 class="form__title">Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru/." method="get">
+                <fieldset class="form__fieldset fieldset">
                   <ul class="fieldset__list">
-                    <li class="fieldset__item">
+                    <li class="fieldset__item item item--name" data-validate-type="text" data-limitation="name"
+                      data-on-input-validate data-required>
                       <label class="fieldset__label">
-                        <input class="fieldset__input" type="text" name="name" minlength="11" placeholder="Имя" required autocomplete="off">
+                        <input class="fieldset__input" type="text" name="name" minlength="11" placeholder="Имя" required
+                          autocomplete="off">
                       </label>
                     </li>
-                    <li class="fieldset__item">
+                    <li class="fieldset__item item item--phone" data-validate-type="phone" data-on-input-validate
+                      data-required>
                       <label class="fieldset__label">
-                      <input class="fieldset__input" type="text" name="surname" minlength="2" placeholder="Телефон" required autocomplete="off"></label>
+                        <input class="fieldset__input" type="text" name="surname" minlength="2" placeholder="Телефон"
+                          required autocomplete="off"></label>
                     </li>
                   </ul>
                 </fieldset>
                 <button class="form__btn btn btn--transparent">Отправить</button>
               </form>
-            </div>
           </div>
 
           <div class="form-contact contacts">
             <div class="contacts__wrapper">
               <h2 class="contacts__title">Контакты</h2>
               <ul class="contacts__list">
-                <li class="contacts__item item--adress">
+                <li class="contacts__item item item--adress">
                   <h3>Адрес:</h3>
                   <p>г. Омск, ул. 60 лет Октября, 7</p>
                 </li>
-                <li class="contacts__item item--tell">
+                <li class="contacts__item item item--tell">
                   <h3>Телефон:</h3>
                   <p><a href="tel:+7(800)555-55-55" class="tell">
                       8-800-555-55-55
                     </a></p>
                 </li>
-                <li class="contacts__item item--timetable">
+                <li class="contacts__item item item--timetable">
                   <h3>График работы:</h3>
                   <p>Пн-Вс: с 8:00 до 22:00</p>
                 </li>
-                <li class="contacts__item item--mail">
+                <li class="contacts__item item item--mail">
                   <h3>Email:</h3>
                   <p><a href="mailto:omsk@supergym.ru" class="email">omsk@supergym.ru</a></p>
                 </li>
@@ -982,10 +984,9 @@
           </div>
         </div>
       </section>
-  </div>
-  </main>
+    </main>
 
-  <footer class="footer">
+    <footer class="footer">
       <div class="footer__wrapper">
 
         <nav class="footer__navigation navigation">
@@ -1044,7 +1045,7 @@
           </ul>
         </div>
       </div>
-  </footer>
+    </footer>
   </div>
 
   <!-- Модалки -->

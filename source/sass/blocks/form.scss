@@ -1,12 +1,12 @@
-.order {
+.form {
   background-color: $color-default-black;
 }
 
-.order__wrapper {
+.form-contact__wrapper {
   padding: 5px 90px 69px;
 }
 
-.fieldset__title {
+.form__title {
   @include h2;
 
   font-weight: 800;
@@ -17,10 +17,8 @@
   margin-bottom: 22px;
 }
 
-.order__form {
-  &--fieldset {
+.form__fieldset {
     border: none;
-  }
 }
 
 .fieldset__item {
