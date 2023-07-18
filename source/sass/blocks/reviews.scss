@@ -1,0 +1,109 @@
+.reviews__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  position: relative;
+  padding: 120px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    padding: 5px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 6px 15px 50px;
+  }
+}
+
+.reviews__title {
+  @include h2;
+
+  text-align: center;
+}
+
+.reviews__swiper {
+  padding: 100px;
+  background-color: $color-default-black;
+  color: $color-default-white;
+}
+
+.reviews__swiper-wrapper {
+  background-color: $color-default-black;
+}
+
+.reviews__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+  font-style: normal;
+}
+
+.reviews__text {
+  @include h5;
+
+  line-height: 22px;
+  text-align: left;
+}
+
+
+.reviews__swiper-button {
+  position: absolute;
+  top: 52%;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 32px;
+  z-index: 2;
+  cursor: pointer;
+
+  &--back {
+    left: 27px;
+    transform: translate(0, -50%);
+    background-image: url("../img/sprite/arrow-back.svg");
+    fill: #afafaf;
+
+    &:hover,
+    &:focus {
+      left: 29px;
+      background-image: url("../img/sprite/arrow-back.svg");
+      background-size: 56px 56px;
+      outline: none;
+    }
+  }
+
+  &--along {
+    right: 27px;
+    transform: translate(0, -50%);
+    background-image: url("../img/sprite/arrow-along.svg");
+    fill: #afafaf;
+
+    &:hover,
+    &:focus {
+      right: 29px;
+      background-image: url("../img/sprite/arrow-along.svg");
+      background-size: 56px 56px;
+      outline: none;
+    }
+  }
+
+  @include vp-1199 {
+    top: 48%;
+  }
+
+  @include vp-767 {
+    top: 51%;
+    width: 20px;
+    height: 20px;
+    background-size: 10px 19px;
+
+    &--back {
+      left: 10px;
+    }
+
+    &--along {
+      right: 10px;
+    }
+  }
+}

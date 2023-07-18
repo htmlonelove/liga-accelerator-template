@@ -4605,6 +4605,123 @@ button,
   overflow: hidden;
 }
 
+.reviews__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  position: relative;
+  padding: 120px;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .reviews__wrapper {
+    padding: 5px 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__wrapper {
+    padding: 6px 15px 50px;
+  }
+}
+
+.reviews__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-align: center;
+}
+
+.reviews__swiper {
+  padding: 100px;
+  background-color: #102654;
+  color: #ffffff;
+}
+
+.reviews__swiper-wrapper {
+  background-color: #102654;
+}
+
+.reviews__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+  font-style: normal;
+}
+
+.reviews__text {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  text-align: left;
+}
+
+.reviews__swiper-button {
+  position: absolute;
+  top: 52%;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 32px;
+  z-index: 2;
+  cursor: pointer;
+}
+.reviews__swiper-button--back {
+  left: 27px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("../img/sprite/arrow-back.svg");
+  fill: #afafaf;
+}
+.reviews__swiper-button--back:hover, .reviews__swiper-button--back:focus {
+  left: 29px;
+  background-image: url("../img/sprite/arrow-back.svg");
+  background-size: 56px 56px;
+  outline: none;
+}
+.reviews__swiper-button--along {
+  right: 27px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-image: url("../img/sprite/arrow-along.svg");
+  fill: #afafaf;
+}
+.reviews__swiper-button--along:hover, .reviews__swiper-button--along:focus {
+  right: 29px;
+  background-image: url("../img/sprite/arrow-along.svg");
+  background-size: 56px 56px;
+  outline: none;
+}
+@media (max-width: 1199px) {
+  .reviews__swiper-button {
+    top: 48%;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__swiper-button {
+    top: 51%;
+    width: 20px;
+    height: 20px;
+    background-size: 10px 19px;
+  }
+  .reviews__swiper-button--back {
+    left: 10px;
+  }
+  .reviews__swiper-button--along {
+    right: 10px;
+  }
+}
+
 .form-contact {
   width: 100%;
   max-width: 1366px;
