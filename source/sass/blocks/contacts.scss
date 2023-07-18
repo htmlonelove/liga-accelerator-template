@@ -1,0 +1,62 @@
+.contacts__wrapper {
+  padding: 50px;
+}
+
+.contacts__title {
+  @include h2;
+}
+
+.contacts__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 100px;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.contacts__item {
+  margin: 0;
+  min-width: 190px;
+}
+
+.contacts__item h3 {
+  @include h5;
+
+  font-weight: 700;
+  text-align: left;
+}
+
+.contacts__item > p {
+  @include input;
+
+  color: $color-default-black;
+}
+
+.item--timetable {
+  @include vp-767 {
+    order: 2;
+  }
+}
+
+.item {
+  @include vp-767 {
+    &--adress {
+      order: 0;
+    }
+
+    &--timetable {
+      order: 2;
+    }
+
+    &--tell {
+      order: 3;
+    }
+
+    &--mail {
+      order: 4;
+    }
+  }
+}

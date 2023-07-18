@@ -1,0 +1,14 @@
+.form-contact {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.form-contact__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
+}

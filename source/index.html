@@ -670,19 +670,23 @@
                   </div>
 
                   <div class="accordion__element" data-accordion="element">
-                    <button class="accordion__button btn" type="button" data-accordion="button">Проводятся ли в клубе какие-либо мероприятия или соревнования?</button>
+                    <button class="accordion__button btn" type="button" data-accordion="button">Проводятся ли в клубе
+                      какие-либо мероприятия или соревнования?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
-                        <p class="accordion__text">Да. В нашем клубе ежемесячно проходят различные мероприятия. Ознакомиться с расписанием можно на сайте в разделе "Новости" или на ресепн клуба.</p>
+                        <p class="accordion__text">Да. В нашем клубе ежемесячно проходят различные мероприятия.
+                          Ознакомиться с расписанием можно на сайте в разделе "Новости" или на ресепн клуба.</p>
                       </div>
                     </div>
                   </div>
 
                   <div class="accordion__element" data-accordion="element">
-                    <button class="accordion__button btn" type="button" data-accordion="button">Можно ли приобрести в центре спортивное питание?</button>
+                    <button class="accordion__button btn" type="button" data-accordion="button">Можно ли приобрести в
+                      центре спортивное питание?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
-                        <p class="accordion__text">Да. В фитнес баре нашего клуба вы можете найти большой выбор спортивного питания, а также проконсультироваться в вопросах выбора с менеджером.</p>
+                        <p class="accordion__text">Да. В фитнес баре нашего клуба вы можете найти большой выбор
+                          спортивного питания, а также проконсультироваться в вопросах выбора с менеджером.</p>
                       </div>
                     </div>
                   </div>
@@ -692,7 +696,8 @@
                       data-accordion="button">Есть ли в центре детская комната?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
-                        <p class="accordion__text">Нет. К сожалению у нас нет детско комнаты, но вы можете приобрести семейный абонимент и отдавать ребенка на детские занятия.
+                        <p class="accordion__text">Нет. К сожалению у нас нет детско комнаты, но вы можете приобрести
+                          семейный абонимент и отдавать ребенка на детские занятия.
                         </p>
                       </div>
                     </div>
@@ -760,8 +765,9 @@
         </div>
       </section>
 
-      <div class="container">
-        <section class="reviews">
+
+      <section class="reviews">
+        <div class="container">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list">
             <div class="reviews__item">
@@ -775,110 +781,124 @@
               </blockquote>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <div class="wrapper">
-        <div class="order">
-          <form class="order-form" action="#" method="post">
-            <fieldset class="order-form__fieldset fieldset">
-              <h2 class="fieldset__title">Бесплатное занятие</h2>
-              <ul class="fieldset__list">
-                <li class="fieldset__item">
-                  <label class="fieldset__label" for="autor-name">Имя</label>
-                  <input class="fieldset__input" type="text" name="name" id="autor-name" value="Имя">
+      <section class="form-contact">
+        <div class="form-contact__wrapper">
+          <div class="form-contact order" data-form-validate data-callback="base">
+            <div class="order__wrapper">
+              <form class="order__form form" action="https://echo.htmlacademy.ru/." method="get">
+                <fieldset class="order__form--fieldset fieldset">
+                  <h2 class="fieldset__title">Бесплатное занятие</h2>
+                  <ul class="fieldset__list">
+                    <li class="fieldset__item">
+                      <label class="fieldset__label" for="autor-name">Имя</label>
+                      <input class="fieldset__input" type="text" name="name" id="autor-name">
+                    </li>
+                    <li class="fieldset__item">
+                      <label class="fieldset__label" for="autor-phone">Телефон</label>
+                      <input class="fieldset__input" type="text" name="surname" id="autor-phone">
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="form__btn btn btn--transparent">Отправить</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="form-contact contacts">
+            <div class="contacts__wrapper">
+              <h2 class="contacts__title">Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item item--adress">
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
                 </li>
-                <li class="fieldset__item">
-                  <label class="fieldset__label" for="autor-phone">Телефон</label>
-                  <input class="fieldset__input" type="text" name="surname" id="autor-phone" value="Телефон">
+                <li class="contacts__item item--tell">
+                  <h3>Телефон:</h3>
+                  <p><a href="tel:+7(800)555-55-55" class="tell">
+                      8-800-555-55-55
+                    </a></p>
+                </li>
+                <li class="contacts__item item--timetable">
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li class="contacts__item item--mail">
+                  <h3>Email:</h3>
+                  <p><a href="mailto:omsk@supergym.ru" class="email">omsk@supergym.ru</a></p>
                 </li>
               </ul>
-            </fieldset>
-          </form>
-        </div>
-
-        <div class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <dl>
-            <dt>Адрес:</dt>
-            <dd>г. Омск, ул. 60 лет Октября, 7</dd>
-            <dt>График работы:</dt>
-            <dd>Пн-Вс: с 8:00 до 22:00</dd>
-          </dl>
-          <dl>
-            <dt>Телефон:</dt>
-            <dd><a href="tel:+7(800)555-55-55" class="tell">
-                8-800-555-55-55
-              </a></dd>
-            <dt>Email:</dt>
-            <dd> <a href="mailto:omsk@supergym.ru" class="email">omsk@supergym.ru</a></dd>
-          </dl>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__wrapper">
-
-          <nav class="footer__navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="footer__logo">
-                  <picture>
-                    <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
-                  </picture>
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Услуги</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Абонементы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Акции</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Тренеры</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Расписание</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__social social">
-            <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                    <use xlink:href="img/sprite.svg#vk"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--ok" href="#">
-                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                    <use xlink:href="img/sprite.svg#ok"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Одноклассниках</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--reddit" href="#">
-                  <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
-                    <use xlink:href="img/sprite.svg#reddit"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Реддит</span>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
+      </section>
+  </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+
+        <nav class="footer__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="footer__logo">
+                <picture>
+                  <img src="./img/logo.png" alt="Логотип компании." width="122" height="22">
+                </picture>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Услуги</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Абонементы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Акции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Тренеры</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social social">
+          <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#">
+                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--reddit" href="#">
+                <svg class="social__link__icon" width="25" height="25" aria-label="Иконка группы Вконтакте.">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Реддит</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   </div>
 
   <!-- Модалки -->

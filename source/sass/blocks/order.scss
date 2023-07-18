@@ -1,0 +1,51 @@
+.order {
+  background-color: $color-default-black;
+}
+
+.order__wrapper {
+  padding: 50px;
+}
+
+.fieldset__title {
+  @include h2;
+
+  font-weight: 800;
+  line-height: 84px;
+  text-align: left;
+  color: $color-default-white;
+}
+
+.order__form {
+  &--fieldset {
+    border: none;
+  }
+}
+
+.fieldset__item {
+  background-color: transparent;
+  color: $color-default-white;
+}
+
+.fieldset__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fieldset__input {
+  background-color: transparent;
+  border: none;
+}
+
+.form__btn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border: 3px solid $color-default-white;
+  width: 410px;
+  margin: 0;
+  padding: 15px 0;
+  display: block;
+}
