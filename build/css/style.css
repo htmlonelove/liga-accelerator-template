@@ -2235,7 +2235,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 20px 0 40px;
+  padding: 0 75px 0 135px;
 }
 @media (max-width: 1199px) {
   .footer__wrapper {
@@ -2351,9 +2351,7 @@ button,
 
 .navigation {
   display: block;
-  position: relative;
-  top: 35px;
-  left: 36px;
+  padding: 33px 0 0 36px;
 }
 @media (max-width: 1199px) {
   .navigation {
@@ -2643,7 +2641,6 @@ button,
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
-  gap: 55px;
 }
 @media (max-width: 1199px) {
   .gim {
@@ -2752,9 +2749,10 @@ button,
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
+  font-size: 14px;
   font-weight: 300;
   text-align: left;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.03em;
 }
 @media (max-width: 1199px) {
   .gim__detail {
@@ -2922,7 +2920,7 @@ button,
 
 .memberships__wrapper {
   margin: 0 auto;
-  padding: 120px 53px 120px;
+  padding: 120px 105px 120px 100px;
   z-index: 1;
   width: 100%;
   max-width: 1366px;
@@ -3124,7 +3122,7 @@ button,
 
 .memberships__catalog {
   position: relative;
-  padding: 64px 77px 44px;
+  padding: 64px 27px 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3304,7 +3302,7 @@ button,
   position: relative;
   top: 2px;
   min-height: 450px;
-  padding: 55px;
+  padding: 55px 17px;
 }
 @media (max-width: 1199px) {
   .card--active {
@@ -4609,7 +4607,7 @@ button,
   width: 100%;
   max-width: 1366px;
   position: relative;
-  padding: 120px 100px;
+  padding: 120px 100px 120px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
@@ -4631,6 +4629,7 @@ button,
   letter-spacing: 0.03em;
   text-align: left;
   text-align: center;
+  margin: 0 0 38px;
 }
 
 .reviews__swiper {
@@ -4684,9 +4683,9 @@ button,
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
-  line-height: 22px;
   text-align: left;
   margin: 0;
+  padding-right: 3px;
 }
 @media (max-width: 767px) {
   .reviews__text {
@@ -4699,7 +4698,7 @@ button,
 
 .reviews__swiper-button {
   position: absolute;
-  top: 52%;
+  top: 58.5%;
   width: 56px;
   height: 56px;
   background-repeat: no-repeat;
@@ -4709,7 +4708,7 @@ button,
   cursor: pointer;
 }
 .reviews__swiper-button--back {
-  left: 22%;
+  left: 23.9%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -4717,14 +4716,14 @@ button,
   fill: #afafaf;
 }
 .reviews__swiper-button--back:hover, .reviews__swiper-button--back:focus {
-  left: 29px;
+  left: 23.9%;
   background-image: url("../img/sprite/arrow-back.svg");
   background-size: 56px 56px;
   outline: none;
   left: 22%;
 }
 .reviews__swiper-button--along {
-  right: 22%;
+  right: 23.9%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -4732,7 +4731,7 @@ button,
   fill: #afafaf;
 }
 .reviews__swiper-button--along:hover, .reviews__swiper-button--along:focus {
-  right: 29px;
+  right: 23.9%;
   background-image: url("../img/sprite/arrow-along.svg");
   background-size: 56px 56px;
   outline: none;
@@ -4760,7 +4759,7 @@ button,
 
 .reviews__card {
   position: relative;
-  padding: 54px 54px 57px;
+  padding: 54px 54px 52px 57px;
   padding-left: 170px;
   color: #ffffff;
   background-color: #102654;
@@ -4839,7 +4838,7 @@ button,
 }
 
 .order__wrapper {
-  padding: 50px;
+  padding: 5px 90px 69px;
 }
 
 .fieldset__title {
@@ -4853,6 +4852,8 @@ button,
   line-height: 84px;
   text-align: left;
   color: #ffffff;
+  letter-spacing: 0.03em;
+  margin-bottom: 22px;
 }
 
 .order__form--fieldset {
@@ -4862,19 +4863,86 @@ button,
 .fieldset__item {
   background-color: transparent;
   color: #ffffff;
+  width: 190px;
 }
 
 .fieldset__list {
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
   list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 1199px) {
+  .fieldset__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .fieldset__input {
+  margin-bottom: 10px;
+  padding: 4px 0;
+  width: 100%;
+  color: #ffffff;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid #74819c;
+  cursor: text;
+}
+@media (hover: hover) {
+  .fieldset__input:hover:not(.focus-visible) {
+    border-color: #ffffff;
+  }
+}
+.fieldset__input.focus-visible:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+  border: none;
+}
+.fieldset__input.focus-visible:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.fieldset__input.focus-visible:focus::-moz-placeholder {
+  color: transparent;
+}
+.fieldset__input.focus-visible:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.fieldset__input.focus-visible:focus::-ms-input-placeholder {
+  color: transparent;
+}
+.fieldset__input.focus-visible:focus::placeholder {
+  color: transparent;
+}
+.fieldset__input:disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.fieldset__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset__input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.fieldset__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.fieldset__input::placeholder {
+  color: #ffffff;
 }
 
 .form__btn {
@@ -4884,14 +4952,29 @@ button,
   letter-spacing: 0.05em;
   text-align: center;
   border: 3px solid #ffffff;
-  width: 410px;
-  margin: 0;
-  padding: 15px 0;
+  width: 413px;
+  margin: 0 0 0 11px;
+  padding: 18px 0 15px;
   display: block;
+  min-height: 52px;
+}
+
+.fieldset__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  line-height: 16px;
+  letter-spacing: 0;
 }
 
 .contacts__wrapper {
-  padding: 50px;
+  padding: 10px 0 0 120px;
 }
 
 .contacts__title {
@@ -4901,16 +4984,27 @@ button,
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: left;
+  margin: 44px 0 0;
 }
 
 .contacts__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px 100px;
+  margin: 0;
+  padding: 40px 5px;
+}
+@media (max-width: 1199px) {
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media (max-width: 767px) {
   .contacts__list {
@@ -4919,6 +5013,15 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+.contacts__list::after {
+  position: absolute;
+  content: "";
+  top: 97.47%;
+  left: 76%;
+  height: 1.55%;
+  width: 1px;
+  background-color: #74819c;
 }
 
 .contacts__item {
@@ -4935,6 +5038,7 @@ button,
   text-align: center;
   font-weight: 700;
   text-align: left;
+  margin: 0 0 1px;
 }
 
 .contacts__item > p {
@@ -4948,6 +5052,7 @@ button,
   border: none;
   margin: 0;
   color: #102654;
+  font-style: normal;
 }
 
 @media (max-width: 767px) {

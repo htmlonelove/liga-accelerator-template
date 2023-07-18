@@ -3,7 +3,7 @@
 }
 
 .order__wrapper {
-  padding: 50px;
+  padding: 5px 90px 69px;
 }
 
 .fieldset__title {
@@ -13,6 +13,8 @@
   line-height: 84px;
   text-align: left;
   color: $color-default-white;
+  letter-spacing: 0.03em;
+  margin-bottom: 22px;
 }
 
 .order__form {
@@ -24,17 +26,55 @@
 .fieldset__item {
   background-color: transparent;
   color: $color-default-white;
+  width: 190px;
 }
 
 .fieldset__list {
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: 30px;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .fieldset__input {
+  margin-bottom: 10px;
+  padding: 4px 0;
+  width: 100%;
+  color: $color-default-white;
   background-color: transparent;
   border: none;
+  border-bottom: 1px solid #74819c;
+  cursor: text;
+
+  @include hover {
+    border-color: $color-default-white;
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 2px;
+    border: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.fieldset__input::placeholder {
+  color: $color-default-white;
 }
 
 .form__btn {
@@ -44,8 +84,16 @@
   letter-spacing: 0.05em;
   text-align: center;
   border: 3px solid $color-default-white;
-  width: 410px;
-  margin: 0;
-  padding: 15px 0;
+  width: 413px;
+  margin: 0 0 0 11px;
+  padding: 18px 0 15px;
   display: block;
+  min-height: 52px;
+}
+
+.fieldset__label {
+  @include input;
+
+  line-height: 16px;
+  letter-spacing: 0;
 }

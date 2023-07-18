@@ -1,19 +1,38 @@
 .contacts__wrapper {
-  padding: 50px;
+  padding: 10px 0 0 120px;
 }
 
 .contacts__title {
   @include h2;
+  margin: 44px 0 0;
 }
 
 .contacts__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 100px;
+  margin: 0;
+  padding: 40px 5px;
+
+  @include vp-1199 {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   @include vp-767 {
     flex-direction: column;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 97.47%;
+    left: 76%;
+    height: 1.55%;
+    width: 1px;
+    background-color: #74819c;
   }
 }
 
@@ -27,12 +46,14 @@
 
   font-weight: 700;
   text-align: left;
+  margin: 0 0 1px;
 }
 
 .contacts__item > p {
   @include input;
 
   color: $color-default-black;
+  font-style: normal;
 }
 
 .item--timetable {

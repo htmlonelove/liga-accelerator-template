@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-around;
   position: relative;
-  gap: 55px;
 
   @include vp-1199 {
     flex-direction: column;
@@ -77,9 +76,10 @@
 .gim__detail {
   @include h5;
 
+  font-size: 14px;
   font-weight: 300;
   text-align: left;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.03em;
 
   @include vp-1199 {
     text-align: center;

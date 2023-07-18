@@ -940,12 +940,13 @@
                   <h2 class="fieldset__title">Бесплатное занятие</h2>
                   <ul class="fieldset__list">
                     <li class="fieldset__item">
-                      <label class="fieldset__label" for="autor-name">Имя</label>
-                      <input class="fieldset__input" type="text" name="name" id="autor-name">
+                      <label class="fieldset__label">
+                        <input class="fieldset__input" type="text" name="name" minlength="11" placeholder="Имя" required autocomplete="off">
+                      </label>
                     </li>
                     <li class="fieldset__item">
-                      <label class="fieldset__label" for="autor-phone">Телефон</label>
-                      <input class="fieldset__input" type="text" name="surname" id="autor-phone">
+                      <label class="fieldset__label">
+                      <input class="fieldset__input" type="text" name="surname" minlength="2" placeholder="Телефон" required autocomplete="off"></label>
                     </li>
                   </ul>
                 </fieldset>
@@ -985,7 +986,6 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
       <div class="footer__wrapper">
 
         <nav class="footer__navigation navigation">
@@ -1044,7 +1044,6 @@
           </ul>
         </div>
       </div>
-    </div>
   </footer>
   </div>
 

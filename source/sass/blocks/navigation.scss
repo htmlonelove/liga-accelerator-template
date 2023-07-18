@@ -1,8 +1,6 @@
 .navigation {
   display: block;
-  position: relative;
-  top: 35px;
-  left: 36px;
+  padding: 33px 0 0 36px;
 
   @include vp-1199 {
     left: -40px;
