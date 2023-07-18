@@ -1,4 +1,4 @@
-.form-contact {
+/*.form-contact {
   width: 100%;
   max-width: 1366px;
 }
@@ -9,6 +9,26 @@
 
   @include vp-1199 {
     display: flex;
+    flex-direction: column;
+  }
+}
+*/
+.form-contacts {
+  border-top: 1px solid $color-default-black;
+  background: linear-gradient(to right, $color-default-black 50%, $color-default-white 50%);
+
+  @include vp-1199 {
+    background: linear-gradient(to bottom, $color-default-black 324px, $color-default-white 324px);
+  }
+}
+
+.form-contacts__wrapper {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+
+  @include vp-1199 {
     flex-direction: column;
   }
 }
