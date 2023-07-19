@@ -4,9 +4,12 @@
   position: relative;
   margin-top: 105px;
 
+@include vp-1199 {
+  margin: 80px 0 50px;
+}
+
   @include vp-767 {
-    margin-top: 0;
-    margin-bottom: 50px;
+    margin: 0 0 50px;
   }
 }
 
@@ -58,11 +61,13 @@
   margin: 0 0 22px;
 
   @include vp-1199 {
-    padding: 35px 12px 0 0;
+    @include title;
+    margin: 0;
+    padding: 25px 12px 12px 10px;
   }
 
   @include vp-767 {
-    margin-top: 0;
+    margin: 16px 0 10px 0;
   }
 }
 
@@ -80,8 +85,8 @@
     position: absolute;
     content: "";
     bottom: 22px;
-    left: 54%;
-    width: 304px;
+    left: 50%;
+    width: 344px;
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
     transform: translate(-50%, 0);
@@ -117,7 +122,7 @@
   letter-spacing: 0;
   text-align: center;
   position: relative;
-  color: $color-default-black;
+  color: rgba(16, 38, 84, 0.2);
   background-color: transparent;
   border: none;
   text-transform: none;
@@ -134,6 +139,14 @@
     text-align: left;
     min-height: 55px;
   }
+
+  &:active {
+    color: $color-default-black;
+  }
+
+  &:disabled {
+    color: rgba(16, 38, 84, 0.1);
+  }
 }
 
 .memberships__control.is-active {
@@ -143,15 +156,16 @@
     position: absolute;
     content: "";
     bottom: 17px;
-    width: calc(100% + 8px);
+    width: 68px;
     height: 2px;
     background-color: #d10a42;
+    left: 20%;
   }
 
   @include vp-1199 {
     &::after {
       left: -2px;
-      width: calc(100% + 8px);
+      width: 68px;
       bottom: 26px;
     }
   }
@@ -159,7 +173,7 @@
   @include vp-767 {
     &::after {
       left: -2px;
-      width: calc(100% + 8px);
+      width: 68px;
       bottom: 17px;
     }
   }
