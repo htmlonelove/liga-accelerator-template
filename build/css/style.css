@@ -2443,13 +2443,19 @@ button,
 }
 
 .hero__wrapper {
-  display: block;
-  position: relative;
-  padding-bottom: 122px;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 50px 300px 50px 125px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 500px;
+  grid-template-columns: 1fr 500px;
+  gap: 50px;
 }
 @media (max-width: 1199px) {
   .hero__wrapper {
-    padding: 61px 0 40px;
+    padding: 61px 0 95px 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2463,7 +2469,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero__wrapper {
-    padding: 61px 0 12px;
+    padding: 61px 0 75px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2476,14 +2482,35 @@ button,
   }
 }
 
+.hero__description {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 110px 250px;
+  grid-template-columns: 110px 250px;
+  margin: 0;
+  padding: 115px 0 0;
+  text-align: left;
+}
+@media (max-width: 1199px) {
+  .hero__description {
+    padding: 73px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .hero__description {
+    margin: 0 15px;
+    padding: 48px 0 0;
+    -ms-grid-columns: 115px 185px;
+    grid-template-columns: 115px 185px;
+  }
+}
+
 .hero__photo {
   position: absolute;
   top: 50px;
   right: 302px;
   width: 500px;
   height: 556px;
-  background: url("/img/hero/hero-man.jpg") no-repeat center;
-  background-size: cover;
 }
 @media (max-width: 1199px) {
   .hero__photo {
@@ -2504,20 +2531,20 @@ button,
   font-size: 48px;
   font-weight: 600;
   text-align: center;
+  font-weight: 700;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   font-size: 92px;
-  line-height: 110px;
+  line-height: 110.4px;
   letter-spacing: 0.05em;
   text-align: right;
   color: #ffffff;
   text-transform: uppercase;
-  width: 298px;
-  display: block;
-  position: relative;
+  stroke: #ffffff;
+  -webkit-text-stroke-width: 2px;
   margin: 0;
-  padding: 0;
-  top: 235px;
-  left: 198px;
-  text-shadow: 2px 0 2px #ffffff;
+  padding: 10px 0 0 16px;
 }
 @media (max-width: 1199px) {
   .hero__title {
@@ -2539,57 +2566,59 @@ button,
   .hero__title {
     font-size: 72px;
     line-height: 86px;
-    width: 235px;
-    font-weight: 700;
-    top: 120px;
-    left: 135px;
     text-transform: none;
+    padding: 0;
+    position: relative;
+    left: -33px;
+    top: 5px;
   }
 }
 @media (max-width: 767px) {
   .hero__title {
-    width: 213px;
     text-align: right;
-    left: 95px;
-    top: 96px;
+    font-weight: 600;
+    left: -12px;
+    top: 12px;
+    padding: 0;
   }
 }
 
 .hero__sity {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   color: #ffffff;
   font-family: "Alumni Sans", sans-serif;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 58px;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
-  display: block;
-  width: 133px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  left: 366px;
-  top: -55px;
-  text-shadow: 2px 0 2px #ffffff;
+  margin: 0 0 0 70px;
+  padding: 0 0 0 60px;
+  stroke: #ffffff;
+  -webkit-text-stroke-width: 2px;
 }
 @media (max-width: 1199px) {
   .hero__sity {
-    letter-spacing: 0.05em;
     font-size: 30px;
-    line-height: 41px;
-    left: 306px;
-    top: -160px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 40px;
+    stroke: none;
+    -webkit-text-stroke-width: 0;
+    text-align: center;
+    padding: 0 0 0 40px;
   }
 }
 @media (max-width: 767px) {
   .hero__sity {
     width: 51px;
-    top: -185px;
-    left: 254px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 34px;
     letter-spacing: 0.03em;
+    padding: 0 0 0 55px;
   }
 }
 
@@ -2603,27 +2632,29 @@ button,
   background-color: transparent;
   border: none;
   margin: 0;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   list-style: none;
   text-align: right;
   color: #ffffff;
   display: block;
   position: relative;
-  margin: 0;
-  padding: 0;
+  margin: 50px 0 0;
+  padding: 82px 0 85px;
   width: 113px;
-  top: 78px;
-  left: 122px;
 }
 @media (max-width: 1199px) {
   .hero__list {
-    left: 45px;
-    top: -67px;
+    padding: 45px 0 55px;
   }
 }
 @media (max-width: 767px) {
   .hero__list {
-    top: -95px;
-    left: 15px;
+    padding-top: 40px;
   }
 }
 
@@ -2631,25 +2662,21 @@ button,
   display: block;
   width: 235px;
   border: #ffffff solid 4px;
-  position: relative;
-  top: 162px;
-  left: 245px;
   letter-spacing: 0.05em;
   text-align: center;
   padding: 20px;
+  margin-left: 140px;
 }
 @media (max-width: 1199px) {
   .hero__btn {
     width: 185px;
-    top: -10px;
-    left: 165px;
   }
 }
 @media (max-width: 767px) {
   .hero__btn {
     width: 290px;
-    top: -40px;
-    left: -5px;
+    margin: 0;
+    padding: 20px 0;
   }
 }
 .hero__btn:hover, .hero__btn:focus {
@@ -2682,6 +2709,7 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     left: 0;
+    padding: 12px 45px 183px;
   }
 }
 
@@ -2696,10 +2724,8 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__wrapper {
-    width: 502px;
-    top: 50px;
-    left: 117px;
-    padding-bottom: 0;
+    padding: 0 85px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -2739,7 +2765,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__title {
-    padding: 0 120px 0 105px;
+    padding: 18px 110px 0 125px;
     min-width: 261px;
     text-align: center;
   }
@@ -2764,8 +2790,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__description {
-    text-align: center;
-    padding: 0 0 20px;
+    padding: 0 40px 20px 74px;
   }
 }
 @media (max-width: 767px) {
@@ -2861,8 +2886,8 @@ button,
   left: -75px;
   width: 364px;
   height: 228px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 54, 122, 0.5)), to(rgba(20, 54, 122, 0.5))), url("/img/gim/video.jpg") no-repeat 85%;
-  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg") no-repeat 85%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 54, 122, 0.5)), to(rgba(20, 54, 122, 0.5))), url("/img/gim/video.jpg") no-repeat 50%;
+  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg") no-repeat 50%;
   background-size: cover;
 }
 @media (max-width: 1199px) {
@@ -2892,6 +2917,7 @@ button,
   position: relative;
   top: 62px;
   left: 55px;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .gim__play {
@@ -2908,6 +2934,16 @@ button,
     top: 32px;
     left: 100px;
   }
+}
+.gim__play:disabled {
+  content: url("/img/sprite/play-disabled.svg");
+  pointer-events: none;
+}
+.gim__play:hover, .gim__play:focus {
+  content: url("/img/sprite/play-hover.svg");
+}
+.gim__play:active {
+  content: url("/img/sprite/play-active.svg");
 }
 
 .memberships {
@@ -4137,6 +4173,11 @@ button,
 
 .stocks__wrapper {
   padding: 0 103px 120px 103px;
+}
+@media (max-width: 1199px) {
+  .stocks__wrapper {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 767px) {
   .stocks__wrapper {

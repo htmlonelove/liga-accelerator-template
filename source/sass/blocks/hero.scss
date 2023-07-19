@@ -3,12 +3,16 @@
 }
 
 .hero__wrapper {
-  display: block;
-  position: relative;
-  padding-bottom: 122px;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 50px 300px 50px 125px;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 50px;
 
   @include vp-1199 {
-    padding: 61px 0 40px;
+    padding: 61px 0 95px 45px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -16,11 +20,29 @@
   }
 
   @include vp-767 {
-    padding: 61px 0 12px;
+    padding: 61px 0 75px;
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 0;
+  }
+}
+
+.hero__description {
+  display: grid;
+  grid-template-columns: 110px 250px;
+  margin: 0;
+  padding: 115px 0 0;
+  text-align: left;
+
+  @include vp-1199 {
+    padding: 73px 0 0;
+  }
+
+  @include vp-767 {
+    margin: 0 15px;
+    padding: 48px 0 0;
+    grid-template-columns: 115px 185px;
   }
 }
 
@@ -30,8 +52,6 @@
   right: 302px;
   width: 500px;
   height: 556px;
-  background: url("/img/hero/hero-man.jpg") no-repeat center;
-  background-size: cover;
 
   @include vp-1199 {
     width: 324px;
@@ -48,98 +68,94 @@
 .hero__title {
   @include title;
 
+  font-weight: 700;
+  grid-column: 2/3;
   font-size: 92px;
-  line-height: 110px;
+  line-height: 110.4px;
   letter-spacing: 0.05em;
   text-align: right;
   color: $color-default-white;
   text-transform: uppercase;
-  width: 298px;
-  display: block;
-  position: relative;
+  stroke: $color-default-white;
+  -webkit-text-stroke-width: 2px;
   margin: 0;
-  padding: 0;
-  top: 235px;
-  left: 198px;
-  text-shadow: 2px 0 2px $color-default-white;
+  padding: 10px 0 0 16px;
 
 
   @include vp-1199 {
     font-size: 72px;
     line-height: 86px;
-    width: 235px;
-    font-weight: 700;
-    top: 120px;
-    left: 135px;
     text-transform: none;
+    padding: 0;
+    position: relative;
+    left: -33px;
+    top: 5px;
   }
 
   @include vp-767 {
-    width: 213px;
     text-align: right;
-    left: 95px;
-    top: 96px;
+    font-weight: 600;
+    left: -12px;
+    top: 12px;
+    padding: 0;
   }
 }
 
 .hero__sity {
+  grid-column: 2/3;
   color: $color-default-white;
   font-family: "Alumni Sans", sans-serif;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 58px;
   letter-spacing: 0.1em;
   text-align: left;
   text-transform: uppercase;
-  display: block;
-  width: 133px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  left: 366px;
-  top: -55px;
-  text-shadow: 2px 0 2px $color-default-white;
+  margin: 0 0 0 70px;
+  padding: 0 0 0 60px;
+  stroke: $color-default-white;
+  -webkit-text-stroke-width: 2px;
 
   @include vp-1199 {
-    letter-spacing: 0.05em;
     font-size: 30px;
-    line-height: 41px;
-    left: 306px;
-    top: -160px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 40px;
+    stroke: none;
+    -webkit-text-stroke-width: 0;
+    text-align: center;
+    padding: 0 0 0 40px;
   }
 
   @include vp-767 {
     width: 51px;
-    top: -185px;
-    left: 254px;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 34px;
     letter-spacing: 0.03em;
+    padding: 0 0 0 55px;
   }
 }
 
 .hero__list {
   @include input;
 
+  grid-column: 1/2;
+  grid-row: 2/3;
   list-style: none;
   text-align: right;
   color: $color-default-white;
   display: block;
   position: relative;
-  margin: 0;
-  padding: 0;
+  margin: 50px 0 0;
+  padding: 82px 0 85px;
   width: 113px;
-  top: 78px;
-  left: 122px;
 
   @include vp-1199 {
-    left: 45px;
-    top: -67px;
+    padding: 45px 0 55px;
   }
 
   @include vp-767 {
-    top: -95px;
-    left: 15px;
+    padding-top: 40px;
   }
 }
 
@@ -147,23 +163,19 @@
   display: block;
   width: 235px;
   border: $color-default-white solid 4px;
-  position: relative;
-  top: 162px;
-  left: 245px;
   letter-spacing: 0.05em;
   text-align: center;
   padding: 20px;
+  margin-left: 140px;
 
   @include vp-1199 {
     width: 185px;
-    top: -10px;
-    left: 165px;
   }
 
   @include vp-767 {
     width: 290px;
-    top: -40px;
-    left: -5px;
+    margin: 0;
+    padding: 20px 0;
   }
 
   &:hover,

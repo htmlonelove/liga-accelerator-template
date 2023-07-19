@@ -33,18 +33,30 @@
 
       <section class="hero">
         <div class="hero__wrapper">
-        <h1 class="hero__title">Фитнес центр</h1>
-        <div class="hero__photo">
-        </div>
-        <div class="hero__wrapper">
-          <p class="hero__sity">Омск</p>
-          <ul class="hero__list">
-            <li class="hero__item">Тренажёрный зал</li>
-            <li class="hero__item">Групповые занятия</li>
-            <li class="hero__item">Кардио-зона</li>
-          </ul>
-          <a class="hero__btn btn btn--transparent" href="#buy">Купить абонемент</a>
-        </div>
+          <div class="hero__photo">
+            <picture>
+              <source media="(max-width: 1199px)" type="image/webp"
+                srcset="./img/hero/hero-man-tablet.webp 1x, ./img/hero/hero-man-tablet@2x.webp 2x" width="324"
+                height="390">
+              <source media="(min-width: 1200px)" type="image/webp"
+                srcset="./img/hero/hero-man.webp 1x, ./img/hero/hero-man@2x.webp 2x" width="500" height="556">
+
+              <source media="(max-width: 1199px)" srcset="./img/hero/hero-man.jpg 1x, ./img/hero/hero-man@2x.jpg 2x"
+                width="324" height="390">
+              <img src="./img/hero/hero-man.jpg" srcset="./img/hero/hero-man.jpg 1x, ./img/hero/hero-man@2x.jpg 2x"
+                alt="Фото теренера зала." width="500" height="556" loading="lazy">
+            </picture>
+          </div>
+          <div class="hero__description">
+            <p class="hero__sity">Омск</p>
+            <h1 class="hero__title">Фитнес <br>центр</h1>
+            <ul class="hero__list">
+              <li class="hero__item">Тренажёрный зал</li>
+              <li class="hero__item">Групповые занятия</li>
+              <li class="hero__item">Кардио-зона</li>
+            </ul>
+            <a class="hero__btn btn btn--transparent" href="#buy">Купить абонемент</a>
+          </div>
         </div>
       </section>
 
@@ -62,7 +74,7 @@
             <span class="visually-hidden">Фото тренажерного зала.</span>
           </div>
           <a class="gim__play" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-            <div class="visually-hidden">Кнпка запуска видео.</div>
+            <div class="visually-hidden">Кнопка запуска видео.</div>
           </a>
           <div class="gim__video">
             <span class="visually-hidden">Блок с видео из зала</span>
@@ -196,7 +208,7 @@
                     width="226" height="274">
                   <source media="(max-width: 1199px)" srcset="./img/trainers/anna.jpg 1x, ./img/trainers/anna@2x.png 2x"
                     width="268" height="294">
-                  <img src="./img/trainers/anna.jpg" srcset="./img/trainers/anna.jpg 1x, ./imgtrainers/anna@2x.jpg 2x"
+                  <img src="./img/trainers/anna.jpg" srcset="./img/trainers/anna.jpg 1x, ./img/trainers/anna@2x.jpg 2x"
                     alt="Фото тренера Анна Павлова." width="260" height="294" loading="lazy">
                 </picture>
                 <p class="trainers__name">Анна Павлова</p>
@@ -310,7 +322,7 @@
                     width="226" height="274">
                   <source media="(max-width: 1199px)" srcset="./img/trainers/anna.jpg 1x, ./img/trainers/anna@2x.png 2x"
                     width="268" height="294">
-                  <img src="./img/trainers/anna.jpg" srcset="./img/trainers/anna.jpg 1x, ./imgtrainers/anna@2x.jpg 2x"
+                  <img src="./img/trainers/anna.jpg" srcset="./img/trainers/anna.jpg 1x, ./img/trainers/anna@2x.jpg 2x"
                     alt="Фото тренера Анна Павлова." width="260" height="294" loading="lazy">
                 </picture>
                 <p class="trainers__name">Анна Павлова</p>
@@ -937,7 +949,8 @@
           <div class="form-contacts__form form" data-form-validate data-callback="base">
             <h2 class="form__title">Бесплатное занятие</h2>
             <form action="https://echo.htmlacademy.ru/." method="get">
-              <div class="form__name" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+              <div class="form__name" data-validate-type="text" data-limitation="name" data-on-input-validate
+                data-required>
                 <label>
                   <input type="text" name="name" minlength="1" placeholder="Имя" required autocomplete="off">
                 </label>
