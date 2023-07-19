@@ -2446,7 +2446,7 @@ button,
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 50px 300px 50px 125px;
+  padding: 50px 300px 81px 125px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 500px;
@@ -2544,7 +2544,10 @@ button,
   stroke: #ffffff;
   -webkit-text-stroke-width: 2px;
   margin: 0;
-  padding: 10px 0 0 16px;
+  padding: 0;
+  position: relative;
+  left: 13px;
+  top: 12px;
 }
 @media (max-width: 1199px) {
   .hero__title {
@@ -2852,14 +2855,12 @@ button,
 
 .gim__photo {
   width: 660px;
-  height: 401px;
+  min-height: 401px;
   margin: 0;
   display: block;
   position: relative;
   top: 110px;
   left: -12px;
-  background: url("/img/gim/main.jpg") no-repeat 85%;
-  background-size: cover;
 }
 @media (max-width: 1199px) {
   .gim__photo {
@@ -2876,6 +2877,10 @@ button,
     top: -55px;
     left: -26px;
   }
+}
+
+.gim__photo img {
+  min-height: 401px;
 }
 
 .gim__video {

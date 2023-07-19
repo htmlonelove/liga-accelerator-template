@@ -115,14 +115,12 @@
 
 .gim__photo {
   width: 660px;
-  height: 401px;
+  min-height: 401px;
   margin: 0;
   display: block;
   position: relative;
   top: 110px;
   left: -12px;
-  background: url("/img/gim/main.jpg") no-repeat 85%;
-  background-size: cover;
 
   @include vp-1199 {
     width: 678px;
@@ -137,6 +135,10 @@
     top: -55px;
     left: -26px;
   }
+}
+
+.gim__photo img {
+  min-height: 401px;
 }
 
 .gim__video {

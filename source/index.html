@@ -71,7 +71,20 @@
         </div>
         <div class="gim__media">
           <div class="gim__photo">
-            <span class="visually-hidden">Фото тренажерного зала.</span>
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp"
+                srcset="./img/gim/main.webp 1x, ./img/gim/main-mobile@2x.webp 2x" width="320" height="313">
+              <source media="(max-width: 1199px)" type="image/webp"
+                srcset="./img/gim/main.webp 1x, ./img/gim/main-tablet@2x.webp 2x" width="678" height="345">
+              <source media="(min-width: 1200px)" type="image/webp"
+                srcset="./img/gim/main.webp 1x, ./img/gim/main@2x.webp 2x" width="660" height="401">
+
+              <source media="(max-width: 767px)" srcset="./img/gim/main-mobile.jpg 1x, ./img/gim/main-mobile@2x.jpg 2x"
+                width="320" height="313">
+              <source media="(max-width: 1199px)" srcset="./img/gim/main-tablet.jpg 1x,   width=" 678" height="345">
+              <img src="./img/gim/main.jpg" srcset="./img/gim/main.jpg 1x, ./img/gim/main@2x.jpg 2x"
+                alt="Фото тренажерного зала." width="660" height="401" loading="lazy">
+            </picture>
           </div>
           <a class="gim__play" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
             <div class="visually-hidden">Кнопка запуска видео.</div>

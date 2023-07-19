@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 50px 300px 50px 125px;
+  padding: 50px 300px 81px 125px;
   display: grid;
   grid-template-columns: 1fr 500px;
   gap: 50px;
@@ -79,8 +79,10 @@
   stroke: $color-default-white;
   -webkit-text-stroke-width: 2px;
   margin: 0;
-  padding: 10px 0 0 16px;
-
+  padding: 0;
+  position: relative;
+  left: 13px;
+  top: 12px;
 
   @include vp-1199 {
     font-size: 72px;
