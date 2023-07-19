@@ -2712,17 +2712,13 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     left: 0;
-    padding: 12px 45px 183px;
+    padding: 80px 45px 0;
   }
 }
-
 .gim__wrapper {
   width: 355px;
   min-height: 314px;
   padding: 50px 0;
-  display: block;
-  position: relative;
-  top: 68px;
   left: 75px;
 }
 @media (max-width: 1199px) {
@@ -2768,8 +2764,8 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__title {
-    padding: 18px 110px 0 125px;
-    min-width: 261px;
+    line-height: 50px;
+    padding: 18px 110px 0 114px;
     text-align: center;
   }
 }
@@ -2793,7 +2789,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__description {
-    padding: 0 40px 20px 74px;
+    padding: 0 40px 20px 114px;
   }
 }
 @media (max-width: 767px) {
@@ -2820,6 +2816,7 @@ button,
     text-align: center;
     font-size: 14px;
     letter-spacing: 0;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2859,28 +2856,31 @@ button,
   margin: 0;
   display: block;
   position: relative;
-  top: 110px;
+  top: -120px;
   left: -12px;
 }
 @media (max-width: 1199px) {
   .gim__photo {
     width: 678px;
     height: 345px;
-    top: -52px;
-    left: 30px;
+    left: 0;
+    top: -22%;
   }
 }
 @media (max-width: 767px) {
   .gim__photo {
     width: 320px;
     height: 313px;
-    top: -55px;
-    left: -26px;
   }
 }
 
 .gim__photo img {
   min-height: 401px;
+}
+@media (max-width: 1199px) {
+  .gim__photo img {
+    min-height: 345px;
+  }
 }
 
 .gim__video {
@@ -2899,8 +2899,8 @@ button,
   .gim__video {
     width: 266px;
     height: 167px;
-    top: -210px;
-    left: 236px;
+    top: -82%;
+    left: 30.5%;
   }
 }
 @media (max-width: 767px) {
@@ -2928,8 +2928,8 @@ button,
   .gim__play {
     width: 73px;
     height: 73px;
-    top: -92px;
-    left: 332px;
+    top: -48%;
+    left: 44%;
   }
 }
 @media (max-width: 767px) {

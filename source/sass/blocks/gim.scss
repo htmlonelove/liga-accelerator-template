@@ -8,7 +8,11 @@
   @include vp-1199 {
     flex-direction: column;
     left: 0;
-    padding: 12px 45px 183px;
+    padding: 80px 45px 0;
+  }
+
+  @include vp-767 {
+    
   }
 }
 
@@ -16,9 +20,6 @@
   width: 355px;
   min-height: 314px;
   padding: 50px 0;
-  display: block;
-  position: relative;
-  top: 68px;
   left: 75px;
 
   @include vp-1199 {
@@ -43,8 +44,8 @@
   padding: 40px 0 0;
 
   @include vp-1199 {
-    padding: 18px 110px 0 125px;
-    min-width: 261px;
+    line-height: 50px;
+    padding: 18px 110px 0 114px;
     text-align: center;
   }
 
@@ -62,7 +63,7 @@
   padding: 7px 0 35px;
 
   @include vp-1199 {
-    padding: 0 40px 20px 74px;
+    padding: 0 40px 20px 114px;
   }
 
   @include vp-767 {
@@ -83,6 +84,7 @@
     text-align: center;
     font-size: 14px;
     letter-spacing: 0;
+    margin-bottom: 0;
   }
 
   @include vp-767 {
@@ -119,26 +121,28 @@
   margin: 0;
   display: block;
   position: relative;
-  top: 110px;
+  top: -120px;
   left: -12px;
 
   @include vp-1199 {
     width: 678px;
     height: 345px;
-    top: -52px;
-    left: 30px;
+    left: 0;
+    top: -22%;
   }
 
   @include vp-767 {
     width: 320px;
     height: 313px;
-    top: -55px;
-    left: -26px;
   }
 }
 
 .gim__photo img {
   min-height: 401px;
+
+  @include vp-1199 {
+    min-height: 345px;
+  }
 }
 
 .gim__video {
@@ -155,8 +159,8 @@
   @include vp-1199 {
     width: 266px;
     height: 167px;
-    top: -210px;
-    left: 236px;
+    top: -82%;
+    left: 30.5%;
   }
 
   @include vp-767 {
@@ -182,8 +186,8 @@
   @include vp-1199 {
     width: 73px;
     height: 73px;
-    top: -92px;
-    left: 332px;
+    top: -48%;
+    left: 44%;
   }
 
   @include vp-767 {
