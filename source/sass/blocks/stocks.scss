@@ -3,17 +3,30 @@
   text-align: center;
   margin: 0;
   padding: 135px 0 35px;
+
+  @include vp-1199 {
+    padding: 75px 0 40px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    padding: 70px 0 42px;
+  }
 }
 
 .stocks__wrapper {
   padding: 0 103px 120px 103px;
 
   @include vp-1199 {
-    padding: 0 10px;
+    padding: 0 45px;
   }
 
   @include vp-767 {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 }
 
@@ -23,7 +36,9 @@
   gap: 40px;
 
   @include vp-1199 {
-    grid-template-columns: 324px 324px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   @include vp-767 {
@@ -36,6 +51,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @include vp-1199 {
+    grid-template-columns: 279px 399px;
+  }
+
   @include vp-767 {
     display: flex;
     flex-direction: column;
@@ -47,8 +66,19 @@
   flex-direction: column;
   gap: 40px;
 
+  &::after span {
+    display: none;
+  }
+
   @include vp-1199 {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -84,6 +114,14 @@
     text-align: left;
     margin: 0;
   }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .stocks__description {
@@ -93,12 +131,39 @@
   text-align: left;
   margin: 0;
 
+  span::after {
+    content: "\A";
+    white-space: normal;
+  }
+
+  @include vp-1199 {
+    span::after {
+      content: "\A";
+      white-space: pre;
+    }
+  }
+
+  @include vp-767 {
+    text-align: center;
+
+    span::after {
+      content: "\A";
+      white-space: normal;
+    }
+  }
+
   &--main {
     @include h4;
 
     line-height: 25px;
     letter-spacing: 0;
     padding: 25px 0;
+
+    @include vp-767 {
+      text-align: center;
+      margin: 0 auto;
+      padding: 15px 0 25px;
+    }
   }
 }
 
@@ -109,6 +174,11 @@
   letter-spacing: 0;
   text-align: left;
   margin: 0;
+
+  @include vp-767 {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .stocks__link {
@@ -143,6 +213,11 @@
     color: $color-default-white;
     opacity: 50%;
   }
+
+  @include vp-767 {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .stocks__link--other {
@@ -167,5 +242,30 @@
   &:disabled {
     color: $color-default-black;
     opacity: 30%;
+  }
+
+  @include vp-1199 {
+    padding-top: 50px;
+  }
+
+  @include vp-767 {
+    text-align: center;
+    padding: 25px 0 12px;
+  }
+}
+
+.stocks__photo {
+  max-width: 280px;
+  background-image: url("../img/stocks/stocks-girl-in-blue.jpg");
+  background-size: cover;
+
+  @include vp-1199 {
+    max-width: 399px;
+    height: 462px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    height: 299px;
   }
 }
