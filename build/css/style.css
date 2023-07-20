@@ -2768,9 +2768,6 @@ button,
   .gim__title {
     text-align: left;
     padding: 0;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 38px;
   }
 }
 
@@ -3236,12 +3233,10 @@ button,
   background-color: #ffffff;
   z-index: 2;
 }
-@media (hover: hover) {
-  .memberships__catalog:hover:not(.focus-visible) {
-    padding: 57px 70px;
-    border: 7px solid;
-    border-image-slice: 1;
-  }
+.memberships__catalog:hover {
+  padding: 57px 70px;
+  border: 7px solid;
+  border-image-slice: 1;
 }
 @media (max-width: 1199px) {
   .memberships__catalog {
@@ -4000,7 +3995,7 @@ button,
 }
 
 .advantages {
-  padding: 102px 0 70px;
+  padding: 102px 0 45px;
   background-color: #f8f9fc;
 }
 @media (max-width: 1199px) {
@@ -4304,18 +4299,33 @@ button,
   margin: 0;
   padding: 135px 0 35px;
 }
+@media (max-width: 1199px) {
+  .stocks__title {
+    padding: 75px 0 40px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    padding: 70px 0 42px;
+  }
+}
 
 .stocks__wrapper {
   padding: 0 103px 120px 103px;
 }
 @media (max-width: 1199px) {
   .stocks__wrapper {
-    padding: 0 10px;
+    padding: 0 45px;
   }
 }
 @media (max-width: 767px) {
   .stocks__wrapper {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 }
 
@@ -4328,8 +4338,14 @@ button,
 }
 @media (max-width: 1199px) {
   .stocks__list {
-    -ms-grid-columns: 324px 324px;
-    grid-template-columns: 324px 324px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -4349,6 +4365,12 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1199px) {
+  .stocks__item--main {
+    -ms-grid-columns: 279px 399px;
+    grid-template-columns: 279px 399px;
+  }
 }
 @media (max-width: 767px) {
   .stocks__item--main {
@@ -4371,12 +4393,27 @@ button,
           flex-direction: column;
   gap: 40px;
 }
+.stocks__item--other::after span {
+  display: none;
+}
 @media (max-width: 1199px) {
   .stocks__item--other {
-    -webkit-box-orient: horizontal;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 324px 324px;
+    grid-template-columns: 324px 324px;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__item--other {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -4429,6 +4466,15 @@ button,
   text-align: left;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .stocks__name {
+    font-size: 26px;
+    line-height: 50px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
 .stocks__description {
   font-family: "Roboto Condensed", sans-serif;
@@ -4441,6 +4487,25 @@ button,
   text-align: left;
   margin: 0;
 }
+.stocks__description span::after {
+  content: "\a";
+  white-space: normal;
+}
+@media (max-width: 1199px) {
+  .stocks__description span::after {
+    content: "\a";
+    white-space: pre;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__description {
+    text-align: center;
+  }
+  .stocks__description span::after {
+    content: "\a";
+    white-space: normal;
+  }
+}
 .stocks__description--main {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
@@ -4452,6 +4517,13 @@ button,
   letter-spacing: 0;
   padding: 25px 0;
 }
+@media (max-width: 767px) {
+  .stocks__description--main {
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0 25px;
+  }
+}
 
 .stocks__bigname {
   font-size: 70px;
@@ -4460,6 +4532,12 @@ button,
   letter-spacing: 0;
   text-align: left;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .stocks__bigname {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .stocks__link {
@@ -4498,6 +4576,12 @@ button,
   color: #ffffff;
   opacity: 50%;
 }
+@media (max-width: 767px) {
+  .stocks__link {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 
 .stocks__link--other {
   font-size: 12px;
@@ -4519,6 +4603,35 @@ button,
 .stocks__link--other:disabled {
   color: #102654;
   opacity: 30%;
+}
+@media (max-width: 1199px) {
+  .stocks__link--other {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__link--other {
+    text-align: center;
+    padding: 25px 0 12px;
+  }
+}
+
+.stocks__photo {
+  max-width: 280px;
+  background-image: url("../img/stocks/stocks-girl-in-blue.jpg");
+  background-size: cover;
+}
+@media (max-width: 1199px) {
+  .stocks__photo {
+    max-width: 399px;
+    height: 462px;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__photo {
+    max-width: 290px;
+    height: 299px;
+  }
 }
 
 .faq {

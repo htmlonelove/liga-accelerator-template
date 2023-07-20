@@ -24,7 +24,6 @@
   bottom: -98px;
   background-position: right;
 
-
   @include vp-1199 {
     background: url("/img/memberships/membership-equipment-tablet.png") no-repeat;
     bottom: -118px;
@@ -226,7 +225,7 @@
   background-color: $color-default-white;
   z-index: 2;
 
-  @include hover {
+  &:hover {
     padding: 57px 70px;
     border: 7px solid;
     border-image-slice: 1;
