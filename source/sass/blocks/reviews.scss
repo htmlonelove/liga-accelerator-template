@@ -93,9 +93,11 @@
     &:focus {
       left: 23.9%;
       background-image: url("../img/sprite/arrow-back.svg");
-      background-size: 56px 56px;
+      background-size: 30px 30px;
       outline: none;
-      left: 22%;
+      background-color: $color-default-black;
+      border-radius: 50%;
+      color: $color-default-white;
     }
   }
 
@@ -109,9 +111,11 @@
     &:focus {
       right: 23.9%;
       background-image: url("../img/sprite/arrow-along.svg");
-      background-size: 56px 56px;
+      background-size: 30px 30px;
       outline: none;
-      right: 22%;
+      background-color: $color-default-black;
+      border-radius: 50%;
+      color: $color-default-white;
     }
   }
 

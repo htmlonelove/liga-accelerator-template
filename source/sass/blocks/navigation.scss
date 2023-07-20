@@ -35,6 +35,19 @@
 
 .navigation__link {
   color: #ffffff;
+
+  &:hover {
+    border-top: 1px solid $color-default-white;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-white;
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    opacity: 40%;
+  }
 }
 
 .navigation__item {

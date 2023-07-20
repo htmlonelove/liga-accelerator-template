@@ -38,4 +38,19 @@
   height: 25px;
   display: flex;
   justify-content: center;
+
+  &:hover,
+  &:focus {
+    fill: $color-default-white;
+    background-color: #103aae;
+  }
+
+  &:active {
+    background-color: $color-default-black;
+    fill: $color-default-white;
+  }
+
+  &:disabled {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }

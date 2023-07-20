@@ -8,17 +8,17 @@
   @include vp-1199 {
     flex-direction: column;
     left: 0;
-    padding: 12px 45px 183px;
+    padding: 80px 45px 0;
+  }
+
+  @include vp-767 {
+    padding: 60px 0 0;
   }
 }
 
 .gim__wrapper {
-  width: 355px;
   min-height: 314px;
-  padding: 50px 0;
-  display: block;
-  position: relative;
-  top: 68px;
+  padding: 120px 162px;
   left: 75px;
 
   @include vp-1199 {
@@ -30,6 +30,7 @@
     width: 300px;
     top: 15px;
     left: -20px;
+    padding: 0 15px;
   }
 }
 
@@ -43,14 +44,17 @@
   padding: 40px 0 0;
 
   @include vp-1199 {
-    padding: 18px 110px 0 125px;
-    min-width: 261px;
+    line-height: 50px;
+    padding: 18px 110px 0 114px;
     text-align: center;
   }
 
   @include vp-767 {
     text-align: left;
-    padding: 0 0 5px 20px;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
   }
 }
 
@@ -62,12 +66,12 @@
   padding: 7px 0 35px;
 
   @include vp-1199 {
-    padding: 0 40px 20px 74px;
+    padding: 0 40px 20px 114px;
   }
 
   @include vp-767 {
     width: 300px;
-    padding: 0 0 10px 20px;
+    padding: 0;
   }
 }
 
@@ -83,11 +87,12 @@
     text-align: center;
     font-size: 14px;
     letter-spacing: 0;
+    margin-bottom: 0;
   }
 
   @include vp-767 {
     text-align: left;
-    padding: 0 60px 0 20px;
+    padding: 0 35px 0 0;
   }
 }
 
@@ -109,7 +114,7 @@
 
   @include vp-767 {
     height: 550px;
-    padding: 10px;
+    padding: 0;
   }
 }
 
@@ -119,26 +124,34 @@
   margin: 0;
   display: block;
   position: relative;
-  top: 110px;
-  left: -12px;
+  top: 17%;
+  left: -15.5%;
 
   @include vp-1199 {
     width: 678px;
     height: 345px;
-    top: -52px;
-    left: 30px;
+    left: 0;
+    top: -22%;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    max-height: 313px;
+    top: -7%;
+  }
+}
+
+.gim__photo img {
+  height: 401px;
+
+  @include vp-1199 {
+    height: 345px;
   }
 
   @include vp-767 {
     width: 320px;
     height: 313px;
-    top: -55px;
-    left: -26px;
   }
-}
-
-.gim__photo img {
-  min-height: 401px;
 }
 
 .gim__video {
@@ -146,7 +159,7 @@
   display: block;
   position: relative;
   top: -103px;
-  left: -75px;
+  left: -25%;
   width: 364px;
   height: 228px;
   background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg") no-repeat 50%;
@@ -155,15 +168,15 @@
   @include vp-1199 {
     width: 266px;
     height: 167px;
-    top: -210px;
-    left: 236px;
+    top: -82%;
+    left: 30.5%;
   }
 
   @include vp-767 {
     width: 320px;
     height: 167px;
-    top: -90px;
-    left: -26px;
+    top: -29%;
+    left: 0;
   }
 }
 
@@ -176,21 +189,21 @@
   z-index: 2;
   position: relative;
   top: 62px;
-  left: 55px;
+  left: -5%;
   cursor: pointer;
 
   @include vp-1199 {
     width: 73px;
     height: 73px;
-    top: -92px;
-    left: 332px;
+    top: -48%;
+    left: 44%;
   }
 
   @include vp-767 {
     width: 73px;
     height: 73px;
-    top: 32px;
-    left: 100px;
+    top: -7%;
+    left: 39%;
   }
 
   &:disabled {

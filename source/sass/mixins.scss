@@ -80,19 +80,6 @@
   font-size: 48px;
   font-weight: 600;
   text-align: center;
-
-  @include vp-1199 {
-    font-size: 42px;
-  }
-
-  @include vp-767 {
-    line-height: 50px;
-  }
-
-  @include vp-374 {
-    font-size: 32px;
-    line-height: 38px;
-  }
 }
 
 @mixin h2 {

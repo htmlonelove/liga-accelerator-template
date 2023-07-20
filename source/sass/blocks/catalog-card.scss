@@ -95,12 +95,19 @@
   padding: 24px 42px;
   text-transform: uppercase;
 
-  @include hover-focus {
+  &:hover,
+  &:focus,
+  &:active {
     padding: 26px 44px;
     color: $color-default-white;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     border: none;
     outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-default-white;
+    color: rgba(16, 38, 84, 0.1);
   }
 
   &--active {
@@ -126,5 +133,19 @@
     min-width: 246px;
     min-height: 384px;
     padding: 45px 15px 0;
+  }
+}
+
+.card {
+
+  &:active,
+  &:hover,
+  &:focus {
+    border: 7px solid;
+    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+  }
+
+  &:default {
+    border: none;
   }
 }

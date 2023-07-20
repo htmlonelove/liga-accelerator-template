@@ -5,12 +5,12 @@
 .trainers__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 0 0 60px;
+  padding: 0 0 107px;
   max-width: 1366px;
   width: 100%;
 
   @include vp-1199 {
-    padding: 5px 0 100px;
+    padding: 5px 0 55px;
   }
 
   @include vp-767 {
@@ -29,14 +29,19 @@
   letter-spacing: 0.1rem;
 
   @include vp-1199 {
-    margin: 0 0 35px;
-    padding-left: 0;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.4px;
+    margin: 0 0 32px;
+    padding: 55px 50px 0 44px;
     text-align: center;
   }
 
   @include vp-767 {
-    margin-bottom: 46px;
-    padding-top: 0;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 42px;
+    padding: 20px 50px 0 48px;
   }
 }
 
@@ -89,50 +94,59 @@
 
   &--back {
     left: 27px;
-    transform: translate(0, -50%);
+    transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-back.svg");
     fill: #afafaf;
 
     &:hover,
     &:focus {
-      left: 29px;
       background-image: url("../img/sprite/arrow-back.svg");
-      background-size: 56px 56px;
+      background-size: 30px 30px;
       outline: none;
+      background-color: $color-default-black;
+      border-radius: 50%;
+      color: $color-default-white;
     }
   }
 
   &--along {
     right: 27px;
-    transform: translate(0, -50%);
+    transform: translate(0, -10%);
     background-image: url("../img/sprite/arrow-along.svg");
     fill: #afafaf;
 
     &:hover,
     &:focus {
-      right: 29px;
       background-image: url("../img/sprite/arrow-along.svg");
-      background-size: 56px 56px;
+      background-size: 30px 30px;
       outline: none;
+      background-color: $color-default-black;
+      border-radius: 50%;
+      color: $color-default-white;
     }
   }
 
   @include vp-1199 {
-    top: 48%;
+    top: 55%;
   }
 
   @include vp-767 {
-    top: 51%;
+    top: 58%;
     width: 20px;
     height: 20px;
     background-size: 10px 19px;
 
     &--back {
-      left: 10px;
+      left: 15px;
     }
 
     &--along {
-      right: 10px;
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background-size: 10px 10px;
     }
   }
 }
@@ -181,7 +195,15 @@
   display: none;
 }
 
+.trainers__card:focus > p {
+  display: none;
+}
+
 .trainers__card:hover .trainers__info {
+  display: block;
+}
+
+.trainers__card:focus .trainers__info {
   display: block;
 }
 

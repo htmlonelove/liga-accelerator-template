@@ -3,12 +3,12 @@
   margin: 117px 73px 100px 103px;
 
   @include vp-1199 {
-    margin: 130px 30px 40px;
+    margin: 100px 30px 40px 45px;
   }
 
   @include vp-767 {
     flex-direction: column;
-    margin: 70px 0 40px;
+    margin: 72px 15px 40px;
   }
 }
 
@@ -51,6 +51,7 @@
 
 .news__media {
   background: url("/img/news/crossfit.jpg") no-repeat;
+  background-color: $color-default-black;
   background-size: cover;
   background-position: center;
   width: 660px;
@@ -97,7 +98,7 @@
     position: absolute;
     content: "";
     left: 34%;
-    top: 38.44%;
+    top: 36.66%;
     width: 65px;
     height: 1px;
     background-color: $color-default-white;
@@ -224,7 +225,7 @@
   border: 4px solid $color-default-white;
   width: 344px;
   min-height: 70px;
-  padding: 25px 108px;
+  padding: 25px 110px;
 
   @include vp-1199 {
     margin: 0 32px 10px;
@@ -240,5 +241,19 @@
 
   @include vp-767 {
     margin: 0 32px 35px;
+  }
+
+  &:hover {
+    color: $color-default-white;
+    opacity: 50%;
+  }
+
+  &:focus {
+    border: 1px solid  $color-default-white;
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    opacity: 50%;
   }
 }

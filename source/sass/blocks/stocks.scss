@@ -120,17 +120,6 @@
   display: block;
   margin-top: auto;
 
-  &--other {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 14px;
-    text-align: left;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $color-default-black;
-    padding-top: 70px;
-  }
-
   &::after {
     content: "";
     position: relative;
@@ -139,5 +128,44 @@
     bottom: -1px;
     left: 0;
     background-color: $color-default-white;
+  }
+
+  &:hover {
+    color: $color-default-white;
+    opacity: 50%;
+  }
+
+  &:focus {
+    border: 1px solid  $color-default-white;
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    opacity: 50%;
+  }
+}
+
+.stocks__link--other {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-black;
+  padding-top: 70px;
+
+  &:hover {
+    color: $color-default-black;
+    opacity: 50%;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-black;
+  }
+
+  &:disabled {
+    color: $color-default-black;
+    opacity: 30%;
   }
 }

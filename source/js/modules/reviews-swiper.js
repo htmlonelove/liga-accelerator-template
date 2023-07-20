@@ -1,6 +1,5 @@
 const swiper = new Swiper('.reviews__swiper', {
   // Optional parameters
-  loop: true,
 
   breakpoints: {
     320: {
@@ -21,5 +20,6 @@ const swiper = new Swiper('.reviews__swiper', {
   navigation: {
     nextEl: '.reviews__swiper-button--along',
     prevEl: '.reviews__swiper-button--back',
+    disabledClass: 'reviews__button-disabled',
   },
 });

@@ -1,170 +1,253 @@
 .advantages {
+  padding: 102px 0 70px;
+
   background-color: #f8f9fc;
+
+  @include vp-1199 {
+    padding: 140px 45px 92px;
+  }
+
+  @include vp-767 {
+    padding: 15px 0 60px;
+  }
+}
+
+.advantages__wrapper {
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .advantages__title {
   @include h2;
 
+  margin: 0;
+  padding-top: 6px;
+  padding-left: 6px;
   text-align: center;
-  padding-top: 110px;
-  margin: 44px 0 25px;
-}
-
-.advantages__wrapper {
-  padding: 0 140px 99px;
-  display: grid;
-  grid-template-columns: 326px 240px 350px;
-  gap: 60px 58px;
-  min-height: 320px;
 
   @include vp-1199 {
-    padding: 0 20px;
-    display: flex;
-    gap: 10px;
+    font-size: 42px;
+    line-height: 38px;
+    margin: 4px;
+    padding-top: 0;
+    padding-left: 173px;
+    text-align: left;
   }
 
   @include vp-767 {
-    flex-direction: column;
-    justify-content: center;
+    font-size: 32px;
+    line-height: 38px;
+    padding: 43px 10px 0 33px;
   }
-}
-
-.wrapper__side {
-  display: flex;
-  flex-direction: column;
-  gap: 112px;
-}
-
-.wrapper__center {
-  background-color: #1c3374;
-  color: $color-default-white;
-  text-align: center;
-  padding: 38px 25px 0 22px;
-  margin: 31px 0 30px;
 }
 
 .advantages__list {
-  display: flex;
-  gap: 32px;
-  min-height: 125px;
+  margin: 0 180px;
+  padding: 28px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  gap: 56px 60px;
+  max-width: 1040px;
+  list-style: none;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 27px;
+    padding-top: 27px;
+  }
 
   @include vp-767 {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-}
-
-.list__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.list--center {
-  flex-direction: column;
-  gap: 0;
 }
 
 .advantages__item {
-  display: block;
-  font-size: 71px;
-  font-weight: 700;
-  line-height: 107px;
-  letter-spacing: 0;
-  text-align: left;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  grid-column: auto;
+  padding: 0 0 50px;
+  color: #102654;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
-  &--gradient {
-    color: $color-neon-blue;
-    background: linear-gradient(to bottom right, #d10a42  0%, #0041ca 55%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    @include vp-767 {
-      text-align: center;
-    }
+  @include vp-1199 {
+    padding: 0;
+    border: none;
+    grid-column: auto;
   }
 
-  &--color {
-    color: $color-default-white;
-    text-align: center;
-    height: 80px;
-
-    @include vp-767 {
-      text-align: center;
-    }
-  }
-
-  &--small {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0;
-    text-align: left;
-    display: block;
-    margin: 0;
-    position: relative;
-    top: -20px;
-
-    @include vp-767 {
-      text-align: center;
-    }
-  }
-
-  &--center {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 39px;
-    letter-spacing: 0;
-    text-align: center;
-    margin: 12px 0 18px;
-  }
-
-  &--text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0;
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 46px;
     text-align: center;
   }
 }
 
-.advantages__item--text > h3 {
+.advantages__number {
+  max-width: 108px;
+
+  @include vp-767 {
+    margin: 20px auto 0;
+  }
+}
+
+.advantages__number span {
+  display: block;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #2e35ac;
+
+  &:first-child {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 89px;
+    color: transparent;
+    background-color: #2e35ac;
+    background-image: linear-gradient(75deg, #d10a42 0%, #0041ca 77.33%);
+    background-clip: text;
+
+    @include vp-1199 {
+      font-size: 58px;
+      line-height: 89px;
+    }
+
+    @include vp-767 {
+      line-height: 48px;
+    }
+  }
+}
+
+.advantages__addition {
+  display: block;
+  position: relative;
+  top: -21px;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 21px;
+    color: #2e35ac;
+  }
+
+  &--center {
+    @include vp-1199 {
+      top: -21px;
+    }
+  }
+
+  @include vp-767 {
+    top: 0;
+  }
+}
+
+.advantages__content h3 {
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
   letter-spacing: 0;
   text-align: left;
-  margin-bottom: 7px;
+  margin: 22px 0 2px;
+
+  @include vp-1199 {
+    margin: 15px 0 2px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   @include vp-767 {
+    margin: 6px 0 1px;
     text-align: center;
   }
 }
 
-.advantages__item--small > p {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
+.advantages__content p {
+  margin: 0;
+  letter-spacing: -0.02em;
   font-weight: 300;
+  font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0;
-  text-align: left;
-  margin-top: 0;
 
-  @include vp-767 {
-    text-align: center;
+  @include vp-1199 {
+    padding: 0;
+    letter-spacing: -0.01em;
   }
 }
 
-.advantages__item--text > p {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  letter-spacing: 0;
-  text-align: left;
-  margin-top: 0;
+.advantages__item--center {
+  display: block;
+  grid-column: 2/3;
+  margin-top: 28px;
+  margin-bottom: 82px;
+  padding: 36px 20px 56px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #1c3374;
+  grid-row: 1/span 2;
+
+  @include vp-1199 {
+    grid-column: 1/-1;
+    width: 100%;
+    max-width: 442px;
+    margin: 0 auto;
+    padding: 15px 120px 37px;
+    grid-row: 2/3;
+  }
 
   @include vp-767 {
-    text-align: center;
+    margin: 25px auto 9px;
+    padding: 0 55px 43px;
+    grid-row: 3/4;
   }
+}
+
+.advantages__item--center .advantages__number {
+  max-width: 100%;
+}
+
+.advantages__item--center span {
+  font-size: 26px;
+  line-height: 39px;
+  color: #ffffff;
+
+  @include vp-1199 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  &:first-child {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 111px;
+    color: #ffffff;
+
+    @include vp-1199 {
+      font-size: 74px;
+      line-height: 111px;
+    }
+  }
+}
+
+.advantages__item--center span + span {
+  margin-top: -16px;
+  margin-bottom: 32px;
+
+  @include vp-1199 {
+    margin-top: -21px;
+    margin-bottom: 16px;
+  }
+
+  @include vp-767 {
+    margin-top: -25px;
+    margin-bottom: 9px;
+  }
+}
+
+.advantages__item--center p {
+  line-height: 24px;
 }
