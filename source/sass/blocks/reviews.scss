@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 6px 15px 50px;
+    padding: 0 15px 50px;
   }
 }
 
@@ -18,7 +18,15 @@
   @include h2;
 
   text-align: center;
-  margin: 0 0 38px;
+  margin: 0 0 40px;
+
+  @include vp-1199 {
+    margin: 90px 0 45px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 41px;
+  }
 }
 
 .reviews__swiper {
@@ -45,17 +53,17 @@
   text-align: left;
   font-style: normal;
   display: block;
-  margin: 0 0 10px;
+  margin: 0;
 
   @include vp-1199 {
     padding: 0;
   }
 
   @include vp-767 {
-    margin: 0;
     padding-left: 10px;
     align-self: center;
-    line-height: 130%;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -64,7 +72,16 @@
 
   text-align: left;
   margin: 0;
-  padding-right: 3px;
+  display: block;
+  position: relative;
+  top: -5px;
+
+  @include vp-1199 {
+    padding: 0;
+    display: block;
+    position: relative;
+    top: -5px;
+  }
 
   @include vp-767 {
     grid-column: 1/3;
@@ -120,7 +137,25 @@
   }
 
   @include vp-1199 {
-    top: 48%;
+    top: 57%;
+
+    &--back {
+      left: 3%;
+
+      &:hover,
+      &:focus {
+        left: 3%;
+      }
+    }
+
+    &--along {
+      right: 3%;
+
+      &:hover,
+      &:focus {
+        right: 3%;
+      }
+    }
   }
 
   @include vp-767 {
@@ -131,33 +166,44 @@
 
     &--back {
       left: 10px;
+
+      &:hover,
+      &:focus {
+        left: 10px;
+      }
     }
 
     &--along {
       right: 10px;
+
+      &:hover,
+      &:focus {
+        right: 10px;
+      }
     }
   }
 }
 
 .reviews__card {
   position: relative;
-  padding: 54px 54px 52px 57px;
+  padding: 54px 58px 30px 57px;
   padding-left: 170px;
   color: $color-default-white;
-  background-color: $color-default-black;
+  background-color: rgba(28, 51, 116, 1);
+
   cursor: grab;
 
   @include vp-1199 {
-    padding-left: 172px;
+    padding: 54px 64px 30px 172px;
   }
 
   @include vp-767 {
-    padding: 40px 17px 34px;
+    padding: 40px 22px 6px;
     display: grid;
     min-height: 335px;
     grid-template-columns: 1fr 1fr;
     column-gap: 2px;
-    row-gap: 14px;
+    row-gap: 1px;
   }
 }
 
@@ -172,9 +218,7 @@
 
   @include vp-767 {
     position: static;
-    margin-left: 24px;
+    margin-left: 20px;
     justify-self: flex-start;
-    grid-column: 1/2;
-    grid-row: 1/2;
   }
 }
