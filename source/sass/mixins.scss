@@ -89,6 +89,16 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: left;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 38px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    text-align: center;
+  }
 }
 
 @mixin h3 {

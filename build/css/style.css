@@ -2759,6 +2759,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__title {
+    font-size: 42px;
     line-height: 50px;
     padding: 18px 110px 0 114px;
     text-align: center;
@@ -2766,6 +2767,7 @@ button,
 }
 @media (max-width: 767px) {
   .gim__title {
+    font-size: 32px;
     text-align: left;
     padding: 0;
   }
@@ -3028,17 +3030,25 @@ button,
 }
 @media (max-width: 1199px) {
   .memberships__title {
-    font-family: "Alumni Sans", "Arial", sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-    padding: 25px 12px 12px 10px;
+    font-size: 42px;
+    line-height: 38px;
   }
 }
 @media (max-width: 767px) {
   .memberships__title {
-    margin: 16px 0 10px 0;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .memberships__title {
+    margin: 0;
+    padding: 40px 12px 25px 0;
+  }
+}
+@media (max-width: 767px) {
+  .memberships__title {
+    margin: 0;
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
@@ -4031,6 +4041,18 @@ button,
   .advantages__title {
     font-size: 42px;
     line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .advantages__title {
+    font-size: 42px;
+    line-height: 38px;
     margin: 4px;
     padding-top: 0;
     padding-left: 173px;
@@ -4298,6 +4320,18 @@ button,
   text-align: center;
   margin: 0;
   padding: 135px 0 35px;
+}
+@media (max-width: 1199px) {
+  .stocks__title {
+    font-size: 42px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__title {
+    font-size: 32px;
+    text-align: center;
+  }
 }
 @media (max-width: 1199px) {
   .stocks__title {
@@ -4649,13 +4683,28 @@ button,
 }
 @media (max-width: 1199px) {
   .faq__title {
-    margin-bottom: 44px;
-    text-align: center;
+    font-size: 42px;
+    line-height: 38px;
   }
 }
 @media (max-width: 767px) {
   .faq__title {
-    margin-bottom: 33px;
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .faq__title {
+    font-size: 42px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .faq__title {
+    font-size: 32px;
+    margin: 65px 0 30px 0;
   }
 }
 
@@ -4667,7 +4716,7 @@ button,
 }
 @media (max-width: 1199px) {
   .faq__wrapper {
-    padding: 104px 45px 100px;
+    padding: 204px 45px 100px;
   }
 }
 @media (max-width: 767px) {
@@ -4760,6 +4809,7 @@ button,
 }
 @media (max-width: 767px) {
   .faq__control {
+    min-height: 44px;
     padding: 12px 0;
     width: 141px;
     font-size: 16px;
@@ -4785,7 +4835,7 @@ button,
 @media (max-width: 1199px) {
   .faq__content {
     margin: 0 auto;
-    width: 678px;
+    width: 688px;
   }
 }
 @media (max-width: 767px) {
@@ -4811,6 +4861,11 @@ button,
 }
 .accordion__element:last-child {
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+}
+@media (max-width: 1199px) {
+  .accordion__element {
+    min-height: 92px;
+  }
 }
 
 .accordion__button {
@@ -4852,6 +4907,12 @@ button,
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
+@media (max-width: 1199px) {
+  .accordion__button::after {
+    top: 54.5%;
+    right: 1.5%;
+  }
+}
 @media (hover: hover) {
   .accordion__button:hover:not(.focus-visible)::after {
     background: url("../img/sprite/acc-open-hover.svg") no-repeat;
@@ -4866,7 +4927,8 @@ button,
 }
 @media (max-width: 1199px) {
   .accordion__button {
-    padding-right: 80px;
+    padding: 35px 80px 22px 0;
+    margin-left: 0;
   }
   .accordion__button--custom {
     padding-top: 27px;
@@ -4906,6 +4968,8 @@ button,
 @media (max-width: 1199px) {
   .accordion__content {
     padding-right: 160px;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -4922,6 +4986,11 @@ button,
   line-height: 25px;
   text-align: left;
   margin: 15px 0 0 20px;
+}
+@media (max-width: 1199px) {
+  .accordion__text {
+    margin-left: 0;
+  }
 }
 @media (max-width: 767px) {
   .accordion__text {
@@ -4974,6 +5043,18 @@ button,
   text-align: left;
   text-align: center;
   margin: 0 0 38px;
+}
+@media (max-width: 1199px) {
+  .reviews__title {
+    font-size: 42px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__title {
+    font-size: 32px;
+    text-align: center;
+  }
 }
 
 .reviews__swiper {
@@ -5299,6 +5380,18 @@ button,
 }
 @media (max-width: 1199px) {
   .form__title {
+    font-size: 42px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .form__title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .form__title {
     margin-bottom: 34px;
     letter-spacing: 0.09rem;
   }
@@ -5512,6 +5605,18 @@ button,
   text-align: left;
   margin: 0 0 35px;
   letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .contacts__title {
+    font-size: 42px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__title {
+    font-size: 32px;
+    text-align: center;
+  }
 }
 @media (max-width: 1199px) {
   .contacts__title {
