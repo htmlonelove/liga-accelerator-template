@@ -74,7 +74,7 @@
   }
 }
 
-.gim__detail {
+.gim__wrapper p {
   @include h5;
 
   font-size: 14px;
@@ -95,7 +95,7 @@
   }
 }
 
-.gim__detail:last-of-type {
+.gim__wrapper p + p {
   @include vp-1199 {
     display: none;
   }

@@ -1158,49 +1158,42 @@ button.swiper-pagination-bullet {
   font-weight: 300;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-300.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-300.woff2") format("woff2"), url("../fonts/RobotoCondensed-300.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/AlumniSans-700.woff2") format("woff2"), url("../fonts/AlumniSans-700.woff") format("woff");
+}
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Alumni Sans";
+  font-display: swap;
+  src: url("../fonts/AlumniSans-600.woff2") format("woff2"), url("../fonts/AlumniSans-600.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "Roboto Condensed";
-  font-display: swap;
-  src: url("../fonts/RobotoCondensed-500.woff2") format("woff2");
-}
-@font-face {
-  font-style: bold;
-  font-weight: 700;
-  font-family: "Roboto Condensed";
-  font-display: swap;
-  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-style: bold;
-  font-weight: 700;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("../fonts/AlumniSans-700.woff2") format("woff2");
-}
-@font-face {
-  font-style: bold;
-  font-weight: 600;
-  font-family: "Alumni Sans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-600.woff2") format("woff2");
-}
-@font-face {
-  font-style: medium;
-  font-weight: 500;
-  font-family: "Alumni Sans";
-  font-display: swap;
-  src: url("../fonts/AlumniSans-500.woff2") format("woff2");
+  src: url("../fonts/AlumniSans-500.woff2") format("woff2"), url("../fonts/AlumniSans-500.woff") format("woff");
 }
 *,
 *::before,
@@ -2463,16 +2456,16 @@ button,
   }
 }
 
-.navigation__item:nth-child(1) {
+.navigation__item:first-of-type {
   padding-right: 130px;
 }
 @media (max-width: 1199px) {
-  .navigation__item:nth-child(1) {
+  .navigation__item:first-of-type {
     padding-right: 60px;
   }
 }
 @media (max-width: 767px) {
-  .navigation__item:nth-child(1) {
+  .navigation__item:first-of-type {
     padding-right: 60px;
   }
 }
@@ -2814,7 +2807,7 @@ button,
   }
 }
 
-.gim__detail {
+.gim__wrapper p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -2827,7 +2820,7 @@ button,
   letter-spacing: 0.03em;
 }
 @media (max-width: 1199px) {
-  .gim__detail {
+  .gim__wrapper p {
     text-align: center;
     font-size: 14px;
     letter-spacing: 0;
@@ -2835,14 +2828,14 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .gim__detail {
+  .gim__wrapper p {
     text-align: left;
     padding: 0 35px 0 0;
   }
 }
 
 @media (max-width: 1199px) {
-  .gim__detail:last-of-type {
+  .gim__wrapper p + p {
     display: none;
   }
 }
@@ -3517,7 +3510,7 @@ button,
 }
 
 .news__media {
-  background: url("/img/news/crossfit.jpg") no-repeat;
+  background: url("../img/news/crossfit.jpg") no-repeat;
   background-color: #103aae;
   background-size: cover;
   background-position: center;
@@ -3624,7 +3617,7 @@ button,
   }
 }
 
-.news__label {
+.news__subtitle {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -3640,7 +3633,7 @@ button,
   left: 65px;
 }
 @media (max-width: 1199px) {
-  .news__label {
+  .news__subtitle {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -3649,12 +3642,12 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .news__label {
+  .news__subtitle {
     width: 30px;
   }
 }
 
-.news__input {
+.news__detail {
   margin: 0;
   font-size: 40px;
   font-weight: 700;
@@ -3670,7 +3663,7 @@ button,
   top: 30px;
   left: 63px;
 }
-.news__input--month {
+.news__detail--month {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -3683,7 +3676,7 @@ button,
   top: -22px;
   left: 90px;
 }
-.news__input--year {
+.news__detail--year {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -3697,21 +3690,21 @@ button,
   left: 90px;
 }
 @media (max-width: 1199px) {
-  .news__input {
+  .news__detail {
     font-size: 24px;
     line-height: 36px;
     top: 30px;
     left: 58px;
     padding: 0;
   }
-  .news__input--month {
+  .news__detail--month {
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
     top: -1px;
     left: 73px;
   }
-  .news__input--year {
+  .news__detail--year {
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
@@ -4092,10 +4085,8 @@ button,
   .advantages__title {
     font-size: 42px;
     line-height: 38px;
-    margin: 4px;
-    padding-top: 0;
-    padding-left: 173px;
-    text-align: left;
+    margin: 4px auto;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -4173,6 +4164,7 @@ button,
 @media (max-width: 767px) {
   .advantages__number {
     margin: 20px auto 0;
+    line-height: 48px;
   }
 }
 
@@ -5018,7 +5010,7 @@ button,
   }
 }
 
-.accordion__text {
+.accordion__content p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -5027,12 +5019,12 @@ button,
   margin: 15px 0 0 20px;
 }
 @media (max-width: 1199px) {
-  .accordion__text {
+  .accordion__content p {
     margin-left: 0;
   }
 }
 @media (max-width: 767px) {
-  .accordion__text {
+  .accordion__content p {
     margin-bottom: 0;
     font-size: 16px;
     line-height: 140%;

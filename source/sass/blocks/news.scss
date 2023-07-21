@@ -50,7 +50,7 @@
 }
 
 .news__media {
-  background: url("/img/news/crossfit.jpg") no-repeat;
+  background: url("../img/news/crossfit.jpg") no-repeat;
   background-color: #103aae;
   background-size: cover;
   background-position: center;
@@ -142,7 +142,7 @@
   }
 }
 
-.news__label {
+.news__subtitle {
   @include h4;
 
   text-align: left;
@@ -166,7 +166,7 @@
   }
 }
 
-.news__input {
+.news__detail {
   margin: 0;
   font-size: 40px;
   font-weight: 700;

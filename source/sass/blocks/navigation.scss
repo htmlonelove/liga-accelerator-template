@@ -71,7 +71,7 @@
   }
 }
 
-.navigation__item:nth-child(1) {
+.navigation__item:first-of-type {
   padding-right: 130px;
 
   @include vp-1199 {
