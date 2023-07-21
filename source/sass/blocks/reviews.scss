@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 0 15px 50px;
+    padding: 0 15px 70px;
   }
 }
 
@@ -25,7 +25,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 41px;
+    margin: 95px 0 42px;
   }
 }
 
@@ -198,7 +198,7 @@
   }
 
   @include vp-767 {
-    padding: 40px 22px 6px;
+    padding: 40px 22px 0;
     display: grid;
     min-height: 335px;
     grid-template-columns: 1fr 1fr;

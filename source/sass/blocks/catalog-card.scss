@@ -121,28 +121,36 @@
   border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
   top: 2px;
-  min-height: 450px;
+  min-width: 360px;
+  min-height: 448px;
   padding: 55px 17px;
 
   @include vp-1199 {
-    min-height: 448px;
-    min-width: 445px;
+    min-width: 442px;
   }
 
   @include vp-767 {
-    min-width: 246px;
+    min-width: 290px;
     min-height: 384px;
     padding: 45px 15px 0;
   }
 }
 
 .card {
-
   &:active,
   &:hover,
   &:focus {
     border: 7px solid;
     border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+    max-width: 360px;
+
+    @include vp-1199 {
+      max-width: 442px;
+    }
+
+    @include vp-767 {
+      max-width: 290px;
+    }
   }
 
   &:default {
