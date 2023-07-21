@@ -3518,7 +3518,7 @@ button,
 
 .news__media {
   background: url("/img/news/crossfit.jpg") no-repeat;
-  background-color: #102654;
+  background-color: #103aae;
   background-size: cover;
   background-position: center;
   width: 660px;
@@ -3970,9 +3970,19 @@ button,
 .trainers__card:hover .trainers__info {
   display: block;
 }
+@media (max-width: 1199px) {
+  .trainers__card:hover .trainers__info {
+    display: none;
+  }
+}
 
 .trainers__card:focus .trainers__info {
   display: block;
+}
+@media (max-width: 1199px) {
+  .trainers__card:focus .trainers__info {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
