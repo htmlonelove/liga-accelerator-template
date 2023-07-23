@@ -70,12 +70,15 @@
             </div>
             <img src="img/gym-background-desktop.jpg" width="660" height="401"
               srcset="img/gym-background-desktop@2x.jpg 2x" alt="">
+          </div>
+          <div class="gym__video-wrapper">
             <video class="gym__video" preload="none"
               src="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" width="364" height="228" controls
-              poster="img/video-background-desktop.jpg"></video>
-            <!-- <button class="gym__video-button"> -->
-              <!-- <img src="img/video-button.png" width="100" height="100" alt=""> -->
-            <!-- </button> -->
+              poster="img/video-background-desktop.png"></video>
+            <button class="gym__video-button">
+              <img class="gym__button-image" src="img/svg/video-button.svg" width="70" height="70" alt="">
+              <img class="gym__button-border" src="img/svg/video-button-border.svg" width="100" height="100" alt="">
+            </button>
           </div>
         </div>
       </section>
@@ -84,12 +87,187 @@
           <div class="gym-membership__title">
             <h2>Абонементы</h2>
           </div>
-            <ul>
-              <li>1 месяц</li>
-              <li>6 месяцев</li>
-              <li>12 месяцев</li>
-            </ul>
-
+          <div class="gym-membership__tabs tabs no-transition-global" data-tabs="parent" data-delay="300"
+            data-height="max">
+            <div class="tabs__controls" data-tabs="controls">
+              <button class="tabs__control tabs__button button" type="button" data-tabs="control">1 месяц</button>
+              <button class="tabs__control tabs__button button" type="button" data-tabs="control">6 месяцев</button>
+              <button class="tabs__control tabs__button button" type="button" data-tabs="control">12 месяцев</button>
+            </div>
+            <div class="tabs__content" data-tabs="content">
+              <div class="tabs__element " data-tabs="element">
+                <div class="tabs__cards cards">
+                  <ul>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>С тренером</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>12 занятий</p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>5000</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>5000 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>Дневной</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>с 8:00 до 17:00 </p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>1700</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>1700 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>Полный день</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>с 8:00 до 22:00 </p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>2700</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>2700 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="tabs__element" data-tabs="element">
+                <div class="tabs__cards cards">
+                  <ul>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>С тренером</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>12 занятий</p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>10000</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>10000 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>Дневной</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>с 8:00 до 17:00 </p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>3500</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>3500 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>Полный день</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>с 8:00 до 22:00 </p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>5500</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>5500 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="tabs__element" data-tabs="element">
+                <div class="tabs__cards cards">
+                  <ul>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>С тренером</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>12 занятий</p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>15000</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>15000 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>Дневной</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>с 8:00 до 17:00 </p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>5500</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>5500 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                    <div class="cards__item">
+                      <li>
+                        <div class="cards__title">
+                          <h3>Полный день</h3>
+                        </div>
+                        <div class="cards__description">
+                          <p>с 8:00 до 22:00 </p>
+                        </div>
+                        <div class="cards__price-shadow">
+                          <p>7600</p>
+                        </div>
+                        <div class="cards__price">
+                          <p>7600 Р</p>
+                        </div>
+                        <button class="cards__button button">купить абонемент</button>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -129,6 +307,7 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <!-- <script src="js/main.js" type="module"></script> -->
 </body>
 
 </html>

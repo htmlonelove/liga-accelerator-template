@@ -1,11 +1,10 @@
 .gym{
   margin: 0 auto;
   width: 1366px;
-  padding: 120px 103px 235px 163px;
+  padding: 76px 103px 156px 163px;
 }
 
 .gym__wrapper{
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -49,13 +48,33 @@
   }
 }
 
-.gym__video{
-  position: absolute;
-  right: 360px;
-  bottom: -116px;
+.gym__video-wrapper{
+  position: relative;
 }
 
-gym__video-button{
+.gym__video{
+margin-left: 378px;
+  margin-top: -112px;
+}
+
+.gym__video-button{
   position: absolute;
-  left: 50px;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 518px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+}
+
+.gym__button-image{
+  transform: rotate(150deg);
+}
+.gym__button-border{
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 100px;
+  height: 100px;
 }

@@ -1,0 +1,114 @@
+.tabs {
+  max-width: 100%;
+}
+
+.tabs__controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  min-width: auto;
+
+  &::before{
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.20);
+    content: "";
+  }
+
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.tabs__control {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 18px;
+  opacity: 0.5;
+  min-width: auto;
+  justify-content: center;
+
+  @media screen and (max-width: 1023px) {
+    margin: 0 10px;
+    padding: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 10px 2% 0;
+    padding: 10px;
+    width: 45%;
+  }
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+.tabs__button{
+  font-family: $ff-placeholder;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-primary;
+  text-transform: none;
+  letter-spacing: -1.1px;
+  border: none;
+}
+
+.tabs__content {
+  margin-bottom: 40px;
+
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  padding: 25px;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &:nth-child(1) {
+    background-color: rgb(250, 235, 215);
+  }
+
+  &:nth-child(2) {
+    background-color: rgb(229, 250, 215);
+  }
+
+  &:nth-child(3) {
+    background-color: rgb(180, 188, 233);
+  }
+
+  &:nth-child(4) {
+    background-color: rgb(255, 187, 204);
+  }
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
