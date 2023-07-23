@@ -3571,8 +3571,8 @@ button,
 .news__date::after {
   position: absolute;
   content: "";
-  left: 34%;
-  top: 36.66%;
+  left: 38.5%;
+  top: 41.33%;
   width: 65px;
   height: 1px;
   background-color: #ffffff;
@@ -3583,7 +3583,7 @@ button,
 @media (max-width: 1199px) {
   .news__date::after {
     left: 33.4%;
-    top: 45.04%;
+    top: 41.33%;
     width: 42px;
   }
 }
@@ -3597,7 +3597,7 @@ button,
 .news__time::after {
   position: absolute;
   content: "";
-  left: 72%;
+  left: 120%;
   top: 71%;
   width: 88px;
   height: 1px;
@@ -3657,7 +3657,6 @@ button,
   color: #ffffff;
   background-color: transparent;
   border: none;
-  width: 150px;
   display: block;
   position: relative;
   top: 30px;
@@ -4910,7 +4909,8 @@ button,
   text-align: left;
   text-transform: none;
   position: relative;
-  padding: 28px 40px 22px 0;
+  padding: 28px 40px 0 0;
+  margin-bottom: 0;
   width: 100%;
   color: #102654;
   background-color: transparent;
@@ -4944,13 +4944,8 @@ button,
     right: 1.5%;
   }
 }
-@media (hover: hover) {
-  .accordion__button:hover:not(.focus-visible)::after {
-    background: url("../img/sprite/acc-open-hover.svg") no-repeat;
-  }
-}
-.accordion__button.focus-visible:focus::after {
-  background: url("../img/sprite/acc-open-hover.svg") no-repeat;
+.accordion__button:hover::after, .accordion__button:focus::after {
+  background: url("../img/sprite/open.svg") no-repeat;
 }
 .accordion__button:disabled {
   background: url("../img/sprite/open-disabled.svg") no-repeat;
@@ -4991,7 +4986,7 @@ button,
 
 .accordion__content {
   font-weight: 300;
-  margin: -32px 0 30px;
+  margin: 0 0 30px;
   padding-right: 176px;
   font-size: 18px;
   line-height: 140%;
@@ -5514,7 +5509,7 @@ button,
 }
 
 .form-contacts__wrapper {
-  margin: 0 auto;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -97,8 +97,8 @@
   &::after {
     position: absolute;
     content: "";
-    left: 34%;
-    top: 36.66%;
+    left: 38.5%;
+    top: 41.33%;
     width: 65px;
     height: 1px;
     background-color: $color-default-white;
@@ -108,7 +108,7 @@
   @include vp-1199 {
     &::after {
       left: 33.4%;
-      top: 45.04%;
+      top: 41.33%;
       width: 42px;
     }
   }
@@ -123,7 +123,7 @@
   &::after {
     position: absolute;
     content: "";
-    left: 72%;
+    left: 120%;
     top: 71%;
     width: 88px;
     height: 1px;
@@ -176,7 +176,6 @@
   color: $color-default-white;
   background-color: transparent;
   border: none;
-  width: 150px;
   display: block;
   position: relative;
   top: 30px;

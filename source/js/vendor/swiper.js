@@ -1153,17 +1153,17 @@ const swiper = () => {
             if (desc !== undefined && desc.enumerable) {
               if (isObject(to[nextKey]) && isObject(nextSource[nextKey])) {
                 if (nextSource[nextKey].__swiper__) {
-                  to[nextKey] = nextSource[nextKey];
+ to[nextKey] = nextSource[nextKey];
                 } else {
-                  extend(to[nextKey], nextSource[nextKey]);
+ extend(to[nextKey], nextSource[nextKey]);
                 }
               } else if (!isObject(to[nextKey]) && isObject(nextSource[nextKey])) {
                 to[nextKey] = {};
 
                 if (nextSource[nextKey].__swiper__) {
-                  to[nextKey] = nextSource[nextKey];
+ to[nextKey] = nextSource[nextKey];
                 } else {
-                  extend(to[nextKey], nextSource[nextKey]);
+ extend(to[nextKey], nextSource[nextKey]);
                 }
               } else {
                 to[nextKey] = nextSource[nextKey];
@@ -4705,7 +4705,7 @@ const swiper = () => {
             slides
               .removeClass(
                 [params.slideVisibleClass, params.slideActiveClass, params.slideNextClass, params.slidePrevClass].join(
-                  ' ',
+ ' ',
                 ),
               )
               .removeAttr('style')
@@ -5538,7 +5538,7 @@ const swiper = () => {
                 lastEventBeforeSnap = newEvent;
                 recentWheelEvents.splice(0);
                 timeout = nextTick(() => {
-                  swiper.slideToClosest(swiper.params.speed, true, undefined, snapToThreshold);
+ swiper.slideToClosest(swiper.params.speed, true, undefined, snapToThreshold);
                 }, 0); // no delay; move on next tick
               }
 
@@ -5547,10 +5547,10 @@ const swiper = () => {
                 // we'll consider a scroll "complete" when there haven't been any wheel events
                 // for 500ms.
                 timeout = nextTick(() => {
-                  const snapToThreshold = 0.5;
-                  lastEventBeforeSnap = newEvent;
-                  recentWheelEvents.splice(0);
-                  swiper.slideToClosest(swiper.params.speed, true, undefined, snapToThreshold);
+ const snapToThreshold = 0.5;
+ lastEventBeforeSnap = newEvent;
+ recentWheelEvents.splice(0);
+ swiper.slideToClosest(swiper.params.speed, true, undefined, snapToThreshold);
                 }, 500);
               }
             } // Emit event
@@ -5966,15 +5966,15 @@ const swiper = () => {
 
               if (params.dynamicBullets) {
                 if (bulletIndex >= firstIndex && bulletIndex <= lastIndex) {
-                  $bullet.addClass(`${params.bulletActiveClass}-main`);
+ $bullet.addClass(`${params.bulletActiveClass}-main`);
                 }
 
                 if (bulletIndex === firstIndex) {
-                  setSideBullets($bullet, 'prev');
+ setSideBullets($bullet, 'prev');
                 }
 
                 if (bulletIndex === lastIndex) {
-                  setSideBullets($bullet, 'next');
+ setSideBullets($bullet, 'next');
                 }
               }
             });
@@ -5993,16 +5993,16 @@ const swiper = () => {
 
               if (swiper.params.loop) {
                 if (bulletIndex >= bullets.length) {
-                  for (let i = params.dynamicMainBullets; i >= 0; i -= 1) {
-                    bullets.eq(bullets.length - i).addClass(`${params.bulletActiveClass}-main`);
-                  }
+ for (let i = params.dynamicMainBullets; i >= 0; i -= 1) {
+   bullets.eq(bullets.length - i).addClass(`${params.bulletActiveClass}-main`);
+ }
 
-                  bullets
-                    .eq(bullets.length - params.dynamicMainBullets - 1)
-                    .addClass(`${params.bulletActiveClass}-prev`);
+ bullets
+   .eq(bullets.length - params.dynamicMainBullets - 1)
+   .addClass(`${params.bulletActiveClass}-prev`);
                 } else {
-                  setSideBullets($firstDisplayedBullet, 'prev');
-                  setSideBullets($lastDisplayedBullet, 'next');
+ setSideBullets($firstDisplayedBullet, 'prev');
+ setSideBullets($lastDisplayedBullet, 'next');
                 }
               } else {
                 setSideBullets($firstDisplayedBullet, 'prev');
@@ -7439,12 +7439,12 @@ const swiper = () => {
 
               if ($pictureEl.length) {
                 $pictureEl.children('source').each((sourceEl) => {
-                  const $source = $(sourceEl);
+ const $source = $(sourceEl);
 
-                  if ($source.attr('data-srcset')) {
-                    $source.attr('srcset', $source.attr('data-srcset'));
-                    $source.removeAttr('data-srcset');
-                  }
+ if ($source.attr('data-srcset')) {
+   $source.attr('srcset', $source.attr('data-srcset'));
+   $source.removeAttr('data-srcset');
+ }
                 });
               }
 
@@ -7462,12 +7462,12 @@ const swiper = () => {
 
               if ($slideEl.hasClass(swiper.params.slideDuplicateClass)) {
                 const originalSlide = swiper.$wrapperEl.children(
-                  `[data-swiper-slide-index="${slideOriginalIndex}"]:not(.${swiper.params.slideDuplicateClass})`,
+ `[data-swiper-slide-index="${slideOriginalIndex}"]:not(.${swiper.params.slideDuplicateClass})`,
                 );
                 loadInSlide(originalSlide.index(), false);
               } else {
                 const duplicatedSlide = swiper.$wrapperEl.children(
-                  `.${swiper.params.slideDuplicateClass}[data-swiper-slide-index="${slideOriginalIndex}"]`,
+ `.${swiper.params.slideDuplicateClass}[data-swiper-slide-index="${slideOriginalIndex}"]`,
                 );
                 loadInSlide(duplicatedSlide.index(), false);
               }
@@ -9009,8 +9009,8 @@ const swiper = () => {
               setTimeout(() => {
                 swiper.setTranslate(afterBouncePosition);
                 $wrapperEl.transitionEnd(() => {
-                  if (!swiper || swiper.destroyed) return;
-                  swiper.transitionEnd();
+ if (!swiper || swiper.destroyed) return;
+ swiper.transitionEnd();
                 });
               }, 0);
             });

@@ -21,7 +21,8 @@
   text-align: left;
   text-transform: none;
   position: relative;
-  padding: 28px 40px 22px 0;
+  padding: 28px 40px 0 0;
+  margin-bottom: 0;
   width: 100%;
   color: $color-default-black;
   background-color: transparent;
@@ -46,9 +47,10 @@
     }
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     &::after {
-      background: url("../img/sprite/acc-open-hover.svg") no-repeat;
+      background: url("../img/sprite/open.svg") no-repeat;
     }
   }
 
@@ -95,7 +97,7 @@
 
 .accordion__content {
   font-weight: 300;
-  margin: -32px 0 30px;
+  margin: 0 0 30px;
   padding-right: 176px;
   font-size: 18px;
   line-height: 140%;
