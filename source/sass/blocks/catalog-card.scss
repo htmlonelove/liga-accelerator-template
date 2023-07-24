@@ -1,15 +1,26 @@
 .card__title {
-  @include h3;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0;
+  text-align: center;
   margin: 0 0 12px;
 
   @include vp-374 {
+    font-size: 22px;
+    line-height: 24px;
     margin: 0 0 9px;
   }
 }
 
 .card__period {
-  @include h5;
-
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
   margin: 0 0 80px;
 
   &::after {

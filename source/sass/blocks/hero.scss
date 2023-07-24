@@ -52,6 +52,7 @@
   right: 302px;
   width: 500px;
   height: 556px;
+  object-fit: cover;
 
   @include vp-1199 {
     width: 324px;
@@ -66,14 +67,13 @@
 }
 
 .hero__title {
-  @include title;
-
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  text-align: center;
   font-weight: 700;
   grid-column: 2/3;
   font-size: 92px;
   line-height: 110.4px;
   letter-spacing: 0.05em;
-  text-align: right;
   color: $color-default-white;
   text-transform: uppercase;
   stroke: $color-default-white;
@@ -139,8 +139,12 @@
 }
 
 .hero__list {
-  @include input;
-
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0;
+  background-color: transparent;
+  border: none;
   grid-column: 1/2;
   grid-row: 2/3;
   list-style: none;
@@ -196,3 +200,4 @@
     color: rgba(255, 255, 255, 1);
   }
 }
+

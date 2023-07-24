@@ -3,7 +3,12 @@
 }
 
 .faq__title {
-  @include h2;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: left;
   margin: 0 0 40px;
 
   @include vp-1199 {
@@ -16,6 +21,7 @@
   @include vp-767 {
     font-size: 32px;
     margin: 65px 0 30px 0;
+    text-align: center;
   }
 }
 
@@ -62,8 +68,10 @@
 }
 
 .faq__control {
-  @include h4;
-
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
   line-height: 18px;
   text-align: center;
   margin: 0;

@@ -15,8 +15,11 @@
 }
 
 .reviews__title {
-  @include h2;
-
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
   text-align: center;
   margin: 0 0 40px;
 
@@ -68,8 +71,11 @@
 }
 
 .reviews__text {
-  @include h5;
-
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
   text-align: left;
   margin: 0;
   display: block;
@@ -140,11 +146,10 @@
     top: 57%;
 
     &--back {
-      left: 3%;
 
       &:hover,
       &:focus {
-        left: 3%;
+        background-image: url("../img/sprite/arrow-back.svg");
       }
     }
 
@@ -154,6 +159,7 @@
       &:hover,
       &:focus {
         right: 3%;
+        background-image: url("../img/sprite/arrow-along.svg");
       }
     }
   }

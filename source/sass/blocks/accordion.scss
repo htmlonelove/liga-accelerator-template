@@ -15,8 +15,10 @@
 }
 
 .accordion__button {
-  @include h3;
-
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0;
   font-size: 24px;
   text-align: left;
   text-transform: none;

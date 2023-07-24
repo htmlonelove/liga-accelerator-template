@@ -17,9 +17,11 @@
 }
 
 .gim__wrapper {
+  margin: 0 auto;
   min-height: 314px;
   padding: 120px 162px;
   left: 75px;
+  text-align: left;
 
   @include vp-1199 {
     padding: 0 85px;
@@ -35,8 +37,9 @@
 }
 
 .gim__title {
-  @include title;
-
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
   line-height: 58px;
   letter-spacing: 0.03em;
   text-align: left;
@@ -58,14 +61,19 @@
 }
 
 .gim__description {
-  @include h4;
-
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0;
   text-align: left;
-  margin: 0;
+  margin: 0 auto;
   padding: 7px 0 35px;
+  display: block;
 
   @include vp-1199 {
-    padding: 0 40px 20px 114px;
+    text-align: center;
+    padding: 0 0 20px 0;
   }
 
   @include vp-767 {
@@ -75,8 +83,8 @@
 }
 
 .gim__wrapper p {
-  @include h5;
-
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 24px;
   font-size: 14px;
   font-weight: 300;
   text-align: left;
@@ -103,7 +111,7 @@
 
 .gim__media {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 10px 0;
   height: 650px;
 
@@ -160,8 +168,8 @@
 
   @include vp-1199 {
     top: auto;
-    left: 251px;
-    bottom: 100px;
+    left: 30%;
+    bottom: 0%;
   }
 
   @include vp-767 {
@@ -190,8 +198,8 @@
 
 .gym__play-btn {
   position: absolute;
-  top: 25%;
-  left: 35%;
+  top: 30%;
+  left: 30%;
   width: 100px;
   height: 100px;
   background: none url("../img/gim/play.png") no-repeat;

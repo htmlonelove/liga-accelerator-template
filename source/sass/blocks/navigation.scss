@@ -57,14 +57,19 @@
 }
 
 .navigation__item {
-  @include input;
-
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: $color-default-white;
+  background-color: transparent;
+  border: none;
+  margin: 0;
   line-height: 16px;
   text-align: left;
 
   @include vp-767 {
-    @include h5;
-
+    font-size: 16px;
+    font-weight: 400;
     line-height: 19px;
     text-align: left;
     min-width: 135px;
