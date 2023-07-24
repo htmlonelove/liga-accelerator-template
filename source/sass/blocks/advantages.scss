@@ -18,7 +18,11 @@
 }
 
 .advantages__title {
-  @include h2;
+/*@include h2; - убрать*/
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
 
   margin: 0;
   padding-top: 6px;

@@ -121,9 +121,9 @@
   border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
   top: 2px;
-  min-width: 360px;
+  max-width: 360px;
   min-height: 448px;
-  padding: 55px 17px;
+  padding: 55px 47px;
 
   @include vp-1199 {
     min-width: 442px;

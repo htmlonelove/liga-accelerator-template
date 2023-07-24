@@ -83,11 +83,10 @@
                 alt="Фото тренажерного зала." width="660" height="401" loading="lazy">
             </picture>
           </div>
-          <a class="gim__play" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-            <div class="visually-hidden">Кнопка запуска видео.</div>
-          </a>
-          <div class="gim__video">
-            <span class="visually-hidden">Блок с видео из зала</span>
+          <div class="gym__video-wrapper">
+            <video class="gym__video" preload="auto" playsinline src="./img/gim/gim-video.mp4" poster="./img/gim/video.jpg"></video>
+            <button class="gym__play gym__play-btn btn" aria-label="Кнопка воспроизведения видео.">
+            </button>
           </div>
         </div>
       </section>
@@ -411,6 +410,11 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="trainers__swiper-button trainers__swiper-button--back">
+          </div>
+          <div class="trainers__swiper-button trainers__swiper-button--along">
           </div>
         </div>
       </section>

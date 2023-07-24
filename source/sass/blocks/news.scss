@@ -93,12 +93,14 @@
 
 .news__date {
   margin: 0;
+  display: block;
+  position: relative;
 
   &::after {
     position: absolute;
     content: "";
-    left: 38.5%;
-    top: 41.33%;
+    left: 110%;
+    top: 47%;
     width: 65px;
     height: 1px;
     background-color: $color-default-white;

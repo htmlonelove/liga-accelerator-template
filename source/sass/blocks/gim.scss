@@ -153,69 +153,56 @@
   }
 }
 
-.gim__video {
-  margin: 0;
-  display: block;
-  position: relative;
-  top: -103px;
-  left: -25%;
+.gym__video-wrapper {
+  position: absolute;
+  top: 408px;
+  left: 540px;
+
+  @include vp-1199 {
+    top: auto;
+    left: 251px;
+    bottom: 100px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+.gym__video {
   width: 364px;
   height: 228px;
-  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg") no-repeat 50%;
-  background-size: cover;
+  object-fit: cover;
 
   @include vp-1199 {
     width: 266px;
     height: 167px;
-    top: -82%;
-    left: 30.5%;
   }
 
   @include vp-767 {
     width: 320px;
     height: 167px;
-    top: -29%;
-    left: 0;
   }
 }
 
-.gim__play {
-  content: url("/img/gim/play.png");
+.gym__play-btn {
+  position: absolute;
+  top: 25%;
+  left: 35%;
   width: 100px;
   height: 100px;
-  margin: 0;
-  display: block;
-  z-index: 2;
-  position: relative;
-  top: 62px;
-  left: -5%;
-  cursor: pointer;
-
-  @include vp-1199 {
-    width: 73px;
-    height: 73px;
-    top: -48%;
-    left: 44%;
-  }
-
-  @include vp-767 {
-    width: 73px;
-    height: 73px;
-    top: -7%;
-    left: 39%;
-  }
-
-  &:disabled {
-    content: url("/img/sprite/play-disabled.svg");
-    pointer-events: none;
-  }
+  background: none url("../img/gim/play.png") no-repeat;
 
   &:hover,
   &:focus {
-    content: url("/img/sprite/play-hover.svg");
+    background-image: url("../img/sprite/play-hover.svg");
   }
 
-  &:active {
-    content: url("/img/sprite/play-active.svg");
+  &:disabled {
+    background-image: url("../img/sprite/play-disabled.svg");
+    pointer-events: none;
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -2898,72 +2899,60 @@ button,
   }
 }
 
-.gim__video {
-  margin: 0;
-  display: block;
-  position: relative;
-  top: -103px;
-  left: -25%;
-  width: 364px;
-  height: 228px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(20, 54, 122, 0.5)), to(rgba(20, 54, 122, 0.5))), url("/img/gim/video.jpg") no-repeat 50%;
-  background: linear-gradient(to right, rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("/img/gim/video.jpg") no-repeat 50%;
-  background-size: cover;
+.gym__video-wrapper {
+  position: absolute;
+  top: 408px;
+  left: 540px;
 }
 @media (max-width: 1199px) {
-  .gim__video {
-    width: 266px;
-    height: 167px;
-    top: -82%;
-    left: 30.5%;
+  .gym__video-wrapper {
+    top: auto;
+    left: 251px;
+    bottom: 100px;
   }
 }
 @media (max-width: 767px) {
-  .gim__video {
-    width: 320px;
-    height: 167px;
-    top: -29%;
-    left: 0;
+  .gym__video-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
   }
 }
 
-.gim__play {
-  content: url("/img/gim/play.png");
-  width: 100px;
-  height: 100px;
-  margin: 0;
-  display: block;
-  z-index: 2;
-  position: relative;
-  top: 62px;
-  left: -5%;
-  cursor: pointer;
+.gym__video {
+  width: 364px;
+  height: 228px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1199px) {
-  .gim__play {
-    width: 73px;
-    height: 73px;
-    top: -48%;
-    left: 44%;
+  .gym__video {
+    width: 266px;
+    height: 167px;
   }
 }
 @media (max-width: 767px) {
-  .gim__play {
-    width: 73px;
-    height: 73px;
-    top: -7%;
-    left: 39%;
+  .gym__video {
+    width: 320px;
+    height: 167px;
   }
 }
-.gim__play:disabled {
-  content: url("/img/sprite/play-disabled.svg");
+
+.gym__play-btn {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  width: 100px;
+  height: 100px;
+  background: none url("../img/gim/play.png") no-repeat;
+}
+.gym__play-btn:hover, .gym__play-btn:focus {
+  background-image: url("../img/sprite/play-hover.svg");
+}
+.gym__play-btn:disabled {
+  background-image: url("../img/sprite/play-disabled.svg");
   pointer-events: none;
-}
-.gim__play:hover, .gim__play:focus {
-  content: url("/img/sprite/play-hover.svg");
-}
-.gim__play:active {
-  content: url("/img/sprite/play-active.svg");
 }
 
 .memberships {
@@ -3215,19 +3204,21 @@ button,
 }
 
 .memberships__element.is-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
 @media (max-width: 1199px) {
   .memberships__element.is-active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 41px;
   }
 }
@@ -3239,7 +3230,7 @@ button,
 
 .memberships__catalog {
   position: relative;
-  padding: 64px 27px 44px;
+  padding: 64px 57px 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3250,7 +3241,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 360px;
+  max-width: 360px;
   background-color: #ffffff;
   z-index: 2;
 }
@@ -3411,9 +3402,9 @@ button,
      border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
   top: 2px;
-  min-width: 360px;
+  max-width: 360px;
   min-height: 448px;
-  padding: 55px 17px;
+  padding: 55px 47px;
 }
 @media (max-width: 1199px) {
   .card--active {
@@ -3567,12 +3558,14 @@ button,
 
 .news__date {
   margin: 0;
+  display: block;
+  position: relative;
 }
 .news__date::after {
   position: absolute;
   content: "";
-  left: 38.5%;
-  top: 41.33%;
+  left: 110%;
+  top: 47%;
   width: 65px;
   height: 1px;
   background-color: #ffffff;
@@ -4057,28 +4050,14 @@ button,
 }
 
 .advantages__title {
+  /*@include h2; - убрать*/
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 600;
-  line-height: 65px;
-  letter-spacing: 0.03em;
-  text-align: left;
   margin: 0;
   padding-top: 6px;
   padding-left: 6px;
   text-align: center;
-}
-@media (max-width: 1199px) {
-  .advantages__title {
-    font-size: 42px;
-    line-height: 38px;
-  }
-}
-@media (max-width: 767px) {
-  .advantages__title {
-    font-size: 32px;
-    text-align: center;
-  }
 }
 @media (max-width: 1199px) {
   .advantages__title {
