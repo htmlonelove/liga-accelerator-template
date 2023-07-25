@@ -2221,6 +2221,9 @@ button,
 }
 
 .footer__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2486,7 +2489,7 @@ button,
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    gap: 0;
+    gap: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -2710,22 +2713,44 @@ button,
 
 .gim__wrapper {
   margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 355px 760px;
+  grid-template-columns: 355px 760px;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1199px) {
+  .gim__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.gim__container {
   min-height: 314px;
-  padding: 120px 162px;
   left: 75px;
   text-align: left;
 }
 @media (max-width: 1199px) {
-  .gim__wrapper {
+  .gim__container {
     padding: 0 85px;
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .gim__wrapper {
+  .gim__container {
+    margin: 0 auto;
     width: 300px;
-    top: 15px;
-    left: -20px;
     padding: 0 15px;
   }
 }
@@ -2775,6 +2800,7 @@ button,
 }
 @media (max-width: 767px) {
   .gim__description {
+    text-align: left;
     width: 300px;
     padding: 0;
   }
@@ -2783,10 +2809,10 @@ button,
 .gim__wrapper p {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   text-align: left;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
 }
 @media (max-width: 1199px) {
   .gim__wrapper p {
@@ -2831,24 +2857,17 @@ button,
   width: 660px;
   min-height: 401px;
   margin: 0;
-  display: block;
-  position: relative;
-  top: 17%;
-  left: -15.5%;
 }
 @media (max-width: 1199px) {
   .gim__photo {
     width: 678px;
     height: 345px;
-    left: 0;
-    top: -22%;
   }
 }
 @media (max-width: 767px) {
   .gim__photo {
     width: 320px;
     max-height: 313px;
-    top: -7%;
   }
 }
 
@@ -2912,10 +2931,13 @@ button,
 .gym__play-btn {
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 35%;
+  margin: 0;
+  padding: 0;
   width: 100px;
   height: 100px;
   background: none url("../img/sprite/play.svg") no-repeat;
+  background-size: cover;
 }
 .gym__play-btn:hover, .gym__play-btn:focus {
   background-image: url("../img/sprite/play-hover.svg");
@@ -2923,6 +2945,17 @@ button,
 .gym__play-btn:disabled {
   background-image: url("../img/sprite/play-disabled.svg");
   pointer-events: none;
+}
+@media (max-width: 1199px) {
+  .gym__play-btn {
+    width: 73px;
+    height: 73px;
+    top: 30%;
+    left: 35%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }
 }
 
 .memberships {
@@ -3400,7 +3433,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 117px 73px 100px 103px;
+  margin: 117px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1199px) {
   .news {
@@ -3416,7 +3452,6 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 72px 15px 40px;
   }
 }
 
@@ -3994,6 +4029,11 @@ button,
   }
 }
 
+.advantages__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+}
 @media (max-width: 767px) {
   .advantages__wrapper {
     padding: 0;
@@ -4002,12 +4042,14 @@ button,
 
 .advantages__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 600;
   margin: 0;
   padding-top: 6px;
   padding-left: 6px;
   text-align: center;
+  line-height: 65px;
+  letter-spacing: 0.03em;
 }
 @media (max-width: 1199px) {
   .advantages__title {
@@ -4084,6 +4126,10 @@ button,
     padding: 0 46px;
     text-align: center;
   }
+}
+
+.advantages__item:nth-last-child(-n+2) {
+  border-bottom: none;
 }
 
 .advantages__number {
@@ -4269,6 +4315,23 @@ button,
   line-height: 24px;
 }
 
+.stocks__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1199px) {
+  .stocks__wrapper {
+    padding: 0 45px;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__wrapper {
+    padding: 0 15px;
+  }
+}
+
 .stocks__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
@@ -4292,20 +4355,6 @@ button,
     font-weight: 600;
     line-height: 38px;
     padding: 70px 0 42px;
-  }
-}
-
-.stocks__wrapper {
-  padding: 0 103px 120px 103px;
-}
-@media (max-width: 1199px) {
-  .stocks__wrapper {
-    padding: 0 45px;
-  }
-}
-@media (max-width: 767px) {
-  .stocks__wrapper {
-    padding: 0 15px;
   }
 }
 
@@ -4355,6 +4404,7 @@ button,
 }
 @media (max-width: 767px) {
   .stocks__item--main {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4373,7 +4423,7 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
-  margin: 0 auto;
+  margin: 0;
 }
 .stocks__item--other::after span {
   display: none;
@@ -4385,10 +4435,12 @@ button,
     -ms-grid-columns: 324px 324px;
     grid-template-columns: 324px 324px;
     gap: 30px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
   .stocks__item--other {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4902,7 +4954,7 @@ button,
 }
 @media (max-width: 767px) {
   .accordion__content p {
-    margin-bottom: 0;
+    margin: 20px 0 0 0;
     font-size: 16px;
     line-height: 140%;
   }
@@ -5359,10 +5411,17 @@ button,
 
 .form-contacts {
   border-top: 1px solid #102654;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, transparent));
+  background: linear-gradient(to right, #102654 50%, transparent 50%);
+}
+@media (max-width: 1199px) {
+  .form-contacts {
+    background: none;
+  }
 }
 
 .form-contacts__wrapper {
-  margin: 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

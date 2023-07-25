@@ -1,3 +1,18 @@
+.stocks__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  padding-bottom: 100px;
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
 .stocks__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
@@ -22,17 +37,6 @@
   }
 }
 
-.stocks__wrapper {
-  padding: 0 103px 120px 103px;
-
-  @include vp-1199 {
-    padding: 0 45px;
-  }
-
-  @include vp-767 {
-    padding: 0 15px;
-  }
-}
 
 .stocks__list {
   display: grid;
@@ -61,6 +65,7 @@
   }
 
   @include vp-767 {
+    margin: 0;
     display: flex;
     flex-direction: column;
   }
@@ -70,7 +75,7 @@
   display: grid;
   flex-direction: column;
   gap: 40px;
-  margin: 0 auto;
+  margin: 0;
 
   &::after span {
     display: none;
@@ -80,9 +85,11 @@
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 30px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
+    margin: 0;
     display: flex;
     flex-direction: column;
   }

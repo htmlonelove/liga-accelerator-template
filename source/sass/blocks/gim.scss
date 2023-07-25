@@ -18,8 +18,21 @@
 
 .gim__wrapper {
   margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  display: grid;
+  grid-template-columns: 355px 760px;
+  gap: 10px;
+  justify-content: center;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.gim__container {
   min-height: 314px;
-  padding: 120px 162px;
   left: 75px;
   text-align: left;
 
@@ -29,9 +42,8 @@
   }
 
   @include vp-767 {
+    margin: 0 auto;
     width: 300px;
-    top: 15px;
-    left: -20px;
     padding: 0 15px;
   }
 }
@@ -77,6 +89,7 @@
   }
 
   @include vp-767 {
+    text-align: left;
     width: 300px;
     padding: 0;
   }
@@ -85,10 +98,10 @@
 .gim__wrapper p {
   font-family: "Roboto Condensed", sans-serif;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   text-align: left;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
 
   @include vp-1199 {
     text-align: center;
@@ -129,22 +142,15 @@
   width: 660px;
   min-height: 401px;
   margin: 0;
-  display: block;
-  position: relative;
-  top: 17%;
-  left: -15.5%;
 
   @include vp-1199 {
     width: 678px;
     height: 345px;
-    left: 0;
-    top: -22%;
   }
 
   @include vp-767 {
     width: 320px;
     max-height: 313px;
-    top: -7%;
   }
 }
 
@@ -200,10 +206,13 @@
 .gym__play-btn {
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 35%;
+  margin: 0;
+  padding: 0;
   width: 100px;
   height: 100px;
   background: none url("../img/sprite/play.svg") no-repeat;
+  background-size: cover;
 
   &:hover,
   &:focus {
@@ -213,5 +222,15 @@
   &:disabled {
     background-image: url("../img/sprite/play-disabled.svg");
     pointer-events: none;
+  }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+    top: 30%;
+    left: 35%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
   }
 }

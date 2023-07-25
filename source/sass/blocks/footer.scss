@@ -8,6 +8,9 @@
 }
 
 .footer__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
   display: flex;
   gap: 70px;
   justify-content: space-between;

@@ -1,6 +1,7 @@
 .news {
   display: flex;
-  margin: 117px 73px 100px 103px;
+  margin: 117px auto;
+  justify-content: center;
 
   @include vp-1199 {
     margin: 100px 30px 40px 45px;
@@ -9,7 +10,6 @@
 
   @include vp-767 {
     flex-direction: column;
-    margin: 72px 15px 40px;
   }
 }
 
