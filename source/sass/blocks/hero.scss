@@ -14,7 +14,6 @@
   @include vp-1199 {
     padding: 61px 0 95px 45px;
     display: flex;
-    flex-direction: column;
     width: 100%;
     gap: 0;
   }
@@ -47,9 +46,6 @@
 }
 
 .hero__photo {
-  position: absolute;
-  top: 50px;
-  right: 302px;
   width: 500px;
   height: 556px;
   object-fit: cover;
@@ -57,8 +53,6 @@
   @include vp-1199 {
     width: 324px;
     height: 390px;
-    top: 80px;
-    right: 45px;
   }
 
   @include vp-767 {
@@ -68,7 +62,7 @@
 
 .hero__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
-  text-align: center;
+  text-align: right;
   font-weight: 700;
   grid-column: 2/3;
   font-size: 92px;
@@ -80,25 +74,17 @@
   -webkit-text-stroke-width: 2px;
   margin: 0;
   padding: 0;
-  position: relative;
-  left: 13px;
-  top: 12px;
 
   @include vp-1199 {
     font-size: 72px;
     line-height: 86px;
     text-transform: none;
     padding: 0;
-    position: relative;
-    left: -33px;
-    top: 5px;
   }
 
   @include vp-767 {
     text-align: right;
     font-weight: 600;
-    left: -12px;
-    top: 12px;
     padding: 0;
   }
 }
@@ -150,8 +136,6 @@
   list-style: none;
   text-align: right;
   color: $color-default-white;
-  display: block;
-  position: relative;
   margin: 50px 0 0;
   padding: 82px 0 85px;
   width: 113px;
@@ -200,4 +184,3 @@
     color: rgba(255, 255, 255, 1);
   }
 }
-

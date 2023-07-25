@@ -1214,7 +1214,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2125,7 +2125,8 @@ button,
   z-index: 2;
   display: block;
   position: absolute;
-  min-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 @media (max-width: 1199px) {
   .header {
@@ -2134,13 +2135,15 @@ button,
 }
 
 .header__wrapper {
+  width: 100%;
+  max-width: 1366px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 30px 105px 0 30px;
 }
 @media (max-width: 1199px) {
@@ -2183,13 +2186,10 @@ button,
 }
 
 .header__logo {
-  width: 110px;
-  height: 32px;
-  margin: 0;
+  width: 122px;
+  height: 22px;
+  margin: 10px 0 0 70px;
   display: block;
-  position: relative;
-  top: 11px;
-  left: 71px;
 }
 @media (max-width: 1199px) {
   .header__logo {
@@ -2485,10 +2485,6 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
     gap: 0;
   }
@@ -2532,9 +2528,6 @@ button,
 }
 
 .hero__photo {
-  position: absolute;
-  top: 50px;
-  right: 302px;
   width: 500px;
   height: 556px;
   -o-object-fit: cover;
@@ -2544,8 +2537,6 @@ button,
   .hero__photo {
     width: 324px;
     height: 390px;
-    top: 80px;
-    right: 45px;
   }
 }
 @media (max-width: 767px) {
@@ -2556,7 +2547,7 @@ button,
 
 .hero__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
-  text-align: center;
+  text-align: right;
   font-weight: 700;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -2570,9 +2561,6 @@ button,
   -webkit-text-stroke-width: 2px;
   margin: 0;
   padding: 0;
-  position: relative;
-  left: 13px;
-  top: 12px;
 }
 @media (max-width: 1199px) {
   .hero__title {
@@ -2580,17 +2568,12 @@ button,
     line-height: 86px;
     text-transform: none;
     padding: 0;
-    position: relative;
-    left: -33px;
-    top: 5px;
   }
 }
 @media (max-width: 767px) {
   .hero__title {
     text-align: right;
     font-weight: 600;
-    left: -12px;
-    top: 12px;
     padding: 0;
   }
 }
@@ -2650,8 +2633,6 @@ button,
   list-style: none;
   text-align: right;
   color: #ffffff;
-  display: block;
-  position: relative;
   margin: 50px 0 0;
   padding: 82px 0 85px;
   width: 113px;
@@ -2912,6 +2893,8 @@ button,
   height: 228px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-image: -webkit-image-set(url("../img/gim/video.jpg") 1x, url("../img/gim/video@2x.jpg") 2x);
+  background-image: image-set("../img/gim/video.jpg" 1x, "../img/gim/video@2x.jpg" 2x);
 }
 @media (max-width: 1199px) {
   .gym__video {
@@ -2932,7 +2915,7 @@ button,
   left: 30%;
   width: 100px;
   height: 100px;
-  background: none url("../img/gim/play.png") no-repeat;
+  background: none url("../img/sprite/play.svg") no-repeat;
 }
 .gym__play-btn:hover, .gym__play-btn:focus {
   background-image: url("../img/sprite/play-hover.svg");

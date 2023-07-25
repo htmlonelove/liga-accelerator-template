@@ -184,6 +184,7 @@
   width: 364px;
   height: 228px;
   object-fit: cover;
+  background-image: image-set("../img/gim/video.jpg" 1x, "../img/gim/video@2x.jpg" 2x);
 
   @include vp-1199 {
     width: 266px;
@@ -202,7 +203,7 @@
   left: 30%;
   width: 100px;
   height: 100px;
-  background: none url("../img/gim/play.png") no-repeat;
+  background: none url("../img/sprite/play.svg") no-repeat;
 
   &:hover,
   &:focus {
