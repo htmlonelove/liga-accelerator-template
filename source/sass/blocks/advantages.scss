@@ -119,7 +119,6 @@
     background-color: #2e35ac;
     background-image: linear-gradient(75deg, #d10a42 0%, #0041ca 77.33%);
     background-clip: text;
-    padding-top: 5px;
 
     @include vp-1199 {
       font-size: 58px;
@@ -160,7 +159,7 @@
   line-height: 33px;
   letter-spacing: 0;
   text-align: left;
-  margin: 22px 0 2px;
+  margin: 18px 0 2px 2px;
 
   @include vp-1199 {
     margin: 15px 0 2px;
@@ -193,7 +192,7 @@
   grid-column: 2/3;
   margin-top: 28px;
   margin-bottom: 82px;
-  padding: 36px 20px 56px;
+  padding: 30px 25px 56px 14px;
   text-align: center;
   color: #ffffff;
   background-color: #1c3374;
@@ -236,7 +235,7 @@
     color: #ffffff;
 
     @include vp-1199 {
-      font-size: 74px;
+      font-size: 70px;
       line-height: 111px;
     }
   }
@@ -244,7 +243,7 @@
 
 .advantages__item--center span + span {
   margin-top: -16px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @include vp-1199 {
     margin-top: -21px;

@@ -164,9 +164,8 @@
 }
 
 .gym__video-wrapper {
-  position: absolute;
-  top: 15.7%;
-  left: 39.5%;
+  position: relative;
+  margin: -112px 0 0 -12px;
 
   @include vp-1199 {
     top: auto;
@@ -202,7 +201,7 @@
 .gym__play-btn {
   position: absolute;
   top: 28%;
-  left: 36%;
+  left: 18.3%;
   margin: 0;
   padding: 0;
   width: 100px;

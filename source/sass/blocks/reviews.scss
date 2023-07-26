@@ -21,7 +21,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0 0 30px;
+  margin: 0 0 40px;
 
   @include vp-1199 {
     margin: 90px 0 45px;
@@ -141,7 +141,6 @@
     top: 57%;
 
     &--back {
-
       &:hover,
       &:focus {
         background-image: url("../img/sprite/arrow-back.svg");
@@ -243,10 +242,10 @@
   }
 }
 
-.reviews__card  picture {
+.reviews__card > picture {
   padding: 10px 5px;
 }
 
 .reviews__card--autor {
-padding: 5px 10px 0;
+  padding: 0 10px 0;
 }
