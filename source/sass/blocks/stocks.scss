@@ -1,0 +1,111 @@
+.stocks {
+  padding: 135px 0 120px 0;
+}
+
+.stocks__title {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.stocks__container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.stocks__main {
+  display: flex;
+}
+
+.stocks__main-block {
+  padding: 45px;
+  background-color: $banner-colors;
+}
+
+.stocks__main-year {
+  display: block;
+  color: $color-default-white;
+  font-family: $ff-secondary;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 156%;
+}
+
+.stocks__main-price {
+  display: block;
+  color: $color-default-white;
+  font-family: $ff-secondary;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 35px;
+}
+
+.stocks__main-description {
+  color: $color-default-white;
+  margin-bottom: 143px;
+}
+
+.stocks__link {
+  font-family: $ff-secondary;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  &--main {
+    color: $color-default-white;
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &--other {
+    color: #1C3374;
+    border-bottom: 1px solid $text-color-main;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+  }
+}
+
+.stocks__picture-block {
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.stocks__others {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.stocks__others-wrapper {
+  padding: 28px;
+  border: 7px solid transparent;
+  border-image: $text-gradient-advantages;
+  border-image-slice: 1;
+}
+
+.stocks__others-title {
+  color: #1C3374;
+  font-family: $ff-secondary;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.stocks__others-description {
+  color: #1C3374;
+  margin-bottom: 55px;
+  line-height: 100%;
+}

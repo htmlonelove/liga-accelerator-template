@@ -1,0 +1,114 @@
+.tabs {
+  position: relative;
+  padding: 120px 0 120px;
+  background-color: $additional-block-color;
+
+  picture {
+    position: absolute;
+    right: 0;
+    bottom: -16%;
+    transform: rotate(30%);
+    z-index: 0;
+  }
+}
+
+.tabs__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabs__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.tabs__controls {
+  display: flex;
+  gap: 46px;
+  border-bottom: 2px solid $border-tab-buttons;
+  padding-bottom: 20px;
+  margin-bottom: 39px;
+}
+
+.tabs__control {
+  position: relative;
+  border: 0;
+  background-color: inherit;
+}
+
+.tabs__control.is-active {
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: $is-active-color;
+    left: 0;
+    bottom: -22px;
+  }
+}
+
+.tabs__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 40px;
+}
+
+.tabs__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-default-white;
+  padding: 68px 77px;
+}
+
+.tabs__element-title {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.tabs__number-classes {
+  margin-bottom: 59px;
+  color: $text-color-main;
+}
+
+.tabs__big-price {
+  color: #e8e8e8;
+  font-family: $ff-secondary;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 150px */
+}
+
+.tabs__price {
+  position: relative;
+  color: $text-color-additional-accent;
+  font-family: $ff-secondary;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: -100px 0 0 -10px;
+  margin-bottom: 40px;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 36px;
+    height: 42px;
+    background: url("../img/svg/rubble.svg") no-repeat;
+    background-size: cover;
+    top: 27%;
+    right: -34px;
+  }
+}
+
+.tabs__purchase {
+  background-color: inherit;
+  padding: 25px 42px 25px 43px;
+  text-align: center;
+  border: 2px solid $text-color-main;
+}

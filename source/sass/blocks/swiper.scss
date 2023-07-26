@@ -1,0 +1,42 @@
+.swiper {
+  position: relative;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper__wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.swiper__slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper__slide-name {
+  position: absolute;
+  bottom: 30px;
+  color: $color-default-white;
+}
+
+.swiper__button-prev,
+.swiper__button-next {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background: url("../img/svg/arrow-button.svg") no-repeat center center;
+  top: 40%;
+}
+
+.swiper__button-prev {
+  transform: rotate(180deg);
+  left: 20px;
+}
+
+.swiper__button-next {
+  right: 20px;
+}

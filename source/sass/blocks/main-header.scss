@@ -1,0 +1,61 @@
+.main-header {
+  background: $main-screen-gradient;
+}
+
+.main-header__upper-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 98px;
+}
+
+.main-header__phone {
+  color: $color-default-white;
+  font-family: $ff-primary;
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.main-header__list {
+  display: flex;
+}
+
+.main-header__item {
+  img {
+    transform: translate(64px, -102px);
+  }
+}
+
+.main-header__services {
+  color: $color-default-white;
+  text-align: right;
+  margin-top: 190px;
+  padding-left: 19px;
+}
+
+.main-header__location {
+  color: $color-default-white;
+  font-family: $ff-primary;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: lowercase;
+  margin-left: 131px;
+  margin-right: 18px;
+}
+
+.main-header__title {
+  margin: 0;
+}
+
+.main-header__purchase {
+  background-color: inherit;
+  border: 4px solid $color-default-white;
+  max-width: 230px;
+  display: flex;
+  justify-content: center;
+  margin-left: 33px;
+}
