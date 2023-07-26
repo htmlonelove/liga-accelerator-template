@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1366px;
-  padding-bottom: 100px;
+  padding: 0 100px 120px;
 
   @include vp-1199 {
     padding: 0 45px;
@@ -173,7 +173,7 @@
   &--main {
     font-size: 18px;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     line-height: 25px;
     letter-spacing: 0;
     padding: 25px 0;

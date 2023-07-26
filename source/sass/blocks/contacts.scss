@@ -55,9 +55,9 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   gap: 18px 100px;
   list-style: none;
+  position: relative;
 
   &::after {
     position: absolute;

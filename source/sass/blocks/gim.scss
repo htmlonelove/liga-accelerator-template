@@ -3,7 +3,6 @@
   padding: 0;
   display: flex;
   justify-content: space-around;
-  position: relative;
 
   @include vp-1199 {
     flex-direction: column;
@@ -24,6 +23,7 @@
   grid-template-columns: 355px 760px;
   gap: 10px;
   justify-content: center;
+  padding: 110px 0 0 80px;
 
   @include vp-1199 {
     display: flex;
@@ -56,7 +56,7 @@
   letter-spacing: 0.03em;
   text-align: left;
   margin: 0;
-  padding: 40px 0 0;
+  padding: 50px 0 0;
 
   @include vp-1199 {
     font-size: 42px;
@@ -80,7 +80,7 @@
   letter-spacing: 0;
   text-align: left;
   margin: 0 auto;
-  padding: 7px 0 35px;
+  padding: 7px 0 25px;
   display: block;
 
   @include vp-1199 {
@@ -102,6 +102,7 @@
   font-weight: 300;
   text-align: left;
   letter-spacing: 0;
+  margin: 10px 0;
 
   @include vp-1199 {
     text-align: center;
@@ -126,14 +127,9 @@
   display: block;
   margin: 0 auto;
   padding: 10px 0;
-  height: 650px;
-
-  @include vp-1199 {
-    height: 380px;
-  }
+  min-height: 540px;
 
   @include vp-767 {
-    height: 550px;
     padding: 0;
   }
 }
@@ -141,7 +137,7 @@
 .gim__photo {
   width: 660px;
   min-height: 401px;
-  margin: 0;
+  margin: 0 0 0 50px;
 
   @include vp-1199 {
     width: 678px;
@@ -169,8 +165,8 @@
 
 .gym__video-wrapper {
   position: absolute;
-  top: 408px;
-  left: 540px;
+  top: 15.7%;
+  left: 39.5%;
 
   @include vp-1199 {
     top: auto;
@@ -205,8 +201,8 @@
 
 .gym__play-btn {
   position: absolute;
-  top: 30%;
-  left: 35%;
+  top: 28%;
+  left: 36%;
   margin: 0;
   padding: 0;
   width: 100px;

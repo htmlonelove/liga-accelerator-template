@@ -1,6 +1,6 @@
 .news {
   display: flex;
-  margin: 117px auto;
+  margin: 117px auto 100px;
   justify-content: center;
 
   @include vp-1199 {
@@ -36,18 +36,12 @@
   height: 158px;
   margin: 0;
   display: block;
-  position: relative;
-  top: 35px;
-  left: 20px;
-
 
   @include vp-1199 {
     line-height: 46px;
     font-size: 48px;
     width: 117px;
     height: 91px;
-    top: 35px;
-    left: 34px;
   }
 }
 

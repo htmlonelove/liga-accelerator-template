@@ -107,7 +107,6 @@
 
 .advantages__number span {
   display: block;
-
   font-size: 14px;
   line-height: 21px;
   color: #2e35ac;
@@ -120,6 +119,7 @@
     background-color: #2e35ac;
     background-image: linear-gradient(75deg, #d10a42 0%, #0041ca 77.33%);
     background-clip: text;
+    padding-top: 5px;
 
     @include vp-1199 {
       font-size: 58px;
@@ -135,7 +135,7 @@
 .advantages__addition {
   display: block;
   position: relative;
-  top: -21px;
+  top: -11px;
 
   @include vp-1199 {
     font-size: 14px;

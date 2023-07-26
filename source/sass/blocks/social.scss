@@ -1,19 +1,12 @@
 .social {
   display: block;
-  position: relative;
-  top: 25px;
-  left: -30px;
 
   @include vp-1199 {
     padding: 0;
     margin: 0;
-    top: 19px;
-    left: -61px;
   }
 
   @include vp-767 {
-    top: 7px;
-    left: -41px;
     margin: 0;
   }
 }

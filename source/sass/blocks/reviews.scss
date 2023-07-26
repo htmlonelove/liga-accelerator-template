@@ -79,14 +79,10 @@
   text-align: left;
   margin: 0;
   display: block;
-  position: relative;
-  top: -5px;
 
   @include vp-1199 {
     padding: 0;
     display: block;
-    position: relative;
-    top: -5px;
   }
 
   @include vp-767 {
@@ -190,7 +186,6 @@
 }
 
 .reviews__card {
-  position: relative;
   padding: 54px 58px 30px 57px;
   padding-left: 170px;
   color: $color-default-white;
