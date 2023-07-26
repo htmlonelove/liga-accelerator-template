@@ -61,8 +61,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: center;
-
-  margin: 0 0 22px;
+  margin: 0 0 5px;
 
   @include vp-1199 {
     margin: 0;
@@ -84,7 +83,7 @@
 .memberships__controls {
   position: relative;
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   flex-wrap: wrap;
   justify-content: center;
   width: 422px;
@@ -175,7 +174,7 @@
     width: 68px;
     height: 2px;
     background-color: #d10a42;
-    left: 20%;
+    left: 12%;
   }
 
   @include vp-1199 {

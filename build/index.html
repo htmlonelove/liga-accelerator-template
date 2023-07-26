@@ -177,11 +177,15 @@
           <div class="news__about">
             <p class="news__title">Super games</p>
             <div class="news__calendar">
-              <div class="news__date">
+              <div class="news__date date">
                 <span class="news__subtitle">Дата</span>
-                <span class="news__detail">7</span>
-                <span class="news__detail news__detail--month">Марта</span>
-                <span class="news__detail news__detail--year">2019</span>
+                <div class="news__date date-full">
+                  <span class="news__detail">7</span>
+                  <div class="news__detail news__detail--calendar">
+                    <span class="news__detail news__detail--month">Марта</span>
+                    <span class="news__detail news__detail--year">2019</span>
+                  </div>
+                </div>
               </div>
               <div class="news__time">
                 <span class="news__subtitle">Время</span>
@@ -722,93 +726,107 @@
           <div class="reviews__swiper swiper">
             <div class="reviews__swiper-wrapper swiper-wrapper">
               <div class="reviews__card swiper-slide">
-                <picture>
-                  <source media="(max-width: 767px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="68"
-                    height="68">
-                  <source media="(max-width: 1199px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
-                    height="80">
-                  <source media="(min-width: 1200px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
-                    height="80">
-                  <source media="(max-width: 767px)"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="68"
-                    height="68">
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="80"
-                    height="80">
-                  <img src="./img/reviews/anna-orlova.png"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
-                    alt="Фото автора отзыва." width="80" height="80" loading="lazy">
-                </picture>
-                <cite class="reviews__name">Анна Орлова</cite>
-                <blockquote class="reviews__text">
-                  <p>«Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                    обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей.»
-                  </p>
-                </blockquote>
+                <div class="reviews__card-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="68"
+                      height="68">
+                    <source media="(max-width: 1199px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
+                      height="80">
+                    <source media="(min-width: 1200px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
+                      height="80">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="68"
+                      height="68">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="80"
+                      height="80">
+                    <img src="./img/reviews/anna-orlova.png"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
+                      alt="Фото автора отзыва." width="80" height="80" loading="lazy">
+                  </picture>
+                  <div class="reviews__card--autor">
+                    <cite class="reviews__name">Анна Орлова</cite>
+                    <blockquote class="reviews__text">
+                      <p>«Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей.»
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
               </div>
               <div class="reviews__card swiper-slide">
-                <picture>
-                  <source media="(max-width: 767px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="68"
-                    height="68">
-                  <source media="(max-width: 1199px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
-                    height="80">
-                  <source media="(min-width: 1200px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
-                    height="80">
-                  <source media="(max-width: 767px)"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="68"
-                    height="68">
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="80"
-                    height="80">
-                  <img src="./img/reviews/anna-orlova.png"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
-                    alt="Фото автора отзыва." width="80" height="80" loading="lazy">
-                </picture>
-                <cite class="reviews__name">Анна Орлова</cite>
-                <blockquote class="reviews__text">
-                  <p>«Увидела рекламу Supergym, решила придти посмотреть зал и&nbsp;не&nbsp;пожалела. Очень
-                    уютно, хорошие тренеры и&nbsp;не&nbsp;далеко от&nbsp;дома.»</p>
-                </blockquote>
+                <div class="reviews__card-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="68"
+                      height="68">
+                    <source media="(max-width: 1199px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
+                      height="80">
+                    <source media="(min-width: 1200px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
+                      height="80">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="68"
+                      height="68">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="80"
+                      height="80">
+                    <img src="./img/reviews/anna-orlova.png"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
+                      alt="Фото автора отзыва." width="80" height="80" loading="lazy">
+                  </picture>
+                  <div class="reviews__card--autor">
+                    <cite class="reviews__name">Анна Орлова</cite>
+                    <blockquote class="reviews__text">
+                      <p>«Увидела рекламу Supergym, решила придти посмотреть зал и&nbsp;не&nbsp;пожалела. Очень
+                        уютно, хорошие тренеры и&nbsp;не&nbsp;далеко от&nbsp;дома.»
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
               </div>
               <div class="reviews__card swiper-slide">
-                <picture>
-                  <source media="(max-width: 767px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="68"
-                    height="68">
-                  <source media="(max-width: 1199px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
-                    height="80">
-                  <source media="(min-width: 1200px)" type="image/webp"
-                    srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
-                    height="80">
-                  <source media="(max-width: 767px)"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="68"
-                    height="68">
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="80"
-                    height="80">
-                  <img src="./img/reviews/anna-orlova.png"
-                    srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
-                    alt="Фото автора отзыва." width="80" height="80" loading="lazy">
-                </picture>
-                <cite class="reviews__name">Юлия Началова</cite>
-                <blockquote class="reviews__text">
-                  <p>«Хожу в&nbsp;Supergym уже полгода. Очень удобно, что в&nbsp;клубе есть утренние
-                    и&nbsp;вечерние групповые программы. Можно успеть на&nbsp;интересные тренировки до&nbsp;или
-                    после работы.»</p>
-                </blockquote>
-              </div>
-              <div class="reviews__swiper-button reviews__swiper-button--back">
-              </div>
-              <div class="reviews__swiper-button reviews__swiper-button--along">
+                <div class="reviews__card-wrapper">
+                  <picture>
+                    <source media="(max-width: 767px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="68"
+                      height="68">
+                    <source media="(max-width: 1199px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
+                      height="80">
+                    <source media="(min-width: 1200px)" type="image/webp"
+                      srcset="./img/reviews/anna-orlova.webp 1x, ./img/reviews/anna-orlova@2x.webp 2x" width="80"
+                      height="80">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="68"
+                      height="68">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x" width="80"
+                      height="80">
+                    <img src="./img/reviews/anna-orlova.png"
+                      srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
+                      alt="Фото автора отзыва." width="80" height="80" loading="lazy">
+                  </picture>
+                  <div class="reviews__card--autor">
+                    <cite class="reviews__name">Юлия Началова</cite>
+                    <blockquote class="reviews__text">
+                      <p>«Хожу в&nbsp;Supergym уже полгода. Очень удобно, что в&nbsp;клубе есть утренние
+                        и&nbsp;вечерние групповые программы. Можно успеть на&nbsp;интересные тренировки до&nbsp;или
+                        после работы.»
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="reviews__swiper-button reviews__swiper-button--back">
+          </div>
+          <div class="reviews__swiper-button reviews__swiper-button--along">
           </div>
         </div>
       </section>
@@ -865,7 +883,7 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="footer__logo">
-                <svg class="social__link__icon" width="122" height="22" aria-label="Логотип компании.">
+                <svg class="social__link__icon" width="88" height="22" aria-label="Логотип компании.">
                   <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
               </a>

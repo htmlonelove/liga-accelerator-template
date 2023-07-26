@@ -9,6 +9,14 @@
 </linearGradient>
 </defs><symbol id="arrow-along" viewBox="0 0 18 34"><g fill="none">
 <path d="M1 1L17 17L1 33" stroke="#AFAFAF"/>
+</g></symbol><symbol id="arrow-back-active" viewBox="0 0 58 58"><g fill="none">
+<circle cx="29" cy="29" r="28" fill="#102654" stroke="#102654"/>
+<path d="M35 13L19 29L35 45" stroke="white"/>
+</g></symbol><symbol id="arrow-back-disabled" viewBox="0 0 18 34"><g fill="none">
+<path opacity="0.3" d="M17 1L0.999999 17L17 33" stroke="#102654"/>
+</g></symbol><symbol id="arrow-back-hover" viewBox="0 0 58 58"><g fill="none">
+<circle cx="29" cy="29" r="28" stroke="#102654"/>
+<path d="M35 13L19 29L35 45" stroke="#102654"/>
 </g></symbol><symbol id="arrow-back" viewBox="0 0 18 34"><g fill="none">
 <path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
 </g></symbol><symbol id="close" viewBox="0 0 42 42"><g fill="none">
