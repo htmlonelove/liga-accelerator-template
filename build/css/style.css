@@ -2985,12 +2985,12 @@ button,
 }
 @media (max-width: 1199px) {
   .memberships {
-    margin: 0 0 50px;
+    margin: 0 0 40px;
   }
 }
 @media (max-width: 767px) {
   .memberships {
-    margin: 0 0 50px;
+    margin: 0 0 40px;
   }
 }
 
@@ -3025,7 +3025,7 @@ button,
 
 .memberships__wrapper {
   margin: 0 auto;
-  padding: 120px 105px 120px 100px;
+  padding: 120px 55px 120px 55px;
   z-index: 1;
   width: 100%;
   max-width: 1366px;
@@ -3099,7 +3099,6 @@ button,
   .memberships__controls {
     gap: 35px;
     padding-top: 5px;
-    top: -10px;
     margin-bottom: 5px;
   }
   .memberships__controls::after {
@@ -3110,7 +3109,6 @@ button,
   .memberships__controls {
     width: 310px;
     gap: 25px;
-    top: -10px;
   }
   .memberships__controls::after {
     bottom: 21px;
@@ -3439,7 +3437,7 @@ button,
 }
 @media (max-width: 1199px) {
   .news {
-    margin: 95px 30px 40px 30px;
+    margin: 100px 30px 40px 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3482,19 +3480,15 @@ button,
   letter-spacing: 0.03em;
   color: #ffffff;
   text-transform: uppercase;
-  width: 201px;
-  height: 158px;
   margin: 0;
   display: block;
-  padding: 35px;
+  padding: 35px 0 0 32px;
 }
 @media (max-width: 1199px) {
   .news__title {
     line-height: 46px;
     font-size: 48px;
-    width: 117px;
-    height: 91px;
-    padding: 35px 0 0 42px;
+    padding: 35px 0 0 25px;
   }
 }
 
@@ -3562,9 +3556,10 @@ button,
 }
 @media (max-width: 1199px) {
   .news__calendar {
-    -ms-grid-rows: 55px 85px;
-    grid-template-rows: 55px 85px;
+    -ms-grid-rows: 55px 55px;
+    grid-template-rows: 55px 55px;
     gap: 0;
+    padding-top: 30px;
   }
 }
 
@@ -3596,7 +3591,7 @@ button,
   position: absolute;
   content: "";
   left: 63%;
-  top: 50%;
+  top: 49%;
   width: 88px;
   height: 1px;
   background-color: #ffffff;
@@ -3607,7 +3602,7 @@ button,
 @media (max-width: 1199px) {
   .news__time::after {
     left: 35%;
-    top: 60%;
+    top: 34%;
     width: 56px;
   }
 }
@@ -3621,14 +3616,14 @@ button,
   letter-spacing: 0;
   color: #ffffff;
   display: block;
-  padding: 28px 0 0 50px;
+  padding: 26px 0 0 50px;
 }
 @media (max-width: 1199px) {
   .news__subtitle {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    padding: 30px 0 0 10px;
+    padding: 0 10px;
   }
 }
 @media (max-width: 767px) {
@@ -4741,7 +4736,7 @@ button,
 }
 @media (max-width: 767px) {
   .faq__wrapper {
-    padding: 20px 15px 0;
+    padding: 20px 15px 40px;
   }
 }
 
@@ -4896,7 +4891,7 @@ button,
   text-transform: none;
   position: relative;
   padding: 28px 40px 0 0;
-  margin-bottom: 0;
+  margin: 0;
   width: 100%;
   color: #102654;
   background-color: transparent;
@@ -4920,12 +4915,25 @@ button,
 }
 @media (max-width: 1199px) {
   .accordion__button::after {
-    top: 80.5%;
+    top: 75%;
     right: 1.5%;
+  }
+}
+@media (max-width: 767px) {
+  .accordion__button::after {
+    width: 32px;
+    height: 32px;
   }
 }
 .accordion__button:hover::after, .accordion__button:focus::after {
   background: url("../img/sprite/open.svg") no-repeat;
+}
+@media (max-width: 767px) {
+  .accordion__button:hover::after, .accordion__button:focus::after {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+  }
 }
 .accordion__button:disabled {
   background: url("../img/sprite/open-disabled.svg") no-repeat;
@@ -5188,10 +5196,10 @@ button,
     background-image: url("../img/sprite/arrow-back.svg");
   }
   .reviews__swiper-button--along {
-    right: 3%;
+    right: calc((100% - 560px) / 2 - 76px);
   }
   .reviews__swiper-button--along:hover, .reviews__swiper-button--along:focus {
-    right: 3%;
+    right: calc((100% - 560px) / 2 - 76px);
     background-image: url("../img/sprite/arrow-along.svg");
   }
 }

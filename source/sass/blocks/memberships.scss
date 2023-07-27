@@ -5,11 +5,11 @@
   position: relative;
 
   @include vp-1199 {
-    margin: 0 0 50px;
+    margin: 0 0 40px;
   }
 
   @include vp-767 {
-    margin: 0 0 50px;
+    margin: 0 0 40px;
   }
 }
 
@@ -40,7 +40,7 @@
 
 .memberships__wrapper {
   margin: 0 auto;
-  padding: 120px 105px 120px 100px;
+  padding: 120px 55px 120px 55px;
   z-index: 1;
   width: 100%;
   max-width: 1366px;
@@ -103,7 +103,6 @@
   @include vp-1199 {
     gap: 35px;
     padding-top: 5px;
-    top: -10px;
     margin-bottom: 5px;
 
     &::after {
@@ -114,7 +113,7 @@
   @include vp-767 {
     width: 310px;
     gap: 25px;
-    top: -10px;
+
 
     &::after {
       bottom: 21px;

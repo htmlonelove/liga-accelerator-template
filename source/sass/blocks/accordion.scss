@@ -24,7 +24,7 @@
   text-transform: none;
   position: relative;
   padding: 28px 40px 0 0;
-  margin-bottom: 0;
+  margin: 0;
   width: 100%;
   color: $color-default-black;
   background-color: transparent;
@@ -44,8 +44,13 @@
     transform: translate(0, -50%);
 
     @include vp-1199 {
-      top: 80.5%;
+      top: 75%;
       right: 1.5%;
+    }
+
+    @include vp-767 {
+      width: 32px;
+      height: 32px;
     }
   }
 
@@ -53,6 +58,12 @@
   &:focus {
     &::after {
       background: url("../img/sprite/open.svg") no-repeat;
+
+      @include vp-767 {
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+      }
     }
   }
 

@@ -153,11 +153,11 @@
     }
 
     &--along {
-      right: 3%;
+      right: calc((100% - 560px) / 2 - 76px);
 
       &:hover,
       &:focus {
-        right: 3%;
+        right: calc((100% - 560px) / 2 - 76px);
         background-image: url("../img/sprite/arrow-along.svg");
       }
     }
