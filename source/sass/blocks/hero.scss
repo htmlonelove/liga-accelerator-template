@@ -12,17 +12,15 @@
   gap: 50px;
 
   @include vp-1199 {
-    padding: 61px 0 95px 45px;
-    display: flex;
-    width: 100%;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 61px 40px 80px 35px;
+    width: 750px;
+    gap: 15px;
   }
 
   @include vp-767 {
-    padding: 61px 0 75px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    padding: 61px 0 85px;
+    width: 320px;
     gap: 0;
   }
 }
@@ -37,13 +35,18 @@
   gap: 10px 20px;
 
   @include vp-1199 {
-    padding: 73px 0 0;
+    grid-template-columns: 110px 190px;
+    grid-template-rows: 70px 235px 75px;
+    padding: 0;
+    gap: 10px 30px;
   }
 
   @include vp-767 {
-    margin: 0 15px;
-    padding: 48px 0 0;
-    grid-template-columns: 115px 185px;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 105px 185px;
+    grid-template-rows: 70px 220px 55px;
+    gap: 0 13px;
   }
 }
 
@@ -56,6 +59,7 @@
   @include vp-1199 {
     width: 324px;
     height: 390px;
+    margin: 20px 0 0 10px;
   }
 
   @include vp-767 {
@@ -83,12 +87,12 @@
     line-height: 86px;
     text-transform: none;
     padding: 0;
+    padding-top: 40px;
   }
 
   @include vp-767 {
-    text-align: right;
     font-weight: 600;
-    padding: 0;
+    padding-top: 25px;
   }
 }
 
@@ -115,7 +119,7 @@
     stroke: none;
     -webkit-text-stroke-width: 0;
     text-align: center;
-    padding: 0 0 0 40px;
+    padding: 45px 0 0 50px;
   }
 
   @include vp-767 {
@@ -123,7 +127,7 @@
     font-size: 24px;
     line-height: 34px;
     letter-spacing: 0.03em;
-    padding: 0 0 0 55px;
+    padding: 20px 0 0 70px;
   }
 }
 
@@ -144,11 +148,12 @@
   width: 113px;
 
   @include vp-1199 {
-    padding: 45px 0 55px;
+    padding: 77px 0 55px;
   }
 
   @include vp-767 {
     padding-top: 40px;
+    margin: 62px 0 0 13px;
   }
 }
 
@@ -163,12 +168,14 @@
 
   @include vp-1199 {
     width: 185px;
+    margin-left: 140px;
   }
 
   @include vp-767 {
     width: 290px;
-    margin: 0;
+    margin: 0 15px;
     padding: 20px 0;
+    min-height: 59px;
   }
 
   &:hover,

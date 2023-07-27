@@ -2148,7 +2148,12 @@ button,
 }
 @media (max-width: 1199px) {
   .header__wrapper {
-    padding: 30px;
+    padding: 30px 45px 10px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .header__wrapper {
+    padding: 10px 15px 10px 15px;
   }
 }
 
@@ -2169,8 +2174,7 @@ button,
     font-weight: 700;
     line-height: 28.8px;
     letter-spacing: 0.5px;
-    left: -15px;
-    top: 5px;
+    margin-top: 5px;
   }
 }
 @media (max-width: 767px) {
@@ -2194,8 +2198,7 @@ button,
     width: 82px;
     height: 17px;
     padding: 0;
-    top: 11px;
-    left: 15px;
+    margin: 10px 0 0 15px;
   }
 }
 @media (max-width: 767px) {
@@ -2203,8 +2206,20 @@ button,
     width: 67px;
     height: 24px;
     padding: 0;
-    top: -10px;
-    left: -15px;
+    margin: 5px 0 0 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header__logo svg {
+    width: 82px;
+    height: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo svg {
+    width: 69px;
+    height: 24px;
   }
 }
 
@@ -2470,25 +2485,17 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__wrapper {
-    padding: 61px 0 95px 45px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 61px 40px 80px 35px;
+    width: 750px;
+    gap: 15px;
   }
 }
 @media (max-width: 767px) {
   .hero__wrapper {
-    padding: 61px 0 75px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
+    padding: 61px 0 85px;
+    width: 320px;
     gap: 0;
   }
 }
@@ -2507,15 +2514,23 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__description {
-    padding: 73px 0 0;
+    -ms-grid-columns: 110px 190px;
+    grid-template-columns: 110px 190px;
+    -ms-grid-rows: 70px 235px 75px;
+    grid-template-rows: 70px 235px 75px;
+    padding: 0;
+    gap: 10px 30px;
   }
 }
 @media (max-width: 767px) {
   .hero__description {
-    margin: 0 15px;
-    padding: 48px 0 0;
-    -ms-grid-columns: 115px 185px;
-    grid-template-columns: 115px 185px;
+    margin: 0;
+    padding: 0;
+    -ms-grid-columns: 105px 185px;
+    grid-template-columns: 105px 185px;
+    -ms-grid-rows: 70px 220px 55px;
+    grid-template-rows: 70px 220px 55px;
+    gap: 0 13px;
   }
 }
 
@@ -2530,6 +2545,7 @@ button,
   .hero__photo {
     width: 324px;
     height: 390px;
+    margin: 20px 0 0 10px;
   }
 }
 @media (max-width: 767px) {
@@ -2561,13 +2577,13 @@ button,
     line-height: 86px;
     text-transform: none;
     padding: 0;
+    padding-top: 40px;
   }
 }
 @media (max-width: 767px) {
   .hero__title {
-    text-align: right;
     font-weight: 600;
-    padding: 0;
+    padding-top: 25px;
   }
 }
 
@@ -2597,7 +2613,7 @@ button,
     stroke: none;
     -webkit-text-stroke-width: 0;
     text-align: center;
-    padding: 0 0 0 40px;
+    padding: 45px 0 0 50px;
   }
 }
 @media (max-width: 767px) {
@@ -2606,7 +2622,7 @@ button,
     font-size: 24px;
     line-height: 34px;
     letter-spacing: 0.03em;
-    padding: 0 0 0 55px;
+    padding: 20px 0 0 70px;
   }
 }
 
@@ -2632,12 +2648,13 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__list {
-    padding: 45px 0 55px;
+    padding: 77px 0 55px;
   }
 }
 @media (max-width: 767px) {
   .hero__list {
     padding-top: 40px;
+    margin: 62px 0 0 13px;
   }
 }
 
@@ -2653,13 +2670,15 @@ button,
 @media (max-width: 1199px) {
   .hero__btn {
     width: 185px;
+    margin-left: 140px;
   }
 }
 @media (max-width: 767px) {
   .hero__btn {
     width: 290px;
-    margin: 0;
+    margin: 0 15px;
     padding: 20px 0;
+    min-height: 59px;
   }
 }
 .hero__btn:hover, .hero__btn:focus {
@@ -2690,8 +2709,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    left: 0;
-    padding: 80px 45px 0;
+    padding: 80px 45px 0 30px;
   }
 }
 @media (max-width: 767px) {
@@ -2716,6 +2734,8 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__wrapper {
+    padding: 0;
+    max-width: 1199px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2733,8 +2753,9 @@ button,
 }
 @media (max-width: 1199px) {
   .gim__container {
-    padding: 0 85px;
+    padding: 0 0 25px;
     width: 100%;
+    min-height: 204px;
   }
 }
 @media (max-width: 767px) {
@@ -2759,8 +2780,8 @@ button,
   .gim__title {
     font-size: 42px;
     line-height: 50px;
-    padding: 18px 110px 0 114px;
     text-align: center;
+    padding-top: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -2785,7 +2806,7 @@ button,
 @media (max-width: 1199px) {
   .gim__description {
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0 0 20px 13px;
   }
 }
 @media (max-width: 767px) {
@@ -2808,15 +2829,15 @@ button,
 @media (max-width: 1199px) {
   .gim__wrapper p {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0;
     margin-bottom: 0;
+    padding: 0 90px 0 100px;
   }
 }
 @media (max-width: 767px) {
   .gim__wrapper p {
     text-align: left;
-    padding: 0 35px 0 0;
   }
 }
 
@@ -2847,6 +2868,7 @@ button,
   .gim__photo {
     width: 678px;
     height: 345px;
+    margin: 0 15px;
   }
 }
 @media (max-width: 767px) {
@@ -2877,20 +2899,9 @@ button,
 }
 @media (max-width: 1199px) {
   .gym__video-wrapper {
-    top: auto;
-    left: 30%;
-    bottom: 0%;
+    margin: -140px 0 0 220px;
   }
 }
-@media (max-width: 767px) {
-  .gym__video-wrapper {
-    position: relative;
-    top: auto;
-    left: auto;
-    bottom: auto;
-  }
-}
-
 .gym__video {
   width: 364px;
   height: 228px;
@@ -2934,8 +2945,8 @@ button,
   .gym__play-btn {
     width: 73px;
     height: 73px;
-    top: 30%;
-    left: 35%;
+    top: 28%;
+    left: 19.6%;
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -2952,7 +2963,7 @@ button,
 }
 @media (max-width: 1199px) {
   .memberships {
-    margin: 80px 0 50px;
+    margin: 0 0 50px;
   }
 }
 @media (max-width: 767px) {
@@ -2999,7 +3010,7 @@ button,
 }
 @media (max-width: 1199px) {
   .memberships__wrapper {
-    padding: 66px 15px 100px;
+    padding: 66px 15px 95px;
   }
 }
 @media (max-width: 767px) {
@@ -3067,6 +3078,7 @@ button,
     gap: 35px;
     padding-top: 5px;
     top: -10px;
+    margin-bottom: 5px;
   }
   .memberships__controls::after {
     bottom: 30px;
@@ -3196,7 +3208,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 41px;
+    gap: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -3231,13 +3243,11 @@ button,
   .memberships__catalog {
     min-width: 442px;
     padding-top: 65px;
-    min-height: 448px;
   }
 }
 @media (max-width: 767px) {
   .memberships__catalog {
     min-width: 290px;
-    min-height: 384px;
     padding: 51px 24px 0;
   }
 }
@@ -3268,12 +3278,6 @@ button,
   text-align: center;
   margin: 0;
 }
-@media (max-width: 1199px) {
-  .card__period {
-    margin-bottom: 68px;
-  }
-}
-
 .card__preview-price {
   margin: 0;
   color: #e8e8e8;
@@ -3287,7 +3291,7 @@ button,
 }
 @media (max-width: 1199px) {
   .card__preview-price {
-    right: 120px;
+    padding: 10px 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -3295,8 +3299,6 @@ button,
     font-size: 80px;
     font-weight: 700;
     line-height: 120px;
-    right: 26px;
-    top: 118px;
   }
 }
 
@@ -3325,11 +3327,11 @@ button,
 @media (max-width: 1199px) {
   .card__price {
     margin-bottom: 31px;
-    padding-right: 32px;
   }
   .card__price::after {
     width: 26px;
     height: 33px;
+    padding: 0 0 0 15px;
   }
 }
 @media (max-width: 767px) {
@@ -3372,14 +3374,12 @@ button,
 @media (max-width: 767px) {
   .card--active {
     min-width: 290px;
-    min-height: 384px;
     padding: 45px 15px 0;
   }
 }
 
 .card {
-  min-height: 459px;
-  padding: 60px 50px 0 50px;
+  padding: 60px 50px 55px 50px;
 }
 .card:hover, .card:focus {
   border: 7px solid;

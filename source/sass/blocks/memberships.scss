@@ -5,7 +5,7 @@
   position: relative;
 
   @include vp-1199 {
-    margin: 80px 0 50px;
+    margin: 0 0 50px;
   }
 
   @include vp-767 {
@@ -46,7 +46,7 @@
   max-width: 1366px;
 
   @include vp-1199 {
-    padding: 66px 15px 100px;
+    padding: 66px 15px 95px;
   }
 
   @include vp-767 {
@@ -104,6 +104,7 @@
     gap: 35px;
     padding-top: 5px;
     top: -10px;
+    margin-bottom: 5px;
 
     &::after {
       bottom: 30px;
@@ -220,7 +221,7 @@
   @include vp-1199 {
     display: flex;
     flex-direction: column;
-    gap: 41px;
+    gap: 40px;
   }
 
   @include vp-767 {
@@ -247,12 +248,10 @@
   @include vp-1199 {
     min-width: 442px;
     padding-top: 65px;
-    min-height: 448px;
   }
 
   @include vp-767 {
     min-width: 290px;
-    min-height: 384px;
     padding: 51px 24px 0;
   }
 }

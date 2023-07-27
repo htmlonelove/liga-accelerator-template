@@ -21,7 +21,11 @@
   padding: 30px 105px 0 30px;
 
   @include vp-1199 {
-    padding: 30px;
+    padding: 30px 45px 10px 30px;
+  }
+
+  @include vp-767 {
+    padding: 10px 15px 10px 15px;
   }
 }
 
@@ -41,8 +45,7 @@
     font-weight: 700;
     line-height: 28.8px;
     letter-spacing: 0.5px;
-    left: -15px;
-    top: 5px;
+    margin-top: 5px;
   }
 
   @include vp-767 {
@@ -64,15 +67,26 @@
     width: 82px;
     height: 17px;
     padding: 0;
-    top: 11px;
-    left: 15px;
+    margin: 10px 0 0 15px;
   }
 
   @include vp-767 {
     width: 67px;
     height: 24px;
     padding: 0;
-    top: -10px;
-    left: -15px;
+    margin: 5px 0 0 0;
   }
 }
+
+.header__logo svg {
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
+  }
+}
+

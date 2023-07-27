@@ -6,8 +6,7 @@
 
   @include vp-1199 {
     flex-direction: column;
-    left: 0;
-    padding: 80px 45px 0;
+    padding: 80px 45px 0 30px;
   }
 
   @include vp-767 {
@@ -26,6 +25,8 @@
   padding: 110px 0 0 80px;
 
   @include vp-1199 {
+    padding: 0;
+    max-width: 1199px;
     display: flex;
     flex-direction: column;
   }
@@ -37,8 +38,9 @@
   text-align: left;
 
   @include vp-1199 {
-    padding: 0 85px;
+    padding: 0 0 25px;
     width: 100%;
+    min-height: 204px;
   }
 
   @include vp-767 {
@@ -61,8 +63,8 @@
   @include vp-1199 {
     font-size: 42px;
     line-height: 50px;
-    padding: 18px 110px 0 114px;
     text-align: center;
+    padding-top: 25px;
   }
 
   @include vp-767 {
@@ -85,7 +87,7 @@
 
   @include vp-1199 {
     text-align: center;
-    padding: 0 0 20px 0;
+    padding: 0 0 20px 13px;
   }
 
   @include vp-767 {
@@ -106,14 +108,14 @@
 
   @include vp-1199 {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 0;
     margin-bottom: 0;
+    padding: 0 90px 0 100px;
   }
 
   @include vp-767 {
     text-align: left;
-    padding: 0 35px 0 0;
   }
 }
 
@@ -142,6 +144,7 @@
   @include vp-1199 {
     width: 678px;
     height: 345px;
+    margin: 0 15px;
   }
 
   @include vp-767 {
@@ -168,16 +171,11 @@
   margin: -112px 0 0 -12px;
 
   @include vp-1199 {
-    top: auto;
-    left: 30%;
-    bottom: 0%;
+    margin: -140px 0 0 220px;
   }
 
   @include vp-767 {
-    position: relative;
-    top: auto;
-    left: auto;
-    bottom: auto;
+
   }
 }
 
@@ -222,8 +220,8 @@
   @include vp-1199 {
     width: 73px;
     height: 73px;
-    top: 30%;
-    left: 35%;
+    top: 28%;
+    left: 19.6%;
     margin: 0;
     padding: 0;
     background-size: cover;
