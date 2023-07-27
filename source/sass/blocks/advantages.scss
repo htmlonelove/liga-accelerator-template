@@ -26,8 +26,7 @@
   font-size: 54px;
   font-weight: 600;
   margin: 0;
-  padding-top: 6px;
-  padding-left: 6px;
+  padding: 0;
   text-align: center;
   line-height: 65px;
   letter-spacing: 0.03em;
@@ -36,7 +35,6 @@
     font-size: 42px;
     line-height: 38px;
     margin: 4px auto;
-    padding: 0;
   }
 
   @include vp-767 {
@@ -47,8 +45,8 @@
 }
 
 .advantages__list {
-  margin: 0 180px;
-  padding: 28px 0 0;
+  margin: 0 170px 0 180px;
+  padding: 35px 0 0;
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
   gap: 56px 60px;
@@ -87,7 +85,7 @@
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding: 0 46px;
+    padding: 0 49px;
     text-align: center;
   }
 }
@@ -191,7 +189,7 @@
 .advantages__item--center {
   display: block;
   grid-column: 2/3;
-  margin-top: 28px;
+  margin-top: 20px;
   margin-bottom: 82px;
   padding: 30px 25px 56px 14px;
   text-align: center;
@@ -210,7 +208,7 @@
 
   @include vp-767 {
     margin: 25px auto 9px;
-    padding: 0 55px 43px;
+    padding: 0 65px 43px;
     grid-row: 3/4;
   }
 }

@@ -9,6 +9,7 @@
   }
 
   @include vp-767 {
+    margin: 70px 15px 40px;
     flex-direction: column;
   }
 }
@@ -237,7 +238,8 @@
   border: 4px solid $color-default-white;
   width: 344px;
   min-height: 70px;
-  padding: 25px 110px;
+  padding: 25px 0;
+  justify-content: center;
 
   @include vp-1199 {
     margin: 0 32px 10px;

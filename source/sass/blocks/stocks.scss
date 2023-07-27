@@ -5,11 +5,11 @@
   padding: 0 100px 120px;
 
   @include vp-1199 {
-    padding: 0 45px;
+    padding: 0 45px 100px;
   }
 
   @include vp-767 {
-    padding: 0 15px;
+    padding: 0 15px 50px;
   }
 }
 
@@ -21,7 +21,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
-  padding: 135px 0 35px;
+  padding: 145px 0 35px;
 
   @include vp-1199 {
     padding: 75px 0 40px;

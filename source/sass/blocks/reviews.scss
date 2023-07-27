@@ -21,7 +21,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0 0 35px;
 
   @include vp-1199 {
     font-size: 42px;
@@ -29,7 +29,8 @@
   }
 
   @include vp-767 {
-    margin: 95px 0 42px;
+    font-size: 32px;
+    margin: 70px 0 30px;
   }
 }
 
@@ -76,6 +77,8 @@
   text-align: left;
   margin: 0;
   display: block;
+  grid-column: 2/3;
+  gap: 10px;
 
   @include vp-1199 {
     padding: 0;
@@ -85,6 +88,7 @@
   @include vp-767 {
     grid-column: 1/3;
     text-align: center;
+    gap: 0;
   }
 }
 
@@ -142,6 +146,7 @@
     top: 57%;
 
     &--back {
+
       &:hover,
       &:focus {
         background-image: url("../img/sprite/arrow-back.svg");
@@ -211,46 +216,57 @@
   }
 
   @include vp-767 {
-    padding: 40px 22px 0;
-    display: grid;
+    padding: 35px 22px 0;
     min-height: 335px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2px;
-    row-gap: 1px;
   }
 }
 
 .reviews__card-wrapper {
   display: grid;
   grid-template-columns: 100px 350px;
+  grid-template-rows: 20px 1fr;
   position: relative;
   padding: 0;
   color: $color-default-white;
   background-color: #1c3374;
   cursor: grab;
+  gap: 10px;
 
   @include vp-1199 {
     padding-left: 0;
+    display: grid;
+    grid-template-columns: 90px 350px;
+    grid-template-rows: 20px 1fr;
   }
 
   @include vp-767 {
-    padding: 40px 17px 34px;
-    display: grid;
-    min-height: 335px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2px;
-    row-gap: 14px;
+    padding: 0;
+    gap: 0;
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 80px 200px;
+    justify-content: center;
   }
 }
 
-.reviews__card img {
+.reviews__card picture {
   padding: 10px 5px;
 
   @include vp-1199 {
     padding: 10px 0;
   }
+
+  @include vp-767 {
+    padding: 0 10px;
+  }
 }
 
 .reviews__card--autor {
   padding: 0 10px 0;
+}
+
+.reviews__card p {
+  @include vp-767 {
+    margin: 0;
+    margin-top: 5px;
+  }
 }
