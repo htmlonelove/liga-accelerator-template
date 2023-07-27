@@ -22,10 +22,6 @@
   letter-spacing: 0;
   text-align: center;
   margin: 0;
-
-  @include vp-1199 {
-
-  }
 }
 
 .card__preview-price {
@@ -110,25 +106,11 @@
   }
 }
 
-.card--active {
-  border: 7px solid;
-  border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
-  position: relative;
-  max-width: 360px;
-  padding: 60px 50px 0 50px;
-
-  @include vp-1199 {
-    min-width: 442px;
-  }
-
-  @include vp-767 {
-    min-width: 290px;
-    padding: 45px 15px 0;
-  }
-}
-
 .card {
   padding: 60px 50px 55px 50px;
+  border: 7px solid transparent;
+  position: relative;
+  max-width: 360px;
 
   &:hover,
   &:focus {
@@ -142,10 +124,19 @@
 
     @include vp-767 {
       max-width: 290px;
+      padding: 45px 15px 0;
     }
   }
 
   &:default {
     border: none;
+  }
+
+  &--active {
+    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+  }
+
+  @include vp-1199 {
+    padding-top: 55px;
   }
 }

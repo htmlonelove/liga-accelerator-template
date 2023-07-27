@@ -20,6 +20,7 @@
     justify-content: space-around;
     padding: 10px 40px;
     margin: 0;
+    gap: 40px;
   }
 
   @include vp-767 {
@@ -39,7 +40,7 @@
   }
 }
 
-.footer__logo {
+.footer__logo svg {
   display: block;
   width: 88px;
   height: 32px;

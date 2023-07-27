@@ -24,7 +24,8 @@
   margin: 0 0 40px;
 
   @include vp-1199 {
-    margin: 90px 0 45px;
+    font-size: 42px;
+    margin: 75px 0 35px;
   }
 
   @include vp-767 {
@@ -206,7 +207,7 @@
   cursor: grab;
 
   @include vp-1199 {
-    padding: 54px 64px 30px 172px;
+    padding: 50px 64px 30px 65px;
   }
 
   @include vp-767 {
@@ -229,7 +230,7 @@
   cursor: grab;
 
   @include vp-1199 {
-    padding-left: 172px;
+    padding-left: 0;
   }
 
   @include vp-767 {
@@ -242,8 +243,12 @@
   }
 }
 
-.reviews__card > picture {
+.reviews__card img {
   padding: 10px 5px;
+
+  @include vp-1199 {
+    padding: 10px 0;
+  }
 }
 
 .reviews__card--autor {

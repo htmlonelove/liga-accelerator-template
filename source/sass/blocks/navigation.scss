@@ -3,8 +3,7 @@
   padding: 33px 0 0 36px;
 
   @include vp-1199 {
-    padding: 24px 0 0 0;
-    left: -40px;
+    padding: 20px 0 0 0;
   }
 
   @include vp-767 {
@@ -25,7 +24,7 @@
 
   @include vp-1199 {
     margin: 0;
-    padding: 15px 0 0 30px;
+    padding: 20px 0 0 0;
     gap: 30px;
   }
 
@@ -80,7 +79,7 @@
   padding-right: 235px;
 
   @include vp-1199 {
-    padding-right: 60px;
+    padding-right: 35px;
   }
 
   @include vp-767 {

@@ -65,7 +65,7 @@
 
   @include vp-1199 {
     margin: 0;
-    padding: 40px 12px 25px 0;
+    padding: 40px 12px 25px 12px;
     font-size: 42px;
     line-height: 38px;
   }
@@ -221,7 +221,7 @@
   @include vp-1199 {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
   }
 
   @include vp-767 {

@@ -44,7 +44,7 @@
     transform: translate(0, -50%);
 
     @include vp-1199 {
-      top: 54.5%;
+      top: 80.5%;
       right: 1.5%;
     }
   }
@@ -62,7 +62,7 @@
   }
 
   @include vp-1199 {
-    padding: 35px 80px 22px 0;
+    padding: 35px 80px 0 0;
     margin-left: 0;
 
     &--custom {
@@ -126,6 +126,7 @@
 
   @include vp-1199 {
     margin-left: 0;
+    letter-spacing: 0.06em;
   }
 
   @include vp-767 {
