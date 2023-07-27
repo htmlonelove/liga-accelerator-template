@@ -93,11 +93,10 @@
   text-transform: uppercase;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: $color-default-white;
     background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-    border: none;
+    border: transparent;
     outline: none;
   }
 
@@ -115,6 +114,7 @@
 
   &:hover,
   &:focus {
+    padding: 60px 50px 55px 50px;
     border: 7px solid;
     border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
     max-width: 360px;
@@ -134,7 +134,10 @@
   }
 
   &--active {
+    padding: 60px 50px 55px 50px;
+    border: 7px solid;
     border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+    position: relative;
   }
 
   @include vp-1199 {

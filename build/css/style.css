@@ -1449,7 +1449,7 @@ button,
 .btn--blue {
   border: #102654 solid 2px;
   color: #102654;
-  padding: 24px 0;
+  padding: 22px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1473,7 +1473,7 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 206px;
-  border: none;
+  border: transparent;
   color: #ffffff;
 }
 .btn:disabled {
@@ -3371,10 +3371,10 @@ button,
 .card__btn {
   text-transform: uppercase;
 }
-.card__btn:hover, .card__btn:focus, .card__btn:active {
+.card__btn:hover, .card__btn:focus {
   color: #ffffff;
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  border: none;
+  border: transparent;
   outline: none;
 }
 .card__btn:disabled {
@@ -3389,6 +3389,7 @@ button,
   max-width: 360px;
 }
 .card:hover, .card:focus {
+  padding: 60px 50px 55px 50px;
   border: 7px solid;
   -o-border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
      border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
@@ -3409,8 +3410,11 @@ button,
   border: none;
 }
 .card--active {
+  padding: 60px 50px 55px 50px;
+  border: 7px solid;
   -o-border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
      border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .card {

@@ -140,7 +140,6 @@
   }
 
   @include vp-1199 {
-
     &::after {
       left: 35%;
       top: 60%;
@@ -286,7 +285,7 @@
     height: 1px;
     background-color: $color-default-white;
     transform: translate(-50%, 0);
-    
+
     @include vp-1199 {
       left: 30%;
       width: 40px;
