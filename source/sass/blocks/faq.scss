@@ -119,7 +119,7 @@
 }
 
 .faq__content {
-  width: 860px;
+  width: 880px;
 
   @include vp-1199 {
     margin: 0 auto;
@@ -127,7 +127,7 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    width: 290px;
   }
 }
 
