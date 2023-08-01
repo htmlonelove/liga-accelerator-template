@@ -100,6 +100,13 @@
     outline: none;
   }
 
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border: transparent;
+    outline: none;
+  }
+
   &:disabled {
     background-color: $color-default-white;
     color: rgba(16, 38, 84, 0.1);

@@ -214,6 +214,7 @@
   text-transform: uppercase;
   display: block;
   margin-top: auto;
+  padding: 7px;
 
   &::after {
     content: "";
@@ -253,7 +254,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-black;
-  padding-top: 70px;
+  margin-top: 70px;
+  padding: 7px;
 
   &:hover {
     color: $color-default-black;
@@ -270,12 +272,12 @@
   }
 
   @include vp-1199 {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 
   @include vp-767 {
     text-align: center;
-    padding: 25px 0 12px;
+    margin: 25px 0 12px;
   }
 }
 

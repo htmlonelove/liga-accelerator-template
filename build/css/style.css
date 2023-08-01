@@ -2429,7 +2429,8 @@ button,
   color: #ffffff;
 }
 .navigation__link:hover {
-  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-top: none;
 }
 .navigation__link:focus {
   border: 1px solid #ffffff;
@@ -2688,12 +2689,13 @@ button,
   }
 }
 .hero__btn:hover, .hero__btn:focus {
-  color: #102654;
+  color: #103aae;
   background-color: #ffffff;
   outline: none;
 }
 .hero__btn:active {
   color: #102654;
+  background-color: #ffffff;
 }
 .hero__btn:default {
   background-color: transparent;
@@ -3375,6 +3377,12 @@ button,
   border: transparent;
   outline: none;
 }
+.card__btn:active {
+  color: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border: transparent;
+  outline: none;
+}
 .card__btn:disabled {
   background-color: #ffffff;
   color: rgba(16, 38, 84, 0.1);
@@ -3721,12 +3729,13 @@ button,
     margin: 0 32px 35px;
   }
 }
-.news__btn:hover {
-  color: #ffffff;
-  opacity: 50%;
+.news__btn:active {
+  background-color: #ffffff;
+  color: #102654;
 }
-.news__btn:focus {
-  border: 1px solid #ffffff;
+.news__btn:hover, .news__btn:focus {
+  background-color: #ffffff;
+  color: #103aae;
 }
 .news__btn:disabled {
   color: #ffffff;
@@ -4616,6 +4625,7 @@ button,
   text-transform: uppercase;
   display: block;
   margin-top: auto;
+  padding: 7px;
 }
 .stocks__link::after {
   content: "";
@@ -4652,7 +4662,8 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #102654;
-  padding-top: 70px;
+  margin-top: 70px;
+  padding: 7px;
 }
 .stocks__link--other:hover {
   color: #102654;
@@ -4667,13 +4678,13 @@ button,
 }
 @media (max-width: 1199px) {
   .stocks__link--other {
-    padding-top: 50px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 767px) {
   .stocks__link--other {
     text-align: center;
-    padding: 25px 0 12px;
+    margin: 25px 0 12px;
   }
 }
 
@@ -4809,11 +4820,17 @@ button,
           align-items: center;
   display: block;
 }
-.faq__control:hover, .faq__control:focus-visible {
+.faq__control:hover, .faq__control:focus {
   border-color: #102654;
 }
 .faq__control:disabled {
   color: #c8c9cc;
+}
+.faq__control:active {
+  border-color: transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#003eb7));
+  background: linear-gradient(to right, #ed0233, #003eb7);
+  color: #ffffff;
 }
 @media (max-width: 1199px) {
   .faq__control {
@@ -5496,13 +5513,14 @@ button,
   display: block;
   min-height: 52px;
 }
-.form__submit:hover, .form__submit:focus-visible {
+.form__submit:hover, .form__submit:focus {
   color: #102654;
   background-color: #ffffff;
   outline: none;
 }
 .form__submit:active {
-  color: #102654;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 @media (max-width: 1199px) {
   .form__submit {

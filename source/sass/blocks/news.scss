@@ -253,13 +253,15 @@
     margin: 0 32px 35px;
   }
 
-  &:hover {
-    color: $color-default-white;
-    opacity: 50%;
+  &:active {
+    background-color: $color-default-white;
+    color: $color-default-black;
   }
 
+  &:hover,
   &:focus {
-    border: 1px solid $color-default-white;
+    background-color: $color-default-white;
+    color: #103aae;
   }
 
   &:disabled {

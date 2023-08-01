@@ -180,13 +180,14 @@
 
   &:hover,
   &:focus {
-    color: $color-default-black;
+    color: #103aae;
     background-color: $color-default-white;
     outline: none;
   }
 
   &:active {
     color: $color-default-black;
+    background-color: $color-default-white;
   }
 
   &:default {

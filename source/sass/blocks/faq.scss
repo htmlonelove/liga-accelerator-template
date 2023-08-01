@@ -87,12 +87,18 @@
   display: block;
 
   &:hover,
-  &:focus-visible {
+  &:focus {
     border-color: $color-default-black;
   }
 
   &:disabled {
     color: #c8c9cc;
+  }
+
+  &:active {
+    border-color: transparent;
+    background: linear-gradient(to right, #ed0233, #003eb7);
+    color:  $color-default-white;
   }
 
   @include vp-1199 {
