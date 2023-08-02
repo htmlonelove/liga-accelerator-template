@@ -5,15 +5,14 @@
 .tabs__controls {
   position: relative;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
   padding-bottom: 12px;
   margin-bottom: 40px;
-  min-width: auto;
+  width: 342px;
 
-  &::before{
+  &::before {
     position: absolute;
-
     bottom: 0;
     right: 0;
     left: 0;
@@ -29,12 +28,14 @@
 }
 
 .tabs__control {
+  position: relative;
+  display: flex;
   text-transform: uppercase;
   cursor: pointer;
-  margin: 0 18px;
   opacity: 0.5;
   min-width: auto;
   justify-content: center;
+  padding: 0;
 
   @media screen and (max-width: 1023px) {
     margin: 0 10px;
@@ -50,10 +51,20 @@
   &.is-active {
     opacity: 1;
     pointer-events: none;
+
+    &::before {
+      position: absolute;
+      bottom: -12px;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background-color: $color-banner-red;
+      content: "";
+    }
   }
 }
 
-.tabs__button{
+.tabs__button {
   font-family: $ff-placeholder;
   font-size: 20px;
   font-weight: 400;
@@ -66,12 +77,10 @@
 
 .tabs__content {
   margin-bottom: 40px;
-
   transition: height 0.3s;
 }
 
 .tabs__element {
-  padding: 25px;
   width: 100%;
 
   @media screen and (max-width: 767px) {
@@ -86,21 +95,7 @@
     }
   }
 
-  &:nth-child(1) {
-    background-color: rgb(250, 235, 215);
-  }
 
-  &:nth-child(2) {
-    background-color: rgb(229, 250, 215);
-  }
-
-  &:nth-child(3) {
-    background-color: rgb(180, 188, 233);
-  }
-
-  &:nth-child(4) {
-    background-color: rgb(255, 187, 204);
-  }
 }
 
 .tabs--unset .tabs__content {

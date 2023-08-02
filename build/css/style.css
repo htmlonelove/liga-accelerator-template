@@ -1350,7 +1350,7 @@ header::before {
 .gym {
   margin: 0 auto;
   width: 1366px;
-  padding: 76px 103px 156px 163px;
+  padding: 80px 103px 162px 163px;
 }
 
 .gym__wrapper {
@@ -1490,13 +1490,13 @@ header::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
   padding-bottom: 12px;
   margin-bottom: 40px;
-  min-width: auto;
+  width: 342px;
 }
 .tabs__controls::before {
   position: absolute;
@@ -1515,14 +1515,18 @@ header::before {
 }
 
 .tabs__control {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-transform: uppercase;
   cursor: pointer;
-  margin: 0 18px;
   opacity: 0.5;
   min-width: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
 }
 @media screen and (max-width: 1023px) {
   .tabs__control {
@@ -1540,6 +1544,15 @@ header::before {
 .tabs__control.is-active {
   opacity: 1;
   pointer-events: none;
+}
+.tabs__control.is-active::before {
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background-color: #ed0233;
+  content: "";
 }
 
 .tabs__button {
@@ -1560,7 +1573,6 @@ header::before {
 }
 
 .tabs__element {
-  padding: 25px;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
@@ -1574,18 +1586,6 @@ header::before {
 .tabs__element p:not(:last-child) {
   margin: 0 0 20px 0;
 }
-.tabs__element:nth-child(1) {
-  background-color: rgb(250, 235, 215);
-}
-.tabs__element:nth-child(2) {
-  background-color: rgb(229, 250, 215);
-}
-.tabs__element:nth-child(3) {
-  background-color: rgb(180, 188, 233);
-}
-.tabs__element:nth-child(4) {
-  background-color: rgb(255, 187, 204);
-}
 
 .tabs--unset .tabs__content {
   height: 100px;
@@ -1598,6 +1598,7 @@ header::before {
 }
 
 .gym-membership {
+  position: relative;
   margin: 0 auto;
   width: 1366px;
 }
@@ -1609,8 +1610,104 @@ header::before {
   line-height: normal;
   letter-spacing: 1.62px;
   color: #102654;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
   text-align: center;
+}
+
+.gym-membership__image {
+  position: absolute;
+  right: -15px;
+  bottom: -236px;
+}
+
+.cards__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0 150px;
+  list-style-type: none;
+  width: 1366px;
+}
+
+.cards__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 7px solid rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  padding-right: 62px;
+  padding-left: 62px;
+  background-color: #ffffff;
+}
+.cards__item--current {
+  -o-border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+     border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  border-image-slice: 1;
+}
+.cards__item--current .cards__button {
+  border: none;
+  background-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
+  color: #ffffff;
+  padding: 26px 43px;
+}
+
+.cards__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.1;
+  color: #102654;
+  margin-bottom: 10px;
+}
+
+.cards__description {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #102654;
+  margin-bottom: 12px;
+}
+
+.cards__price {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.5;
+  color: #103aae;
+  margin-top: -97px;
+  margin-bottom: 35px;
+}
+
+.cards__price-shadow {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.5;
+  color: #e8e8e8;
+}
+
+.cards__button {
+  color: #102654;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  border: 2px solid #102654;
+  padding: 24px 39px;
 }
 
 /* @mixin hover-focus {

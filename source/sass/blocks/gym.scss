@@ -1,22 +1,22 @@
-.gym{
+.gym {
   margin: 0 auto;
   width: 1366px;
-  padding: 76px 103px 156px 163px;
+  padding: 80px 103px 162px 163px;
 }
 
-.gym__wrapper{
+.gym__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.gym__text{
+.gym__text {
   display: flex;
   flex-direction: column;
   padding-top: 40px;
   padding-right: 85px;
 }
 
-.gym__title{
+.gym__title {
   font-family: $ff-Alumnisans;
   font-size: 32px;
   font-weight: 600;
@@ -26,7 +26,7 @@
   padding-bottom: 8px;
 }
 
-.gym__subtitle{
+.gym__subtitle {
   font-family: $ff-placeholder;
   font-size: 14px;
   font-weight: 400;
@@ -36,28 +36,28 @@
   letter-spacing: 0.7px;
 }
 
-.gym__description{
+.gym__description {
   font-family: $ff-placeholder;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   color: $color-primary;
 
-  &--supergym{
+  &--supergym {
     padding-bottom: 8px;
   }
 }
 
-.gym__video-wrapper{
+.gym__video-wrapper {
   position: relative;
 }
 
-.gym__video{
-margin-left: 378px;
+.gym__video {
+  margin-left: 378px;
   margin-top: -112px;
 }
 
-.gym__video-button{
+.gym__video-button {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -68,10 +68,11 @@ margin-left: 378px;
   border: none;
 }
 
-.gym__button-image{
+.gym__button-image {
   transform: rotate(150deg);
 }
-.gym__button-border{
+
+.gym__button-border {
   position: absolute;
   top: 0;
   left: -9px;
