@@ -1,9 +1,9 @@
 .cards__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  gap: 30px;
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 0 103px;
   list-style-type: none;
   width: 1366px;
 }
@@ -25,7 +25,7 @@
     border-image: $red-to-blue;
     border-image-slice: 1;
 
-    & .cards__button{
+    & .cards__link-buy{
       border: none;
       background-image: $red-to-blue;
       color: $color-default-white;
@@ -70,7 +70,7 @@
   color: $color-light-grey;
 }
 
-.cards__button{
+.cards__link-buy{
   color: $color-primary;
   font-size: 11px;
   font-weight: 700;

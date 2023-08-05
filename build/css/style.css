@@ -1221,6 +1221,7 @@ p {
 }
 
 header {
+  position: relative;
   margin: 0 auto;
   width: 1366px;
 }
@@ -1247,7 +1248,7 @@ header::before {
       -ms-flex-order: 1;
           order: 1;
   top: 16px;
-  right: 0;
+  right: 103px;
   font-family: ff-Alumnisans;
   font-size: 24px;
   font-weight: 600;
@@ -1601,6 +1602,7 @@ header::before {
   position: relative;
   margin: 0 auto;
   width: 1366px;
+  padding-bottom: 200px;
 }
 
 .gym-membership__title {
@@ -1617,7 +1619,7 @@ header::before {
 .gym-membership__image {
   position: absolute;
   right: -15px;
-  bottom: -236px;
+  bottom: -254px;
 }
 
 .cards__list {
@@ -1625,9 +1627,9 @@ header::before {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  gap: 30px;
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 0 103px;
   list-style-type: none;
   width: 1366px;
 }
@@ -1658,7 +1660,7 @@ header::before {
      border-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
   border-image-slice: 1;
 }
-.cards__item--current .cards__button {
+.cards__item--current .cards__link-buy {
   border: none;
   background-image: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
   color: #ffffff;
@@ -1701,13 +1703,103 @@ header::before {
   color: #e8e8e8;
 }
 
-.cards__button {
+.cards__link-buy {
   color: #102654;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.3px;
   border: 2px solid #102654;
   padding: 24px 39px;
+}
+
+.super-games {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.super-games__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px auto;
+  grid-template-columns: 500px auto;
+}
+
+.super-games__text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 85px 78px;
+  background-color: #ed0233;
+}
+
+.super-games__intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  gap: 50px;
+}
+
+.super-games__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 0.96;
+  color: #ffffff;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+
+.super-games__description {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  padding-bottom: 42px;
+}
+
+.super-games__link-application {
+  padding: 26px 0;
+}
+
+.super-games__date-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 46px;
+}
+
+.super-games__time-table {
+  margin-top: -5px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.super-games__number {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.super-games__date-month {
+  font-size: 14px;
 }
 
 /* @mixin hover-focus {
