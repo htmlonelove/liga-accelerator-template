@@ -9,18 +9,18 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: left;
-  margin: 0 0 40px;
+  margin: 0 0 36px;
 
   @include vp-1199 {
     font-size: 42px;
     line-height: 38px;
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 48px;
   }
 
   @include vp-767 {
     font-size: 32px;
-    margin: 65px 0 30px 0;
+    margin: 70px 0 30px 0;
     text-align: center;
   }
 }
@@ -29,7 +29,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 120px 104px 127px;
+  padding: 122px 104px 117px;
 
   @include vp-1199 {
     padding: 104px 45px 100px;
@@ -89,6 +89,7 @@
   &:hover,
   &:focus {
     border-color: $color-default-black;
+    color: $color-default-black;
   }
 
   &:disabled {
@@ -98,7 +99,7 @@
   &:active {
     border-color: transparent;
     background: linear-gradient(to right, #ed0233, #003eb7);
-    color:  $color-default-white;
+    color: $color-default-white;
   }
 
   @include vp-1199 {
@@ -125,7 +126,7 @@
 }
 
 .faq__content {
-  width: 860px;
+  width: 880px;
 
   @include vp-1199 {
     margin: 0 auto;
@@ -133,7 +134,7 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    width: 290px;
   }
 }
 

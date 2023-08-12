@@ -14,6 +14,7 @@
 .social__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 28px 0 0 0;
 
@@ -29,10 +30,10 @@
 
 .social__link {
   fill: #ffffff;
-  width: 12px;
-  height: 6.94px;
   display: flex;
   justify-content: center;
+  height: 25px;
+  width: 25px;
 }
 
 .social__item {
@@ -57,4 +58,10 @@
   &:disabled {
     background-color: rgba(255, 255, 255, 0.1);
   }
+}
+
+.social__link__icon {
+  width: 13.89px;
+  height: 13.89px;
+  margin: auto;
 }

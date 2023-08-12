@@ -27,10 +27,9 @@
 
   @include vp-1199 {
     background-image: image-set("../img/memberships/membership-equipment-tablet.png" 1x, "../img/memberships/membership-equipment-tablet@2x.png" 2x);
-    bottom: -118px;
-    right: 5px;
+    bottom: -95px;
+    right: 0;
     rotate: 359deg;
-    background-size: cover;
   }
 
   @include vp-767 {
@@ -40,7 +39,7 @@
 
 .memberships__wrapper {
   margin: 0 auto;
-  padding: 120px 55px 120px 55px;
+  padding: 120px 0;
   z-index: 1;
   width: 100%;
   max-width: 1366px;
@@ -50,7 +49,7 @@
   }
 
   @include vp-767 {
-    padding: 24px 5px 75px;
+    padding: 24px 5px 60px;
   }
 }
 
@@ -65,13 +64,14 @@
 
   @include vp-1199 {
     margin: 0;
-    padding: 40px 12px 25px 12px;
+    padding: 35px 12px 15px 12px;
     font-size: 42px;
     line-height: 38px;
   }
 
   @include vp-767 {
     margin: 0;
+    padding: 40px 0 15px 0;
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
@@ -103,7 +103,6 @@
   @include vp-1199 {
     gap: 35px;
     padding-top: 5px;
-    margin-bottom: 5px;
 
     &::after {
       bottom: 30px;
@@ -113,6 +112,7 @@
   @include vp-767 {
     width: 310px;
     gap: 25px;
+    padding-top: 0;
 
 
     &::after {
@@ -131,7 +131,7 @@
   letter-spacing: 0;
   text-align: center;
   position: relative;
-  color: rgba(16, 38, 84, 0.2);
+  color: rgba(16, 38, 84, 0.5);
   background-color: transparent;
   border: none;
   text-transform: none;
@@ -155,12 +155,14 @@
     min-height: 55px;
   }
 
+  &:hover,
+  &:focus,
   &:active {
     color: $color-default-black;
   }
 
   &:disabled {
-    color: rgba(16, 38, 84, 0.1);
+    color: rgba(16, 38, 84, 0.3);
   }
 }
 
@@ -224,7 +226,7 @@
   }
 
   @include vp-767 {
-    gap: 33px;
+    gap: 35px;
   }
 }
 
@@ -234,7 +236,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 360px;
   background-color: $color-default-white;
   z-index: 2;
 
@@ -245,12 +246,10 @@
   }
 
   @include vp-1199 {
-    min-width: 442px;
     padding-top: 65px;
   }
 
   @include vp-767 {
-    min-width: 290px;
     padding: 51px 24px 0;
   }
 }

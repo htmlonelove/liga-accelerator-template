@@ -1,5 +1,5 @@
 .advantages {
-  padding: 102px 0 45px;
+  padding: 105px 0 45px;
   background-color: #f8f9fc;
 
   @include vp-1199 {
@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 15px 0 60px;
+    padding: 20px 0 60px;
   }
 }
 
@@ -25,7 +25,7 @@
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 600;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   line-height: 65px;
@@ -40,16 +40,16 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 38px;
-    padding: 43px 10px 0 33px;
+    padding: 43px 10px 0 0;
   }
 }
 
 .advantages__list {
-  margin: 0 170px 0 180px;
-  padding: 35px 0 0;
+  margin: 0 170px;
+  padding: 30px 0 0;
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
-  gap: 56px 60px;
+  gap: 56px 50px;
   max-width: 1040px;
   list-style: none;
 
@@ -71,7 +71,7 @@
   grid-template-columns: auto 1fr;
   gap: 30px;
   grid-column: auto;
-  padding: 0 0 50px;
+  padding: 5px 0 50px 12px;
   color: #102654;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 
@@ -158,7 +158,7 @@
   line-height: 33px;
   letter-spacing: 0;
   text-align: left;
-  margin: 18px 0 2px 2px;
+  margin: 14px 0 2px 2px;
 
   @include vp-1199 {
     margin: 15px 0 2px;
@@ -175,7 +175,7 @@
 
 .advantages__content p {
   margin: 0;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -189,9 +189,9 @@
 .advantages__item--center {
   display: block;
   grid-column: 2/3;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 82px;
-  padding: 30px 25px 56px 14px;
+  padding: 35px 23px 59px 23px;
   text-align: center;
   color: #ffffff;
   background-color: #1c3374;

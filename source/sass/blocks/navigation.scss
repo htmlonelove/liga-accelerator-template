@@ -20,6 +20,7 @@
 .navigation__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 
   @include vp-1199 {
@@ -33,7 +34,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 120px;
-    gap: 24px;
+    gap: 21px;
     margin-bottom: 5px;
   }
 }

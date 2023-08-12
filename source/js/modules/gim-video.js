@@ -1,5 +1,5 @@
-let video = document.querySelector('.gym__video');
-let videoBtn = document.querySelector('.gym__play-btn');
+let video = document.querySelector('.media__video-wrapper');
+let videoBtn = document.querySelector('.media__play-btn');
 
 function videoBtnOnclick() {
   if (video.paused) {

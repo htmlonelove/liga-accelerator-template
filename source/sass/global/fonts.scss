@@ -48,3 +48,12 @@
   font-display: swap;
   src: url("../fonts/AlumniSans-500.woff2") format("woff2"), url("../fonts/AlumniSans-500.woff") format("woff");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Rouble";
+
+  font-display: swap;
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff");
+}
