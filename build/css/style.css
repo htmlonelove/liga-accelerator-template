@@ -5352,7 +5352,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__swiper-button {
-    top: calc((100% + 56px) / 2 - 56px);
+    top: calc((100% + 56px) / 2);
   }
   .reviews__swiper-button--back:hover, .reviews__swiper-button--back:focus {
     background-image: url("../img/sprite/arrow-back-hover.svg");

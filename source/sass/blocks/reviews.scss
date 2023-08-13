@@ -155,7 +155,7 @@
   }
 
   @include vp-1199 {
-    top: calc((100% + 56px)/2 - 56px);
+    top: calc((100% + 56px)/2);
 
     &--back {
       &:hover,
