@@ -36,6 +36,7 @@
 
 .reviews__swiper {
   max-width: 560px;
+  background-color: #1c3374;
 
   @include vp-1199 {
     max-width: 566px;
@@ -280,4 +281,8 @@
     margin: 0;
     margin-top: 5px;
   }
+}
+
+.reviews__swiper-wrapper {
+  background-color: #1c3374;
 }

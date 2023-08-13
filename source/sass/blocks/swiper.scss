@@ -45,6 +45,7 @@
 .swiper-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);
+  align-items: stretch;
 }
 .swiper-pointer-events {
   touch-action: pan-y;
@@ -55,7 +56,7 @@
 .swiper-slide {
   flex-shrink: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
   transition-property: transform;
 }
@@ -68,7 +69,7 @@
   height: auto;
 }
 .swiper-autoheight .swiper-wrapper {
-  align-items: flex-start;
+  align-items: stretch;
   transition-property: transform, height;
 }
 /* 3D Effects */

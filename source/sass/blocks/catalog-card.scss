@@ -14,7 +14,7 @@
     }
 
     @include vp-767 {
-      padding: 40px 10px 50px 10px;
+      padding: 40px 30px 50px;
     }
   }
 
@@ -34,7 +34,7 @@
   }
 
   @include vp-767 {
-    padding: 40px 10px 50px 10px;
+    padding: 40px 30px 50px;
   }
 }
 
@@ -150,5 +150,10 @@
   &:disabled {
     background-color: $color-default-white;
     color: rgba(16, 38, 84, 0.1);
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+    padding: 22px 40px;
   }
 }

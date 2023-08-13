@@ -12,9 +12,10 @@
   width: 100%;
   max-width: 1366px;
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
   justify-content: space-between;
-  padding: 0 105px 0 30px;
+  padding: 0 105px;
 
   @include vp-1199 {
     justify-content: space-around;
@@ -25,7 +26,7 @@
 
   @include vp-767 {
     gap: 5px;
-    padding: 52px 16px 35px;
+    padding: 2px 16px 35px;
     flex-direction: column;
   }
 }
@@ -44,11 +45,12 @@
   display: block;
   width: 88px;
   height: 32px;
-  margin: -5px 0 0 -2px;
+  margin: 45px 0 0 0;
 
   @include vp-1199 {
     width: 82px;
     height: 18px;
+    margin-top: 40px;
   }
 
   @include vp-767 {

@@ -42,7 +42,7 @@
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     grid-template-columns: 105px 185px;
     gap: 0 13px;

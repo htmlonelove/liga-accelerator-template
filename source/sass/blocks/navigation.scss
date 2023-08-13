@@ -1,17 +1,17 @@
 .navigation {
-  display: block;
-  padding: 33px 0 0 36px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0 0 0;
 
   @include vp-1199 {
     padding: 20px 0 0 0;
   }
 
   @include vp-767 {
+    display: block;
     padding: 0;
-    flex-direction: column;
-    gap: 20px;
+    padding-top: 20px;
     max-width: 90px;
-    flex-wrap: wrap;
     top: 32px;
     left: -42px;
   }
@@ -22,10 +22,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  min-width: 420px;
+  max-width: 500px;
+  padding: 18px 0 0 5px;
 
   @include vp-1199 {
+    max-width: 420px;
+    min-width: 400px;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0 15px;
     gap: 30px;
   }
 
@@ -34,8 +39,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 120px;
-    gap: 21px;
-    margin-bottom: 5px;
   }
 }
 
@@ -74,17 +77,41 @@
     line-height: 19px;
     text-align: left;
     min-width: 135px;
+    padding-bottom: 20px;
   }
 }
 
-.navigation__item:first-of-type {
-  padding-right: 235px;
+.navigation__part-left {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 
   @include vp-1199 {
-    padding-right: 35px;
+    gap: 32px;
   }
 
   @include vp-767 {
-    padding-right: 60px;
+    display: block;
+  }
+}
+
+.navigation__part-right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  @include vp-1199 {
+    gap: 32px;
+  }
+
+  @include vp-767 {
+    display: block;
+    margin: -40px 0 0 -5px;
+  }
+}
+
+.navigation__item:last-child {
+  @include vp-767 {
+    padding-bottom: 10px;
   }
 }
