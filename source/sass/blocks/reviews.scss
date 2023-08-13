@@ -155,7 +155,7 @@
   }
 
   @include vp-1199 {
-    top: calc((100% + 30px)/2 - 30px);
+    top: calc((100% + 56px)/2 - 56px);
 
     &--back {
       &:hover,
@@ -170,7 +170,7 @@
       &:hover,
       &:focus {
         right: calc((100% - 560px) / 2 - 76px);
-        background-image: url("../img/sprite/arrow-along.svg");
+        background-image: url("../img/sprite/arrow-along-hover.svg");
       }
     }
   }
@@ -187,6 +187,7 @@
       &:hover,
       &:focus {
         left: 10px;
+        background-image: url("../img/sprite/arrow-back-hover.svg");
       }
     }
 
@@ -196,6 +197,7 @@
       &:hover,
       &:focus {
         right: 10px;
+        background-image: url("../img/sprite/arrow-along-hover.svg");
       }
     }
   }
