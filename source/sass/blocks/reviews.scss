@@ -25,7 +25,7 @@
 
   @include vp-1199 {
     font-size: 42px;
-    margin: 75px 0 35px;
+    margin: 70px 0 30px;
   }
 
   @include vp-767 {
@@ -35,14 +35,16 @@
 }
 
 .reviews__swiper {
-  width: 560px;
+  max-width: 560px;
+  background-color: #1c3374;
 
   @include vp-1199 {
-    width: 566px;
+    max-width: 566px;
   }
 
   @include vp-767 {
-    width: 226px;
+    min-width: 200px;
+    margin: 0 30px;
   }
 }
 
@@ -94,7 +96,7 @@
 
 .reviews__swiper-button {
   position: absolute;
-  top: 58.5%;
+  top: calc((100% - 56px) / 2 + 76px);
   width: 56px;
   height: 56px;
   background-repeat: no-repeat;
@@ -113,15 +115,15 @@
     &:focus {
       left: calc((100% - 560px) / 2 - 76px);
       background-image: url("../img/sprite/arrow-back-hover.svg");
-      background-size: 30px 30px;
-      background-color: $color-default-black;
+      background-size: 54px 54px;
+      background-color: $color-default-white;
       fill: #afafaf;
       border-radius: 50%;
     }
 
     &:active {
       background-image: url("../img/sprite/arrow-back-active.svg");
-      background-size: 30px 30px;
+      background-size: 54px 54px;
     }
   }
 
@@ -133,6 +135,16 @@
 
     &:hover,
     &:focus {
+      background-image: url("../img/sprite/arrow-along-hover.svg");
+      background-size: 30px 30px;
+      outline: none;
+      background-color: $color-default-white;
+      fill: #102654;
+      border-radius: 50%;
+      border: 1px solid #102654;
+    }
+
+    &:active {
       background-image: url("../img/sprite/arrow-along.svg");
       background-size: 30px 30px;
       outline: none;
@@ -143,12 +155,12 @@
   }
 
   @include vp-1199 {
-    top: 57%;
+    top: calc((100% + 30px)/2 - 30px);
 
     &--back {
       &:hover,
       &:focus {
-        background-image: url("../img/sprite/arrow-back.svg");
+        background-image: url("../img/sprite/arrow-back-hover.svg");
       }
     }
 
@@ -164,14 +176,13 @@
   }
 
   @include vp-767 {
-    top: 51%;
+    top: calc((100% + 20px)/2);
     width: 20px;
     height: 20px;
     background-size: 10px 19px;
 
     &--back {
       left: 10px;
-
       &:hover,
       &:focus {
         left: 10px;
@@ -194,7 +205,7 @@
   background-color: transparent;
   border: none;
   fill: #afafaf;
-  cursor: auto;
+  background-size: 16px 32px;
 }
 
 .reviews__swiper-button--along.reviews__button-disabled {
@@ -202,18 +213,17 @@
   background-color: transparent;
   border: none;
   fill: #afafaf;
-  cursor: auto;
+  background-size: 16px 32px;
 }
 
 .reviews__card {
-  padding: 50px 8px 30px 58px;
+  padding: 50px 8px 35px 58px;
   color: $color-default-white;
   background-color: rgba(28, 51, 116, 1);
-
   cursor: grab;
 
   @include vp-1199 {
-    padding: 50px 64px 30px 65px;
+    padding: 50px 64px 35px 65px;
   }
 
   @include vp-767 {
@@ -224,7 +234,7 @@
 
 .reviews__card-wrapper {
   display: grid;
-  grid-template-columns: 100px 350px;
+  grid-template-columns: 100px 330px;
   grid-template-rows: 20px 1fr;
   position: relative;
   padding: 0;
@@ -236,14 +246,13 @@
   @include vp-1199 {
     padding-left: 0;
     display: grid;
-    grid-template-columns: 90px 350px;
     grid-template-rows: 20px 1fr;
   }
 
   @include vp-767 {
     padding: 0;
     gap: 0;
-    grid-template-columns: 90px 90px;
+    grid-template-columns: auto;
     grid-template-rows: 80px 200px;
     justify-content: center;
   }
@@ -270,4 +279,8 @@
     margin: 0;
     margin-top: 5px;
   }
+}
+
+.reviews__swiper-wrapper {
+  background-color: #1c3374;
 }

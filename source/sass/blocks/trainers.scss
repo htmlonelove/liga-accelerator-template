@@ -60,7 +60,8 @@
 
   @include vp-767 {
     padding: 0;
-    width: 226px;
+    width: 78%;
+    height: auto;
   }
 }
 
@@ -68,17 +69,16 @@
   position: relative;
   margin: 0 auto;
   cursor: grab;
-  width: 260px;
 
   @include vp-767 {
-    height: 274px;
+    height: auto;
   }
 }
 
 .trainers__card img {
-  display: flex;
   object-fit: cover;
   background-color: $color-default-white;
+  width: 100%;
 }
 
 .trainers__swiper-button {

@@ -1,3 +1,44 @@
+.card {
+  padding: 60px 50px 55px 50px;
+  border: 7px solid transparent;
+  position: relative;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    padding: 60px 50px 55px 50px;
+    border: 7px solid;
+    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+
+    @include vp-1199 {
+      padding-top: 55px;
+    }
+
+    @include vp-767 {
+      padding: 40px 30px 50px;
+    }
+  }
+
+  &:default {
+    border: none;
+  }
+
+  &--active {
+    padding: 60px 50px 55px 50px;
+    border: 7px solid;
+    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
+    position: relative;
+  }
+
+  @include vp-1199 {
+    padding-top: 55px;
+  }
+
+  @include vp-767 {
+    padding: 40px 30px 50px;
+  }
+}
+
 .card__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
@@ -100,52 +141,20 @@
     outline: none;
   }
 
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border: transparent;
+    outline: none;
+  }
+
   &:disabled {
     background-color: $color-default-white;
     color: rgba(16, 38, 84, 0.1);
   }
-}
-
-.card {
-  padding: 60px 50px 55px 50px;
-  border: 7px solid transparent;
-  position: relative;
-  max-width: 360px;
-
-  &:hover,
-  &:focus {
-    padding: 60px 50px 55px 50px;
-    border: 7px solid;
-    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
-    max-width: 360px;
-
-    @include vp-1199 {
-      max-width: 442px;
-    }
-
-    @include vp-767 {
-      max-width: 290px;
-      padding: 35px 15px 0;
-    }
-  }
-
-  &:default {
-    border: none;
-  }
-
-  &--active {
-    padding: 60px 50px 55px 50px;
-    border: 7px solid;
-    border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
-    position: relative;
-  }
-
-  @include vp-1199 {
-    padding-top: 55px;
-  }
 
   @include vp-767 {
-    max-width: 290px;
-    padding: 35px 50px 50px 50px;
+    margin: 0 auto;
+    padding: 22px 40px;
   }
 }

@@ -9,8 +9,8 @@
   }
 
   @include vp-767 {
-    margin: 70px 15px 40px;
-    flex-direction: column;
+    margin: 85px auto 40px;
+    flex-wrap: wrap;
   }
 }
 
@@ -20,9 +20,11 @@
   padding: 50px 57px;
   display: flex;
   flex-direction: column;
+  max-width: 498px;
 
   @include vp-1199 {
     padding: 15px 10px;
+    max-width: 290px;
   }
 }
 
@@ -46,21 +48,10 @@
   }
 }
 
-.news__media {
-  background-image: image-set("../img/news/crossfit.jpg" 1x, "../img/news/crossfit@2x.jpg" 2x);
+.news img {
   background-color: #103aae;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 660px;
-
-  @include vp-1199 {
-    width: 386px;
-  }
-
-  @include vp-767 {
-    width: 100%;
-  }
+  object-fit: contain;
+  height: 100%;
 }
 
 .news__description {
@@ -72,12 +63,14 @@
   color: $color-default-white;
   letter-spacing: 0;
   margin: 5px 20px 45px;
+  padding-right: 50px;
 
   @include vp-1199 {
     font-size: 12px;
     line-height: 18px;
     margin: 0 35px 30px 20px;
     text-align: center;
+    padding: 0;
   }
 }
 
@@ -240,7 +233,7 @@
     border-width: 2px;
     width: 204px;
     min-height: 39px;
-    padding: 12px 51px;
+    padding: 12px 45px;
     font-size: 10px;
     font-weight: 700;
     line-height: 12px;

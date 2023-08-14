@@ -9,7 +9,8 @@
   }
 
   @include vp-767 {
-    padding: 0 15px 50px;
+    padding: 0 0 50px;
+    width: 290px;
   }
 }
 
@@ -21,7 +22,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
-  padding: 145px 0 35px;
+  padding: 140px 0 35px;
 
   @include vp-1199 {
     padding: 75px 0 40px;
@@ -33,10 +34,9 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
-    padding: 70px 0 42px;
+    padding: 70px 0 40px;
   }
 }
-
 
 .stocks__list {
   display: grid;
@@ -65,7 +65,6 @@
   }
 
   @include vp-767 {
-    margin: 0;
     display: flex;
     flex-direction: column;
   }
@@ -101,7 +100,7 @@
 }
 
 .stocks__about {
-  padding: 22px 28px 30px;
+  padding: 22px 28px 3px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -110,6 +109,16 @@
     background-color: #ed0233;
     color: $color-default-white;
     padding: 32px 45px 46px;
+  }
+}
+
+.stocks__about-left {
+  @include vp-1199 {
+    padding: 22px 55px 3px 28px;
+  }
+
+  @include vp-767 {
+    padding: 22px 30px 3px 30px;
   }
 }
 
@@ -134,7 +143,7 @@
   @include vp-767 {
     font-size: 26px;
     line-height: 50px;
-    letter-spacing: 0;
+    letter-spacing: -0.03em;
     text-align: center;
     margin: 0 auto;
   }
@@ -163,7 +172,6 @@
 
   @include vp-767 {
     text-align: center;
-
     span::after {
       content: "\A";
       white-space: normal;
@@ -177,7 +185,6 @@
     line-height: 25px;
     letter-spacing: 0;
     padding: 25px 0;
-
     @include vp-767 {
       text-align: center;
       margin: 0 auto;
@@ -214,6 +221,7 @@
   text-transform: uppercase;
   display: block;
   margin-top: auto;
+  padding: 0;
 
   &::after {
     content: "";
@@ -223,6 +231,7 @@
     bottom: -1px;
     left: 0;
     background-color: $color-default-white;
+    padding: 0;
   }
 
   &:hover {
@@ -253,7 +262,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-black;
-  padding-top: 70px;
+  margin-top: 65px;
+  padding: 7px 0;
 
   &:hover {
     color: $color-default-black;
@@ -270,25 +280,52 @@
   }
 
   @include vp-1199 {
-    padding-top: 50px;
+    margin-top: 62px;
   }
 
   @include vp-767 {
     text-align: center;
-    padding: 25px 0 12px;
+    margin: 25px auto;
   }
 }
 
-.stocks__photo {
-  background-image: image-set("../img/stocks/stocks-girl-in-blue.jpg" 1x, "../img/stocks/stocks-girl-in-blue@2x.jpg" 2x);
-  background-size: cover;
-  background-repeat: no-repeat;
+.stocks__link--left {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-black;
+  margin-top: 65px;
+  padding: 7px 0;
+
+  &:hover {
+    color: $color-default-black;
+    opacity: 50%;
+  }
+
+  &:focus {
+    border: 1px solid $color-default-black;
+  }
+
+  &:disabled {
+    color: $color-default-black;
+    opacity: 30%;
+  }
 
   @include vp-1199 {
-    height: 462px;
+    margin: 40px 0 20px;
   }
 
   @include vp-767 {
-    height: 299px;
+    text-align: center;
+    margin: 20px auto 25px;
   }
+}
+
+.stocks img {
+  background-color: #003eb7;
+  object-fit: fill;
+  height: 100%;
 }
