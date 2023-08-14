@@ -44,6 +44,7 @@
   display: block;
   width: 88px;
   height: 32px;
+  cursor: pointer;
 
   @include vp-1199 {
     width: 82px;

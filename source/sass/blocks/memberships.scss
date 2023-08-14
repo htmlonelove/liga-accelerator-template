@@ -92,7 +92,7 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 22px;
+    bottom: 5px;
     left: 50%;
     width: 344px;
     height: 2px;
@@ -135,7 +135,8 @@
   background-color: transparent;
   border: none;
   text-transform: none;
-  padding: 5px 10px;
+  padding: 5px 10px 0;
+  min-height: 47px;
 
   @include vp-1199 {
     font-size: 18px;
@@ -155,42 +156,15 @@
     min-height: 55px;
   }
 
-  &:active {
+  &:active,
+  &:hover,
+  &:focus {
     color: $color-default-black;
+    border-bottom: 2px solid #d10a42;
   }
 
   &:disabled {
     color: rgba(16, 38, 84, 0.1);
-  }
-}
-
-.memberships__control.is-active {
-  color: $color-default-black;
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 17px;
-    width: 68px;
-    height: 2px;
-    background-color: #d10a42;
-    left: 12%;
-  }
-
-  @include vp-1199 {
-    &::after {
-      left: -2px;
-      width: 68px;
-      bottom: 26px;
-    }
-  }
-
-  @include vp-767 {
-    &::after {
-      left: -2px;
-      width: 68px;
-      bottom: 17px;
-    }
   }
 }
 

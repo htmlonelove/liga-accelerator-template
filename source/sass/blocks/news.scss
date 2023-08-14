@@ -53,11 +53,9 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 660px;
-  height: 500px;
 
   @include vp-1199 {
     width: 386px;
-    height: 292px;
   }
 
   @include vp-767 {

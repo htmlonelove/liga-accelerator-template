@@ -8,6 +8,7 @@
 
   &:last-child {
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+    padding: 20px 0;
   }
 
   @include vp-1199 {
@@ -23,7 +24,7 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   line-height: 29px;
-  letter-spacing: 0;
+  letter-spacing: -0.025em;
   font-size: 24px;
   text-align: left;
   text-transform: none;
@@ -67,7 +68,8 @@
   &:hover,
   &:focus {
     &::after {
-      background: url("../img/sprite/open.svg") no-repeat;
+      background: url("../img/sprite/open-hover.svg") no-repeat;
+      border-radius: 50%;
 
       @include vp-767 {
         width: 32px;

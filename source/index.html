@@ -17,17 +17,19 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo">
-          <svg class="social__link__icon" width="122" height="22" aria-label="Логотип компании.">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
-      </div>
-    </header>
-    <main>
+    <div class="background">
+      <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo">
+            <svg class="header__link__icon" width="122" height="22" aria-label="Логотип компании.">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="header__link">
+            <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+          </div>
+        </div>
+      </header>
 
       <section class="hero">
         <div class="hero__wrapper">
@@ -56,6 +58,8 @@
           </div>
         </div>
       </section>
+    </div>
+    <main>
       <section class="gim">
         <div class="gim__wrapper">
           <div class="gim__container">
@@ -68,8 +72,8 @@
             <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
               в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
-          <div class="gim__media">
-            <div class="gim__photo">
+          <div class="gim__media media">
+            <div class="media__photo">
               <picture>
                 <source media="(max-width: 767px)" type="image/webp"
                   srcset="./img/gim/main.webp 1x, ./img/gim/main-mobile@2x.webp 2x" width="320" height="313">
@@ -85,10 +89,10 @@
                   alt="Фото тренажерного зала." width="660" height="401" loading="lazy">
               </picture>
             </div>
-            <div class="gym__video-wrapper">
-              <video class="gym__video" preload="auto" playsinline src="./img/gim/gim-video.mp4"
-                poster="./img/gim/video.jpg"></video>
-              <button class="gym__play gym__play-btn btn" aria-label="Кнопка воспроизведения видео.">
+            <div class="media__video">
+              <video class="media__video-wrapper" preload="auto" playsinline src="./img/gim/gim-video.mp4"
+                poster="./img/gim/video@2x.jpg"></video>
+              <button class="media__play media__play-btn btn" aria-label="Кнопка воспроизведения видео.">
               </button>
             </div>
           </div>
@@ -115,12 +119,12 @@
                   <p class="card__price" data-value="&#8381;">5000</p>
                   <a class="card__btn btn btn--blue" href="#">Купить абонемент</a>
                 </div>
-                <div class="memberships__catalog card card--active">
+                <div class="memberships__catalog card">
                   <h3 class="card__title">Дневной</h3>
                   <p class="card__period">с 8:00 до 17:00 </p>
                   <span class="card__preview-price">1700</span>
                   <p class="card__price" data-value="&#8381;">1700</p>
-                  <a class="card__btn btn btn--active">Купить абонемент</a>
+                  <a class="card__btn btn btn--blue">Купить абонемент</a>
                 </div>
                 <div class="memberships__catalog card">
                   <h3 class="card__title">Полный день</h3>
@@ -131,12 +135,12 @@
                 </div>
               </div>
               <div class="memberships__element" data-tabs="element">
-                <div class="memberships__catalog card card--active">
+                <div class="memberships__catalog card">
                   <h3 class="card__title">С тренером</h3>
                   <p class="card__period">12 занятий</p>
                   <span class="card__preview-price">5000</span>
                   <p class="card__price" data-value="&#8381;">5000</p>
-                  <a class="card__btn btn btn--active" href="#">Купить абонемент</a>
+                  <a class="card__btn btn btn--blue" href="#">Купить абонемент</a>
                 </div>
                 <div class="memberships__catalog card">
                   <h3 class="card__title">Дневной</h3>
@@ -168,12 +172,12 @@
                   <p class="card__price" data-value="&#8381;">9700</p>
                   <a class="card__btn btn btn--blue">Купить абонемент</a>
                 </div>
-                <div class="memberships__catalog card card--active">
+                <div class="memberships__catalog card">
                   <h3 class="card__title">Полный день</h3>
                   <p class="card__period">с 8:00 до 22:00 </p>
                   <span class="card__preview-price">9900</span>
                   <p class="card__price" data-value="&#8381;">9900</p>
-                  <a class="card__btn btn btn--active">Купить абонемент</a>
+                  <a class="card__btn btn btn--blue">Купить абонемент</a>
                 </div>
               </div>
             </div>
@@ -205,9 +209,21 @@
           <p class="news__description">Ежегодные соревнования по&nbsp;CrossFit</p>
           <a class="news__btn btn btn--transparent" href="#">Заполнить заявку</a>
         </div>
-        <div class="news__media">
-          <span class="visually-hidden">Фото новости.</span>
-        </div>
+        <picture>
+          <source media="(max-width: 767px)" type="image/webp"
+            srcset="./img/news/crossfit-mobile.webp 1x, ./img/news/crossfit-mobile@2x.webp 2x" width="290" height="292">
+          <source media="(max-width: 1199px)" type="image/webp"
+            srcset="./img/news/crossfit-tablet.webp 1x, ./img/news/crossfit-tablet@2x.webp 2x" width="386" height="292">
+          <source media="(min-width: 1200px)" type="image/webp"
+            srcset="./img/news/crossfit.jpg 1x, .img/news/crossfit@2x.webp 2x" width="660" height="500">
+
+          <source media="(max-width: 767px)"
+            srcset="./img/news/crossfit-mobile.jpg 1x, ./img/news/crossfit-mobile@2x.jpg 2x" width="290" height="292">
+          <source media="(max-width: 1199px)"
+            srcset="./img/news/crossfit-tablet.jpg 1x, ./img/news/crossfit-tablet@2x.jpg 2x" width="386" height="292">
+          <img src="./img/news/crossfit.jpg" srcset="./img/news/crossfit.jpg 1x, .img/news/crossfit@2x.jpg 2x"
+            width="660" height="500" alt="Фото crossfit тренировки." loading="lazy">
+        </picture>
       </section>
       <section class="trainers" id="trainers">
         <div class="trainers__wrapper">
@@ -217,7 +233,7 @@
               <div class="trainers__card swiper-slide">
                 <picture>
                   <source media="(max-width: 767px)" type="image/webp"
-                    srcset="./img/trainers/anna.webp 1x, ./img/trainers/anna@2x.webp 2x" width="268" height="294">
+                    srcset="./img/trainers/anna.webp 1x, ./img/trainers/anna@2x.webp 2x" width="268" height="274">
                   <source media="(max-width: 1199px)" type="image/webp"
                     srcset="./img/trainers/anna.webp 1x, ./img/trainers/anna@2x.webp 2x" width="268" height="294">
                   <source media="(min-width: 1200px)" type="image/webp"
@@ -504,16 +520,34 @@
                 </p>
                 <a class="stocks__link" href="#">подробнее</a>
               </div>
-              <div class="stocks__photo">
-                <span class="visually-hidden">Фото акции.</span>
-              </div>
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="./img/stocks/stocks-girl-in-blue-mobile.webp 1x, ./img/stocks/stocks-girl-in-blue-mobile@2x.webp 2x"
+                  width="290" height="299">
+                <source media="(max-width: 1199px)" type="image/webp"
+                  srcset="./img/stocks/stocks-girl-in-blue-tablet.webp 1x, ./img/stocks/stocks-girl-in-blue-tablet@2x.webp 2x"
+                  width="399" height="462">
+                <source type="image/webp"
+                  srcset="./img/stocks/stocks-girl-in-blue.webp 1x, ./img/stocks/stocks-girl-in-blue@2x.webp 2x"
+                  width="280" height="462">
+
+                <source media="(max-width: 767px)"
+                  srcset="./img/stocks/stocks-girl-in-blue-mobile.jpg 1x, ./img/stocks/stocks-girl-in-blue-mobile@2x.jpg 2x"
+                  width="290" height="299">
+                <source media="(max-width: 1199px)"
+                  srcset="./img/stocks/stocks-girl-in-blue-tablet.jpg 1x, ./img/stocks/stocks-girl-in-blue-tablet@2x.jpg 2x"
+                  width="399" height="462">
+                <img src="./img/stocks/stocks-girl-in-blue.jpg"
+                  srcset="./img/stocks/stocks-girl-in-blue.jpg 1x, ./img/stocks/stocks-girl-in-blue@2x.jpg 2x"
+                  alt="Фото девушки  в голубой форме." width="280" height="462" loading="lazy">
+              </picture>
             </div>
             <div class="stocks__item stocks__item--other">
               <div class="stocks__card">
-                <div class="stocks__about">
+                <div class="stocks__about stocks__about-left">
                   <h3 class="stocks__name">Месяц бесплатно</h3>
                   <p class="stocks__description">Приведи друга, получи абонемент в подарок</p>
-                  <a class="stocks__link stocks__link--other" href="#">подробнее</a>
+                  <a class="stocks__link stocks__link--left" href="#">подробнее</a>
                 </div>
               </div>
               <div class="stocks__card">
@@ -540,7 +574,7 @@
             <div class="faq__content" data-tabs="content">
               <div class="faq__element" data-tabs="element">
                 <div class="faq__accordion accordion" data-accordion="parent" data-single="">
-                  <div class="accordion__element is-active" data-accordion="element">
+                  <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">Как стать членом
                       фитнес-центра?</button>
                     <div class="accordion__content" data-accordion="content">
@@ -620,7 +654,8 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn accordion__btn-custom" type="button"
-                      data-accordion="button">Что такое семейный доступ и&nbsp;доступ для друзей?</button>
+                      data-accordion="button">Что
+                      такое семейный доступ и&nbsp;доступ для друзей?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
                         <p>Семейный доступ и&nbsp;доступ для друзей, это возможность членов клуба приглашать
@@ -646,7 +681,7 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">Проводятся&nbsp;ли
-                      в&nbsp;клубе какие-либо мероприятия или
+                      в&nbsp;клубе какие&#8209;либо мероприятия или
                       соревнования?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
@@ -658,7 +693,7 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <button class="accordion__button btn" type="button" data-accordion="button">Можно&nbsp;ли
-                      приобрести в&nbsp;центре спортивное питание?</button>
+                      приобрести в центре спортивное питание?</button>
                     <div class="accordion__content" data-accordion="content">
                       <div class="accordion__wrapper">
                         <p>Да. В&nbsp;фитнес баре нашего клуба вы&nbsp;можете найти большой выбор спортивного
@@ -756,12 +791,12 @@
                       srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
                       alt="Фото автора отзыва." width="80" height="80" loading="lazy">
                   </picture>
-                    <cite class="reviews__name">Анна Орлова</cite>
-                    <blockquote class="reviews__text">
-                      <p>«Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-                        обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей.»
-                      </p>
-                    </blockquote>
+                  <cite class="reviews__name">Анна Орлова</cite>
+                  <blockquote class="reviews__text">
+                    <p>«Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                      обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей.»
+                    </p>
+                  </blockquote>
                 </div>
               </div>
               <div class="reviews__card swiper-slide">
@@ -786,12 +821,12 @@
                       srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
                       alt="Фото автора отзыва." width="80" height="80" loading="lazy">
                   </picture>
-                    <cite class="reviews__name">Анна Орлова</cite>
-                    <blockquote class="reviews__text">
-                      <p>«Увидела рекламу Supergym, решила придти посмотреть зал и&nbsp;не&nbsp;пожалела. Очень
-                        уютно, хорошие тренеры и&nbsp;не&nbsp;далеко от&nbsp;дома.»
-                      </p>
-                    </blockquote>
+                  <cite class="reviews__name">Анна Орлова</cite>
+                  <blockquote class="reviews__text">
+                    <p>«Увидела рекламу Supergym, решила придти посмотреть зал и&nbsp;не&nbsp;пожалела. Очень
+                      уютно, хорошие тренеры и&nbsp;не&nbsp;далеко от&nbsp;дома.»
+                    </p>
+                  </blockquote>
                 </div>
               </div>
               <div class="reviews__card swiper-slide">
@@ -816,13 +851,13 @@
                       srcset="./img/reviews/anna-orlova.png 1x, ./img/reviews/anna-orlova@2x.png 2x"
                       alt="Фото автора отзыва." width="80" height="80" loading="lazy">
                   </picture>
-                    <cite class="reviews__name">Юлия Началова</cite>
-                    <blockquote class="reviews__text">
-                      <p>«Хожу в&nbsp;Supergym уже полгода. Очень удобно, что в&nbsp;клубе есть утренние
-                        и&nbsp;вечерние групповые программы. Можно успеть на&nbsp;интересные тренировки до&nbsp;или
-                        после работы.»
-                      </p>
-                    </blockquote>
+                  <cite class="reviews__name">Юлия Началова</cite>
+                  <blockquote class="reviews__text">
+                    <p>«Хожу в&nbsp;Supergym уже полгода. Очень удобно, что в&nbsp;клубе есть утренние
+                      и&nbsp;вечерние групповые программы. Можно успеть на&nbsp;интересные тренировки до&nbsp;или
+                      после работы.»
+                    </p>
+                  </blockquote>
                 </div>
               </div>
             </div>
@@ -857,24 +892,28 @@
           <div class="form-contacts__contacts contacts">
             <div class="contacts__wrapper">
               <h2 class="contacts__title">Контакты</h2>
-              <ul class="contacts__list">
-                <li class="contacts__item contacts__item--adress">
-                  <h3>Адрес:</h3>
-                  <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
-                </li>
-                <li class="contacts__item contacts__item--tell">
-                  <h3>Телефон:</h3>
-                  <a href="tel:88005555555">8-800-555-55-55</a>
-                </li>
-                <li class="contacts__item contacts__item--timetable">
-                  <h3>График работы:</h3>
-                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
-                </li>
-                <li class="contacts__item contacts__item--mail">
-                  <h3>Email:</h3>
-                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                </li>
-              </ul>
+              <div class="contacts__list">
+                <div class="contacts__list-left">
+                  <div class="contacts__item contacts__item--adress">
+                    <h3>Адрес:</h3>
+                    <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+                  </div>
+                  <div class="contacts__item contacts__item--timetable">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  </div>
+                </div>
+                <div class="contacts__list-right">
+                  <div class="contacts__item contacts__item--tell">
+                    <h3>Телефон:</h3>
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
+                  <div class="contacts__item contacts__item--mail">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -882,31 +921,33 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
+          <a class="footer__logo">
+            <svg class="footer__link__icon" width="88" height="22" aria-label="Логотип компании.">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
         <nav class="footer__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="footer__logo">
-                <svg class="social__link__icon" width="88" height="22" aria-label="Логотип компании.">
-                  <use xlink:href="img/sprite.svg#logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="navigation__item">
+          <div class="navigation__list navigation__part">
+          <div class="navigation__part-left">
+            <div class="navigation__item">
               <a class="navigation__link" href="#">Услуги</a>
-            </li>
-            <li class="navigation__item">
+            </div>
+            <div class="navigation__item">
               <a class="navigation__link" href="#">Абонементы</a>
-            </li>
-            <li class="navigation__item">
+            </div>
+          </div>
+            <div class="navigation__part-right">
+            <div class="navigation__item">
               <a class="navigation__link" href="#">Акции</a>
-            </li>
-            <li class="navigation__item">
+            </div>
+            <div class="navigation__item">
               <a class="navigation__link" href="#">Тренеры</a>
-            </li>
-            <li class="navigation__item">
+            </div>
+            <div class="navigation__item">
               <a class="navigation__link" href="#">Расписание</a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          </divs>
         </nav>
         <div class="footer__social social">
           <b class="social__title visually-hidden">Ищите нас в соцсетях</b>
@@ -975,3 +1016,4 @@
 </body>
 
 </html>
+

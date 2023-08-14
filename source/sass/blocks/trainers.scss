@@ -100,6 +100,16 @@
 
     &:hover,
     &:focus {
+      background-image: url("../img/sprite/arrow-back-hover.svg");
+      background-size: auto;
+      outline: none;
+      background-color: $color-default-white;
+      border-radius: 50%;
+      color: $color-default-white;
+      border: 1px solid $color-default-black;
+    }
+
+    &:active {
       background-image: url("../img/sprite/arrow-back.svg");
       background-size: 30px 30px;
       outline: none;
@@ -117,6 +127,16 @@
 
     &:hover,
     &:focus {
+      background-image: url("../img/sprite/arrow-along-hover.svg");
+      background-size: auto;
+      outline: none;
+      background-color: $color-default-white;
+      border-radius: 50%;
+      color: $color-default-white;
+      border: 1px solid $color-default-black;
+    }
+
+    &:active {
       background-image: url("../img/sprite/arrow-along.svg");
       background-size: 30px 30px;
       outline: none;

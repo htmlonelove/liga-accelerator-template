@@ -1195,6 +1195,13 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/AlumniSans-500.woff2") format("woff2"), url("../fonts/AlumniSans-500.woff") format("woff");
 }
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Rouble";
+  font-display: swap;
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("ttf");
+}
 *,
 *::before,
 *::after {
@@ -2286,6 +2293,7 @@ button,
   display: block;
   width: 88px;
   height: 32px;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   .footer__logo svg {
@@ -2429,7 +2437,7 @@ button,
   color: #ffffff;
 }
 .navigation__link:hover {
-  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .navigation__link:focus {
   border: 1px solid #ffffff;
@@ -3086,7 +3094,7 @@ button,
 .memberships__controls::after {
   position: absolute;
   content: "";
-  bottom: 22px;
+  bottom: 5px;
   left: 50%;
   width: 344px;
   height: 2px;
@@ -3129,7 +3137,8 @@ button,
   background-color: transparent;
   border: none;
   text-transform: none;
-  padding: 5px 10px;
+  padding: 5px 10px 0;
+  min-height: 47px;
 }
 @media (max-width: 1199px) {
   .memberships__control {
@@ -3151,38 +3160,12 @@ button,
     min-height: 55px;
   }
 }
-.memberships__control:active {
+.memberships__control:active, .memberships__control:hover, .memberships__control:focus {
   color: #102654;
+  border-bottom: 2px solid #d10a42;
 }
 .memberships__control:disabled {
   color: rgba(16, 38, 84, 0.1);
-}
-
-.memberships__control.is-active {
-  color: #102654;
-}
-.memberships__control.is-active::after {
-  position: absolute;
-  content: "";
-  bottom: 17px;
-  width: 68px;
-  height: 2px;
-  background-color: #d10a42;
-  left: 12%;
-}
-@media (max-width: 1199px) {
-  .memberships__control.is-active::after {
-    left: -2px;
-    width: 68px;
-    bottom: 26px;
-  }
-}
-@media (max-width: 767px) {
-  .memberships__control.is-active::after {
-    left: -2px;
-    width: 68px;
-    bottom: 17px;
-  }
 }
 
 .memberships__content {
@@ -3500,12 +3483,10 @@ button,
   background-position: center;
   background-repeat: no-repeat;
   width: 660px;
-  height: 500px;
 }
 @media (max-width: 1199px) {
   .news__media {
     width: 386px;
-    height: 292px;
   }
 }
 @media (max-width: 767px) {
@@ -3882,6 +3863,15 @@ button,
   fill: #afafaf;
 }
 .trainers__swiper-button--back:hover, .trainers__swiper-button--back:focus {
+  background-image: url("../img/sprite/arrow-back-hover.svg");
+  background-size: auto;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  border: 1px solid #102654;
+}
+.trainers__swiper-button--back:active {
   background-image: url("../img/sprite/arrow-back.svg");
   background-size: 30px 30px;
   outline: none;
@@ -3898,6 +3888,15 @@ button,
   fill: #afafaf;
 }
 .trainers__swiper-button--along:hover, .trainers__swiper-button--along:focus {
+  background-image: url("../img/sprite/arrow-along-hover.svg");
+  background-size: auto;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  border: 1px solid #102654;
+}
+.trainers__swiper-button--along:active {
   background-image: url("../img/sprite/arrow-along.svg");
   background-size: 30px 30px;
   outline: none;
@@ -4875,6 +4874,7 @@ button,
 }
 .accordion__element:last-child {
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  padding: 20px 0;
 }
 @media (max-width: 1199px) {
   .accordion__element {
@@ -4891,7 +4891,7 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   line-height: 29px;
-  letter-spacing: 0;
+  letter-spacing: -0.025em;
   font-size: 24px;
   text-align: left;
   text-transform: none;
@@ -4937,7 +4937,8 @@ button,
   }
 }
 .accordion__button:hover::after, .accordion__button:focus::after {
-  background: url("../img/sprite/open.svg") no-repeat;
+  background: url("../img/sprite/open-hover.svg") no-repeat;
+  border-radius: 50%;
 }
 @media (max-width: 767px) {
   .accordion__button:hover::after, .accordion__button:focus::after {
@@ -5239,6 +5240,7 @@ button,
   background-color: transparent;
   border: none;
   fill: #afafaf;
+  cursor: auto;
 }
 
 .reviews__swiper-button--along.reviews__button-disabled {
@@ -5246,6 +5248,7 @@ button,
   background-color: transparent;
   border: none;
   fill: #afafaf;
+  cursor: auto;
 }
 
 .reviews__card {
