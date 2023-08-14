@@ -3248,6 +3248,7 @@ button,
 }
 @media (max-width: 767px) {
   .memberships__element.is-active {
+    width: 100%;
     gap: 35px;
   }
 }
@@ -3281,6 +3282,7 @@ button,
 }
 @media (max-width: 767px) {
   .memberships__catalog {
+    max-width: 100%;
     padding: 51px 24px 0;
   }
 }
@@ -3304,6 +3306,7 @@ button,
 }
 @media (max-width: 767px) {
   .card:hover, .card:focus {
+    width: 100%;
     padding: 40px 30px 50px;
   }
 }
@@ -3324,6 +3327,7 @@ button,
 }
 @media (max-width: 767px) {
   .card {
+    width: 100%;
     padding: 40px 30px 50px;
   }
 }

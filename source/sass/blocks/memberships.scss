@@ -228,6 +228,7 @@
   }
 
   @include vp-767 {
+    width: 100%;
     gap: 35px;
   }
 }
@@ -253,6 +254,7 @@
   }
 
   @include vp-767 {
+    max-width: 100%;
     padding: 51px 24px 0;
   }
 }
