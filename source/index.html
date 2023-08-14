@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Фитнес центр SUPERGYM">
   <title>SUPERGYM</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
   <!-- <link rel="icon" href="favicon.ico" sizes="32x32"> -->
@@ -44,43 +45,43 @@
               </div>
               <a class="intro__link-buy button" href="#">Купить абонемент</a>
             </div>
-            <img src="img/intro-background-desktop.png" width="500" height="556"
-              srcset="img/intro-background-desktop@2x.png 2x" alt="">
+            <img src="img/background/intro-background-desktop.png" width="500" height="556"
+              srcset="img/background/intro-background-desktop@2x.png 2x" alt="">
           </div>
         </div>
       </section>
       <section class="gym">
-        <div class="wrapper">
-          <div class="gym__wrapper">
-            <div class="gym__text">
-              <div class="gym__title">
-                <h2>Тренажерный зал</h2>
-              </div>
-              <div class="gym__subtitle">
-                <h3>Просторный зал площадью 900 кв/м</h3>
-              </div>
-              <div class="gym__description gym__description--supergym">
-                <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-                  Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              </div>
-              <div class="gym__description">
-                <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
-                  есть несколько оборудованных залов для различных видов групповых занятий.</p>
-              </div>
+        <!-- <div class="wrapper"> -->
+        <div class="gym__wrapper">
+          <div class="gym__text">
+            <div class="gym__title">
+              <h2>Тренажерный зал</h2>
             </div>
-            <img src="img/gym-background-desktop.jpg" width="660" height="401"
-              srcset="img/gym-background-desktop@2x.jpg 2x" alt="">
+            <div class="gym__subtitle">
+              <h3>Просторный зал площадью 900 кв/м</h3>
+            </div>
+            <div class="gym__description gym__description--supergym">
+              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+                Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            </div>
+            <div class="gym__description">
+              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре
+                есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
           </div>
-          <div class="gym__video-wrapper">
-            <video class="gym__video" preload="none"
-              src="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" width="364" height="228" controls
-              poster="img/video-background-desktop.png"></video>
-            <button class="gym__video-button">
-              <img class="gym__button-image" src="img/svg/video-button.svg" width="70" height="70" alt="">
-              <img class="gym__button-border" src="img/svg/video-button-border.svg" width="100" height="100" alt="">
-            </button>
-          </div>
+          <img src="img/background/gym-background-desktop.jpg" width="660" height="401"
+            srcset="img/background/gym-background-desktop@2x.jpg 2x" alt="">
         </div>
+        <div class="gym__video-wrapper">
+          <video class="gym__video" preload="none"
+            src="https://www.youtube.com/watch?v=9TZXsZItgdw&ab_channel=HTMLAcademy" width="364" height="228" controls
+            poster="img/video-background-desktop.png"></video>
+          <button class="gym__video-button">
+            <img class="gym__button-image" src="img/svg/video-button.svg" width="70" height="70" alt="">
+            <img class="gym__button-border" src="img/svg/video-button-border.svg" width="100" height="100" alt="">
+          </button>
+        </div>
+        <!-- </div> -->
       </section>
       <section class="gym-membership">
         <div class="wrapper">
@@ -277,11 +278,22 @@
                 <div class="super-games__date-time">
                   <div class="super-games__time-table">
                     <p>Дата</p>
-                    <time class="super-games__number" datetime="2019-03-07">7 <span class="super-games__date-month">марта<br>2019</span></time>
+                    <time class="super-games__date-wrapper" datetime="2019-03-07">
+                      <div class="super-games__date">
+                        <p>7</p>
+                      </div>
+                      <div class="super-games__month-year">
+                        <p>марта<br>2019</p>
+                      </div>
+                    </time>
                   </div>
                   <div class="super-games__time-table">
                     <p>Время</p>
-                    <time class="super-games__number" datetime="2019-03-07T12:00">12:00</time>
+                    <time class="super-games__date-wrapper" datetime="2019-03-07T12:00">
+                      <div class="super-games__date">
+                        <p>12:00</p>
+                      </div>
+                    </time>
                   </div>
                 </div>
               </div>
@@ -290,9 +302,429 @@
               </div>
               <a class="super-games__link-application button" href="#">заполнить заявку</a>
             </div>
-            <img class="super-games__images" src="img/super-games-background-desktop.jpg" width="660" height="500"
-              srcset="img/super-games-background-desktop@2x.jpg" alt="">
+            <img class="super-games__images" src="img/background/super-games-background-desktop.jpg" width="660"
+              height="500" srcset="img/background/super-games-background-desktop@2x.jpg" alt="">
           </div>
+        </div>
+      </section>
+      <section class="trainer">
+        <div class="trainer__wrapper">
+          <div class="trainer__title">
+            <h2>Тренеры</h2>
+          </div>
+          <div class="trainer__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-1, img/slides/slide-1@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-1.jpg" width="260" height="294" srcset="img/slides/slide-1@2x.jpg 2x"
+                    alt=".">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Анна&nbspПавлова</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-2, img/slides/slide-2@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-2.jpg" width="260" height="294" srcset="img/slides/slide-2@2x.jpg 2x"
+                    alt="">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Алексей&nbspЛавров</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-3, img/slides/slide-3@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-3.jpg" width="260" height="294" srcset="img/slides/slide-3@2x.jpg 2x"
+                    alt="">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Александр&nbspПашков</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-4, img/slides/slide-4@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-4.jpg" width="260" height="294" srcset="img/slides/slide-4@2x.jpg 2x"
+                    alt="">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Мария&nbspКетова</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-1, img/slides/slide-1@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-1.jpg" width="260" height="294" srcset="img/slides/slide-1@2x.jpg 2x"
+                    alt=".">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Анна&nbspПавлова</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-2, img/slides/slide-2@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-2.jpg" width="260" height="294" srcset="img/slides/slide-2@2x.jpg 2x"
+                    alt="">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Алексей&nbspЛавров</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-3, img/slides/slide-3@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-3.jpg" width="260" height="294" srcset="img/slides/slide-3@2x.jpg 2x"
+                    alt="">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Александр&nbspПашков</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 1366px)"
+                    srcset="img/slides/slide-2-desktop.webp 1x, img/slides/slide-2-desktop@2x.webp 2x" width="600"
+                    height="600">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/slides/slide-2-tablet.webp 1x, img/slides/slide-2-tablet@2x.webp 2x" width="476" height="476">
+                  <source type="image/webp" srcset="img/slides/slide-2-mobail.webp 1x, img/slides/slide-2-mobail@2x.webp 2x"
+                    width="280" height="280"> -->
+                  <source media="(max-width: 320px)" srcset="img/slides/slide-4, img/slides/slide-4@2x.png 2x"
+                    width="226" height="274">
+                  <img src="img/slides/slide-4.jpg" width="260" height="294" srcset="img/slides/slide-4@2x.jpg 2x"
+                    alt="">
+                </picture>
+                <div class="swiper-slide__title">
+                  <h3>Мария&nbspКетова</h3>
+                </div>
+                <span class="swiper-slide__description">
+                  <div class="swiper-slide__subtitle">
+                    <h4>CrossFit</h4>
+                  </div>
+                  <ul class="swiper-slide__list">
+                    <li class="swiper-slide__item">
+                      Certified Level 3 Trainer
+                    </li>
+                    <li class="swiper-slide__item">
+                      Победитель чемпионата<br>России по CrossFit
+                    </li>
+                    <li class="swiper-slide__item">
+                      Опыт — 6 лет
+                    </li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <div class="advantages__title">
+            <h2>Наши преимущества</h2>
+          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item advantage">
+              <div class="advantage__number-wrapper">
+                <div class="advantage__number">
+                  <p>900</p>
+                </div>
+                <div class="advantage__number-text">
+                  <p>кв/м</p>
+                </div>
+              </div>
+              <div class="advantage__text-wrapper">
+                <div class="advantage__title">
+                  <h3>Площадь</h3>
+                </div>
+                <div class="advantage__description">
+                  <p>Занимайтесь без очередей<br>и толпучки</p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__number-wrapper">
+                <div class="advantage__number">
+                  <p>70</p>
+                </div>
+                <div class="advantage__number-text">
+                  <p>машин</p>
+                </div>
+              </div>
+              <div class="advantage__text-wrapper">
+                <div class="advantage__title">
+                  <h3>Собственная парковка</h3>
+                </div>
+                <div class="advantage__description">
+                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages__item advantage advantage--center">
+              <div class="advantage__number advantage__number--center">
+                <p>100</p>
+              </div>
+              <div class="advantage__title advantage__title--center">
+                <h3>Тренажеров</h3>
+              </div>
+              <div class="advantage__description advantage__description--center">
+                <p>Современные тренажеры<br>на все группы мышц</p>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__number-wrapper">
+                <div class="advantage__number">
+                  <p>350</p>
+                </div>
+                <div class="advantage__number-text">
+                  <p>мест</p>
+                </div>
+              </div>
+              <div class="advantage__text-wrapper">
+                <div class="advantage__title">
+                  <h3>Комфорт</h3>
+                </div>
+                <div class="advantage__description">
+                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__number-wrapper">
+                <div class="advantage__number">
+                  <p>5+</p>
+                </div>
+                <div class="advantage__number-text">
+                  <p>лет</p>
+                </div>
+              </div>
+              <div class="advantage__text-wrapper">
+                <div class="advantage__title">
+                  <h3>Тренерский опыт</h3>
+                </div>
+                <div class="advantage__description">
+                  <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="promotions">
+        <div class="promotions__wrapper">
+          <div class="promotions__title">
+            <p>Акции</p>
+          </div>
+          <ul class="promotions__list">
+            <li class="promotions__item promotion promotion--big">
+              <div class="promotion__text">
+                <div class="promotion__title promotion__title--big">
+                  <h3>Год</h3>
+                </div>
+                <div class="promotion__price">
+                  <p>4999</p>
+                </div>
+                <div class="promotion__description promotion__description--big">
+                  <p>Безлимитный абонемент в тренажерный зал</p>
+                </div>
+                <a class="promotion__link promotion__link--big" href="#">подробнее</a>
+              </div>
+              <img class="promotion__image" src="img/promotion.jpg" width="280" height="462" alt=""
+                srcset="img/promotion@2x.jpg 2x">
+            </li>
+            <li class="promotions__item promotion">
+              <div class="promotion__title">
+                <h3>Месяц бесплатно</h3>
+              </div>
+              <div class="promotion__description">
+                <p>Приведи друга, получи абонемент в подарок</p>
+              </div>
+              <a class="promotion__link" href="#">подробнее</a>
+            </li>
+            <li class="promotions__item promotion">
+              <div class="promotion__title">
+                <h3>Скидка 20%</h3>
+              </div>
+              <div class="promotion__description">
+                <p>Корпоративный фитнес с командой</p>
+              </div>
+              <a class="promotion__link" href="#">подробнее</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -331,8 +763,7 @@
     </div> -->
 
   <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <!-- <script src="js/main.js" type="module"></script> -->
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>

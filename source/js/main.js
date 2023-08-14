@@ -2,8 +2,40 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
+// import {swiper} from './vendor';
+// import Swiper from 'swiper';
+
 
 // ---------------------------------
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  slidesPerView: 4,
+  simulateTouch: true,
+  touchRatio: 1,
+  watchOverflow: true,
+  spaceBetween: 40,
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //   },
+  //   1200: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+
+});
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -24,7 +56,9 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
   initTabs();
+  swiper();
 });
+
 
 // ---------------------------------
 
