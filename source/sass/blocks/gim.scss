@@ -68,7 +68,7 @@
     font-size: 42px;
     line-height: 50px;
     text-align: center;
-    padding: 25px 0 0 15px;
+    padding: 25px 0 0 0;
   }
 
   @include vp-767 {
@@ -91,7 +91,7 @@
 
   @include vp-1199 {
     text-align: center;
-    padding: 0 0 20px 13px;
+    padding: 0 0 25px 13px;
   }
 
   @include vp-767 {
@@ -139,71 +139,67 @@
 
   @include vp-767 {
     padding: 0;
-  }
-}
-
-.gim__photo {
-  width: 660px;
-  margin: 0 0 0 50px;
-
-  @include vp-1199 {
-    width: 678px;
-    margin: 0 15px;
-  }
-
-  @include vp-767 {
-    width: 320px;
     margin: 0;
   }
 }
 
-.gim__photo img {
-  height: 401px;
+.media__photo {
+  margin: 0 0 0 50px;
 
   @include vp-1199 {
-    height: 345px;
+    margin: 0 15px;
   }
 
   @include vp-767 {
-    width: 320px;
-    height: 313px;
+    margin: 0 auto;
   }
 }
 
-.gym__video-wrapper {
+.media__photo img {
+  object-fit: fill;
+  min-height: 401px;
+
+  @include vp-1199 {
+    min-height: 345px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 313px;
+  }
+}
+
+.media__video {
   position: relative;
   margin: -112px 0 0 -12px;
+  width: 364px;
 
   @include vp-1199 {
-    margin: -80px 0 0 220px;
+    margin: -85px 0 0 220px;
+    width: 266px;
   }
 
   @include vp-767 {
-    margin: 40px 0 0 0;
+    margin: 40px auto 0;
+    width: 100%;
   }
 }
 
-.gym__video {
-  width: 364px;
-  height: 228px;
+.media__video-wrapper {
   object-fit: cover;
   background-image: image-set("../img/gim/video.jpg" 1x, "../img/gim/video@2x.jpg" 2x);
+  margin: 0 auto;
+  min-height: 228px;
 
   @include vp-1199 {
-    width: 266px;
-    height: 167px;
-  }
-
-  @include vp-767 {
-    width: 320px;
-    height: 167px;
+    min-height: 167px;
   }
 }
 
-.gym__play-btn {
+.media__play-btn {
   position: absolute;
-  top: 28%;
-  left: 18.3%;
+  top: calc((100% + 100px)/2 - 100px);
+  left: calc((100% + 100px)/2 - 100px);
   margin: 0;
   padding: 0;
   width: 100px;
@@ -224,14 +220,14 @@
   @include vp-1199 {
     width: 73px;
     height: 73px;
-    top: 28%;
-    left: 19.6%;
+    top: calc((100% + 76px)/2 - 76px);
+    left: calc((100% + 76px)/2 - 76px);
     margin: 0;
     padding: 0;
     background-size: cover;
   }
 
   @include vp-767 {
-    left: 39%;
+    left: calc((100% + 76px)/2 - 76px);
   }
 }
