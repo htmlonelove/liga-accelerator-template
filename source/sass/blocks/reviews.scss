@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1366px;
   position: relative;
-  padding: 120px 100px 120px;
+  padding: 115px 100px 120px;
   margin: 0 auto;
 
   @include vp-1199 {
@@ -25,7 +25,7 @@
 
   @include vp-1199 {
     font-size: 42px;
-    margin: 70px 0 30px;
+    margin: 80px 0 30px;
   }
 
   @include vp-767 {
@@ -44,7 +44,7 @@
 
   @include vp-767 {
     min-width: 200px;
-    margin: 0 30px;
+    margin: 0 auto;
   }
 }
 
@@ -60,6 +60,8 @@
 
   @include vp-1199 {
     padding: 0;
+    padding-top: 7px;
+    letter-spacing: -0.03em;
   }
 
   @include vp-767 {

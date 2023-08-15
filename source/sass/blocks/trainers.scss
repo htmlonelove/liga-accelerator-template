@@ -14,7 +14,7 @@
   }
 
   @include vp-767 {
-    padding: 6px 15px 50px;
+    padding: 6px 15px 65px;
   }
 }
 
@@ -72,6 +72,7 @@
 
   @include vp-767 {
     height: auto;
+    min-height: 274px;
   }
 }
 
@@ -191,7 +192,7 @@
 .trainers__info {
   display: none;
   position: absolute;
-  padding: 55px 40px 50px;
+  padding: 60px 30px 50px;
   top: 0;
   left: 0;
   width: 260px;
@@ -199,14 +200,15 @@
   color: $color-default-white;
   background-color: rgba(16, 38, 84, 0.89);
   font-size: 14px;
-  line-height: 22px;
+  line-height: 28px;
+  overflow: scroll;
 
   @include vp-1199 {
     width: 268px;
   }
 
   @include vp-767 {
-    padding: 46px 20px 28px;
+    padding: 20px 10px 28px;
     width: 226px;
   }
 }
@@ -221,10 +223,6 @@
 
 .trainers__card:hover .trainers__info {
   display: block;
-
-  @include vp-1199 {
-    display: none;
-  }
 }
 
 .trainers__card:focus .trainers__info {
@@ -249,16 +247,22 @@
 
 .trainers__info > p {
   position: relative;
-  left: -40px;
-  margin: 0 0 2px;
+  left: -30px;
+  margin: 10px 0 2px;
   font-weight: 700;
   text-align: center;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 6px;
+  letter-spacing: 0.03em;
+
+  @include vp-767 {
+    left: -20px;
+    margin: 40px 0 -5px 10px;
+  }
 }
 
 .info__direction {
-  margin: 0 0 34px;
+  margin: 0 0 25px;
   display: block;
   font-size: 16px;
   text-align: center;
@@ -276,6 +280,7 @@
   flex-direction: column;
   list-style-type: none;
   row-gap: 12px;
+  scroll-behavior: auto;
 
   @include vp-767 {
     padding-left: 31px;

@@ -2247,11 +2247,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 70px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 105px 0 30px;
+  padding: 0 105px;
 }
 @media (max-width: 1199px) {
   .footer__wrapper {
@@ -2265,7 +2267,7 @@ button,
 @media (max-width: 767px) {
   .footer__wrapper {
     gap: 5px;
-    padding: 45px 16px 35px;
+    padding: 2px 16px 35px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2293,12 +2295,14 @@ button,
   display: block;
   width: 88px;
   height: 32px;
+  margin: 45px 0 0 0;
   cursor: pointer;
 }
 @media (max-width: 1199px) {
   .footer__logo svg {
     width: 82px;
     height: 18px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -2306,6 +2310,12 @@ button,
     width: 68px;
     height: 15px;
   }
+}
+
+.footer__link__icon {
+  height: 13.89px;
+  width: 13.89px;
+  margin: 5.55px 0;
 }
 
 .social {
@@ -2380,8 +2390,12 @@ button,
 }
 
 .navigation {
-  display: block;
-  padding: 33px 0 0 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 0 0 0;
 }
 @media (max-width: 1199px) {
   .navigation {
@@ -2390,15 +2404,10 @@ button,
 }
 @media (max-width: 767px) {
   .navigation {
+    display: block;
     padding: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 20px;
     max-width: 90px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    padding-top: 20px;
     top: 32px;
     left: -42px;
   }
@@ -2409,12 +2418,19 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 40px;
+  min-width: 420px;
+  max-width: 500px;
+  padding: 18px 0 0 5px;
 }
 @media (max-width: 1199px) {
   .navigation__list {
+    max-width: 420px;
+    min-width: 400px;
     margin: 0;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0 15px;
     gap: 30px;
   }
 }
@@ -2428,8 +2444,8 @@ button,
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-height: 120px;
-    gap: 24px;
-    margin-bottom: 5px;
+    min-width: 300px;
+    max-width: 320px;
   }
 }
 
@@ -2464,21 +2480,56 @@ button,
     font-weight: 400;
     line-height: 19px;
     text-align: left;
-    min-width: 135px;
+    padding-bottom: 20px;
   }
 }
 
-.navigation__item:first-of-type {
-  padding-right: 235px;
+.navigation__part-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px;
 }
 @media (max-width: 1199px) {
-  .navigation__item:first-of-type {
-    padding-right: 35px;
+  .navigation__part-left {
+    gap: 32px;
   }
 }
 @media (max-width: 767px) {
-  .navigation__item:first-of-type {
-    padding-right: 60px;
+  .navigation__part-left {
+    display: block;
+  }
+}
+
+.navigation__part-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 40px;
+}
+@media (max-width: 1199px) {
+  .navigation__part-right {
+    gap: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__part-right {
+    display: block;
+    margin: -35px 0 0 -30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation__item:last-child {
+    padding-bottom: 10px;
   }
 }
 
@@ -2600,8 +2651,9 @@ button,
   .hero__title {
     font-weight: 600;
     padding-top: 25px;
-    padding-right: 15px;
     margin: -20px 0 20px;
+    position: relative;
+    left: -15px;
   }
 }
 
@@ -3142,7 +3194,8 @@ button,
   background-color: transparent;
   border: none;
   text-transform: none;
-  padding: 5px 10px;
+  padding: 10px 10px 6px 12px;
+  min-height: 67px;
 }
 @media (max-width: 1199px) {
   .memberships__control {
@@ -3209,10 +3262,12 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 100px;
 }
 @media (max-width: 1199px) {
   .memberships__content {
     margin: 0 148px;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3322,7 +3377,7 @@ button,
 }
 @media (max-width: 1199px) {
   .card {
-    padding-top: 55px;
+    padding: 55px 90px 55px 90px;
   }
 }
 @media (max-width: 767px) {
@@ -3799,7 +3854,7 @@ button,
 }
 @media (max-width: 767px) {
   .trainers__wrapper {
-    padding: 6px 15px 50px;
+    padding: 6px 15px 65px;
   }
 }
 
@@ -3863,6 +3918,7 @@ button,
 @media (max-width: 767px) {
   .trainers__card {
     height: auto;
+    min-height: 274px;
   }
 }
 
@@ -3978,7 +4034,7 @@ button,
 .trainers__info {
   display: none;
   position: absolute;
-  padding: 55px 40px 50px;
+  padding: 60px 30px 50px;
   top: 0;
   left: 0;
   width: 260px;
@@ -3986,7 +4042,8 @@ button,
   color: #ffffff;
   background-color: rgba(16, 38, 84, 0.89);
   font-size: 14px;
-  line-height: 22px;
+  line-height: 28px;
+  overflow: scroll;
 }
 @media (max-width: 1199px) {
   .trainers__info {
@@ -3995,7 +4052,7 @@ button,
 }
 @media (max-width: 767px) {
   .trainers__info {
-    padding: 46px 20px 28px;
+    padding: 20px 10px 28px;
     width: 226px;
   }
 }
@@ -4010,11 +4067,6 @@ button,
 
 .trainers__card:hover .trainers__info {
   display: block;
-}
-@media (max-width: 1199px) {
-  .trainers__card:hover .trainers__info {
-    display: none;
-  }
 }
 
 .trainers__card:focus .trainers__info {
@@ -4040,16 +4092,23 @@ button,
 
 .trainers__info > p {
   position: relative;
-  left: -40px;
-  margin: 0 0 2px;
+  left: -30px;
+  margin: 10px 0 2px;
   font-weight: 700;
   text-align: center;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 6px;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 767px) {
+  .trainers__info > p {
+    left: -20px;
+    margin: 40px 0 -5px 10px;
+  }
 }
 
 .info__direction {
-  margin: 0 0 34px;
+  margin: 0 0 25px;
   display: block;
   font-size: 16px;
   text-align: center;
@@ -4073,6 +4132,7 @@ button,
           flex-direction: column;
   list-style-type: none;
   row-gap: 12px;
+  scroll-behavior: auto;
 }
 @media (max-width: 767px) {
   .trainers__about {
@@ -4085,7 +4145,7 @@ button,
 }
 
 .advantages {
-  padding: 102px 0 45px;
+  padding: 107px 0 45px;
   background-color: #f8f9fc;
 }
 @media (max-width: 1199px) {
@@ -4131,7 +4191,7 @@ button,
   .advantages__title {
     font-size: 32px;
     line-height: 38px;
-    padding: 43px 10px 0 33px;
+    padding: 43px 10px 0 0;
   }
 }
 
@@ -4142,7 +4202,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 240px 1fr;
   grid-template-columns: 1fr 240px 1fr;
-  gap: 56px 60px;
+  gap: 56px 52px;
   max-width: 1040px;
   list-style: none;
 }
@@ -4266,9 +4326,9 @@ button,
   font-size: 22px;
   font-weight: 700;
   line-height: 33px;
-  letter-spacing: 0;
+  letter-spacing: -0.03em;
   text-align: left;
-  margin: 18px 0 2px 2px;
+  margin: 15px 0 2px 2px;
 }
 @media (max-width: 1199px) {
   .advantages__content h3 {
@@ -4397,7 +4457,7 @@ button,
 }
 @media (max-width: 767px) {
   .stocks__wrapper {
-    padding: 0 0 50px;
+    padding: 0 0 60px;
     width: 290px;
   }
 }
@@ -4552,7 +4612,7 @@ button,
 }
 @media (max-width: 767px) {
   .stocks__about-left {
-    padding: 22px 30px 3px 30px;
+    padding: 25px 30px 3px 30px;
   }
 }
 
@@ -4561,7 +4621,7 @@ button,
   font-size: 26px;
   font-weight: 700;
   line-height: 29px;
-  letter-spacing: 0;
+  letter-spacing: -0.03em;
   text-align: left;
   margin: 0 0 9px;
 }
@@ -5114,7 +5174,7 @@ button,
   width: 100%;
   max-width: 1366px;
   position: relative;
-  padding: 120px 100px 120px;
+  padding: 115px 100px 120px;
   margin: 0 auto;
 }
 @media (max-width: 1199px) {
@@ -5140,7 +5200,7 @@ button,
 @media (max-width: 1199px) {
   .reviews__title {
     font-size: 42px;
-    margin: 70px 0 30px;
+    margin: 80px 0 30px;
   }
 }
 @media (max-width: 767px) {
@@ -5162,7 +5222,7 @@ button,
 @media (max-width: 767px) {
   .reviews__swiper {
     min-width: 200px;
-    margin: 0 30px;
+    margin: 0 auto;
   }
 }
 
@@ -5179,6 +5239,8 @@ button,
 @media (max-width: 1199px) {
   .reviews__name {
     padding: 0;
+    padding-top: 7px;
+    letter-spacing: -0.03em;
   }
 }
 @media (max-width: 767px) {
@@ -5639,7 +5701,7 @@ button,
 }
 
 .contacts {
-  padding: 57px 60px 60px 108px;
+  padding: 57px 60px 38px 108px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5651,13 +5713,13 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts {
-    padding: 70px 60px 66px 133px;
+    padding: 70px 60px 50px 133px;
     width: 100%;
   }
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 66px 15px 67px;
+    padding: 66px 15px 45px;
   }
 }
 
@@ -5737,6 +5799,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 0;
   }
   .contacts__list::after {
     content: none;
@@ -5744,16 +5807,25 @@ button,
 }
 
 .contacts__item {
-  padding-left: 4px;
+  padding: 0 0 20px 4px;
   width: 190px;
+}
+.contacts__item--tell {
+  white-space: nowrap;
 }
 @media (max-width: 1199px) {
   .contacts__item {
-    padding: 0;
+    padding: 0 0 20px 0;
     width: 225px;
+  }
+  .contacts__item--tell {
+    padding-right: 100px;
   }
 }
 @media (max-width: 767px) {
+  .contacts__item {
+    padding: 0 0 25px 0;
+  }
   .contacts__item--adress {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -5802,6 +5874,9 @@ button,
 
 .contacts__item > a {
   margin: 0;
+  display: block;
+  white-space: nowrap;
+  width: 190px;
   font-size: 14px;
   line-height: 22px;
 }

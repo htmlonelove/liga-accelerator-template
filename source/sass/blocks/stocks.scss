@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding: 0 0 50px;
+    padding: 0 0 60px;
     width: 290px;
   }
 }
@@ -118,7 +118,7 @@
   }
 
   @include vp-767 {
-    padding: 22px 30px 3px 30px;
+    padding: 25px 30px 3px 30px;
   }
 }
 
@@ -127,7 +127,7 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 29px;
-  letter-spacing: 0;
+  letter-spacing: -0.03em;
   text-align: left;
   margin: 0 0 9px;
 

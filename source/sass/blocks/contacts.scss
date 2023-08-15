@@ -1,16 +1,16 @@
 .contacts {
-  padding: 57px 60px 60px 108px;
+  padding: 57px 60px 38px 108px;
   display: flex;
   flex-direction: column;
   width: 50%;
 
   @include vp-1199 {
-    padding: 70px 60px 66px 133px;
+    padding: 70px 60px 50px 133px;
     width: 100%;
   }
 
   @include vp-767 {
-    padding: 66px 15px 67px;
+    padding: 66px 15px 45px;
   }
 }
 
@@ -80,6 +80,7 @@
 
   @include vp-767 {
     flex-direction: column;
+    gap: 0;
 
     &::after {
       content: none;
@@ -88,15 +89,25 @@
 }
 
 .contacts__item {
-  padding-left: 4px;
+  padding: 0 0 20px 4px;
   width: 190px;
 
+  &--tell {
+    white-space: nowrap;
+  }
+
   @include vp-1199 {
-    padding: 0;
+    padding: 0 0 20px 0;
     width: 225px;
+
+    &--tell {
+      padding-right: 100px;
+    }
   }
 
   @include vp-767 {
+    padding: 0 0 25px 0;
+
     &--adress {
       order: 1;
     }
@@ -140,7 +151,9 @@
 
 .contacts__item > a {
   margin: 0;
-
+  display: block;
+  white-space: nowrap;
+  width: 190px;
   font-size: 14px;
   line-height: 22px;
 

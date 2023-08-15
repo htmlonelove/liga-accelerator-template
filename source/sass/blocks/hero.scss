@@ -93,8 +93,9 @@
   @include vp-767 {
     font-weight: 600;
     padding-top: 25px;
-    padding-right: 15px;
     margin: -20px 0 20px;
+    position: relative;
+    left: -15px;
   }
 }
 

@@ -12,9 +12,10 @@
   width: 100%;
   max-width: 1366px;
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
   justify-content: space-between;
-  padding: 0 105px 0 30px;
+  padding: 0 105px;
 
   @include vp-1199 {
     justify-content: space-around;
@@ -25,7 +26,7 @@
 
   @include vp-767 {
     gap: 5px;
-    padding: 45px 16px 35px;
+    padding: 2px 16px 35px;
     flex-direction: column;
   }
 }
@@ -44,15 +45,23 @@
   display: block;
   width: 88px;
   height: 32px;
+  margin: 45px 0 0 0;
   cursor: pointer;
 
   @include vp-1199 {
     width: 82px;
     height: 18px;
+    margin-top: 40px;
   }
 
   @include vp-767 {
     width: 68px;
     height: 15px;
   }
+}
+
+.footer__link__icon {
+  height: 13.89px;
+  width: 13.89px;
+  margin: 5.55px 0;
 }
