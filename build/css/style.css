@@ -3151,7 +3151,7 @@ button,
 .memberships__controls::after {
   position: absolute;
   content: "";
-  bottom: 22px;
+  bottom: 5px;
   left: 50%;
   width: 344px;
   height: 2px;
@@ -3195,7 +3195,7 @@ button,
   border: none;
   text-transform: none;
   padding: 10px 10px 6px 12px;
-  min-height: 67px;
+  min-height: 47px;
 }
 @media (max-width: 1199px) {
   .memberships__control {
@@ -3219,6 +3219,7 @@ button,
 }
 .memberships__control:hover, .memberships__control:focus, .memberships__control:active {
   color: #102654;
+  border-bottom: #d10a42 2px solid;
 }
 .memberships__control:disabled {
   color: rgba(16, 38, 84, 0.3);
@@ -3356,7 +3357,7 @@ button,
 }
 @media (max-width: 1199px) {
   .card:hover, .card:focus {
-    padding-top: 55px;
+    padding: 55px 90px 55px 90px;
   }
 }
 @media (max-width: 767px) {
@@ -3368,12 +3369,23 @@ button,
 .card:default {
   border: none;
 }
-.card--active {
+.card:active {
   padding: 60px 50px 55px 50px;
   border: 7px solid;
   -o-border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
      border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .card:active {
+    padding: 55px 90px 55px 90px;
+  }
+}
+@media (max-width: 767px) {
+  .card:active {
+    width: 100%;
+    padding: 40px 30px 50px;
+  }
 }
 @media (max-width: 1199px) {
   .card {
@@ -4053,7 +4065,7 @@ button,
 @media (max-width: 767px) {
   .trainers__info {
     padding: 20px 10px 28px;
-    width: 226px;
+    width: 100%;
   }
 }
 
