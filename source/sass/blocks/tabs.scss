@@ -21,7 +21,6 @@
     content: "";
   }
 
-
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
   }
@@ -94,8 +93,6 @@
       margin: 0 0 20px 0;
     }
   }
-
-
 }
 
 .tabs--unset .tabs__content {
@@ -106,4 +103,33 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.tabs__faq {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+}
+
+.tabs__categories {
+  display: flex;
+  flex-direction: column;
+
+  & .btn {
+    background-color: $color-transparent;
+    border: 1px solid $color-primary-light;
+    margin-bottom: 10px;
+  }
+}
+
+.tabs__category{
+  padding-top: 18px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: $ff-placeholder;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: $color-primary;
 }

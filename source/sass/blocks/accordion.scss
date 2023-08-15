@@ -1,0 +1,56 @@
+.accordion {
+  //max-width: 500px;
+  margin: 0 auto 50px auto;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    position: relative;
+    margin-bottom: 13px;
+    padding: 10px;
+    padding-right: 177px;
+    border-top: 1px solid $color-primary-light;
+  }
+
+  &__element.is-active > &__button {
+    opacity: 0.5;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid $color-background-blue;
+    border-radius: 50%;
+    background-color: $color-transparent;
+    cursor: pointer;
+  }
+}
+
+.accordion__title{
+  padding-top: 24px;
+  padding-bottom: 14px;
+  font-family: $ff-placeholder;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $color-primary;
+  letter-spacing: 0.2px;
+}
+
+.accordion__discription{
+  font-family: $ff-placeholder;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: $color-primary;
+}

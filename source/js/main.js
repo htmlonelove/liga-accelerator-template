@@ -2,9 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
-// import {swiper} from './vendor';
-// import Swiper from 'swiper';
-
+import Swiper from '../js/vendor/swiper';
+import {initAccordions} from './modules/accordions/init-accordion';
 
 // ---------------------------------
 
@@ -54,6 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initAccordions();
   });
   initTabs();
   swiper();
