@@ -122,7 +122,7 @@
   }
 }
 
-.tabs__category{
+.tabs__category {
   padding-top: 18px;
   padding-bottom: 16px;
   display: flex;
@@ -132,4 +132,19 @@
   font-weight: 600;
   line-height: 1;
   color: $color-primary;
+
+  &.is-active {
+    border: none;
+    background-image: $red-to-blue;
+    color: $color-default-white;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  &:default{
+    color: $color-primary-light;
+  }
 }

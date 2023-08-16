@@ -1,11 +1,11 @@
-.trainer{
+.trainer {
   position: relative;
   margin: 0 auto;
   width: 1366px;
-  padding-bottom: 105px;
+  padding-bottom: 102px;
 }
 
-.trainer__title{
+.trainer__title {
   font-family: $ff-Alumnisans;
   font-size: 36px;
   font-weight: 600;
@@ -16,7 +16,107 @@
   padding-bottom: 48px;
 }
 
-.trainer__swiper{
+.trainer__swiper {
   width: 1160px;
   margin: 0 auto;
+}
+
+.trainer__swiper-button-prev{
+  left: 28px;
+}
+
+.trainer__swiper-button-next {
+  right: 28px;
+}
+
+.trainer__swiper-button-prev,
+.trainer__swiper-button-next {
+  width: 56px;
+  height: 56px;
+  background-color: $color-transparent;
+  border: 1px solid $color-transparent;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus-visible{
+    border-color: $color-primary;
+  }
+
+  &:active{
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &::after,
+    &::after{
+      color: $color-default-white;
+    }
+  }
+
+  &:disabled::after{
+    opacity: 0.3;
+  }
+}
+
+.trainer__swiper-button-prev::after,
+.trainer__swiper-button-next::after {
+  color: $color-primary;
+  font-size: 32px;
+}
+
+.trainer__slide:hover .trainer__slide-title{
+  bottom: 216px;
+}
+
+.trainer__slide-title{
+  position: absolute;
+  left: 50%;
+  margin-left: -22%;
+  bottom: 23px;
+  color: $color-default-white;
+  letter-spacing: -0.4px;
+  z-index: 5;
+}
+
+.trainer__slide-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-primary-dark;
+  opacity: 0;
+  transition: opacity .4s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.trainer__slide-subtitle{
+  font-family: $ff-placeholder;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-dark-white;
+  padding-top: 76px;
+  padding-bottom: 34px;
+}
+
+.trainer__slide-list{
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+}
+
+.trainer__slide-item{
+  font-family: $ff-placeholder;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-default-white;
+  letter-spacing: -0.8px;
+  padding-bottom: 13px;
 }

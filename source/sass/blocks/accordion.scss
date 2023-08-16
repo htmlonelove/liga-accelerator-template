@@ -8,37 +8,90 @@
   }
 
   &__element:last-child {
+    position: relative;
     margin-bottom: 0;
+
+    &::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: -21px;
+      height: 1px;
+      background-color: $color-primary-light;
+    }
   }
 
   &__element {
     position: relative;
-    margin-bottom: 13px;
-    padding: 10px;
-    padding-right: 177px;
+    margin-bottom: 18px;
+    padding-top: 24px;
     border-top: 1px solid $color-primary-light;
   }
 
-  &__element.is-active > &__button {
-    opacity: 0.5;
+  &__element.is-active .accordion__toggle::after {
+    display: none;
   }
 
   &__button {
-    position: absolute;
-    right: 0;
-    top: 25px;
-    width: 42px;
-    height: 42px;
-    border: 1px solid $color-background-blue;
-    border-radius: 50%;
-    background-color: $color-transparent;
+    width: 100%;
+    padding: 10px;
     cursor: pointer;
+    border: none;
+    background-color: $color-transparent;
+  }
+
+  &__wrapper {
+    padding: 5px 10px;
+  }
+}
+
+.accordion__toggle{
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid $color-primary;
+  border-radius: 50%;
+
+  &::before{
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 1px;
+    left: 11px;
+    top: 21px;
+    background-color: $color-primary;
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 1px;
+    left: 11px;
+    top: 21px;
+    background-color: $color-primary;
+    transform: rotate(90deg);
+  }
+
+  &:hover,
+  &:focus{
+    background-color: $color-primary;
+
+    &::before,
+    &::after{
+      background-color: $color-default-white;
+    }
+  }
+
+  &:disabled{
+    opacity: 0.3;
   }
 }
 
 .accordion__title{
-  padding-top: 24px;
-  padding-bottom: 14px;
+  text-align: left;
   font-family: $ff-placeholder;
   font-size: 20px;
   font-weight: 500;

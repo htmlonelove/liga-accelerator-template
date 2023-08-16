@@ -7,7 +7,7 @@ import {initAccordions} from './modules/accordions/init-accordion';
 
 // ---------------------------------
 
-const swiper = new Swiper('.swiper', {
+const trainerSwiper = new Swiper('.trainer__swiper', {
   direction: 'horizontal',
   loop: true,
 
@@ -16,11 +16,58 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+  autoHeight: true,
   slidesPerView: 4,
+
   simulateTouch: true,
   touchRatio: 1,
+
+  keyboard: {
+    enabled: true,
+    pageUpDown: true,
+  },
+
   watchOverflow: true,
+
   spaceBetween: 40,
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //   },
+  //   1200: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+
+});
+
+const reviewsSwiper = new Swiper('.reviews__swiper', {
+  direction: 'horizontal',
+  // loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoHeight: true,
+  slidesPerView: 1,
+
+  keyboard: {
+    enabled: true,
+    pageUpDown: true,
+  },
+
+  simulateTouch: true,
+  touchRatio: 1,
+
+
+  watchOverflow: true,
+
 
   // breakpoints: {
   //   320: {
@@ -56,7 +103,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
   initTabs();
-  swiper();
+  trainerSwiper();
+  reviewsSwiper();
 });
 
 
