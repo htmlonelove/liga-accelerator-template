@@ -5211,8 +5211,7 @@ button,
 @media (max-width: 767px) {
   .reviews__swiper {
     min-width: 200px;
-    margin: 0 auto;
-    max-width: 78%;
+    margin: 0 15px;
   }
 }
 
