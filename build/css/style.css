@@ -3333,7 +3333,7 @@ button,
 }
 @media (max-width: 1199px) {
   .card:hover, .card:focus {
-    padding-top: 55px;
+    padding: 55px 90px 55px 90px;
   }
 }
 @media (max-width: 767px) {
@@ -3345,12 +3345,23 @@ button,
 .card:default {
   border: none;
 }
-.card--active {
+.card:active {
   padding: 60px 50px 55px 50px;
   border: 7px solid;
   -o-border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
      border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%) 30;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .card:active {
+    padding: 55px 90px 55px 90px;
+  }
+}
+@media (max-width: 767px) {
+  .card:active {
+    width: 100%;
+    padding: 40px 30px 50px;
+  }
 }
 @media (max-width: 1199px) {
   .card {
