@@ -45,6 +45,7 @@
   @include vp-767 {
     min-width: 200px;
     margin: 0 auto;
+    max-width: 78%;
   }
 }
 
@@ -185,6 +186,7 @@
 
     &--back {
       left: 10px;
+      
       &:hover,
       &:focus {
         left: 10px;

@@ -84,7 +84,7 @@
 
 .trainers__swiper-button {
   position: absolute;
-  top: 52%;
+  top: calc((100% - 56px) / 2 + 36px);
   width: 56px;
   height: 56px;
   background-repeat: no-repeat;
@@ -148,11 +148,11 @@
   }
 
   @include vp-1199 {
-    top: 55%;
+    top: calc((100% - 56px) / 2 + 56px);
   }
 
   @include vp-767 {
-    top: 58%;
+    top: calc((100% + 20px) / 2);
     width: 20px;
     height: 20px;
     background-size: 10px 19px;
@@ -209,7 +209,7 @@
 
   @include vp-767 {
     padding: 20px 10px 28px;
-    width: 226px;
+    width: 100%;
   }
 }
 

@@ -59,6 +59,11 @@
     color: $color-default-white;
     opacity: 40%;
   }
+
+  &:active {
+    outline: none;
+    border: none;
+  }
 }
 
 .navigation__item {
