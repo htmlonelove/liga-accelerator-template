@@ -1,0 +1,9 @@
+.appointment{
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.appointment__wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

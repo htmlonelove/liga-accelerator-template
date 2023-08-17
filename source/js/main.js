@@ -7,7 +7,7 @@ import {initAccordions} from './modules/accordions/init-accordion';
 
 // ---------------------------------
 
-const trainerSwiper = new Swiper('.trainer__swiper', {
+export const trainerSwiper = new Swiper('.trainer__swiper', {
   direction: 'horizontal',
   loop: true,
 
@@ -45,7 +45,7 @@ const trainerSwiper = new Swiper('.trainer__swiper', {
 
 });
 
-const reviewsSwiper = new Swiper('.reviews__swiper', {
+export const reviewsSwiper = new Swiper('.reviews__swiper', {
   direction: 'horizontal',
   // loop: true,
 
@@ -103,8 +103,18 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
   });
   initTabs();
-  trainerSwiper();
-  reviewsSwiper();
+});
+
+const inputName = document.querySelector('#data-name');
+const labelName = document.querySelector('label[for="data-name"]');
+inputName.addEventListener('focus', () => {
+  labelName.style.visibility = 'hidden';
+});
+
+const inputPhone = document.querySelector('#data-phone');
+const labelPhone = document.querySelector('label[for="data-phone"]');
+inputPhone.addEventListener('focus', () => {
+  labelPhone.style.visibility = 'hidden';
 });
 
 

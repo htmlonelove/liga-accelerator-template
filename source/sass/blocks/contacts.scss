@@ -1,0 +1,45 @@
+.contacts{
+  padding-top: 55px;
+  padding-right: 159px;
+  padding-bottom: 60px;
+  padding-left: 123px;
+  border-top: 1px solid $color-grey;
+}
+
+.contacts__title{
+  font-family: $ff-Alumnisans;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  color: $color-primary;
+  padding-bottom:36px;
+}
+
+.contacts__address{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+column-gap: 46px;
+row-gap: 14px;
+}
+
+.contacts__subtitle{
+  font-family: $ff-placeholder;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $color-primary;
+  font-style: normal;
+  padding-bottom: 3px;
+}
+
+.contacts__text{
+  font-family: $ff-placeholder;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.52;
+  color: $color-primary;
+  font-style: normal;
+  letter-spacing: -0.2px;
+}
+
