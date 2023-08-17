@@ -46,8 +46,12 @@
 
 .navigation__link {
   color: #ffffff;
+  border: none;
+  list-style: none;
+  outline: none;
 
   &:hover {
+    border: none;
     border-bottom: 1px solid $color-default-white;
   }
 
@@ -58,11 +62,13 @@
   &:disabled {
     color: $color-default-white;
     opacity: 40%;
+    border: none;
   }
 
   &:active {
     outline: none;
     border: none;
+    list-style: none;
   }
 }
 
@@ -76,6 +82,7 @@
   margin: 0;
   line-height: 16px;
   text-align: left;
+  outline: none;
 
   @include vp-767 {
     font-size: 16px;

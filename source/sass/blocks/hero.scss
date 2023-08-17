@@ -30,7 +30,7 @@
   grid-template-columns: 110px 250px;
   grid-template-rows: max-content;
   margin: 0;
-  padding: 50px 0 80px;
+  padding: 30px 0 80px;
   text-align: left;
   gap: 10px 20px;
 
@@ -54,7 +54,7 @@
   width: 500px;
   height: 556px;
   object-fit: cover;
-  margin: -10px 0 10px;
+  margin: -30px 0 10px;
 
   @include vp-1199 {
     width: 324px;
@@ -122,7 +122,7 @@
     stroke: none;
     -webkit-text-stroke-width: 0;
     text-align: center;
-    padding: 5px 0 0 50px;
+    padding: 15px 0 0 50px;
     margin-top: 50px;
   }
 

@@ -64,7 +64,7 @@
 
   @include vp-1199 {
     margin: 0;
-    padding: 35px 12px 15px 12px;
+    padding: 30px 12px 15px 2px;
     font-size: 42px;
     line-height: 38px;
   }
@@ -176,7 +176,7 @@
   padding: 0 100px;
 
   @include vp-1199 {
-    margin: 0 148px;
+    margin: 40px 148px 0;
     padding: 0;
   }
 

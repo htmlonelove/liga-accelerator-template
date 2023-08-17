@@ -112,14 +112,15 @@
   z-index: 1;
 
   &::after {
-    content: attr(data-value);
+    content: url("../img/sprite/rouble.svg");
     position: absolute;
     margin: 0;
     width: 38px;
     height: 46px;
     color: $color-default-black;
     font-family: "Rouble", sans-serif;
-    padding: 3px 0 0 18px;
+    padding: 0 0 0 18px;
+    margin-top: -5px;
   }
 
   @include vp-1199 {

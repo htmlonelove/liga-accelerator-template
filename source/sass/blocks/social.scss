@@ -29,8 +29,16 @@
 
 .social__link {
   fill: #ffffff;
-  width: 12px;
-  height: 6.94px;
+  width: 13.89px;
+  height: 13.89px;
+  display: flex;
+  justify-content: center;
+}
+
+.social__link--ok {
+  fill: #ffffff;
+  width: 8.83px;
+  height: 15.73px;
   display: flex;
   justify-content: center;
 }
