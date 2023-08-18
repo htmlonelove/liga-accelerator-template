@@ -1,0 +1,146 @@
+.form {
+  padding: 15px 103px 66px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: $color-default-white;
+  background-color: $color-default-black;
+
+  @include vp-1199 {
+    margin: 0;
+    padding: 66px 132px 68px;
+    width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 66px 15px 68px;
+    width: 100%;
+  }
+}
+
+.form__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 84px;
+  text-align: left;
+  color: $color-default-white;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+
+  @include vp-1199 {
+    margin: 0 0 37px;
+    letter-spacing: 0.09rem;
+    font-size: 42px;
+    line-height: 38px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    font-size: 32px;
+  }
+}
+
+.form form {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  column-gap: 30px;
+  row-gap: 24px;
+
+  @include vp-1199 {
+    grid-template-columns: 206px 206px;
+    column-gap: 60px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form input {
+  margin-bottom: 4px;
+  padding: 4px 0;
+  width: 100%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $color-default-white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  cursor: text;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include hover {
+    border-color: $color-default-white;
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 2px;
+    border: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.form__name.is-invalid input,
+.form__phone.is-invalid input {
+  border-bottom: 1px solid #ff121f;
+}
+
+.form__name.is-invalid .input-message.is-invalid,
+.form__phone .input-message.is-invalid {
+  color: #ff121f;
+}
+
+.form input::placeholder {
+  color: $color-default-white;
+}
+
+.form__submit {
+  background-color: transparent;
+  color: $color-default-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  border: 3px solid $color-default-white;
+  min-width: 413px;
+  margin: 0;
+  padding: 18px 0 15px;
+  display: block;
+  min-height: 52px;
+
+
+  &:hover,
+  &:focus-visible {
+    color: $color-default-black;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-black;
+  }
+
+  @include vp-1199 {
+    min-width: 473px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    margin-top: 9px;
+  }
+}

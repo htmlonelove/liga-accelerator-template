@@ -1,0 +1,203 @@
+.background {
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+
+.hero__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 300px 0 120px;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 50px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 40px 75px 35px;
+    max-width: 750px;
+    gap: 15px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 80px;
+    width: 100%;
+    gap: 0;
+  }
+}
+
+.hero__description {
+  display: grid;
+  grid-template-columns: 110px 250px;
+  grid-template-rows: max-content;
+  margin: 0;
+  padding: 30px 0 80px;
+  text-align: left;
+  gap: 10px 20px;
+
+  @include vp-1199 {
+    grid-template-columns: 110px 190px;
+    padding: 0;
+    padding-bottom: 20px;
+    gap: 10px 30px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+    padding: 0;
+    grid-template-columns: min-content;
+    gap: 0;
+    width: 100%;
+  }
+}
+
+.hero__photo {
+  width: 500px;
+  height: 556px;
+  object-fit: cover;
+  margin: -30px 0 10px;
+
+  @include vp-1199 {
+    width: 324px;
+    height: 390px;
+    margin: 5px 0 0 10px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  text-align: right;
+  font-weight: 700;
+  grid-column: 2/3;
+  font-size: 92px;
+  line-height: 110.4px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  text-transform: uppercase;
+  stroke: $color-default-white;
+  -webkit-text-stroke-width: 2px;
+  margin: 0;
+  padding: 0 0 35px;
+
+  @include vp-1199 {
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: none;
+    padding: 0;
+    margin: -12px 0 25px;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
+    padding-top: 25px;
+    margin: -20px 0 20px;
+    position: relative;
+    left: -15px;
+  }
+}
+
+.hero__sity {
+  grid-column: 2/3;
+  color: $color-default-white;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 55px 0 10px 67px;
+  padding: 0;
+  stroke: $color-default-white;
+  -webkit-text-stroke-width: 1px;
+
+  @include vp-1199 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 40px;
+    stroke: none;
+    -webkit-text-stroke-width: 0;
+    text-align: center;
+    padding: 15px 0 0 50px;
+    margin-top: 50px;
+  }
+
+  @include vp-767 {
+    width: 51px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    padding: 0 0 0 70px;
+  }
+}
+
+.hero__list {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0;
+  background-color: transparent;
+  border: none;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  list-style: none;
+  text-align: right;
+  color: $color-default-white;
+  margin: 50px 0 10px;
+  padding: 70px 0 0;
+  width: 113px;
+
+  @include vp-1199 {
+    padding: 27px 0 5px;
+  }
+
+  @include vp-767 {
+    padding-top: 40px;
+    margin: 42px 0 0 13px;
+  }
+}
+
+.hero__btn {
+  display: block;
+  min-width: 235px;
+  border: $color-default-white solid 4px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding: 20px;
+  margin-left: 145px;
+
+  @include vp-1199 {
+    min-width: 185px;
+    margin-left: 140px;
+    padding: 20px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    margin: 0 15px;
+    padding: 20px 0;
+    min-height: 59px;
+    grid-column: span 2;
+  }
+
+  &:hover,
+  &:focus {
+    color: #103aae;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-black;
+    background-color: $color-default-white;
+  }
+
+  &:default {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+  }
+}

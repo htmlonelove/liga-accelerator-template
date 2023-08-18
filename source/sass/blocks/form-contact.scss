@@ -1,0 +1,19 @@
+.form-contacts {
+  border-top: 1px solid $color-default-black;
+  background: linear-gradient(to right, $color-default-black 50%, transparent 50%);
+
+  @include vp-1199 {
+    background: none;
+  }
+}
+
+.form-contacts__wrapper {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1366px;
+  width: 100%;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}

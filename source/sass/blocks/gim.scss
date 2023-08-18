@@ -1,0 +1,233 @@
+.gim {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+
+  @include vp-1199 {
+    flex-direction: column;
+    padding: 75px 45px 0 30px;
+  }
+
+  @include vp-767 {
+    padding: 60px 0 50px;
+  }
+}
+
+.gim__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1366px;
+  display: grid;
+  grid-template-columns: 355px 760px;
+  gap: 10px;
+  justify-content: center;
+  padding: 110px 0 0 80px;
+
+  @include vp-1199 {
+    padding: 0;
+    max-width: 1199px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    gap: 25px;
+  }
+}
+
+.gim__container {
+  min-height: 314px;
+  left: 75px;
+  text-align: left;
+
+  @include vp-1199 {
+    padding: 0 0 25px;
+    width: 100%;
+    min-height: 204px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+    width: 300px;
+    padding: 0 5px;
+  }
+}
+
+.gim__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin: 0;
+  padding: 50px 0 0;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    padding: 25px 0 0 0;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.gim__description {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 auto;
+  padding: 7px 0 25px;
+  display: block;
+
+  @include vp-1199 {
+    text-align: center;
+    padding: 0 0 25px 13px;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    width: 300px;
+    padding: 0;
+  }
+}
+
+.gim__wrapper p {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: 0;
+  margin: 10px 0;
+
+  @include vp-1199 {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    padding: 0 90px 0 100px;
+  }
+
+  @include vp-767 {
+    margin: 20px 30px 10px 0;
+    padding: 0;
+    text-align: left;
+  }
+}
+
+.gim__wrapper p + p {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.gim__media {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  min-height: 540px;
+
+  @include vp-767 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.media__photo {
+  margin: 0 0 0 50px;
+
+  @include vp-1199 {
+    margin: 0 15px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+  }
+}
+
+.media__photo img {
+  object-fit: fill;
+  min-height: 401px;
+
+  @include vp-1199 {
+    min-height: 345px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 313px;
+  }
+}
+
+.media__video {
+  position: relative;
+  margin: -112px 0 0 -12px;
+  width: 364px;
+
+  @include vp-1199 {
+    margin: -85px 0 0 220px;
+    width: 266px;
+  }
+
+  @include vp-767 {
+    margin: 40px auto 0;
+    width: 100%;
+  }
+}
+
+.media__video-wrapper {
+  object-fit: cover;
+  background-image: image-set("../img/gim/video.jpg" 1x, "../img/gim/video@2x.jpg" 2x);
+  margin: 0 auto;
+  min-height: 228px;
+
+  @include vp-1199 {
+    min-height: 167px;
+  }
+}
+
+.media__play-btn {
+  position: absolute;
+  top: calc((100% + 100px)/2 - 100px);
+  left: calc((100% + 100px)/2 - 100px);
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  background: none url("../img/sprite/play.svg") no-repeat;
+  background-size: cover;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/sprite/play-hover.svg");
+  }
+
+  &:disabled {
+    background-image: url("../img/sprite/play-disabled.svg");
+    pointer-events: none;
+  }
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+    top: calc((100% + 76px)/2 - 76px);
+    left: calc((100% + 76px)/2 - 76px);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }
+
+  @include vp-767 {
+    left: calc((100% + 76px)/2 - 76px);
+  }
+}

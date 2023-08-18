@@ -38,8 +38,8 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: ($vp-1920 - 1px)) {
+@mixin vp-1199 {
+  @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
@@ -73,6 +73,7 @@
     @content;
   }
 }
+
 
 // Mobile first
 

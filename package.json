@@ -1,5 +1,5 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "liga-accelerator-template",
   "version": "2.0.0",
   "type": "module",
   "description": "Стартовый шаблон сборки Лиги А",
@@ -27,8 +27,8 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "devDependencies": {
-    "@babel/preset-env": "7.18.6",
     "@babel/core": "7.21.4",
+    "@babel/preset-env": "7.18.6",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "10.4.7",
     "babelify": "10.0.0",
@@ -37,17 +37,17 @@
     "del": "6.1.1",
     "eslint": "7.32.0",
     "gulp": "4.0.2",
+    "gulp-concat": "2.6.1",
     "gulp-csso": "4.0.1",
     "gulp-group-css-media-queries": "1.2.2",
     "gulp-imagemin": "7.1.0",
     "gulp-postcss": "9.0.1",
-    "gulp-concat": "2.6.1",
     "gulp-rename": "2.0.0",
     "gulp-sass": "5.1.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-svgstore": "9.0.0",
-    "gulp-webp": "4.0.1",
     "gulp-uglify": "3.0.2",
+    "gulp-webp": "4.0.1",
     "imagemin-mozjpeg": "10.0.0",
     "imagemin-pngquant": "9.0.2",
     "imagemin-svgo": "10.0.1",
@@ -55,10 +55,15 @@
     "sass": "1.53.0",
     "stylelint": "^14.16.1",
     "stylelint-config-htmlacademy": "1.1.4",
+    "swiper": "^10.0.4",
     "vinyl-buffer": "1.0.1",
     "vinyl-source-stream": "2.0.0"
   },
   "engines": {
     "node": ">=16.15.1"
+  },
+  "dependencies": {
+    "from": "^0.1.7",
+    "Swiper": "npm:swiper@^10.0.4"
   }
 }

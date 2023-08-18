@@ -1,0 +1,292 @@
+.trainers {
+  margin: 0;
+}
+
+.trainers__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 107px;
+  max-width: 1366px;
+  width: 100%;
+
+  @include vp-1199 {
+    padding: 5px 0 55px;
+  }
+
+  @include vp-767 {
+    padding: 6px 15px 65px;
+  }
+}
+
+.trainers__title {
+  margin: 0;
+  padding: 12px 50px 52px 103px;
+
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 54px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+
+  @include vp-1199 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.4px;
+    margin: 0 0 32px;
+    padding: 55px 50px 0 44px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 42px;
+    padding: 20px 50px 0 48px;
+  }
+}
+
+.trainers__swiper {
+  width: 1160px;
+  height: 294px;
+
+  @media (min-width: $vp-1200) and (max-width: 1360px) {
+    width: 1055px;
+  }
+
+  @include vp-1199 {
+    padding-left: 4px;
+    width: 576px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    width: 78%;
+    height: auto;
+  }
+}
+
+.trainers__card {
+  position: relative;
+  margin: 0 auto;
+  cursor: grab;
+
+  @include vp-767 {
+    height: auto;
+    min-height: 274px;
+  }
+}
+
+.trainers__card img {
+  object-fit: cover;
+  background-color: $color-default-white;
+  width: 100%;
+}
+
+.trainers__swiper-button {
+  position: absolute;
+  top: calc((100% - 56px) / 2 + 36px);
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 32px;
+  z-index: 2;
+  cursor: pointer;
+
+  &--back {
+    left: 27px;
+    transform: translate(0, -10%);
+    background-image: url("../img/sprite/arrow-back.svg");
+    fill: #afafaf;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/sprite/arrow-back-hover.svg");
+      background-size: auto;
+      outline: none;
+      background-color: $color-default-white;
+      border-radius: 50%;
+      color: $color-default-white;
+      border: 1px solid $color-default-black;
+    }
+
+    &:active {
+      background-image: url("../img/sprite/arrow-back.svg");
+      background-size: 30px 30px;
+      outline: none;
+      background-color: $color-default-black;
+      border-radius: 50%;
+      color: $color-default-white;
+    }
+  }
+
+  &--along {
+    right: 27px;
+    transform: translate(0, -10%);
+    background-image: url("../img/sprite/arrow-along.svg");
+    fill: #afafaf;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/sprite/arrow-along-hover.svg");
+      background-size: auto;
+      outline: none;
+      background-color: $color-default-white;
+      border-radius: 50%;
+      color: $color-default-white;
+      border: 1px solid $color-default-black;
+    }
+
+    &:active {
+      background-image: url("../img/sprite/arrow-along.svg");
+      background-size: 30px 30px;
+      outline: none;
+      background-color: $color-default-black;
+      border-radius: 50%;
+      color: $color-default-white;
+    }
+  }
+
+  @include vp-1199 {
+    top: calc((100% - 56px) / 2 + 56px);
+  }
+
+  @include vp-767 {
+    top: calc((100% + 20px) / 2);
+    width: 20px;
+    height: 20px;
+    background-size: 10px 19px;
+
+    &--back {
+      left: 15px;
+    }
+
+    &--along {
+      right: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      background-size: 10px 10px;
+    }
+  }
+}
+
+.trainers__name {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 260px;
+  font-weight: 700;
+  text-align: center;
+  color: $color-default-white;
+  z-index: 5;
+  font-size: 18px;
+  line-height: 18px;
+
+  @include vp-767 {
+    width: 226px;
+  }
+}
+
+.trainers__info {
+  display: none;
+  position: absolute;
+  padding: 60px 30px 50px;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  color: $color-default-white;
+  background-color: rgba(16, 38, 84, 0.89);
+  font-size: 14px;
+  line-height: 28px;
+  overflow: scroll;
+
+  @include vp-1199 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    padding: 20px 10px 28px;
+    width: 100%;
+  }
+}
+
+.trainers__card:hover > p {
+  display: none;
+}
+
+.trainers__card:focus > p {
+  display: none;
+}
+
+.trainers__card:hover .trainers__info {
+  display: block;
+}
+
+.trainers__card:focus .trainers__info {
+  display: block;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.trainers__card:active > p {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.trainers__card:active .trainers__info {
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.trainers__info > p {
+  position: relative;
+  left: -30px;
+  margin: 10px 0 2px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  line-height: 6px;
+  letter-spacing: 0.03em;
+
+  @include vp-767 {
+    left: -20px;
+    margin: 40px 0 -5px 10px;
+  }
+}
+
+.info__direction {
+  margin: 0 0 25px;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  color: #b6bdcc;
+
+  @include vp-767 {
+    margin: 0 0 34px;
+  }
+}
+
+.trainers__about {
+  margin: 0;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 12px;
+  scroll-behavior: auto;
+
+  @include vp-767 {
+    padding-left: 31px;
+  }
+}
+
+.trainers__item {
+  position: relative;
+}

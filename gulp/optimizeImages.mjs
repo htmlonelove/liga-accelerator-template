@@ -22,16 +22,16 @@ const optimizeSvg = () =>
             svgo({
               plugins: [
                 {
-                  name: 'removeViewBox',
-                  active: false,
+ name: 'removeViewBox',
+ active: false,
                 },
                 {
-                  name: 'removeRasterImages',
-                  active: true,
+ name: 'removeRasterImages',
+ active: true,
                 },
                 {
-                  name: 'removeUselessStrokeAndFill',
-                  active: false,
+ name: 'removeUselessStrokeAndFill',
+ active: false,
                 }],
             })]))
       .pipe(gulp.dest('build/img'));

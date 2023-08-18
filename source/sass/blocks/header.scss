@@ -1,0 +1,90 @@
+.header {
+  min-height: 80px;
+  background-color: $color-transparent;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    min-height: 60px;
+  }
+}
+
+.header__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 105px 0 30px;
+
+  @include vp-1199 {
+    padding: 30px 45px 10px 30px;
+  }
+
+  @include vp-767 {
+    padding: 10px 15px 10px 15px;
+  }
+}
+
+.header__phone {
+  color: $color-default-white;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  text-align: right;
+  width: 154px;
+  height: 32px;
+  letter-spacing: 0.7px;
+
+  @include vp-1199 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    left: 15px;
+    top: -15px;
+  }
+}
+
+.header__logo {
+  width: 122px;
+  height: 22px;
+  margin: 10px 0 0 70px;
+  display: block;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+    padding: 0;
+    margin: 10px 0 0 15px;
+  }
+
+  @include vp-767 {
+    width: 67px;
+    height: 24px;
+    padding: 0;
+    margin: 5px 0 0 0;
+  }
+}
+
+.header__logo svg {
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
+  }
+}

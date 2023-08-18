@@ -1,10 +1,19 @@
 .btn {
   display: inline-flex;
+  margin: 0 20px 10px;
   padding: 10px 20px;
+  min-height: 64px;
 
-  color: $color-default-white;
+  color: $color-default-black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
 
-  background-color: $color-neon-blue;
+  background-color: $color-default-white;
   border: none;
   cursor: pointer;
 
@@ -14,9 +23,36 @@
     background-color: $color-torch-red;
   }
 
+  &--blue {
+    border: $color-default-black solid 2px;
+    color: $color-default-black;
+    padding: 22px 0;
+    justify-content: center;
+    min-width: 206px;
+    z-index: 1;
+
+    @include vp-374 {
+      min-width: 208px;
+      margin: 0 20px 0 17px;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: $color-default-white;
+  }
+
+  &--active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    padding: 24px 0;
+    justify-content: center;
+    min-width: 206px;
+    border: transparent;
+    color: $color-default-white;
+  }
+
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 

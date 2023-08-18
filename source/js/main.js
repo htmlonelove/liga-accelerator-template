@@ -1,6 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initTabs} from './vendor/init-tabs';
+import './modules/trainers-swiper.js';
+import {initAccordions} from './vendor/init-accordion';
+import './modules/reviews-swiper.js';
+import './modules/gim-video.js';
 
 // ---------------------------------
 
@@ -21,8 +26,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initTabs();
+    initAccordions();
   });
 });
+
 
 // ---------------------------------
 

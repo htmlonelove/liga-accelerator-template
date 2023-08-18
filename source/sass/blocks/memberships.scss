@@ -1,0 +1,234 @@
+.memberships {
+  background-color: #f8f9fc;
+  display: flex;
+  margin-top: 105px;
+  position: relative;
+
+  @include vp-1199 {
+    margin: 0 0 40px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 40px;
+  }
+}
+
+.memberships::after {
+  content: "";
+  background-image: image-set("../img/memberships/membership-equipment.png" 1x, "../img/memberships/membership-equipment@2x.png" 2x);
+  position: absolute;
+  width: 321px;
+  height: 384px;
+  z-index: 0;
+  right: 0;
+  bottom: -98px;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @include vp-1199 {
+    background-image: image-set("../img/memberships/membership-equipment-tablet.png" 1x, "../img/memberships/membership-equipment-tablet@2x.png" 2x);
+    bottom: -95px;
+    right: 0;
+    rotate: 359deg;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.memberships__wrapper {
+  margin: 0 auto;
+  padding: 120px 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 1366px;
+
+  @include vp-1199 {
+    padding: 66px 15px 95px;
+  }
+
+  @include vp-767 {
+    padding: 24px 5px 60px;
+  }
+}
+
+.memberships__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0 0 5px;
+
+  @include vp-1199 {
+    margin: 0;
+    padding: 30px 12px 15px 2px;
+    font-size: 42px;
+    line-height: 38px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    padding: 40px 0 15px 0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+.memberships__controls {
+  position: relative;
+  display: flex;
+  margin: 0 auto 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 422px;
+  gap: 5px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: 50%;
+    width: 344px;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.2);
+    transform: translate(-50%, 0);
+  }
+
+  @include vp-1199 {
+    gap: 35px;
+    padding-top: 5px;
+
+    &::after {
+      bottom: 5px;
+    }
+  }
+
+  @include vp-767 {
+    width: 310px;
+    gap: 25px;
+    padding-top: 0;
+
+
+    &::after {
+      bottom: 5px;
+      width: 270px;
+    }
+  }
+}
+
+.memberships__control {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 5px 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  position: relative;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+  border: none;
+  text-transform: none;
+  padding: 10px 10px 6px 12px;
+  min-height: 47px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0;
+    min-height: 42px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    min-height: 47px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-default-black;
+    border-bottom: #d10a42 2px solid;
+  }
+
+  &:disabled {
+    color: rgba(16, 38, 84, 0.3);
+  }
+}
+
+.memberships__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+
+  @include vp-1199 {
+    margin: 40px 148px 0;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    margin: 0 15px;
+  }
+}
+
+.memberships__element {
+  display: none;
+  width: 100%;
+}
+
+.memberships__element.is-active {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    gap: 35px;
+  }
+}
+
+.memberships__catalog {
+  position: relative;
+  padding: 64px 57px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-default-white;
+  z-index: 2;
+  max-width: 100%;
+
+  &:hover {
+    padding: 57px 70px;
+    border: 7px solid;
+    border-image-slice: 1;
+  }
+
+  @include vp-1199 {
+    padding-top: 65px;
+  }
+
+  @include vp-767 {
+    padding: 51px 24px 0;
+  }
+}
