@@ -1,0 +1,104 @@
+.super-games{
+  margin: 0 auto;
+  width: 1160px;
+  padding-top: 118px;
+  padding-bottom: 106px;
+  }
+
+.super-games__wrapper{
+  display: grid;
+  grid-template-columns: 500px auto;
+}
+
+.super-games__images{
+  background-size: cover;
+}
+
+.super-games__text{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-top: 85px;
+  padding-right: 75px;
+  padding-bottom: 83px;
+  padding-left: 77px;
+  background-color: $color-banner-red;
+}
+
+.super-games__intro{
+  display: grid;
+  grid-template-columns: 201px auto;
+  gap: 50px;
+}
+
+.super-games__title{
+  font-family: $ff-Alumnisans;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 0.96;
+  color: $color-default-white;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+  text-align: center;
+}
+
+.super-games__description{
+  font-family: $ff-placeholder;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  color: $color-default-white;
+  padding-bottom: 43px;
+}
+
+.super-games__link-application{
+  padding: 25px 0;
+  font-size: 13px;
+}
+
+.super-games__date-time{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.super-games__time-table{
+  margin-top: -2px;
+  font-family: $ff-placeholder;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: $color-default-white;
+  letter-spacing: 0.7px;
+}
+
+.super-games__date-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: $color-default-white;
+    content: "";
+  }
+}
+
+.super-games__date{
+  font-family: $ff-placeholder;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: $color-default-white;
+}
+
+.super-games__month-year{
+  font-size: 14px;
+}

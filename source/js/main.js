@@ -1,8 +1,87 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initTabs} from './modules/tabs/init-tabs';
+import Swiper from '../js/vendor/swiper';
+import {initAccordions} from './modules/accordions/init-accordion';
 
 // ---------------------------------
+
+export const trainerSwiper = new Swiper('.trainer__swiper', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoHeight: true,
+  slidesPerView: 4,
+
+  simulateTouch: true,
+  touchRatio: 1,
+
+  keyboard: {
+    enabled: true,
+    pageUpDown: true,
+  },
+
+  watchOverflow: true,
+
+  spaceBetween: 40,
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //   },
+  //   1200: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+
+});
+
+export const reviewsSwiper = new Swiper('.reviews__swiper', {
+  direction: 'horizontal',
+  // loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoHeight: true,
+  slidesPerView: 1,
+
+  keyboard: {
+    enabled: true,
+    pageUpDown: true,
+  },
+
+  simulateTouch: true,
+  touchRatio: 1,
+
+
+  watchOverflow: true,
+
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   768: {
+  //     slidesPerView: 2,
+  //   },
+  //   1200: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+
+});
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -21,8 +100,23 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initAccordions();
   });
+  initTabs();
 });
+
+const inputName = document.querySelector('#data-name');
+const labelName = document.querySelector('label[for="data-name"]');
+inputName.addEventListener('focus', () => {
+  labelName.style.visibility = 'hidden';
+});
+
+const inputPhone = document.querySelector('#data-phone');
+const labelPhone = document.querySelector('label[for="data-phone"]');
+inputPhone.addEventListener('focus', () => {
+  labelPhone.style.visibility = 'hidden';
+});
+
 
 // ---------------------------------
 

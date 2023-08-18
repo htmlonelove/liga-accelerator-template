@@ -1,0 +1,21 @@
+.faq{
+  margin: 0 auto;
+  background-color: $color-background-grey;
+}
+
+.faq__wrapper{
+  padding-right: 103px;
+  padding-left: 103px;
+  padding-top: 120px;
+  padding-bottom: 54px;
+}
+
+.faq__title{
+  font-family: $ff-Alumnisans;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  color: $color-primary;
+  padding-bottom: 40px;
+}

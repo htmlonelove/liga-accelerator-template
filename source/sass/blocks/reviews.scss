@@ -1,0 +1,98 @@
+.reviews{
+  margin: 0 auto;
+  width: 1366px;
+}
+
+.reviews__wrapper{
+  padding-top: 116px;
+  padding-left: 103px;
+  padding-bottom: 122px;
+  padding-right: 103px;
+}
+
+
+.reviews__title{
+  text-align: center;
+  font-family: $ff-Alumnisans;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  color: $color-primary;
+  padding-bottom: 40px;
+}
+
+.reviews__slide-wrapper{
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 54px 62px;
+  display: flex;
+  gap: 27px;
+  background-color: $color-background-blue;
+  filter: drop-shadow($color-shadow);
+}
+
+.reviews__swiper-button-prev{
+  left: 224px;
+}
+
+.reviews__swiper-button-next{
+  right: 224px;
+}
+
+.reviews__swiper-button-prev,
+.reviews__swiper-button-next {
+  width: 56px;
+  height: 56px;
+  background-color: $color-transparent;
+  border: 1px solid $color-transparent;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus-visible{
+    border-color: $color-primary;
+  }
+
+  &:active{
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &::after,
+    &::after{
+      color: $color-default-white;
+    }
+  }
+
+  &:disabled::after{
+    opacity: 0.3;
+  }
+}
+
+.reviews__swiper-button-prev::after,
+.reviews__swiper-button-next::after{
+  font-size: 32px;
+  color: $color-primary;
+}
+
+.reviews__images{
+  align-self: flex-start;
+  padding-top: 6px;
+}
+
+.reviews__slide-title{
+  font-family: $ff-placeholder;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $color-default-white;
+  padding-bottom: 10px;
+}
+
+.reviews__slide-description{
+  font-family: $ff-placeholder;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-default-white;
+  letter-spacing: -0.5px;
+}

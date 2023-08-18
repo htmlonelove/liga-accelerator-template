@@ -1,0 +1,15 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: $ff-placeholder;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: normal;
+  color: $color-default-white;
+  background-color: $color-transparent;
+  border: 4px solid $color-default-white;
+  text-transform: uppercase;
+  cursor: pointer;
+}

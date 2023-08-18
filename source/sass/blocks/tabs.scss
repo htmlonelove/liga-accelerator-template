@@ -1,0 +1,150 @@
+.tabs {
+  max-width: 100%;
+}
+
+.tabs__controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  width: 342px;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: rgba(120, 120, 120, 0.20);
+    content: "";
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.tabs__control {
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
+  min-width: auto;
+  justify-content: center;
+  padding: 0;
+
+  @media screen and (max-width: 1023px) {
+    margin: 0 10px;
+    padding: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 10px 2% 0;
+    padding: 10px;
+    width: 45%;
+  }
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+
+    &::before {
+      position: absolute;
+      bottom: -12px;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background-color: $color-banner-red;
+      content: "";
+    }
+  }
+}
+
+.tabs__button {
+  font-family: $ff-placeholder;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-primary;
+  text-transform: none;
+  letter-spacing: -1.1px;
+  border: none;
+}
+
+.tabs__content {
+  margin-bottom: 40px;
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tabs__faq {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+}
+
+.tabs__categories {
+  display: flex;
+  flex-direction: column;
+
+  & .btn {
+    background-color: $color-transparent;
+    border: 1px solid $color-primary-light;
+    margin-bottom: 10px;
+  }
+}
+
+.tabs__category {
+  padding-top: 18px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: $ff-placeholder;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  color: $color-primary;
+
+  &.is-active {
+    border: none;
+    background-image: $red-to-blue;
+    color: $color-default-white;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-primary;
+  }
+
+  &:default{
+    color: $color-primary-light;
+  }
+}

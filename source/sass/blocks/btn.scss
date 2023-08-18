@@ -1,9 +1,7 @@
 .btn {
   display: inline-flex;
   padding: 10px 20px;
-
   color: $color-default-white;
-
   background-color: $color-neon-blue;
   border: none;
   cursor: pointer;
@@ -20,7 +18,7 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
-  }
+  // @include hover-focus {
+  //   opacity: 0.8;
+  // }
 }

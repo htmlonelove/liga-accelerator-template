@@ -1,0 +1,36 @@
+header {
+  position: relative;
+  margin: 0 auto;
+  width: 1366px;
+
+  &::before {
+    position: absolute;
+    background-image: $blue-to-red;
+
+    width: 1366px;
+    height: 642px;
+
+    content: "";
+  }
+}
+
+.header__logo {
+  position: absolute;
+  order: 1;
+  top: 25px;
+  left: 103px;
+}
+
+.header__contact-link {
+  position: absolute;
+  order: 1;
+  top: 16px;
+  right: 103px;
+  font-family: ff-Alumnisans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  font-style: normal;
+  color: $color-default-white;
+}

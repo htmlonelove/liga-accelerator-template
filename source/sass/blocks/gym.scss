@@ -1,0 +1,82 @@
+.gym {
+  margin: 0 auto;
+  width: 1366px;
+  padding: 80px 103px 166px 163px;
+}
+
+.gym__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gym__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-right: 85px;
+}
+
+.gym__title {
+  font-family: $ff-Alumnisans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  color: $color-primary;
+  padding-bottom: 8px;
+}
+
+.gym__subtitle {
+  font-family: $ff-placeholder;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-primary;
+  padding-bottom: 40px;
+  letter-spacing: 0.7px;
+}
+
+.gym__description {
+  font-family: $ff-placeholder;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $color-primary;
+
+  &--supergym {
+    padding-bottom: 8px;
+  }
+}
+
+.gym__video-wrapper {
+  position: relative;
+}
+
+.gym__video {
+  margin-left: 378px;
+  margin-top: -112px;
+
+}
+
+.gym__video-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 64px;
+  left: 518px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+}
+
+.gym__button-image {
+  transform: rotate(150deg);
+}
+
+.gym__button-border {
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 100px;
+  height: 100px;
+}

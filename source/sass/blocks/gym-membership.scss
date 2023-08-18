@@ -1,0 +1,25 @@
+.gym-membership{
+  position: relative;
+  margin: 0 auto;
+  width: 1366px;
+  padding-top: 118px;
+  padding-bottom: 80px;
+  background-color: $color-background-grey;
+}
+
+.gym-membership__title{
+  font-family: $ff-Alumnisans;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  color: $color-primary;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.gym-membership__image{
+  position: absolute;
+  right: -10px;
+  bottom: -255px;
+}
