@@ -1,18 +1,15 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
-
+  padding: 27px 44px;
+  background-color: $color-transparent;
+  border: solid 4px $color-default-white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: $color-default-white;
-
-  background-color: $color-neon-blue;
-  border: none;
   cursor: pointer;
-
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  align-items: center;
 
   &:disabled {
     opacity: 0.5;
@@ -21,6 +18,30 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background: linear-gradient(to right, #ed0233, #003eb7);
+    border: none;
+  }
+
+  @include active {
+    background: linear-gradient(to right, #ed0233, #003eb7);
+    border: none;
+    opacity: 0.7;
+  }
+
+  &--gradient {
+    background: linear-gradient(to right, #ed0233, #003eb7);
+    border: none;
+
+    @include hover-focus {
+      background: none;
+      background-color: $color-default-white;
+      color: $color-neon-blue;
+    }
+
+    @include active {
+      background: none;
+      background-color: $color-default-white;
+      color: #102654;
+    }
   }
 }

@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/gradient/background-gradient_desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -80px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+
+      @include vp-1365 {
+        background-image: url("../../img/gradient/background-gradient_tablet.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      @include vp-767 {
+        background-image: url("../../img/gradient/background-gradient_mobile.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+  }
+}
+
+.hero__title {
+  color: $color-default-white;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 110.4px;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 2px #fff;
+  grid-area: title;
+  text-align: end;
+  margin: 0;
+  padding: 0;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 68.4px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.hero__wrap {
+  display: flex;
+  @include vp-767 {
+    display: block;
+
+  }
+}
+
+.hero__list {
+  grid-area: list;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+  align-self: center;
+}
+
+.hero__city {
+  grid-area: city;
+  text-transform: uppercase;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  color: $color-default-white;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  text-align: end;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.hero__button {
+  grid-area: button;
+  width: 230px;
+  height: 57px;
+  margin-left: auto;
+}
+
+
+.hero__information {
+  margin-right: 64px;
+  display: grid;
+  grid-template-areas: ". city"
+                        "list title"
+                        ". button";
+
+    @include vp-767 {
+      // display: block;
+      margin-right: 0;
+    }
+}
+
+.hero img {
+  @include vp-767 {
+    display: none;
+  }
+}
