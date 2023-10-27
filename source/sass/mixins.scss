@@ -4,22 +4,8 @@
   }
 }
 
-@mixin hover {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-      @content;
-    }
-  }
-}
-
-@mixin focus {
-  &.focus-visible:focus {
-    @content;
-  }
-}
-
 @mixin active {
-  &.focus-visible:active {
+  &:active:not(.focus-visible) {
     @content;
   }
 }
@@ -33,6 +19,19 @@
 
   &.focus-visible:focus {
     @content;
+  }
+}
+
+
+.btn {
+	width: 200px;
+	height: 200px;
+	background: pink;
+  @include hover-focus {
+    background: red;
+  }
+  @include active {
+    background: green;
   }
 }
 
