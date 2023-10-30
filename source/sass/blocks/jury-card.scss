@@ -1,0 +1,140 @@
+.jury-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.jury-card__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 260px;
+  height: 294px;
+  padding: 20px;
+  padding-bottom: 18px;
+  // overflow-y: scroll; //Реализация переполнения с фиксированной высотой
+
+  @include vp-1365 {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+
+  @include hover-focus {
+    justify-content: center;
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+
+  @include active {
+    justify-content: center;
+    background-color: rgba(16, 38, 84, 0.89);
+  }
+}
+
+.jury-card__img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+.jury-card__img-wrapper img {
+  object-fit: cover;
+  min-height: 100%;
+
+  @include vp-1365 {
+    width: 268px;
+    height: 294px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.jury-card__title {
+  max-width: 200px;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  word-wrap: break-word;
+
+  @include vp-767 {
+    font-size: 18px;
+  }
+}
+
+.jury-card__sub-title {
+  max-width: 150px;
+  margin: 0;
+  margin-bottom: 33px;
+  color: $color-ghost-white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  word-wrap: break-word;
+
+  @include vp-767 {
+    margin-bottom: 22px;
+    font-size: 14px;
+  }
+}
+
+.jury-card__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  max-width: 160px;
+  margin: 0 30px;
+  padding-left: 16px;
+  word-wrap: break-word;
+
+  @include vp-767 {
+    row-gap: 8px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.jury-card__wrapper {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (hover: hover) {
+  .jury-card__container:hover:not(.focus-visible) {
+    .jury-card__wrapper {
+      display: flex;
+    }
+  }
+}
+
+.jury-card__container.focus-visible:focus {
+  .jury-card__wrapper {
+    display: flex;
+  }
+}
+
+.jury-card__container:active:not(.focus-visible) {
+  .jury-card__wrapper {
+    display: flex;
+  }
+}

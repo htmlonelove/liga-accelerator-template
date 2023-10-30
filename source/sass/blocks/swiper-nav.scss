@@ -1,0 +1,67 @@
+.swiper-nav__button {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  color: $color-primary;
+  border-radius: 56px;
+  z-index: 10;
+  cursor: pointer;
+
+  &--prev {
+    left: 0;
+    transform: translateX(25px) translateY(-120px);
+  }
+
+  &--next {
+    right: 0;
+    transform: translateX(-25px) translateY(-120px) scale(-1);
+  }
+
+  @include vp-1365 {
+    &--prev {
+      transform: translateX(25px) translateY(-120px);
+    }
+
+    &--next {
+      transform: translateX(-25px) translateY(-120px) scale(-1);
+    }
+  }
+
+  @include vp-767 {
+    width: 36px;
+    height: 36px;
+
+    &--prev {
+      transform: translateX(5px) translateY(-120px);
+    }
+
+    &--next {
+      transform: translateX(-5px) translateY(-120px) scale(-1);
+    }
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-primary;
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-primary;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    border: unset;
+  }
+}
+
+.swiper-nav__button svg {
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}

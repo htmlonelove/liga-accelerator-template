@@ -1,0 +1,232 @@
+.card-competition {
+  display: flex;
+  color: $color-default-white;
+  font-style: normal;
+  justify-content: center;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.card-competition__wrapper {
+  width: 500px;
+  padding: 80px;
+  background-color: $color-torch-red;
+
+  @include vp-1365 {
+    padding: 45px;
+    padding-top: 40px;
+    min-width: 292px;
+  }
+
+  @include vp-767 {
+    width: unset;
+    min-width: unset;
+    padding: 40px;
+  }
+}
+
+.card-competition__row-wrapper {
+  display: flex;
+  column-gap: 68px;
+  margin-bottom: 20px;
+
+  @include vp-1365 {
+    column-gap: 40px;
+    margin-bottom: 5px;
+  }
+
+  @include vp-767 {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+
+.card-competition__title {
+  max-width: 180px;
+  margin: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    max-width: 106px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+  }
+
+  @include vp-767 {
+    max-width: 117px;
+  }
+}
+
+.card-competition__datetime {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  margin: 0;
+
+  @include vp-1365 {
+    row-gap: 8px;
+  }
+}
+
+.card-competition__term {
+  max-width: 50px;
+  margin-bottom: 8px;
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card-competition__description {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100px;
+  margin-left: 0;
+  padding-top: 4px;
+  border-top: 1px solid $color-default-white;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    padding-top: unset;
+    margin-top: -2px;
+  }
+}
+
+.card-competition__time {
+  max-width: 100px;
+  font-family: $ff-roboto-condensed;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}
+
+.card-competition__date {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @include vp-1365 {
+    row-gap: unset;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}
+
+.card-competition__date span {
+  max-width: 40px;
+  word-wrap: break-word;
+}
+
+.card-competition__explanation {
+  max-width: 275px;
+  margin: 0;
+  margin-bottom: 55px;
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    max-width: 202px;
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    max-width: 171px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card-competition__link {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // max-width: 340px;
+  padding: 25px 10px;
+  color: $color-default-white;
+  border: 2px solid $color-default-white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  word-break: break-all;
+
+  @include vp-1365 {
+    padding: 20px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+  }
+
+  @include hover-focus {
+    outline: none;
+    color: $color-additional;
+    background-color: $color-default-white;
+  }
+
+  @include active {
+    color: $color-primary;
+    background-color: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.card-competition__img-wrapper img {
+  object-fit: cover;
+  min-height: 100%;
+
+  @include vp-1365 {
+    min-width: 386px;
+    height: 324px;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
+    height: 292px;
+  }
+}
