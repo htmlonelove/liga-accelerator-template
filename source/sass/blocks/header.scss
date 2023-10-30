@@ -1,0 +1,92 @@
+.header {
+  color: $color-default-white;
+  background-image: $gradient-hero;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  min-height: 86px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include vp-767 {
+    min-height: 54px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.header__link {
+  color: $color-default-white;
+  text-decoration: none;
+
+  @include hover-focus {
+    outline: none;
+    opacity: 0.7;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+}
+
+.header__logo-wrapper {
+  background-color: $color-resolution-blue;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.header__img-wrapper img {
+  @include vp-1365 {
+    width: 112px;
+    height: 24px;
+  }
+
+  @include vp-767 {
+    width: 102px;
+    height: 22px;
+  }
+}
+
+.header__contact {
+  min-width: 155px;
+  color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  word-wrap: break-word;
+  border-bottom: 2px solid transparent;
+
+  @include hover-focus {
+    outline: none;
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-primary;
+    border-bottom: 2px solid $color-primary;
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    border-bottom: 2px solid transparent;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,23 @@
+.competition__container {
+  padding-top: 120px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+  }
+}
+
+.competition__card {
+  padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 70px;
+  }
+}

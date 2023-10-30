@@ -1,0 +1,184 @@
+.card-subscription {
+  max-width: 360px;
+  padding: 58px 20px;
+  background-color: $color-default-white;
+  border: 7px solid $color-default-white;
+  font-style: normal;
+  text-align: center;
+
+  @include hover-focus {
+    border-image: $crimson-to-blue;
+    border-image-slice: 1;
+  }
+
+  @include vp-1365 {
+    max-width: none;
+    width: 65%; //Подгон
+    min-width: 290px;
+  }
+
+  @include vp-767 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.card-subscription__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: $ff-roboto-condensed;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.card-subscription__description {
+  margin: 0;
+  margin-bottom: 66px;
+  font-weight: 300;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    margin-bottom: 72px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 62px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}
+
+.card-subscription__price-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 14px;
+  margin: 0;
+  margin-bottom: 35px;
+  z-index: 1;
+
+  @include vp-1365 {
+    margin-bottom: 28px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
+}
+
+.card-subscription__price {
+  max-width: 170px;
+  color: $color-additional;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 150%;
+  word-wrap: break-word;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 360px;
+    height: 150px;
+    color: $color-ghost-white;
+    font-family: $ff-roboto-condensed;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    transform: translateX(-50%) translateY(-67%); //Подгон
+    z-index: -1;
+
+    @include vp-767 {
+      width: 260px;
+      font-size: 80px;
+      transform: translateX(-50%) translateY(-54%);
+    }
+  }
+
+  &--with-coach {
+    &::before {
+      content: attr(data-price-with-coach);
+    }
+  }
+
+  &--daytime {
+    &::before {
+      content: attr(data-price-daytime);
+    }
+  }
+
+  &--all-day {
+    &::before {
+      content: attr(data-price-all-day);
+    }
+  }
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 150%;
+  }
+}
+
+.card-subscription__symbol {
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.card-subscription__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 66px;
+  margin: 0 auto;
+  padding: 19px 10px;
+  color: $color-primary;
+  border: 2px solid $color-primary;
+  font-family: $ff-roboto-condensed;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  word-break: break-all;
+
+  @include hover-focus {
+    outline: none;
+    color: $color-default-white;
+    border-color: $color-default-white;
+    background-image: $gradient-primary;
+  }
+
+  @include active {
+    color: rgba(255, 255, 255, 0.7);
+    border-color: $color-default-white;
+    background-image: $gradient-primary;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @include vp-1365 {
+    min-height: 56px;
+  }
+}

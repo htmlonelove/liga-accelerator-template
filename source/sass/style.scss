@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -19,10 +19,21 @@
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/list";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/gym";
+@import "blocks/subscription";
+@import "blocks/card-subscription";
+@import "blocks/competition";
+@import "blocks/card-competition";
+@import "blocks/jury";
+@import "blocks/jury-card";
+@import "blocks/swiper-nav";
+@import "blocks/advantages";
 
 // ---------------------------------
 

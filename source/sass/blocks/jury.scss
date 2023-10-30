@@ -1,0 +1,58 @@
+.jury {
+  position: relative;
+  margin-bottom: 120px;
+
+  @include vp-1365 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 70px;
+  }
+}
+
+.jury__container {
+  width: 100%;
+  max-width: $vp-1366;
+  margin: 0 auto;
+  padding: 0 103px;
+
+  @include vp-1365 {
+    padding: 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 0 47px;
+  }
+}
+
+.jury__title {
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 45px;
+  color: $color-primary;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+}

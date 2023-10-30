@@ -1,0 +1,300 @@
+.gym {
+  position: relative;
+  color: $color-primary;
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.gym__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 145px;
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1365 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+}
+
+.gym__text-content {
+  @include vp-1365 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    text-align: start;
+    align-items: start;
+  }
+}
+
+.gym__text-content h2 {
+  max-width: 355px;
+  min-width: 290px;
+  margin: 0;
+  margin-top: -6px; //Подгон
+  margin-bottom: 28px;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    max-width: 80vw;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 13px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.gym__text-content h3 {
+  max-width: 355px;
+  min-width: 290px;
+  margin: 0;
+  margin-bottom: 95px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    max-width: 80vw;
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 38px;
+    font-size: 18px;
+  }
+}
+
+.gym__text-content p {
+  max-width: 355px;
+  min-width: 290px;
+  margin: 0;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    max-width: 502px;
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    max-width: calc(100vw - 30px); //Так можно?
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.gym__text-content p + p {
+  @include vp-1365 {
+    display: none;
+  }
+}
+
+.gym__img-wrapper {
+  @include vp-1365 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+    min-width: 320px;
+  }
+}
+
+.gym__img-wrapper img {
+  object-fit: cover;
+  height: 100%;
+
+  @include vp-1365 {
+    width: 100%;
+    height: 345px;
+  }
+
+  @include vp-767 {
+    height: 313px;
+  }
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  bottom: 120px; //Подгон
+  left: 50%;
+  z-index: 1000;
+  transform: translateX(-40%); //Подгон
+
+  @include vp-1365 {
+    top: unset;
+    left: 50%;
+    bottom: 95px; //Подгон
+    transform: translateX(-50%) translateY(-2%); //Подгон
+  }
+
+  @include vp-767 {
+    position: static;
+    margin-bottom: 70px;
+    transform: unset;
+  }
+}
+
+.gym__poster-wrapper {
+  position: relative;
+}
+
+.gym__poster-wrapper img {
+  object-fit: cover;
+
+  @include vp-1365 {
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+    min-width: 320px;
+  }
+}
+
+.gym__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  color: $color-default-white;
+  background-color: transparent;
+  border: 2px solid rgba(237, 2, 51, 0.2);
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-image: $gradient-primary;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+
+    @include vp-1365 {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  @include hover-focus {
+    outline: none;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &::before {
+      background-image: unset;
+      background-color: $color-default-white;
+    }
+  }
+
+  @include active {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+      background-image: unset;
+      background-color: $color-default-white;
+
+      @include vp-1365 {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &:disabled {
+    outline: none;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    opacity: 0.4;
+    pointer-events: none;
+
+    &::before {
+      background-image: unset;
+      background-color: $color-default-white;
+    }
+  }
+
+  @include vp-1365 {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.gym__symbol-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%) translateY(-50%);
+
+  @include vp-1365 {
+    font-size: 12px;
+    transform: translateX(-42%) translateY(-38%); //Подгон
+  }
+}
+
+.gym__video {
+  top: 0;
+  left: 0;
+  display: none;
+  border: none;
+
+  @include vp-1365 {
+    bottom: 0;
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+    min-width: 320px;
+  }
+}

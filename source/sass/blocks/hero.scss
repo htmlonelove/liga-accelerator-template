@@ -1,0 +1,222 @@
+.hero {
+  color: $color-default-white;
+  background-image: $gradient-hero;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 730px;
+    background-image: $gradient-hero;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1000;
+
+    @include vp-1365 {
+      height: 574px;
+    }
+
+    @include vp-767 {
+      height: 461px;
+    }
+  }
+}
+
+.hero__container {
+  display: flex;
+  column-gap: 70px;
+  padding-bottom: 120px;
+
+  @include vp-1365 {
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 35px;
+    padding-bottom: 70px;
+    justify-content: flex-start;
+    column-gap: 0;
+  }
+}
+
+.hero__flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin: 62px 0;
+
+  @include vp-1365 {
+    margin: 31px 0;
+  }
+
+  @include vp-767 {
+    flex-grow: 1;
+    margin: unset;
+  }
+}
+
+.hero__row-wrapper {
+  display: flex;
+  align-items: center;
+
+  @include vp-1365 {
+    column-gap: 26px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 15px;
+    margin-bottom: 60px;
+    align-items: end;
+  }
+}
+
+.hero__column-wrapper {
+  width: 270px;
+  font-family: $ff-alumni-sans;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+
+  @include vp-1365 {
+    width: 185px;
+  }
+
+  @include vp-767 {
+    width: 162px;
+  }
+}
+
+.hero__city {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.26px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 14px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 110px;
+  letter-spacing: 4.6px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0;
+  }
+
+  @include vp-767 {
+    margin-bottom: unset;
+    font-size: 62px;
+    line-height: 70px;
+    letter-spacing: 1.86px;
+  }
+}
+
+.hero__list {
+  width: 113px;
+  min-height: 66px;
+  margin-top: 66px; //Подгон
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: right;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    margin-top: 58px; //Подгон
+  }
+
+  @include vp-767 {
+    margin-top: unset;
+    padding-top: 10px; //Подгон
+    line-height: 20px;
+  }
+}
+
+.hero__link {
+  display: block;
+  margin-left: auto;
+  width: 230px;
+  padding: 25px 20px;
+  border: 2px solid $color-default-white;
+  color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  @include hover-focus {
+    outline: none;
+    color: $color-additional;
+    background-color: $color-default-white;
+  }
+
+  @include active {
+    color: $color-primary;
+    background-color: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  @include vp-1365 {
+    width: 185px;
+    padding: 20px 20px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    max-width: calc(100vw - 30px); //Так можно?
+    min-width: 290px;
+    margin-left: unset;
+  }
+}
+
+.hero__img-wrapper img {
+  object-fit: cover;
+  height: 100%;
+
+  @include vp-1365 {
+    width: 324px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
