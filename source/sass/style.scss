@@ -14,10 +14,12 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-
+@import "global/container-sitemap.scss";
 // Blocks
 // ---------------------------------
 
+@import "blocks/header.scss";
+@import "blocks/main-navigation.scss";
 @import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/custom-input";
