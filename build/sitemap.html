@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Botozz</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Light.woff2 " as="font" type="font/woff2" crossorigin="anonymous">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="container">
+    <header class="header" data-name="header">
+      <a class="header__logo-link" href="index.html" aria-current="page" data-name="header-logo">BOTOZZ
+      </a>
+    </header>
+    <section class="form">
+        <div class="form__inner">
+          <div class="form__inner-wrapper">
+            <h1 class="form__title">Адаптация и благополучие ваших сотрудников</h1>
+            <a class="form__link" href="https://t.me/Test212111_bot" rel="nofollow" target="_blank" aria-label="Мы в Телеграмм.">
+              <span class="form__link-icon" tabindex="0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5284 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859V8.859Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <p class="form__link-text">Перейти в DEMO чат-бота</p>
+            </a>
+            <p class="form__text">Оставьте заявку на&nbsp;создание корпоративного чат-бота.</p>
+            <div class="form__wrapper" data-form-validate data-callback="base">
+              <form method="post" action="https://echo.htmlacademy.ru/" id="tg">
+                <div class="form__inner-wrapper">
+                  <div class="form__inner-wrapper-grid">
+                    <div class="custom-input form__input" data-validate-type="text" data-limitation="name" data-required="data-required">
+                      <input type="text" name="name" placeholder="Имя" id="name-second-from" aria-label="Введите ваше имя."/>
+                    </div>
+                    <div class="custom-input form__input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                      <input type="tel" name="phone" placeholder="Телефон" id="mobile-number-second-from" aria-label="Введите ваш телефон."/>
+                    </div>
+                  </div>
+                  <div class="auto-resize-textarea form__textarea custom-input form__input" data-validate-type="text" data-limitation="name" data-required="data-required">
+                    <textarea name="comment" rows="2" placeholder="Комментарий" aria-label="textarea"></textarea>
+                  </div>
+                  <div class="form__checkbox-wrapper">
+                    <div class="custom-toggle custom-toggle--checkbox form__checkbox" data-validate-type="checkbox" data-message-base="">
+                      <label>
+                        <input type="checkbox" value="Согласие на звонок" name="call" tabindex="-1"/>
+                        <span class="custom-toggle__icon form__toggle-icon" tabindex="0">
+                        </span>
+                        <span class="custom-toggle__label form__checkbox-label">Позвонить</span>
+                      </label>
+                    </div>
+                    <div class="custom-toggle custom-toggle--checkbox form__checkbox" data-validate-type="checkbox" data-message-base="">
+                      <label>
+                        <input type="checkbox" value="Согласие на смс в Telegram" name="sms" tabindex="-1"/>
+                        <span class="custom-toggle__icon form__toggle-icon" tabindex="0">
+                        </span>
+                        <span class="custom-toggle__label form__checkbox-label">Написать в Telegram</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div id="success" class="alert alert-success mt-3" role="alert" style="display: none;">
+                    <button class="alert__button-close" type="button" aria-label="Закрыть попап." data-close-modal="data-close-modal" data-focus="data-focus">
+                      <img src="./img/svg/cross.svg" width="22" height="22" alt="Закрыть попап.">
+                    </button>
+                  </div>
+                  <button class="form__button general-button general-button--dark" aria-label="Отправить форму обратной связи." type="submit">
+                    <span>Оставить заявку</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="form__inner-img">
+            <picture>
+              <img src="./img/phone.png" srcset="./img/phone@2x.png" width="616"
+                height="686" alt="Фотография руки с телефоном.">
+            </picture>
+          </div>
+        </div>
+    </section>
+    <footer class="footer"></footer>
+
+    <section class="modal modal--preload" data-modal="modal-1">
+      <div class="modal__wrapper masa-modal">
+        <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+            <div class="masa-modal__container">
+              <button class="masa-modal__button-close" type="button" aria-label="Закрыть попап." data-close-modal="data-close-modal" data-focus="data-focus">
+                <img src="./img/svg/cross.svg" width="22" height="22" alt="Закрыть попап.">
+              </button>
+              <h3>Спасибо! Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;течение 30&nbsp;минут.</h3>
+            </div>
+      </div>
+    </section>
+    <script src="js/vendor.min.js" type="module"></script>
+    <script src="js/main.min.js" type="module"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script>
+      const TOKEN= "7115464809:AAHWDsT3Q2-FjpQZ-82zNjzKU-_IUvOBk-o";
+      const CHAT_ID ="-1002052824112";
+      const URL_API = `https://api.telegram.org/bot${ TOKEN}/sendMessage`;
+      const success = document.getElementById('success');
+
+      document.getElementById('tg').addEventListener('submit',function(e) {
+        e.preventDefault();
+
+        let message = `<b>Заявка с сайта!</b>\n`;
+        message += `<b>Имя клиента:</b> ${ this.name.value }\n`
+        message += `<b>Телефон клиента:</b> ${ this.phone.value }\n`
+        message += `<b>Комментарий клиента:</b> ${ this.comment .value }\n`
+        if (this.call.checked) {
+          message += `<b>Просьба позвонить:</b> ${ this.call.value }\n`;
+        }
+        if (this.sms.checked) {
+          message += `<b>Просьба написать в Telegram:</b> ${ this.sms.value }`;
+        }
+
+        axios.post(URL_API, {
+          chat_id: CHAT_ID,
+          parse_mode: 'html',
+          text: message
+        })
+        .then((res) => {
+          this.name.value = "";
+          this.phone.value = "";
+          this.comment.value = "";
+          this.call.value = "";
+          this.sms.value = "";
+          success.innerHTML = "Спасибо! Мы свяжемся с Вами в течении 30 минут!";
+          success.style.display = "block";
+        })
+        .catch((err) => {
+
+        })
+        .finally(() => {
+
+        })
+      });
+    </script>
+  </body>
+</html>

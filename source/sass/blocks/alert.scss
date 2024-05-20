@@ -1,0 +1,39 @@
+.alert {
+  color: $color-default-black;
+  padding: 20px;
+  background-color: $color-default-white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.alert__button-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 22px;
+  height: 22px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    top: 18px;
+    right: 23px;
+
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.alert__icon {
+  @include vp-767 {
+    width: 12px;
+    height: 12px;
+  }
+}

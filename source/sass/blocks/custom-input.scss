@@ -3,12 +3,14 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  padding: 14px 0 20px;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
     width: 100%;
+  }
+
+  @media (max-width: 540px) {
+    padding: 14px 0 10px;
   }
 
   label {
@@ -75,22 +77,15 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border-radius: 8px;
+      border: 1px solid $color-wild-watermelon;
+      background: rgba(255, 94, 102, 0.2);
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
-      }
-    }
-  }
-
-  &.is-valid {
-    input {
-      border: 2px solid #22b259;
-
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        border-radius: 8px;
+        border: 1px solid $color-wild-watermelon;
+        background: rgba(255, 94, 102, 0.2);
       }
     }
   }
@@ -107,5 +102,13 @@
     &.is-valid {
       color: #15ab07;
     }
+  }
+}
+
+.custom-textarea {
+  width: 530px;
+
+  &::placeholder {
+    color: #000000;
   }
 }

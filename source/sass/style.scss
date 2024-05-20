@@ -18,11 +18,18 @@
 // Blocks
 // ---------------------------------
 
+@import "blocks/header";
+@import "blocks/form";
+@import "blocks/page__body";
 @import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/custom-input";
-@import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/custom-toggle";
+@import "blocks/general-button";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/alert";
+@import "blocks/hero";
 
 // ---------------------------------
 
